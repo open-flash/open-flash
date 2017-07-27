@@ -4,8 +4,8 @@ large task that many other projects tried and abandoned. Feel free to submit sug
 # Open Flash
 
 Open Flash (aka "Save Flash") aims at providing an open-source easily-maintainable Flash Player
-to preserve the Flash animation which cannot be converted to another technology. That's why the
-main goal is compatibility, then maintainability, then performances.
+to preserve the Flash animations that cannot be converted to another technology. That's why the
+main goal is compatibility and maintainability.
 
 The project is inspired by [Shumway](https://github.com/mozilla/shumway), ideally it should be
 possible to install a browser extension or just drop a `<script>` in the web page to keep
@@ -22,6 +22,7 @@ The current packages are:
 - [SWF Tree](https://github.com/open-flash/swf-tree): Provide a good model for SWF files (AST)
 - [SWF Parser](https://github.com/open-flash/swf-parser): Decode SWF files to the SWF Tree
 - [SWF Renderer](https://github.com/open-flash/swf-renderer): Rendering backend
+
 They strive to be written both in Typescript and Rust. Typescript is the easiest way to target
 the Web but Rust has better chances to provide an embeddable library or `*wasm` build with good
 performances. Both are modern are valued languages so it should ensure the stability of the
