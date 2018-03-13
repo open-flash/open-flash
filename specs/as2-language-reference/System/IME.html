@@ -1,0 +1,943 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../print.css" type="text/css" media="print">
+<meta content="IME,System.IME,ALPHANUMERIC_FULL,ALPHANUMERIC_HALF,CHINESE,JAPANESE_HIRAGANA,JAPANESE_KATAKANA_FULL,JAPANESE_KATAKANA_HALF,KOREAN,UNKNOWN,addListener,doConversion,getConversionMode,getEnabled,removeListener,setCompositionString,setConversionMode,setEnabled" name="keywords">
+<title>System.IME</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../asdoc.js"></script><script type="text/javascript" language="javascript" src="../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'IME - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../all-classes.html')" href="../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../all-classes.html')" href="../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="../language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('../index-list.html')" href="../all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="../appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="../index.html?System/IME.html&amp;System/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;IME</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class IME"); titleBar_setSubNav(true,false,false,false,true,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">System</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class IME</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">IME <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../images/inherit-arrow.gif"> <a href="../Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p>
+<p></p>The IME class lets you directly manipulate the operating system's input method   editor (IME) in the Flash Player application that is running on a client computer. You can   determine whether an IME is installed, whether or not the IME is enabled, and which IME is   enabled. You can disable or enable the IME in the Flash Player application, and you can perform other limited   functions, depending on the operating system.    <p>Input method editors let users type non-ASCII text characters in Asian languages   such as Chinese, Japanese, and Korean. For more information on IMEs, see the operating system   documentation for the platform for which you are developing applications.   Some additional resources for information about input methods are listed here:   <ul>     <li><a target="mm_external" href = "http://www.microsoft.com/globaldev/default.mspx">http://www.microsoft.com/globaldev/default.mspx</a></li>     <li><a target="mm_external" href = "http://developer.apple.com/documentation/">http://developer.apple.com/documentation/</a></li>     <li><a target="mm_external" href = "http://java.sun.com">http://java.sun.com</a></li>    </ul>    </p>    <p>On the Macintosh, calls to the IME application programming interface (API) fail if you do not have the IME enabled.   Once you manually enable the IME, subsequent calls work as expected.   For example, if you are using Japanese IME on your system, it must be enabled and in one   of four possible modes (Hiragana, Full-width Katakana, Full-width Alphanumeric, Half-width   Katakana) before this API is called.</p>    <p>The following table shows the platform coverage of this class:</p>    <table class="innertable">    <tr>      <th>Capability</th>      <th>Windows</th>      <th>Macintosh OSX</th>      <th>Macintosh Classic</th>      <th>Linux/Solaris&#xA0;XIM</th>    </tr>     <tr>      <td>Determine whether the IME is installed<br/><code>&#xA0;&#xA0;&#xA0;System.capabilities.hasIME</code></td>      <td>Yes</td>      <td>Yes</td>      <td>Yes</td>      <td>Yes</td>    </tr>     <tr>      <td>Set IME on or off<br/><code>&#xA0;&#xA0;&#xA0;System.IME.setEnabled()</code></td>      <td>Yes</td>      <td>Yes</td>      <td>Yes ***</td>      <td>Yes</td>    </tr>     <tr>      <td>Find out whether IME is on or off <br/><code>&#xA0;&#xA0;&#xA0;System.IME.getEnabled()</code></td>      <td>Yes</td>      <td>Yes</td>      <td>Yes</td>      <td>Yes</td>    </tr>     <tr>      <td>Set IME conversion mode<br/><code>&#xA0;&#xA0;&#xA0;System.IME.setConversionMode()</code></td>      <td>Yes</td>      <td>Yes **</td>      <td>No</td>      <td>Yes</td>    </tr>     <tr>      <td>Get IME conversion mode <br/><code>&#xA0;&#xA0;&#xA0;System.IME.getConversionMode()</code></td>      <td>Yes</td>      <td>Yes **</td>      <td>No</td>      <td>Yes</td>    </tr>     <tr>      <td>Send IME the string to be converted<br/><code>&#xA0;&#xA0;&#xA0;System.IME.setCompositionString()</code></td>      <td>Yes *</td>      <td>No</td>      <td>No</td>      <td>Yes</td>    </tr>     <tr>      <td>Get from IME the original string before conversion        <br/><code>&#xA0;&#xA0;&#xA0;System.IME.addListener()        <br/>&#xA0;&#xA0;&#xA0;listener.onIMEComposition()        <br/>&#xA0;&#xA0;&#xA0;System.IME.removeListener()</code></td>      <td>Yes *</td>      <td>No</td>      <td>No</td>      <td>Yes</td>    </tr>     <tr>      <td>Send request to convert to IME <br/><code>&#xA0;&#xA0;&#xA0;System.IME.doConversion()</code></td>      <td>Yes *</td>      <td>No</td>      <td>No</td>      <td>Yes</td>    </tr>   </table>    <p>* Not all Windows IMEs support all of these operations. So far the only IME   that supports them all is the Japanese IME. Every IME differs in its support of   the OS calls.</p>     <p>** On Macintosh these methods are supported only for Japanese, and they are not supported for third-party IMEs.</p>    <p>*** One of the Japanese modes (Hiragana, Full &amp; Half-width Katakana, Full-width alphanumeric) must be enabled before using this API.</p>     <p></p>
+<br>
+<hr>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addListener()">addListener</a>(listener:<a href="../Object.html">Object</a>):Void</div>
+<div class="summaryTableDescription">[static]Registers an object to receive notification when an IME event handler is invoked by the <code>onIMEComposition</code> event.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#doConversion()">doConversion</a>():<a href="../Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">[static]Instructs the IME to select the first candidate for the current composition string.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getConversionMode()">getConversionMode</a>():<a href="../String.html">String</a>
+</div>
+<div class="summaryTableDescription">[static]Indicates the conversion mode of the current IME.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getEnabled()">getEnabled</a>():<a href="../Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">[static]Indicates whether the system IME is enabled.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeListener()">removeListener</a>(listener:<a href="../Object.html">Object</a>):<a href="../Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">[static]Removes a listener object that was previously registered to an <code>IME</code> instance with <code>IME.addListener()</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setCompositionString()">setCompositionString</a>(composition:<a href="../String.html">String</a>):<a href="../Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">[static]Sets the IME composition string.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setConversionMode()">setConversionMode</a>(mode:<a href="../String.html">String</a>):<a href="../Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">[static]Sets the conversion mode of the current IME.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setEnabled()">setEnabled</a>(enabled:<a href="../Boolean.html">Boolean</a>):<a href="../Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">[static]Enables or disables the system IME.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../Object.html#addProperty()">addProperty</a>, <a href="../Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="../Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="../Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="../Object.html#registerClass()">registerClass</a>, <a href="../Object.html#toString()">toString</a>, <a href="../Object.html#unwatch()">unwatch</a>, <a href="../Object.html#valueOf()">valueOf</a>, <a href="../Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<a name="eventSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Events</div>
+<table id="summaryTableEvent" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Event</th><th>Summary</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onIMEComposition">onIMEComposition</a> = function([readingString:<a href="../String.html">String</a>]) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Notified when the IME composition string is being set.</td><td class="summaryTableOwnerCol">IME</td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<table id="summaryTableConstant" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ALPHANUMERIC_FULL">ALPHANUMERIC_FULL</a> : <a href="../String.html">String</a>
+<div class="summaryTableDescription">[static]A string with the value <code>"ALPHANUMERIC_FULL"</code> for use with <code>setConversionMode()</code> and <code>getConversionMode()</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ALPHANUMERIC_HALF">ALPHANUMERIC_HALF</a> : <a href="../String.html">String</a>
+<div class="summaryTableDescription">[static]A string with the value <code>"ALPHANUMERIC_HALF"</code> for use with <code>setConversionMode()</code> and <code>getConversionMode()</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#CHINESE">CHINESE</a> : <a href="../String.html">String</a>
+<div class="summaryTableDescription">[static]A string with the value <code>"CHINESE"</code> for use with <code>setConversionMode()</code> and <code>getConversionMode()</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#JAPANESE_HIRAGANA">JAPANESE_HIRAGANA</a> : <a href="../String.html">String</a>
+<div class="summaryTableDescription">[static]A string with the value <code>"JAPANESE_HIRAGANA"</code> for use with <code>setConversionMode()</code> and <code>getConversionMode()</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#JAPANESE_KATAKANA_FULL">JAPANESE_KATAKANA_FULL</a> : <a href="../String.html">String</a>
+<div class="summaryTableDescription">[static]A string with the value <code>"JAPANESE_KATAKANA_FULL"</code> for use with <code>setConversionMode()</code> and <code>getConversionMode()</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#JAPANESE_KATAKANA_HALF">JAPANESE_KATAKANA_HALF</a> : <a href="../String.html">String</a>
+<div class="summaryTableDescription">[static]A string with the value <code>"JAPANESE_KATAKANA_HALF"</code> for use with <code>setConversionMode()</code> and <code>getConversionMode()</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#KOREAN">KOREAN</a> : <a href="../String.html">String</a>
+<div class="summaryTableDescription">[static]A string with the value <code>"KOREAN"</code> for use with <code>setConversionMode()</code> and <code>getConversionMode()</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#UNKNOWN">UNKNOWN</a> : <a href="../String.html">String</a>
+<div class="summaryTableDescription">[static]A string with the value <code>"UNKNOWN"</code> for use with <code>getConversionMode()</code>.</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../Object.html#__proto__">__proto__</a>, <a href="../Object.html#__resolve">__resolve</a>, <a href="../Object.html#constructor">constructor</a>, <a href="../Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function addListener(listener:<a href="../Object.html">Object</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Registers an object to receive notification when an IME event handler is invoked       by the <code>onIMEComposition</code> event.       </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">listener</span>:<a href="../Object.html">Object</a></code> &mdash; An object, with an <code>onIMEComposition</code> (readingString) method, that listens       for a callback notification from the IME event handlers. The reading string passed to       this method is in the composition mode of the IME. For example, if the user enters text       in Hiragana and then selects a Kanji candidate, the reading string is the original Hiragana.            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to add a listener object to <code>System.IME</code> that outputs      notification when a user sets the composition string by clicking in the text field.      <div class='listing'><pre>
+var IMEListener:Object = new Object();
+IMEListener.onIMEComposition = function(str:String) {
+    trace(">> onIMEComposition: " + str);
+}
+System.IME.addListener(IMEListener);
+trace(System.IME.length);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.createTextField("txt", this.getNextHighestDepth(), 0, 0, 0, 0);
+mc.txt.border = true;
+mc.txt.background = true;
+mc.txt.autoSize = "left";
+mc.txt.text = "Click this text to add a listener.";
+
+mc.onPress = function() {
+    if(System.capabilities.hasIME) {
+        Selection.setFocus(mc.txt);
+        System.IME.setCompositionString(mc.txt.text);
+    }
+}
+</pre></div>     <p></p>
+</div>
+<a name="doConversion()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">doConversion</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function doConversion():<a href="../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Instructs the IME to select the first candidate for the current composition string.       </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../Boolean.html">Boolean</a></code> &mdash; 
+Returns <code>true</code> if the call is successful; otherwise <code>false</code>.       
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to select the first candidate for the IME composition string.      If the user's system has IME, clicking in the text field selects the candidate.      <div class='listing'><pre>
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.createTextField("txt", this.getNextHighestDepth(), 0, 0, 0, 0);
+mc.txt.border = true;
+mc.txt.background = true;
+mc.txt.autoSize = "left";
+mc.txt.text = "Set this text as the composition string and convert it.";
+
+mc.onPress = function() {
+    if(System.capabilities.hasIME) {
+        Selection.setFocus(mc.txt);
+        System.IME.setCompositionString(mc.txt.text);
+        trace(System.IME.doConversion());
+    }
+}
+</pre></div>      <p></p>
+</div>
+<a name="getConversionMode()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getConversionMode</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getConversionMode():<a href="../String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Indicates the conversion mode of the current IME.       </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../String.html">String</a></code> &mdash; 
+The conversion mode. Possible values are IME mode string constants that       indicate the conversion mode:       <ul>           <li><code>ALPHANUMERIC_FULL</code></li>           <li><code>ALPHANUMERIC_HALF</code></li>            <li><code>CHINESE</code></li>           <li><code>JAPANESE_HIRAGANA</code></li>           <li><code>JAPANESE_KATAKANA_FULL</code></li>           <li><code>JAPANESE_KATAKANA_HALF</code></li>            <li><code>KOREAN</code></li>        <li><code>UNKNOWN</code></li>       </ul>       
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="IME.html#ALPHANUMERIC_FULL" target="">IME.ALPHANUMERIC_FULL</a>
+<br>
+<a href="IME.html#ALPHANUMERIC_HALF" target="">IME.ALPHANUMERIC_HALF</a>
+<br>
+<a href="IME.html#CHINESE" target="">IME.CHINESE</a>
+<br>
+<a href="IME.html#JAPANESE_HIRAGANA" target="">IME.JAPANESE_HIRAGANA</a>
+<br>
+<a href="IME.html#JAPANESE_KATAKANA_FULL" target="">IME.JAPANESE_KATAKANA_FULL</a>
+<br>
+<a href="IME.html#JAPANESE_KATAKANA_HALF" target="">IME.JAPANESE_KATAKANA_HALF</a>
+<br>
+<a href="IME.html#KOREAN" target="">IME.KOREAN</a>
+<br>
+<a href="IME.html#UNKNOWN" target="">IME.UNKNOWN</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example gets the IME if the system has an Input Method Editor (IME) installed (<code>       System.capabilities.hasIME</code>).      <div class='listing'><pre>
+var mode:String = System.IME.UNKNOWN;
+if(System.capabilities.hasIME) {
+    mode = System.IME.getConversionMode();
+}
+trace(mode);
+</pre></div>     <p></p>
+</div>
+<a name="getEnabled()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getEnabled</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getEnabled():<a href="../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Indicates whether the system IME is enabled. An enabled IME performs multibyte input;       a disabled IME performs alphanumeric input.       </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../Boolean.html">Boolean</a></code> &mdash; 
+Returns <code>true</code> if the system IME is enabled, <code>false</code> if it is       disabled.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example checks to see whether IME is enabled by calling the      <code>isEnabled()</code> method.      <div class='listing'><pre>
+if(System.capabilities.hasIME) {
+    var isImeEnabled:Boolean = System.IME.getEnabled();
+    trace(isImeEnabled);
+}
+</pre></div>     <p></p>
+</div>
+<a name="removeListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function removeListener(listener:<a href="../Object.html">Object</a>):<a href="../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Removes a listener object that was previously registered to an <code>IME</code> instance with       <code>IME.addListener()</code>.             </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">listener</span>:<a href="../Object.html">Object</a></code> &mdash; The object that no longer receives callback notification from the IME event       handlers.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../Boolean.html">Boolean</a></code> &mdash; 
+Returns <code>true</code> if the listener object is removed; otherwise <code>false</code>.               
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to remove a listener object from <code>System.IME</code>       when a user sets the composition string by clicking in the text field.      <div class='listing'><pre>
+var IMEListener:Object = new Object();
+IMEListener.onIMEComposition = function(str:String) {
+    trace(">> onIMEComposition: " + str);
+
+    System.IME.removeListener(this);
+    trace(System.IME.length);    // 0
+}
+System.IME.addListener(IMEListener);
+trace(System.IME.length);        // 1
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.createTextField("txt", this.getNextHighestDepth(), 0, 0, 0, 0);
+mc.txt.border = true;
+mc.txt.background = true;
+mc.txt.autoSize = "left";
+mc.txt.text = "Click this text to add and remove a listener.";
+
+mc.onPress = function() {
+    if(System.capabilities.hasIME) {
+        Selection.setFocus(mc.txt);
+        System.IME.setCompositionString(mc.txt.text);
+    }
+}
+</pre></div>     <p></p>
+</div>
+<a name="setCompositionString()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setCompositionString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function setCompositionString(composition:<a href="../String.html">String</a>):<a href="../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Sets the IME composition string. When this string is set, the user can select IME candidates       before committing the result to the text field that currently has focus.             </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">composition</span>:<a href="../String.html">String</a></code> &mdash; The string to send to the IME.       </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../Boolean.html">Boolean</a></code> &mdash; 
+If the IME composition string is successfully set, returns <code>true</code>.       This method fails and returns <code>false</code> if no text field has focus.       
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to set the IME composition string.      If the user's system has IME, clicking in the text field shows the IME options.      <div class='listing'><pre>
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.createTextField("txt", this.getNextHighestDepth(), 0, 0, 0, 0);
+mc.txt.border = true;
+mc.txt.background = true;
+mc.txt.autoSize = "left";
+mc.txt.text = "Set this text as the composition string.";
+
+mc.onPress = function() {
+    if(System.capabilities.hasIME) {
+        Selection.setFocus(mc.txt);
+        trace(System.IME.setCompositionString(mc.txt.text));
+    }
+}
+</pre></div>     <p></p>
+</div>
+<a name="setConversionMode()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setConversionMode</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function setConversionMode(mode:<a href="../String.html">String</a>):<a href="../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Sets the conversion mode of the current IME.       </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">mode</span>:<a href="../String.html">String</a></code> &mdash; The conversion mode. Possible values are the IME mode string constants:       <ul>           <li><code>ALPHANUMERIC_FULL</code></li>           <li><code>ALPHANUMERIC_HALF</code></li>            <li><code>CHINESE</code></li>           <li><code>JAPANESE_HIRAGANA</code></li>           <li><code>JAPANESE_KATAKANA_FULL</code></li>           <li><code>JAPANESE_KATAKANA_HALF</code></li>            <li><code>KOREAN</code></li>       </ul>       </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../Boolean.html">Boolean</a></code> &mdash; 
+Returns <code>true</code> if the conversion mode was successfully set; otherwise <code>false</code>.          
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="IME.html#ALPHANUMERIC_FULL" target="">IME.ALPHANUMERIC_FULL</a>
+<br>
+<a href="IME.html#ALPHANUMERIC_HALF" target="">IME.ALPHANUMERIC_HALF</a>
+<br>
+<a href="IME.html#CHINESE" target="">IME.CHINESE</a>
+<br>
+<a href="IME.html#JAPANESE_HIRAGANA" target="">IME.JAPANESE_HIRAGANA</a>
+<br>
+<a href="IME.html#JAPANESE_KATAKANA_FULL" target="">IME.JAPANESE_KATAKANA_FULL</a>
+<br>
+<a href="IME.html#JAPANESE_KATAKANA_HALF" target="">IME.JAPANESE_KATAKANA_HALF</a>
+<br>
+<a href="IME.html#KOREAN" target="">IME.KOREAN</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example gets the IME if the system has an Input Method Editor (IME) installed (<code>       System.capabilities.hasIME</code>)      and sets the variable <code>mode</code> to that value.      <div class='listing'><pre>
+var mode:String = System.IME.UNKNOWN;
+if(System.capabilities.hasIME) {
+    mode = System.IME.getConversionMode();
+}
+System.IME.setConversionMode(mode);
+trace(System.IME.getConversionMode());
+</pre></div>     <p></p>
+</div>
+<a name="setEnabled()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setEnabled</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function setEnabled(enabled:<a href="../Boolean.html">Boolean</a>):<a href="../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Enables or disables the system IME. An enabled IME performs multibyte input;       a disabled IME performs alphanumeric input.       </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">enabled</span>:<a href="../Boolean.html">Boolean</a></code> &mdash; Set to <code>true</code> to enable the system IME, <code>false</code> to       disable it.       </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../Boolean.html">Boolean</a></code> &mdash; 
+If the attempt to enable the system IME is successful, returns <code>true</code>; otherwise       <code>false</code>.       
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example checks to see whether IME is enabled by calling the      <code>isEnabled()</code> method and then changes its enabled state to the opposite      by calling the <code>setEnabled()</code> method.      <div class='listing'><pre>
+if(System.capabilities.hasIME) {
+    var isImeEnabled:Boolean = System.IME.getEnabled();
+    trace(isImeEnabled);
+    
+    if(isImeEnabled) {
+        System.IME.setEnabled(false);
+    }
+    else {
+        System.IME.setEnabled(true);
+    }
+
+    var isImeEnabled:Boolean = System.IME.getEnabled();
+    trace(isImeEnabled);
+}
+</pre></div>     <p></p>
+</div>
+<div class="detailSectionHeader">Event detail</div>
+<a name="event:onIMEComposition"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onIMEComposition</td><td class="detailHeaderType">event&nbsp;listener</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onIMEComposition = function([readingString:<a href="../String.html">String</a>]) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Notified when the IME composition string is being set.       To use this listener, you must create a listener object.       You can then define a function for this listener and use <code>IME.addListener()</code>       to register the listener with the IME object, as in the following code:       <div class='listing'><pre>
+var someListener:Object = new Object();
+someListener.onIMEComposition = function () {
+    // statements
+}
+System.IME.addListener(someListener);
+</pre></div>       </p><p>Listeners enable different pieces of code to cooperate because multiple       listeners can receive notification about a single event.</p>                  <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">readingString</span>:<a href="../String.html">String</a></code>&nbsp;[optional] &mdash; The original text typed into the IME before the user started       picking candidates.            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to add a listener object with the callback method      <code>onIMEComposition()</code> to <code>System.IME</code>, which outputs      notification when a user sets the composition string by clicking in the text field.      <div class='listing'><pre>
+var IMEListener:Object = new Object();
+IMEListener.onIMEComposition = function(str:String) {
+    trace(">> onIMEComposition: " + str);
+}
+System.IME.addListener(IMEListener);
+trace(System.IME.length);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.createTextField("txt", this.getNextHighestDepth(), 0, 0, 0, 0);
+mc.txt.border = true;
+mc.txt.background = true;
+mc.txt.autoSize = "left";
+mc.txt.text = "Click this text to add a listener.";
+
+mc.onPress = function() {
+    if(System.capabilities.hasIME) {
+        Selection.setFocus(mc.txt);
+        System.IME.setCompositionString(mc.txt.text);
+    }
+}
+</pre></div>      <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="IME.html#addListener()" target="">System.IME.addListener()</a>
+<br>
+<a href="IME.html#setCompositionString()" target="">System.IME.setCompositionString()</a>
+</div>
+</div>
+<a name="constantDetail"></a>
+<div class="detailSectionHeader">Constant detail</div>
+<a name="ALPHANUMERIC_FULL"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ALPHANUMERIC_FULL</td><td class="detailHeaderType">constant</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var ALPHANUMERIC_FULL:<a href="../String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>A string with the value <code>"ALPHANUMERIC_FULL"</code> for use with         <code>setConversionMode()</code> and <code>getConversionMode()</code>. This constant is used       with all IMEs.             </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="IME.html#setConversionMode()" target="">IME.setConversionMode()</a>
+<br>
+<a href="IME.html#getConversionMode()" target="">IME.getConversionMode()</a>
+<br>
+<a href="capabilities.html#hasIME" target="">capabilities.hasIME</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example sets the IME to <code>ALPHANUMERIC_FULL</code>      if the system has an Input Method Editor (IME) installed (<code>System.capabilities.hasIME</code>).      <div class='listing'><pre>
+if(System.capabilities.hasIME) {
+    trace(System.IME.getConversionMode());
+
+    System.IME.setConversionMode(System.IME.ALPHANUMERIC_FULL);
+    trace(System.IME.getConversionMode());
+}
+</pre></div>      <p></p>
+</div>
+<a name="ALPHANUMERIC_HALF"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ALPHANUMERIC_HALF</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var ALPHANUMERIC_HALF:<a href="../String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>A string with the value <code>"ALPHANUMERIC_HALF"</code> for use with       <code>setConversionMode()</code> and <code>getConversionMode()</code>. This constant is used       with all IMEs.             </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="IME.html#setConversionMode()" target="">IME.setConversionMode()</a>
+<br>
+<a href="IME.html#getConversionMode()" target="">IME.getConversionMode()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example sets the IME to <code>ALPHANUMERIC_HALF</code>      if the system has an Input Method Editor (IME) installed (<code>System.capabilities.hasIME</code>).      <div class='listing'><pre>
+if(System.capabilities.hasIME) {
+    trace(System.IME.getConversionMode());
+
+    System.IME.setConversionMode(System.IME.ALPHANUMERIC_HALF);
+    trace(System.IME.getConversionMode());
+}
+</pre></div>     <p></p>
+</div>
+<a name="CHINESE"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">CHINESE</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var CHINESE:<a href="../String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>A string with the value <code>"CHINESE"</code> for use with       <code>setConversionMode()</code> and <code>getConversionMode()</code>. This constant is used       with simplified and traditional Chinese IMEs.             </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="IME.html#setConversionMode()" target="">IME.setConversionMode()</a>
+<br>
+<a href="IME.html#getConversionMode()" target="">IME.getConversionMode()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example sets the IME to <code>CHINESE</code>      if the system has an Input Method Editor (IME) installed (<code>System.capabilities.hasIME</code>).      <div class='listing'><pre>
+if(System.capabilities.hasIME) {
+    trace(System.IME.getConversionMode());
+
+    System.IME.setConversionMode(System.IME.CHINESE);
+    trace(System.IME.getConversionMode());
+}
+</pre></div>     <p></p>
+</div>
+<a name="JAPANESE_HIRAGANA"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">JAPANESE_HIRAGANA</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var JAPANESE_HIRAGANA:<a href="../String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>A string with the value <code>"JAPANESE_HIRAGANA"</code> for use with       <code>setConversionMode()</code> and <code>getConversionMode()</code>.       This constant is used with Japanese IMEs.             </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="IME.html#setConversionMode()" target="">IME.setConversionMode()</a>
+<br>
+<a href="IME.html#getConversionMode()" target="">IME.getConversionMode()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example sets the IME to <code>JAPANESE_HIRAGANA</code>      if the system has an Input Method Editor (IME) installed (<code>System.capabilities.hasIME</code>).      <div class='listing'><pre>
+if(System.capabilities.hasIME) {
+    trace(System.IME.getConversionMode());
+
+    System.IME.setConversionMode(System.IME.JAPANESE_HIRAGANA);
+    trace(System.IME.getConversionMode());
+}
+</pre></div>     <p></p>
+</div>
+<a name="JAPANESE_KATAKANA_FULL"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">JAPANESE_KATAKANA_FULL</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var JAPANESE_KATAKANA_FULL:<a href="../String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>A string with the value <code>"JAPANESE_KATAKANA_FULL"</code> for use with       <code>setConversionMode()</code> and <code>getConversionMode()</code>.       This constant is used with Japanese IMEs.             </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="IME.html#setConversionMode()" target="">IME.setConversionMode()</a>
+<br>
+<a href="IME.html#getConversionMode()" target="">IME.getConversionMode()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example sets the IME to <code>JAPANESE_KATAKANA_FULL</code>      if the system has an Input Method Editor (IME) installed (<code>System.capabilities.hasIME</code>).      <div class='listing'><pre>
+if(System.capabilities.hasIME) {
+    trace(System.IME.getConversionMode());
+
+    System.IME.setConversionMode(System.IME.JAPANESE_KATAKANA_FULL);
+    trace(System.IME.getConversionMode());
+}
+</pre></div>     <p></p>
+</div>
+<a name="JAPANESE_KATAKANA_HALF"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">JAPANESE_KATAKANA_HALF</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var JAPANESE_KATAKANA_HALF:<a href="../String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>A string with the value <code>"JAPANESE_KATAKANA_HALF"</code> for use with       <code>setConversionMode()</code> and <code>getConversionMode()</code>.       This constant is used with Japanese IMEs.             </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="IME.html#setConversionMode()" target="">IME.setConversionMode()</a>
+<br>
+<a href="IME.html#getConversionMode()" target="">IME.getConversionMode()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example sets the IME to <code>JAPANESE_KATAKANA_HALF</code>      if the system has an Input Method Editor (IME) installed (<code>System.capabilities.hasIME</code>).      <div class='listing'><pre>
+if(System.capabilities.hasIME) {
+    trace(System.IME.getConversionMode());
+
+    System.IME.setConversionMode(System.IME.JAPANESE_KATAKANA_HALF);
+    trace(System.IME.getConversionMode());
+}
+</pre></div>     <p></p>
+</div>
+<a name="KOREAN"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">KOREAN</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var KOREAN:<a href="../String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>A string with the value <code>"KOREAN"</code> for use with       <code>setConversionMode()</code> and <code>getConversionMode()</code>. This constant is used       with Korean IMEs.             </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="IME.html#setConversionMode()" target="">IME.setConversionMode()</a>
+<br>
+<a href="IME.html#getConversionMode()" target="">IME.getConversionMode()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example sets the IME to <code>KOREAN</code>      if the system has an Input Method Editor (IME) installed (<code>System.capabilities.hasIME</code>).      <div class='listing'><pre>
+if(System.capabilities.hasIME) {
+    trace(System.IME.getConversionMode());
+
+    System.IME.setConversionMode(System.IME.KOREAN);
+    trace(System.IME.getConversionMode());
+}
+</pre></div>     <p></p>
+</div>
+<a name="UNKNOWN"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">UNKNOWN</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var UNKNOWN:<a href="../String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>A string with the value <code>"UNKNOWN"</code> for use with        <code>getConversionMode()</code>.       This constant is used with all IMEs.             </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="IME.html#getConversionMode()" target="">IME.getConversionMode()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example sets the IME to <code>UNKNOWN</code>      if the system has an Input Method Editor (IME) installed (<code>System.capabilities.hasIME</code>).      <div class='listing'><pre>
+if(System.capabilities.hasIME) {
+    trace(System.IME.getConversionMode());
+
+    System.IME.setConversionMode(System.IME.UNKNOWN);
+    trace(System.IME.getConversionMode());
+}
+</pre></div>     <p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

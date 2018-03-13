@@ -1,0 +1,889 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="print.css" type="text/css" media="print">
+<meta content="MovieClipLoader,checkPolicyFile,addListener,getProgress,loadClip,removeListener,unloadClip" name="keywords">
+<title>MovieClipLoader</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="asdoc.js"></script><script type="text/javascript" language="javascript" src="cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'MovieClipLoader - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('all-classes.html')" href="package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('all-classes.html')" href="class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('index-list.html')" href="all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="index.html?MovieClipLoader.html&amp;class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;MovieClipLoader</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class MovieClipLoader"); titleBar_setSubNav(false,true,false,false,true,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">Top Level</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class MovieClipLoader</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">MovieClipLoader <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="images/inherit-arrow.gif"> <a href="Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p>
+<p></p>This class lets you implement listener callbacks that provide status information while SWF, JPEG,   GIF, and PNG files are being loaded into movie clips. To use MovieClipLoader features,   use <code>MovieClipLoader.loadClip()</code> instead of <code>loadMovie()</code> or   <code>MovieClip.loadMovie()</code> to load SWF files.    <p><b>Note:</b> MovieClipLoader support for GIF and PNG file formats was new to Flash 8. If you import   a project from an earlier version of the tool, you need to update the Publish settings to target   Flash 8, or later, otherwise only SWF and JPEG file formats will work.</p>     <p>After you issue the <code>MovieClipLoader.loadClip()</code> command, the following events take   place in the order listed:</p>     <ul><li>When the first bytes of the downloaded file have been written to the hard disk, the   <code>MovieClipLoader.onLoadStart</code> listener is invoked.</li>     <li>If you have implemented the <code>MovieClipLoader.onLoadProgress</code> listener, it is invoked   during the loading process.<br />   <strong>Note:</strong> You can call <code>MovieClipLoader.getProgress()</code> at any time during   the load process.</li>     <li>When the entire downloaded file has been written to the hard disk, the   <code>MovieClipLoader.onLoadComplete</code> listener is invoked.</li>     <li>When the downloaded file's first frame actions have been executed, the   <code>MovieClipLoader.onLoadInit</code> listener is invoked.</li></ul>     <p>When <code>MovieClipLoader.onLoadInit</code> has been invoked, you can set properties, use   methods, and otherwise interact with the loaded movie.</p>     <p>If the file fails to load completely, the <code>MovieClipLoader.onLoadError</code> listener is   invoked.</p>   <p><strong>Note:</strong> Some browsers' caching of files locally may interfere with MovieClipLoader events.   While developing SWF files, clear your browser's cache before testing MovieClipLoader events. </p>   <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#checkPolicyFile">checkPolicyFile</a> : <a href="Boolean.html">Boolean</a>
+<div class="summaryTableDescription">Specifies whether Flash Player should attempt to download a policy file from the loaded object's server before beginning to load the object itself.</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="Object.html#__proto__">__proto__</a>, <a href="Object.html#__resolve">__resolve</a>, <a href="Object.html#constructor">constructor</a>, <a href="Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#MovieClipLoader()">MovieClipLoader</a>()</div>
+<div class="summaryTableDescription">Creates a MovieClipLoader object that you can use to implement a number of listeners to respond to events while a SWF, JPEG, GIF, or PNG file is downloading.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addListener()">addListener</a>(listener:<a href="Object.html">Object</a>):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Registers an object to receive notification when a <code>MovieClipLoader</code> event handler is invoked.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getProgress()">getProgress</a>(target:<a href="Object.html">Object</a>):<a href="Object.html">Object</a>
+</div>
+<div class="summaryTableDescription">Returns the number of bytes loaded and the total number of bytes of a file that is being loaded by using <code>MovieClipLoader.loadClip()</code>; for compressed movies, returns the number of compressed bytes.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#loadClip()">loadClip</a>(url:<a href="String.html">String</a>, target:<a href="Object.html">Object</a>):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Loads a SWF, JPEG, progressive JPEG, unanimated GIF, or PNG file into a movie clip in Flash Player while the original movie is playing.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeListener()">removeListener</a>(listener:<a href="Object.html">Object</a>):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Removes the listener that was used to receive notification when a <code>MovieClipLoader</code> event handler was invoked.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#unloadClip()">unloadClip</a>(target:<a href="Object.html">Object</a>):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Removes a movie clip that was loaded by using <code>MovieClipLoader.loadClip()</code>.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="Object.html#addProperty()">addProperty</a>, <a href="Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="Object.html#registerClass()">registerClass</a>, <a href="Object.html#toString()">toString</a>, <a href="Object.html#unwatch()">unwatch</a>, <a href="Object.html#valueOf()">valueOf</a>, <a href="Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<a name="eventSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Events</div>
+<table id="summaryTableEvent" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Event</th><th>Summary</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onLoadComplete">onLoadComplete</a> = function([target_mc:<a href="MovieClip.html">MovieClip</a>], [httpStatus:<a href="Number.html">Number</a>]) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked when a file that was loaded with <code>MovieClipLoader.loadClip()</code> is completely downloaded.</td><td class="summaryTableOwnerCol">MovieClipLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onLoadError">onLoadError</a> = function(target_mc:<a href="MovieClip.html">MovieClip</a>, errorCode:<a href="String.html">String</a>, [httpStatus:<a href="Number.html">Number</a>]) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked when a file loaded with <code>MovieClipLoader.loadClip()</code> has failed to load.</td><td class="summaryTableOwnerCol">MovieClipLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onLoadInit">onLoadInit</a> = function([target_mc:<a href="MovieClip.html">MovieClip</a>]) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked when the actions on the first frame of the loaded clip have been executed.</td><td class="summaryTableOwnerCol">MovieClipLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onLoadProgress">onLoadProgress</a> = function([target_mc:<a href="MovieClip.html">MovieClip</a>], loadedBytes:<a href="Number.html">Number</a>, totalBytes:<a href="Number.html">Number</a>) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked every time the loading content is written to the hard disk during the loading process (that is, between <code>MovieClipLoader.onLoadStart</code> and <code>MovieClipLoader.onLoadComplete</code>).</td><td class="summaryTableOwnerCol">MovieClipLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onLoadStart">onLoadStart</a> = function([target_mc:<a href="MovieClip.html">MovieClip</a>]) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked when a call to <code>MovieClipLoader.loadClip()</code> has begun to download a file.</td><td class="summaryTableOwnerCol">MovieClipLoader</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="checkPolicyFile"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">checkPolicyFile</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var checkPolicyFile:<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 9</td>
+</tr>
+</table>
+<p></p><p>Specifies whether Flash Player should attempt to download a policy file from the       loaded object's server before beginning to load the object itself.            </p><p>Set this flag to <code>true</code> when you are loading an image (JPG, GIF, or PNG) from outside the calling       SWF file's own domain and you expect to access the content of that image using       <code>BitmapData.draw()</code>.  If you attempt this operation without having specified       <code>checkPolicyFile</code> at loading time, you may encounter a security error because the       needed policy file has not been downloaded yet.</p>            <p>When you call <code>MovieClipLoader.loadClip()</code> with <code>checkPolicyFile</code> set to       <code>true</code>, Flash Player does not begin downloading the object specified in your <code>url</code>       until it has either successfully downloaded a relevant policy file or discovered       that no such policy file exists.  Flash Player first considers policy files that have already       been downloaded, then attempts to download any pending policy files specified in calls to       <code>System.ecurity.loadPolicyFile()</code>, then attempts to download a policy file from the       default location that corresponds to <code>url</code>, which is <code>/crossdomain.xml</code>       on the same server as <code>url</code>.  In all cases, Flash Player requires that the given       policy file exists on its server, that the file provides access to the object at <code>url</code> by       virtue of the policy file's location, and that the file permits access by the domain of the calling       SWF file by virtue of one or more <code>&lt;allow-access-from&gt;</code> tags.</p>            <p>If you set <code>checkPolicyFile</code> to <code>true</code>, Flash Player waits until policy file completion       to begin the main download that you specify in <code>MovieClipLoader.loadClip()</code>.  Thus,       as long as the policy file that you need exists, as soon as you have received any event       notifications from your <code>MovieClipLoader</code>, the policy file download is complete and       you can safely begin performing operations that require the policy file.</p>            <p>If you set <code>checkPolicyFile</code> to <code>true</code>, and no relevant policy file is found, you do       not receive any error indication until you attempt an operation that causes a security error.</p>            <p>Try to avoid setting <code>checkPolicyFile</code> to <code>true</code> if you will not be needing pixel-level       access to the image that you are loading.  Checking for a policy file in this case is wasteful,       because it may delay the start of your download, and may consume network bandwidth unnecessarily.</p>            <p>Also try to avoid setting <code>checkPolicyFile</code> to true if you are using       <code>MovieClipLoader.loadClip()</code> to download a SWF file.  This is because SWF-to-SWF       permissions are not controlled by policy files, but rather by <code>Security.allowDomain()</code>,       and <code>checkPolicyFile</code> has no effect when you load a SWF file.  Checking for a policy       file in this case is wasteful because it may delay the start of your SWF download and may       consume network bandwidth unnecessarily.  (Flash Player cannot tell whether your main download       will be a SWF file or an image, because the policy file download occurs before the main download.)</p>            <p>Be careful with <code>checkPolicyFile</code> if you are downloading an object from a URL that       may use server-side HTTP redirects.  Flash Player always attempts to retrieve policy files       that correspond to the initial URL that you specify in <code>loadClip</code>.  If the final       object comes from a different URL because of HTTP redirects, then the initially downloaded policy       file(s) might not be applicable to the object's final URL, which is the URL that matters in       security decisions.</p>            </div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="MovieClipLoader()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">MovieClipLoader</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function MovieClipLoader()</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Creates a MovieClipLoader object that you can use to implement a number of listeners to respond to   events while a SWF, JPEG, GIF, or PNG file is downloading.    </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="MovieClipLoader.html#addListener()" target="">MovieClipLoader.addListener()</a>
+<br>
+<a href="MovieClipLoader.html#loadClip()" target="">MovieClipLoader.loadClip()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>See <code>MovieClipLoader.loadClip()</code>.     <p></p>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addListener(listener:<a href="Object.html">Object</a>):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Registers an object to receive notification when a <code>MovieClipLoader</code> event handler is invoked.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">listener</span>:<a href="Object.html">Object</a></code> &mdash; An object that listens for a callback notification from the <code>MovieClipLoader</code>       event handlers.                 </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+A Boolean value. Returns <code>true</code> if       the listener was established successfully; otherwise <code>false</code>.                 
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="MovieClipLoader.html#event:onLoadComplete" target="">MovieClipLoader.onLoadComplete</a>
+<br>
+<a href="MovieClipLoader.html#event:onLoadError" target="">MovieClipLoader.onLoadError</a>
+<br>
+<a href="MovieClipLoader.html#event:onLoadInit" target="">MovieClipLoader.onLoadInit</a>
+<br>
+<a href="MovieClipLoader.html#event:onLoadProgress" target="">MovieClipLoader.onLoadProgress</a>
+<br>
+<a href="MovieClipLoader.html#event:onLoadStart" target="">MovieClipLoader.onLoadStart</a>
+<br>
+<a href="MovieClipLoader.html#removeListener()" target="">MovieClipLoader.removeListener()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example loads an image into a movie clip called <code>image_mc</code>.       The movie clip instance is rotated and centered on the Stage, and both the Stage and movie clip       have a stroke drawn around their perimeters.             <div class='listing'><pre>
+this.createEmptyMovieClip("image_mc", this.getNextHighestDepth());
+var mclListener:Object = new Object();
+mclListener.onLoadInit = function(target_mc:MovieClip) {
+    target_mc._x = Stage.width/2-target_mc._width/2;
+    target_mc._y = Stage.height/2-target_mc._height/2;
+    var w:Number = target_mc._width;
+    var h:Number = target_mc._height;
+    target_mc.lineStyle(4, 0x000000);
+    target_mc.moveTo(0, 0);
+    target_mc.lineTo(w, 0);
+    target_mc.lineTo(w, h);
+    target_mc.lineTo(0, h);
+    target_mc.lineTo(0, 0);
+    target_mc._rotation = 3;
+};
+var image_mcl:MovieClipLoader = new MovieClipLoader();
+image_mcl.addListener(mclListener);
+image_mcl.loadClip("http://www.helpexamples.com/flash/images/image1.jpg", image_mc);
+</pre></div>            <p>If your SWF file includes a version 2 component, use the version 2 component's       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method,       which is used in this example.       </p>             <p></p>
+</div>
+<a name="getProgress()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getProgress</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getProgress(target:<a href="Object.html">Object</a>):<a href="Object.html">Object</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Returns the number of bytes loaded and the total number of bytes of a file that is being loaded by       using <code>MovieClipLoader.loadClip()</code>; for compressed movies,         returns the number of       compressed bytes. The <code>getProgress</code> method lets you explicitly request this       information, instead of (or in addition to) writing a       <code>MovieClipLoader.onLoadProgress</code> listener function.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">target</span>:<a href="Object.html">Object</a></code> &mdash; A SWF, JPEG, GIF, or PNG file that is loaded by using       <code>MovieClipLoader.loadClip()</code>.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Object.html">Object</a></code> &mdash; 
+An object that has two integer properties: <code>bytesLoaded</code> and       <code>bytesTotal</code>.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="MovieClipLoader.html#loadClip()" target="">MovieClipLoader.loadClip()</a>
+<br>
+<a href="MovieClipLoader.html#event:onLoadProgress" target="">MovieClipLoader.onLoadProgress</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example demonstrates the use of the <code>getProgress()</code> method.       Rather than using this method, you will usually create a listener object to listen for       the <code>onLoadProgress</code> event. Also note that       the first, synchronous call to <code>getProgress()</code> can return the number of bytes loaded and the total number of bytes of       the <i>container</i> and not the values for the externally requested object.       <div class='listing'><pre>
+var container:MovieClip = this.createEmptyMovieClip("container", this.getNextHighestDepth());
+var image:MovieClip = container.createEmptyMovieClip("image", container.getNextHighestDepth());
+
+var mcLoader:MovieClipLoader = new MovieClipLoader();
+var listener:Object = new Object();
+listener.onLoadProgress = function(target:MovieClip, bytesLoaded:Number, bytesTotal:Number):Void {
+    trace(target + ".onLoadProgress with " + bytesLoaded + " bytes of " + bytesTotal);            
+}
+mcLoader.addListener(listener);
+mcLoader.loadClip("http://www.w3.org/Icons/w3c_main.png", image);
+
+var interval:Object = new Object();
+interval.id = setInterval(checkProgress, 100, mcLoader, image, interval);
+
+function checkProgress(mcLoader:MovieClipLoader, image:MovieClip, interval:Object):Void {
+    trace(">> checking progress now with : " + interval.id);
+    var progress:Object = mcLoader.getProgress(image);
+    trace("bytesLoaded: " + progress.bytesLoaded + " bytesTotal: " + progress.bytesTotal);
+    if(progress.bytesLoaded == progress.bytesTotal) {
+        clearInterval(interval.id);
+    }
+}
+</pre></div>            <p>If your SWF file includes a version 2 component, use the version 2 component's       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method,       which is used in this example.       </p>             <p></p>
+</div>
+<a name="loadClip()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">loadClip</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function loadClip(url:<a href="String.html">String</a>, target:<a href="Object.html">Object</a>):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7 &mdash; Support for unanimated GIF files, PNG files, and progressive JPEG files is available as of Flash Player 8.</td>
+</tr>
+</table>
+<p></p><p>Loads a SWF, JPEG, progressive JPEG, unanimated GIF, or PNG file into a movie clip in Flash Player while the original movie       is playing. If you load an animated GIF, only the first frame is displayed.       Using this method you can display several SWF files at once and switch between SWF files       without loading another HTML document.             </p><p>Using the <code>loadClip()</code> method instead of <code>loadMovie()</code> or       <code>MovieClip.loadMovie()</code>       has a number of advantages. The following handlers are implemented by the use of a listener       object. You activate the listener by registering it with the MovieClipLoader class by using       <code>MovieClipLoader.addListener(listenerObject)</code>.</p>             <ul>               <li>The <code>MovieClipLoader.onLoadStart</code> handler is invoked when loading begins.</li>               <li>The <code>MovieClipLoader.onLoadError</code> handler is invoked if the clip cannot be loaded.       </li>               <li>The <code>MovieClipLoader.onLoadProgress</code> handler is invoked as the loading process       progresses.       </li>               <li>The <code>MovieClipLoader.onLoadComplete</code> handler is invoked when a file       completes downloading, but before the loaded movie clip's methods and properties are available.       This handler is called before the <code>onLoadInit</code> handler.</li>               <li>The <code>MovieClipLoader.onLoadInit</code> handler is invoked after the actions in the       first frame of the clip have executed, so you can begin manipulating the loaded clip. This       handler is called after the <code>onLoadComplete</code> handler. For most purposes,       use the <code>onLoadInit</code> handler.</li>       </ul>             <p>A SWF file or image loaded into a movie clip inherits the position, rotation, and scale       properties of the movie clip. You can use the target path of the movie clip to target the       loaded movie.</p>             <p>You can use the <code>loadClip()</code> method to load one or more files into a single movie       clip or level; MovieClipLoader listener objects are passed to the loading target movie clip       instance as parameters. Alternatively, you can create a different MovieClipLoader       object for each file that you load.</p>             <p>Use <code>MovieClipLoader.unloadClip()</code> to remove movies or images loaded with this       method or to cancel a load operation that is in progress.</p>             <p><code>MovieClipLoader.getProgress()</code> and       <code>MovieClipLoaderListener.onLoadProgress</code> do not report the actual       <code>bytesLoaded</code> and <code>bytesTotal</code> values in the authoring player when the       files are local. When you use the Bandwidth Profiler feature in the authoring environment,       <code>MovieClipLoader.getProgress() </code>and       <code>MovieClipLoaderListener.onLoadProgress</code> report the download at the actual download       rate, not at the reduced bandwidth rate that the Bandwidth Profiler provides. </p>            <p>When using this method, consider the Flash Player security model. </p>                  <ul>          <li>Loading is not allowed if the calling movie clip is in the local-with-file-system sandbox and the loaded movie clip is from a network sandbox. </li>          <li>Loading is not allowed if the calling SWF file is in a network sandbox and the movie clip to be loaded is local. </li>          <li>Network sandbox access from the local-trusted or local-with-networking sandbox requires permission from the website by means of a policy file. </li>          <li>Movie clips in the local-with-file-system sandbox may not script movie clips in the local-with-networking sandbox (and the reverse is also prevented). </li>        <li>You cannot connect to commonly reserved ports. For a complete list of blocked       ports, see the <code>system.Security.loadPolicyFile()</code> entry.</li>            </ul>                 <p>For more information related to security, see the following: </p>            <ul>          <li>"Understanding Security" in <i>Learning ActionScript 2.0 in Flash</i></li>       <li>The Flash Player Developer Center Topic:       <a href="http://www.adobe.com/go/devnet_security_en" target="external">Security</a></li>       </ul>            <p><strong>Note:</strong> IPv6 (Internet Protocol version 6) is supported<span platform="actionscript"> in       Flash Player 9.0.115.0 and later</span>.            IPv6 is a version of Internet Protocol that supports       128-bit addresses (an improvement on the earlier IPv4 protocol that supports 32-bit       addresses). You might need to activate IPv6 on your networking interfaces. For more       information, see the Help for the operating system hosting the data.       If IPv6 is supported on the hosting system, you can specify numeric IPv6 literal addresses       in URLs enclosed in brackets ([])<span platform="actionscript">, as in the following</span>. </p>             <span platform="actionscript">       <pre>
+      rtmp://[2001:db8:ccc3:ffff:0:444d:555e:666f]:1935/test
+      </pre>       </span>       </p>                 <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">url</span>:<a href="String.html">String</a></code> &mdash; The absolute or relative URL of the SWF, JPEG, GIF, or PNG file to be loaded. A       relative path must be relative to the SWF file at level 0. Absolute URLs must include the       protocol reference, such as http:// or file:///. Filenames cannot include disk drive       specifications.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">target</span>:<a href="Object.html">Object</a></code> &mdash; The target path of a movie clip, or an integer specifying the level in Flash       Player into which the movie will be loaded. The target movie clip is replaced by the loaded SWF       file or image.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+A Boolean value. Returns <code>true</code> if the URL request was sent       successfully; otherwise <code>false</code>.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="MovieClipLoader.html#event:onLoadInit" target="">MovieClipLoader.onLoadInit</a>
+<br>
+<a href="System/security.html#loadPolicyFile()" target="">System.security.loadPolicyFile() for a list of reserved ports</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to use the <code>MovieClipLoader.loadClip()</code>       method by creating a handler for the <code>onLoadInit</code> event and then making the request.       <p>You should either place the following code directly into a frame action on a Timeline, or       paste it into a class that extends MovieClip. This code also expects an image named YourImage.jpg       to exist in the same directory as the compiled SWF file.</p>             <div class='listing'><pre>
+var container:MovieClip = createEmptyMovieClip("container", getNextHighestDepth());
+var mcLoader:MovieClipLoader = new MovieClipLoader();
+mcLoader.addListener(this);
+mcLoader.loadClip("YourImage.jpg", container);
+
+function onLoadInit(mc:MovieClip) {
+    trace("onLoadInit: " + mc);
+}
+</pre></div>             <p>If your SWF file includes a version 2 component, use the version 2 component's       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method,       which is used in this example.       </p>             <p></p>
+</div>
+<a name="removeListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeListener(listener:<a href="Object.html">Object</a>):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Removes the listener that was used to receive notification when a <code>MovieClipLoader</code>       event handler was invoked. No further loading messages will be received.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">listener</span>:<a href="Object.html">Object</a></code> &mdash; A listener object that was added by using       <code>MovieClipLoader.addListener()</code>.                 </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+A Boolean value. Returns <code>true</code> if the listener was removed       successfully; otherwise <code>false</code>.                
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="MovieClipLoader.html#addListener()" target="">MovieClipLoader.addListener()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example loads an image into a movie clip, and enables the user to start       and stop the loading process using two buttons called <code>start_button</code> and       <code>stop_button</code>. <span class="flashonly">When the user starts or stops the progress,       information is displayed in the Output panel.</span><span class="flexonly">When the user starts       or stops the progress, information writes to the log file.</span>             <div class='listing'><pre>
+this.createEmptyMovieClip("image_mc", this.getNextHighestDepth());
+var mclListener:Object = new Object();
+mclListener.onLoadStart = function(target_mc:MovieClip) {
+    trace("\t onLoadStart");
+};
+mclListener.onLoadComplete = function(target_mc:MovieClip) {
+    trace("\t onLoadComplete");
+};
+mclListener.onLoadError = function(target_mc:MovieClip, errorCode:String) {
+    trace("\t onLoadError: "+errorCode);
+};
+mclListener.onLoadInit = function(target_mc:MovieClip) {
+    trace("\t onLoadInit");
+    start_button.enabled = true;
+    stop_button.enabled = false;
+};
+var image_mcl:MovieClipLoader = new MovieClipLoader();
+//
+start_button.clickHandler = function() {
+    trace("Starting...");
+    start_button.enabled = false;
+    stop_button.enabled = true;
+    //
+    image_mcl.addListener(mclListener);
+    image_mcl.loadClip("http://www.helpexamples.com/flash/images/image1.jpg", image_mc);
+};
+stop_button.clickHandler = function() {
+    trace("Stopping...");
+    start_button.enabled = true;
+    stop_button.enabled = false;
+    //
+    image_mcl.removeListener(mclListener);
+};
+stop_button.enabled = false;
+</pre></div>            <p>If your SWF file includes a version 2 component, use the version 2 component's       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method,       which is used in this example.       </p>             <p></p>
+</div>
+<a name="unloadClip()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">unloadClip</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function unloadClip(target:<a href="Object.html">Object</a>):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Removes a movie clip that was loaded by using <code>MovieClipLoader.loadClip()</code>. If       you issue this command while a movie is loading, <code>MovieClipLoader.onLoadError</code> is       invoked.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">target</span>:<a href="Object.html">Object</a></code> &mdash; The string or integer that is passed to the corresponding call to       <code>my_mcl.loadClip()</code>.                      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+A Boolean value. Returns <code>true</code> if the movie clip was removed       successfully; otherwise <code>false</code>.                
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="MovieClipLoader.html#loadClip()" target="">MovieClipLoader.loadClip()</a>
+<br>
+<a href="MovieClipLoader.html#event:onLoadError" target="">MovieClipLoader.onLoadError</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example loads an image into a movie clip called <code>image_mc</code>.       <span class="flashonly">When you click the movie clip, the movie clip is removed and information       is displayed in the Output panel.</span><span class="flexonly">When you click the movie clip, the       movie clip is removed and information writes to the log file.</span>             <div class='listing'><pre>
+this.createEmptyMovieClip("image_mc", this.getNextHighestDepth());
+var mclListener:Object = new Object();
+mclListener.onLoadInit = function(target_mc:MovieClip) {
+    target_mc._x = 100;
+    target_mc._y = 100;
+    target_mc.onRelease = function() {
+    trace("Unloading clip...");
+    trace("\t name: "+target_mc._name);
+    trace("\t url:  "+target_mc._url);
+    image_mcl.unloadClip(target_mc);
+    };
+};
+var image_mcl:MovieClipLoader = new MovieClipLoader();
+image_mcl.addListener(mclListener);
+image_mcl.loadClip("http://www.helpexamples.com/flash/images/image1.jpg", image_mc);
+</pre></div>            <p>If your SWF file includes a version 2 component, use the version 2 component's       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method,       which is used in this example.       </p>                  <p></p>
+</div>
+<div class="detailSectionHeader">Event detail</div>
+<a name="event:onLoadComplete"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onLoadComplete</td><td class="detailHeaderType">event&nbsp;listener</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onLoadComplete = function([target_mc:<a href="MovieClip.html">MovieClip</a>], [httpStatus:<a href="Number.html">Number</a>]) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7 &mdash; Support for unanimated GIF files, PNG files, and progressive JPEG files is available as of Flash Player 8.</td>
+</tr>
+</table>
+<p></p><p>Invoked when a file that was loaded with <code>MovieClipLoader.loadClip()</code> is       completely downloaded. Call this listener on a listener object that you       add using <code>MovieClipLoader.addListener()</code>. The       <code>onLoadComplete</code> event listener is passed by Flash Player to your code, but you do not       have to implement all of the parameters in the listener function.             The value for <code>target_mc</code> identifies the movie clip       for which this call is being made. This identification is useful when multiple files are being       loaded with the same set of listeners.             </p><p>In Flash Player 8, or later, this listener can return an HTTP status code. If Flash Player cannot       get the status code from the server, or if Flash Player cannot communicate with the       server, the default value of 0 is passed to your ActionScript code. A value of 0 can be       generated in any player (for example, if a malformed URL is requested), and a value of 0 is always generated       by the Flash Player plug-in when run in the following browsers, which cannot pass HTTP       status codes from the server to Flash Player: Netscape, Mozilla,  Safari, Opera, and Internet Explorer       for the Macintosh.</p>             <p>It's important to understand the difference between <code>MovieClipLoader.onLoadComplete</code>       and <code>MovieClipLoader.onLoadInit</code>. The <code>onLoadComplete</code> event is called       after the SWF, JPEG, GIF, or PNG file loads, but before the application is initialized.       At this point, it is       impossible to access the loaded movie clip's methods and properties, and therefore you       cannot call a function, move to a specific frame, and so on. In most situations, it's better to       use the <code>onLoadInit</code> event instead, which is called after the content is loaded and       fully initialized.</p>             <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">target_mc</span>:<a href="MovieClip.html">MovieClip</a></code>&nbsp;[optional] &mdash; A movie clip loaded by the <code>MovieClipLoader.loadClip()</code> method.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">httpStatus</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; (Flash Player 8 or later, only) The HTTP status code       returned by the server. For example, a status code of 404 indicates that the server has not       found anything matching the requested URI.        For more information about HTTP status codes, see sections 10.4 and 10.5       of the HTTP specification at       <a target="mm_external" href="ftp://ftp.isi.edu/in-notes/rfc2616.txt">ftp://ftp.isi.edu/in-notes/rfc2616.txt</a>.            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a movie clip, a new <code>MovieClipLoader</code> instance,       and an anonymous event listener which listens for the <code>onLoadComplete</code> event but       waits for an <code>onLoadInit</code> event to interact with the loaded element properties.       <div class='listing'><pre>
+var loadListener:Object = new Object();
+
+loadListener.onLoadComplete = function(target_mc:MovieClip, httpStatus:Number):Void {
+    trace(">> loadListener.onLoadComplete()");
+    trace(">> =============================");
+    trace(">> target_mc._width: " + target_mc._width);    // 0
+    trace(">> httpStatus: " + httpStatus);
+}
+
+loadListener.onLoadInit = function(target_mc:MovieClip):Void {
+    trace(">> loadListener.onLoadInit()");
+    trace(">> =============================");
+    trace(">> target_mc._width: " + target_mc._width);    // 315
+}
+
+var mcLoader:MovieClipLoader = new MovieClipLoader();
+mcLoader.addListener(loadListener);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mcLoader.loadClip("http://www.w3.org/Icons/w3c_main.png", mc);
+</pre></div>            <p>If your SWF file includes a version 2 component, use the version 2 component's       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method,       which is used in this example.       </p>             <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="MovieClipLoader.html#addListener()" target="">MovieClipLoader.addListener()</a>
+<br>
+<a href="MovieClipLoader.html#loadClip()" target="">MovieClipLoader.loadClip()</a>
+<br>
+<a href="MovieClipLoader.html#event:onLoadStart" target="">MovieClipLoader.onLoadStart</a>
+<br>
+<a href="MovieClipLoader.html#event:onLoadError" target="">MovieClipLoader.onLoadError</a>
+<br>
+<a href="MovieClipLoader.html#event:onLoadInit" target="">MovieClipLoader.onLoadInit</a>
+</div>
+</div>
+<a name="event:onLoadError"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onLoadError</td><td class="detailHeaderType">event&nbsp;listener</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onLoadError = function(target_mc:<a href="MovieClip.html">MovieClip</a>, errorCode:<a href="String.html">String</a>, [httpStatus:<a href="Number.html">Number</a>]) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Invoked when a file loaded with <code>MovieClipLoader.loadClip()</code> has failed to       load. This listener can be invoked for various reasons; for example, if the server is       down, the file is not found, or a security violation occurs.             </p><p>Call this listener on a listener object that you       add by using <code>MovieClipLoader.addListener()</code>.</p>            <p>The value of <code>target_mc</code> identifies the movie clip for which this call is being made.       This parameter is useful if you are loading multiple files with the same set of listeners.</p>             <p>For the <code>errorCode</code> parameter, the string <code>"URLNotFound"</code> is returned if neither the <code>MovieClipLoader.onLoadStart</code>       or <code>MovieClipLoader.onLoadComplete</code> listener has been called; for example, if a       server is down or the file is not found. The string <code>"LoadNeverCompleted"</code> is       returned if <code>MovieClipLoader.onLoadStart</code> was called but       <code>MovieClipLoader.onLoadComplete</code> was not called; for example, if       the download was interrupted because of server overload, server crash, and so on.</p>             <p>In Flash Player 8 or later, this listener can return an HTTP status code in the <code>httpStatus</code>       parameter. If Flash Player cannot get a status code from the server, or if Flash Player       cannot communicate with the server, the default value of 0 is passed to your ActionScript code.       A value of 0 can be generated in any player (for example, if a malformed URL is requested), and a value of 0 is always generated        by the Flash Player plug-in when run in the following browsers,       which cannot pass HTTP status codes from the server to Flash Player: Netscape, Mozilla, Safari,       Opera, and Internet Explorer for the Macintosh. A value of 0 can also be generated if the player       did not try to make the URL request to perform the load operation. This can happen because       the request violates security sandbox rules for the SWF file.</p>             <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">target_mc</span>:<a href="MovieClip.html">MovieClip</a></code> &mdash; A movie clip loaded by the <code>MovieClipLoader.loadClip()</code> method.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">errorCode</span>:<a href="String.html">String</a></code> &mdash; A string that explains the reason for the failure, either <code>"URLNotFound"</code> or <code>"LoadNeverCompleted"</code>.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">httpStatus</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; (Flash Player 8 or later, only) The HTTP status code       returned by the server. For example, a status code of 404 indicates that the server has not       found anything that matches the requested URI.        For more information about HTTP status codes, see sections 10.4 and 10.5       of the HTTP specification at       <a target="mm_external" href="ftp://ftp.isi.edu/in-notes/rfc2616.txt">ftp://ftp.isi.edu/in-notes/rfc2616.txt</a>.            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br><span class="flashonly">The following example displays information in the Output panel       when an image fails to load.</span><span class="flexonly">The following example writes       information to the log file when an image fails to load. This occurs when you test the       following ActionScript, because the image does not exist in the specified location.</span> The URL used in this example is for demonstration purposes only; replace it with your own valid URL.             <div class='listing'><pre>
+var loadListener:Object = new Object();
+
+loadListener.onLoadError = function(target_mc:MovieClip, errorCode:String, httpStatus:Number) {
+    trace(">> loadListener.onLoadError()");
+    trace(">> ==========================");
+    trace(">> errorCode: " + errorCode);
+    trace(">> httpStatus: " + httpStatus);
+}
+
+var mcLoader:MovieClipLoader = new MovieClipLoader();
+mcLoader.addListener(loadListener);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mcLoader.loadClip("http://www.fakedomain.com/images/bad_hair_day.jpg", mc);     
+</pre></div>            <p>If your SWF file includes a version 2 component, use the version 2 component's       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method,       which is used in this example.       </p>             <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="MovieClipLoader.html#addListener()" target="">MovieClipLoader.addListener()</a>
+<br>
+<a href="MovieClipLoader.html#loadClip()" target="">MovieClipLoader.loadClip()</a>
+<br>
+<a href="MovieClipLoader.html#event:onLoadStart" target="">MovieClipLoader.onLoadStart</a>
+<br>
+<a href="MovieClipLoader.html#event:onLoadComplete" target="">MovieClipLoader.onLoadComplete</a>
+</div>
+</div>
+<a name="event:onLoadInit"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onLoadInit</td><td class="detailHeaderType">event&nbsp;listener</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onLoadInit = function([target_mc:<a href="MovieClip.html">MovieClip</a>]) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Invoked when the actions on the first frame of the loaded clip have been executed.       When this listener has been invoked, you can set properties, use methods, and otherwise       interact with the loaded movie. Call this listener on a listener object that you       add by using <code>MovieClipLoader.addListener()</code>.             </p><p>The value for <code>target_mc</code> identifies the movie clip for which this call is being made.       This parameter is useful if you are loading multiple files with the same set of listeners. </p>             <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">target_mc</span>:<a href="MovieClip.html">MovieClip</a></code>&nbsp;[optional] &mdash; A movie clip loaded by the <code>MovieClipLoader.loadClip()</code> method.            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example loads an image into a movie clip instance called       <code>image_mc</code>. The <code>onLoadInit</code> and <code>onLoadComplete</code> events are       used to determine how long it takes to load the image. This information is displayed in a text       field called <code>timer_txt</code>.             <div class='listing'><pre>
+this.createEmptyMovieClip("image_mc", this.getNextHighestDepth());
+var mclListener:Object = new Object();
+mclListener.onLoadStart = function(target_mc:MovieClip) {
+    target_mc.startTimer = getTimer();
+};
+mclListener.onLoadComplete = function(target_mc:MovieClip) {
+    target_mc.completeTimer = getTimer();
+};
+mclListener.onLoadInit = function(target_mc:MovieClip) {
+    var timerMS:Number = target_mc.completeTimer-target_mc.startTimer;
+    target_mc.createTextField("timer_txt", target_mc.getNextHighestDepth(), 0, target_mc._height, 
+target_mc._width, 22);
+    target_mc.timer_txt.text = "loaded in "+timerMS+" ms.";
+};
+var image_mcl:MovieClipLoader = new MovieClipLoader();
+image_mcl.addListener(mclListener);
+image_mcl.loadClip("http://www.helpexamples.com/flash/images/image1.jpg", image_mc);
+</pre></div>            <p>The following example checks whether a movie has loaded into a movie clip created at       runtime. The URL used in this example is for demonstration purposes only; replace it       with your own valid URL.</p>             <div class='listing'><pre>
+this.createEmptyMovieClip("tester_mc", 1);
+var mclListener:Object = new Object();
+mclListener.onLoadInit = function(target_mc:MovieClip) {
+    trace("movie loaded");
+}
+var image_mcl:MovieClipLoader = new MovieClipLoader();
+image_mcl.addListener(mclListener);
+image_mcl.loadClip("http://www.yourserver.com/your_movie.swf", tester_mc);
+</pre></div>            <p>If your SWF file includes a version 2 component, use the version 2 component's       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method,       which is used in this example.       </p>             <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="MovieClipLoader.html#addListener()" target="">MovieClipLoader.addListener()</a>
+<br>
+<a href="MovieClipLoader.html#loadClip()" target="">MovieClipLoader.loadClip()</a>
+<br>
+<a href="MovieClipLoader.html#event:onLoadStart" target="">MovieClipLoader.onLoadStart</a>
+</div>
+</div>
+<a name="event:onLoadProgress"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onLoadProgress</td><td class="detailHeaderType">event&nbsp;listener</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onLoadProgress = function([target_mc:<a href="MovieClip.html">MovieClip</a>], loadedBytes:<a href="Number.html">Number</a>, totalBytes:<a href="Number.html">Number</a>) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Invoked every time the loading content is written to the hard disk during the loading process       (that is, between <code>MovieClipLoader.onLoadStart</code> and       <code>MovieClipLoader.onLoadComplete</code>). Call this listener on a listener object that you       add by using <code>MovieClipLoader.addListener()</code>. You can use this method to display information       about the progress of the download, by using the <code>loadedBytes</code> and       <code>totalBytes</code> parameters.             </p><p>The value for <code>target_mc</code> identifies the movie clip for which this call is being made.       This is useful when you are loading multiple files with the same set of listeners.</p>             <p><strong>Note:</strong> If you attempt to use <code>onLoadProgress</code> in test mode       with a local file that resides on your hard disk, it does not work properly because, in test       mode, Flash Player loads local files in their entirety.</p>             <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">target_mc</span>:<a href="MovieClip.html">MovieClip</a></code>&nbsp;[optional] &mdash; A movie clip loaded by the <code>MovieClipLoader.loadClip()</code> method.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">loadedBytes</span>:<a href="Number.html">Number</a></code> &mdash; The number of bytes that had been loaded when the listener was invoked.             </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">totalBytes</span>:<a href="Number.html">Number</a></code> &mdash; The total number of bytes in the file being loaded.            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a movie clip, a new <code>MovieClipLoader</code> instance,       and an anonymous event listener. It periodically outputs the progress of a load and       finally provides notification when the load is complete and the asset is available to       ActionScript.       <div class='listing'><pre>
+var container:MovieClip = this.createEmptyMovieClip("container", this.getNextHighestDepth());
+var mcLoader:MovieClipLoader = new MovieClipLoader();
+var listener:Object = new Object();
+listener.onLoadProgress = function(target:MovieClip, bytesLoaded:Number, bytesTotal:Number):Void {
+    trace(target + ".onLoadProgress with " + bytesLoaded + " bytes of " + bytesTotal);
+}
+listener.onLoadInit = function(target:MovieClip):Void {
+    trace(target + ".onLoadInit");
+}
+mcLoader.addListener(listener);
+mcLoader.loadClip("http://www.w3.org/Icons/w3c_main.png", container);
+</pre></div>            <p>If your SWF file includes a version 2 component, use the version 2 component's       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method,       which is used in this example.       </p>             <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="MovieClipLoader.html#addListener()" target="">MovieClipLoader.addListener()</a>
+<br>
+<a href="MovieClipLoader.html#loadClip()" target="">MovieClipLoader.loadClip()</a>
+<br>
+<a href="MovieClipLoader.html#getProgress()" target="">MovieClipLoader.getProgress()</a>
+</div>
+</div>
+<a name="event:onLoadStart"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onLoadStart</td><td class="detailHeaderType">event&nbsp;listener</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onLoadStart = function([target_mc:<a href="MovieClip.html">MovieClip</a>]) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Invoked when a call to <code>MovieClipLoader.loadClip()</code> has begun       to download a file. Call this listener on a listener object that you       add by using <code>MovieClipLoader.addListener()</code>.             </p><p>The value for <code>target_mc</code> identifies the movie clip for which this call is       being made. This parameter is useful if you are loading multiple files with the same set of       listeners.</p>             <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">target_mc</span>:<a href="MovieClip.html">MovieClip</a></code>&nbsp;[optional] &mdash; A movie clip loaded by the <code>MovieClipLoader.loadClip()</code> method.            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example loads an image into a movie clip instance called       <code>image_mc</code>. The <code>onLoadInit</code> and <code>onLoadComplete</code> events are       used to determine how long it takes to load the image. This information is displayed in a text       field called <code>timer_txt</code>.             <div class='listing'><pre>
+this.createEmptyMovieClip("image_mc", this.getNextHighestDepth());
+var mclListener:Object = new Object();
+mclListener.onLoadStart = function(target_mc:MovieClip) {
+    target_mc.startTimer = getTimer();
+};
+mclListener.onLoadComplete = function(target_mc:MovieClip) {
+    target_mc.completeTimer = getTimer();
+};
+mclListener.onLoadInit = function(target_mc:MovieClip) {
+    var timerMS:Number = target_mc.completeTimer-target_mc.startTimer;
+    target_mc.createTextField("timer_txt", target_mc.getNextHighestDepth(), 0, target_mc._height, 
+target_mc._width, 22);
+    target_mc.timer_txt.text = "loaded in "+timerMS+" ms.";
+};
+var image_mcl:MovieClipLoader = new MovieClipLoader();
+image_mcl.addListener(mclListener);
+image_mcl.loadClip("http://www.helpexamples.com/flash/images/image1.jpg", image_mc);
+</pre></div>            <p>If your SWF file includes a version 2 component, use the version 2 component's       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method,       which is used in this example.       </p>             <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="MovieClipLoader.html#addListener()" target="">MovieClipLoader.addListener()</a>
+<br>
+<a href="MovieClipLoader.html#loadClip()" target="">MovieClipLoader.loadClip()</a>
+<br>
+<a href="MovieClipLoader.html#event:onLoadError" target="">MovieClipLoader.onLoadError</a>
+<br>
+<a href="MovieClipLoader.html#event:onLoadInit" target="">MovieClipLoader.onLoadInit</a>
+<br>
+<a href="MovieClipLoader.html#event:onLoadComplete" target="">MovieClipLoader.onLoadComplete</a>
+</div>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

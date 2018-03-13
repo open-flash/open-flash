@@ -1,0 +1,266 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="MainContent"><script language="javascript" type="text/javascript" src="asdoc.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'Compiler Directives - Flash CS4 ActionScript 2.0 Language Reference';
+				window.onload = configPage;
+			--></script><p></p>
+<table id="titleTable" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td valign="middle" align="left" width="40px"><img alt="Adobe Logo" border="0" height="50" width="42" src="images/mm-icon.jpg"></td><td valign="middle" align="center">
+<h2>ActionScript 2.0 Language Reference</h2>
+</td>
+</tr>
+<tr>
+<td colspan="2" height="10px"></td>
+</tr>
+</table>
+<table class="topLinks" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td width="100%" align="right"></td><td style="white-space:nowrap" id="navigationCell1" align="right"><a href="package-summary.html">All Packages</a> | <a href="class-summary.html">All Classes</a> | <a href="language-elements.html">Language Elements</a> | <a href="all-index-Symbols.html">Index</a> | <a href="index.html?directives.html">Frames</a></td>
+</tr>
+</table><a name="Compiler Directives"></a><h2>Compiler Directives</h2>
+<p>This section contains the directives to include in your ActionScript file to direct the compiler to preprocess certain instructions. Do not place a semicolon (;) at the end of the line that contains the directive.</p>
+<p></p><br><table cellspacing="0" cellpadding="3" width="100%" class="withBorder">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC" class="SummaryTableHeader">
+<font size="+1"><b>Compiler Directives</b></font>
+</td>
+</tr>
+<tr class="row1">
+<td width="1%" valign="top"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
+<td valign="top"><code><a href="##endinitclip()"><b>#endinitclip</b></a><br></code>Indicates the end of a block of initialization actions.
+									
+				</td>
+</tr>
+<tr class="row0">
+<td width="1%" valign="top"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
+<td valign="top"><code><a href="##include()"><b>#include</b></a><br></code>Includes the contents of the specified file, as if the commands
+									in the file are part of the calling script.
+				</td>
+</tr>
+<tr class="row1">
+<td width="1%" valign="top"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
+<td valign="top"><code><a href="##initclip()"><b>#initclip</b></a><br></code>Indicates the beginning of a block of initialization actions.
+									
+				</td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<p></p>
+<p></p><br><table cellspacing="0" cellpadding="2" width="100%" class="withBorder">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC" class="SummaryTableHeader">
+<font size="+1"><b>Compiler Directive detail</b></font>
+</td>
+</tr>
+</table><a name="#endinitclip()"></a><p></p>
+<h2>#endinitclip Directive</h2>
+<p></p><b>Usage</b><table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="20"></td>
+<td><code>#endinitclip</code></td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="white-space:nowrap" valign="top"><b>Player version:&nbsp;</b></td>
+<td>Flash Player 6,0</td>
+</tr>
+</table>
+<p></p><p>Indicates the end of a block of initialization actions. </p>
+					<p><em>Do not place a semicolon (;) at the end of the line that contains the #endinitclip directive.</em></p><p></p><b>Example</b><br>
+<div class='listing'><pre>
+#initclip
+...initialization actions go here...
+#endinitclip
+</pre></div>
+
+                  
+                    <p></p>
+<p></p>
+<hr width="100%"><a name="#include()"></a><p></p>
+<h2>#include Directive</h2>
+<p></p><b>Usage</b><table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="20"></td>
+<td><code>#include <em>"[path]filename.as":<a href="String.html">String</a></em></code>
+					</td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="white-space:nowrap" valign="top"><b>Player version:&nbsp;</b></td>
+<td>Flash Player 4,0</td>
+</tr>
+</table>
+<p></p>
+	 Includes the contents of the specified file, as if the commands
+	 in the file are part of the calling script. The <code>#include</code> directive
+	 is invoked at compile time. Therefore, if you make any changes to an external
+	 file, you must save the file and recompile any FLA files that use it.
+	<p> <span class="flashonly"> If you use the Check Syntax button for a script
+	    that contains <code>#include</code> statements, the syntax of the included
+	    files is also checked. </span> </p> 
+	<p> <span class="flashonly"> You can use <code>#include</code> in FLA files and
+	    in external script files, but not in ActionScript 2.0 class files. </span></p> 
+	<p> <span class="flexonly"> You can use <code>#include</code> in script files,
+	    but not in class files.</span> </p> 
+	<p> <span class="flashonly"> You can specify no path, a relative path, or an
+	    absolute path for the file to be included. If you don't specify a path, the
+	    AS file must be in one of the following locations:</span> </p> 
+	<ul> 
+	  <li>The same directory as the FLA file. The same directory as the script containing
+	    the <code>#include</code> statement</li> 
+	  <li>The global Include directory, which is one of the following: <br /> 
+	    --Windows 2000 or Windows XP: C:\Documents and Settings\<i>user</i> \Local
+	    Settings\ Application Data\Adobe\Flash CS5\<i>language</i>\Configuration\Include <br /> 
+	    --Macintosh OS X: Hard Drive/Users/Library/Application Support/Adobe/Flash
+	    CS5/<i>language</i>/Configuration/Include</li> 
+	  <li>The <i>Flash CS5 program</i>\<i>language</i>\First Run\Include directory;
+	    if you save a file here, it is copied to the global Include directory the
+	    next time you start Flash.</li> 
+	</ul> 
+	<span class="flexonly"> 
+	  You can specify no path, a relative path, or an absolute path for the file
+	  to be included. If you don't specify a path, the AS file must be in the same
+	  directory as the script containing the <code>#include</code> statement.
+	</span> 
+	<p> To specify a relative path for the AS file, use a single dot (.) to indicate
+	  the current directory, two dots (<code>..</code>) to indicate a parent directory,
+	  and forward slashes (<code>/</code>) to indicate subdirectories. See the following
+	  example section. </p> 
+	<p> To specify an absolute path for the AS file, use the format supported by
+	  your platform (Macintosh or Windows). See the following example section. (This
+	  usage is not recommended because it requires the directory structure to be
+	  the same on any computer that you use to compile the script.)</p> 
+	<span class="flashonly"><em>If you place files in the First Run/Include directory or in the global
+	    Include directory, back up these files. If you ever need to uninstall and
+	    reinstall Flash, these directories might be deleted and overwritten.</em> 
+	</span> 
+	<p><em>Do not place a semicolon (;) at the end of the line that contains the #include directive.</em></p>
+	
+				<p></p><b>Parameters</b><table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="20px"></td>
+<td><code><b>[path]filename.as</b>:<a href="String.html">String</a></code> — <code><i>filename.as</i></code><span class="flashonly">The filename and optional path for the script to add to the Actions panel or to the current script; <i>.as</i> is the recommended filename extension.</span><span class="flexonly">The filename and optional path for the script to add to the current script; <i>.as</i> is the recommended filename extension.</span></td>
+</tr>
+</table>
+<p></p><b>Example</b><br>The following examples show various ways of specifying a path for a file to be included in your script:
+
+<div class='listing'><pre>
+// Note that #include statements do not end with a semicolon (;)
+// AS file is in same directory as FLA file or script
+<span class="flexonly">// or is in the global Include directory or the First Run/Include directory</span>
+#include "init_script.as"
+
+<span class="flashonly">// AS file is in a subdirectory of one of the above directories
+// The subdirectory is named "FLA_includes"
+#include "FLA_includes/init_script.as"
+</span>
+<span class="flexonly">
+// AS file is in a subdirectory of the script file directory
+// The subdirectory is named "SCRIPT_includes"
+#include "SCRIPT_includes/init_script.as"
+</span>
+<span class="flashonly">
+// AS file is in a directory at the same level as one of the above directories
+</span>
+<span class="flexonly">
+// AS file is in a directory at the same level as the directory
+// that contains the script file
+</span>
+// The directory is named "ALL_includes"
+#include "../ALL_includes/init_script.as"
+
+// AS file is specified by an absolute path in Windows
+// Note use of forward slashes, not backslashes
+#include "C:/Flash_scripts/init_script.as"
+
+// AS file is specified by an absolute path on Macintosh
+#include "Mac HD:Flash_scripts:init_script.as"
+</pre></div>
+          
+                    <p></p>
+<p></p>
+<hr width="100%"><a name="#initclip()"></a><p></p>
+<h2>#initclip Directive</h2>
+<p></p><b>Usage</b><table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="20"></td>
+<td><code>#initclip <em>[order:<a href="Number.html">Number</a>]</em></code></td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="white-space:nowrap" valign="top"><b>Player version:&nbsp;</b></td>
+<td>Flash Player 6,0</td>
+</tr>
+</table>
+<p></p><p>Indicates the beginning of a block of initialization actions. 
+				When multiple clips are initialized at the same time, you can use the <code>order</code> 
+				 parameter to specify which initialization occurs first. Initialization actions are executed when 
+				 a movie clip symbol is defined. If the movie clip is an exported symbol, the 
+				 initialization actions are executed before the actions on Frame 1 of the SWF file. Otherwise, 
+				they are executed immediately before the actions of the frame that contains the first 
+				instance of the associated movie clip symbol.</p>
+				<p>Initialization actions are executed only once when a SWF file is played.  Use them for 
+				one-time initializations, such as class definition and registration.</p>
+				<p><em>Do not place a semicolon (;) at the end of the line that contains the #initclip directive.</em></p>
+        			
+				<p></p><b>Parameters</b><table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="20px"></td>
+<td><code><b>order</b>:<a href="Number.html">Number</a></code>&nbsp;[optional] — A non-negative integer that specifies the execution order of blocks of <code>#initclip</code> code. This is an optional parameter. You must specify the value by using an integer literal (only decimal values are allowed, not hexadecimal), and not by using a variable. If you include multiple <code>#initclip</code> blocks in a single movie clip symbol, then the compiler uses the last <code>order</code> value specified in that movie clip symbol for all <code>#initclip</code> blocks in that symbol.</td>
+</tr>
+</table>
+<p></p><b>Example</b><br>In the following example, ActionScript is placed on Frame 1 in a movie clip instance. A variables.txt text file is placed in the same directory.
+
+<div class='listing'><pre>
+#initclip
+
+trace("initializing app");
+
+var variables:LoadVars = new LoadVars();
+
+variables.load("variables.txt");
+
+variables.onLoad = function(success:Boolean) {
+
+    trace("variables loaded:"+success);
+
+    if (success) {
+        for (i in variables) {
+            trace("variables."+i+" = "+variables[i]);
+        }
+    }
+};
+
+#endinitclip
+</pre></div>
+
+          
+                    <p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<table class="topLinks" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td width="100%" align="right"></td><td style="white-space:nowrap" id="navigationCell2" align="right"><a href="package-summary.html">All Packages</a> | <a href="class-summary.html">All Classes</a> | <a href="language-elements.html">Language Elements</a> | <a href="all-index-Symbols.html">Index</a> | <a href="index.html?directives.html">Frames</a></td>
+</tr>
+</table>
+<center class="copyright">Copyright &copy; 2004-2008 Adobe Systems Incorporated. All rights reserved.</center>
+</body>
+</html><!--Copyright &copy; 2004-2008 Adobe Systems Incorporated. All rights reserved.-->

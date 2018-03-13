@@ -1,0 +1,2255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="BitmapData,flash.display.BitmapData,height,rectangle,transparent,width,applyFilter,clone,colorTransform,compare,copyChannel,copyPixels,dispose,draw,fillRect,floodFill,generateFilterRect,getColorBoundsRect,getPixel,getPixel32,hitTest,loadBitmap,merge,noise,paletteMap,perlinNoise,pixelDissolve,scroll,setPixel,setPixel32,threshold" name="keywords">
+<title>flash.display.BitmapData</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'BitmapData - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="../../language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="../../appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="../../index.html?flash/display/BitmapData.html&amp;flash/display/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;BitmapData</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class BitmapData"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">flash.display</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class BitmapData</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">BitmapData <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../images/inherit-arrow.gif"> <a href="../../Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p>
+<p></p>The BitmapData class lets you create arbitrarily sized transparent or opaque bitmap images   and manipulate them in various ways at runtime.    <p>This class lets you separate bitmap rendering operations from the Flash Player internal   display updating routines. By manipulating   a BitmapData object directly, you can create very complex images without incurring the   per frame overhead of constantly redrawing the content from vector data.</p>    <p>The methods of the BitmapData class support a variety   of effects that are not available through the generic filter interface.</p>    <p>A BitmapData object contains an array of pixel data. This data can represent either   a fully opaque bitmap or a transparent bitmap that contains alpha channel data.   Either type of BitmapData object is stored as a buffer of 32-bit integers.   Each 32-bit integer determines the properties of a single pixel in the bitmap.</p>    <p>Each 32-bit integer is a combination of four 8-bit channel values (from 0 to 255) that   describe the alpha transparency and the red, green, and blue (ARGB) values of the pixel.</p>    <p>The four channels (red, green, blue, and alpha) are represented as numbers   when you use them with the <code>BitmapData.copyChannel()</code> method or the <code>DisplacementMapFilter.componentX</code>   and <code>DisplacementMapFilter.componentY</code> properties, as follows:</p>   <ul>   <li><code>1</code> (red)</li>   <li><code>2</code> (green)</li>   <li><code>4</code> (blue)</li>   <li><code>8</code> (alpha)</li>   </ul>    <p>You can attach BitmapData objects to a MovieClip object by using the   <code>MovieClip.attachBitmap()</code> method.</p>    <p>You can use a BitmapData object to fill an area in a movie clip by using the   <code>MovieClip.beginBitmapFill()</code> method.</p>    <p>The maximum width and maximum height of a BitmapData object is 2880 pixels.</p>    <p>Calls to any method or property of a BitmapData object fail if the   BitmapData object is invalid (for example, if it has <code>height == 0</code> and   <code>width == 0</code>), and upon failing those properties and methods that return   Number values return -1. </p>     <p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../../MovieClip.html#attachBitmap()" target="">MovieClip.attachBitmap()</a>
+<br>
+<a href="../../MovieClip.html#beginBitmapFill()" target="">MovieClip.beginBitmapFill()</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#height">height</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">[read-only]The height of the bitmap image in pixels.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#rectangle">rectangle</a> : <a href="../geom/Rectangle.html">Rectangle</a>
+<div class="summaryTableDescription">[read-only]The rectangle that defines the size and location of the bitmap image.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#transparent">transparent</a> : <a href="../../Boolean.html">Boolean</a>
+<div class="summaryTableDescription">[read-only]Defines whether the bitmap image supports per-pixel transparency.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#width">width</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">[read-only]The width of the bitmap image in pixels.</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="../../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../../Object.html#__proto__">__proto__</a>, <a href="../../Object.html#__resolve">__resolve</a>, <a href="../../Object.html#constructor">constructor</a>, <a href="../../Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#BitmapData()">BitmapData</a>(width:<a href="../../Number.html">Number</a>, height:<a href="../../Number.html">Number</a>, [transparent:<a href="../../Boolean.html">Boolean</a>], [fillColor:<a href="../../Number.html">Number</a>])</div>
+<div class="summaryTableDescription">Creates a BitmapData object with a specified width and height.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#applyFilter()">applyFilter</a>(sourceBitmap:<a href="BitmapData.html">BitmapData</a>, sourceRect:<a href="../geom/Rectangle.html">Rectangle</a>, destPoint:<a href="../geom/Point.html">Point</a>, filter:<a href="../filters/BitmapFilter.html">BitmapFilter</a>):<a href="../../Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Takes a source image and a filter object and generates the filtered image.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clone()">clone</a>():<a href="BitmapData.html">BitmapData</a>
+</div>
+<div class="summaryTableDescription">Returns a new BitmapData object that is a clone of the original instance with an exact copy of the contained bitmap.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#colorTransform()">colorTransform</a>(rect:<a href="../geom/Rectangle.html">Rectangle</a>, colorTransform:<a href="../geom/ColorTransform.html">ColorTransform</a>):Void</div>
+<div class="summaryTableDescription">Adjusts the color values in a specified area of a bitmap image by using a ColorTransform object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#compare()">compare</a>(otherBitmapData:<a href="BitmapData.html">BitmapData</a>):<a href="../../Object.html">Object</a>
+</div>
+<div class="summaryTableDescription">Compares two BitmapData objects.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#copyChannel()">copyChannel</a>(sourceBitmap:<a href="BitmapData.html">BitmapData</a>, sourceRect:<a href="../geom/Rectangle.html">Rectangle</a>, destPoint:<a href="../geom/Point.html">Point</a>, sourceChannel:<a href="../../Number.html">Number</a>, destChannel:<a href="../../Number.html">Number</a>):Void</div>
+<div class="summaryTableDescription">Transfers data from one channel of another BitmapData object or the current BitmapData object into a channel of the current BitmapData object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#copyPixels()">copyPixels</a>(sourceBitmap:<a href="BitmapData.html">BitmapData</a>, sourceRect:<a href="../geom/Rectangle.html">Rectangle</a>, destPoint:<a href="../geom/Point.html">Point</a>, [alphaBitmap:<a href="BitmapData.html">BitmapData</a>], [alphaPoint:<a href="../geom/Point.html">Point</a>], [mergeAlpha:<a href="../../Boolean.html">Boolean</a>]):Void</div>
+<div class="summaryTableDescription">Provides a fast routine to perform pixel manipulation between images with no stretching, rotation, or color effects.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dispose()">dispose</a>():Void</div>
+<div class="summaryTableDescription">Frees memory that is used to store the BitmapData object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#draw()">draw</a>(source:<a href="../../Object.html">Object</a>, [matrix:<a href="../geom/Matrix.html">Matrix</a>], [colorTransform:<a href="../geom/ColorTransform.html">ColorTransform</a>], [blendMode:<a href="../../Object.html">Object</a>], [clipRect:<a href="../geom/Rectangle.html">Rectangle</a>], [smooth:<a href="../../Boolean.html">Boolean</a>]):Void</div>
+<div class="summaryTableDescription">Draws a source image or movie clip onto a destination image, using the Flash Player vector renderer.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#fillRect()">fillRect</a>(rect:<a href="../geom/Rectangle.html">Rectangle</a>, color:<a href="../../Number.html">Number</a>):Void</div>
+<div class="summaryTableDescription">Fills a rectangular area of pixels with a specified ARGB color.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#floodFill()">floodFill</a>(x:<a href="../../Number.html">Number</a>, y:<a href="../../Number.html">Number</a>, color:<a href="../../Number.html">Number</a>):Void</div>
+<div class="summaryTableDescription">Performs a flood fill operation on an image starting at an (<em>x</em>, <em>y</em>) coordinate and filling with a certain color.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#generateFilterRect()">generateFilterRect</a>(sourceRect:<a href="../geom/Rectangle.html">Rectangle</a>, filter:<a href="../filters/BitmapFilter.html">BitmapFilter</a>):<a href="../geom/Rectangle.html">Rectangle</a>
+</div>
+<div class="summaryTableDescription">Determines the destination rectangle that the <code>applyFilter()</code> method call affects, given a BitmapData object, a source rectangle, and a filter object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getColorBoundsRect()">getColorBoundsRect</a>(mask:<a href="../../Number.html">Number</a>, color:<a href="../../Number.html">Number</a>, [findColor:<a href="../../Boolean.html">Boolean</a>]):<a href="../geom/Rectangle.html">Rectangle</a>
+</div>
+<div class="summaryTableDescription">Determines a rectangular region that fully encloses all pixels of a specified color within the bitmap image.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getPixel()">getPixel</a>(x:<a href="../../Number.html">Number</a>, y:<a href="../../Number.html">Number</a>):<a href="../../Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns an integer that represents an RGB pixel value from a BitmapData object at a specific point (<em>x</em>, <em>y</em>).</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getPixel32()">getPixel32</a>(x:<a href="../../Number.html">Number</a>, y:<a href="../../Number.html">Number</a>):<a href="../../Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns an ARGB color value that contains alpha channel data and RGB data.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#hitTest()">hitTest</a>(firstPoint:<a href="../geom/Point.html">Point</a>, firstAlphaThreshold:<a href="../../Number.html">Number</a>, secondObject:<a href="../../Object.html">Object</a>, [secondBitmapPoint:<a href="../geom/Point.html">Point</a>], [secondAlphaThreshold:<a href="../../Number.html">Number</a>]):<a href="../../Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Performs pixel-level hit detection between one bitmap image and a point, rectangle or other bitmap image.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#loadBitmap()">loadBitmap</a>(id:<a href="../../String.html">String</a>):<a href="BitmapData.html">BitmapData</a>
+</div>
+<div class="summaryTableDescription">[static]Returns a new BitmapData object that contains a bitmap image representation of the symbol that is identified by a specified linkage ID in the library.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#merge()">merge</a>(sourceBitmap:<a href="BitmapData.html">BitmapData</a>, sourceRect:<a href="../geom/Rectangle.html">Rectangle</a>, destPoint:<a href="../geom/Point.html">Point</a>, redMult:<a href="../../Number.html">Number</a>, greenMult:<a href="../../Number.html">Number</a>, blueMult:<a href="../../Number.html">Number</a>, alphaMult:<a href="../../Number.html">Number</a>):Void</div>
+<div class="summaryTableDescription">Performs per-channel blending from a source image to a destination image.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#noise()">noise</a>(randomSeed:<a href="../../Number.html">Number</a>, [low:<a href="../../Number.html">Number</a>], [high:<a href="../../Number.html">Number</a>], [channelOptions:<a href="../../Number.html">Number</a>], [grayScale:<a href="../../Boolean.html">Boolean</a>]):Void</div>
+<div class="summaryTableDescription">Fills an image with pixels representing random noise.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#paletteMap()">paletteMap</a>(sourceBitmap:<a href="BitmapData.html">BitmapData</a>, sourceRect:<a href="../geom/Rectangle.html">Rectangle</a>, destPoint:<a href="../geom/Point.html">Point</a>, [redArray:<a href="../../Array.html">Array</a>], [greenArray:<a href="../../Array.html">Array</a>], [blueArray:<a href="../../Array.html">Array</a>], [alphaArray:<a href="../../Array.html">Array</a>]):Void</div>
+<div class="summaryTableDescription">Remaps the color channel values in an image that has up to four arrays of color palette data, one for each channel.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#perlinNoise()">perlinNoise</a>(baseX:<a href="../../Number.html">Number</a>, baseY:<a href="../../Number.html">Number</a>, numOctaves:<a href="../../Number.html">Number</a>, randomSeed:<a href="../../Number.html">Number</a>, stitch:<a href="../../Boolean.html">Boolean</a>, fractalNoise:<a href="../../Boolean.html">Boolean</a>, [channelOptions:<a href="../../Number.html">Number</a>], [grayScale:<a href="../../Boolean.html">Boolean</a>], [offsets:<a href="../../Object.html">Object</a>]):Void</div>
+<div class="summaryTableDescription">Generates a Perlin noise image.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#pixelDissolve()">pixelDissolve</a>(sourceBitmap:<a href="BitmapData.html">BitmapData</a>, sourceRect:<a href="../geom/Rectangle.html">Rectangle</a>, destPoint:<a href="../geom/Point.html">Point</a>, [randomSeed:<a href="../../Number.html">Number</a>], [numberOfPixels:<a href="../../Number.html">Number</a>], [fillColor:<a href="../../Number.html">Number</a>]):<a href="../../Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Performs a pixel dissolve either from a source image to a destination image or by using the same image.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#scroll()">scroll</a>(x:<a href="../../Number.html">Number</a>, y:<a href="../../Number.html">Number</a>):Void</div>
+<div class="summaryTableDescription">Scrolls an image by a certain (<em>x</em>, <em>y</em>) pixel amount.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setPixel()">setPixel</a>(x:<a href="../../Number.html">Number</a>, y:<a href="../../Number.html">Number</a>, color:<a href="../../Number.html">Number</a>):Void</div>
+<div class="summaryTableDescription">Sets the color of a single pixel of a BitmapData object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setPixel32()">setPixel32</a>(x:<a href="../../Number.html">Number</a>, y:<a href="../../Number.html">Number</a>, color:<a href="../../Number.html">Number</a>):Void</div>
+<div class="summaryTableDescription">Sets the color and alpha transparency values of a single pixel of a BitmapData object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#threshold()">threshold</a>(sourceBitmap:<a href="BitmapData.html">BitmapData</a>, sourceRect:<a href="../geom/Rectangle.html">Rectangle</a>, destPoint:<a href="../geom/Point.html">Point</a>, operation:<a href="../../String.html">String</a>, threshold:<a href="../../Number.html">Number</a>, [color:<a href="../../Number.html">Number</a>], [mask:<a href="../../Number.html">Number</a>], [copySource:<a href="../../Boolean.html">Boolean</a>]):<a href="../../Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Tests pixel values in an image against a specified threshold and sets pixels that pass the test to new color values.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="../../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../../Object.html#addProperty()">addProperty</a>, <a href="../../Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="../../Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="../../Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="../../Object.html#registerClass()">registerClass</a>, <a href="../../Object.html#toString()">toString</a>, <a href="../../Object.html#unwatch()">unwatch</a>, <a href="../../Object.html#valueOf()">valueOf</a>, <a href="../../Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="height"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">height</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>height:<a href="../../Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The height of the bitmap image in pixels.       </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get height():<a href="../../Number.html">Number</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example shows that the <code>height</code> property of the <code>BitmapData</code>      instance is read-only by trying to set it and failing:      <div class='listing'><pre>
+import flash.display.BitmapData;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.attachBitmap(myBitmapData, this.getNextHighestDepth());
+trace(myBitmapData.height);    // 80
+
+myBitmapData.height = 999;
+trace(myBitmapData.height);    // 80
+</pre></div>      <p></p>
+</div>
+<a name="rectangle"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rectangle</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>rectangle:<a href="../geom/Rectangle.html">Rectangle</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The rectangle that defines the size and location of the bitmap image. The top and left of the       rectangle are 0; the width and height are equal to the width and height in pixels of the       BitmapData object.            </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get rectangle():<a href="../geom/Rectangle.html">Rectangle</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example shows that the <code>rectangle</code> property of the <code>Bitmap</code>      instance is read-only by trying to set it and failing:      <div class='listing'><pre>
+import flash.display.BitmapData;
+import flash.geom.Rectangle;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.attachBitmap(myBitmapData, this.getNextHighestDepth());
+trace(myBitmapData.rectangle);    // (x=0, y=0, w=100, h=80)
+
+myBitmapData.rectangle = new Rectangle(1, 2, 4, 8);
+trace(myBitmapData.rectangle);    // (x=0, y=0, w=100, h=80)
+</pre></div>      <p></p>
+</div>
+<a name="transparent"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">transparent</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>transparent:<a href="../../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Defines whether the bitmap image supports per-pixel transparency. You can set this value only when you construct       a BitmapData object by passing in <code>true</code> for the <code>transparent</code> parameter. After you create       a BitmapData object, you can check whether it supports per-pixel transparency by seeing if the value of the       <code>transparent</code> property is <code>true</code>.            </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get transparent():<a href="../../Boolean.html">Boolean</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example shows that the <code>transparent</code> property of the <code>Bitmap</code>      instance is read-only by trying to set it and failing:      <div class='listing'><pre>
+import flash.display.BitmapData;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.attachBitmap(myBitmapData, this.getNextHighestDepth());
+trace(myBitmapData.transparent);    // false
+
+myBitmapData.transparent = true;
+trace(myBitmapData.transparent);    // false
+</pre></div>      <p></p>
+</div>
+<a name="width"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">width</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>width:<a href="../../Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The width of the bitmap image in pixels.       </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get width():<a href="../../Number.html">Number</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example shows that the <code>width</code> property of the <code>Bitmap</code>      instance is read-only by trying to set it and failing:      <div class='listing'><pre>
+import flash.display.BitmapData;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.attachBitmap(myBitmapData, this.getNextHighestDepth());
+trace(myBitmapData.width);    // 100
+
+myBitmapData.width = 999;
+trace(myBitmapData.width);    // 100
+</pre></div>      <p></p>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="BitmapData()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">BitmapData</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function BitmapData(width:<a href="../../Number.html">Number</a>, height:<a href="../../Number.html">Number</a>, [transparent:<a href="../../Boolean.html">Boolean</a>], [fillColor:<a href="../../Number.html">Number</a>])</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Creates a  BitmapData object with a specified width and height.       If you specify a value for the  <code>fillColor</code> parameter, every pixel in the bitmap is set       to that color.            </p><p>By default, the bitmap is created as transparent, unless you pass the value <code>false</code>       for the <code>transparent</code> parameter. Once you create an opaque bitmap, you cannot change it to       a transparent bitmap. Every pixel in an opaque bitmap uses only 24 bits of color channel information.       If you define the bitmap as <code>transparent</code>, every pixel uses 32 bits of color channel information,       including an alpha transparency channel.</p>            <p>The maximum width and maximum height of a BitmapData object is 2880 pixels. If       you specify a width or height value that is greater than 2880, a new instance is not created.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">width</span>:<a href="../../Number.html">Number</a></code> &mdash; The width of the bitmap image in pixels.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">height</span>:<a href="../../Number.html">Number</a></code> &mdash; The height of the bitmap image in pixels.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">transparent</span>:<a href="../../Boolean.html">Boolean</a></code>&nbsp;[optional] &mdash; Specifies whether the bitmap image supports per-pixel transparency.       The default value is <code>true</code> (transparent). To create a fully transparent bitmap set the value       of the <code>transparent</code> parameter to <code>true</code> and the value of the <code>fillColor</code>       parameter to <code>0x00000000</code> (or to 0).            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">fillColor</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; A 32-bit ARGB color value that you use to fill the bitmap image area.       The default value is 0xFFFFFFFF (solid white).            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a new BitmapData object. The values in this example are the default values for the <code>transparent</code>      and <code>fillColor</code> parameters; you could call the constructor      without these parameters and get the same result.      <div class='listing'><pre>
+import flash.display.BitmapData;
+
+var width:Number = 100;
+var height:Number = 80;
+var transparent:Boolean = true;
+var fillColor:Number = 0xFFFFFFFF;
+
+var bitmap_1:BitmapData = new BitmapData(width, height, transparent, fillColor);
+
+trace(bitmap_1.width);            // 100
+trace(bitmap_1.height);            // 80
+trace(bitmap_1.transparent);    // true
+
+var bitmap_2:BitmapData = new BitmapData(width, height);
+
+trace(bitmap_2.width);            // 100
+trace(bitmap_2.height);            // 80
+trace(bitmap_2.transparent);    // true
+</pre></div>      <p></p>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="applyFilter()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">applyFilter</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function applyFilter(sourceBitmap:<a href="BitmapData.html">BitmapData</a>, sourceRect:<a href="../geom/Rectangle.html">Rectangle</a>, destPoint:<a href="../geom/Point.html">Point</a>, filter:<a href="../filters/BitmapFilter.html">BitmapFilter</a>):<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Takes a source image and a filter object and generates the       filtered image.            </p><p>This method relies on the behavior of built-in filter       objects, which have code to determine the destination       rectangle that is affected by an input source rectangle.</p>            <p>After a filter is applied, the resulting image can be larger than the input image.       For example, if you use a BlurFilter class       to blur a source rectangle of (50,50,100,100) and a       destination point of (10,10), the area that changes in the       destination image is larger than (10,10,60,60) because of       the blurring. This happens internally during the <code>applyFilter()</code>       call.</p>            <p>If the <code>sourceRect</code> parameter of the <code>sourceBitmapData</code> parameter is       an interior region, such as (50,50,100,100) in a 200 x 200 image, the filter uses the source       pixels outside the <code>sourceRect</code> parameter to generate       the destination rectangle.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sourceBitmap</span>:<a href="BitmapData.html">BitmapData</a></code> &mdash; The input bitmap image to use. The source image can be a different       BitmapData object       or it can refer to the current BitmapData instance.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">sourceRect</span>:<a href="../geom/Rectangle.html">Rectangle</a></code> &mdash; A rectangle that defines the area of the source image to use as input.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">destPoint</span>:<a href="../geom/Point.html">Point</a></code> &mdash; The point within the destination image (the current BitmapData       instance) that corresponds to the upper-left corner of the source rectangle.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">filter</span>:<a href="../filters/BitmapFilter.html">BitmapFilter</a></code> &mdash; The filter object that you use to perform the filtering operation. Each type       of filter has certain requirements, as follows:            <ul>       <li><b>BlurFilter</b> &#x2014;       This filter can use source and destination images       that are either opaque or transparent. If the formats of the images do       not match, the copy of the source image that is made during the       filtering matches the format of the destination image.</li>            <li><b>BevelFilter, DropShadowFilter, GlowFilter</b> &#x2014;       The destination image of these filters must be a transparent       image. Calling DropShadowFilter or GlowFilter creates an image that       contains the alpha channel data of the drop shadow or glow. It does not       create the drop shadow onto the destination image. If you use any of these       filters with an opaque destination image, an error code value of -6 is returned.</li>            <li><b>ConvolutionFilter</b> &#x2014;  This filter can use source and       destination images that are either opaque or transparent.</li>            <li><b>ColorMatrixFilter</b> &#x2014;  This filter can use source and       destination images that are either opaque or transparent.</li>            <li><b>DisplacementMapFilter</b> &#x2014;  This filter can use source and       destination images that are either opaque or transparent, but the       source and destination image formats must be the same.</li>       </ul>            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../Number.html">Number</a></code> &mdash; 
+A number that indicates whether the filter was applied successfully.       If 0 is returned, the filter was applied successfully.       If a negative number is returned, an error occurred during the application of the filter.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../filters/BevelFilter.html" target="">flash.filters.BevelFilter</a>
+<br>
+<a href="../filters/BlurFilter.html" target="">flash.filters.BlurFilter</a>
+<br>
+<a href="../filters/ColorMatrixFilter.html" target="">flash.filters.ColorMatrixFilter</a>
+<br>
+<a href="../filters/ConvolutionFilter.html" target="">flash.filters.ConvolutionFilter</a>
+<br>
+<a href="../filters/DisplacementMapFilter.html" target="">flash.filters.DisplacementMapFilter</a>
+<br>
+<a href="../filters/DropShadowFilter.html" target="">flash.filters.DropShadowFilter</a>
+<br>
+<a href="../filters/GlowFilter.html" target="">flash.filters.GlowFilter</a>
+<br>
+<a href="../../MovieClip.html#filters" target="">MovieClip.filters</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to apply a bevel filter to a BitmapData instance:      <div class='listing'><pre>
+import flash.display.BitmapData;
+import flash.filters.BevelFilter;
+import flash.geom.Point;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, true, 0xCCCCCCCC);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.attachBitmap(myBitmapData, this.getNextHighestDepth());
+
+var filter:BevelFilter = new BevelFilter(5, 45, 0xFFFF00, 0.8, 0x0000FF, 0.8, 20, 20, 1, 3, "inner", false);
+
+mc.onPress = function() {
+    myBitmapData.applyFilter(myBitmapData, myBitmapData.rectangle, new Point(0, 0), filter);
+}
+</pre></div>      <p></p>
+</div>
+<a name="clone()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clone</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clone():<a href="BitmapData.html">BitmapData</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Returns a new BitmapData object that is a clone of the original instance       with an exact copy of the contained bitmap.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="BitmapData.html">BitmapData</a></code> &mdash; 
+A new BitmapData object that is identical to the original.       
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates three BitmapData objects and compares them. You can create the <code>bitmap_1</code> instance by      using the <code>BitmapData</code> constructor. You create the  <code>bitmap_2</code> instance by setting it equal to      <code>bitmap_1</code>.  You create he <code>clonedBitmap</code> instance by cloning <code>bitmap_1</code>.  Notice      that although <code>bitmap_2</code> evaluates as being equal to <code>bitmap_1</code>, <code>clonedBitmap</code> does not,      even though it contains the same values as <code>bitmap_1</code>.      <div class='listing'><pre>
+import flash.display.BitmapData;
+
+var bitmap_1:BitmapData = new BitmapData(100, 80, false, 0x000000);
+var bitmap_2:BitmapData = bitmap_1;
+var clonedBitmap:BitmapData = bitmap_1.clone();
+
+trace(bitmap_1 == bitmap_2);        // true
+trace(bitmap_1 == clonedBitmap);    // false
+
+for(var i in bitmap_1) {
+    trace(">> " + i + ": " + bitmap_1[i]);
+    // >> generateFilterRect: [type Function]
+    // >> dispose: [type Function]
+    // >> clone: [type Function]
+    // >> copyChannel: [type Function]
+    // >> noise: [type Function]
+    // >> merge: [type Function]
+    // >> paletteMap: [type Function]
+    // >> hitTest: [type Function]
+    // >> colorTransform: [type Function]
+    // >> perlinNoise: [type Function]
+    // >> getColorBoundsRect: [type Function]
+    // >> floodFill: [type Function]
+    // >> setPixel32: [type Function]
+    // >> getPixel32: [type Function]
+    // >> pixelDissolve: [type Function]
+    // >> draw: [type Function]
+    // >> threshold: [type Function]
+    // >> scroll: [type Function]
+    // >> applyFilter: [type Function]
+    // >> copyPixels: [type Function]
+    // >> fillRect: [type Function]
+    // >> setPixel: [type Function]
+    // >> getPixel: [type Function]
+    // >> transparent: false
+    // >> rectangle: (x=0, y=0, w=100, h=80)
+    // >> height: 80
+    // >> width: 100
+}
+
+for(var i in clonedBitmap) {
+    trace(">> " + i + ": " + clonedBitmap[i]);
+    // >> generateFilterRect: [type Function]
+    // >> dispose: [type Function]
+    // >> clone: [type Function]
+    // >> copyChannel: [type Function]
+    // >> noise: [type Function]
+    // >> merge: [type Function]
+    // >> paletteMap: [type Function]
+    // >> hitTest: [type Function]
+    // >> colorTransform: [type Function]
+    // >> perlinNoise: [type Function]
+    // >> getColorBoundsRect: [type Function]
+    // >> floodFill: [type Function]
+    // >> setPixel32: [type Function]
+    // >> getPixel32: [type Function]
+    // >> pixelDissolve: [type Function]
+    // >> draw: [type Function]
+    // >> threshold: [type Function]
+    // >> scroll: [type Function]
+    // >> applyFilter: [type Function]
+    // >> copyPixels: [type Function]
+    // >> fillRect: [type Function]
+    // >> setPixel: [type Function]
+    // >> getPixel: [type Function]
+    // >> transparent: false
+    // >> rectangle: (x=0, y=0, w=100, h=80)
+    // >> height: 80
+    // >> width: 100
+}
+</pre></div>      To further demonstrate the relationships between <code>bitmap_1</code>, <code>bitmap_2</code>, and <code>clonedBitmap</code>      the following example modifies the pixel value at (1, 1) of <code>bitmap_1</code>.  Modifying pixel value at (1, 1) demonstrates      that the <code>clone()</code> method creates an instance based on values of the <code>bitmap_1</code> instance      instead of referring to the values.      <div class='listing'><pre>
+import flash.display.BitmapData;
+
+var bitmap_1:BitmapData = new BitmapData(100, 80, false, 0x000000);
+var bitmap_2:BitmapData = bitmap_1;
+var clonedBitmap:BitmapData = bitmap_1.clone();
+
+trace(bitmap_1.getPixel32(1, 1));        // -16777216
+trace(bitmap_2.getPixel32(1, 1));        // -16777216
+trace(clonedBitmap.getPixel32(1, 1));    // -16777216
+
+bitmap_1.setPixel32(1, 1, 0xFFFFFF);
+
+trace(bitmap_1.getPixel32(1, 1));        // -1
+trace(bitmap_2.getPixel32(1, 1));        // -1
+trace(clonedBitmap.getPixel32(1, 1));    // -16777216
+</pre></div>      <p></p>
+</div>
+<a name="colorTransform()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">colorTransform</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function colorTransform(rect:<a href="../geom/Rectangle.html">Rectangle</a>, colorTransform:<a href="../geom/ColorTransform.html">ColorTransform</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Adjusts the color values in a specified area of a bitmap image by using a       ColorTransform object. If the rectangle       matches the boundaries of the bitmap image,  this method transforms the color values of       the entire image.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">rect</span>:<a href="../geom/Rectangle.html">Rectangle</a></code> &mdash; A Rectangle object that defines the area of the image in which the       ColorTransform object is applied.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">colorTransform</span>:<a href="../geom/ColorTransform.html">ColorTransform</a></code> &mdash; A ColorTransform object that describes the color transformation       values to apply.            </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../geom/ColorTransform.html" target="">flash.geom.ColorTransform</a>
+<br>
+<a href="../geom/Rectangle.html" target="">flash.geom.Rectangle</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to apply a  color transform operation to a BitmapData instance.      <div class='listing'><pre>
+import flash.display.BitmapData;
+import flash.geom.ColorTransform;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.attachBitmap(myBitmapData, this.getNextHighestDepth());
+
+mc.onPress = function() {
+    myBitmapData.colorTransform(myBitmapData.rectangle, new ColorTransform(1, 0, 0, 1, 255, 0, 0, 0));
+}
+</pre></div>      <p></p>
+</div>
+<a name="compare()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">compare</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function compare(otherBitmapData:<a href="BitmapData.html">BitmapData</a>):<a href="../../Object.html">Object</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 9</td>
+</tr>
+</table>
+<p></p><p>Compares two BitmapData objects. If the two BitmapData objects have the same dimensions       (width and height), the method returns a new BitmapData object, in which each pixel is       the "difference" between the pixels in the two source objects:             <ul>                 <li>If two pixels are equal, the difference pixel is 0x00000000. </li>                 <li>If two pixels have different RGB values (ignoring the alpha value), the difference pixel       is 0xFFRRGGBB where RR/GG/BB are the individual difference values between red, green, and blue       channels. Alpha channel differences are ignored in this case. </li>                 <li>If only the alpha channel value is different, the pixel value is 0x<i>ZZ</i>FFFFFF,       where <i>ZZ</i> is the difference in the alpha value.</li>             </ul>             </p><p>For example, consider the following two BitmapData objects:</p>             <div class='listing'><pre>
+var bmd1:BitmapData = new BitmapData(50, 50, true, 0xFFFF0000);
+var bmd2:BitmapData = new BitmapData(50, 50, true, 0xCCFFAA00);
+var diffBmpData:BitmapData = bmd1.compare(bmd2);
+</pre></div>             <p><b>Note:</b> The colors used to fill the two BitmapData objects have slightly different RGB values       (0xFF0000 and 0xFFAA00). The result of the <code>compare()</code> method is a new BitmapData       object with each pixel showing the difference in the RGB values between the two bitmaps.</p>             <p>Consider the following two BitmapData objects, in which the RGB colors are the same,       but the alpha values are different:</p>             <div class='listing'><pre>
+var bmd1:BitmapData = new BitmapData(50, 50, true, 0xFFFFAA00);
+var bmd2:BitmapData = new BitmapData(50, 50, true, 0xCCFFAA00);
+var diffBmpData:BitmapData = bmd1.compare(bmd2);
+</pre></div>             <p>The result of the <code>compare()</code> method is a new BitmapData       object with each pixel showing the difference in the alpha values between the two bitmaps.</p>             <p>If the BitmapData objects are equivalent (with the same width, height, and identical pixel values),       the method returns the number 0. </p>             <p>If no argument is passed or if the argument is not a BitmapData object, the method returns -1.</p>             <p>If either BitmapData object has been disposed of, the method returns -2.</p>             <p>If the widths of the BitmapData objects are not equal, but the heights are the same,       the method returns the number -3. </p>             <p>If the heights of the BitmapData objects are not equal, but the widths are the same,       the method returns the number -4. </p>             <p>The following example compares two Bitmap objects with different widths (50 and 60):</p>             <div class='listing'><pre>
+var bmd1:BitmapData = new BitmapData(100, 50, false, 0xFFFF0000);
+var bmd2:BitmapData = new BitmapData(100, 60, false, 0xFFFFAA00);
+trace(bmd1.compare(bmd2)); // -3
+</pre></div>             <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">otherBitmapData</span>:<a href="BitmapData.html">BitmapData</a></code> &mdash; The BitmapData object to compare with the source BitmapData object.             </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../Object.html">Object</a></code> &mdash; 
+If the two BitmapData objects have the same dimensions (width and height), the       method returns a new BitmapData object that has the difference between the two objects (see the       main discussion). If the BitmapData objects are equivalent, the method returns the number 0.       If no argument is passed or if the argument is not a BitmapData object, the method returns -1.       If either BitmapData object has been disposed of, the method returns -2.       If the widths of the BitmapData objects are not equal, the method returns the number -3.       If the heights of the BitmapData objects are not equal, the method returns the number -4.             
+
+</td>
+</tr>
+</table>
+</div>
+<a name="copyChannel()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">copyChannel</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function copyChannel(sourceBitmap:<a href="BitmapData.html">BitmapData</a>, sourceRect:<a href="../geom/Rectangle.html">Rectangle</a>, destPoint:<a href="../geom/Point.html">Point</a>, sourceChannel:<a href="../../Number.html">Number</a>, destChannel:<a href="../../Number.html">Number</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Transfers data from one channel of another BitmapData object or the current       BitmapData object into a channel of the current BitmapData object.       All of the data in the other channels in the destination BitmapData object are       preserved.            </p><p>The source channel value and destination channel value can be       one of the following values or the sum of any of the values: </p>       <ul>       <li><code>1</code> (red)</li>       <li><code>2</code> (green)</li>       <li><code>4</code> (blue)</li>       <li><code>8</code> (alpha)</li>       </ul>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sourceBitmap</span>:<a href="BitmapData.html">BitmapData</a></code> &mdash; The input bitmap image to use. The source image can be a different BitmapData object                           or it can refer to the current BitmapData object.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">sourceRect</span>:<a href="../geom/Rectangle.html">Rectangle</a></code> &mdash; The source Rectangle object. If you only want to copy channel data from a smaller area within the bitmap,       specify a source rectangle that is smaller than the overall size of the                         BitmapData object.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">destPoint</span>:<a href="../geom/Point.html">Point</a></code> &mdash; The destination Point object that represents the upper-left corner of the rectangular area                        where the new channel data is placed.                        If you want to copy channel data                        from one area to a different area in the destination image, specify a point other than (0,0).       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">sourceChannel</span>:<a href="../../Number.html">Number</a></code> &mdash; The source channel. Use a value from the set (1,2,4,8), which represent red, green, blue, and alpha channels, respectively, or a sum of any of the values.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">destChannel</span>:<a href="../../Number.html">Number</a></code> &mdash; The destination channel. Use a value from the set (1,2,4,8), which represent red, green, blue, and alpha channels, respectively, or a sum of any of the values.            </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../geom/Rectangle.html" target="">flash.geom.Rectangle</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to copy a source ARGB channel from a <code>BitmapData</code>       object back onto itself at a different location:            <div class='listing'><pre>
+import flash.display.BitmapData;
+import flash.geom.Rectangle;
+import flash.geom.Point;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.attachBitmap(myBitmapData, this.getNextHighestDepth());
+
+mc.onPress = function() {
+    myBitmapData.copyChannel(myBitmapData, new Rectangle(0, 0, 50, 80), new Point(51, 0), 3, 1);
+}
+</pre></div>       <p></p>
+</div>
+<a name="copyPixels()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">copyPixels</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function copyPixels(sourceBitmap:<a href="BitmapData.html">BitmapData</a>, sourceRect:<a href="../geom/Rectangle.html">Rectangle</a>, destPoint:<a href="../geom/Point.html">Point</a>, [alphaBitmap:<a href="BitmapData.html">BitmapData</a>], [alphaPoint:<a href="../geom/Point.html">Point</a>], [mergeAlpha:<a href="../../Boolean.html">Boolean</a>]):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Provides a fast routine to perform pixel manipulation       between images with no stretching, rotation, or color effects. This method copies a       rectangular area of a source image to a       rectangular area of the same size at the destination point of the destination       BitmapData object.            </p><p>If include the <code>alphaBitmap</code> and <code>alphaPoint</code> parameters, you can use a secondary       image as an alpha source for the source image. If the source       image has alpha data, both sets of alpha data are used to       composite pixels from the source image to the destination image. The       <code>alphaPoint</code> parameter is the point in the alpha image that       corresponds to the upper-left corner of the source       rectangle. Any pixels outside the intersection of the source       image and alpha image are not copied to the destination image.</p>            <p>The <code>mergeAlpha</code> property controls whether or not the alpha       channel is used when a transparent image is copied onto       another transparent image. To simply copy       pixels (with no alpha used), set the <code>mergeAlpha</code>       property to <code>false</code>. Then all pixels are copied from       source to destination. By default, the <code>mergeAlpha</code> property is       <code>false</code>.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sourceBitmap</span>:<a href="BitmapData.html">BitmapData</a></code> &mdash; The input bitmap image from which to copy pixels. The source image can be a       different BitmapData instance, or it can refer to the current BitmapData       instance.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">sourceRect</span>:<a href="../geom/Rectangle.html">Rectangle</a></code> &mdash; A rectangle that defines the area of the source image to use as input.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">destPoint</span>:<a href="../geom/Point.html">Point</a></code> &mdash; The destination point, that represents the upper-left corner of the rectangular       area where the new pixels are placed.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">alphaBitmap</span>:<a href="BitmapData.html">BitmapData</a></code>&nbsp;[optional] &mdash; A secondary, alpha BitmapData object source.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">alphaPoint</span>:<a href="../geom/Point.html">Point</a></code>&nbsp;[optional] &mdash; The point in the alpha BitmapData object source that corresponds to       the upper-left corner of the <code>sourceRect</code> parameter.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">mergeAlpha</span>:<a href="../../Boolean.html">Boolean</a></code>&nbsp;[optional] &mdash; A Boolean value:To use the alpha channel, set the value to       <code>true</code>. To copy pixels with no alpha channel, set the value to       <code>false</code>.            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to copy pixels from one BitmapData      instance to another.      <div class='listing'><pre>
+import flash.display.BitmapData;
+import flash.geom.Rectangle;
+import flash.geom.Point;
+
+var bitmapData_1:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+var bitmapData_2:BitmapData = new BitmapData(100, 80, false, 0x00FF0000);
+
+var mc_1:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc_1.attachBitmap(bitmapData_1, this.getNextHighestDepth());
+
+var mc_2:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc_2.attachBitmap(bitmapData_2, this.getNextHighestDepth());
+mc_2._x = 101;
+
+mc_1.onPress = function() {
+    bitmapData_2.copyPixels(bitmapData_1, new Rectangle(0, 0, 50, 80), new Point(51, 0));
+}
+
+mc_2.onPress = function() {
+    bitmapData_1.copyPixels(bitmapData_2, new Rectangle(0, 0, 50, 80), new Point(51, 0));
+}
+</pre></div>      <p></p>
+</div>
+<a name="dispose()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dispose</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function dispose():Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Frees memory that is used to store the BitmapData object.            </p><p>When this method is called on an image, the width and height of the image are set to 0.       After a BitmapData object's memory has been freed, calls to methods and properties       of the BitmapData instance fail, returning a value of -1. </p>            <br>
+<span class="label">Example</span>
+<br>The following example shows how to release the memory of a  BitmapData  instance,      which results in a cleared instance.      <div class='listing'><pre>
+import flash.display.BitmapData;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.attachBitmap(myBitmapData, this.getNextHighestDepth());
+
+mc.onPress = function() {
+    myBitmapData.dispose();
+
+    trace(myBitmapData.width);            // -1
+    trace(myBitmapData.height);            // -1
+    trace(myBitmapData.transparent);    // -1
+}
+</pre></div>      <p></p>
+</div>
+<a name="draw()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">draw</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function draw(source:<a href="../../Object.html">Object</a>, [matrix:<a href="../geom/Matrix.html">Matrix</a>], [colorTransform:<a href="../geom/ColorTransform.html">ColorTransform</a>], [blendMode:<a href="../../Object.html">Object</a>], [clipRect:<a href="../geom/Rectangle.html">Rectangle</a>], [smooth:<a href="../../Boolean.html">Boolean</a>]):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Draws a source image or movie clip onto a destination image, using the       Flash Player vector renderer. You can specify a transformation matrix, a ColorTransform object,       a blend mode setting, and a destination Rectangle object to control       how the rendering performs. Optionally, you can specify whether the bitmap       should be smoothed when scaled. This works only if the source object       is a BitmapData object.            </p><p>This method directly corresponds to how objects are drawn       using the standard vector renderer for objects in the authoring tool       interface.</p>            <p>A source MovieClip object does not use any of its on-stage transformations       for this call. It is treated as it exists in the library or       file, with no matrix transform, no color transform, and no blend       mode. If you want to draw the movie clip by using its own       transform properties, you can use its Transform object to pass       the various transformation properties.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">source</span>:<a href="../../Object.html">Object</a></code> &mdash; The BitmapData object to draw.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">matrix</span>:<a href="../geom/Matrix.html">Matrix</a></code>&nbsp;[optional] &mdash; A Matrix object used to scale, rotate, or translate the coordinates       of the bitmap. If no object is supplied, the bitmap image will not be transformed.       Set this parameter to an identity matrix, created using the default <code>new Matrix()</code> constructor,       if you must pass this parameter but you do not want to transform the image.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">colorTransform</span>:<a href="../geom/ColorTransform.html">ColorTransform</a></code>&nbsp;[optional] &mdash; A ColorTransform object that you use to adjust the color values of       the bitmap. If no object is supplied, the bitmap image's colors will not be transformed.       Set this parameter to a ColorTransform object created using the default <code>new ColorTransform()</code> constructor,       if you must pass this parameter but you do not want to transform the image.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">blendMode</span>:<a href="../../Object.html">Object</a></code>&nbsp;[optional] &mdash; A blend mode setting for the transformation. This parameter can be either an integer       (from 1 through 14) or a string (such as <code>"normal"</code> or <code>"darken"</code>). For a list of       valid <code>blendMode</code> values, see the <code>blendMode</code> property of the MovieClip class.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">clipRect</span>:<a href="../geom/Rectangle.html">Rectangle</a></code>&nbsp;[optional] &mdash; A Rectangle object. If you do not supply this value, no clipping       occurs.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">smooth</span>:<a href="../../Boolean.html">Boolean</a></code>&nbsp;[optional] &mdash; A Boolean value that determines whether a BitmapData object is       smoothed when scaled or rotated, due to a scaling or rotation in the <code>matrix</code>       parameter. The default value is <code>false</code>. The <code>smoothing</code>       parameter only applies if the <code>source</code> parameter is a BitmapData object.       With <code>smoothing</code> set to <code>false</code>, the rotated or scaled       BitmapData image can appear pixelated or jagged. For example, the following       two images use the same BitmapData object for the <code>source</code> parameter, but the       <code>smoothing</code> parameter is set to <code>true</code> on the left and <code>false</code>       on the right:             <p><img src="../../images/bitmapData_draw_smoothing.jpg" alt="Two images: the left one with smoothing and the right one without smoothing." /></p>            <p>Drawing a bitmap with <code>smoothing</code> set to <code>true</code> takes longer       than doing so with <code>smoothing</code> set to <code>false</code>.</p>             </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../../MovieClip.html#blendMode" target="">MovieClip.blendMode</a>
+<br>
+<a href="../geom/ColorTransform.html" target="">flash.geom.ColorTransform</a>
+<br>
+<a href="../geom/Matrix.html" target="">flash.geom.Matrix</a>
+<br>
+<a href="../geom/Rectangle.html" target="">flash.geom.Rectangle</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to draw from a source MovieClip instance      to a BitmapData object.      <div class='listing'><pre>
+import flash.display.BitmapData;
+import flash.geom.Rectangle;
+import flash.geom.Matrix;
+import flash.geom.ColorTransform;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+
+var mc_1:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc_1.attachBitmap(myBitmapData, this.getNextHighestDepth());
+
+var mc_2:MovieClip = createRectangle(50, 40, 0xFF0000);
+mc_2._x = 101;
+
+var myMatrix:Matrix = new Matrix();
+myMatrix.rotate(Math.PI/2);
+
+var translateMatrix:Matrix = new Matrix();
+translateMatrix.translate(70, 15);
+
+myMatrix.concat(translateMatrix);
+
+var myColorTransform:ColorTransform = new ColorTransform(0, 0, 1, 1, 0, 0, 255, 0);
+var blendMode:String = "normal";
+
+var myRectangle:Rectangle = new Rectangle(0, 0, 100, 80);
+var smooth:Boolean = true;
+
+mc_1.onPress = function() {
+    myBitmapData.draw(mc_2, myMatrix, myColorTransform, blendMode, myRectangle, smooth);
+}
+
+function createRectangle(width:Number, height:Number, color:Number):MovieClip {
+    var depth:Number = this.getNextHighestDepth();
+    var mc:MovieClip = this.createEmptyMovieClip("mc_" + depth, depth);
+    mc.beginFill(color);
+    mc.lineTo(0, height);
+    mc.lineTo(width, height);
+    mc.lineTo(width, 0);
+    mc.lineTo(0, 0);
+    return mc;
+}
+</pre></div>           <p></p>
+</div>
+<a name="fillRect()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">fillRect</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function fillRect(rect:<a href="../geom/Rectangle.html">Rectangle</a>, color:<a href="../../Number.html">Number</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Fills a rectangular area of pixels with a specified ARGB color.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">rect</span>:<a href="../geom/Rectangle.html">Rectangle</a></code> &mdash; The rectangular area to fill.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:<a href="../../Number.html">Number</a></code> &mdash; The ARGB color value that fills the area. ARGB colors are often       specified in hexadecimal format; for example, 0xFF336699.            </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../geom/Rectangle.html" target="">flash.geom.Rectangle</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to fill an area that is defined by a <code>Rectangle</code>      within a <code>BitmapData</code> with a color.      <div class='listing'><pre>
+import flash.display.BitmapData;
+import flash.geom.Rectangle;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.attachBitmap(myBitmapData, this.getNextHighestDepth());
+
+mc.onPress = function() {
+    myBitmapData.fillRect(new Rectangle(0, 0, 50, 40), 0x00FF0000);
+}
+</pre></div>      <p></p>
+</div>
+<a name="floodFill()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">floodFill</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function floodFill(x:<a href="../../Number.html">Number</a>, y:<a href="../../Number.html">Number</a>, color:<a href="../../Number.html">Number</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Performs a flood fill operation on an image starting       at an (<em>x</em>, <em>y</em>) coordinate and filling with a certain color. The       <code>floodFill()</code> method is similar to the paint bucket tool in various painting       programs. The color is an ARGB color that contains alpha information and       color information.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="../../Number.html">Number</a></code> &mdash; The <em>x</em> coordinate of the image.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:<a href="../../Number.html">Number</a></code> &mdash; The <em>y</em> coordinate of the image.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:<a href="../../Number.html">Number</a></code> &mdash; The ARGB color to use as a fill. ARGB colors are often specified in hexadecimal       format, like 0xFF336699.            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to apply a flood fill a color into to an image starting      at the point where a user clicks the mouse      within a BitmapData object.      <div class='listing'><pre>
+import flash.display.BitmapData;
+import flash.geom.Rectangle;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.attachBitmap(myBitmapData, this.getNextHighestDepth());
+
+myBitmapData.fillRect(new Rectangle(0, 0, 50, 40), 0x00FF0000);
+
+mc.onPress = function() {
+    myBitmapData.floodFill(_xmouse, _ymouse, 0x000000FF);
+}
+</pre></div>      <p></p>
+</div>
+<a name="generateFilterRect()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">generateFilterRect</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function generateFilterRect(sourceRect:<a href="../geom/Rectangle.html">Rectangle</a>, filter:<a href="../filters/BitmapFilter.html">BitmapFilter</a>):<a href="../geom/Rectangle.html">Rectangle</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Determines the destination rectangle that the <code>applyFilter()</code> method call affects, given a       BitmapData object, a source rectangle, and a filter object.            </p><p>For example, a blur filter normally affects an area larger than the size of the original       image. A 100 x 200 pixel image that is being filtered by a default BlurFilter       instance, where <code>blurX = blurY = 4</code> generates a destination rectangle of       <code>(-2,-2,104,204)</code>.       The <code>generateFilterRect()</code> method lets you find out the size of this destination       rectangle in advance so that you can size the destination image appropriately before performing a filter       operation.</p>            <p>Some filters clip their destination rectangle based on the source image size.       For example, an inner <code>DropShadow</code> does not generate a larger result than its source       image. In this API, the BitmapData object is used as the source bounds and not the       source <code>rect</code> parameter.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sourceRect</span>:<a href="../geom/Rectangle.html">Rectangle</a></code> &mdash; A rectangle defining the area of the source image to use as input.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">filter</span>:<a href="../filters/BitmapFilter.html">BitmapFilter</a></code> &mdash; A filter object that you use to calculate the destination rectangle.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../geom/Rectangle.html">Rectangle</a></code> &mdash; 
+A destination rectangle computed by using an image, the <code>sourceRect</code> parameter,       and a filter.       
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to determine the destination rectangle that the      <code>applyfilter()</code> method affects:      <div class='listing'><pre>
+import flash.display.BitmapData;
+import flash.filters.BevelFilter;
+import flash.geom.Rectangle;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, true, 0xCCCCCCCC);
+
+var filter:BevelFilter = new BevelFilter(5, 45, 0xFFFF00, 0.8, 0x0000FF, 0.8, 20, 20, 1, 3, "outter", false);
+
+var filterRect:Rectangle = myBitmapData.generateFilterRect(myBitmapData.rectangle, filter);
+
+trace(filterRect);    // (x=-31, y=-31, w=162, h=142)
+</pre></div>      <p></p>
+</div>
+<a name="getColorBoundsRect()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getColorBoundsRect</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getColorBoundsRect(mask:<a href="../../Number.html">Number</a>, color:<a href="../../Number.html">Number</a>, [findColor:<a href="../../Boolean.html">Boolean</a>]):<a href="../geom/Rectangle.html">Rectangle</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Determines a rectangular region that fully encloses all pixels of a specified color within the       bitmap image.            </p><p>For example, if you have a source image and you want to determine the rectangle of       the image that contains a nonzero alpha channel, you pass       <code>{mask: 0xFF000000, color: 0x00000000}</code> as parameters. The       entire image is searched for the bounds of pixels whose       <code>(value &amp; mask) != color</code>. To determine white space around an       image, you pass <code>{mask: 0xFFFFFFFF, color: 0xFFFFFFFF}</code>       to find the bounds of nonwhite pixels.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">mask</span>:<a href="../../Number.html">Number</a></code> &mdash; A hexadecimal color value.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:<a href="../../Number.html">Number</a></code> &mdash; A hexadecimal color value.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">findColor</span>:<a href="../../Boolean.html">Boolean</a></code>&nbsp;[optional] &mdash; If the value is set to <code>true</code>, returns the bounds of a color value in an image.       If the value is set to <code>false</code>, returns the bounds of where this color doesn't exist in an image.       The default value is <code>true</code>.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../geom/Rectangle.html">Rectangle</a></code> &mdash; 
+The region of the image that is the specified color.       
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to determine a rectangular region that fully encloses all pixels      of a specified color within the bitmap image:      <div class='listing'><pre>
+import flash.display.BitmapData;
+import flash.geom.Rectangle;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.attachBitmap(myBitmapData, this.getNextHighestDepth());
+myBitmapData.fillRect(new Rectangle(0, 0, 50, 40), 0x00FF0000);
+
+mc.onPress = function() {
+    var colorBoundsRect:Rectangle = myBitmapData.getColorBoundsRect(0x00FFFFFF, 0x00FF0000, true);
+    trace(colorBoundsRect);    // (x=0, y=0, w=50, h=40)
+}
+</pre></div>      <p></p>
+</div>
+<a name="getPixel()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getPixel</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getPixel(x:<a href="../../Number.html">Number</a>, y:<a href="../../Number.html">Number</a>):<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Returns an integer that represents  an RGB pixel value from a BitmapData object at       a specific point (<em>x</em>, <em>y</em>). The <code>getPixel()</code> method returns an       unmultiplied pixel value. No alpha information is returned.            </p><p>All pixels in a BitmapData object are stored as premultiplied color values.       A premultiplied image pixel has the red, green, and blue       color channel values already multiplied by the alpha data. For example, if the       alpha value is 0, the values for the RGB channels are also 0, independent of their unmultiplied       values. </p>            <p>This loss of data can cause some problems when you are performing operations. All Flash Player       methods take and return unmultiplied values. The internal pixel representation is unmultiplied       before it is returned as a value. During a set operation, the pixel value is premultiplied       before setting the raw image pixel.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="../../Number.html">Number</a></code> &mdash; The <em>x</em> position of the pixel.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:<a href="../../Number.html">Number</a></code> &mdash; The <em>y</em> position of the pixel.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../Number.html">Number</a></code> &mdash; 
+A number that represents an RGB pixel value. If the (<em>x</em>, <em>y</em>) coordinates are       outside the bounds of the image, 0 is returned.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#getPixel32()" target="">BitmapData.getPixel32()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example uses the <code>getPixel()</code> method to retrieve the      RGB value of a pixel at a specific <em>x</em> and <em>y</em> position.      <div class='listing'><pre>
+import flash.display.BitmapData;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.attachBitmap(myBitmapData, this.getNextHighestDepth());
+trace("0x" + myBitmapData.getPixel(0, 0).toString(16));    // 0xcccccc
+</pre></div>      <p></p>
+</div>
+<a name="getPixel32()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getPixel32</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getPixel32(x:<a href="../../Number.html">Number</a>, y:<a href="../../Number.html">Number</a>):<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Returns an ARGB color value that contains alpha channel data and RGB       data. This method is similar to the <code>getPixel()</code> method, which returns an       RGB color without alpha channel data.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="../../Number.html">Number</a></code> &mdash; The <em>x</em> position of the pixel.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:<a href="../../Number.html">Number</a></code> &mdash; The <em>y</em> position of the pixel.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../Number.html">Number</a></code> &mdash; 
+A number that represent an ARGB pixel value. If the (<em>x</em>, <em>y</em>) coordinates are       outside the bounds of the image, 0 is returned. If the bitmap was created as an opaque bitmap       and not a transparent one, then this method will return an error code of -1.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#getPixel()" target="">BitmapData.getPixel()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example uses the <code>getPixel32()</code> method to retrieve the      ARGB value of a pixel at a specific <em>x</em> and <em>y</em> position:      <div class='listing'><pre>
+import flash.display.BitmapData;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, true, 0xFFAACCEE);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.attachBitmap(myBitmapData, this.getNextHighestDepth());
+
+var alpha:String = (myBitmapData.getPixel32(0, 0) >> 24 &amp; 0xFF).toString(16);
+trace(">> alpha: " + alpha);    // ff
+
+var red:String = (myBitmapData.getPixel32(0, 0) >> 16 &amp; 0xFF).toString(16);
+trace(">> red: " + red);        // aa
+
+var green:String = (myBitmapData.getPixel32(0, 0) >> 8 &amp; 0xFF).toString(16);
+trace(">> green: " + green);    // cc
+
+var blue:String = (myBitmapData.getPixel32(0, 0) &amp; 0xFF).toString(16);
+trace(">> blue: " + blue);        // ee
+
+trace("0x" + alpha + red + green + blue);    // 0xffaaccee
+</pre></div>      <p></p>
+</div>
+<a name="hitTest()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hitTest</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function hitTest(firstPoint:<a href="../geom/Point.html">Point</a>, firstAlphaThreshold:<a href="../../Number.html">Number</a>, secondObject:<a href="../../Object.html">Object</a>, [secondBitmapPoint:<a href="../geom/Point.html">Point</a>], [secondAlphaThreshold:<a href="../../Number.html">Number</a>]):<a href="../../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Performs pixel-level hit detection between one bitmap image       and a point, rectangle or other bitmap image. No stretching,       rotation, or other transformation of either object is considered when doing the hit test.            </p><p>If an image is an opaque image, it is considered a fully opaque rectangle for this       method. Both images must be transparent images to perform pixel-level hit testing that       considers transparency. When you are testing two transparent images, the alpha threshold       parameters control what alpha channel values, from 0 to 255, are considered opaque.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">firstPoint</span>:<a href="../geom/Point.html">Point</a></code> &mdash; A point that defines a pixel location in the current BitmapData instance.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">firstAlphaThreshold</span>:<a href="../../Number.html">Number</a></code> &mdash; The highest alpha channel value that is considered opaque for this hit test.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">secondObject</span>:<a href="../../Object.html">Object</a></code> &mdash; A Rectangle, Point, or BitmapData object.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">secondBitmapPoint</span>:<a href="../geom/Point.html">Point</a></code>&nbsp;[optional] &mdash; A point that defines a pixel location in the second BitmapData object.                                 Use this parameter only when the value of <code>secondObject</code> is a                                 BitmapData object.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">secondAlphaThreshold</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The highest alpha channel value that is considered opaque in the second BitmapData object.                                 Use this parameter only when the value of <code>secondObject</code> is a                                 BitmapData object and both BitmapData objects are transparent.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; 
+A Boolean value. If there is a hit, returns a value of <code>true</code>; otherwise, <code>false</code>.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to determine if a BitmapData object      is colliding with a <code>MovieClip</code>.      <div class='listing'><pre>
+import flash.display.BitmapData;
+import flash.geom.Point;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+
+var mc_1:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc_1.attachBitmap(myBitmapData, this.getNextHighestDepth());
+
+var mc_2:MovieClip = createRectangle(20, 20, 0xFF0000);
+
+var destPoint:Point = new Point(myBitmapData.rectangle.x, myBitmapData.rectangle.y);
+var currPoint:Point = new Point();
+
+mc_1.onEnterFrame = function() {
+    currPoint.x = mc_2._x;
+    currPoint.y = mc_2._y;
+    if(myBitmapData.hitTest(destPoint, 255, currPoint)) {
+        trace(">> Collision at x:" + currPoint.x + " and y:" + currPoint.y);
+    }
+}
+
+mc_2.startDrag(true);
+
+function createRectangle(width:Number, height:Number, color:Number):MovieClip {
+    var depth:Number = this.getNextHighestDepth();
+    var mc:MovieClip = this.createEmptyMovieClip("mc_" + depth, depth);
+    mc.beginFill(color);
+    mc.lineTo(0, height);
+    mc.lineTo(width, height);
+    mc.lineTo(width, 0);
+    mc.lineTo(0, 0);
+    return mc;
+}
+</pre></div>      <p></p>
+</div>
+<a name="loadBitmap()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">loadBitmap</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function loadBitmap(id:<a href="../../String.html">String</a>):<a href="BitmapData.html">BitmapData</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Returns a new BitmapData object that contains a bitmap image representation       of the symbol that is identified by a specified linkage ID in the library.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">id</span>:<a href="../../String.html">String</a></code> &mdash; A linkage ID of a symbol in the library.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="BitmapData.html">BitmapData</a></code> &mdash; 
+A bitmap image representation of the symbol.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example loads a bitmap with the linkageId <code>libraryBitmap</code> from your library.  You      must attach it to a <code>MovieClip</code> object to give it a visual representation.      <div class='listing'><pre>
+import flash.display.BitmapData;
+
+var linkageId:String = "libraryBitmap";
+var myBitmapData:BitmapData = BitmapData.loadBitmap(linkageId);
+trace(myBitmapData instanceof BitmapData);    // true
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.attachBitmap(myBitmapData, this.getNextHighestDepth());
+</pre></div>      <p></p>
+</div>
+<a name="merge()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">merge</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function merge(sourceBitmap:<a href="BitmapData.html">BitmapData</a>, sourceRect:<a href="../geom/Rectangle.html">Rectangle</a>, destPoint:<a href="../geom/Point.html">Point</a>, redMult:<a href="../../Number.html">Number</a>, greenMult:<a href="../../Number.html">Number</a>, blueMult:<a href="../../Number.html">Number</a>, alphaMult:<a href="../../Number.html">Number</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Performs per-channel blending from a source image to a       destination image. The following formula is used for each       channel:            </p><p>       <code>       new red dest = (red source &#42; redMult) + (red dest &#42; (256 - redMult) / 256;       </code>       </p>            <p>The <code>redMult</code>, <code>greenMult</code>, <code>blueMult</code>, and <code>alphaMult</code> values       are the multipliers used for each color channel. Their valid range is from 0 to 256.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sourceBitmap</span>:<a href="BitmapData.html">BitmapData</a></code> &mdash; The input bitmap image to use. The source image can be a different       BitmapData object, or it can refer to the current BitmapData object.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">sourceRect</span>:<a href="../geom/Rectangle.html">Rectangle</a></code> &mdash; A rectangle that defines the area of the source image to use as input.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">destPoint</span>:<a href="../geom/Point.html">Point</a></code> &mdash; The point within the destination image (the current BitmapData       instance) that corresponds to the upper-left corner of the source rectangle.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">redMult</span>:<a href="../../Number.html">Number</a></code> &mdash; A number by which to multiply the red channel value.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">greenMult</span>:<a href="../../Number.html">Number</a></code> &mdash; A number by which to multiply the green channel value.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">blueMult</span>:<a href="../../Number.html">Number</a></code> &mdash; A number by which to multiply the blue channel value.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">alphaMult</span>:<a href="../../Number.html">Number</a></code> &mdash; A number by which to multiply the alpha transparency value.            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to merge part of one <code>BitmapData</code>      with another.      <div class='listing'><pre>
+import flash.display.BitmapData;
+import flash.geom.Rectangle;
+import flash.geom.Point;
+
+var bitmapData_1:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+var bitmapData_2:BitmapData = new BitmapData(100, 80, false, 0x00FF0000);
+
+var mc_1:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc_1.attachBitmap(bitmapData_1, this.getNextHighestDepth());
+
+var mc_2:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc_2.attachBitmap(bitmapData_2, this.getNextHighestDepth());
+mc_2._x = 101;
+
+mc_1.onPress = function() {
+    bitmapData_1.merge(bitmapData_2, new Rectangle(0, 0, 50, 40), new Point(25, 20), 128, 0, 0, 0);
+}
+</pre></div>      <p></p>
+</div>
+<a name="noise()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">noise</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function noise(randomSeed:<a href="../../Number.html">Number</a>, [low:<a href="../../Number.html">Number</a>], [high:<a href="../../Number.html">Number</a>], [channelOptions:<a href="../../Number.html">Number</a>], [grayScale:<a href="../../Boolean.html">Boolean</a>]):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Fills an image with pixels representing random noise.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">randomSeed</span>:<a href="../../Number.html">Number</a></code> &mdash; The random seed to use.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">low</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The lowest value to generate for each channel (0 to 255). The default is 0.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">high</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The highest value to generate for each channel (0 to 255). The default is 255.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">channelOptions</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; A number that can be a combination of any of       the four color channel values: <code>1</code> (red),       <code>2</code> (green), <code>4</code> (blue), and       <code>8</code>(alpha). You can use the logical OR operator <code>|</code> to combine channel values.       The default value is <code>(1 | 2 | 4)</code>.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">grayScale</span>:<a href="../../Boolean.html">Boolean</a></code>&nbsp;[optional] &mdash; A Boolean value. If the value is <code>true</code>, a grayscale image is created by setting       all of the color channels to the same value.       The alpha channel selection is not affected by       setting this parameter to <code>true</code>. The default value is <code>false</code>.                 </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to apply pixel noise to a BitmapData object for      both a color and black-and-white bitmap.      <div class='listing'><pre>
+import flash.display.BitmapData;
+import flash.geom.Rectangle;
+import flash.geom.Point;
+
+var bitmapData_1:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+var bitmapData_2:BitmapData = new BitmapData(100, 80, false, 0x00FF0000);
+
+var mc_1:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc_1.attachBitmap(bitmapData_1, this.getNextHighestDepth());
+
+var mc_2:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc_2.attachBitmap(bitmapData_2, this.getNextHighestDepth());
+mc_2._x = 101;
+
+mc_1.onPress = function() {
+        bitmapData_1.merge(bitmapData_2, new Rectangle(0, 0, 50, 40), new Point(25, 20), 128, 0, 0, 0);
+}
+
+mc_1.onPress = function() {
+        bitmapData_1.noise(128, 0, 255, 1, true);
+}
+
+mc_2.onPress = function() {
+        bitmapData_2.noise(128);
+}
+</pre></div>      <p></p>
+</div>
+<a name="paletteMap()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">paletteMap</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function paletteMap(sourceBitmap:<a href="BitmapData.html">BitmapData</a>, sourceRect:<a href="../geom/Rectangle.html">Rectangle</a>, destPoint:<a href="../geom/Point.html">Point</a>, [redArray:<a href="../../Array.html">Array</a>], [greenArray:<a href="../../Array.html">Array</a>], [blueArray:<a href="../../Array.html">Array</a>], [alphaArray:<a href="../../Array.html">Array</a>]):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Remaps the color channel values in an image that has up to four arrays of color palette data, one       for each channel.            </p><p>Flash Player uses the following steps to generate the resulting image: </p>            <blockquote>After the red, green, blue, and alpha       values are computed, they are added together using standard 32-bit-integer arithmetic. The red,       green, blue, and alpha channel values of each pixel are extracted into separate 0 to 255 values.       These values are used to look up new color values in the appropriate array: <code>redArray</code>,       <code>greenArray</code>, <code>blueArray</code>, and <code>alphaArray</code>.       Each of these four arrays should contain 256 values. After all four of the new channel values are       retrieved, they are combined into a standard ARGB value that is applied to the pixel.</blockquote>            <p>Cross-channel effects can be supported with this method.       Each input array can contain full 32-bit values, and there is no shifting when the       values are added together. This routine does not support per-channel       clamping. </p>            <p>If no array is specified for a channel,       the color channel is simply copied from the source image to the       destination image.</p>            <p>You can use this method for a variety of effects such as       general palette mapping (taking one channel and converting it       to a false color image). You can also use this method for a variety of advanced color       manipulation algorithms, such as gamma, curves, levels, and quantizing.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sourceBitmap</span>:<a href="BitmapData.html">BitmapData</a></code> &mdash; The input bitmap image to use. The source image can be a different                           BitmapData object, or it can refer to the current BitmapData object.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">sourceRect</span>:<a href="../geom/Rectangle.html">Rectangle</a></code> &mdash; A rectangle that defines the area of the source image to use as input.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">destPoint</span>:<a href="../geom/Point.html">Point</a></code> &mdash; The point within the destination image (the current BitmapData                         object) that corresponds to upper-left corner of the source rectangle.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">redArray</span>:<a href="../../Array.html">Array</a></code>&nbsp;[optional] &mdash; If <code>redArray</code> is not <code>null</code>, <code>red = redArray[source red value]                        else red = source rect value</code>.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">greenArray</span>:<a href="../../Array.html">Array</a></code>&nbsp;[optional] &mdash; If <code>greenArray</code> is not <code>null</code>, <code>green = greenArray[source                          green value] else green = source green value.</code>       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">blueArray</span>:<a href="../../Array.html">Array</a></code>&nbsp;[optional] &mdash; If <code>blueArray</code> is not <code>null</code>, <code>blue = blueArray[source blue                         value] else blue = source blue value</code>.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">alphaArray</span>:<a href="../../Array.html">Array</a></code>&nbsp;[optional] &mdash; If <code>alphaArray</code> is not <code>null</code>, <code>alpha = alphaArray[source                          alpha value] else alpha = source alpha value</code>.            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to use a palette map to convert solid red to green, and solid green      to red in a single BitmapData object.      <div class='listing'><pre>
+import flash.display.BitmapData;
+import flash.geom.Rectangle;
+import flash.geom.Point;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, false, 0x00FF0000);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth()); mc.attachBitmap(myBitmapData, this.getNextHighestDepth());
+
+myBitmapData.fillRect(new Rectangle(51, 0, 50, 80), 0x0000FF00);
+
+mc.onPress = function() {
+    var redArray:Array = new Array(256);
+    var greenArray:Array = new Array(256);
+
+    for(var i = 0; i &lt; 255; i++) {
+        redArray[i] = 0x00000000;
+        greenArray[i] = 0x00000000;
+    }
+
+    redArray[0xFF] = 0x0000FF00;
+    greenArray[0xFF] = 0x00FF0000;
+
+    myBitmapData.paletteMap(myBitmapData, new Rectangle(0, 0, 100, 40), new Point(0, 0), redArray, greenArray, null, null);
+}
+</pre></div>      <p></p>
+</div>
+<a name="perlinNoise()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">perlinNoise</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function perlinNoise(baseX:<a href="../../Number.html">Number</a>, baseY:<a href="../../Number.html">Number</a>, numOctaves:<a href="../../Number.html">Number</a>, randomSeed:<a href="../../Number.html">Number</a>, stitch:<a href="../../Boolean.html">Boolean</a>, fractalNoise:<a href="../../Boolean.html">Boolean</a>, [channelOptions:<a href="../../Number.html">Number</a>], [grayScale:<a href="../../Boolean.html">Boolean</a>], [offsets:<a href="../../Object.html">Object</a>]):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Generates a Perlin noise image.            </p><p>The Perlin noise generation algorithm interpolates and combines individual random noise functions (called octaves)       into a single function that generates more natural-seeming random noise. Like musical octaves, each octave function is twice the       frequency of the one before it. Perlin noise has been described as a "fractal sum of noise" because it combines multiple sets of noise data       with different levels of detail.</p>            <p>You can use Perlin noise functions to simulate natural       phenomena and landscapes, such as wood grain, clouds, and mountain ranges. In most cases, the output of a Perlin noise function       is not displayed directly but is used to enhance other images and give them pseudo-random variations.</p>            <p>Simple digital random noise functions often produce images with harsh, contrasting points. This kind of harsh contrast       is not often found in nature. The Perlin noise algorithm blends multiple noise functions that operate at different levels of detail.       This algorithm results in smaller variations among neighboring pixel values.</p>            <p><strong>Note: </strong>The Perlin noise algorithm is named for Ken Perlin, who developed it after generating computer graphics for the 1982 film <em>Tron</em>.       Perlin received an Academy Award for Technical Achievement for the Perlin Noise function in 1997.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">baseX</span>:<a href="../../Number.html">Number</a></code> &mdash; Frequency to use in the <em>x</em> direction. For example, to generate a noise that       is sized for a 64 x 128 image, pass  64 for the <code>baseX</code> value.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">baseY</span>:<a href="../../Number.html">Number</a></code> &mdash; Frequency to use in the <em>y</em> direction. For example, to generate a noise that       is sized for a 64 x 128 image, pass  128 for the <code>baseY</code> value.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">numOctaves</span>:<a href="../../Number.html">Number</a></code> &mdash; Number of octaves or individual noise functions to combine to create this noise. Larger numbers of octaves create       images with greater detail. Larger numbers of octaves also require more processing time.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">randomSeed</span>:<a href="../../Number.html">Number</a></code> &mdash; The random seed number to use. If you keep all other parameters the same, you can generate different       pseudo-random results by varying the random seed value. The Perlin noise function is a mapping function, not a       true random-number generation function, so it creates the same results each time from the same random seed.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">stitch</span>:<a href="../../Boolean.html">Boolean</a></code> &mdash; A Boolean value. If the value is <code>true</code>, the method attempts to smooth the transition edges of the image to create seamless textures for       tiling as a bitmap fill.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">fractalNoise</span>:<a href="../../Boolean.html">Boolean</a></code> &mdash; A Boolean value. If the value is <code>true</code>, the method generates fractal noise; otherwise,       it generates turbulence. An image with turbulence has visible discontinuities in the gradient       that can make it better approximate sharper visual effects, like flames and ocean waves.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">channelOptions</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; A number that indicates one or more color channels. To create this value, you can use or combine       any of the four color channel values:       <code>1</code> (red), <code>2</code> (green),       <code>4</code> (blue), and <code>8</code> (alpha). You can combine the channel values by using the logical OR operator; for example, you can combine       the red and green channels by using the following code: <code>1 | 2</code>.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">grayScale</span>:<a href="../../Boolean.html">Boolean</a></code>&nbsp;[optional] &mdash; A Boolean value. If the value is <code>true</code>, a grayscale image is created by setting       each of the red, green, and blue color channels to       identical values. The alpha channel value is not affected if this value is       set to <code>true</code>. The default value is <code>false</code>.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">offsets</span>:<a href="../../Object.html">Object</a></code>&nbsp;[optional] &mdash; An array of points that correspond to <em>x</em> and <em>y</em> offsets for each octave.       By manipulating the offset values you can smoothly scroll the layers of a perlinNoise image.       Each point in the offset array affects a specific octave noise function.            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to apply Perlin noise to a BitmapData object.      <div class='listing'><pre>
+import flash.display.BitmapData;
+
+var bitmapData_1:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+var bitmapData_2:BitmapData = new BitmapData(100, 80, false, 0x00FF0000);
+
+var mc_1:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc_1.attachBitmap(bitmapData_1, this.getNextHighestDepth());
+
+var mc_2:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc_2.attachBitmap(bitmapData_2, this.getNextHighestDepth());
+mc_2._x = 101;
+
+mc_1.onPress = function() {
+    var randomNum:Number = Math.floor(Math.random() * 10);
+        bitmapData_1.perlinNoise(100, 80, 6, randomNum, false, true, 1, true, null);
+}
+
+mc_2.onPress = function() {
+    var randomNum:Number = Math.floor(Math.random() * 10);
+        bitmapData_2.perlinNoise(100, 80, 4, randomNum, false, false, 15, false, null);
+}
+</pre></div>      <p></p>
+</div>
+<a name="pixelDissolve()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">pixelDissolve</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function pixelDissolve(sourceBitmap:<a href="BitmapData.html">BitmapData</a>, sourceRect:<a href="../geom/Rectangle.html">Rectangle</a>, destPoint:<a href="../geom/Point.html">Point</a>, [randomSeed:<a href="../../Number.html">Number</a>], [numberOfPixels:<a href="../../Number.html">Number</a>], [fillColor:<a href="../../Number.html">Number</a>]):<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Performs a pixel dissolve either from a source image to a       destination image or by using the same image. Flash Player uses a <code>randomSeed</code> value       to generate a random pixel dissolve. The return value       of the function must be passed in on subsequent calls to       continue the pixel dissolve until it is finished.            </p><p>If the source image does not equal the destination image,       pixels are copied from the source to the destination using all of the       properties. This allows dissolving from a blank image into a       fully populated image.</p>            <p>If the source and destination images are equal, pixels are       filled with the <code>color</code> parameter. This allows dissolving away       from a fully populated image. In this mode, the destination       <code>point</code> parameter is ignored.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sourceBitmap</span>:<a href="BitmapData.html">BitmapData</a></code> &mdash; The input bitmap image to use. The source image can be a different       BitmapData object or it can refer to the current BitmapData instance.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">sourceRect</span>:<a href="../geom/Rectangle.html">Rectangle</a></code> &mdash; A rectangle that defines the area of the source image to use as input.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">destPoint</span>:<a href="../geom/Point.html">Point</a></code> &mdash; The point within the destination image (the current BitmapData       instance) that corresponds to the upper-left corner of the source rectangle.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">randomSeed</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The random seed to use to start the pixel dissolve. The default value is 0.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">numberOfPixels</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The default is 1/30 of the source area (width x height).            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">fillColor</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; An ARGB color value that you use to fill pixels whose       source value equals its destination value. The default value is 0.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../Number.html">Number</a></code> &mdash; 
+The new random seed value to use for subsequent calls.       
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example uses <code>pixelDissolve()</code> to convert a grey <code>BitmapData</code>      object to a red one by dissolving 40 pixels at a time until all 8000 pixels have changed colors:      <div class='listing'><pre>
+import flash.display.BitmapData;
+import flash.geom.Point;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.attachBitmap(myBitmapData, this.getNextHighestDepth());
+
+mc.onPress = function() {
+    var randomNum:Number = Math.floor(Math.random() * 10);
+    dissolve(randomNum);
+}
+
+var intervalId:Number;
+var totalDissolved:Number = 0;
+var totalPixels:Number = 8000;
+
+function dissolve(randomNum:Number) {
+    var newNum:Number = myBitmapData.pixelDissolve(myBitmapData, myBitmapData.rectangle, new Point(0, 0), randomNum, 40, 0x00FF0000);
+    clearInterval(intervalId);
+    if(totalDissolved &lt; totalPixels) {
+        intervalId = setInterval(dissolve, 10, newNum);
+    }
+    totalDissolved += 40;
+}
+</pre></div>      <p></p>
+</div>
+<a name="scroll()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scroll</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function scroll(x:<a href="../../Number.html">Number</a>, y:<a href="../../Number.html">Number</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Scrolls an image by a certain (<em>x</em>, <em>y</em>) pixel amount. Edge       regions outside the scrolling area are left unchanged.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="../../Number.html">Number</a></code> &mdash; The amount by which to scroll horizontally.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:<a href="../../Number.html">Number</a></code> &mdash; The amount by which to scroll vertically.            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to scroll a BitmapData object.      <div class='listing'><pre>
+import flash.display.BitmapData;
+import flash.geom.Rectangle;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.attachBitmap(myBitmapData, this.getNextHighestDepth());
+
+myBitmapData.fillRect(new Rectangle(0, 0, 25, 80), 0x00FF0000);
+
+mc.onPress = function() {
+    myBitmapData.scroll(25, 0);
+}
+</pre></div>      <p></p>
+</div>
+<a name="setPixel()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setPixel</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setPixel(x:<a href="../../Number.html">Number</a>, y:<a href="../../Number.html">Number</a>, color:<a href="../../Number.html">Number</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Sets the color of a single pixel of a BitmapData object. The current       alpha channel value of the image pixel is preserved during this       operation. The value of the RGB color parameter is treated as an unmultiplied color value.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="../../Number.html">Number</a></code> &mdash; The <em>x</em> position of the pixel whose value changes.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:<a href="../../Number.html">Number</a></code> &mdash; The <em>y</em> position of the pixel whose value changes.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:<a href="../../Number.html">Number</a></code> &mdash; The RGB color to which to set the pixel.            </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#getPixel()" target="">BitmapData.getPixel()</a>
+<br>
+<a href="#setPixel32()" target="">BitmapData.setPixel32()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example uses the <code>setPixel()</code> method to assign a      RGB value to a pixel at a specific <em>x</em> and <em>y</em> position.  You can draw on the created      bitmap in 0x000000 by dragging.      <div class='listing'><pre>
+import flash.display.BitmapData;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.attachBitmap(myBitmapData, this.getNextHighestDepth());
+
+mc.onPress = function() {
+    this.onEnterFrame = sketch;
+}
+
+mc.onRelease = function() {
+    delete this.onEnterFrame;
+}
+
+function sketch() {
+    myBitmapData.setPixel(_xmouse, _ymouse, 0x000000);
+}
+</pre></div>      <p></p>
+</div>
+<a name="setPixel32()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setPixel32</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setPixel32(x:<a href="../../Number.html">Number</a>, y:<a href="../../Number.html">Number</a>, color:<a href="../../Number.html">Number</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Sets the color and alpha transparency values of a single pixel of a BitmapData       object. This method is similar to the <code>setPixel()</code> method; the main difference is       that the <code>setPixel32()</code> method takes an       ARGB color value that contains alpha channel information.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="../../Number.html">Number</a></code> &mdash; The <em>x</em> position of the pixel whose value changes.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:<a href="../../Number.html">Number</a></code> &mdash; The <em>y</em> position of the pixel whose value changes.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:<a href="../../Number.html">Number</a></code> &mdash; The ARGB color to which to set the pixel. If you created an opaque       (not a transparent) bitmap, the alpha transparency portion of this color value is ignored.            </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#getPixel32()" target="">BitmapData.getPixel32()</a>
+<br>
+<a href="#setPixel()" target="">BitmapData.setPixel()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example uses the <code>setPixel32()</code> method to assign an      ARGB value to a pixel at a specific x and y position.  You can draw on the created      bitmap in 0x000000 without an alpha value by pressing you mouse button and dragging.      <div class='listing'><pre>
+import flash.display.BitmapData;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, true, 0xFFCCCCCC);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.attachBitmap(myBitmapData, this.getNextHighestDepth());
+
+mc.onPress = function() {
+    this.onEnterFrame = sketch;
+}
+
+mc.onRelease = function() {
+    delete this.onEnterFrame;
+}
+
+function sketch() {
+    myBitmapData.setPixel32(_xmouse, _ymouse, 0x00000000);
+}
+</pre></div>      <p></p>
+</div>
+<a name="threshold()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">threshold</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function threshold(sourceBitmap:<a href="BitmapData.html">BitmapData</a>, sourceRect:<a href="../geom/Rectangle.html">Rectangle</a>, destPoint:<a href="../geom/Point.html">Point</a>, operation:<a href="../../String.html">String</a>, threshold:<a href="../../Number.html">Number</a>, [color:<a href="../../Number.html">Number</a>], [mask:<a href="../../Number.html">Number</a>], [copySource:<a href="../../Boolean.html">Boolean</a>]):<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Tests pixel values in an image against a specified threshold and sets pixels that pass the test to new color values.       Using the <code>threshold()</code> method, you can isolate and replace color ranges in an image and perform other       logical operations on image pixels.            </p><p>The threshold test's logic is as follows:</p>            <pre>if ((<code>pixelValue &amp; mask</code>) <code>operation</code> (<code>threshold &amp; mask</code>)) then<br />
+           &#xA0;&#xA0;&#xA0;set pixel to <code>color</code><br />
+      else<br />
+      &#xA0;&#xA0;&#xA0;if (<code>copySource</code>) then<br />
+      &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;set pixel to corresponding pixel value from <code>sourceBitmap</code>
+          </pre>            <p>The <code>operation</code> parameter specifies the comparison operator to use for the threshold test.       For example, by using "<code>==</code>", you       can isolate a specific color value in an image. Or by using <code>{operation:       "&lt;", mask: 0xFF000000, threshold: 0x7f000000, color:       0x00000000}</code>, you can set all destination pixels to be fully transparent       when the source image pixel's alpha is less than 0x7F. You can use this technique       for animated transitions and other effects.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sourceBitmap</span>:<a href="BitmapData.html">BitmapData</a></code> &mdash; The input bitmap image to use. The source image can be a different       BitmapData object or it can refer to the current BitmapData instance.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">sourceRect</span>:<a href="../geom/Rectangle.html">Rectangle</a></code> &mdash; A rectangle that defines the area of the source image to use as input.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">destPoint</span>:<a href="../geom/Point.html">Point</a></code> &mdash; The point within the destination image (the current BitmapData       instance) that corresponds to upper-left corner of the source rectangle.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">operation</span>:<a href="../../String.html">String</a></code> &mdash; One of the following comparison operators, passed as a String: "&lt;", "&lt;=", "&gt;", "&gt;=", "==", "!="            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">threshold</span>:<a href="../../Number.html">Number</a></code> &mdash; The value that each pixel is tested against to see if it meets or exceeds the threshhold.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The color value that a pixel is set to if the threshold test succeeds. The default is 0x00000000.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">mask</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The mask to use to isolate a color component. The default value is 0xFFFFFFFF.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">copySource</span>:<a href="../../Boolean.html">Boolean</a></code>&nbsp;[optional] &mdash; A Boolean value. If the value is <code>true</code>, pixel values from the source image are copied to the destination       when the threshold test fails. If the value is <code>false</code>, the source image is not copied when the       threshold test fails. The default value is <code>false</code>.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../Number.html">Number</a></code> &mdash; 
+The number of pixels that were changed.       
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to change the color value of pixels      whose color value is greater than or      equal to a certain threshold.      <div class='listing'><pre>
+import flash.display.BitmapData;
+import flash.geom.Rectangle;
+import flash.geom.Point;
+
+var myBitmapData:BitmapData = new BitmapData(100, 80, false, 0x00CCCCCC);
+
+var mc:MovieClip = this.createEmptyMovieClip("mc", this.getNextHighestDepth());
+mc.attachBitmap(myBitmapData, this.getNextHighestDepth());
+
+myBitmapData.fillRect(new Rectangle(0, 0, 50, 80), 0x00FF0000);
+
+mc.onPress = function() {
+    myBitmapData.threshold(myBitmapData, new Rectangle(0, 0, 100, 40), new Point(0, 0), "==", 0x00CCCCCC, 0x000000FF, 0x00FF0000, false);
+}
+</pre></div>      <p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

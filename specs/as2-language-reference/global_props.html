@@ -1,0 +1,881 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body class="MainContent"><script language="javascript" type="text/javascript" src="asdoc.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'Global Properties - Flash CS4 ActionScript 2.0 Language Reference';
+				window.onload = configPage;
+			--></script><p></p>
+<table id="titleTable" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td valign="middle" align="left" width="40px"><img alt="Adobe Logo" border="0" height="50" width="42" src="images/mm-icon.jpg"></td><td valign="middle" align="center">
+<h2>ActionScript 2.0 Language Reference</h2>
+</td>
+</tr>
+<tr>
+<td colspan="2" height="10px"></td>
+</tr>
+</table>
+<table class="topLinks" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td width="100%" align="right"></td><td style="white-space:nowrap" id="navigationCell1" align="right"><a href="package-summary.html">All Packages</a> | <a href="class-summary.html">All Classes</a> | <a href="language-elements.html">Language Elements</a> | <a href="all-index-Symbols.html">Index</a> | <a href="index.html?global_props.html">Frames</a></td>
+</tr>
+</table><a name="Global Properties"></a><h2>Global Properties</h2>
+<p>Global properties are available in every script, and are visible to every Timeline and scope in your document. For example, global properties allow access to the timelines of other loaded movie clips, both relative (<code>_parent</code>) and absolute (<code>_root</code>). They also let you restrict (<code>this</code>) or expand (<code>super</code>) scope. And, you can use global properties to adjust runtime settings like screen reader accessibility, playback quality, and sound buffer size.</p>
+<p></p>
+<p></p><br><table cellspacing="0" cellpadding="3" width="100%" class="withBorder">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC" class="SummaryTableHeader">
+<font size="+1"><b>Properties</b></font>
+</td>
+</tr>
+<tr class="row1">
+<td width="1%" valign="top"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
+<td valign="top"><code><a href="#_accProps"><b>_accProps</b></a></code><br><span class="flashonly">Lets you control screen reader accessibility options for SWF files, movie clips, buttons, dynamic text fields, and input text fields at runtime.</span><span class="flexonly">Property; lets you control screen reader accessibility options at runtime for SWF files and movie clips as well as for Button, TextArea, and TextInput controls.</span></td>
+</tr>
+<tr class="row0">
+<td width="1%" valign="top"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
+<td valign="top"><code><a href="#_focusrect"><b>_focusrect</b></a></code><br>Property (global); specifies whether a yellow rectangle appears around the button or movie clip that has keyboard focus.</td>
+</tr>
+<tr class="row1">
+<td width="1%" valign="top"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
+<td valign="top"><code><a href="#_global"><b>_global</b></a></code><br>A reference to the global object that holds the core ActionScript classes, such as String, Object, Math, and Array.</td>
+</tr>
+<tr class="row0">
+<td width="1%" valign="top"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
+<td valign="top"><code><a href="#_highquality"><b>_highquality</b></a></code><br><font size="3"><b>Deprecated</b></font><em> as of Flash Player 5 — This property was deprecated in favor of <code>_quality</code>.</em><br></td>
+</tr>
+<tr class="row1">
+<td width="1%" valign="top"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
+<td valign="top"><code><a href="#_level"><b>_level</b></a></code><br>A reference to the root Timeline of <code>_level</code> <code><i>N</i></code>.</td>
+</tr>
+<tr class="row0">
+<td width="1%" valign="top"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
+<td valign="top"><code><a href="#maxscroll"><b>maxscroll</b></a></code>&nbsp;&nbsp;[read-only]<br><font size="3"><b>Deprecated</b></font><em> as of Flash Player 5 — This property was deprecated in favor of <code>TextField.maxscroll</code>.</em><br></td>
+</tr>
+<tr class="row1">
+<td width="1%" valign="top"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
+<td valign="top"><code><a href="#_parent"><b>_parent</b></a></code><br>Specifies or returns a reference to the movie clip or object that contains the current movie clip or object.</td>
+</tr>
+<tr class="row0">
+<td width="1%" valign="top"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
+<td valign="top"><code><a href="#_quality"><b>_quality</b></a></code><br>Sets or retrieves the rendering quality used for a movie clip.</td>
+</tr>
+<tr class="row1">
+<td width="1%" valign="top"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
+<td valign="top"><code><a href="#_root"><b>_root</b></a></code><br>Specifies or returns a reference to the root movie clip Timeline.</td>
+</tr>
+<tr class="row0">
+<td width="1%" valign="top"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
+<td valign="top"><code><a href="#scroll"><b>scroll</b></a></code><br><font size="3"><b>Deprecated</b></font><em> as of Flash Player 5 — This property was deprecated in favor of <code>TextField.scroll</code>.</em><br></td>
+</tr>
+<tr class="row1">
+<td width="1%" valign="top"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
+<td valign="top"><code><a href="#_soundbuftime"><b>_soundbuftime</b></a></code><br>Establishes the number of seconds of streaming sound to buffer.</td>
+</tr>
+<tr class="row0">
+<td width="1%" valign="top"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></td>
+<td valign="top"><code><a href="#this"><b>this</b></a></code><br>References an object or movie clip instance.</td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<p></p>
+<p></p><br><table cellspacing="0" cellpadding="2" width="100%" class="withBorder">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC" class="SummaryTableHeader">
+<font size="+1"><b>Property detail</b></font>
+</td>
+</tr>
+</table><a name="_accProps"></a><p></p>
+<h2>_accProps Property</h2>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td><pre>_accProps.<i>propertyName</i>
+<i>instanceName</i>._accProps.<i>propertyName</i>
+</pre></td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="white-space:nowrap" valign="top"><b>Player version:&nbsp;</b></td>
+<td>Flash Player 6,0,65,0</td>
+</tr>
+</table>
+<p></p>
+<span class="flashonly">Lets you control screen reader accessibility 
+options for SWF files, movie clips, buttons, dynamic text fields, and input text 
+fields at runtime.</span> 
+
+<span class="flexonly">Lets you control screen 
+reader accessibility options at runtime for SWF files and movie clips as well 
+as for Button, TextArea, and TextInput controls.</span> 
+
+<span class="flashonly">These 
+properties override the corresponding settings available in the Accessibility
+panel during authoring.</span> 
+
+For changes to these properties to take effect, 
+you must call <a href="Accessibility.html#updateProperties()">Accessibility.updateProperties()</a>.
+
+<p><span class="flashonly">For information on the Accessibility panel, see "The 
+    Flash Accessibility panel" in <i>Using Flash</i>.</span> </p> 
+
+<p>To determine whether the player is running in an environment that supports 
+  accessibility aids, use the <a href="System/capabilities.html#hasAccessibility">System.capabilities.hasAccessibility
+  property </a>.</p> 
+
+<p>The following table lists the name and data type of each <code>_accProps</code> property
+
+    <span class="flashonly">, its equivalent setting in the Accessibility panel,</span> 
+
+    and the kinds of objects to which the property can be applied. 
+
+	<span class="flashonly">The term <i>inverse logic</i> means that the property setting is the inverse 
+    of the corresponding setting in the Accessibility panel. For example, setting 
+    the <code>silent</code> property to <code>true</code> is equivalent to deselecting 
+    the Make Movie Accessible or Make Object Accessible option. </span>
+</p> 
+
+<span class="flashonly">
+<p>
+<table width="600" class="innertable"> 
+  <tr> 
+    <th> Property </th> 
+    <th> Data type </th> 
+    <th> Equivalent in Accessibility panel </th> 
+    <th> Applies to </th> 
+  </tr> 
+  <tr> 
+    <td> <code>silent</code> </td> 
+    <td> Boolean </td> 
+    <td> Make Movie Accessible/ 
+      Make Object Accessible <i>(inverse logic)</i> </td> 
+    <td> Whole SWF files, Movie clips, Buttons, Dynamic text, and Input text </td> 
+  </tr> 
+  <tr> 
+    <td> <code>forceSimple</code> </td> 
+    <td> Boolean </td> 
+    <td> Make Child Objects Accessible <i>(inverse logic)</i> </td> 
+    <td> Whole SWF files and Movie clips </td> 
+  </tr> 
+  <tr> 
+    <td> <code>name</code> </td> 
+    <td> String </td> 
+    <td> Name </td> 
+    <td> Whole SWF files, Movie clips, Buttons, and Input text </td> 
+  </tr> 
+  <tr> 
+    <td> <code>description</code> </td> 
+    <td> String </td> 
+    <td> Description </td> 
+    <td> Whole SWF files, Movie clips, Buttons, Dynamic text, and Input text </td> 
+  </tr> 
+  <tr> 
+    <td> <code>shortcut</code> </td> 
+    <td> String </td> 
+    <td> Shortcut</td> 
+    <td> Movie clips, Buttons, Input text </td> 
+  </tr> 
+</table> 
+</p>
+<p>For the Shortcut field, use names of the form Control+A. Adding a keyboard
+  shortcut to the Accessibility panel doesn't create a keyboard shortcut; it
+  merely advises screen readers of an existing shortcut. For information on assigning
+a keyboard shortcut to an accessible object, see <code>Key.addListener()</code>. </p> 
+</span> 
+<span class="flexonly">
+<p>
+<table width="600" class="innertable"> 
+  <tr> 
+    <th align="left"> Property </th> 
+    <th> Data type </th> 
+    <th align="left"> Applies to </th> 
+  </tr> 
+  <tr> 
+    <td> <code>silent</code> </td> 
+    <td> Boolean </td> 
+    <td> Whole SWF files, Movie clips, Buttons, Dynamic text, and Input text </td> 
+  </tr> 
+  <tr> 
+    <td> <code>forceSimple</code> </td> 
+    <td> Boolean </td> 
+    <td> Whole SWF files and Movie clips </td> 
+  </tr> 
+  <tr> 
+    <td> <code>name</code> </td> 
+    <td> String </td> 
+    <td> Whole SWF files, Movie clips, Buttons, and Input text </td> 
+  </tr> 
+  <tr> 
+    <td> <code>description</code> </td> 
+    <td> String </td> 
+    <td> Whole SWF files, Movie clips, Buttons, Dynamic text, and Input text</td> 
+  </tr> 
+  <tr> 
+    <td> <code>shortcut</code> </td> 
+    <td> String </td> 
+    <td> Movie clips, Buttons, and Input text </td> 
+  </tr> 
+</table> 
+</p> 
+</span> 
+
+<span class="flashonly"> 
+<p>To specify settings that correspond to the Tab index setting in the Accessibility
+  panel, use the <a href="Button.html#tabIndex">Button.tabIndex</a>, <a href="MovieClip.html#tabIndex">MovieClip.tabIndex</a>,
+  or <a href="TextField.html#tabIndex">TextField.tabIndex</a> properties.</p> 
+
+<p>There is no way to specify an Auto Label setting at runtime.</p> 
+</span> 
+
+<p>To refer to the <code>_accProps</code> object that represents the entire Flash
+  document, omit the <code>instanceName</code> parameter. The value of <code>_accProps</code> must
+  be an object. This means that if no <code>_accProps</code> object already exists,
+  you must create one, as shown in the following example, before you can assign
+  values to the properties of the <code>_accProps</code> object:</p> 
+
+<listing version="1.0"> 
+if ( _accProps == undefined ) 
+{ 
+   _accProps = new Object(); 
+} 
+_accProps.name = "My SWF file";
+</listing> 
+<p>When <code>_accProps</code> is used without the <code><i>instanceName</i></code> parameter,
+  changes made to <code>_accProps</code> properties apply to the whole SWF file.
+  For example, the following code sets the Accessibility <code>name</code> property
+  for the whole SWF file to the string <code>"Pet Store"</code> and then calls <code>Accessibility.updateProperties()</code> to
+  cause that change:</p> 
+
+<listing version="1.0">_accProps.name = "Pet Store"; 
+Accessibility.updateProperties(); </listing> 
+<p>In contrast, the following code sets the <code>name</code> property for a
+  movie clip with the instance name <code>price_mc</code> to the string <code>"Price"</code>:</p> 
+<listing version="1.0">price_mc._accProps.name = "Price";
+Accessibility.updateProperties(); </listing> 
+<p>If you are specifying several accessibility properties, make as many changes
+  as you can before calling <code>Accessibility.updateProperties()</code>, instead
+  of calling it after each property statement, as shown in the following example:</p> 
+<listing version="1.0">_accProps.name = "Pet Store";
+ 
+animal_mc._accProps.name = "Animal"; 
+animal_mc._accProps.description = "Cat, dog, fish, etc.";
+
+price_mc._accProps.name = "Price";
+price_mc._accProps.description = "Cost of a single item";
+
+Accessibility.updateProperties(); </listing> 
+
+<span class="flashonly"> 
+<p>If you don't specify an accessibility property for a document or an object,
+  any values set in the Accessibility panel are implemented.</p> 
+After you specify an accessibility property, you can't revert its value to a
+value set in the Accessibility panel. However, you can set the property to its
+default value (<code>false</code> for Boolean values; empty strings for string
+values) by deleting the property from the <code>_accProps</code> object, as shown
+in the following example:
+
+<listing version="1.0"> my_mc._accProps.silent = true; // set a property 
+// other code here 
+delete my_mc._accProps.silent; // revert to default value </listing> 
+
+
+</span> 
+
+<span class="flexonly">In the following example, to revert a property
+to its default value (<code>false</code> for Boolean values, empty strings for
+String values), delete the property from the <code>_accProps</code> object:
+<listing version="1.0">my_mc._accProps.silent = true; // set a property 
+// other code here 
+delete my_mc._accProps.silent; // revert to default value </listing> 
+</span> 
+<!--
+<p><b>Parameters</b><br /> 
+<code>propertyName: Boolean or String</code><br /> 
+An accessibility property name (see the following description
+for valid names).  <br /> 
+  <br /> 
+<code>instanceName: String</code><br /> 
+The instance name assigned to an instance of a movie
+clip, button, dynamic text field, or input text field. To refer to the <code>_accProps</code> object
+that represents the entire Flash document, omit <code><i>instanceName</i></code>.<br /> 
+  <br /> 
+</p> 
+-->
+
+				<p></p><b>Example</b><br>If you change an image and want to update its accessibility description, you can use the following ActionScript code: 
+<div class='listing'><pre>
+my_mc.gotoAndStop(2);
+
+if (my_mc._accProps == undefined ) {
+    my_mc._accProps = new Object();
+}
+
+my_mc._accProps.name = "Photo of Mount Rushmore";
+Accessibility.updateProperties();
+</pre></div><p></p>
+<p><b>See also</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Accessibility.html#isActive()">Accessibility.isActive()</a>, <a href="Accessibility.html#updateProperties()">Accessibility.updateProperties()</a>, <a href="System/capabilities.html#hasAccessibility">System.capabilities.hasAccessibility</a></p>
+<p></p>
+<hr width="100%"><a name="_focusrect"></a><p></p>
+<h2>_focusrect Property</h2>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td><code>_focusrect = <i>Boolean</i>;</code></td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="white-space:nowrap" valign="top"><b>Player version:&nbsp;</b></td>
+<td>Flash Player 4</td>
+</tr>
+</table>
+<p></p>Specifies whether a yellow rectangle appears around the button or movie clip that has keyboard focus. If <code>_focusrect</code> is set to its default value of <code>true</code>, then a yellow rectangle appears around the currently focused button or movie clip as the user presses the Tab key to navigate through objects in a SWF file. Specify <code>false</code> if you do not want to show the yellow rectangle. This is a global property that can be overridden for specific instances. 
+<p>If the global <code>_focusrect</code> property is set to <code>false</code>, then the default behavior for all buttons and movieclips is that keyboard navigation is limited to the Tab key. All other keys, including the Enter and arrow keys, are ignored. To restore full keyboard navigation, you must set <code>_focusrect</code> to <code>true</code>. To restore full keyboard functionality for a specific button or movieclip, you can override this global property using either <code>Button._focusrect</code> or <code>MovieClip._focusrect</code>.</p>
+<p><strong>Note:</strong> If you use a component, then FocusManager overrides Flash Player's focus handling, including use of this global property.</p><p></p><b>Example</b><br>The following example demonstrates how to hide the yellow rectangle around any instances in a SWF file when they have focus in a browser window. Create some buttons or movie clips and add the following ActionScript<span class="flashonly"> in frame 1 of the Timeline</span>:
+<div class='listing'><pre>
+_focusrect = false;
+</pre></div>
+Change the publish settings to Flash Player 6, and test the SWF file in a browser window <span class="flashonly">by selecting File > Publish Preview > HTML</span>. Give the SWF focus by clicking it in the browser window, and use the Tab key to focus each instance. Pressing Enter or the Space key when <code>_focusrect</code> is disabled does not invoke the <code>onRelease</code> event handler as it does when <code>_focusrect</code>
+is enabled or <code>true</code>.
+                    <p></p>
+<p><b>See also</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Button.html#_focusrect">Button._focusrect</a>, <a href="MovieClip.html#_focusrect">MovieClip._focusrect</a></p>
+<p></p>
+<hr width="100%"><a name="_global"></a><p></p>
+<h2>_global Property</h2>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td><code>_global.identifier</code></td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="white-space:nowrap" valign="top"><b>Player version:&nbsp;</b></td>
+<td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+A reference to the global object that holds the core ActionScript classes, such as String, Object, Math, and Array. For example, you could create a library that is exposed as a global ActionScript object, similar to the Math or Date object.<span class="flashonly"> Unlike Timeline-declared or locally declared variables and functions, global variables and functions are visible to every Timeline and scope in the SWF file, provided they are not obscured by identifiers with the same names in inner scopes.</span><span class="flexonly"> Unlike locally declared variables and functions, global variables and functions are visible to every scope in the SWF file, provided they are not obscured by identifiers with the same names in inner scopes.</span> 
+<p><strong>Note:</strong> When setting the value of a global variable, you must use the fully qualified name of the variable, e.g. _global.variableName. Failure to do so will create a local variable of the same name that obscures the global variable you are attempting to set.</p> <p><b>Returns</b><br />A reference to the global object that holds the core ActionScript classes, such as String, Object, Math, and Array.</p> 
+
+				<p></p><b>Example</b><br><span class="flashonly">The following example creates a top-level function, <code>factorial(),</code> that is available to every Timeline and scope in a SWF file:</span>
+<span class="flexonly"><p>The following example creates a top-level function <code>factorial()</code> that is available to every scope in a SWF file:</p></span>
+<div class='listing'><pre>
+_global.factorial = function(n:Number) {
+    if(n &lt;= 1) {
+        return 1;
+    } 
+    else {
+        return n * factorial(n - 1);
+    }
+}
+
+trace(factorial(1)); // 1
+trace(factorial(2)); // 2
+trace(factorial(3)); // 6
+trace(factorial(4)); // 24
+</pre></div>
+<p>The following example shows how the failure to use the fully qualified variable name when setting the value of a global variable leads to unexpected results: </p>
+<div class='listing'><pre>
+_global.myVar = "globalVariable";
+trace(_global.myVar);    // globalVariable
+trace(myVar);        // globalVariable
+
+myVar = "localVariable";
+trace(_global.myVar);    // globalVariable
+trace(myVar);        // localVariable
+</pre></div>
+
+                    <p></p>
+<p><b>See also</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="statements.html#var">var statement</a>, <a href="statements.html#set_variable">set variable statement</a></p>
+<p></p>
+<hr width="100%"><a name="_highquality"></a><p></p>
+<h2>_highquality Property</h2>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td>
+						<code>_highquality</code>
+					</td>
+</tr>
+</table>
+<p></p>
+<p>
+<font size="3"><b>Deprecated</b></font><em> as of Flash Player 5 — This property was deprecated in favor of <code>_quality</code>.</em><br></p>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="white-space:nowrap" valign="top"><b>Player version:&nbsp;</b></td>
+<td>Flash Player 4</td>
+</tr>
+</table>
+<p></p>
+					Specifies the level of anti-aliasing applied to the current SWF file. Specify 2 (best quality) to apply high quality with bitmap smoothing always on. Specify 1 (high quality) to apply anti-aliasing; this will smooth bitmaps if the SWF file does not contain animation. Specify 0 (low quality) to prevent anti-aliasing. 
+				<p></p><b>Example</b><br>
+                        The following ActionScript is placed on the main Timeline, and sets the global quality property to always apply bitmap smoothing in non-animated files.<br />
+    <code>_highquality = 1;</code><br />
+                    <p></p>
+<p><b>See also</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#_quality">_quality</a></p>
+<p></p>
+<hr width="100%"><a name="_level"></a><p></p>
+<h2>_level Property</h2>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td><code>_level<i>N</i></code></td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="white-space:nowrap" valign="top"><b>Player version:&nbsp;</b></td>
+<td>Flash Player 4</td>
+</tr>
+</table>
+<p></p>A reference to the root Timeline of <code>_level</code> <code><i>N</i></code>. You must use <code>loadMovieNum()</code> to load SWF files into the Flash Player before you use the <code>_level</code> property to target them. You can also use <code>_level</code> <code><i>N</i></code> to target a loaded SWF file at the level assigned by <code><i>N</i></code>. 
+
+<p>The initial SWF file loaded into an instance of the Flash Player is automatically loaded into <code>_level0</code>. The SWF file in <code>_level0</code> sets the frame rate, background color, and frame size for all subsequently loaded SWF files. SWF files are then stacked in higher-numbered levels above the SWF file in <code>_level0</code>.</p> 
+
+<p>You must assign a level to each SWF file that you load into the Flash Player using <code>loadMovieNum()</code>. You can assign levels in any order. If you assign a level that already contains a SWF file (including <code>_level0</code>), the SWF file at that level is unloaded and replaced by the new SWF file. </p><p></p><b>Example</b><br>The following example stops the playhead in the main Timeline of the SWF file sub.swf that is loaded into <code>_level9</code>. The sub.swf file contains animation and is in the same directory as the document that contains the following ActionScript:
+<div class='listing'><pre><code>
+loadMovieNum("sub.swf", 9);
+myBtn_btn.onRelease = function() {
+    _level9.stop();
+};</code></pre></div>
+
+<p>You could replace <code>_level9.stop()</code> in the previous example with the following code: </p>
+<div class='listing'><pre>
+_level9.gotoAndStop(5);</pre></div>
+
+<p>This action sends the playhead in the main Timeline of the SWF file in <code>_level9</code> to Frame 5 instead of stopping the playhead.</p>
+                    <p></p>
+<p><b>See also</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="global_functions.html#loadMovie()">loadMovie() function</a>, <a href="MovieClip.html#swapDepths()">MovieClip.swapDepths()</a></p>
+<p></p>
+<hr width="100%"><a name="maxscroll"></a><p></p>
+<h2>maxscroll Property</h2>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td>
+						<code><em>variable_name</em>.maxscroll</code>
+					</td>
+</tr>
+</table>
+<p></p>
+<p>
+<font size="3"><b>Deprecated</b></font><em> as of Flash Player 5 — This property was deprecated in favor of <code>TextField.maxscroll</code>.</em><br></p>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="white-space:nowrap" valign="top"><b>Player version:&nbsp;</b></td>
+<td>Flash Player 4</td>
+</tr>
+</table>
+<p></p>
+					Indicates the line number of the top line of visible text in a text field when the bottom line in the field is also visible. The <code>maxscroll</code> property works with the <code>scroll</code> property to control how information appears in a text field. This property can be retrieved, but not modified.
+				<p><b>See also</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="TextField.html#maxscroll">TextField.maxscroll</a>, <a href="TextField.html#scroll">TextField.scroll</a></p>
+<p></p>
+<hr width="100%"><a name="_parent"></a><p></p>
+<h2>_parent Property</h2>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td><pre>_parent.<i>property</i>
+_parent._parent.<i>property</i></pre></td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="white-space:nowrap" valign="top"><b>Player version:&nbsp;</b></td>
+<td>Flash Player 5</td>
+</tr>
+</table>
+<p></p>Specifies or returns a reference to the movie clip or object that contains the current movie clip or object. The current object is the object containing the ActionScript code that references <code>_parent</code>. Use <code>_parent</code> to specify a relative path to movie clips or objects that are above the current movie clip or object.<p></p><b>Example</b><br>In the following example, there is a movie clip on the Stage with the instance name <code>square_mc</code>. Within that movie clip is another movie clip with an instance name <code>circle_mc</code>. The following ActionScript lets you modify the <code>circle_mc</code> parent instance (which is <code>square_mc</code>) when the circle is clicked. When you are working with relative addressing (using <code>_parent</code> instead of <code>_root</code>), it might be easier to use the Insert Target Path button in the Actions panel at first.
+<div class='listing'><pre>
+this.square_mc.circle_mc.onRelease = function() {
+    this._parent._alpha -= 5;
+};
+</pre></div>
+                    <p></p>
+<p><b>See also</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#_root">_root</a>, <a href="global_functions.html#targetPath()">targetPath() function</a></p>
+<p></p>
+<hr width="100%"><a name="_quality"></a><p></p>
+<h2>_quality Property</h2>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td><code>_quality<i>:String</i></code></td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="white-space:nowrap" valign="top"><b>Player version:&nbsp;</b></td>
+<td>Flash Player 5</td>
+</tr>
+</table>
+<p></p>Sets or retrieves the rendering quality used for a movie clip. Device fonts are always aliased and therefore are unaffected by the <code>_quality</code> property. 
+<p>The <code>_quality</code> property can be set to the values described in the following table. </p>
+
+
+<table class="innertable">
+  
+<tr>
+
+   <th>Value</th>
+  <th>Description</th>
+  <th>Graphic Anti-Aliasing</th>
+  <th>Bitmap Smoothing</th>
+
+ </tr>
+
+ <tr>
+
+ <td>
+"<code>LOW</code>"
+</td>
+
+<td>
+Low rendering quality.</td>
+
+ <td>
+ Graphics are not anti-aliased. </td>
+
+ <td>
+Bitmaps are 
+not smoothed.
+</td>
+</tr>
+  
+<tr>
+
+ <td>
+"<code>MEDIUM</code>"
+</td>
+
+ <td>
+ Medium rendering quality. This setting is suitable for movies that do not contain 
+text.
+</td>
+
+ <td>
+ Graphics are anti-aliased using a 2 x 2 pixel grid.
+</td>
+
+ <td>
+Flash Player 8: Bitmaps are smoothed based on the <code>smoothing</code> parameter used in 
+<code>MovieClip.attachBitmap()</code> and <code>MovieClip.beginBitmapFill()</code> calls.
+
+ <p>Flash Player 6 and 7: Bitmaps are not smoothed.</p> 
+</td>
+</tr>
+  
+<tr>
+
+ <td>
+"<code>HIGH</code>" 
+</td>
+
+ <td>
+High rendering quality. This setting is the default rendering quality 
+setting that Flash uses.
+</td>
+
+ <td>
+Graphics are anti-aliased using a 4 x 4 pixel grid. 
+</td>
+
+ <td>
+Flash Player 8: Bitmaps are smoothed based on the <code>smoothing</code> parameter used in 
+<code>MovieClip.attachBitmap()</code> and <code>MovieClip.beginBitmapFill()</code> calls.
+
+<p>Flash Player 6 and 7: Bitmaps are smoothed if the movie clip is static. </p>
+</td>
+</tr>
+  
+<tr>
+
+ <td>
+"<code>BEST</code>"  
+</td>
+
+ <td>
+Very high rendering quality.  
+</td>
+
+ <td>
+Graphics are anti-aliased using a 4 x 4 pixel grid. 
+</td>
+
+ <td>
+
+ Flash Player 8: Bitmaps are smoothed based on the <code>smoothing</code> parameter used in 
+<code>MovieClip.attachBitmap()</code> and <code>MovieClip.beginBitmapFill()</code> calls. 
+When <code>smoothing</code> is set to "Best", the result is rendered with higher quality when 
+the movie clip is scaled down by the use of an averaging algorithm. This can slow down 
+rendering, but it allows high-quality thumbnails of large images, for example.
+
+<p>Flash Player 6 and 7: Bitmaps are always smoothed.</p>
+
+ </td>
+</tr>
+
+ </table>
+
+<p></p><b>Example</b><br>The following example sets the rendering quality to <code>LOW</code>:
+<div class='listing'><pre>
+_quality = "LOW";</pre></div><p></p>
+<p></p>
+<hr width="100%"><a name="_root"></a><p></p>
+<h2>_root Property</h2>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td><pre>_root.<i>movieClip</i>
+_root.<i>action</i>
+_root.<i>property</i>
+</pre></td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="white-space:nowrap" valign="top"><b>Player version:&nbsp;</b></td>
+<td>Flash Player 5</td>
+</tr>
+</table>
+<p></p>Specifies or returns a reference to the root movie clip Timeline. If a movie clip has multiple levels, the root movie clip Timeline is on the level containing the currently executing script. For example, if a script in level 1 evaluates <code>_root</code>
+, <code>_level1</code>
+ is returned. 
+
+<p>Specifying <code>_root</code> is the same as using the deprecated slash notation (<code>/</code>) to specify an absolute path within the current level. </p>
+
+<p><strong>Note:</strong> If a movie clip that contains _root is loaded into another movie clip, _root refers to the Timeline of the loading movie clip, not the Timeline that contains _root. If you want to ensure that _root refers to the Timeline of the loaded movie clip even if it is loaded into another movie clip, use <A href="MovieClip.html#_lockroot">MovieClip._lockroot</A>.</p>
+<!-- <p><b>Parameters</b><br />    <code>movieClip:
+String</code><br />    The instance name of a movie clip.<br /><br />    <code>action:
+String</code><br />    An action or method.<br /><br />    <code>property:
+String</code><br />    A property of the MovieClip object.<br /><br /></p> --><p></p><b>Example</b><br>The following example stops the Timeline of the level containing the currently executing script:
+<div class='listing'><pre>
+_root.stop();
+</pre></div>
+The following example traces variables and instances in the scope of <code>_root</code>:
+<div class='listing'><pre>
+for (prop in _root) {
+    trace("_root."+prop+" = "+_root[prop]);
+}</pre></div>
+                    <p></p>
+<p><b>See also</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="MovieClip.html#_lockroot">MovieClip._lockroot</a>, <a href="#_parent">_parent</a>, <a href="global_functions.html#targetPath()">targetPath()</a></p>
+<p></p>
+<hr width="100%"><a name="scroll"></a><p></p>
+<h2>scroll Property</h2>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td>
+						<code><em>textFieldVariableName</em>.scroll = <em>x</em></code>
+					</td>
+</tr>
+</table>
+<p></p>
+<p>
+<font size="3"><b>Deprecated</b></font><em> as of Flash Player 5 — This property was deprecated in favor of <code>TextField.scroll</code>.</em><br></p>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="white-space:nowrap" valign="top"><b>Player version:&nbsp;</b></td>
+<td>Flash Player 4</td>
+</tr>
+</table>
+<p></p>
+					Controls the display of information in a text field associated with a variable. The <code>scroll</code> property defines where the text field begins displaying content; after you set it, Flash Player updates it as the user scrolls through the text field. The <code>scroll</code> property is useful for directing users to a specific paragraph in a long passage or creating scrolling text fields. This property can be retrieved and modified.
+				<p></p><b>Example</b><br>
+                        The following code is attached to an Up button that scrolls the text field named myText:
+    <div class='listing'><pre>    
+    on (release) {
+        myText.scroll = myText.scroll + 1;
+    }
+    </pre></div>
+                    <p></p>
+<p><b>See also</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="TextField.html#maxscroll">TextField.maxscroll</a>, <a href="TextField.html#scroll">TextField.scroll</a></p>
+<p></p>
+<hr width="100%"><a name="_soundbuftime"></a><p></p>
+<h2>_soundbuftime Property</h2>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td><pre>_soundbuftime<i>:Number</i> = <i>integer</i></pre></td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="white-space:nowrap" valign="top"><b>Player version:&nbsp;</b></td>
+<td>Flash Player 4</td>
+</tr>
+</table>
+<p></p>Establishes the number of seconds of streaming sound to buffer. The default value is 5 seconds.
+<!--		<p><b>Parameters</b><br />    <code>integer:
+Number</code><br />    The number of seconds before the SWF file starts to stream.<br /><br /></p> --><p></p><b>Example</b><br>The following example streams an MP3 file and buffers the sound before it plays for the user. Two text fields are created at runtime to hold a timer and debugging information. The <code>_soundbuftime</code> property is set to buffer the MP3 for 10 seconds. A new Sound object instance is created for the MP3. 
+<div class='listing'><pre>
+// create text fields to hold debug information.
+this.createTextField("counter_txt", this.getNextHighestDepth(), 0, 0, 100, 22);
+this.createTextField("debug_txt", this.getNextHighestDepth(), 0, 20, 100, 22);
+// set the sound buffer to 10 seconds.
+_soundbuftime = 10;
+// create the new sound object instance.
+var bg_sound:Sound = new Sound();
+// load the MP3 sound file and set streaming to true.
+bg_sound.loadSound("yourSound.mp3", true);
+// function is triggered when the song finishes loading.
+bg_sound.onLoad = function() {
+    debug_txt.text = "sound loaded";
+};
+debug_txt.text = "sound init";
+function updateCounter() {
+    counter_txt.text++;
+}
+counter_txt.text = 0;
+setInterval(updateCounter, 1000);
+</pre></div>
+                    <p></p>
+<p></p>
+<hr width="100%"><a name="this"></a><p></p>
+<h2>this Property</h2>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td><code>this</code></td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="white-space:nowrap" valign="top"><b>Player version:&nbsp;</b></td>
+<td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><span class="flashonly">References an object or movie clip instance. When a script executes, <code>this</code> references the movie clip instance that contains the script. When a method is called, <code>this</code> contains a reference to the object that contains the called method. </span>
+
+<span class="flexonly"><p>Identifier; refers to the object in the currently executing scope. If you are in a method and you want a reference to the object instance, use the <code>this</code> identifier. You can also use the <code>this</code> identifier to pass a class instance as an argument of a method to itself or another class.</p></span>
+
+<span class="flashonly"><p>Inside an <code>on()</code> event handler attached to a button, <code>this</code> refers to the Timeline that contains the button. Inside an <code>onClipEvent()</code> event handler attached to a movie clip, <code>this</code> refers to the Timeline of the movie clip itself. </p> </span>
+
+<p>Because <code>this</code> is evaluated in the context of the script that contains it, you can't use <code>this</code> in a script to refer to a variable defined in a class file. 
+</p><p></p><b>Example</b><br>
+Create an ActionsScript file named ApplyThis.as and then enter the following code:
+
+<div class='listing'><pre>
+class ApplyThis {
+    var str:String = "Defined in ApplyThis.as";
+    function conctStr(x:String):String {
+        return x+x;
+    }
+    function addStr():String {
+        return str;
+    }
+}
+</pre></div>
+
+<p>Then, in a FLA or a separate ActionScript file, add the following code</p>
+
+<div class='listing'><pre>
+var obj:ApplyThis = new ApplyThis();
+var abj:ApplyThis = new ApplyThis();
+abj.str = "defined in FLA or AS";
+trace(obj.addStr.call(abj, null));  //output: defined in FLA or AS
+trace(obj.addStr.call(this, null));  //output: undefined
+trace(obj.addStr.call(obj, null));  //output: Defined in applyThis.as
+</pre></div>
+
+<p>Similarly, to call a function defined in a dynamic class, you must use <code>this</code> to invoke the function in the proper scope:</p>
+
+<div class='listing'><pre>
+// incorrect version of Simple.as
+/*
+dynamic class Simple {
+    function callfunc() {
+        trace(func());
+    }
+}
+*/
+// correct version of Simple.as
+dynamic class simple {
+    function callfunc() {
+        trace(this.func());
+    }
+}
+</pre></div>
+
+<p>Inside the FLA or a separate ActionScript file, add the following code:</p>
+
+<div class='listing'><pre>
+var obj:Simple = new Simple();
+obj.num = 0;
+obj.func = function() {
+    return true;
+};
+obj.callfunc();
+// output: true
+</pre></div>
+
+<p>The above code works when you use <code>this</code> in the callfunc() method. However you would get a syntax error if you used 
+the incorrect version of Simple.as, which was commented out in the above example.</p>                    
+
+                    <p></p>
+<p></p>In the following example, the keyword <code>this</code> references the Circle object:
+
+<div class='listing'><pre>
+function Circle(radius:Number):Void {
+    this.radius = radius;
+    this.area = Math.PI*Math.pow(radius, 2);
+}
+var myCircle = new Circle(4);
+trace(myCircle.area);
+</pre></div>
+
+<span class="flashonly"><p>In the following statement assigned to a frame inside a movie clip, the keyword <code>this</code> references the current movie clip.</p>
+
+<div class='listing'><pre>
+// sets the alpha property of the current movie clip to 20
+this._alpha = 20;
+</pre></div></span>
+
+<p>In the following statement inside a <a href="MovieClip.html#event:onPress">MovieClip.onPress</a> handler, the keyword <code>this</code> references the current movie clip:</p>
+
+<div class='listing'><pre>
+this.square_mc.onPress = function() {
+    startDrag(this);
+};
+this.square_mc.onRelease = function() {
+    stopDrag();
+};
+</pre></div>
+
+                    <p></p>
+<p><b>See also</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="global_functions.html#on()">on() function</a>, <a href="global_functions.html#onClipEvent()">onClipEvent() function</a></p>
+<p></p>
+<p></p>
+<p></p>
+<table class="topLinks" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td width="100%" align="right"></td><td style="white-space:nowrap" id="navigationCell2" align="right"><a href="package-summary.html">All Packages</a> | <a href="class-summary.html">All Classes</a> | <a href="language-elements.html">Language Elements</a> | <a href="all-index-Symbols.html">Index</a> | <a href="index.html?global_props.html">Frames</a></td>
+</tr>
+</table>
+<center class="copyright">Copyright &copy; 2004-2008 Adobe Systems Incorporated. All rights reserved.</center>
+</body>
+</html><!--Copyright &copy; 2004-2008 Adobe Systems Incorporated. All rights reserved.-->

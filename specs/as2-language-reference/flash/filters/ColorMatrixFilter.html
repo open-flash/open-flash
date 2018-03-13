@@ -1,0 +1,289 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="ColorMatrixFilter,flash.filters.ColorMatrixFilter,matrix,clone" name="keywords">
+<title>flash.filters.ColorMatrixFilter</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'ColorMatrixFilter - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="../../language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="../../appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="../../index.html?flash/filters/ColorMatrixFilter.html&amp;flash/filters/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;ColorMatrixFilter</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class ColorMatrixFilter"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">flash.filters</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class ColorMatrixFilter</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">ColorMatrixFilter <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../images/inherit-arrow.gif"> <a href="BitmapFilter.html">BitmapFilter</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../images/inherit-arrow.gif"> <a href="../../Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p>
+<p></p>The ColorMatrixFilter class lets you apply a 4 x 5 matrix transformation on the RGBA color and alpha values  of every pixel on the input image to produce a result with a new set of RGBA color and alpha values.  It allows saturation changes, hue rotation, luminance to alpha and various other effects.  You can apply this filter to bitmaps and MovieClip instances.  <p>The use of filters depends on the object to which you apply the filter:</p>   <ul><li>To apply filters to movie clips at runtime, use the  <code>filters</code> property. Setting the <code>filters</code> property of an object  does not modify the object and can be undone by clearing the <code>filters</code> property.</li>   <li>To apply filters to BitmapData instances, use the <code>BitmapData.applyFilter()</code> method.  Calling <code>applyFilter()</code> on a BitmapData object takes the source BitmapData object   and the filter object and generates a filtered image as a result.</li>  </ul>   <p>You can also apply filter effects to images and video at authoring time.  For more information, see your authoring documentation.</p>   <p>If you apply a filter to a movie clip or button, the <code>cacheAsBitmap</code> property of the  movie clip or button is set to <code>true</code>. If you clear all filters, the original value of  <code>cacheAsBitmap</code> is restored.</p>  <p>The following formulas are used, where a[0] through a[19] correspond to entries 0 through 19 in the 20-element array property matrix:</p>  <pre> 
+     redResult   = a[0]  * srcR + a[1]  * srcG + a[2]  * srcB + a[3]  * srcA + a[4]
+     greenResult = a[5]  * srcR + a[6]  * srcG + a[7]  * srcB + a[8]  * srcA + a[9]
+     blueResult  = a[10] * srcR + a[11] * srcG + a[12] * srcB + a[13] * srcA + a[14]
+     alphaResult = a[15] * srcR + a[16] * srcG + a[17] * srcB + a[18] * srcA + a[19]
+  </pre>     <p>This filter separates each source pixel into its red, green, blue, and alpha components as srcR, srcG, srcB, srcA.  As a final step, it combines each color component back into a single pixel and writes out the result.</p>  <p> The calculations are performed on unmultiplied color values. If the input graphic consists of  premultiplied color values, those values are automatically converted into unmultiplied color values  for this operation.</p>  <p>The following two optimized modes are available.</p>    <p><strong>Alpha only.</strong> When you pass to the filter a matrix that adjusts only  the alpha component, as shown here, the filter optimizes its performance:</p>  <pre>
+      1 0 0 0 0
+      0 1 0 0 0 
+      0 0 1 0 0 
+      0 0 0 N 0  (where N is between 0.0 and 1.0)
+  </pre>  <p><strong>Faster version</strong>. Available only with SSE/Altivec accelerator-enabled processors such as Pentium 3 and later, and Apple G4 and later). The accelerator is used when the multiplier terms are in the range  -15.99 to 15.99 and the adder terms a[4], a[9], a[14], and a[19] are in the range -8000 to 8000.</p>  <p>A filter is not applied if the resulting image would exceed 2880 pixels in width  or height. For example, if you zoom in on a large movie clip with a filter applied, the  filter is turned off if the resulting image reaches the 2880-pixel limit.</p>  <p></p>
+<br>
+<span class="label">Example</span>
+<br>The following example uses BitmapFilter to manipulate the color  saturation of an image based on the location of the mouse pointer. If you position the pointer  in the upper-left corner (0,0), the image should be unmodified. As you move the  pointer to the right, the green and blue channels together are removed from  the image. As you move the pointer down, the red channel is removed. If the  pointer is positioned at the lower right of the Stage, the image should be  completely black. This example assumes that you have an image in your library  with its Linkage Identifier set to "YourImageLinkage".  <div class='listing'><pre>
+import flash.filters.BitmapFilter;
+import flash.filters.ColorMatrixFilter;
+
+var image:MovieClip = this.attachMovie("YourImageLinkage", "YourImage", this.getNextHighestDepth());
+image.cacheAsBitmap = true;
+
+var listener:Object = new Object();
+listener.image = image;
+listener.onMouseMove = function() {
+    var xPercent:Number = 1 - (_xmouse/Stage.width);
+    var yPercent:Number = 1 - (_ymouse/Stage.height);
+    var matrix:Array = new Array();
+    matrix = matrix.concat([yPercent, 0, 0, 0, 0]); // red
+    matrix = matrix.concat([0, xPercent, 0, 0, 0]); // green
+    matrix = matrix.concat([0, 0, xPercent, 0, 0]); // blue
+    matrix = matrix.concat([0, 0, 0, 1, 0]); // alpha
+
+    var filter:BitmapFilter = new ColorMatrixFilter(matrix);
+    image.filters = new Array(filter);
+}
+
+Mouse.addListener(listener);
+listener.onMouseMove();
+</pre></div> <p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../display/BitmapData.html#getPixel()" target="">flash.display.BitmapData.getPixel()</a>
+<br>
+<a href="../display/BitmapData.html#applyFilter()" target="">flash.display.BitmapData.applyFilter()</a>
+<br>
+<a href="../../MovieClip.html#filters" target="">MovieClip.filters</a>
+<br>
+<a href="../../MovieClip.html#cacheAsBitmap" target="">MovieClip.cacheAsBitmap</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#matrix">matrix</a> : <a href="../../Array.html">Array</a>
+<div class="summaryTableDescription">An array of 20 elements for 4 x 5 color transform.</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="../../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../../Object.html#__proto__">__proto__</a>, <a href="../../Object.html#__resolve">__resolve</a>, <a href="../../Object.html#constructor">constructor</a>, <a href="../../Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#ColorMatrixFilter()">ColorMatrixFilter</a>(matrix:<a href="../../Array.html">Array</a>)</div>
+<div class="summaryTableDescription">Initializes a new ColorMatrixFilter instance with the specified parameters.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clone()">clone</a>():<a href="ColorMatrixFilter.html">ColorMatrixFilter</a>
+</div>
+<div class="summaryTableDescription">Returns a copy of this filter object.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromBitmapFilter"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="BitmapFilter.html">BitmapFilter</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="BitmapFilter.html#clone()">clone</a></code></td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="../../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../../Object.html#addProperty()">addProperty</a>, <a href="../../Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="../../Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="../../Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="../../Object.html#registerClass()">registerClass</a>, <a href="../../Object.html#toString()">toString</a>, <a href="../../Object.html#unwatch()">unwatch</a>, <a href="../../Object.html#valueOf()">valueOf</a>, <a href="../../Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="matrix"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">matrix</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var matrix:<a href="../../Array.html">Array</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>An array of 20 elements for 4 x 5 color transform.           </p><br>
+<span class="label">Example</span>
+<br>The following example creates a new ColorMatrixFilter instance and then      changes its <code>matrix</code> property. The <code>matrix</code> property cannot be changed by directly modifying      its value (for example, <code>clonedFilter.matrix[2] = 1;</code>). Instead, you must      get a reference to the array, make the change to the reference, and reset the      value using <code>clonedFilter.matrix = changedMatrix</code>.      <div class='listing'><pre>
+import flash.filters.ColorMatrixFilter;
+
+var matrix:Array = new Array();
+matrix = matrix.concat([1, 0, 0, 0, 0]); // red
+matrix = matrix.concat([0, 1, 0, 0, 0]); // green
+matrix = matrix.concat([0, 0, 1, 0, 0]); // blue
+matrix = matrix.concat([0, 0, 0, 1, 0]); // alpha
+
+var filter:ColorMatrixFilter = new ColorMatrixFilter(matrix);
+trace("filter: " + filter.matrix);
+var changedMatrix:Array = filter.matrix;
+changedMatrix[2] = 1;
+filter.matrix = changedMatrix;
+trace("filter: " + filter.matrix);
+</pre></div>     <p></p>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="ColorMatrixFilter()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ColorMatrixFilter</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function ColorMatrixFilter(matrix:<a href="../../Array.html">Array</a>)</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Initializes a new ColorMatrixFilter instance with the specified parameters.           </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">matrix</span>:<a href="../../Array.html">Array</a></code> &mdash; An array of 20 elements arranged in a 4 x 5 matrix.      </td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="clone()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clone</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clone():<a href="ColorMatrixFilter.html">ColorMatrixFilter</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Returns a copy of this filter object.           </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="ColorMatrixFilter.html">ColorMatrixFilter</a></code> &mdash; 
+A new ColorMatrixFilter instance with all the same properties as the original      one.      
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a new ColorMatrixFilter instance and then      clones it using the <code>clone</code> method. The <code>matrix</code> property cannot be changed directly (for example,      <code>clonedFilter.matrix[2] = 1;</code>). Instead, you must get a reference      to the array, make the change, and reset the value using      <code>clonedFilter.matrix = changedMatrix</code>.      <div class='listing'><pre>
+import flash.filters.ColorMatrixFilter;
+
+var matrix:Array = new Array();
+matrix = matrix.concat([1, 0, 0, 0, 0]); // red
+matrix = matrix.concat([0, 1, 0, 0, 0]); // green
+matrix = matrix.concat([0, 0, 1, 0, 0]); // blue
+matrix = matrix.concat([0, 0, 0, 1, 0]); // alpha
+
+var filter:ColorMatrixFilter = new ColorMatrixFilter(matrix);
+trace("filter:       " + filter.matrix);
+
+var clonedFilter:ColorMatrixFilter = filter.clone();
+matrix = clonedFilter.matrix;
+matrix[2] = 1;
+clonedFilter.matrix = matrix;
+trace("clonedFilter: " + clonedFilter.matrix);
+</pre></div>     <p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

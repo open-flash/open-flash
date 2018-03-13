@@ -1,0 +1,2068 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="print.css" type="text/css" media="print">
+<meta content="Date,getDate,getDay,getFullYear,getHours,getMilliseconds,getMinutes,getMonth,getSeconds,getTime,getTimezoneOffset,getUTCDate,getUTCDay,getUTCFullYear,getUTCHours,getUTCMilliseconds,getUTCMinutes,getUTCMonth,getUTCSeconds,getUTCYear,getYear,setDate,setFullYear,setHours,setMilliseconds,setMinutes,setMonth,setSeconds,setTime,setUTCDate,setUTCFullYear,setUTCHours,setUTCMilliseconds,setUTCMinutes,setUTCMonth,setUTCSeconds,setYear,toString,UTC,valueOf" name="keywords">
+<title>Date</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="asdoc.js"></script><script type="text/javascript" language="javascript" src="cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Date - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('all-classes.html')" href="package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('all-classes.html')" href="class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('index-list.html')" href="all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="index.html?Date.html&amp;class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Date</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Date"); titleBar_setSubNav(false,false,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">Top Level</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Date</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Date <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="images/inherit-arrow.gif"> <a href="Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p>
+<p></p>The Date class lets you retrieve date and time values relative to universal time (Greenwich mean time, now called universal time or UTC) or relative to the operating system on which Flash Player is running. The methods of the Date class are not static but apply only to the individual Date object specified when the method is called. The <code>Date.UTC()</code> method is an exception; it is a static method.   <span class="flashonly"><p>The Date class handles daylight saving time differently, depending on the operating system and Flash Player version. Flash Player 6 and later versions handle daylight saving time on the following operating systems in these ways:</p></span>   <ul><li>Windows - the Date object automatically adjusts its output for daylight saving time. The Date object detects whether daylight saving time is employed in the current locale, and if so, it detects the standard-to-daylight saving time transition date and times. However, the transition dates currently in effect are applied to dates in the past and the future, so the daylight saving time bias might calculate incorrectly for dates in the past when the locale had different transition dates.</li>   <li>Mac OS X - the Date object automatically adjusts its output for daylight saving time. The time zone information database in Mac OS X is used to determine whether any date or time in the present or past should have a daylight saving time bias applied.</li>   <li>Mac OS 9 - the operating system provides only enough information to determine whether the current date and time should have a daylight saving time bias applied. Accordingly, the date object assumes that the current daylight saving time bias applies to all dates and times in the past or future.</li></ul>   <span class="flashonly"><p>Flash Player 5 handles daylight saving time on the following operating systems as follows:</p>   <ul><li>Windows - the U.S. rules for daylight saving time are always applied, which leads to incorrect transitions in Europe and other areas that employ daylight saving time but have different transition times than the U.S. Flash correctly detects whether daylight saving time is used in the current locale.</li></ul></span>   <p>To call the methods of the Date class, you must first create a Date object using the constructor for the Date class, described later in this section.</p>    <p></p>
+<br>
+<hr>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#Date()">Date</a>([yearOrTimevalue:<a href="Number.html">Number</a>], [month:<a href="Number.html">Number</a>], [date:<a href="Number.html">Number</a>], [hour:<a href="Number.html">Number</a>], [minute:<a href="Number.html">Number</a>], [second:<a href="Number.html">Number</a>], [millisecond:<a href="Number.html">Number</a>])</div>
+<div class="summaryTableDescription">Constructs a new Date object that holds the specified date and time.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getDate()">getDate</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the day of the month (an integer from 1 to 31) of the specified Date object according to local time.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getDay()">getDay</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the day of the week (0 for Sunday, 1 for Monday, and so on) of the specified Date object according to local time.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getFullYear()">getFullYear</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the full year (a four-digit number, such as 2000) of the specified Date object, according to local time.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getHours()">getHours</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the hour (an integer from 0 to 23) of the specified Date object, according to local time.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getMilliseconds()">getMilliseconds</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the milliseconds (an integer from 0 to 999) of the specified Date object, according to local time.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getMinutes()">getMinutes</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the minutes (an integer from 0 to 59) of the specified Date object, according to local time.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getMonth()">getMonth</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the month (0 for January, 1 for February, and so on) of the specified Date object, according to local time.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getSeconds()">getSeconds</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the seconds (an integer from 0 to 59) of the specified Date object, according to local time.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getTime()">getTime</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the number of milliseconds since midnight January 1, 1970, universal time, for the specified Date object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getTimezoneOffset()">getTimezoneOffset</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the difference, in minutes, between the computer's local time and universal time.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getUTCDate()">getUTCDate</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the day of the month (an integer from 1 to 31) in the specified Date object, according to universal time.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getUTCDay()">getUTCDay</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the day of the week (0 for Sunday, 1 for Monday, and so on) of the specified Date object, according to universal time.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getUTCFullYear()">getUTCFullYear</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the four-digit year of the specified Date object, according to universal time.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getUTCHours()">getUTCHours</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the hour (an integer from 0 to 23) of the specified Date object, according to universal time.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getUTCMilliseconds()">getUTCMilliseconds</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the milliseconds (an integer from 0 to 999) of the specified Date object, according to universal time.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getUTCMinutes()">getUTCMinutes</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the minutes (an integer from 0 to 59) of the specified Date object, according to universal time.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getUTCMonth()">getUTCMonth</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the month (0 [January] to 11 [December]) of the specified Date object, according to universal time.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getUTCSeconds()">getUTCSeconds</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the seconds (an integer from 0 to 59) of the specified Date object, according to universal time.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getUTCYear()">getUTCYear</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the year of this <code>Date</code> according to universal time (UTC).</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getYear()">getYear</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the year of the specified Date object, according to local time.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setDate()">setDate</a>(date:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Sets the day of the month for the specified Date object, according to local time, and returns the new time in milliseconds.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setFullYear()">setFullYear</a>(year:<a href="Number.html">Number</a>, [month:<a href="Number.html">Number</a>], [date:<a href="Number.html">Number</a>]):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Sets the year of the specified Date object, according to local time and returns the new time in milliseconds.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setHours()">setHours</a>(hour:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Sets the hours for the specified Date object according to local time and returns the new time in milliseconds.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setMilliseconds()">setMilliseconds</a>(millisecond:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Sets the milliseconds for the specified Date object according to local time and returns the new time in milliseconds.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setMinutes()">setMinutes</a>(minute:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Sets the minutes for a specified Date object according to local time and returns the new time in milliseconds.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setMonth()">setMonth</a>(month:<a href="Number.html">Number</a>, [date:<a href="Number.html">Number</a>]):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Sets the month for the specified Date object in local time and returns the new time in milliseconds.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setSeconds()">setSeconds</a>(second:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Sets the seconds for the specified Date object in local time and returns the new time in milliseconds.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setTime()">setTime</a>(millisecond:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Sets the date for the specified Date object in milliseconds since midnight on January 1, 1970, and returns the new time in milliseconds.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setUTCDate()">setUTCDate</a>(date:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Sets the date for the specified Date object in universal time and returns the new time in milliseconds.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setUTCFullYear()">setUTCFullYear</a>(year:<a href="Number.html">Number</a>, [month:<a href="Number.html">Number</a>], [date:<a href="Number.html">Number</a>]):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Sets the year for the specified Date object (<code><em>my_date</em></code>) in universal time and returns the new time in milliseconds.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setUTCHours()">setUTCHours</a>(hour:<a href="Number.html">Number</a>, [minute:<a href="Number.html">Number</a>], [second:<a href="Number.html">Number</a>], [millisecond:<a href="Number.html">Number</a>]):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Sets the hour for the specified Date object in universal time and returns the new time in milliseconds.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setUTCMilliseconds()">setUTCMilliseconds</a>(millisecond:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Sets the milliseconds for the specified Date object in universal time and returns the new time in milliseconds.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setUTCMinutes()">setUTCMinutes</a>(minute:<a href="Number.html">Number</a>, [second:<a href="Number.html">Number</a>], [millisecond:<a href="Number.html">Number</a>]):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Sets the minute for the specified Date object in universal time and returns the new time in milliseconds.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setUTCMonth()">setUTCMonth</a>(month:<a href="Number.html">Number</a>, [date:<a href="Number.html">Number</a>]):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Sets the month, and optionally the day, for the specified Date object in universal time and returns the new time in milliseconds.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setUTCSeconds()">setUTCSeconds</a>(second:<a href="Number.html">Number</a>, [millisecond:<a href="Number.html">Number</a>]):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Sets the seconds for the specified Date object in universal time and returns the new time in milliseconds.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setYear()">setYear</a>(year:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Sets the year for the specified Date object in local time and returns the new time in milliseconds.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toString()">toString</a>():<a href="String.html">String</a>
+</div>
+<div class="summaryTableDescription">Returns a string value for the specified date object in a readable format.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#UTC()">UTC</a>(year:<a href="Number.html">Number</a>, month:<a href="Number.html">Number</a>, [date:<a href="Number.html">Number</a>], [hour:<a href="Number.html">Number</a>], [minute:<a href="Number.html">Number</a>], [second:<a href="Number.html">Number</a>], [millisecond:<a href="Number.html">Number</a>]):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">[static]Returns the number of milliseconds between midnight on January 1, 1970, universal time, and the time specified in the parameters.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#valueOf()">valueOf</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the number of milliseconds since midnight January 1, 1970, universal time, for this <code>Date</code>.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="Object.html#addProperty()">addProperty</a>, <a href="Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="Object.html#registerClass()">registerClass</a>, <a href="Object.html#toString()">toString</a>, <a href="Object.html#unwatch()">unwatch</a>, <a href="Object.html#valueOf()">valueOf</a>, <a href="Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="Date()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">Date</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function Date([yearOrTimevalue:<a href="Number.html">Number</a>], [month:<a href="Number.html">Number</a>], [date:<a href="Number.html">Number</a>], [hour:<a href="Number.html">Number</a>], [minute:<a href="Number.html">Number</a>], [second:<a href="Number.html">Number</a>], [millisecond:<a href="Number.html">Number</a>])</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Constructs a new Date object that holds the specified date and time.   </p><p>   The <code>Date()</code> constructor takes up to seven parameters (year, month,    ..., millisecond) to specify a date and time to the millisecond.   Alternatively, you can pass a single value to the <code>Date()</code>   constructor that indicates a time value based on the number of milliseconds since   January 1, 1970 0:00:000 GMT. Or you can specify no parameters, and the   <code>Date()</code> date object is assigned the current date and time.</p>     <p>For example, this code shows several different ways to create a Date object:</p>   <code><div class='listing'><pre>
+var d1:Date = new Date(); 
+var d3:Date = new Date(2000, 0, 1);
+var d4:Date = new Date(65, 2, 6, 9, 30, 15, 0);
+var d5:Date = new Date(-14159025000);
+</pre></div></code>     <p>In the first line of code, a Date object is set to the time when the assignment statement   is run.</p>     <p>In the second line, a Date object is created with  year, month, and date parameters passed   to it, resulting in the time 0:00:00 GMT January 1, 2000.</p>     <p>In the third line, a Date object is created with  year, month, and date parameters passed   to it, resulting in the time 09:30:15 GMT (+ 0 milliseconds) March 6, 1965. Note that since the   year parameter is specified as a two-digit integer, it is interpreted as 1965.</p>     <p>In the fourth line, only one parameter is passed, which is a time value representing the   number of milliseconds before or after 0:00:00 GMT January 1, 1970; since the value is negative,   it represents a time <i>before</i> 0:00:00 GMT January 1, 1970, and in this case the time is   02:56:15 GMT July, 21 1969.</p>     <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">yearOrTimevalue</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; If other parameters are specified, this number represents a   year (such as 1965); otherwise, it represents a time value. If the number represents a year, a   value of 0 to 99 indicates 1900 through 1999; otherwise all four digits of the year must be   specified. If the number represents a time value (no other parameters are specified), it is the   number of milliseconds before or after 0:00:00 GMT January 1, 1970; a negative values represents    a time <i>before</i> 0:00:00 GMT January 1, 1970, and a positive value represents a time after.    </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">month</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer from 0 (January) to 11 (December).    </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">date</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer from 1 to 31.    </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">hour</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer from 0 (midnight) to 23 (11 p.m.).    </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">minute</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer from 0 to 59.    </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">second</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer from 0 to 59.    </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">millisecond</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer from 0 to 999 of milliseconds.    </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Date.html#getMonth()" target="">Date.getMonth()</a>
+<br>
+<a href="Date.html#getDate()" target="">Date.getDate()</a>
+<br>
+<a href="Date.html#getFullYear()" target="">Date.getFullYear()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example retrieves the current date and time:   <div class='listing'><pre>
+<code>var now_date:Date = new Date();</code>
+</pre></div>   <p>The following example creates a new Date object for Mary's birthday, August 12, 1974 (because the month parameter is zero-based, the example uses 7 for the month, not 8): </p>   <div class='listing'><pre>
+<code>var maryBirthday:Date = new Date (74, 7, 12); </code>
+</pre></div>   <p>The following example creates a new Date object and concatenates the returned values of <code>Date.getMonth()</code>, <code>Date.getDate()</code>, and <code>Date.getFullYear()</code><code>:</code></p>   <div class='listing'><pre>
+var today_date:Date = new Date();
+var date_str:String = ((today_date.getMonth()+1)+"/"+today_date.getDate()+"/"+today_date.getFullYear());
+trace(date_str); // displays current date in United States date format
+</pre></div>    <p></p>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="getDate()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getDate</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getDate():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the day of the month (an integer from 1 to 31) of the specified Date object according to local time. Local time is determined by the operating system on which Flash Player is running.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Date.html#getMonth()" target="">Date.getMonth()</a>
+<br>
+<a href="Date.html#getFullYear()" target="">Date.getFullYear()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a new Date object and concatenates the returned values of <code>Date.getMonth()</code>, <code>Date.getDate()</code>, and <code>Date.getFullYear()</code><code>:</code>       <div class='listing'><pre>
+var today_date:Date = new Date();
+var date_str:String = (today_date.getDate()+"/"+(today_date.getMonth()+1)+"/"+today_date.getFullYear());
+trace(date_str); // displays current date in United States date format
+</pre></div>            <p></p>
+</div>
+<a name="getDay()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getDay</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getDay():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the day of the week (0 for Sunday, 1 for Monday, and so on) of the specified Date object according to local time. Local time is determined by the operating system on which Flash Player is running.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer representing the day of the week.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a new Date object and uses <code>getDay()</code> to determine the current day of the week<code>:</code>       <div class='listing'><pre>
+var dayOfWeek_array:Array = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+var today_date:Date = new Date();
+var day_str:String = dayOfWeek_array[today_date.getDay()];
+trace("Today is "+day_str);
+</pre></div>                 <p></p>
+</div>
+<a name="getFullYear()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getFullYear</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getFullYear():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the full year (a four-digit number, such as 2000) of the specified Date object, according to local time. Local time is determined by the operating system on which Flash Player is running.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer representing the year.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br><span class="flashonly">The following example uses the constructor to create a Date object. The trace statement shows the value returned by the <code>getFullYear()</code> method.</span>       <span class="flexonly"><p>The following example uses the constructor to create a Date object and send the value returned by the <code>getFullYear()</code> method to the log file:</p></span>       <div class='listing'><pre>
+var my_date:Date = new Date();
+trace(my_date.getYear()); // displays 104
+trace(my_date.getFullYear()); // displays current year
+</pre></div>                 <p></p>
+</div>
+<a name="getHours()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getHours</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getHours():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the hour (an integer from 0 to 23) of the specified Date object, according to local time. Local time is determined by the operating system on which Flash Player is running.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example uses the constructor to create a Date object based on the current time and uses the <code>getHours()</code> method to display hour values from that object:       <div class='listing'><pre>
+var my_date:Date = new Date();
+trace(my_date.getHours());
+
+var my_date:Date = new Date();
+var hourObj:Object = getHoursAmPm(my_date.getHours());
+trace(hourObj.hours);
+trace(hourObj.ampm);
+
+function getHoursAmPm(hour24:Number):Object {
+    var returnObj:Object = new Object();
+    returnObj.ampm = (hour24&lt;12) ? "AM" : "PM";
+    var hour12:Number = hour24%12;
+    if (hour12 == 0) {
+    hour12 = 12;
+    }
+    returnObj.hours = hour12;
+    return returnObj;
+}
+</pre></div>                 <p></p>
+</div>
+<a name="getMilliseconds()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getMilliseconds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getMilliseconds():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the milliseconds (an integer from 0 to 999) of the specified Date object, according to local time. Local time is determined by the operating system on which Flash Player is running.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example uses the constructor to create a Date object based on the current time and uses the <code>getMilliseconds()</code> method to return the milliseconds value from that object:       <div class='listing'><pre>
+var my_date:Date = new Date();
+trace(my_date.<code>getMilliseconds</code>());
+</pre></div>                 <p></p>
+</div>
+<a name="getMinutes()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getMinutes</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getMinutes():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the minutes (an integer from 0 to 59) of the specified Date object, according to local       time. Local time is determined by the operating system on which Flash Player is running.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example uses the constructor to create a Date object based on the current time, and uses the <code>getMinutes()</code> method to return the minutes value from that object:       <div class='listing'><pre>
+var my_date:Date = new Date();
+trace(my_date.<code>getMinutes</code>());
+</pre></div>                 <p></p>
+</div>
+<a name="getMonth()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getMonth</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getMonth():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the month (0 for January, 1 for February, and so on) of the specified Date object, according to local time. Local time is determined by the operating system on which Flash Player is running.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example uses the constructor to create a Date object based on the current time and uses the <code>getMonth()</code> method to return the month value from that object:       <div class='listing'><pre>
+var my_date:Date = new Date();
+trace(my_date.getMonth());
+</pre></div>       <p>The following example uses the constructor to create a Date object based on the current time and uses the <code>getMonth()</code> method to display the current month as a numeric value, and display the name of the month.</p>       <div class='listing'><pre>
+var my_date:Date = new Date();
+trace(my_date.getMonth());
+trace(getMonthAsString(my_date.getMonth()));
+function getMonthAsString(month:Number):String {
+    var monthNames_array:Array = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+    return monthNames_array[month];
+}
+</pre></div>                 <p></p>
+</div>
+<a name="getSeconds()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getSeconds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getSeconds():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the seconds (an integer from 0 to 59) of the specified Date object, according to local time. Local time is determined by the operating system on which Flash Player is running.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example uses the constructor to create a Date object based on the current time and uses the <code>getSeconds()</code> method to return the seconds value from that object:       <div class='listing'><pre>
+var my_date:Date = new Date();
+trace(my_date.<code>getSeconds</code>());
+</pre></div>                 <p></p>
+</div>
+<a name="getTime()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getTime</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getTime():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the number of milliseconds since midnight January 1, 1970, universal time, for the specified Date object. Use this method to represent a specific instant in time when comparing two or more Date objects.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example uses the constructor to create a Date object based on the current time, and uses the <code>getTime()</code> method to return the number of milliseconds since midnight January 1, 1970:       <div class='listing'><pre>
+var my_date:Date = new Date();
+trace(my_date.<code>getTime</code>());
+</pre></div>                 <p></p>
+</div>
+<a name="getTimezoneOffset()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getTimezoneOffset</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getTimezoneOffset():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the difference, in minutes, between the computer's local time and universal time.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example returns the difference between the local daylight saving time       for San Francisco and universal time. Daylight saving time is factored into the returned       result only if the date defined in the Date object occurs during daylight saving time. <span       class="flashonly">The output in this example is 420 minutes and displays in the Output       panel (7 hours &#42; 60 minutes/hour = 420 minutes).</span>       <span class="flexonly">The output in this example is 420 minutes and is written to       the log file (7 hours &#42; 60 minutes/hour = 420 minutes).</span> This example is Pacific       Daylight Time (PDT, GMT-0700). The result varies depending on location and time of year.             <div class='listing'><pre>
+<code>var my_date:Date = new Date();</code>
+<code>trace(my_date.getTimezoneOffset());</code>
+</pre></div>                      <p></p>
+</div>
+<a name="getUTCDate()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getUTCDate</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getUTCDate():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the day of the month (an integer from 1 to 31) in the specified Date object, according to universal time.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Date.html#getDate()" target="">Date.getDate()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a new Date object and uses <code>Date.getUTCDate()</code> and <code>Date.getDate()</code>. The value returned by <code>Date.getUTCDate()</code> can differ from the value returned by <code>Date.getDate(),</code> depending on the relationship between your local time zone and universal time.       <div class='listing'><pre>
+var my_date:Date = new Date(2004,8,25);
+trace(my_date.getUTCDate()); // output: 25
+</pre></div>            <p></p>
+</div>
+<a name="getUTCDay()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getUTCDay</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getUTCDay():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the day of the week (0 for Sunday, 1 for Monday, and so on) of the specified Date object, according to universal time.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Date.html#getDay()" target="">Date.getDay()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a new Date object and uses <code>Date.getUTCDay()</code> and <code>Date.getDay()</code>. The value returned by <code>Date.getUTCDay()</code> can differ from the value returned by <code>Date.getDay(),</code> depending on the relationship between your local time zone and universal time.       <div class='listing'><pre>
+var today_date:Date = new Date();
+trace(today_date.getDay()); // output will be based on local timezone
+trace(today_date.getUTCDay()); // output will equal getDay() plus or minus one
+</pre></div>            <p></p>
+</div>
+<a name="getUTCFullYear()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getUTCFullYear</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getUTCFullYear():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the four-digit year of the specified Date object, according to universal time.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Date.html#getFullYear()" target="">Date.getFullYear()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a new Date object and uses <code>Date.getUTCFullYear()</code> and <code>Date.getFullYear()</code>. The value returned by <code>Date.getUTCFullYear()</code> may differ from the value returned by <code>Date.getFullYear()</code> if today's date is December 31 or January 1<code>,</code> depending on the relationship between your local time zone and universal time.       <div class='listing'><pre>
+var today_date:Date = new Date();
+trace(today_date.getFullYear()); // display based on local timezone
+trace(today_date.<code>getUTCFullYear</code>()); // displays getYear() plus or minus 1
+</pre></div>            <p></p>
+</div>
+<a name="getUTCHours()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getUTCHours</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getUTCHours():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the hour (an integer from 0 to 23) of the specified Date object, according to universal time.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Date.html#getHours()" target="">Date.getHours()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a new Date object and uses <code>Date.getUTCHours()</code> and <code>Date.getHours()</code>. The value returned by <code>Date.getUTCHours()</code> may differ from the value returned by <code>Date.getHours(),</code> depending on the relationship between your local time zone and universal time.       <div class='listing'><pre>
+var today_date:Date = new Date();
+trace(today_date.getHours()); // display based on local timezone
+trace(today_date.getUTCHours()); // display equals getHours() plus or minus 12
+</pre></div>            <p></p>
+</div>
+<a name="getUTCMilliseconds()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getUTCMilliseconds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getUTCMilliseconds():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the milliseconds (an integer from 0 to 999) of the specified Date object, according to universal time.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a new Date object and uses <code>getUTCMilliseconds()</code> to return the milliseconds value from the Date object.       <div class='listing'><pre>
+var today_date:Date = new Date();
+trace(today_date.getUTCMilliseconds());
+</pre></div>                 <p></p>
+</div>
+<a name="getUTCMinutes()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getUTCMinutes</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getUTCMinutes():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the minutes (an integer from 0 to 59) of the specified Date object, according to universal time.             </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a new Date object and uses <code>getUTCMinutes()</code> to return the minutes value from the Date object:       <div class='listing'><pre>
+var today_date:Date = new Date();
+trace(today_date.getUTCMinutes()); 
+</pre></div>            <p></p>
+</div>
+<a name="getUTCMonth()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getUTCMonth</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getUTCMonth():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the month (0 [January] to 11 [December]) of the specified Date object, according to universal time.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Date.html#getMonth()" target="">Date.getMonth()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a new Date object and uses <code>Date.getUTCMonth()</code> and <code>Date.getMonth()</code>. The value returned by <code>Date.getUTCMonth()</code> can differ from the value returned by <code>Date.getMonth()</code> if today's date is the first or last day of a month<code>,</code> depending on the relationship between your local time zone and universal time.       <div class='listing'><pre>
+var today_date:Date = new Date();
+trace(today_date.getMonth()); // output based on local timezone
+trace(today_date.getUTCMonth()); // output equals getMonth() plus or minus 1
+</pre></div>            <p></p>
+</div>
+<a name="getUTCSeconds()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getUTCSeconds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getUTCSeconds():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the seconds (an integer from 0 to 59) of the specified Date object, according to universal time.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a new Date object and uses <code>getUTCSeconds()</code> to return the seconds value from the Date object:       <div class='listing'><pre>
+var today_date:Date = new Date();
+trace(today_date.getUTCSeconds()); 
+</pre></div>            <p></p>
+</div>
+<a name="getUTCYear()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getUTCYear</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getUTCYear():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Returns the year of this <code>Date</code> according to universal time (UTC). The year       is the full year minus 1900. For example, the year 2000 is represented as 100.       </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.       
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a new Date object and uses <code>Date.getUTCFullYear()</code> and <code>Date.getFullYear()</code>. The value returned by <code>Date.getUTCFullYear()</code> may differ from the value returned by <code>Date.getFullYear()</code> if today's date is December 31 or January 1<code>,</code> depending on the relationship between your local time zone and universal time.       <div class='listing'><pre>
+var today_date:Date = new Date();<br/>
+trace(today_date.getFullYear()); // display based on local timezone<br/>
+trace(today_date.<code>getUTCFullYear</code>()); // displays getYear() plus or minus 1<br/>
+</pre></div>       <p></p>
+</div>
+<a name="getYear()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getYear</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getYear():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the year of the specified Date object, according to local time. Local time is determined by the operating system on which Flash Player is running. The year is the full year minus 1900. For example, the year 2000 is represented as 100.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Date.html#getFullYear()" target="">Date.getFullYear()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a Date object with the month and year set to May 2004. The <code>Date.getYear()</code> method returns 104, and <code>Date.getFullYear()</code> returns 2004:       <div class='listing'><pre>
+var today_date:Date = new Date(2004,4);
+trace(today_date.getYear()); // output: 104
+trace(today_date.getFullYear()); // output: 2004
+</pre></div>                 <p></p>
+</div>
+<a name="setDate()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setDate</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setDate(date:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Sets the day of the month for the specified Date object, according to local time, and returns the new time in milliseconds. Local time is determined by the operating system on which Flash Player is running.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">date</span>:<a href="Number.html">Number</a></code> &mdash; An integer from 1 to 31.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example initially creates a new Date object, setting the date to May 15, 2004, and uses <code>Date.setDate()</code> to change the date to May 25, 2004:       <div class='listing'><pre>
+var today_date:Date = new Date(2004,4,15);
+trace(today_date.getDate()); //displays 15
+today_date.setDate(25);
+trace(today_date.getDate()); //displays 25
+</pre></div>            <p></p>
+</div>
+<a name="setFullYear()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setFullYear</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setFullYear(year:<a href="Number.html">Number</a>, [month:<a href="Number.html">Number</a>], [date:<a href="Number.html">Number</a>]):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Sets the year of the specified Date object, according to local time and returns the new time in milliseconds. If the <code>month</code> and <code>date</code> parameters are specified, they are set to local time. Local time is determined by the operating system on which Flash Player is running.       </p><p>Calling this method does not modify the other fields of the specified Date object but <code>Date.getUTCDay()</code> and <code>Date.getDay()</code> can report a new value if the day of the week changes as a result of calling this method.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">year</span>:<a href="Number.html">Number</a></code> &mdash; A four-digit number specifying a year. Two-digit numbers do not represent four-digit years; for example, 99 is not the year 1999, but the year 99.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">month</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer from 0 (January) to 11 (December). If you omit this parameter, the month field of the specified Date object will not be modified.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">date</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; A number from 1 to 31. If you omit this parameter, the date field of the specified Date object will not be modified.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Date.html#getUTCDay()" target="">Date.getUTCDay()</a>
+<br>
+<a href="Date.html#getDay()" target="">Date.getDay()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example initially creates a new Date object, setting the date to May 15, 2004, and uses <code>Date.setFullYear()</code> to change the date to May 15, 2002:       <div class='listing'><pre>
+var my_date:Date = new Date(2004,4,15);
+trace(my_date.getFullYear()); //output: 2004
+my_date.setFullYear(2002);
+trace(my_date.getFullYear()); //output: 2002
+</pre></div>            <p></p>
+</div>
+<a name="setHours()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setHours</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setHours(hour:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Sets the hours for the specified Date object according to local time and returns the new time in milliseconds. Local time is determined by the operating system on which Flash Player is running.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">hour</span>:<a href="Number.html">Number</a></code> &mdash; An integer from 0 (midnight) to 23 (11 p.m.).            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example initially creates a new Date object, setting the time and date to 8:00 a.m. on May 15, 2004, and uses <code>Date.setHours()</code> to change the time to 4:00 p.m.:       <div class='listing'><pre>
+var my_date:Date = new Date(2004,4,15,8);
+trace(my_date.getHours()); // output: 8
+my_date.setHours(16);
+trace(my_date.getHours()); // output: 16
+</pre></div>                 <p></p>
+</div>
+<a name="setMilliseconds()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setMilliseconds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setMilliseconds(millisecond:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Sets the milliseconds for the specified Date object according to local time and returns the new time in milliseconds. Local time is determined by the operating system on which Flash Player is running.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">millisecond</span>:<a href="Number.html">Number</a></code> &mdash; An integer from 0 to 999.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example initially creates a new Date object, setting the date to 8:30 a.m. on May 15, 2004 with the milliseconds value set to 250, and then uses <code>Date.setMilliseconds()</code> to change the milliseconds value to 575:       <div class='listing'><pre>
+var my_date:Date = new Date(2004,4,15,8,30,0,250);
+trace(my_date.getMilliseconds()); // output: 250
+my_date.setMilliseconds(575);
+trace(my_date.getMilliseconds()); // output: 575
+</pre></div>                 <p></p>
+</div>
+<a name="setMinutes()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setMinutes</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setMinutes(minute:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Sets the minutes for a specified Date object according to local time and returns the new time in milliseconds. Local time is determined by the operating system on which Flash Player is running.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">minute</span>:<a href="Number.html">Number</a></code> &mdash; An integer from 0 to 59.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example initially creates a new Date object, setting the time and date to 8:00 a.m. on May 15, 2004, and then uses <code>Date.setMinutes()</code> to change the time to 8:30 a.m.:       <div class='listing'><pre>
+var my_date:Date = new Date(2004,4,15,8,0);
+trace(my_date.getMinutes()); // output: 0
+my_date.setMinutes(30);
+trace(my_date.getMinutes()); // output: 30
+</pre></div>                 <p></p>
+</div>
+<a name="setMonth()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setMonth</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setMonth(month:<a href="Number.html">Number</a>, [date:<a href="Number.html">Number</a>]):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Sets the month for the specified Date object in local time and returns the new time in milliseconds. Local time is determined by the operating system on which Flash Player is running.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">month</span>:<a href="Number.html">Number</a></code> &mdash; An integer from 0 (January) to 11 (December).            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">date</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer from 1 to 31. If you omit this parameter, the date field of the specified Date object will not be modified.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example initially creates a new Date object, setting the date to May 15, 2004, and uses <code>Date.setMonth()</code> to change the date to June 15, 2004:       <div class='listing'><pre>
+var my_date:Date = new Date(2004,4,15);
+trace(my_date.getMonth()); //output: 4
+my_date.setMonth(5);
+trace(my_date.getMonth()); //output: 5
+</pre></div>                 <p></p>
+</div>
+<a name="setSeconds()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setSeconds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setSeconds(second:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Sets the seconds for the specified Date object in local time and returns the new time in milliseconds. Local time is determined by the operating system on which Flash Player is running.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">second</span>:<a href="Number.html">Number</a></code> &mdash; An integer from 0 to 59.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example initially creates a new Date object, setting the time and date to 8:00:00 a.m. on May 15, 2004, and uses <code>Date.setSeconds()</code> to change the time to 8:00:45 a.m.:       <div class='listing'><pre>
+var my_date:Date = new Date(2004,4,15,8,0,0);
+trace(my_date.getSeconds()); // output: 0
+my_date.setSeconds(45);
+trace(my_date.getSeconds()); // output: 45
+</pre></div>                 <p></p>
+</div>
+<a name="setTime()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setTime</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setTime(millisecond:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Sets the date for the specified Date object in milliseconds since midnight on January 1, 1970, and returns the new time in milliseconds.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">millisecond</span>:<a href="Number.html">Number</a></code> &mdash; A number; an integer value where 0 is midnight on January 1, universal time.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example initially creates a new Date object, setting the time and date to 8:00 a.m. on May 15, 2004, and uses <code>Date.setTime()</code> to change the time to 8:30 a.m.:       <div class='listing'><pre>
+var my_date:Date = new Date(2004,4,15,8,0,0);
+var myDate_num:Number = my_date.getTime(); // convert my_date to milliseconds
+myDate_num += 30 &#42; 60 &#42; 1000; // add 30 minutes in milliseconds
+my_date.setTime(myDate_num); // set my_date Date object 30 minutes forward
+trace(my_date.getFullYear()); // output: 2004
+trace(my_date.getMonth()); // output: 4
+trace(my_date.getDate()); // output: 15
+trace(my_date.getHours()); // output: 8
+trace(my_date.getMinutes()); // output: 30
+</pre></div>                 <p></p>
+</div>
+<a name="setUTCDate()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setUTCDate</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setUTCDate(date:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Sets the date for the specified Date object in universal time and returns the new time in milliseconds. Calling this method does not modify the other fields of the specified Date object, but <code>Date.getUTCDay()</code> and <code>Date.getDay()</code> can report a new value if the day of the week changes as a result of calling this method.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">date</span>:<a href="Number.html">Number</a></code> &mdash; A number; an integer from 1 to 31.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Date.html#getUTCDay()" target="">Date.getUTCDay()</a>
+<br>
+<a href="Date.html#getDay()" target="">Date.getDay()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example initially creates a new Date object with today's date, uses <code>Date.setUTCDate()</code> to change the date value to 10, and changes it again to 25:       <div class='listing'><pre>
+var my_date:Date = new Date();
+my_date.setUTCDate(10);
+trace(my_date.getUTCDate()); // output: 10
+my_date.setUTCDate(25);
+trace(my_date.getUTCDate()); // output: 25
+</pre></div>            <p></p>
+</div>
+<a name="setUTCFullYear()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setUTCFullYear</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setUTCFullYear(year:<a href="Number.html">Number</a>, [month:<a href="Number.html">Number</a>], [date:<a href="Number.html">Number</a>]):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Sets the year for the specified Date object (<code><em>my_date</em></code>) in universal time and returns the new time in milliseconds.       </p><p>Optionally, this method can also set the month and date represented by the specified Date object. Calling this method does not modify the other fields of the specified Date object, but <code>Date.getUTCDay()</code> and <code>Date.getDay()</code> can report a new value if the day of the week changes as a result of calling this method. </p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">year</span>:<a href="Number.html">Number</a></code> &mdash; An integer that represents the year specified as a full four-digit year, such as 2000.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">month</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer from 0 (January) to 11 (December). If you omit this parameter, the month field of the specified Date object will not be modified.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">date</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer from 1 to 31. If you omit this parameter, the date field of the specified Date object will not be modified.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Date.html#getUTCDay()" target="">Date.getUTCDay()</a>
+<br>
+<a href="Date.html#getDay()" target="">Date.getDay()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example initially creates a new Date object with today's date, uses <code>Date.setUTCFullYear()</code> to change the year value to 2001, and changes the date to May 25, 1995:       <div class='listing'><pre>
+var my_date:Date = new Date();
+my_date.setUTCFullYear(2001);
+trace(my_date.getUTCFullYear()); // output: 2001
+my_date.setUTCFullYear(1995, 4, 25);
+trace(my_date.getUTCFullYear()); // output: 1995
+trace(my_date.getUTCMonth()); // output: 4
+trace(my_date.getUTCDate()); // output: 25
+</pre></div>            <p></p>
+</div>
+<a name="setUTCHours()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setUTCHours</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setUTCHours(hour:<a href="Number.html">Number</a>, [minute:<a href="Number.html">Number</a>], [second:<a href="Number.html">Number</a>], [millisecond:<a href="Number.html">Number</a>]):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Sets the hour for the specified Date object in universal time and returns the new time in milliseconds.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">hour</span>:<a href="Number.html">Number</a></code> &mdash; A number; an integer from 0 (midnight) to 23 (11 p.m.).            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">minute</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; A number; an integer from 0 to 59. If you omit this parameter, the minutes field of the specified Date object will not be modified.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">second</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; A number; an integer from 0 to 59. If you omit this parameter, the seconds field of the specified Date object will not be modified.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">millisecond</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; A number; an integer from 0 to 999. If you omit this parameter, the milliseconds field of the specified Date object will not be modified.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example initially creates a new Date object with today's date, uses <code>Date.setUTCHours()</code> to change the time to 8:30 a.m., and changes the time again to 5:30:47 p.m.:       <div class='listing'><pre>
+var my_date:Date = new Date();
+my_date.setUTCHours(8,30);
+trace(my_date.getUTCHours()); // output: 8
+trace(my_date.getUTCMinutes()); // output: 30
+my_date.setUTCHours(17,30,47);
+trace(my_date.getUTCHours()); // output: 17
+trace(my_date.getUTCMinutes()); // output: 30
+trace(my_date.getUTCSeconds()); // output: 47
+</pre></div>                 <p></p>
+</div>
+<a name="setUTCMilliseconds()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setUTCMilliseconds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setUTCMilliseconds(millisecond:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Sets the milliseconds for the specified Date object in universal time and returns the new time in milliseconds.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">millisecond</span>:<a href="Number.html">Number</a></code> &mdash; An integer from 0 to 999.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example initially creates a new Date object, setting the date to 8:30 a.m. on May 15, 2004 with the milliseconds value set to 250, and uses <code>Date.setUTCMilliseconds()</code> to change the milliseconds value to 575:       <div class='listing'><pre>
+var my_date:Date = new Date(2004,4,15,8,30,0,250);
+trace(my_date.getUTCMilliseconds()); // output: 250
+my_date.setUTCMilliseconds(575);
+trace(my_date.getUTCMilliseconds()); // output: 575
+</pre></div>            <p></p>
+</div>
+<a name="setUTCMinutes()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setUTCMinutes</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setUTCMinutes(minute:<a href="Number.html">Number</a>, [second:<a href="Number.html">Number</a>], [millisecond:<a href="Number.html">Number</a>]):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Sets the minute for the specified Date object in universal time and returns the new time in milliseconds.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">minute</span>:<a href="Number.html">Number</a></code> &mdash; An integer from 0 to 59.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">second</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer from 0 to 59. If you omit this parameter, the seconds field of the specified Date object will not be modified.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">millisecond</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer from 0 to 999. If you omit this parameter, the milliseconds field of the specified Date object will not be modified.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example initially creates a new Date object, setting the time and date to 8:00 a.m. on May 15, 2004, and uses <code>Date.setUTCMinutes()</code> to change the time to 8:30 a.m.:       <div class='listing'><pre>
+var my_date:Date = new Date(2004,4,15,8,0);
+trace(my_date.getUTCMinutes()); // output: 0
+my_date.setUTCMinutes(30);
+trace(my_date.getUTCMinutes()); // output: 30
+</pre></div>                 <p></p>
+</div>
+<a name="setUTCMonth()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setUTCMonth</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setUTCMonth(month:<a href="Number.html">Number</a>, [date:<a href="Number.html">Number</a>]):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Sets the month, and optionally the day, for the specified Date object in universal time and returns the new time in milliseconds. Calling this method does not modify the other fields of the specified Date object, but <code>Date.getUTCDay()</code> and <code>Date.getDay()</code> might report a new value if the day of the week changes as a result of specifying a value for the <code>date</code> parameter.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">month</span>:<a href="Number.html">Number</a></code> &mdash; An integer from 0 (January) to 11 (December).            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">date</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer from 1 to 31. If you omit this parameter, the date field of the specified Date object will not be modified.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Date.html#getUTCDay()" target="">Date.getUTCDay()</a>
+<br>
+<a href="Date.html#getDay()" target="">Date.getDay()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example initially creates a new Date object, setting the date to May 15, 2004, and uses <code>Date.setMonth()</code> to change the date to June 15, 2004:       <div class='listing'><pre>
+var today_date:Date = new Date(2004,4,15);
+trace(today_date.getUTCMonth()); // output: 4
+today_date.setUTCMonth(5);
+trace(today_date.getUTCMonth()); // output: 5
+</pre></div>            <p></p>
+</div>
+<a name="setUTCSeconds()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setUTCSeconds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setUTCSeconds(second:<a href="Number.html">Number</a>, [millisecond:<a href="Number.html">Number</a>]):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Sets the seconds for the specified Date object in universal time and returns the new time in milliseconds.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">second</span>:<a href="Number.html">Number</a></code> &mdash; An integer from 0 to 59.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">millisecond</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer from 0 to 999. If you omit this parameter, the milliseconds field of the specified Date object will not be modified.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example initially creates a new Date object, setting the time and date to 8:00:00 a.m. on May 15, 2004, and uses <code>Date.setSeconds()</code> to change the time to 8:30:45 a.m.:       <div class='listing'><pre>
+var my_date:Date = new Date(2004,4,15,8,0,0);
+trace(my_date.getUTCSeconds()); // output: 0
+my_date.setUTCSeconds(45);
+trace(my_date.getUTCSeconds()); // output: 45
+</pre></div>                 <p></p>
+</div>
+<a name="setYear()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setYear</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setYear(year:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Sets the year for the specified Date object in local time and returns the new time in milliseconds. Local time is determined by the operating system on which Flash Player is running.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">year</span>:<a href="Number.html">Number</a></code> &mdash; A number that represents the year. If <code>year</code> is an integer between 0 and 99, <code>setYear</code> sets the year at 1900 + <code>year</code>; otherwise, the year is the value of the <code>year</code> parameter.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a new Date object with the date set to May 25, 2004, uses <code>setYear()</code> to change the year to 1999, and changes the year to 2003:       <div class='listing'><pre>
+var my_date:Date = new Date(2004,4,25);
+trace(my_date.getYear()); // output: 104
+trace(my_date.getFullYear()); // output: 2004
+my_date.setYear(99);
+trace(my_date.getYear()); // output: 99
+trace(my_date.getFullYear()); // output: 1999
+my_date.setYear(2003);
+trace(my_date.getYear()); // output: 103
+trace(my_date.getFullYear()); // output: 2003
+</pre></div>                 <p></p>
+</div>
+<a name="toString()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function toString():<a href="String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns a string value for the specified date object in a readable format.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; 
+A string.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example returns the information in the <code>dateOfBirth_date</code>       Date object as a string. The output from the trace statements are in local time and        vary accordingly. For Pacific Daylight Time the output is seven hours earlier than universal       time: Mon Aug 12 18:15:00 GMT-0700 1974.             <div class='listing'><pre>
+var <code>dateOfBirth_date</code>:Date = new Date(74, 7, 12, 18, 15);
+trace (dateOfBirth_date);
+trace (<code>dateOfBirth_date</code>.toString());
+</pre></div>                 <p></p>
+</div>
+<a name="UTC()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">UTC</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function UTC(year:<a href="Number.html">Number</a>, month:<a href="Number.html">Number</a>, [date:<a href="Number.html">Number</a>], [hour:<a href="Number.html">Number</a>], [minute:<a href="Number.html">Number</a>], [second:<a href="Number.html">Number</a>], [millisecond:<a href="Number.html">Number</a>]):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the number of milliseconds between midnight on January 1, 1970, universal time, and the time specified in the parameters. This is a static method that is invoked through the Date object constructor, not through a specific Date object. This method lets you create a Date object that assumes universal time, whereas the Date constructor assumes local time.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">year</span>:<a href="Number.html">Number</a></code> &mdash; A four-digit integer that represents the year (for example, 2000).      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">month</span>:<a href="Number.html">Number</a></code> &mdash; An integer from 0 (January) to 11 (December).      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">date</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer from 1 to 31.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">hour</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer from 0 (midnight) to 23 (11 p.m.).      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">minute</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer from 0 to 59.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">second</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer from 0 to 59.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">millisecond</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer from 0 to 999.      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.      
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a new <code>maryBirthday_date</code> Date object defined    in universal time. This is the universal time variation of the example used for the <code>new    Date</code> constructor method. The output is in local time and varies accordingly. For Pacific    Daylight Time the output is seven hours earlier than UTC: Sun Aug 11 17:00:00 GMT-0700 1974.       <div class='listing'><pre>
+<code>var maryBirthday_date:Date = new Date(Date.UTC(1974, 7, 12));</code>
+trace(<code>maryBirthday_date</code>); 
+</pre></div>      <p></p>
+</div>
+<a name="valueOf()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">valueOf</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function valueOf():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the number of milliseconds since midnight January 1, 1970, universal time,       for this <code>Date</code>.       </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+The number of milliseconds.       
+
+</td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

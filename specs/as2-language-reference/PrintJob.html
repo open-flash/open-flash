@@ -1,0 +1,555 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="print.css" type="text/css" media="print">
+<meta content="PrintJob,orientation,pageHeight,pageWidth,paperHeight,paperWidth,addPage,send,start" name="keywords">
+<title>PrintJob</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="asdoc.js"></script><script type="text/javascript" language="javascript" src="cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'PrintJob - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('all-classes.html')" href="package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('all-classes.html')" href="class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('index-list.html')" href="all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="index.html?PrintJob.html&amp;class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;PrintJob</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class PrintJob"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">Top Level</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class PrintJob</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">PrintJob <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="images/inherit-arrow.gif"> <a href="Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p>
+<p></p>The PrintJob class lets you create content and print it to one or more   pages. This class, in addition to offering improvements to   print functionality provided by the <code>print()</code> method,   lets you render dynamic content offscreen, prompt users with a   single Print dialog box, and print an unscaled document with   proportions that map to the proportions of the content. This   capability is especially useful for rendering and printing dynamic   content, such as database content and dynamic text.     <p>Additionally, with properties populated by   <code>PrintJob.start()</code>, your document can read your user's   printer settings, such as page height, width, and orientation, and   you can configure your document to dynamically format Flash content   that is appropriate for the printer settings. These user layout   properties are read-only and cannot be changed by Flash Player.</p>     <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#orientation">orientation</a> : <a href="String.html">String</a>
+<div class="summaryTableDescription">[read-only]The image orientation for printing.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#pageHeight">pageHeight</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[read-only]The height of the actual printable area on the page, in points.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#pageWidth">pageWidth</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[read-only]The width of the actual printable area on the page, in points.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#paperHeight">paperHeight</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[read-only]The overall paper height, in points.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#paperWidth">paperWidth</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[read-only]The overall paper width, in points.</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="Object.html#__proto__">__proto__</a>, <a href="Object.html#__resolve">__resolve</a>, <a href="Object.html#constructor">constructor</a>, <a href="Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#PrintJob()">PrintJob</a>()</div>
+<div class="summaryTableDescription">Creates a PrintJob object that you can use to print one or more pages.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addPage()">addPage</a>(target:<a href="Object.html">Object</a>, [printArea:<a href="Object.html">Object</a>], [options:<a href="Object.html">Object</a>], [frameNum:<a href="Number.html">Number</a>]):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Sends the specified level or movie clip as a single page to the print spooler.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#send()">send</a>():Void</div>
+<div class="summaryTableDescription">Used following the <code>PrintJob.start()</code> and <code>PrintJob.addPage()</code> methods to send spooled pages to the printer.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#start()">start</a>():<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Displays the operating system's print dialog boxes and starts spooling.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="Object.html#addProperty()">addProperty</a>, <a href="Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="Object.html#registerClass()">registerClass</a>, <a href="Object.html#toString()">toString</a>, <a href="Object.html#unwatch()">unwatch</a>, <a href="Object.html#valueOf()">valueOf</a>, <a href="Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="orientation"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">orientation</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>orientation:<a href="String.html">String</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>The image orientation for printing. This property can be either <code>"landscape"</code> or   <code>"portrait"</code>. Note that this property is only available after a call to the       <code>PrintJob.start()</code> method.            </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get orientation():<a href="String.html">String</a></code>
+<br>
+</div>
+<a name="pageHeight"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">pageHeight</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>pageHeight:<a href="Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>The height of the actual printable area on the page, in points.       Any user-set margins are ignored. Note that this property is only available       after a call to the <code>PrintJob.start()</code> method.            </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get pageHeight():<a href="Number.html">Number</a></code>
+<br>
+</div>
+<a name="pageWidth"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">pageWidth</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>pageWidth:<a href="Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>The width of the actual printable area on the page, in points.       Any user-set margins are ignored. Note that this property is only available       after a call to the <code>PrintJob.start()</code> method.            </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get pageWidth():<a href="Number.html">Number</a></code>
+<br>
+</div>
+<a name="paperHeight"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">paperHeight</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>paperHeight:<a href="Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>The overall paper height, in points. Note that this property is only available       after a call to the <code>PrintJob.start()</code> method.            </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get paperHeight():<a href="Number.html">Number</a></code>
+<br>
+</div>
+<a name="paperWidth"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">paperWidth</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>paperWidth:<a href="Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>The overall paper width, in points. Note that this property is only available       after a call to the <code>PrintJob.start()</code> method.            </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get paperWidth():<a href="Number.html">Number</a></code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="PrintJob()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">PrintJob</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function PrintJob()</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Creates a PrintJob object that you can use to print one or more pages.   <span class="flashonly"></p><p>To implement a print job, use the following methods in sequence. You must place all commands relating to a specific print job in the same frame, from the constructor through <code>PrintJob.send()</code> and delete. Replace the <code>[params]</code> to the <code>my_pj.addPage()</code> method calls with your custom parameters.</p></span>   <div class='listing'><pre>
+// create PrintJob object
+var my_pj:PrintJob = new PrintJob();
+
+// display print dialog box, but only initiate the print job
+// if start returns successfully.
+if (my_pj.start()) {
+
+    // use a variable to track successful calls to addPage
+    var pagesToPrint:Number = 0;
+
+    // add specified area to print job
+    // repeat once for each page to be printed
+    if (my_pj.addPage([params])) {
+    pagesToPrint++;
+    }
+    if (my_pj.addPage([params])) {
+    pagesToPrint++;
+    }
+    if (my_pj.addPage([params])) {
+    pagesToPrint++;
+    }
+
+    // send pages from the spooler to the printer, but only if one or more
+    // calls to addPage() was successful. You should always check for successful 
+    // calls to start() and addPage() before calling send().
+    if (pagesToPrint &gt; 0) {
+    my_pj.send(); &#xA0;// print page(s)
+    }
+}
+
+// clean up
+delete my_pj;&#xA0; // delete object
+</pre></div>   <p>You cannot create a second PrintJob object while the first one is still active. You cannot create a second PrintJob object (by calling <code>new&#xA0;PrintJob()</code>) while the first PrintJob object is still active, the second PrintJob object will not be created. </p>    <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="PrintJob.html#addPage()" target="">PrintJob.addPage()</a>
+<br>
+<a href="PrintJob.html#send()" target="">PrintJob.send()</a>
+<br>
+<a href="PrintJob.html#start()" target="">PrintJob.start()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>See <code>PrintJob.addPage()</code>.    <p></p>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addPage()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addPage</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addPage(target:<a href="Object.html">Object</a>, [printArea:<a href="Object.html">Object</a>], [options:<a href="Object.html">Object</a>], [frameNum:<a href="Number.html">Number</a>]):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Sends the specified level or movie clip as a single page to the print spooler. Before using this method, you must use <code>PrintJob.start()</code>; after calling <code>PrintJob.addPage()</code> one or more times for a print job, you must use <code>PrintJob.send()</code> to send the spooled pages to the printer.       </p><p>If this method returns <code>false</code> (for example, if you haven't called <code>PrintJob.start()</code> or the user canceled the print job), any subsequent calls to <code>PrintJob.addPage()</code> will fail. However, if previous calls to <code>PrintJob.addPage()</code> were successful, the concluding <code>PrintJob.send()</code> command sends the successfully spooled pages to the printer.</p>       <p>If you passed a value for <code>printArea</code>, the <code>xMin</code> and <code>yMin</code> coordinates map to the upper left corner (0,0&#xA0;coordinates) of the printable area on the page. The user's printable area is described by the read-only <code>pageHeight</code> and <code>pageWidth</code> properties set by <code>PrintJob.start()</code>. Because the printout aligns with the upper left corner of the printable area on the page, the printout is clipped to the right and/or bottom if the area defined in <code>printArea</code> is bigger than the printable area on the page. <span class="flashonly">If you haven't passed a value for <code>printArea</code> and the Stage is larger than the printable area, the same type of clipping takes place.</span> <span class="flexonly">If you haven't passed a value for <code>printArea</code> and the Flex screen is larger than the printable area, the same type of clipping takes place.</span></p>             <p>If you want to scale a movie clip before you print it, set its <code>MovieClip._xscale</code> and <code>MovieClip._yscale</code> properties before calling this method, and set them back to their original values afterward. The scale of a movie clip has no relation to <code>printArea</code>. That is, if you specify that you print an area that is 50&#xA0;x&#xA0;50 pixels in size, 2500&#xA0;pixels are printed. If you have scaled the movie clip, the same 2500&#xA0;pixels are printed, but the movie clip is printed at the scaled size.</p>       <p>The Flash Player printing feature supports PostScript and non-PostScript printers. Non-PostScript printers convert vectors to bitmaps.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">target</span>:<a href="Object.html">Object</a></code> &mdash; A number or string; the level or instance name of the movie clip to print. Pass a number to specify a level (for example, 0 is the <code>_root</code> movie), or a string (in quotation marks [""]) to specify the instance name of a movie clip.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">printArea</span>:<a href="Object.html">Object</a></code>&nbsp;[optional] &mdash; An object that specifies the area to print, in the following format:          <div class='listing'><pre>
+{xMin:<code><em>topLeft</em></code>, xMax:<code><em>topRight</em></code>, yMin:<code><em>bottomLeft</em></code>, yMax:<code><em>bottomRight</em></code>}
+</pre></div>       <p> The coordinates you specify for <code>printArea</code> represent screen pixels relative to the registration point of the <code>_root</code> movie clip (if <code>target</code>&#xA0;=&#xA0;0) or of the level or movie clip specified by <code>target</code>. You must provide all four coordinates. The width (<code>xMax-xMin</code>) and height (<code>yMax-yMin</code>) must each be greater than&#xA0;0.       </p>       <p>Points are print units of measurement, and pixels are screen units of measurement; points are a fixed physical size (1/72 inch), but the size of a pixel depends on the resolution of the particular screen. You can use the following equivalencies to convert inches or centimeters to twips or points (a twip is 1/20 of a point): </p>             <ul>         <li>1 point = 1/72 inch = 20 twips</li>         <li>1 inch = 72 points = 1440 twips</li>         <li>1 cm = 567 twips</li>       </ul>       <p> The conversion rate between pixels and points depends on the printer settings and whether the movie clip is scaled. An unscaled movie clip that is 72 pixels wide will print out one inch wide, with one point equal to one pixel, independent of screen resolution.       </p>       <span class="flashonly"><p><strong>Note: </strong>If you have previously used <code>print()</code>, <code>printAsBitmap()</code>, <code>printAsBitmapNum()</code>, or <code>printNum()</code> to print from Flash, you might have used a <code>#p</code> frame label to specify the area to print. When using the <code>addPage()</code> method, you must use the <code>printArea</code> parameter to specify the print area; <code>#p</code> frame labels are ignored.</p>       If you omit the <code>printArea</code> parameter, or if it is passed incorrectly, the full Stage area of <code>target</code> is printed.</span> <span class="flexonly"><p>If you omit the <code>printArea</code> parameter, or if it is passed incorrectly, the full Flex screen area of <code>target</code> is printed.</p></span> If you don't want to specify a value for <code>printArea</code> but want to specify a value for <code>options</code> or <code>frameNumber</code>, pass <code>null</code> for <code>printArea</code>.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">options</span>:<a href="Object.html">Object</a></code>&nbsp;[optional] &mdash; A parameter that specifies whether to print as vector or bitmap, in the following format:          <div class='listing'><pre>
+{printAsBitmap:<code><em>Boolean</em></code>}
+</pre></div>       <p> The default value is <code>false</code>, which represents a request for vector printing. To print <code>target</code> as a bitmap, pass <code>true</code> for printAsBitmap. Remember the following suggestions when determining which value to use:</p>             <ul>         <li>If the content that you're printing includes a bitmap image, use <code>{printAsBitmap:true}</code> to include any transparency and color effects.</li>         <li>If the content does not include bitmap images, omit this parameter or use <code>{printAsBitmap:false}</code> to print the content in higher quality vector format.</li>       </ul>      <p> If <code>options</code> is omitted or is passed incorrectly, vector printing is used. If you don't want to specify a value for <code>options</code> but want to specify a value for <code>frameNumber</code>, pass <code>null</code> for <code>options</code>.</p>            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">frameNum</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; <span class="flashonly">A number that lets you specify which frame to print; passing a <code>frameNumber</code> does not cause the ActionScript on that frame to be invoked. If you omit this parameter, the current frame in <code>target</code> is printed.</span> <span class="flexonly">A number that is used in the Flash authoring environment. When writing Flex applications, you should omit this parameter or pass a value of&#xA0;0.</span>                <span class="flashonly"><p><strong>Note: </strong>If you previously used <code>print()</code>, <code>printAsBitmap()</code>, <code>printAsBitmapNum()</code>, or <code>printNum()</code> to print from Flash, you might have used a <code>#p</code> frame label on multiple frames to specify which pages to print. To use <code>PrintJob.addPage()</code> to print multiple frames, you must issue a <code>PrintJob.addPage()</code> command for each frame; <code>#p</code> frame labels are ignored. For one way to do this programmatically, see the Example section. </p></span>         </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+  A Boolean value: <code>true</code> if the page is successfully sent to the print spooler; <code>false</code> otherwise.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="PrintJob.html#send()" target="">PrintJob.send()</a>
+<br>
+<a href="PrintJob.html#start()" target="">PrintJob.start()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example shows several ways to issue the <code>addPage()</code> command:       <span class="flexonly"><p><strong>Note: </strong>Some of the code in the following examples includes a value passed for the frameNumber parameter, which is supported in the Flash authoring environment. When writing Flex applications, you should omit or pass a value of&#xA0;0 for this parameter.</p></span>       <div class='listing'><pre>
+my_btn.onRelease = function()
+{
+    var pageCount:Number = 0;
+
+    var my_pj:PrintJob = new PrintJob();
+    
+    if (my_pj.start())
+    {
+    // Print entire current frame of the _root movie in vector format
+    if (my_pj.addPage(0)){
+        pageCount++;
+
+        // Starting at 0,0, print an area 400 pixels wide and 500 pixels high
+        // of the current frame of the _root movie in vector format
+        if (my_pj.addPage(0, {xMin:0,xMax:400,yMin:0,yMax:500})){
+        pageCount++;
+
+        // Starting at 0,0, print an area 400 pixels wide and 500 pixels high
+        // of frame 1 of the _root movie in bitmap format
+        if (my_pj.addPage(0, {xMin:0,xMax:400,yMin:0,yMax:500},
+            {printAsBitmap:true}, 1)){
+            pageCount++;
+
+            // Starting 50 pixels to the right of 0,0 and 70 pixels down,
+            // print an area 500 pixels wide and 600 pixels high
+            // of frame 4 of level 5 in vector format
+            if (my_pj.addPage(5, {xMin:50,xMax:550,yMin:70,yMax:670},null, 4)){
+            pageCount++;
+
+            // Starting at 0,0, print an area 400 pixels wide 
+            // and 400 pixels high of frame 3 of the "dance_mc" movie clip 
+            // in bitmap format
+            if (my_pj.addPage("dance_mc",
+                {xMin:0,xMax:400,yMin:0,yMax:400},{printAsBitmap:true}, 3)){
+                pageCount++;
+
+                // Starting at 0,0, print an area 400 pixels wide
+                // and 600 pixels high of frame 3 of the "dance_mc" movie clip
+                // in vector format at 50% of its actual size
+                var x:Number = dance_mc._xscale;
+                var y:Number = dance_mc._yscale;
+                dance_mc._xscale = 50;
+                dance_mc._yscale = 50;
+
+                if (my_pj.addPage("dance_mc",
+                    {xMin:0,xMax:400,yMin:0,yMax:600},null, 3)){
+                pageCount++;
+                }
+                dance_mc._xscale = x;
+                dance_mc._yscale = y;
+            }
+            }
+        }
+        }
+    }
+    }
+    
+    // If addPage() was successful at least once, print the spooled pages.
+    if (pageCount &gt; 0){
+    my_pj.send();
+    }
+    delete my_pj;
+}
+</pre></div>            <p></p>
+</div>
+<a name="send()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">send</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function send():Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Used following the <code>PrintJob.start()</code> and <code>PrintJob.addPage()</code> methods to send spooled pages to the printer. Because calls to <code>PrintJob.send()</code> will not be successful if related calls to <code>PrintJob.start()</code> and <code>PrintJob.addpage()</code> failed, you should check that calls to <code>PrintJob.addpage()</code> and <code>PrintJob.start()</code> were successful before calling <code>PrintJob.send()</code>:       <div class='listing'><pre>
+var my_pj:PrintJob = new PrintJob();
+if (my_pj.start()) {
+    if (my_pj.addPage(this)) {
+    my_pj.send();
+    }
+}
+delete my_pj;
+</pre></div>            </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="PrintJob.html#addPage()" target="">PrintJob.addPage()</a>
+<br>
+<a href="PrintJob.html#start()" target="">PrintJob.start()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>See <code>PrintJob.addPage()</code> and <code>PrintJob.start()</code>.            <p></p>
+</div>
+<a name="start()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">start</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function start():<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Displays the operating system's print dialog boxes and starts spooling. The print dialog boxes       let the user change print settings. When the <code>PrintJob.start()</code> method returns       successfully, the following read-only properties are populated, representing the user's print       settings:       </p><p>       <table class="innertable" width="600">       <tr>       <th>Property</th>          <th>Type</th>          <th>Units</th>           <th>Notes</th>       </tr>             <tr>       <td>PrintJob.paperHeight</td>        <td>Number</td>       <td>Points</td>       <td>Overall paper height.</td>       </tr>             <tr>       <td>PrintJob.paperWidth</td>        <td>Number</td>       <td>Points</td>       <td>Overall paper width.</td>       </tr>             <tr>       <td>PrintJob.pageHeight</td>        <td>Number</td>       <td>Points</td>       <td>Height of actual printable area on the page; any user-set margins are ignored.</td>       </tr>             <tr>       <td>PrintJob.pageWidth</td>        <td>Number</td>       <td>Points</td>       <td>Width of actual printable area on the page; any user-set margins are ignored.</td>       </tr>             <tr>       <td>PrintJob.orientation</td>        <td>String</td>       <td></td>       <td>"portrait" or "landscape".</td>       </tr>             </table>       </p>             <p>After the user clicks OK in the Print dialog box, the player begins spooling a print job to the operating system. You should issue any ActionScript commands that affect the printout, and you can use <code>PrintJob.addPage()</code> commands to send pages to the spooler. You can use the read-only height, width, and orientation properties this method populates to format the printout.</p>       <p>Because the user sees information such as "Printing page 1" immediately after clicking&#xA0;OK, you should call the <code>PrintJob.addPage()</code> and <code>PrintJob.send()</code> commands as soon as possible. </p>       <p>If this method returns <code>false</code> (for example, if the user clicks Cancel instead of&#xA0;OK in the operating system's Print dialog box), any subsequent calls to <code>PrintJob.addPage()</code> and <code>PrintJob.send()</code> will fail. However, if you test for this return value and don't send <code>PrintJob.addPage()</code> commands as a result, you should still delete the PrintJob object to make sure the print spooler is cleared, as shown in the following example:</p>       <div class='listing'><pre>
+var my_pj:PrintJob = new PrintJob();
+var myResult:Boolean = my_pj.start();
+    if(myResult) {
+    // addPage() and send() statements here
+    }
+delete my_pj;
+</pre></div>            <p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+A Boolean value: <code>true</code> if the user clicks OK when the print dialog boxes appear; <code>false</code> if the user clicks Cancel or if an error occurs.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="PrintJob.html#addPage()" target="">PrintJob.addPage()</a>
+<br>
+<a href="PrintJob.html#send()" target="">PrintJob.send()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how you might use the value of the orientation property to adjust the printout:       <div class='listing'><pre>
+// create PrintJob object
+var my_pj:PrintJob = new PrintJob();
+
+// display print dialog box
+if (my_pj.start()) {
+    // boolean to track whether addPage succeeded, change this to a counter
+    // if more than one call to addPage is possible
+    var pageAdded:Boolean = false;
+
+    // check the user's printer orientation setting
+    // and add appropriate print area to print job
+    if (my_pj.orientation == "portrait") {
+    // Here, the printArea measurements are appropriate for an 8.5" x 11"
+    // portrait page.
+    pageAdded = my_pj.addPage(this,{xMin:0,xMax:600,yMin:0,yMax:800});
+    }
+    else {
+    // my_pj.orientation is "landscape".
+    // Now, the printArea measurements are appropriate for an 11" x 8.5"
+    // landscape page.
+    pageAdded = my_pj.addPage(this,{xMin:0,xMax:750,yMin:0,yMax:600});
+    }
+
+    // send pages from the spooler to the printer
+    if (pageAdded) {
+    my_pj.send(); 
+    }
+}
+
+// clean up
+delete my_pj; 
+</pre></div>                  <p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

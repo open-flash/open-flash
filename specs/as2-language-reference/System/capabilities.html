@@ -1,0 +1,853 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../print.css" type="text/css" media="print">
+<meta content="capabilities,System.capabilities,avHardwareDisable,hasAccessibility,hasAudio,hasAudioEncoder,hasEmbeddedVideo,hasIME,hasMP3,hasPrinting,hasScreenBroadcast,hasScreenPlayback,hasStreamingAudio,hasStreamingVideo,hasVideoEncoder,isDebugger,language,localFileReadDisable,manufacturer,os,pixelAspectRatio,playerType,screenColor,screenDPI,screenResolutionX,screenResolutionY,serverString,version" name="keywords">
+<title>System.capabilities</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../asdoc.js"></script><script type="text/javascript" language="javascript" src="../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'capabilities - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../all-classes.html')" href="../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../all-classes.html')" href="../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="../language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('../index-list.html')" href="../all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="../appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="../index.html?System/capabilities.html&amp;System/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;capabilities</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class capabilities"); titleBar_setSubNav(false,true,false,false,false,false,false,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">System</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class capabilities</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">capabilities <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../images/inherit-arrow.gif"> <a href="../Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p></p>The Capabilities class determines the abilities of the system and player hosting a SWF  file, which lets you tailor content for different formats. For example, the screen of a cell phone  (black and white, 100 square pixels) is different than the 1000-square-pixel color PC screen. To  provide appropriate content to as many users as possible, you can use the  <code>System.capabilities</code> object to determine the type of  device a user has. You can then either specify to the server to send different SWF files based on  the device capabilities or tell the SWF file to alter its presentation based on the capabilities of  the device.  <p>You can send capabilities information using a <code>GET</code> or <code>POST</code> HTTP method.  The following example shows a server string for a computer that has MP3 support, 1600 x 1200 pixel  resolution, is running Windows XP, and Flash Player 8 (8.0.0.0): </p>  <pre> A=t&amp;SA=t&amp;SV=t&amp;EV=t&amp;MP3=t&amp;AE=t&amp;VE=t&amp;ACC=f&amp;PR=t&amp;SP=t&amp;<br />
+  SB=f&amp;DEB=t&amp;V=WIN%208%2C0%2C0%2C0&amp;M=Macromedia%20Windows&amp;<br />
+  R=1600x1200&amp;DP=72&amp;COL=color&amp;AR=1.0&amp;OS=Windows%20XP&amp;<br />
+  L=en&amp;PT=External&amp;AVD=f&amp;LFD=f&amp;WD=f"<br />
+  </pre>   <p>All properties of the <code>System.capabilities</code> object are read-only.</p>     <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#avHardwareDisable">avHardwareDisable</a> : <a href="../Boolean.html">Boolean</a>
+<div class="summaryTableDescription">[static][read-only]A Boolean value that specifies whether access to the user's camera and microphone has been administratively prohibited (<code>true</code>) or allowed (<code>false</code>).</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#hasAccessibility">hasAccessibility</a> : <a href="../Boolean.html">Boolean</a>
+<div class="summaryTableDescription">[static][read-only]A Boolean value that is <code>true</code> if the player is running in an environment that supports communication between Flash Player and accessibility aids; <code>false</code> otherwise.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#hasAudio">hasAudio</a> : <a href="../Boolean.html">Boolean</a>
+<div class="summaryTableDescription">[static][read-only]Specifies if the player is running on a system that has audio capabilities.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#hasAudioEncoder">hasAudioEncoder</a> : <a href="../Boolean.html">Boolean</a>
+<div class="summaryTableDescription">[static][read-only]Specifies if the Flash Player can encode an audio stream.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#hasEmbeddedVideo">hasEmbeddedVideo</a> : <a href="../Boolean.html">Boolean</a>
+<div class="summaryTableDescription">[static][read-only]A Boolean value that is <code>true</code> if the player is running on a system that supports embedded video; <code>false</code> otherwise.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#hasIME">hasIME</a> : <a href="../Boolean.html">Boolean</a>
+<div class="summaryTableDescription">[static][read-only]Indicates whether the system has an input method editor (IME) installed.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#hasMP3">hasMP3</a> : <a href="../Boolean.html">Boolean</a>
+<div class="summaryTableDescription">[static][read-only]Specifies if the system has a MP3 decoder.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#hasPrinting">hasPrinting</a> : <a href="../Boolean.html">Boolean</a>
+<div class="summaryTableDescription">[static][read-only]A Boolean value that is <code>true</code> if the player is running on a system that supports printing; <code>false</code> otherwise.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#hasScreenBroadcast">hasScreenBroadcast</a> : <a href="../Boolean.html">Boolean</a>
+<div class="summaryTableDescription">[static][read-only]A Boolean value that is <code>true</code> if the player supports the development of screen broadcast applications to be run through the Flash Media Server; <code>false</code> otherwise.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#hasScreenPlayback">hasScreenPlayback</a> : <a href="../Boolean.html">Boolean</a>
+<div class="summaryTableDescription">[static][read-only]A Boolean value that is <code>true</code> if the player supports the playback of screen broadcast applications that are being run through the Flash Media Server; <code>false</code> otherwise.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#hasStreamingAudio">hasStreamingAudio</a> : <a href="../Boolean.html">Boolean</a>
+<div class="summaryTableDescription">[static][read-only]A Boolean value that is <code>true</code> if the player can play streaming audio; <code>false</code> otherwise.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#hasStreamingVideo">hasStreamingVideo</a> : <a href="../Boolean.html">Boolean</a>
+<div class="summaryTableDescription">[static][read-only]A Boolean value that is <code>true</code> if the player can play streaming video; <code>false</code> otherwise.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#hasVideoEncoder">hasVideoEncoder</a> : <a href="../Boolean.html">Boolean</a>
+<div class="summaryTableDescription">[static][read-only]Specifies if the Flash Player can encode a video stream.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#isDebugger">isDebugger</a> : <a href="../Boolean.html">Boolean</a>
+<div class="summaryTableDescription">[static][read-only]A Boolean value that indicates whether the player is an officially released version (<code>false</code>) or a special debugging version (<code>true</code>).</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#language">language</a> : <a href="../String.html">String</a>
+<div class="summaryTableDescription">[static][read-only]Indicates the language of the system on which the player is running.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#localFileReadDisable">localFileReadDisable</a> : <a href="../Boolean.html">Boolean</a>
+<div class="summaryTableDescription">[static][read-only]A Boolean value that indicates whether read access to the user's hard disk has been administratively prohibited (<code>true</code>) or allowed (<code>false</code>).</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#manufacturer">manufacturer</a> : <a href="../String.html">String</a>
+<div class="summaryTableDescription">[static][read-only]A string that indicates the manufacturer of Flash Player, in the format "<code>Adobe </code><code><em>OSName</em></code>" (<code><em>OSName</em></code> could be "<code>Windows</code>", "<code>Macintosh</code>", <code>"Linux"</code>, or "<code>Other OS Name</code>").</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#os">os</a> : <a href="../String.html">String</a>
+<div class="summaryTableDescription">[static][read-only]A string that indicates the current operating system.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#pixelAspectRatio">pixelAspectRatio</a> : <a href="../Number.html">Number</a>
+<div class="summaryTableDescription">[static][read-only]An integer that indicates the pixel aspect ratio of the screen.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#playerType">playerType</a> : <a href="../String.html">String</a>
+<div class="summaryTableDescription">[static][read-only]A string that indicates the type of player.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#screenColor">screenColor</a> : <a href="../String.html">String</a>
+<div class="summaryTableDescription">[static][read-only]A string that indicates the screen color.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#screenDPI">screenDPI</a> : <a href="../Number.html">Number</a>
+<div class="summaryTableDescription">[static][read-only]A number that indicates the dots-per-inch (dpi) resolution of the screen, in pixels.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#screenResolutionX">screenResolutionX</a> : <a href="../Number.html">Number</a>
+<div class="summaryTableDescription">[static][read-only]An integer that indicates the maximum horizontal resolution of the screen.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#screenResolutionY">screenResolutionY</a> : <a href="../Number.html">Number</a>
+<div class="summaryTableDescription">[static][read-only]An integer that indicates the maximum vertical resolution of the screen.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#serverString">serverString</a> : <a href="../String.html">String</a>
+<div class="summaryTableDescription">[static][read-only]A URL-encoded string that specifies values for each <code>System.capabilities</code> property.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#version">version</a> : <a href="../String.html">String</a>
+<div class="summaryTableDescription">[static][read-only]A string that contains the Flash Player platform and version information.</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../Object.html#__proto__">__proto__</a>, <a href="../Object.html#__resolve">__resolve</a>, <a href="../Object.html#constructor">constructor</a>, <a href="../Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="avHardwareDisable"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">avHardwareDisable</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>avHardwareDisable:<a href="../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>A Boolean value that specifies whether access to the user's camera and microphone has been administratively prohibited (<code>true</code>) or allowed (<code>false</code>). The server string is <code>AVD</code>.     </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get avHardwareDisable():<a href="../Boolean.html">Boolean</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../Camera.html#get()" target="">Camera.get()</a>
+<br>
+<a href="../Microphone.html#get()" target="">Microphone.get()</a>
+<br>
+<a href="../System.html#showSettings()" target="">System.showSettings()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.avHardwareDisable);
+</pre></div>    <p></p>
+</div>
+<a name="hasAccessibility"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hasAccessibility</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>hasAccessibility:<a href="../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A Boolean value that is <code>true</code> if the player is running in an environment that supports communication between Flash Player and accessibility aids; <code>false</code> otherwise. The server string is <code>ACC</code>.     </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get hasAccessibility():<a href="../Boolean.html">Boolean</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../Accessibility.html#isActive()" target="">Accessibility.isActive()</a>
+<br>
+<a href="../Accessibility.html#updateProperties()" target="">Accessibility.updateProperties()</a>
+<br>
+<a href="../global_props.html#_accProps" target="">_accProps</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.hasAccessibility);
+</pre></div>    <p></p>
+</div>
+<a name="hasAudio"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hasAudio</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>hasAudio:<a href="../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Specifies if the player is running on a system that has audio capabilities.   In Flash Player, this property is always <code>true</code>. The server   string is <code>A</code>.     </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get hasAudio():<a href="../Boolean.html">Boolean</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.hasAudio);
+</pre></div>    <p></p>
+</div>
+<a name="hasAudioEncoder"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hasAudioEncoder</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>hasAudioEncoder:<a href="../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Specifies if the Flash Player can encode an audio stream. A Boolean value that is <code>true</code> if the player can encode an audio stream, such as that coming from a microphone; <code>false</code> otherwise. The server string is <code>AE</code>.     </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get hasAudioEncoder():<a href="../Boolean.html">Boolean</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.hasAudioEncoder);
+</pre></div>     <p></p>
+</div>
+<a name="hasEmbeddedVideo"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hasEmbeddedVideo</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>hasEmbeddedVideo:<a href="../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6.0.65.0</td>
+</tr>
+</table>
+<p></p><p>A Boolean value that is <code>true</code> if the player is running on a system that supports embedded video; <code>false</code> otherwise. The server string is <code>EV</code>.     </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get hasEmbeddedVideo():<a href="../Boolean.html">Boolean</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.hasEmbeddedVideo);
+</pre></div>     <p></p>
+</div>
+<a name="hasIME"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hasIME</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>hasIME:<a href="../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Indicates whether the system has an input method editor (IME) installed. A value of       <code>true</code> indicates that the player is running on a system that has an IME installed;       a value of <code>false</code> indicates that no IME is installed.       The server string is <code>IME</code>.       </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get hasIME():<a href="../Boolean.html">Boolean</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example sets the IME to <code>ALPHANUMERIC_FULL</code> if       the player is running on a system that has an IME installed.       <div class='listing'><pre>
+if(System.capabilities.hasIME) {
+    trace(System.IME.getConversionMode());
+    System.IME.setConversionMode(System.IME.ALPHANUMERIC_FULL);
+    trace(System.IME.getConversionMode());
+}
+</pre></div>      <p></p>
+</div>
+<a name="hasMP3"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hasMP3</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>hasMP3:<a href="../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Specifies if the system has a MP3 decoder. A Boolean value that is <code>true</code> if the player is running on a system that has an MP3 decoder; <code>false</code> otherwise. The server string is <code>MP3</code>.     </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get hasMP3():<a href="../Boolean.html">Boolean</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.hasMP3);
+</pre></div>     <p></p>
+</div>
+<a name="hasPrinting"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hasPrinting</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>hasPrinting:<a href="../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6.0.65.0</td>
+</tr>
+</table>
+<p></p><p>A Boolean value that is <code>true</code> if the player is running on a system that supports printing; <code>false</code> otherwise. The server string is <code>PR</code>.     </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get hasPrinting():<a href="../Boolean.html">Boolean</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.hasPrinting);
+</pre></div>     <p></p>
+</div>
+<a name="hasScreenBroadcast"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hasScreenBroadcast</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>hasScreenBroadcast:<a href="../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6.0.79.0</td>
+</tr>
+</table>
+<p></p><p>A Boolean value that is <code>true</code> if the player supports the development of screen broadcast applications to be run through the Flash Media Server; <code>false</code> otherwise. The server string is <code>SB</code>.        </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get hasScreenBroadcast():<a href="../Boolean.html">Boolean</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.hasScreenBroadcast);
+</pre></div>     <p></p>
+</div>
+<a name="hasScreenPlayback"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hasScreenPlayback</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>hasScreenPlayback:<a href="../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6.0.79.0</td>
+</tr>
+</table>
+<p></p><p>A Boolean value that is <code>true</code> if the player supports the playback of screen broadcast applications that are being run through the Flash Media Server; <code>false</code> otherwise. The server string is <code>SP</code>.     </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get hasScreenPlayback():<a href="../Boolean.html">Boolean</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.hasScreenPlayback);
+</pre></div>     <p></p>
+</div>
+<a name="hasStreamingAudio"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hasStreamingAudio</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>hasStreamingAudio:<a href="../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6.0.65.0</td>
+</tr>
+</table>
+<p></p><p>A Boolean value that is <code>true</code> if the player can play streaming audio; <code>false</code> otherwise. The server string is <code>SA</code>.     </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get hasStreamingAudio():<a href="../Boolean.html">Boolean</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.hasStreamingAudio);
+</pre></div>     <p></p>
+</div>
+<a name="hasStreamingVideo"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hasStreamingVideo</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>hasStreamingVideo:<a href="../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6.0.65.0</td>
+</tr>
+</table>
+<p></p><p>A Boolean value that is <code>true</code> if the player can play streaming video; <code>false</code> otherwise. The server string is <code>SV</code>.     </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get hasStreamingVideo():<a href="../Boolean.html">Boolean</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.hasStreamingVideo);
+</pre></div>     <p></p>
+</div>
+<a name="hasVideoEncoder"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hasVideoEncoder</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>hasVideoEncoder:<a href="../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Specifies if the Flash Player can encode a video stream. A Boolean value that is <code>true</code> if the player can encode a video stream, such as that coming from a web camera; <code>false</code> otherwise. The server string is <code>VE</code>.     </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get hasVideoEncoder():<a href="../Boolean.html">Boolean</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.hasVideoEncoder);
+</pre></div>     <p></p>
+</div>
+<a name="isDebugger"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">isDebugger</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>isDebugger:<a href="../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A Boolean value that indicates whether the player is an officially released version (<code>false</code>) or a special debugging version (<code>true</code>). The server string is <code>DEB</code>.     </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get isDebugger():<a href="../Boolean.html">Boolean</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.isDebugger);
+</pre></div>     <p></p>
+</div>
+<a name="language"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">language</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>language:<a href="../String.html">String</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6 &mdash; Behavior changed in Flash Player 7.</td>
+</tr>
+</table>
+<p></p><p>Indicates the language of the system on which the player is running. This property is   specified as a lowercase two-letter language code from ISO 639-1. For Chinese, an additional uppercase   two-letter country code subtag from ISO 3166 distinguishes between Simplified and Traditional Chinese. The   languages themselves are named with the English tags. For example, <code>fr</code> specifies French.   </p><p>This property changed in two ways for Flash Player 7. First, the language code for English systems no   longer includes the country code. In Flash Player 6, all English systems return the language code and the   two-letter country code subtag (<code>en-US</code>). In Flash Player 7, English systems return only the   language code (<code>en</code>). Second, on Microsoft Windows systems this property now returns the User   Interface (UI) Language. In Flash Player 6 on the Microsoft Windows platform,   <code> System.capabilities.language</code> returns the User Locale, which controls settings for formatting   dates, times, currency and large numbers. In Flash Player 7 on the Microsoft Windows platform, this property   now returns the UI Language, which refers to the language used for all menus, dialog boxes, error messages and   help files. The following table lists the possible values:</p>   <p>       <table class="innertable" width="300">     <tr>         <th>Language</th>         <th>Tag</th>     </tr>     <tr>         <td>Czech</td>         <td>cs</td>     </tr>     <tr>         <td>Danish</td>         <td>da</td>     </tr>     <tr>         <td>Dutch</td>         <td>nl</td>     </tr>     <tr>         <td>English</td>         <td>en</td>     </tr>     <tr>         <td>Finnish</td>         <td>fi</td>     </tr>         <tr>         <td>French</td>         <td>fr</td>     </tr>         <tr>         <td>German</td>         <td>de</td>     </tr>     <tr>         <td>Hungarian</td>         <td>hu</td>     </tr>     <tr>         <td>Italian</td>         <td>it</td>     </tr>     <tr>         <td>Japanese</td>         <td>ja</td>     </tr>     <tr>         <td>Korean</td>         <td>ko</td>     </tr>     <tr>         <td>Norwegian</td>         <td>no</td>     </tr>     <tr>         <td>Other/unknown</td>         <td>xu</td>     </tr>     <tr>         <td>Polish</td>         <td>pl</td>     </tr>     <tr>         <td>Portuguese</td>         <td>pt</td>     </tr>     <tr>         <td>Russian</td>         <td>ru</td>     </tr>     <tr>         <td>Simplified Chinese</td>         <td>zh-CN</td>     </tr>     <tr>         <td>Spanish</td>         <td>es</td>     </tr>     <tr>         <td>Swedish</td>         <td>sv</td>     </tr>     <tr>         <td>Traditional Chinese</td>         <td>zh-TW</td>     </tr>     <tr>         <td>Turkish</td>         <td>tr</td>     </tr>   </table>   </p>     <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get language():<a href="../String.html">String</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.language);
+</pre></div>     <p></p>
+</div>
+<a name="localFileReadDisable"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">localFileReadDisable</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>localFileReadDisable:<a href="../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>A Boolean value that indicates whether read access to the user's hard disk has   been administratively prohibited (<code>true</code>) or allowed (<code>false</code>). If set to   <code>true,</code> Flash Player will be unable to read files (including the first SWF file that Flash   Player launches with) from the user's hard disk. For example, attempts to read a file on the user's   hard disk using <code>XML.load()</code>, <code>LoadMovie()</code>, or <code>LoadVars.load()</code>   will fail if this property is set to <code>true</code>.   </p><p>Reading runtime shared libraries will also be blocked if this property is set to   <code>true</code>, but reading local shared objects is allowed without regard to the value of this   property. The server string is <code>LFD</code>.</p>     <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get localFileReadDisable():<a href="../Boolean.html">Boolean</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.localFileReadDisable);
+</pre></div>     <p></p>
+</div>
+<a name="manufacturer"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">manufacturer</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>manufacturer:<a href="../String.html">String</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A string that indicates the manufacturer of Flash Player, in the format "<code>Adobe </code><code><em>OSName</em></code>" (<code><em>OSName</em></code> could be "<code>Windows</code>", "<code>Macintosh</code>", <code>"Linux"</code>, or "<code>Other OS Name</code>"). The server string is <code>M</code>.     </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get manufacturer():<a href="../String.html">String</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.manufacturer);
+</pre></div>     <p></p>
+</div>
+<a name="os"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">os</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>os:<a href="../String.html">String</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A string that indicates the current operating system. The <code>os</code> property can return the following strings: "<code>Windows XP</code>", "<code>Windows 2000</code>", "<code>Windows NT</code>", "<code>Windows 98/ME</code>", "<code>Windows 95</code>", "<code>Windows CE</code>" (available only in Flash Player SDK, not in the desktop version), <code>"Linux"</code>, and "<code>MacOS</code>". The server string is <code>OS</code>.     </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get os():<a href="../String.html">String</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.os);
+</pre></div>     <p></p>
+</div>
+<a name="pixelAspectRatio"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">pixelAspectRatio</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>pixelAspectRatio:<a href="../Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>An integer that indicates the pixel aspect ratio of the screen. The server string is <code>AR</code>.     </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get pixelAspectRatio():<a href="../Number.html">Number</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.pixelAspectRatio);
+</pre></div>     <p></p>
+</div>
+<a name="playerType"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">playerType</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>playerType:<a href="../String.html">String</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>A string that indicates the type of player. This property can have one of the following values:   <ul>     <li><code>"StandAlone"</code> for the Flash StandAlone Player </li>     <li><code>"External"</code> for the Flash Player version used by the external player<span class="flashonly">, or test movie mode.</span>.</li>     <li><code>"PlugIn"</code> for the Flash Player browser plug-in</li>     <li><code>"ActiveX"</code> for the Flash Player ActiveX Control used by Microsoft Internet Explorer </li>   </ul>   </p><p>The server string is <code>PT</code>.</p>     <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get playerType():<a href="../String.html">String</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.playerType);
+</pre></div>     <p></p>
+</div>
+<a name="screenColor"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">screenColor</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>screenColor:<a href="../String.html">String</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A string that indicates the screen color. This property can have the value "<code>color</code>", "<code>gray</code>" or "<code>bw</code>", which represents color, grayscale, and black and white, respectively. The server string is <code>COL</code>.     </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get screenColor():<a href="../String.html">String</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.screenColor);
+</pre></div>     <p></p>
+</div>
+<a name="screenDPI"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">screenDPI</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>screenDPI:<a href="../Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A number that indicates the dots-per-inch (dpi) resolution of the screen, in pixels. The server string is <code>DP</code>.     </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get screenDPI():<a href="../Number.html">Number</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.screenDPI);
+</pre></div>     <p></p>
+</div>
+<a name="screenResolutionX"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">screenResolutionX</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>screenResolutionX:<a href="../Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>An integer that indicates the maximum horizontal resolution of the screen. The server string is <code>R</code> (which returns both the width and height of the screen).     </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get screenResolutionX():<a href="../Number.html">Number</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.screenResolutionX);
+</pre></div>     <p></p>
+</div>
+<a name="screenResolutionY"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">screenResolutionY</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>screenResolutionY:<a href="../Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>An integer that indicates the maximum vertical resolution of the screen. The server string is <code>R</code> (which returns both the width and height of the screen).    </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get screenResolutionY():<a href="../Number.html">Number</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.screenResolutionY);
+</pre></div>     <p></p>
+</div>
+<a name="serverString"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">serverString</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>serverString:<a href="../String.html">String</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A URL-encoded string that specifies values for each <code>System.capabilities</code> property.   </p><p>The following example shows a URL-encoded string:   <pre>A=t&amp;SA=t&amp;SV=t&amp;EV=t&amp;MP3=t&amp;AE=t&amp;VE=t&amp;ACC=f&amp;PR=t&amp;SP=t&amp;<br />
+  SB=f&amp;DEB=t&amp;V=WIN%208%2C0%2C0%2C0&amp;M=Macromedia%20Windows&amp;<br />
+  R=1600x1200&amp;DP=72&amp;COL=color&amp;AR=1.0&amp;OS=Windows%20XP&amp;<br />
+  L=en&amp;PT=External&amp;AVD=f&amp;LFD=f&amp;WD=f</pre></p>     <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get serverString():<a href="../String.html">String</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.serverString);
+</pre></div>     <p></p>
+</div>
+<a name="version"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">version</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>version:<a href="../String.html">String</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A string that contains the Flash Player platform and version information.   The server string is <code>V</code>. The format of the version   number is: "platform majorVersion, minorVersion, buildNumber, internalBuildNumber".   Possible values for platform are "WIN", "MAC", and "UNIX". For example:   <pre>
+  WIN 8,0,22,0  // Flash Player 8 for Windows
+  MAC 7,0,25,0  // Flash Player 7 for Macintosh
+  UNIX 5,0,55,0 // Flash Player 5 for UNIX
+  </pre>     </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get version():<a href="../String.html">String</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the value of this read-only property:   <div class='listing'><pre>
+trace(System.capabilities.version);
+</pre></div>     <p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

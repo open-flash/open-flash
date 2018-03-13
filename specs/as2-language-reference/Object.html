@@ -1,0 +1,982 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="print.css" type="text/css" media="print">
+<meta content="Object,__proto__,__resolve,constructor,prototype,addProperty,hasOwnProperty,isPropertyEnumerable,isPrototypeOf,registerClass,toString,unwatch,valueOf,watch" name="keywords">
+<title>Object</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="asdoc.js"></script><script type="text/javascript" language="javascript" src="cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Object - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('all-classes.html')" href="package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('all-classes.html')" href="class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('index-list.html')" href="all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="index.html?Object.html&amp;class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Object</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Object"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">Top Level</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Object</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Subclasses</td><td><a href="Accessibility.html">Accessibility</a>, <a href="arguments.html">arguments</a>, <a href="Array.html">Array</a>, <a href="AsBroadcaster.html">AsBroadcaster</a>, <a href="flash/display/BitmapData.html">BitmapData</a>, <a href="flash/filters/BitmapFilter.html">BitmapFilter</a>, <a href="Boolean.html">Boolean</a>, <a href="Button.html">Button</a>, <a href="Camera.html">Camera</a>, <a href="System/capabilities.html">capabilities</a>, <a href="Color.html">Color</a>, <a href="flash/geom/ColorTransform.html">ColorTransform</a>, <a href="ContextMenu.html">ContextMenu</a>, <a href="ContextMenuItem.html">ContextMenuItem</a>, <a href="CustomActions.html">CustomActions</a>, <a href="Date.html">Date</a>, <a href="Error.html">Error</a>, <a href="flash/external/ExternalInterface.html">ExternalInterface</a>, <a href="flash/net/FileReference.html">FileReference</a>, <a href="flash/net/FileReferenceList.html">FileReferenceList</a>, <a href="Function.html">Function</a>, <a href="System/IME.html">IME</a>, <a href="Key.html">Key</a>, <a href="LoadVars.html">LoadVars</a>, <a href="LocalConnection.html">LocalConnection</a>, <a href="mx/lang/Locale.html">Locale</a>, <a href="Math.html">Math</a>, <a href="flash/geom/Matrix.html">Matrix</a>, <a href="Microphone.html">Microphone</a>, <a href="Mouse.html">Mouse</a>, <a href="MovieClip.html">MovieClip</a>, <a href="MovieClipLoader.html">MovieClipLoader</a>, <a href="NetConnection.html">NetConnection</a>, <a href="NetStream.html">NetStream</a>, <a href="Number.html">Number</a>, <a href="Object.html">Object</a>, <a href="flash/geom/Point.html">Point</a>, <a href="PrintJob.html">PrintJob</a>, <a href="flash/geom/Rectangle.html">Rectangle</a>, <a href="System/security.html">security</a>, <a href="Selection.html">Selection</a>, <a href="SharedObject.html">SharedObject</a>, <a href="Sound.html">Sound</a>, <a href="Stage.html">Stage</a>, <a href="String.html">String</a>, <a href="TextField/StyleSheet.html">StyleSheet</a>, <a href="System.html">System</a>, <a href="TextField.html">TextField</a>, <a href="TextFormat.html">TextFormat</a>, <a href="flash/text/TextRenderer.html">TextRenderer</a>, <a href="TextSnapshot.html">TextSnapshot</a>, <a href="flash/geom/Transform.html">Transform</a>, <a href="Video.html">Video</a>, <a href="XMLNode.html">XMLNode</a>, <a href="XMLSocket.html">XMLSocket</a>, <a href="XMLUI.html">XMLUI</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; (became a native object in Flash Player 6, which improved performance significantly).</td>
+</tr>
+</table>
+<p></p>
+<p></p>The Object class is at the root of the ActionScript class hierarchy. This class contains a small subset of the features provided by the JavaScript Object class.    <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#constructor">constructor</a> : <a href="Object.html">Object</a>
+<div class="summaryTableDescription">Reference to the constructor function for a given object instance.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#__proto__">__proto__</a> : <a href="Object.html">Object</a>
+<div class="summaryTableDescription">Refers to the <code>prototype</code> property of the class (ActionScript 2.0) or constructor function (ActionScript 1.0) used to create the object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#prototype">prototype</a> : <a href="Object.html">Object</a>
+<div class="summaryTableDescription">[static]A reference to the superclass of a class or function object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#__resolve">__resolve</a> : <a href="Object.html">Object</a>
+<div class="summaryTableDescription">A reference to a user-defined function that is invoked if ActionScript code refers to an undefined property or method.</div>
+</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#Object()">Object</a>()</div>
+<div class="summaryTableDescription">Creates an Object object and stores a reference to the object's constructor method in the object's <code>constructor</code> property.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addProperty()">addProperty</a>(name:<a href="String.html">String</a>, getter:<a href="Function.html">Function</a>, setter:<a href="Function.html">Function</a>):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Creates a getter/setter property.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#hasOwnProperty()">hasOwnProperty</a>(name:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Indicates whether an object has a specified property defined.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#isPropertyEnumerable()">isPropertyEnumerable</a>(name:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Indicates whether the specified property exists and is enumerable.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#isPrototypeOf()">isPrototypeOf</a>(theClass:<a href="Object.html">Object</a>):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Indicates whether an instance of the Object class is in the prototype chain of the object specified as an argument.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#registerClass()">registerClass</a>(name:<a href="String.html">String</a>, theClass:<a href="Function.html">Function</a>):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">[static]Associates a movie clip symbol with an ActionScript object class.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toString()">toString</a>():<a href="String.html">String</a>
+</div>
+<div class="summaryTableDescription">Converts the specified object to a string and returns it.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#unwatch()">unwatch</a>(name:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Removes a watchpoint that <code>Object.watch()</code> created.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#valueOf()">valueOf</a>():<a href="Object.html">Object</a>
+</div>
+<div class="summaryTableDescription">Returns the primitive value of the specified object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#watch()">watch</a>(name:<a href="String.html">String</a>, callback:<a href="Function.html">Function</a>, [userData:<a href="Object.html">Object</a>]):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Registers an event handler to be invoked when a specified property of an ActionScript object changes.</div>
+</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="constructor"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">constructor</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var constructor:<a href="Object.html">Object</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Reference to the constructor function for a given object instance. The <code>constructor</code> property is automatically assigned to all objects when they are created using the constructor for the Object class.            </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="operators.html#instanceof" target="">instanceof</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example is a reference to the constructor function for the <code>myObject</code> object.       <div class='listing'><pre>
+var my_str:String = new String("sven");
+trace(my_str.constructor == String); //output: true
+</pre></div>       <p>If you use the <code>instanceof</code> operator, you can also determine if an object belongs to a specified class:</p>       <div class='listing'><pre>
+var my_str:String = new String("sven");
+trace(my_str instanceof String); //output: true
+</pre></div>       <p>However, in the following example the <code>Object.constructor</code> property converts primitive data types (such as the string literal seen here) into wrapper objects. The <code>instanceof</code> operator does not perform any conversion, as seen in the following example:</p>       <div class='listing'><pre>
+var my_str:String = "sven";
+trace(my_str.constructor == String); //output: true
+trace(my_str instanceof String); //output: false
+</pre></div>                 <p></p>
+</div>
+<a name="__proto__"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">__proto__</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var __proto__:<a href="Object.html">Object</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Refers to the <code>prototype</code> property of the class (ActionScript 2.0) or constructor function (ActionScript 1.0) used to create the object. The <code>__proto__</code> property is automatically assigned to all objects when they are created. The ActionScript interpreter uses the <code>__proto__</code> property to access the <code>prototype</code> property of the object's class or constructor function to find out what properties and methods the object inherits from its superclass. <span class="flexonly">Flex developers should not have to use this property.</span>       </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Object.html#prototype" target="">Object.prototype</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a class named Shape and a subclass of Shape named Circle.       <div class='listing'><pre>
+// Shape class defined in external file named Shape.as
+class Shape {
+    function Shape() {}
+}
+
+// Circle class defined in external file named Circle.as
+class Circle extends Shape{
+    function Circle() {}
+}
+</pre></div>       The Circle class can be used to create two instances of Circle:       <div class='listing'><pre>
+var oneCircle:Circle = new Circle();
+var twoCircle:Circle = new Circle();
+</pre></div>       The following trace statements show that the <code>__proto_</code> property of       both instances refers to the <code>prototype</code> property of the Circle class.       <div class='listing'><pre>
+trace(Circle.prototype == oneCircle.__proto__); // Output: true
+trace(Circle.prototype == twoCircle.__proto__); // Output: true
+</pre></div>            <p></p>
+</div>
+<a name="prototype"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">prototype</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var prototype:<a href="Object.html">Object</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A reference to the superclass of a class or function object. The <code>prototype</code> property is automatically created and attached to any class or function object you create. This property is static in that it is specific to the class or function you create. For example, if you create a custom class, the value of the <code>prototype</code> property is shared by all instances of the class, and is accessible only as a class property. Instances of your custom class cannot directly access the <code>prototype</code> property, but can access it through the <code>__proto__</code> property.       </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Object.html#__proto__" target="">Object.__proto__</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a class named Shape and a subclass of Shape named Circle.       <div class='listing'><pre>
+// Shape class defined in external file named Shape.as
+class Shape {
+    function Shape() {}
+}
+
+// Circle class defined in external file named Circle.as
+class Circle extends Shape{
+    function Circle() {}
+}
+</pre></div>       The Circle class can be used to create two instances of Circle:       <div class='listing'><pre>
+var oneCircle:Circle = new Circle();
+var twoCircle:Circle = new Circle();
+</pre></div>       The following trace statement shows that the <code>prototype</code> property of the Circle class points to its superclass Shape. The identifier <code>Shape</code> refers to the constructor function of the Shape class.       <div class='listing'><pre>
+trace(Circle.prototype.constructor == Shape); // Output: true
+</pre></div>       The following trace statement shows how you can use the <code>prototype</code> property and the <code>__proto__</code> property together to move two levels up the inheritance hierarchy (or prototype chain). The <code>Circle.prototype.__proto__</code> property contains a reference to the superclass of the Shape class.       <div class='listing'><pre>
+trace(Circle.prototype.__proto__ == Shape.prototype); // Output: true
+</pre></div>       <p></p>
+</div>
+<a name="__resolve"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">__resolve</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var __resolve:<a href="Object.html">Object</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A reference to a user-defined function that is invoked if ActionScript code refers to an undefined property or method. If ActionScript code refers to an undefined property or method of an object, Flash Player determines whether the object's <code>__resolve</code> property is defined. If <code>__resolve</code> is defined, the function to which it refers is executed and passed the name of the undefined property or method. This lets you programmatically supply values for undefined properties and statements for undefined methods and make it seem as if the properties or methods are actually defined.       This property is useful for enabling highly transparent client/server communication, and is the recommended way of invoking server-side methods.            </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="arguments.html" target="">arguments</a>
+<br>
+<a href="Array.html" target="">Array</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following examples progressively build upon the first example and illustrate five different usages of the <code>__resolve</code> property. To aid understanding, key statements that differ from the previous usage are in bold typeface.       <p>Usage 1: the following example uses <code>__resolve</code> to build an object where every undefined property returns the value <code>"Hello, world!"</code>.</p>       <div class='listing'><pre>
+// instantiate a new object
+var myObject:Object = new Object();
+
+// define the __resolve function
+myObject.__resolve = function (name) {
+    return "Hello, world!";
+};
+trace (myObject.property1); // output: Hello, world!
+trace (myObject.property2); // output: Hello, world!
+</pre></div>       <p>Usage 2: the following example uses <code>__resolve</code> as a <em>functor</em>, which is a function that generates functions. Using <code>__resolve</code> redirects undefined method calls to a generic function named <code>myFunction</code>.</p>       <div class='listing'><pre>
+// instantiate a new object
+var myObject:Object = new Object();
+
+<strong>// define a function for __resolve to call
+myObject.myFunction = function (name) {
+    trace("Method " + name + " was called");
+};</strong>
+
+// define the __resolve function
+myObject.__resolve = function (name) {
+    <strong> return function () { this.myFunction(name); };</strong>
+};
+
+// test __resolve using undefined method names
+myObject.someMethod(); // output: Method someMethod was called
+myObject.someOtherMethod(); //output: Method someOtherMethod was called
+</pre></div>       <p>Usage 3: The following example builds on the previous example by adding the ability to cache resolved methods. By caching methods, <code>__resolve</code> is called only once for each method of interest. This allows <em>lazy construction</em> of object methods. Lazy construction is an optimization technique that defers the creation, or <em>construction</em>, of methods until the time at which a method is first used.</p>       <div class='listing'><pre>
+// instantiate a new object
+var myObject:Object = new Object();
+// define a function for __resolve to call
+myObject.myFunction = function(name) {
+    trace("Method "+name+" was called");
+};
+// define the __resolve function
+myObject.__resolve = function(name) {
+    <strong>trace("Resolve called for "+name);  // to check when __resolve is called
+    // Not only call the function, but also save a reference to it
+    var f:Function = function () {
+        this.myFunction(name);
+    };
+    // create a new object method and assign it the reference
+    this[name] = f;
+    // return the reference
+    return f;</strong>
+};
+// test __resolve using undefined method names
+// __resolve will only be called once for each method name
+myObject.someMethod();  // calls __resolve
+myObject.someMethod();  // does not call __resolve because it is now defined
+myObject.someOtherMethod();  // calls __resolve
+myObject.someOtherMethod();  // does not call __resolve, no longer undefined
+</pre></div>       <p>Usage 4: The following example builds on the previous example by reserving a method name, <code>onStatus()</code>, for local use so that it is not resolved in the same way as other undefined properties. Added code is in bold typeface.</p>       <div class='listing'><pre>
+// instantiate a new object
+var myObject:Object = new Object();
+// define a function for __resolve to call
+myObject.myFunction = function(name) {
+    trace("Method "+name+" was called");
+};
+// define the __resolve function
+myObject.__resolve = function(name) {
+    <strong>// reserve the name "onStatus" for local use
+    if (name == "onStatus") {
+        return undefined;
+    }</strong>
+    trace("Resolve called for "+name);  // to check when __resolve is called
+    // Not only call the function, but also save a reference to it
+    var f:Function = function () {
+        this.myFunction(name);
+    };
+    // create a new object method and assign it the reference
+    this[name] = f;
+    // return the reference
+    return f;
+};
+// test __resolve using the method name "onStatus"
+trace(myObject.onStatus("hello"));
+// output: undefined
+</pre></div>       <p>Usage 5: The following example builds on the previous example by creating a functor that accepts parameters. This example makes extensive use of the arguments object, and uses several methods of the Array class.</p>       <div class='listing'><pre>
+// instantiate a new object
+var myObject:Object = new Object();
+
+// define a generic function for __resolve to call
+myObject.myFunction = function (name) {
+    <strong>arguments.shift();</strong>
+    trace("Method " + name + " was called <strong>with arguments: " + arguments.join(','));</strong>
+};
+
+// define the __resolve function
+myObject.__resolve = function (name) {
+    // reserve the name "onStatus" for local use
+    if (name == "onStatus") {
+        return undefined;
+    }
+    var f:Function = function () { 
+        <strong>arguments.unshift(name);
+        this.myFunction.apply(this, arguments);</strong> 
+    };
+    // create a new object method and assign it the reference
+    this[name] = f;
+    // return the reference to the function
+    return f;
+};
+
+// test __resolve using undefined method names with parameters
+myObject.someMethod("hello");
+// output: Method someMethod was called with arguments: hello
+
+myObject.someOtherMethod("hello","world");
+// output: Method someOtherMethod was called with arguments: hello,world
+</pre></div>            <p></p>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="Object()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">Object</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function Object()</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Creates an Object object and stores a reference to the object's constructor method in the object's <code>constructor</code> property.    </p><br>
+<span class="label">Example</span>
+<br>The following example creates a generic object named myObject:   <div class='listing'><pre>
+var myObject:Object = new Object();
+</pre></div>    <p></p>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addProperty()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addProperty</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addProperty(name:<a href="String.html">String</a>, getter:<a href="Function.html">Function</a>, setter:<a href="Function.html">Function</a>):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6 &mdash; In ActionScript 2.0 classes, you can use get or set instead of this method.</td>
+</tr>
+</table>
+<p></p><p>Creates a getter/setter property. When Flash reads a getter/setter property, it invokes the <code>get</code> function, and the function's return value becomes the value of <code>name</code>. When Flash writes a getter/setter property, it invokes the <code>set</code> function and passes it the new value as a parameter. If a property with the given name already exists, the new property overwrites it.       </p><p>A "get" function is a function with no parameters. Its return value can be of any type. Its type can change between invocations. The return value is treated as the current value of the property.</p>       <p>A "set" function is a function that takes one parameter, which is the new value of the property. For example, if property <code>x</code> is assigned by the statement <code>x = 1</code>, the set function is passed the parameter <code>1</code> of type number. The return value of the set function is ignored.</p>       <p>You can add getter/setter properties to prototype objects. If you add a getter/setter property to a prototype object, all object instances that inherit the prototype object inherit the getter/setter property. This makes it possible to add a getter/setter property in one location, the prototype object, and have it propagate to all instances of a class (similar to adding methods to prototype objects). If a get/set function is invoked for a getter/setter property in an inherited prototype object, the reference passed to the get/set function is the originally referenced object--not the prototype object.</p>       <p>If invoked incorrectly, <code>Object.addProperty()</code> can fail with an error. The following table describes errors that can occur:</p>             <table class="innertable" width="400">         <tr>           <th>Error condition</th>           <th>What happens</th>         </tr>         <tr>           <td><code>name</code> is not a valid property name; for example, an empty string.</td>           <td>Returns <code>false</code> and the property is not added.</td>         </tr>          <tr>           <td><code>getter</code> is not a valid function object.</td>           <td>Returns <code>false</code> and the property is not added.</td>         </tr>         <tr>           <td><code>setter</code> is not a valid function object.</td>           <td>Returns <code>false</code> and the property is not added.</td>         </tr>       </table>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:<a href="String.html">String</a></code> &mdash; A string; the name of the object property to create.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">getter</span>:<a href="Function.html">Function</a></code> &mdash; The function that is invoked to retrieve the value of the property; this parameter is a Function object.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">setter</span>:<a href="Function.html">Function</a></code> &mdash; The function that is invoked to set the value of the property; this parameter is a Function object. If you pass the value <code>null</code> for this parameter, the property is read-only.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+A Boolean value: <code>true</code> if the property is successfully created; <code>false</code> otherwise.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="statements.html#get" target="">get</a>
+<br>
+<a href="statements.html#set" target="">set</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>In the following example, an object has two internal methods, <code>setQuantity()</code> and <code>getQuantity()</code>. A property, <code>bookcount</code>, can be used to invoke these methods when it is either set or retrieved. A third internal method, <code>getTitle()</code>, returns a read-only value that is associated with the property <code>bookname</code>. When a script retrieves the value of <code>myBook.bookcount</code>, the ActionScript interpreter automatically invokes <code>myBook.getQuantity()</code>. When a script modifies the value of <code>myBook.bookcount</code>, the interpreter invokes <code>myObject.setQuantity()</code>. The <code>bookname</code> property does not specify a <code>set</code> function, so attempts to modify <code>bookname</code> are ignored.       <div class='listing'><pre>
+function Book() {
+    this.setQuantity = function(numBooks:Number):Void {
+    this.books = numBooks;
+    };
+    this.getQuantity = function():Number {
+    return this.books;
+    };
+    this.getTitle = function():String {
+    return "Catcher in the Rye";
+    };
+    this.addProperty("bookcount", this.getQuantity, this.setQuantity);
+    this.addProperty("bookname", this.getTitle, null);
+}
+var myBook = new Book();
+myBook.bookcount = 5;
+trace("You ordered "+myBook.bookcount+" copies of "+myBook.bookname);
+// output: You ordered 5 copies of Catcher in the Rye
+</pre></div>       <p>The previous example works, but the properties <code>bookcount</code> and <code>bookname</code> are added to every instance of the <code>Book</code> object, which requires having two properties for every instance of the object. If there are many properties, such as <code>bookcount</code> and <code>bookname,</code> in a class, they could consume a great deal of memory. Instead, you can add the properties to <code>Book.prototype</code> so that the <code>bookcount</code> and <code>bookname</code> properties exist only in one place. The effect, however, is the same as that of the code in the example that added <code>bookcount</code> and <code>bookname</code> directly to every instance. If an attempt is made to access either property in a Book instance, the property's absence will cause the prototype chain to be ascended until the versions defined in <code>Book.prototype</code> are encountered. The following example shows how to add the properties to <code>Book.prototype</code>:</p>       <div class='listing'><pre>
+function Book() {}
+Book.prototype.setQuantity = function(numBooks:Number):Void {
+    this.books = numBooks;
+};
+Book.prototype.getQuantity = function():Number {
+    return this.books;
+};
+Book.prototype.getTitle = function():String {
+    return "Catcher in the Rye";
+};
+Book.prototype.addProperty("bookcount", Book.prototype.getQuantity, Book.prototype.setQuantity);
+Book.prototype.addProperty("bookname", Book.prototype.getTitle, null);
+var myBook = new Book();
+myBook.bookcount = 5;
+trace("You ordered "+myBook.bookcount+" copies of "+myBook.bookname);
+</pre></div>       <p>The following example shows how to use the implicit getter and setter functions available in ActionScript 2.0. Rather than defining the <code>Book</code> function and editing <code>Book.prototype</code>, you define the <code>Book</code> class in an external file named Book.as.       The following code must be in a separate external file named Book.as that contains only this class definition and resides within the Flash application's classpath:</p>       <div class='listing'><pre>
+class Book {
+    var books:Number;
+    function set bookcount(numBooks:Number):Void {
+    this.books = numBooks;
+    }
+    function get bookcount():Number {
+    return this.books;
+    }
+    function get bookname():String {
+    return "Catcher in the Rye";
+    }
+}
+</pre></div>       <p>The following code can then be placed in a FLA file and will function the same way as it does in the previous examples:</p>       <div class='listing'><pre>
+var myBook:Book = new Book(); 
+myBook.bookcount = 5; 
+trace("You ordered "+myBook.bookcount+" copies of "+myBook.bookname);
+</pre></div>            <p></p>
+</div>
+<a name="hasOwnProperty()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hasOwnProperty</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function hasOwnProperty(name:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Indicates whether an object has a specified property defined. This method returns <code>true</code> if the target object has       a property that matches the string specified by the <code>name</code> parameter, and <code>false</code> otherwise. This       method does not check the object's prototype chain and returns <code>true</code> only       if the property exists on the object itself.       </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:<a href="String.html">String</a></code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+A Boolean value: <code>true</code> if the target object has the property specified by the <code>name</code> parameter, <code>false</code> otherwise.       
+
+</td>
+</tr>
+</table>
+</div>
+<a name="isPropertyEnumerable()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">isPropertyEnumerable</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function isPropertyEnumerable(name:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Indicates whether the specified property exists and is enumerable. If <code>true</code>, then the property exists and can be enumerated in a for..in loop. The property must exist on the target object because this method does not check the target object's prototype chain.       </p><p>Properties that you create are enumerable, but built-in properties are generally not enumerable.</p>       <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:<a href="String.html">String</a></code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+A Boolean value: <code>true</code> if the property specified by the <code>name</code> parameter is enumerable.       
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="statements.html#for..in" target="">for..in</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a generic object, adds a property to the object, then checks whether the object is enumerable. By way of contrast, the example also shows that a built-in property, the <code>Array.length</code> property, is not enumerable.       <div class='listing'><pre>
+var myObj:Object = new Object();
+myObj.prop1 = "hello";
+trace(myObj.isPropertyEnumerable("prop1")); // Output: true
+
+var myArray = new Array();
+trace(myArray.isPropertyEnumerable("length")); // Output: false
+</pre></div>       <p></p>
+</div>
+<a name="isPrototypeOf()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">isPrototypeOf</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function isPrototypeOf(theClass:<a href="Object.html">Object</a>):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Indicates whether an instance of the Object class is in the prototype chain of the object specified as an argument. This method returns <code>true</code> if the object is in the prototype chain of the object specified by the <code>theClass</code> parameter. The method returns <code>false</code> not only if the target object is absent from the prototype chain of the <code>theClass</code> object, but also if the <code>theClass</code> argument is not an object.       </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theClass</span>:<a href="Object.html">Object</a></code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+A Boolean value: <code>true</code> if the object is in the prototype chain of the object specified by the <code>theClass</code> parameter; <code>false</code> otherwise.       
+
+</td>
+</tr>
+</table>
+</div>
+<a name="registerClass()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">registerClass</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function registerClass(name:<a href="String.html">String</a>, theClass:<a href="Function.html">Function</a>):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6 &mdash; If you are using ActionScript 2.0 classes, you can use the ActionScript 2.0 Class field in the Linkage Properties or Symbol Properties dialog box to associate an object with a class instead of using this method.</td>
+</tr>
+</table>
+<p></p><p>Associates a movie clip symbol with an ActionScript object class. If a symbol doesn't exist, Flash creates an association between a string identifier and an object class.    <span class="flashonly"></p><p>When an instance of the specified movie clip symbol is placed on the Timeline, it is registered to the class specified by the <code>theClass</code> parameter rather than to the class MovieClip. </p>    <p>When an instance of the specified movie clip symbol is created by using <code>MovieClip.attachMovie()</code> or <code>MovieClip.duplicateMovieClip()</code>, it is registered to the class specified by <code>theClass</code> rather than to the MovieClip class. If <code>theClass</code> is <code>null</code>, this method removes any ActionScript class definition associated with the specified movie clip symbol or class identifier. For movie clip symbols, any existing instances of the movie clip remain unchanged, but new instances of the symbol are associated with the default class MovieClip.</p></span>    <p>If a symbol is already registered to a class, this method replaces it with the new registration.</p>    <span class="flashonly"><p>When a movie clip instance is placed by the Timeline or created using <code>attachMovie()</code> or <code>duplicateMovieClip()</code>, ActionScript invokes the constructor for the appropriate class with the keyword <code>this</code> pointing to the object. The constructor function is invoked with no parameters. </p>    <p>If you use this method to register a movie clip with an ActionScript class other than MovieClip, the movie clip symbol doesn't inherit the methods, properties, and events of the built-in MovieClip class unless you include the MovieClip class in the prototype chain of the new class. The following code creates a new ActionScript class called <code>theClass</code> that inherits the properties of the MovieClip class:</p>    <div class='listing'><pre>
+theClass.prototype = new MovieClip();
+</pre></div></span>      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:<a href="String.html">String</a></code> &mdash; String; the linkage identifier of the movie clip symbol or the string identifier for the ActionScript class.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">theClass</span>:<a href="Function.html">Function</a></code> &mdash; A reference to the constructor function of the ActionScript class or <code>null</code> to unregister the symbol.      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+A Boolean value: if the class registration succeeds, a value of <code>true</code> is returned; <code>false</code> otherwise.        
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="MovieClip.html#attachMovie()" target="">MovieClip.attachMovie()</a>
+<br>
+<a href="MovieClip.html#duplicateMovieClip()" target="">MovieClip.duplicateMovieClip()</a>
+</div>
+</div>
+<a name="toString()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function toString():<a href="String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Converts the specified object to a string and returns it.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; 
+A string.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>This example shows the return value for toString() on a generic object:       <div class='listing'><pre>
+var myObject:Object = new Object();
+trace(myObject.toString()); // output: [object Object]
+</pre></div>       <p>This method can be overridden to return a more meaningful value. The following examples show that this method has been overridden for the built-in classes Date, Array, and Number:</p>       <div class='listing'><pre>
+// Date.toString() returns the current date and time
+var myDate:Date = new Date();
+trace(myDate.toString()); // output: [current date and time]
+
+// Array.toString() returns the array contents as a comma-delimited string
+var myArray:Array = new Array("one", "two");
+trace(myArray.toString()); // output: one,two
+
+// Number.toString() returns the number value as a string
+// Because trace() won't tell us whether the value is a string or number
+// we will also use typeof() to test whether toString() works.
+var myNumber:Number = 5;
+trace(typeof (myNumber));  // output: number
+trace(myNumber.toString()); // output: 5
+trace(typeof (myNumber.toString())); // output: string
+</pre></div>       <p>The following example shows how to override <code>toString()</code> in a custom class. First create a text file named <em>Vehicle.as</em> that contains only the Vehicle class definition and place it into your Classes folder inside your Configuration folder.</p>       <div class='listing'><pre>
+// contents of Vehicle.as
+class Vehicle {
+    var numDoors:Number;
+    var color:String;
+    function Vehicle(param_numDoors:Number, param_color:String) {
+    this.numDoors = param_numDoors;
+    this.color = param_color;
+    }
+    function toString():String {
+    var doors:String = "door";
+    if (this.numDoors &gt; 1) {
+        doors += "s";
+    }
+    return ("A vehicle that is " + this.color + " and has " + this.numDoors + " " + doors);
+    }
+}
+
+// code to place into a FLA file
+var myVehicle:Vehicle = new Vehicle(2, "red");
+trace(myVehicle.toString());
+// output: A vehicle that is red and has 2 doors
+
+// for comparison purposes, this is a call to valueOf()
+// there is no primitive value of myVehicle, so the object is returned
+// giving the same output as toString().
+trace(myVehicle.valueOf());
+// output: A vehicle that is red and has 2 doors
+
+</pre></div>            <p></p>
+</div>
+<a name="unwatch()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">unwatch</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function unwatch(name:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Removes a watchpoint that <code>Object.watch()</code> created. This method returns a value of <code>true</code> if the watchpoint is successfully removed, <code>false </code>otherwise.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:<a href="String.html">String</a></code> &mdash; A string; the name of the object property that should no longer be watched.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+A Boolean value: <code>true</code> if the watchpoint is successfully removed, <code>false</code> otherwise.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Object.html#watch()" target="">Object.watch()</a>
+<br>
+<a href="Object.html#addProperty()" target="">Object.addProperty()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>See the example for <code>Object.watch()</code>.                 <p></p>
+</div>
+<a name="valueOf()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">valueOf</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function valueOf():<a href="Object.html">Object</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the primitive value of the specified object. If the object does not have a primitive value, the object is returned.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Object.html">Object</a></code> &mdash; 
+The primitive value of the specified object or the object itself.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#toString()" target="">Object.toString()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example shows the return value of valueOf() for a generic object (which       does not have a primitive value) and compares it to the return value of toString(). First,       create a generic object. Second, create a new Date object set to February 1, 2004, 8:15 AM. The       toString() method returns the current time in human-readable form. The valueOf() method returns       the primitive value in milliseconds. Third, create a new Array object containing two simple       elements. Both toString() and valueOf() return the same value: one,two:             <div class='listing'><pre>
+// Create a generic object
+var myObject:Object = new Object();
+trace(myObject.valueOf()); // output: [object Object]
+trace(myObject.toString()); // output: [object Object]
+</pre></div>       <p>The following examples show the return values for the built-in classes Date and Array, and compares them to the return values of <code>Object.toString()</code>:</p>       <div class='listing'><pre>
+// Create a new Date object set to February 1, 2004, 8:15 AM
+// The toString() method returns the current time in human-readable form
+// The valueOf() method returns the primitive value in milliseconds
+var myDate:Date = new Date(2004,01,01,8,15);
+trace(myDate.toString()); // output: Sun Feb 1 08:15:00 GMT-0800 2004
+trace(myDate.valueOf()); // output: 1075652100000
+
+// Create a new Array object containing two simple elements
+// In this case both toString() and valueOf() return the same value: one,two
+var myArray:Array = new Array("one", "two");
+trace(myArray.toString()); // output: one,two
+trace(myArray.valueOf()); // output: one,two
+</pre></div>       <p>See the example for <code>Object.toString()</code> for an example of the return value of <code>Object.valueOf()</code> for a custom class that overrides <code>toString()</code>.</p>            <p></p>
+</div>
+<a name="watch()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">watch</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function watch(name:<a href="String.html">String</a>, callback:<a href="Function.html">Function</a>, [userData:<a href="Object.html">Object</a>]):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Registers an event handler to be invoked when a specified property of an ActionScript object changes. When the property changes, the event handler is invoked with <code>myObject</code> as the containing object.       </p><p>You can use the <code>return</code> statement in your <code>callback</code> method definition to affect the value of the property you are watching. The value returned by your <code>callback</code> method is assigned to the watched object property. The value you choose to return depends on whether you wish to monitor, modify or prevent changes to the property:</p>       <ul>         <li>If you are merely monitoring the property, return the <code>newVal</code> parameter.</li>         <li>If you are modifying the value of the property, return your own value. </li>         <li>If you want to prevent changes to the property, return the <code>oldVal</code> parameter.</li>       </ul>       <p>If the <code>callback</code> method you define does not have a <code>return</code> statement, then the watched object property is assigned a value of <code>undefined.</code></p>       <p>A watchpoint can filter (or nullify) the value assignment, by returning a modified <code>newval</code> (or <code>oldval</code>). If you delete a property for which a watchpoint has been set, that watchpoint does not disappear. If you later recreate the property, the watchpoint is still in effect. To remove a watchpoint, use the <code>Object.unwatch</code> method. </p>       <p>Only a single watchpoint can be registered on a property. Subsequent calls to <code>Object.watch()</code> on the same property replace the original watchpoint.</p>       <p>The <code>Object.watch()</code> method behaves similarly to the <code>Object.watch()</code> function in JavaScript 1.2 and later. The primary difference is the <code>userData</code> parameter, which is a Flash addition to <code>Object.watch()</code> that Netscape Navigator does not support. You can pass the <code>userData</code> parameter to the event handler and use it in the event handler.</p>       <p>The <code>Object.watch()</code> method cannot watch getter/setter properties. Getter/setter properties operate through <em>lazy evaluation</em>-- the value of the property is not determined until the property is actually queried. Lazy evaluation is often efficient because the property is not constantly updated; it is, rather, evaluated when needed. However, <code>Object.watch()</code> needs to evaluate a property to determine whether to invoke the <code>callback</code> function. To work with a getter/setter property, <code>Object.watch()</code> needs to evaluate the property constantly, which is inefficient.</p>       <p>Generally, predefined ActionScript properties, such as <code>_x</code>, <code>_y</code>, <code>_width</code>, and <code>_height</code>, are getter/setter properties and cannot be watched with <code>Object.watch()</code>. </p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:<a href="String.html">String</a></code> &mdash; A string; the name of the object property to watch.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">callback</span>:<a href="Function.html">Function</a></code> &mdash; The function to invoke when the watched property changes. This parameter is a function object, not a function name as a string. The form of <code>callback</code> is <code>callback(prop, oldVal, newVal, userData)</code>.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">userData</span>:<a href="Object.html">Object</a></code>&nbsp;[optional] &mdash; An arbitrary piece of ActionScript data that is passed to the <code>callback</code> method. If the <code>userData</code> parameter is omitted, <code>undefined</code> is passed to the callback method.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+A Boolean value:<code> true</code> if the watchpoint is created successfully, <code>false</code> otherwise.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Object.html#addProperty()" target="">Object.addProperty()</a>
+<br>
+<a href="Object.html#unwatch()" target="">Object.unwatch()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example uses <code>watch()</code> to check whether the <code>speed </code>property exceeds the speed limit:       <div class='listing'><pre>
+// Create a new object
+var myObject:Object = new Object();
+
+// Add a property that tracks speed
+myObject.speed = 0;
+
+// Write the callback function to be executed if the speed property changes
+var speedWatcher:Function = function(prop, oldVal, newVal, speedLimit) {
+    // Check whether speed is above the limit
+    if (newVal &gt; speedLimit) {
+    trace ("You are speeding.");
+    }
+    else {
+    trace ("You are not speeding.");
+    }
+    
+    // Return the value of newVal.
+    return newVal;
+}
+// Use watch() to register the event handler, passing as parameters:
+//   - the name of the property to watch: "speed"
+//   - a reference to the callback function speedWatcher
+//   - the speedLimit of 55 as the userData parameter
+myObject.watch("speed", speedWatcher, 55);
+
+// set the speed property to 54, then to 57
+myObject.speed = 54; // output: You are not speeding
+myObject.speed = 57; // output: You are speeding
+
+// unwatch the object
+myObject.unwatch("speed");
+myObject.speed = 54; // there should be no output
+</pre></div>                 <p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

@@ -1,0 +1,1451 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="FileReference,flash.net.FileReference,creationDate,creator,modificationDate,name,postData,size,type,addListener,browse,cancel,download,removeListener,upload" name="keywords">
+<title>flash.net.FileReference</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'FileReference - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="../../language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="../../appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="../../index.html?flash/net/FileReference.html&amp;flash/net/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;FileReference</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class FileReference"); titleBar_setSubNav(false,true,false,false,true,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">flash.net</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class FileReference</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">FileReference <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../images/inherit-arrow.gif"> <a href="../../Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p>
+<p></p>The FileReference class provides a means to upload and    download files between a user's computer and a server. An operating-system    dialog box prompts the user to select a file to upload or a location for    download. Each FileReference object refers to a single file on the user's hard disk    and has properties that contain information about    the file's size, type, name, creation date, modification date, and creator type    (Macintosh only).       <p>FileReference instances are created in two ways:</p>    <ul>    <li>When you use the <code>new</code> operator with the FileReference constructor: <code>var myFileReference = new FileReference();</code></li>    <li>When you call <code>FileReferenceList.browse()</code>, which creates an array of FileReference objects</li>    </ul>       <p>During an upload operation, all of the properties of a FileReference object are    populated by calls to <code>FileReference.browse()</code> or <code>FileReferenceList.browse()</code>.    During a download operation, the <code>name</code> property is populated when    <code>onSelect</code> has been invoked; all other properties are populated when    <code>onComplete</code> has been invoked.</p>       <p>The <code>browse()</code> method opens an operating-system dialog box which prompts the    user to select any local file for upload. The <code>FileReference.browse()</code> method    lets the user select a single file; the <code>FileReferenceList.browse()</code> method    lets the user select multiple files. After a successful call to the <code>browse()</code> method,    call the <code>FileReference.upload()</code> method to upload one file at a time. The    <code>FileReference.download()</code> method prompts the user for a location to save    the file and initiates downloading from a remote URL.</p>      <p>    The FileReference and FileReferenceList classes do not let you set the default file location    for the dialog box generated by <code>browse()</code> and <code>download()</code> calls.    The default location shown in the dialog box is the most    recently browsed folder, if that location can be determined, or the desktop.    The classes do not allow you to read from or write to the transferred file.    They do not allow the SWF file that initiated the    upload or download to access the uploaded or downloaded file or the file's location on    the user's disk.</p>       <p>The FileReference and FileReferenceList classes also do not provide    methods for authentication. With servers that require authentication, you can    download files with the Flash Player browser plug-in, but      uploading (on all players) and downloading (on the stand-alone or    external player) fails.    Use FileReference event listeners to ascertain whether    operations have successfully completed and to handle errors.</p>      <p>For uploading and downloading operations, a SWF file can access files only    within its own domain, including any domains that are    specified by a policy file. If the SWF that is initiating the upload or download doesn't come from the same domain as the file server,    you must put a policy file on the file server.    </p>      <p>While calls to the <code>FileReference.browse()</code>, <code>FileReferenceList.browse()</code>,    or <code>FileReference.download()</code>methods are executing, SWF file playback pauses on the following    platforms: Flash Players for Linux, the Flash Player plug-in for Mac OS X, the external Flash Player for Macintosh,    and the stand-alone player for Mac OS X 10.1 and earlier. The SWF file continues to run in    all players for Windows and in the stand-alone player for Macintosh on Mac OS X 10.2 and later.    </p>       <p></p>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a FileReference object that prompts the user    to select an image or text file to be uploaded. It also listens for any possible event.    <div class='listing'><pre>
+import flash.net.FileReference;
+
+var allTypes:Array = new Array();
+var imageTypes:Object = new Object();
+imageTypes.description = "Images (*.jpg, *.jpeg, *.gif, *.png)";
+imageTypes.extension = "*.jpg; *.jpeg; *.gif; *.png";
+allTypes.push(imageTypes);
+
+var textTypes:Object = new Object();
+textTypes.description = "Text Files (*.txt, *.rtf)";
+textTypes.extension = "*.txt;*.rtf";
+allTypes.push(textTypes);
+
+var listener:Object = new Object();        
+
+listener.onSelect = function(file:FileReference):Void {
+    trace("onSelect: " + file.name);
+    if(!file.upload("http://www.yourdomain.com/yourUploadHandlerScript.cfm")) {
+        trace("Upload dialog failed to open.");
+    }
+}
+
+listener.onCancel = function(file:FileReference):Void {
+    trace("onCancel");
+}
+
+listener.onOpen = function(file:FileReference):Void {
+    trace("onOpen: " + file.name);
+}
+
+listener.onProgress = function(file:FileReference, bytesLoaded:Number, bytesTotal:Number):Void {
+    trace("onProgress with bytesLoaded: " + bytesLoaded + " bytesTotal: " + bytesTotal);
+}
+
+listener.onComplete = function(file:FileReference):Void {
+    trace("onComplete: " + file.name);
+}
+
+listener.onHTTPError = function(file:FileReference):Void {
+    trace("onHTTPError: " + file.name);
+}
+
+listener.onIOError = function(file:FileReference):Void {
+    trace("onIOError: " + file.name);
+}
+
+listener.onSecurityError = function(file:FileReference, errorString:String):Void {
+    trace("onSecurityError: " + file.name + " errorString: " + errorString);
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+fileRef.browse(allTypes);
+</pre></div>       <p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="FileReferenceList.html" target="">FileReferenceList</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#creationDate">creationDate</a> : <a href="../../Date.html">Date</a>
+<div class="summaryTableDescription">[read-only]The creation date of the file on the local disk.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#creator">creator</a> : <a href="../../String.html">String</a>
+<div class="summaryTableDescription">[read-only]The Macintosh creator type of the file.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#modificationDate">modificationDate</a> : <a href="../../Date.html">Date</a>
+<div class="summaryTableDescription">[read-only]The date that the file on the local disk was last modified.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#name">name</a> : <a href="../../String.html">String</a>
+<div class="summaryTableDescription">[read-only]The name of the file on the local disk.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#postData">postData</a> : <a href="../../String.html">String</a>
+<div class="summaryTableDescription">POST parameters to submit with the upload or download.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#size">size</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">[read-only]The size of the file on the local disk, in bytes.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#type">type</a> : <a href="../../String.html">String</a>
+<div class="summaryTableDescription">[read-only]The file type.</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="../../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../../Object.html#__proto__">__proto__</a>, <a href="../../Object.html#__resolve">__resolve</a>, <a href="../../Object.html#constructor">constructor</a>, <a href="../../Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#FileReference()">FileReference</a>()</div>
+<div class="summaryTableDescription">Creates a new FileReference object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addListener()">addListener</a>(listener:<a href="../../Object.html">Object</a>):Void</div>
+<div class="summaryTableDescription">Registers an object to receive notification when a FileReference event listener is invoked.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#browse()">browse</a>([typelist:<a href="../../Array.html">Array</a>]):<a href="../../Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Displays a file-browsing dialog box in which the user can select a local file to upload.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#cancel()">cancel</a>():Void</div>
+<div class="summaryTableDescription">Cancels any ongoing upload or download operation on this FileReference object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#download()">download</a>(url:<a href="../../String.html">String</a>, [defaultFileName:<a href="../../String.html">String</a>]):<a href="../../Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Displays a dialog box in which the user can download a file from a remote server.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeListener()">removeListener</a>(listener:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Removes an object from the list of objects that receive event notification messages.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#upload()">upload</a>(url:<a href="../../String.html">String</a>, uploadDataFieldName:<a href="../../String.html">String</a>, testUpload:<a href="../../Boolean.html">Boolean</a>):<a href="../../Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Starts the upload of a file selected by a user to a remote server.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="../../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../../Object.html#addProperty()">addProperty</a>, <a href="../../Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="../../Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="../../Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="../../Object.html#registerClass()">registerClass</a>, <a href="../../Object.html#toString()">toString</a>, <a href="../../Object.html#unwatch()">unwatch</a>, <a href="../../Object.html#valueOf()">valueOf</a>, <a href="../../Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<a name="eventSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Events</div>
+<table id="summaryTableEvent" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Event</th><th>Summary</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onCancel">onCancel</a> = function(fileRef:<a href="FileReference.html">FileReference</a>) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked when the user dismisses the file-browsing dialog box.</td><td class="summaryTableOwnerCol">FileReference</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onComplete">onComplete</a> = function(fileRef:<a href="FileReference.html">FileReference</a>) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked when the upload or download operation has successfully completed.</td><td class="summaryTableOwnerCol">FileReference</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onHTTPError">onHTTPError</a> = function(fileRef:<a href="FileReference.html">FileReference</a>, httpError:<a href="../../Number.html">Number</a>) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked when an upload fails because of an HTTP error.</td><td class="summaryTableOwnerCol">FileReference</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onIOError">onIOError</a> = function(fileRef:<a href="FileReference.html">FileReference</a>) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked when an input/output error occurs.</td><td class="summaryTableOwnerCol">FileReference</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onOpen">onOpen</a> = function(fileRef:<a href="FileReference.html">FileReference</a>) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked when an upload or download operation starts.</td><td class="summaryTableOwnerCol">FileReference</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onProgress">onProgress</a> = function(fileRef:<a href="FileReference.html">FileReference</a>, bytesLoaded:<a href="../../Number.html">Number</a>, bytesTotal:<a href="../../Number.html">Number</a>) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked periodically during the file upload or download operation.</td><td class="summaryTableOwnerCol">FileReference</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onSecurityError">onSecurityError</a> = function(fileRef:<a href="FileReference.html">FileReference</a>, errorString:<a href="../../String.html">String</a>) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked when an upload or download fails because of a security error.</td><td class="summaryTableOwnerCol">FileReference</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onSelect">onSelect</a> = function(fileRef:<a href="FileReference.html">FileReference</a>) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked when the user selects a file to upload or download from the file-browsing dialog box.</td><td class="summaryTableOwnerCol">FileReference</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onUploadCompleteData">onUploadCompleteData</a> = function(fileRef:<a href="FileReference.html">FileReference</a>, data:<a href="../../String.html">String</a>) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked after data is received from the server after a successful upload.</td><td class="summaryTableOwnerCol">FileReference</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="creationDate"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">creationDate</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>creationDate:<a href="../../Date.html">Date</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The creation date of the file on the local disk. If the FileReference object      has not been populated, a call to get the value of this property returns <code>null</code>.          </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get creationDate():<a href="../../Date.html">Date</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="FileReference.html#browse()" target="">FileReference.browse()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example retrieves the creation date of a file selected by the user.      <div class='listing'><pre>
+import flash.net.FileReference;
+
+var listener:Object = new Object();
+listener.onSelect = function(file:FileReference):Void {
+    trace("creationDate: " + file.creationDate);
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+fileRef.browse();
+</pre></div>           <p></p>
+</div>
+<a name="creator"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">creator</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>creator:<a href="../../String.html">String</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The Macintosh creator type of the file. In Windows, this property is <code>null</code>.      If the FileReference object      has not been populated, a call to get the value of this property returns <code>null</code>.          </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get creator():<a href="../../String.html">String</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="FileReference.html#browse()" target="">FileReference.browse()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example retrieves the Macintosh creator type of a file selected by the user.      <div class='listing'><pre>
+import flash.net.FileReference;
+
+var listener:Object = new Object();
+listener.onSelect = function(file:FileReference):Void {
+    trace("creator: " + file.creator);
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+fileRef.browse();
+</pre></div>          <p></p>
+</div>
+<a name="modificationDate"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">modificationDate</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>modificationDate:<a href="../../Date.html">Date</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The date that the file on the local disk was last modified. If the FileReference      object has not been populated, a call to get the value of this property returns <code>null</code>.          </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get modificationDate():<a href="../../Date.html">Date</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="FileReference.html#browse()" target="">FileReference.browse()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example retrieves the <code>modificationDate</code> of a file selected by the user.      <div class='listing'><pre>
+import flash.net.FileReference;
+
+var listener:Object = new Object();
+listener.onSelect = function(file:FileReference):Void {
+    trace("modificationDate: " + file.modificationDate);
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+fileRef.browse();
+</pre></div>          <p></p>
+</div>
+<a name="name"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">name</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>name:<a href="../../String.html">String</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The name of the file on the local disk. If the FileReference object      has not been populated, a call to get the value of this property returns <code>null</code>.           </p><p>All the properties of a FileReference object are populated by calling <code>browse()</code>.      Unlike other FileReference properties, if you call <code>download()</code>,      the <code>name</code> property is populated when <code>onSelect</code> is invoked.</p>           <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get name():<a href="../../String.html">String</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="FileReference.html#browse()" target="">FileReference.browse()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example retrieves the name of a file selected by the user.      <div class='listing'><pre>
+import flash.net.FileReference;
+
+var listener:Object = new Object();
+listener.onSelect = function(file:FileReference):Void {
+    trace("name: " + file.name);
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+fileRef.browse();
+</pre></div>          <p></p>
+</div>
+<a name="postData"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">postData</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var postData:<a href="../../String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>POST parameters to submit with the upload or download.           </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="FileReference.html#upload()" target="">FileReference.upload()</a>
+<br>
+<a href="FileReference.html#download()" target="">FileReference.download()</a>
+</div>
+</div>
+<a name="size"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">size</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>size:<a href="../../Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The size of the file on the local disk, in bytes. If the FileReference object      has not been populated, a call to get the value of this property returns <code>null</code>.          </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get size():<a href="../../Number.html">Number</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="FileReference.html#browse()" target="">FileReference.browse()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example retrieves the size of a file selected by the user.      <div class='listing'><pre>
+import flash.net.FileReference;
+
+var listener:Object = new Object();
+listener.onSelect = function(file:FileReference):Void {
+    trace("size: " + file.size + " bytes");
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+fileRef.browse();
+</pre></div>          <p></p>
+</div>
+<a name="type"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">type</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>type:<a href="../../String.html">String</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The file type. In Windows, this property is the file extension. On the Macintosh, this property is      the four-character file type. If the FileReference object      has not been populated, a call to get the value of this property returns <code>null</code>.          </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get type():<a href="../../String.html">String</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="FileReference.html#browse()" target="">FileReference.browse()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example retrieves the type of a file selected by the user.      <div class='listing'><pre>
+import flash.net.FileReference;
+
+var listener:Object = new Object();
+listener.onSelect = function(file:FileReference):Void {
+    trace("type: " + file.type);
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+fileRef.browse();
+</pre></div>           <p></p>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="FileReference()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">FileReference</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function FileReference()</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Creates a new FileReference object. When populated, a FileReference object represents a file      on the user's local disk.           </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="FileReference.html#browse()" target="">FileReference.browse()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a new FileReference object and      initiates the download of a PDF file.      <div class='listing'><pre>
+import flash.net.FileReference;
+
+var listener:Object = new Object();
+listener.onComplete = function(file:FileReference) {
+    trace("onComplete : " + file.name);
+}
+
+var url:String = "http://www.adobe.com/platform/whitepapers/platform_overview.pdf";
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+fileRef.download(url, "FlashPlatform.pdf");
+</pre></div>      <p></p>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addListener(listener:<a href="../../Object.html">Object</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Registers an object to receive notification when a FileReference event listener is invoked.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">listener</span>:<a href="../../Object.html">Object</a></code> &mdash; An object that listens for a callback notification from the FileReference event listeners.           </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example adds a listener to an instance of FileReference.           <div class='listing'><pre>
+import flash.net.FileReference;
+
+var listener:Object = new Object();
+
+listener.onProgress = function(file:FileReference, bytesLoaded:Number, bytesTotal:Number):Void {
+    trace("onProgress with bytesLoaded: " + bytesLoaded + " bytesTotal: " + bytesTotal);
+}
+
+listener.onComplete = function(file:FileReference):Void {
+    trace("onComplete: " + file.name);
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+var url:String = "http://www.adobe.com/platform/whitepapers/platform_overview.pdf";
+fileRef.download(url, "FlashPlatform.pdf");
+</pre></div>      <p></p>
+</div>
+<a name="browse()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">browse</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function browse([typelist:<a href="../../Array.html">Array</a>]):<a href="../../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Displays a file-browsing dialog box in which the      user can select a local file to upload. The dialog box is native to the user's      operating system.      When you call this method and the user      successfully selects a file, the properties of this FileReference object are populated with      the properties of that file. Each subsequent time that <code>FileReference.browse()</code>      is called, the FileReference      object's properties are reset to the file selected by the user in the dialog box.           </p><p>You can pass an array of file types to determine which files the dialog box displays.</p>           <p>Only one <code>browse()</code> session      can be performed at a time (because only one dialog box can be displayed at a time).</p>            <p platform="actionscript">In Flash Player 10 and later, you can call this method successfully       only in response to a user event (for example, in an event handler for a mouse click or keypress event).       Otherwise, calling this method results in Flash Player throwing an Error.</p>              <p>Because of new functionality added to Flash Player, when publishing to Flash Player 10, you can have       only one of the following operations active at one time: <code>FileReference.browse()</code>,       <code>FileReference.upload()</code>, <code>FileReference.download()</code>. Otherwise, Flash Player       throws a runtime error (code 2174). Use <code>FileReference.cancel()</code>       to stop an operation in progress. This restriction applies only to Flash Player 10. Previous versions of Flash Player       are unaffected by this restriction on simultaneous multiple operations.</p>           <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">typelist</span>:<a href="../../Array.html">Array</a></code>&nbsp;[optional] &mdash; An array of file types used to filter the files      displayed in the dialog box. If you omit this parameter,      all files are displayed.      If you include this parameter, the array must contain one or more elements      enclosed in curly braces { }. You can use one of two formats for the array:      <ul>      <li>A list of file type descriptions followed by their Windows file extensions only.<br/>      Each element in the array must contain a string that describes the file type and a      semicolon-delimited list of Windows file extensions, with a wildcard character (*) preceding each extension.      The syntax for each element is as follows:<br/>      <code>[{description: "<i>string describing the first set of file types</i>", extension: "<i>semicolon-delimited list of file extensions</i>"}]</code><br/>      Example: <br/>      <code>[{description: "Images", extension: "*.jpg;*.gif;*.png"}, {description: "SWF files", extension: "*.swf"}, {description: "Documents", extension: "*.doc;*.pdf"}]</code></li>           <li>A list of file type descriptions followed by their Windows file extensions and their Macintosh file types.<br/>      Each element in the array must contain a string that describes the file type; a semicolon-delimited list of Windows file extensions, with a wildcard character (*) preceding each extension; and a semicolon-delimited list of Macintosh file types,      with a wildcard character (*) preceding each type.      The syntax for each element is as follows:<br/>      <code>[{description: "<i>string describing the first set of file types</i>", extension: "<i>semicolon-delimited list of Windows file extensions</i>", macType: "<i>semicolon-delimited list of Macintosh file types"</i>}]</code><br/>      Example:<br/>      <code>[{description: "Image files", extension: "*.jpg;*.gif;*.png", macType: "JPEG;jp2_;GIFF"}, {description: "SWF files", extension: "*.swf", macType: "SWFL"}]</code></li>       </ul>           <p>The two formats are not interchangeable in a single <code>browse()</code> call. You      must use one or the other.</p>           <p>The list of extensions is used to filter the files in Windows, depending on the file selected      by the user. It is not actually displayed in the dialog box. To display the file types      for users, you must list the file types in the description string as well as in the extension      list. The description string is displayed in the dialog box in Windows.      (It is not used on the Macintosh.) On the Macintosh, if you supply a list of Macintosh file types,      that list is used to filter the files. If you don't supply a list of Macintosh file types, the list of Windows extensions is used. </p>           </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; 
+Returns <code>true</code> if the parameters are valid and the file-browsing dialog box      is displayed.       Returns <code>false</code> if the dialog box is not displayed, if another      browse session is already in progress, or if you use the <code>typelist</code> parameter      but fail to provide a description or extension string in any element in the array.               
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="FileReferenceList.html#event:onSelect" target="">FileReferenceList.onSelect</a>
+<br>
+<a href="FileReference.html#event:onCancel" target="">FileReference.onCancel</a>
+<br>
+<a href="FileReference.html#download()" target="">FileReference.download()</a>
+<br>
+<a href="FileReferenceList.html#browse()" target="">FileReferenceList.browse()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example displays a dialog box in which the user can      select an image file to be uploaded.      <div class='listing'><pre>
+import flash.net.FileReference;
+
+var listener:Object = new Object();
+listener.onSelect = function(file:FileReference):Void  {
+    trace("Opened " + file.name);
+}
+
+listener.onCancel = function(file:FileReference):Void  {
+    trace("User cancelled");
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+fileRef.browse(); 
+</pre></div>           <p></p>
+</div>
+<a name="cancel()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">cancel</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function cancel():Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Cancels any ongoing upload or download operation on this FileReference object.              </p><br>
+<span class="label">Example</span>
+<br>The following example downloads approximately half of the requested file and then      cancels the download. This is obviously not a typical usage.  You might more      often use this method to allow users to click Cancel in a      download status dialog box.          <div class='listing'><pre>
+import flash.net.FileReference;
+
+var listener:Object = new Object();
+
+listener.onProgress = function(file:FileReference, bytesLoaded:Number, bytesTotal:Number):Void {
+    trace("onProgress with bytesLoaded: " + bytesLoaded + " bytesTotal: " + bytesTotal);
+    if(bytesLoaded >= (bytesTotal / 2)) {
+        file.cancel();
+    }
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+var url:String = "http://www.adobe.com/platform/whitepapers/platform_overview.pdf";
+fileRef.download(url, "FlashPlatform.pdf");
+</pre></div>      <p></p>
+</div>
+<a name="download()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">download</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function download(url:<a href="../../String.html">String</a>, [defaultFileName:<a href="../../String.html">String</a>]):<a href="../../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Displays a dialog box in which the user can download a file from a remote server.       Although Flash Player has no restriction on the size of files you can upload or download,      the player officially supports uploads or downloads of up to 100 MB.            </p><p>You cannot connect to commonly reserved ports. For a complete list of blocked      ports, see the <code>system.Security.loadPolicyFile()</code> entry.</p>          <p>This method first opens      an operating system dialog box that asks the user to enter a filename and      select a location on the local computer      to save the file. When the user selects a location and confirms the download operation      (for example, by clicking Save), the download from the remote server begins.      Listeners receive events to indicate the progress, success, or      failure of the download.      To ascertain the status of the dialog box and the download operation after calling      <code>download()</code>,      your ActionScript code must listen for events by using event listeners      such as <code>onCancel</code>, <code>onOpen</code>,      <code>onProgress</code>, and <code>onComplete</code>.      </p>           <p>The <code>FileReference.upload()</code> and <code>FileReference.download()</code> functions      are nonblocking. These functions return after they are called, before the file transmission      is complete. In addition, if the FileReference object goes out of scope, any upload or download      that has not yet been completed on that object is cancelled upon leaving the scope.      So, be sure that your FileReference object will remain in scope for as long as the      upload or download could be expected to continue.</p>          <p>When the file has successfully downloaded, the      properties of the FileReference object are populated with the properties      of the local file and the <code>onComplete</code> listener is invoked.</p>          <p>Only one <code>download()</code> session can      be performed at a time (because only one dialog box can be displayed at a time).</p>          <p platform="actionscript">In Flash Player 10 and later, you can call this method successfully      only in response to a user event (for example, in an event handler for a mouse click or keypress event).      Otherwise, calling this method results in Flash Player throwing an Error.</p>            <p>Because of new functionality added to Flash Player, when publishing to Flash Player 10, you can have      only one of the following operations active at one time: <code>FileReference.browse()</code>,      <code>FileReference.upload()</code>, <code>FileReference.download()</code>. Otherwise, Flash Player      throws a runtime error (code 2174). Use <code>FileReference.cancel()</code>      to stop an operation in progress. This restriction applies only to Flash Player 10. Previous versions of Flash Player      are unaffected by this restriction on simultaneous multiple operations.</p>          <p>This method supports downloading of any file type, with either HTTP or HTTPS.</p>          <p>To send POST parameters to the server, set the value of <code>FileReference.postData</code>      to your parameters. You can also send GET parameters to the server with the <code>download()</code> call      by appending parameters to the URL, for the server script to parse.</p>          <b>Note</b>: If your server requires user authentication, only       SWF files that are running in a browser&#x2014;that is, using the browser plug-in or ActiveX control&#x2014;can provide a dialog box to prompt the user for a user name and password for authentication,      and only for downloads. For uploads using the plug-in or ActiveX control, and for      uploads and downloads using the stand-alone or external player, the file transfer fails.          <p>When using this method, consider the Flash Player security model: </p>           <ul>      <li>This method is not allowed if the calling SWF file is in an untrusted local sandbox.</li>      <li>The default security setting denies access between sandboxes. A website can enable access to a resource by adding a policy file.  </li>      </ul>            <p>For more information related to security, see the following: </p>            <ul>          <li>"Understanding Security" in <i>Learning ActionScript 2.0 in Flash</i></li>       <li>The Flash Player Developer Center Topic:       <a href="http://www.adobe.com/go/devnet_security_en" target="external">Security</a></li>       </ul>           <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">url</span>:<a href="../../String.html">String</a></code> &mdash; The URL of the file to download to the local computer. You can send GET parameters to the server with the <code>download()</code> call by appending      parameters to the URL, for the server script to parse. For example:<br/>      <code>http://www.myserver.com/picture.jpg?userID=jdoe</code>           <p>On some browsers, URL strings are limited in length. Lengths greater than 256 characters may fail on some browsers or servers.</p>          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">defaultFileName</span>:<a href="../../String.html">String</a></code>&nbsp;[optional] &mdash; The default filename displayed in the dialog box, for the file      to be downloaded. This string cannot contain the following characters:      / \ : * ? " &lt; &gt; | %      <p>If you omit this parameter, the filename of the      remote URL is parsed out and used as the default. </p>          </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; 
+A value of <code>true</code> if the dialog box in which a user can select a file is displayed.      If the dialog box is not displayed, the method returns <code>false</code>. The dialog box      could fail to be displayed for any of the following reasons:      <ul>      <li>You did not pass a value for the <code>url</code> parameter.</li>      <li>The parameters passed are of the incorrect type or format.</li>      <li>The <code>url</code> parameter has a length of 0.</li>      <li>A security violation occurred; your SWF file      attempted to access a file from a server that is outside your SWF file's security sandbox.</li>      <li>Another browse session is already in progress. A browse session can be started by      <code>FileReference.browse()</code>, <code>FileReferenceList.browse()</code>,      or <code>FileReference.download()</code>.</li>      <li>The protocol is not HTTP or HTTPS.</li>      </ul>          
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="FileReference.html#browse()" target="">FileReference.browse()</a>
+<br>
+<a href="FileReferenceList.html#browse()" target="">FileReferenceList.browse()</a>
+<br>
+<a href="FileReference.html#upload()" target="">FileReference.upload()</a>
+<br>
+<a href="../../System/security.html#loadPolicyFile()" target="">System.security.loadPolicyFile() for a list of reserved ports</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example attempts to download a file using the <code>download</code> method.      Notice that there are listeners for all of the events.          <div class='listing'><pre>
+import flash.net.FileReference;
+
+var listener:Object = new Object();
+
+listener.onSelect = function(file:FileReference):Void {
+    trace("onSelect: " + file.name);
+}
+
+listener.onCancel = function(file:FileReference):Void {
+    trace("onCancel");
+}
+
+listener.onOpen = function(file:FileReference):Void {
+    trace("onOpen: " + file.name);
+}
+
+listener.onProgress = function(file:FileReference, bytesLoaded:Number, bytesTotal:Number):Void {
+    trace("onProgress with bytesLoaded: " + bytesLoaded + " bytesTotal: " + bytesTotal);
+}
+
+listener.onComplete = function(file:FileReference):Void {
+    trace("onComplete: " + file.name);
+}
+
+listener.onIOError = function(file:FileReference):Void {
+    trace("onIOError: " + file.name);
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+var url:String = "http://www.adobe.com/platform/whitepapers/platform_overview.pdf";
+if(!fileRef.download(url, "FlashPlatform.pdf")) {
+    trace("dialog box failed to open.");
+}
+
+</pre></div>      <p></p>
+</div>
+<a name="removeListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeListener(listener:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Removes an object from the list of objects that receive event notification messages.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">listener</span>:<a href="../../Object.html">Object</a></code> &mdash; An object that listens for a callback notification from the FileReference event      listeners.           </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; 
+Returns <code>true</code> if the object specified in the <code>listener</code>      parameter was successfully removed. Otherwise, this method returns <code>false</code>.           
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example removes an event listener using the <code>removeListener</code> method.      If a user cancels the download, the listener is removed so that it      no longer receives events from that FileReference object.          <div class='listing'><pre>
+import flash.net.FileReference;
+
+var listener:Object = new Object();
+
+listener.onCancel = function(file:FileReference):Void {
+    trace(file.removeListener(this)); // true
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+var url:String = "http://www.adobe.com/platform/whitepapers/platform_overview.pdf";
+fileRef.download(url, "FlashPlatform.pdf");
+</pre></div>      <p></p>
+</div>
+<a name="upload()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">upload</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function upload(url:<a href="../../String.html">String</a>, uploadDataFieldName:<a href="../../String.html">String</a>, testUpload:<a href="../../Boolean.html">Boolean</a>):<a href="../../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Starts the upload of a file selected by a user to a remote server.       Although Flash Player has no restriction on the size of files you can upload or download,       the player officially supports uploads or downloads of up to 100 MB.      You must call <code>FileReference.browse()</code> or <code>FileReferenceList.browse()</code>      before calling this method.            </p><p>You cannot connect to commonly reserved ports. For a complete list of blocked      ports, see the <code>system.Security.loadPolicyFile()</code> entry.</p>          <p>Listeners receive events to indicate the progress, success, or      failure of the upload. Although you can use the FileReferenceList object to let users      select multiple files to upload, you must upload the files one by one. To do so, iterate through      the <code>FileReferenceList.fileList</code> array of FileReference objects.</p>          <p>The <code>FileReference.upload()</code> and <code>FileReference.download()</code> functions      are nonblocking. These functions return after they are called, before the file transmission      is complete. In addition, if the FileReference object goes out of scope, any upload or download      that has not yet been completed on that object is cancelled upon leaving the scope.      So, be sure that your FileReference object will remain in scope for as long as the      upload or download could be expected to continue.</p>          <p>Because of new functionality added to Flash Player, when publishing to Flash Player 10, you can have      only one of the following operations active at one time: <code>FileReference.browse()</code>,      <code>FileReference.upload()</code>, <code>FileReference.download()</code>. Otherwise, Flash Player      throws a runtime error (code 2174). Use <code>FileReference.cancel()</code>      to stop an operation in progress. This restriction applies only to Flash Player 10. Previous versions of Flash Player      are unaffected by this restriction on simultaneous multiple operations.</p>          <p>The file is uploaded to the URL passed in the <code>url</code> parameter. The URL      must be a server script configured to accept uploads. Flash Player uploads files using      the HTTP <code>POST</code> method. The server script that handles the upload      should expect a <code>POST</code> request with the following elements:</p>      <ul>      <li>A <code>Content-Type</code> element of <code>multipart/form-data</code></li>      <li>A <code>Content-Disposition</code> element with a <code>name</code> attribute set to <code>"Filedata"</code> by default      and a <code>filename</code> attribute set to the name of the original file</li>      <li>The binary contents of the file</li></ul>            <p>Here is a sample <code>POST</code> request:</p>      <pre>
+     Content-Type: multipart/form-data; boundary=AaB03x
+     --AaB03x 
+     Content-Disposition: form-data; name="Filedata"; filename="example.jpg" 
+     Content-Type: application/octet-stream
+     ... contents of example.jpg ... 
+     --AaB03x-- 
+     </pre>      <p>To send POST parameters to the server, set the value of <code>FileReference.postData</code>      to your parameters. You can send GET parameters to the server with the <code>upload()</code>      call by appending parameters to the URL.</p>          <p>If the file to be uploaded is bigger than approximately 10 KB, Windows Flash Player versions      first send a test upload <code>POST</code> with zero content prior to uploading the actual file      in order to verify that the transmission is likely to be successful. The second <code>POST</code>      contains an actual file content. For smaller files, Flash Player does a single      upload <code>POST</code> with the file to be uploaded. The Macintosh players currently do not do      test upload <code>POST</code>s.</p>          <p><b>Note</b>: If your server requires user authentication, only       SWF files running in a browser&#x2014;that is, using the browser plug-in or ActiveX control&#x2014;can provide a dialog box to prompt the user for a user name and password for authentication,      and only for downloads. For uploads that use the plug-in or ActiveX control, and for      uploads and downloads that use the stand-alone or external player, the file transfer fails.</p>           <p>When using this method, consider the Flash Player security model: </p>           <ul>      <li>This method is not allowed if the calling SWF file is in an untrusted local sandbox.</li>      <li>The default security setting denies access between sandboxes. A website can enable access to a resource by adding a policy file.  </li>      </ul>            <p>For more information related to security, see the following: </p>            <ul>          <li>"Understanding Security" in <i>Learning ActionScript 2.0 in Flash</i></li>       <li>The Flash Player Developer Center Topic:       <a href="http://www.adobe.com/go/devnet_security_en" target="external">Security</a></li>       </ul>           <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">url</span>:<a href="../../String.html">String</a></code> &mdash; The URL of the server script configured to handle upload through HTTP      <code>POST</code> calls.      The URL can be HTTP or, for secure uploads, HTTPS.          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">uploadDataFieldName</span>:<a href="../../String.html">String</a></code> &mdash; The field name that precedes the file data in the upload POST.      This parameter is supported in Flash Player 9.0.28.0 and later, only.      The <code>uploadDataFieldName</code> value must be non-null and a non-empty String.      By default, the value of <code>uploadDataFieldName</code> is <code>"Filedata"</code>:      <pre>
+     Content-Type: multipart/form-data; boundary=AaB03x
+     --AaB03x 
+     Content-Disposition: form-data; name="Filedata"; filename="example.jpg" 
+     Content-Type: application/octet-stream
+     ... contents of example.jpg ... 
+     --AaB03x-- 
+     </pre>          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">testUpload</span>:<a href="../../Boolean.html">Boolean</a></code> &mdash; A setting to request a test file upload. If <code>testUpload</code>      is <code>true</code>, then for files larger than 10 KB, Flash Player will attempt      a test file upload POST with a Content-Length of 0. The purpose of the test upload      is to check whether the actual file upload will be successful and whether server      authentication, if required, will succeed. By default, <code>testUpload</code>      is <code>false</code>. At this time, a test upload is done only for the Windows players.          <p>You can send GET parameters to the server with the <code>upload()</code> call by appending parameters to the URL;      for example, <code>http://www.myserver.com/upload.cgi?userID=jdoe</code></p>           <p>On some browsers, URL strings are limited in length.      Lengths greater than 256 characters may fail on some browsers or servers.</p>          </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; 
+A value of <code>false</code> in any of the following situations:      <ul>      <li><code>FileReference.browse()</code> has not yet been successfully called      on this object, or <code>FileReferenceList.browse()</code>      has not yet been successfully called with this object in its <code>filelist</code> array.</li>      <li>The protocol is not HTTP or HTTPS.</li>      <li>A security violation occurs; your SWF file      attempts to access a file from a server that is outside your SWF file's security sandbox.</li>      <li>The <code>url</code> parameter is of the incorrect type or format.</li>      <li>The call does not have the correct number of parameters.</li>      </ul>      
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="FileReference.html#browse()" target="">FileReference.browse()</a>
+<br>
+<a href="FileReferenceList.html#browse()" target="">FileReferenceList.browse()</a>
+<br>
+<a href="FileReference.html#download()" target="">FileReference.download()</a>
+<br>
+<a href="FileReferenceList.html#fileList" target="">FileReferenceList.fileList</a>
+<br>
+<a href="../../System/security.html#loadPolicyFile()" target="">System.security.loadPolicyFile() for a list of reserved ports</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example shows an implementation of the      <code>upload()</code> method by first prompting the user to select a file to      upload, then handling the <code>onSelect</code> and      <code>onCancel</code> listeners, and finally handling the      results of the actual file upload.          <div class='listing'><pre>
+import flash.net.FileReference;
+
+var allTypes:Array = new Array();
+var imageTypes:Object = new Object();
+imageTypes.description = "Images (*.jpg, *.jpeg, *.gif, *.png)";
+imageTypes.extension = "*.jpg; *.jpeg; *.gif; *.png";
+allTypes.push(imageTypes);
+
+var listener:Object = new Object();
+
+listener.onSelect = function(file:FileReference):Void {
+    trace("onSelect: " + file.name);
+    if(!file.upload("http://www.yourdomain.com/yourUploadHandlerScript.cfm")) {
+        trace("Upload dialog failed to open.");
+    }
+}
+
+listener.onCancel = function(file:FileReference):Void {
+    trace("onCancel");
+}
+
+listener.onOpen = function(file:FileReference):Void {
+    trace("onOpen: " + file.name);
+}
+
+listener.onProgress = function(file:FileReference, bytesLoaded:Number, bytesTotal:Number):Void {
+    trace("onProgress with bytesLoaded: " + bytesLoaded + " bytesTotal: " + bytesTotal);
+}
+
+listener.onComplete = function(file:FileReference):Void {
+    trace("onComplete: " + file.name);
+}
+
+listener.onHTTPError = function(file:FileReference):Void {
+    trace("onHTTPError: " + file.name);
+}
+
+listener.onIOError = function(file:FileReference):Void {
+    trace("onIOError: " + file.name);
+}
+
+listener.onSecurityError = function(file:FileReference, errorString:String):Void {
+    trace("onSecurityError: " + file.name + " errorString: " + errorString);
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+fileRef.browse(allTypes);
+
+</pre></div>      <p></p>
+</div>
+<div class="detailSectionHeader">Event detail</div>
+<a name="event:onCancel"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onCancel</td><td class="detailHeaderType">event&nbsp;listener</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onCancel = function(fileRef:<a href="FileReference.html">FileReference</a>) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Invoked when the user dismisses the file-browsing dialog box.      This dialog box is displayed      when you call <code>FileReference.browse()</code>,      <code>FileReferenceList.browse()</code>, or <code>FileReference.download()</code>.           </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">fileRef</span>:<a href="FileReference.html">FileReference</a></code> &mdash; The FileReference object that initiated the operation.           </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example traces a message if the user dismisses the file-browsing      dialog box. This method is triggered only if the user clicks Cancel or presses the      Escape key after the dialog box is displayed.          <div class='listing'><pre>
+import flash.net.FileReference;
+
+var listener:Object = new Object();
+
+listener.onCancel = function(file:FileReference):Void {
+    trace("onCancel");
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+var url:String = "http://www.adobe.com/platform/whitepapers/platform_overview.pdf";
+if(!fileRef.download(url, "FlashPlatform.pdf")) {
+    trace("dialog box failed to open.");
+}
+</pre></div>          <p></p>
+</div>
+<a name="event:onComplete"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onComplete</td><td class="detailHeaderType">event&nbsp;listener</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onComplete = function(fileRef:<a href="FileReference.html">FileReference</a>) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Invoked when the upload or download operation has successfully completed.      Successful completion means that the entire file has been uploaded or downloaded.      For file download, this event listener is invoked when Flash Player has downloaded the entire file to disk.      For file upload, this event listener is invoked after the       Flash Player has received an HTTP status code of 200 from the server receiving      the transmission.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">fileRef</span>:<a href="FileReference.html">FileReference</a></code> &mdash; The FileReference object that initiated the operation.           </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example traces out a message when the <code>onComplete</code> event is triggered.          <div class='listing'><pre>
+import flash.net.FileReference;
+
+var listener:Object = new Object();
+
+listener.onComplete = function(file:FileReference):Void {
+    trace("onComplete: " + file.name);
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+var url:String = "http://www.adobe.com/platform/whitepapers/platform_overview.pdf";
+fileRef.download(url, "FlashPlatform.pdf");
+</pre></div>          <p></p>
+</div>
+<a name="event:onHTTPError"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onHTTPError</td><td class="detailHeaderType">event&nbsp;listener</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onHTTPError = function(fileRef:<a href="FileReference.html">FileReference</a>, httpError:<a href="../../Number.html">Number</a>) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Invoked when an upload fails because of an HTTP error.             </p><p>Because of the way that Flash Player relies on the browser stack during       file download, this error is not applicable for download failures. If a download       fails because of an HTTP error, the error is reported as an I/O error.</p>             <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">fileRef</span>:<a href="FileReference.html">FileReference</a></code> &mdash; The File Reference object that initiated the operation.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">httpError</span>:<a href="../../Number.html">Number</a></code> &mdash; The HTTP error that caused       this upload to fail. For example, an <code>httpError</code> of 404 indicates that a page is not found.       HTTP error values can be found in sections 10.4 and 10.5 of the HTTP specification at       <a target="mm_external" href="ftp://ftp.isi.edu/in-notes/rfc2616.txt">ftp://ftp.isi.edu/in-notes/rfc2616.txt</a>.             </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a FileReference object with a listener       for each possible event including <code>onHttpError</code>. This listener is       triggered only if the upload fails because of an HTTP error.       <div class='listing'><pre>
+import flash.net.FileReference;
+
+var listener:Object = new Object();
+
+listener.onSelect = function(file:FileReference):Void {
+    trace("onSelect: " + file.name);
+    if(!file.upload("http://www.yourdomain.com/yourUploadHandlerScript.cfm")) {
+        trace("Upload dialog failed to open.");
+    }
+}
+
+listener.onCancel = function(file:FileReference):Void {
+    trace("onCancel");
+}
+
+listener.onOpen = function(file:FileReference):Void {
+    trace("onOpen: " + file.name);
+}
+
+listener.onProgress = function(file:FileReference, bytesLoaded:Number, bytesTotal:Number):Void {
+    trace("onProgress with bytesLoaded: " + bytesLoaded + " bytesTotal: " + bytesTotal);
+}
+
+listener.onComplete = function(file:FileReference):Void {
+    trace("onComplete: " + file.name);
+}
+
+listener.onHTTPError = function(file:FileReference):Void {
+    trace("onHTTPError: " + file.name);
+}
+
+listener.onIOError = function(file:FileReference):Void {
+    trace("onIOError: " + file.name);
+}
+
+listener.onSecurityError = function(file:FileReference, errorString:String):Void {
+    trace("onSecurityError: " + file.name + " errorString: " + errorString);
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+fileRef.browse();
+
+</pre></div>            <p></p>
+</div>
+<a name="event:onIOError"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onIOError</td><td class="detailHeaderType">event&nbsp;listener</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onIOError = function(fileRef:<a href="FileReference.html">FileReference</a>) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Invoked when an input/output error occurs.           </p><p>This listener is invoked when the upload or download fails for any of the following reasons:</p>      <ul>      <li>An input/output error occurs while the player is reading, writing, or transmitting the file.</li>      <li>The SWF file tries to upload a file to a server that requires authentication,      such as a user name and password. During upload, Flash Player does not provide      a means for users to enter passwords. If a SWF file tries to upload a file to a server that      requires authentication, the upload fails.</li>      <li>The SWF file tries to download a file from a server that requires authentication,      in the stand-alone or external player. During download, the stand-alone and external players      do not provide a means for users to enter passwords. If a SWF file in these players tries to download      a file from a server that requires authentication, the download fails.      File download can succeed only in the ActiveX control and browser plug-in players.</li>      <li>The value passed to the <code>url</code> parameter in <code>upload()</code> contains an invalid protocol. Valid protocols are HTTP and HTTPS.</li>      </ul>           <p><bold>Important</bold>: Only Flash applications that are running in a browser &#x2014; that is,      using the browser plug-in or ActiveX control &#x2014; can provide a dialog to prompt the      user to enter a user name and password for authentication, and then      only for downloads. For uploads that use the plug-in or ActiveX control, or that upload and download using either      the standalone or external players, the file transfer fails.</p>           <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">fileRef</span>:<a href="FileReference.html">FileReference</a></code> &mdash; The FileReference object that initiated the operation.           </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example traces a message when the <code>onIOError</code> event      is triggered. For simplicity, none of the other event listeners are included in this      example.          <div class='listing'><pre>
+import flash.net.FileReference;
+
+var listener:Object = new Object();
+
+listener.onIOError = function(file:FileReference):Void {
+    trace("onIOError");
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+fileRef.download("http://www.adobe.com/NonExistentFile.pdf", "NonExistentFile.pdf");
+
+</pre></div>          <p></p>
+</div>
+<a name="event:onOpen"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onOpen</td><td class="detailHeaderType">event&nbsp;listener</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onOpen = function(fileRef:<a href="FileReference.html">FileReference</a>) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Invoked when an upload or download operation starts.           </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">fileRef</span>:<a href="FileReference.html">FileReference</a></code> &mdash; The FileReference object that initiated the operation.           </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example traces a message when the <code>onOpen</code> event      is triggered.          <div class='listing'><pre>
+import flash.net.FileReference;
+
+var listener:Object = new Object();
+
+listener.onOpen = function(file:FileReference):Void {
+    trace("onOpen: " + file.name);
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+var url:String = "http://www.adobe.com/platform/whitepapers/platform_overview.pdf";
+fileRef.download(url, "FlashPlatform.pdf");
+</pre></div>          <p></p>
+</div>
+<a name="event:onProgress"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onProgress</td><td class="detailHeaderType">event&nbsp;listener</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onProgress = function(fileRef:<a href="FileReference.html">FileReference</a>, bytesLoaded:<a href="../../Number.html">Number</a>, bytesTotal:<a href="../../Number.html">Number</a>) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Invoked periodically during the file upload or download operation.      The <code>onProgress</code> listener is invoked while the Flash Player      transmits bytes to a server, and it is periodically invoked during the      transmission, even if the transmission is ultimately not successful.      To determine if and when the file transmission is successful      and complete, use <code>onComplete</code>.           </p><p>In some cases, <code>onProgress</code> listeners are not invoked; for example,      if the file being transmitted is very small, or if the upload or download      happens very quickly.</p>           <p>File upload progress cannot be determined on Macintosh platforms earlier than OS X 10.3.      The <code>onProgress</code> event is called during the upload operation, but the value of the      <code>bytesLoaded</code> parameter is -1, indicating that the progress cannot be determined.</p>           <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">fileRef</span>:<a href="FileReference.html">FileReference</a></code> &mdash; The FileReference object that initiated the operation.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">bytesLoaded</span>:<a href="../../Number.html">Number</a></code> &mdash; The number of bytes transmitted so far.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">bytesTotal</span>:<a href="../../Number.html">Number</a></code> &mdash; The total size of the file to be transmitted,      in bytes. If the size cannot be determined, the value is -1.           </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the progress of a download using the <code>onProgress</code> event      listener.           <div class='listing'><pre>
+import flash.net.FileReference;
+
+var listener:Object = new Object();
+
+listener.onProgress = function(file:FileReference, bytesLoaded:Number, bytesTotal:Number):Void {
+    trace("onProgress: " + file.name + " with bytesLoaded: " + bytesLoaded + " bytesTotal: " + bytesTotal);
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+var url:String = "http://www.adobe.com/platform/whitepapers/platform_overview.pdf";
+fileRef.download(url, "FlashPlatform.pdf");
+
+</pre></div>          <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="FileReference.html#event:onComplete" target="">flash.net.FileReference.onComplete</a>
+</div>
+</div>
+<a name="event:onSecurityError"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onSecurityError</td><td class="detailHeaderType">event&nbsp;listener</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onSecurityError = function(fileRef:<a href="FileReference.html">FileReference</a>, errorString:<a href="../../String.html">String</a>) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Invoked when an upload or download fails because of a       security error. The calling SWF file may have tried to access a SWF file       outside its domain and does not have permission to do so. You can       try to remedy this error by using a policy file.             </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">fileRef</span>:<a href="FileReference.html">FileReference</a></code> &mdash; The FileReference object that initiated the operation.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">errorString</span>:<a href="../../String.html">String</a></code> &mdash; Describes the error that caused <code>onSecurityError</code>       to be called. The value is "securitySandboxError".             </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a FileReference object with a listener       for each possible event, including <code>onSecurityError</code>. The <code>onSecurityError</code> listener is       triggered only if the upload fails because of a security error.       <div class='listing'><pre>
+import flash.net.FileReference;
+
+var listener:Object = new Object();
+
+listener.onSelect = function(file:FileReference):Void {
+    trace("onSelect: " + file.name);
+    if(!file.upload("http://www.yourdomain.com/yourUploadHandlerScript.cfm")) {
+        trace("Upload dialog failed to open.");
+    }
+}
+
+listener.onCancel = function(file:FileReference):Void {
+    trace("onCancel");
+}
+
+listener.onOpen = function(file:FileReference):Void {
+    trace("onOpen: " + file.name);
+}
+
+listener.onProgress = function(file:FileReference, bytesLoaded:Number, bytesTotal:Number):Void {
+    trace("onProgress with bytesLoaded: " + bytesLoaded + " bytesTotal: " + bytesTotal);
+}
+
+listener.onComplete = function(file:FileReference):Void {
+    trace("onComplete: " + file.name);
+}
+
+listener.onHTTPError = function(file:FileReference):Void {
+    trace("onHTTPError: " + file.name);
+}
+
+listener.onIOError = function(file:FileReference):Void {
+    trace("onIOError: " + file.name);
+}
+
+listener.onSecurityError = function(file:FileReference, errorString:String):Void {
+    trace("onSecurityError: " + file.name + " errorString: " + errorString);
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+fileRef.browse();
+
+</pre></div>          <p></p>
+</div>
+<a name="event:onSelect"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onSelect</td><td class="detailHeaderType">event&nbsp;listener</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onSelect = function(fileRef:<a href="FileReference.html">FileReference</a>) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Invoked when the user selects a file to upload or download from the file-browsing dialog box.      (This dialog box is displayed when you call <code>FileReference.browse()</code>,      <code>FileReferenceList.browse()</code>,      or <code>FileReference.download()</code>.)      When the user selects a file and confirms the operation (for example, by clicking OK),      the properties of the FileReference object are populated.           </p><p>The <code>onSelect</code> listener works slightly differently depending on what      method invokes it. When <code>onSelect</code> is invoked after a <code>browse()</code> call,      Flash Player can read all of the      FileReference object's properties, because the file selected by the user is on the local      file system. When <code>onSelect</code> is invoked after a <code>download()</code> call,      Flash Player can read only      the <code>name</code> property, because the file hasn't yet been downloaded to the local file system      at the moment <code>onSelect</code> is invoked. When the file has been downloaded and      <code>onComplete</code> invoked, then Flash Player can read all other properties of the      FileReference object.</p>           <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">fileRef</span>:<a href="FileReference.html">FileReference</a></code> &mdash; The FileReference object that initiated the operation.           </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example traces a message within the <code>onSelect</code> event      listener.          <div class='listing'><pre>
+import flash.net.FileReference;
+
+var listener:Object = new Object();
+listener.onSelect = function(file:FileReference):Void {
+    trace("onSelect: " + file.name);
+    if(!file.upload("http://www.yourdomain.com/yourUploadHandlerScript.cfm")) {
+        trace("Upload dialog failed to open.");
+    }
+}
+
+var fileRef:FileReference = new FileReference();
+fileRef.addListener(listener);
+fileRef.browse();
+</pre></div>          <p></p>
+</div>
+<a name="event:onUploadCompleteData"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onUploadCompleteData</td><td class="detailHeaderType">event&nbsp;listener</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onUploadCompleteData = function(fileRef:<a href="FileReference.html">FileReference</a>, data:<a href="../../String.html">String</a>) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 9.0.28.0</td>
+</tr>
+</table>
+<p></p><p>Invoked after data is received from the server after a successful upload.      This listener is not invoked if data is not returned from the server.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">fileRef</span>:<a href="FileReference.html">FileReference</a></code> &mdash; The FileReference object that initiated the operation.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">data</span>:<a href="../../String.html">String</a></code> &mdash; The raw data returned from the server in response to the successful upload.           </td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

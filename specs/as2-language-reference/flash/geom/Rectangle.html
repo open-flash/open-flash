@@ -1,0 +1,1568 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="Rectangle,flash.geom.Rectangle,bottom,bottomRight,height,left,right,size,top,topLeft,width,x,y,clone,contains,containsPoint,containsRectangle,equals,inflate,inflatePoint,intersection,intersects,isEmpty,offset,offsetPoint,setEmpty,toString,union" name="keywords">
+<title>flash.geom.Rectangle</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Rectangle - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="../../language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="../../appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="../../index.html?flash/geom/Rectangle.html&amp;flash/geom/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Rectangle</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Rectangle"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">flash.geom</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Rectangle</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Rectangle <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../images/inherit-arrow.gif"> <a href="../../Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p>
+<p></p>The Rectangle class is used to create and modify Rectangle   objects. A Rectangle object is an area defined by its position, as   indicated by its top-left corner point (<i>x</i>, <i>y</i>), and by its width   and its height. Be careful when you design these areas&#x2014;if a rectangle is described   as having its upper-left corner at 0,0 and has a height of 10 and a width of 20,   the lower-right corner is at 9,19, because the count of width and height began at 0,0.    <p>The <code>x</code>, <code>y</code>, <code>width</code>, and   <code>height</code> properties of the Rectangle class are   independent of each other; changing the value of one property has   no effect on the others. However, the <code>right</code> and <code>bottom</code>   properties are integrally related to those four&#x2014;if you change <code>right</code>,   you are changing <code>width</code>; if you change <code>bottom</code>, you are changing   <code>height</code>, and so on. And you must have the <code>left</code> or <i>x</i> property established   before you set <code>width</code> or <code>right</code> property.</p>    <p>Rectangle objects are used to support the BitmapData class   filters. They are also used in the <code>MovieClip.scrollRect</code> property to support the   ability to crop and scroll a <code>MovieClip</code> instance with specific width, height and   scrolling offsets.</p>     <p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../../MovieClip.html#scrollRect" target="">MovieClip.scrollRect</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#bottom">bottom</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The sum of the <code>y</code> and <code>height</code> properties.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#bottomRight">bottomRight</a> : <a href="Point.html">Point</a>
+<div class="summaryTableDescription">The location of the Rectangle object's bottom-right corner, determined by the values of the <code>x</code> and <code>y</code> properties.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#height">height</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The height of the rectangle in pixels.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#left">left</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The <i>x</i> coordinate of the top-left corner of the rectangle.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#right">right</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The sum of the <code>x</code> and <code>width</code> properties.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#size">size</a> : <a href="Point.html">Point</a>
+<div class="summaryTableDescription">The size of the Rectangle object, expressed as a Point object with the values of the <code>width</code> and <code>height</code> properties.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#top">top</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The <i>y</i> coordinate of the top-left corner of the rectangle.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#topLeft">topLeft</a> : <a href="Point.html">Point</a>
+<div class="summaryTableDescription">The location of the Rectangle object's top-left corner determined by the <i>x</i> and <i>y</i> values of the point.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#width">width</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The width of the rectangle in pixels.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#x">x</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The <i>x</i> coordinate of the top-left corner of the rectangle.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#y">y</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The <i>y</i> coordinate of the top-left corner of the rectangle.</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="../../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../../Object.html#__proto__">__proto__</a>, <a href="../../Object.html#__resolve">__resolve</a>, <a href="../../Object.html#constructor">constructor</a>, <a href="../../Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#Rectangle()">Rectangle</a>(x:<a href="../../Number.html">Number</a>, y:<a href="../../Number.html">Number</a>, width:<a href="../../Number.html">Number</a>, height:<a href="../../Number.html">Number</a>)</div>
+<div class="summaryTableDescription">Creates a new Rectangle object whose top-left corner is specified by the <code>x</code> and <code>y</code> parameters.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clone()">clone</a>():<a href="Rectangle.html">Rectangle</a>
+</div>
+<div class="summaryTableDescription">Returns a new Rectangle object with the same values for the <code>x</code>, <code>y</code>, <code>width</code>, and <code>height</code> properties as the original Rectangle object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#contains()">contains</a>(x:<a href="../../Number.html">Number</a>, y:<a href="../../Number.html">Number</a>):<a href="../../Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Determines whether the specified point is contained within the rectangular region defined by this Rectangle object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#containsPoint()">containsPoint</a>(pt:<a href="Point.html">Point</a>):<a href="../../Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Determines whether the specified point is contained within the rectangular region defined by this Rectangle object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#containsRectangle()">containsRectangle</a>(rect:<a href="Rectangle.html">Rectangle</a>):<a href="../../Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Determines whether the Rectangle object specified by the <code>rect</code> parameter is contained within this Rectangle object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#equals()">equals</a>(toCompare:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Determines whether the object specified in the <code>toCompare</code> parameter is equal to this Rectangle object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#inflate()">inflate</a>(dx:<a href="../../Number.html">Number</a>, dy:<a href="../../Number.html">Number</a>):Void</div>
+<div class="summaryTableDescription">Increases the size of the Rectangle object by the specified amounts.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#inflatePoint()">inflatePoint</a>(pt:<a href="Point.html">Point</a>):Void</div>
+<div class="summaryTableDescription">Increases the size of the Rectangle object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#intersection()">intersection</a>(toIntersect:<a href="Rectangle.html">Rectangle</a>):<a href="Rectangle.html">Rectangle</a>
+</div>
+<div class="summaryTableDescription">If the Rectangle object specified in the <code>toIntersect</code> parameter intersects with this Rectangle object, the <code> intersection()</code> method returns the area of intersection as a Rectangle object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#intersects()">intersects</a>(toIntersect:<a href="Rectangle.html">Rectangle</a>):<a href="../../Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Determines whether the object specified in the <code>toIntersect</code> parameter intersects with this Rectangle object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#isEmpty()">isEmpty</a>():<a href="../../Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Determines whether or not this Rectangle object is empty.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#offset()">offset</a>(dx:<a href="../../Number.html">Number</a>, dy:<a href="../../Number.html">Number</a>):Void</div>
+<div class="summaryTableDescription">Adjusts the location of the Rectangle object, as determined by its top-left corner, by the specified amounts.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#offsetPoint()">offsetPoint</a>(pt:<a href="Point.html">Point</a>):Void</div>
+<div class="summaryTableDescription">Adjusts the location of the Rectangle object using a Point object as a parameter.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setEmpty()">setEmpty</a>():Void</div>
+<div class="summaryTableDescription">Sets all of the Rectangle object's properties to 0.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toString()">toString</a>():<a href="../../String.html">String</a>
+</div>
+<div class="summaryTableDescription">Builds and returns a string that lists the horizontal and vertical positions and the width and height of the Rectangle object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#union()">union</a>(toUnion:<a href="Rectangle.html">Rectangle</a>):<a href="Rectangle.html">Rectangle</a>
+</div>
+<div class="summaryTableDescription">Adds two rectangles together to create a new Rectangle object, by filling in the horizontal and vertical space between the two rectangles.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="../../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../../Object.html#addProperty()">addProperty</a>, <a href="../../Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="../../Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="../../Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="../../Object.html#registerClass()">registerClass</a>, <a href="../../Object.html#toString()">toString</a>, <a href="../../Object.html#unwatch()">unwatch</a>, <a href="../../Object.html#valueOf()">valueOf</a>, <a href="../../Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="bottom"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">bottom</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var bottom:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The sum of the <code>y</code> and      <code>height</code> properties.           </p><p><img src ="../../images/rectangle.jpg" alt="rectangle with properties shown" /></p>           <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Rectangle.html#y" target="">Rectangle.y</a>
+<br>
+<a href="Rectangle.html#height" target="">Rectangle.height</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a Rectangle object and changes the value of its <code>bottom</code> property      from 15 to 30. Notice that the value of <code>rect.height</code> is also      changed, from 10 to 25.      <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect:Rectangle = new Rectangle(5, 5, 10, 10);
+trace(rect.height); // 10
+trace(rect.bottom); // 15
+
+rect.bottom = 30;
+trace(rect.height); // 25
+trace(rect.bottom); // 30
+</pre></div>      <p></p>
+</div>
+<a name="bottomRight"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">bottomRight</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var bottomRight:<a href="Point.html">Point</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The location of the Rectangle object's bottom-right corner, determined by the values of the <code>x</code> and      <code>y</code> properties.           </p><p><img src ="../../images/rectangle.jpg" alt="rectangle with properties shown" /></p>           <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Point.html" target="">Point</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example sets the Rectangle object's <code>bottomRight</code> property using the      values of the Point object. Notice that <code>rect.width</code> and      <code>rect.height</code> are changed.          <div class='listing'><pre>
+import flash.geom.Rectangle;
+import flash.geom.Point;
+
+var rect:Rectangle = new Rectangle(1, 2, 4, 8);
+trace(rect.bottom);    // 10
+trace(rect.right);    // 5
+trace(rect.height);    // 8
+trace(rect.width);    // 4
+
+var myBottomRight:Point = new Point(16, 32);
+rect.bottomRight = myBottomRight;
+trace(rect.bottom);    // 32
+trace(rect.right);    // 16
+trace(rect.height);    // 30
+trace(rect.width);    // 15
+</pre></div>          <p></p>
+</div>
+<a name="height"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">height</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var height:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The height of the rectangle in pixels. Changing the <code>height</code> value of a Rectangle      object has no effect on the <code>x</code>, <code>y</code>, and      <code>width</code> properties.           </p><p><img src ="../../images/rectangle.jpg" alt="rectangle with properties shown" /></p>          <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Rectangle.html#x" target="">Rectangle.x</a>
+<br>
+<a href="Rectangle.html#y" target="">Rectangle.y</a>
+<br>
+<a href="Rectangle.html#width" target="">Rectangle.width</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a Rectangle object and changes its <code>height</code> property      from 10 to 20. Notice that <code>rect.bottom</code> is also      changed.      <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect:Rectangle = new Rectangle(5, 5, 10, 10);
+trace(rect.height); // 10
+trace(rect.bottom); // 15
+
+rect.height = 20;
+trace(rect.height); // 20
+trace(rect.bottom); // 25
+</pre></div>          <p></p>
+</div>
+<a name="left"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">left</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var left:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The <i>x</i> coordinate of the top-left corner of the rectangle. Changing      the <code>left</code> property of a Rectangle object has no effect on the <code>y</code>      and <code>height</code> properties. However it does affect the <code>width</code>      property; whereas changing the <code>x</code> value does <i>not</i> affect the      <code>width</code> property.           </p><p>The value of the <code>left</code> property is equal to the value of      the <code>x</code> property.</p>           <p><img src ="../../images/rectangle.jpg" alt="rectangle with properties shown" /></p>           <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Rectangle.html#x" target="">Rectangle.x</a>
+<br>
+<a href="Rectangle.html#y" target="">Rectangle.y</a>
+<br>
+<a href="Rectangle.html#width" target="">Rectangle.width</a>
+<br>
+<a href="Rectangle.html#height" target="">Rectangle.height</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example changes the <code>left</code> property from 0 to 10. Notice that      <code>rect.x</code> also changes, as does <code>rect.width</code>:      <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect:Rectangle = new Rectangle(0, 0, 100, 100);
+trace(rect.left);     // 0
+trace(rect.x);     // 0
+trace(rect.width);     // 100
+
+rect.left = 10;
+trace(rect.left);     // 10
+trace(rect.x);     // 10
+trace(rect.width);     // 90
+</pre></div>      <p></p>
+</div>
+<a name="right"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">right</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var right:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The sum of the <code>x</code> and      <code>width</code> properties.           </p><p><img src ="../../images/rectangle.jpg" alt="rectangle with properties shown" /></p>           <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Rectangle.html#x" target="">Rectangle.x</a>
+<br>
+<a href="Rectangle.html#width" target="">Rectangle.width</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a Rectangle object and changes its <code>right</code> property      from 15 to 30. Notice that <code>rect.width</code> also      changes.      <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect:Rectangle = new Rectangle(5, 5, 10, 10);
+trace(rect.width); // 10
+trace(rect.right); // 15
+
+rect.right = 30;
+trace(rect.width); // 25
+trace(rect.right); // 30
+</pre></div>      <p></p>
+</div>
+<a name="size"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">size</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var size:<a href="Point.html">Point</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The size of the Rectangle object, expressed as a Point object with the values      of the <code>width</code> and <code>height</code> properties.           </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Point.html" target="">Point</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a Rectangle object, retrieves its size (<code>size</code>),      changes its size (<code>size</code>), and sets the new values on the Rectangle object.      It is important to remember that the <code>Point</code> object used by the <code>size</code> property      uses <i>x</i> and <i>y</i> values to represent the <code>width</code> and <code>height</code> properties      of the Rectangle object.      <div class='listing'><pre>
+import flash.geom.Rectangle;
+import flash.geom.Point;
+
+var rect:Rectangle = new Rectangle(1, 2, 4, 8);
+var size:Point = rect.size;
+trace(size.x); // 4;
+trace(size.y); // 8;
+
+size.x = 16;
+size.y = 32;
+rect.size = size;
+trace(rect.x); // 1
+trace(rect.y); // 2
+trace(rect.width); // 16
+trace(rect.height); // 32
+</pre></div>     <p></p>
+</div>
+<a name="top"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">top</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var top:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The <i>y</i> coordinate of the top-left corner of the rectangle. Changing      the <code>top</code> property of a Rectangle object has no effect on the <code>x</code>      and <code>width</code> properties. However it does affect the <code>height</code>      property; whereas changing the <code>y</code> value does <i>not</i> affect the      <code>height</code> property.           </p><p>The value of the <code>top</code> property is equal to the value of the <code>y</code> property.</p>           <p><img src ="../../images/rectangle.jpg" alt="rectangle with properties shown" /></p>           <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Rectangle.html#x" target="">Rectangle.x</a>
+<br>
+<a href="Rectangle.html#y" target="">Rectangle.y</a>
+<br>
+<a href="Rectangle.html#width" target="">Rectangle.width</a>
+<br>
+<a href="Rectangle.html#height" target="">Rectangle.height</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>This example changes the value of the <code>top</code> property from 0 to 10. Notice that      <code>rect.y</code> also changes, as does <code>rect.height</code>:      <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect:Rectangle = new Rectangle(0, 0, 100, 100);
+trace(rect.top);     // 0
+trace(rect.y);     // 0
+trace(rect.height);     // 100
+
+
+rect.top = 10;
+trace(rect.top);    // 10
+trace(rect.y);    // 10
+trace(rect.height);    // 90
+</pre></div>      <p></p>
+</div>
+<a name="topLeft"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">topLeft</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var topLeft:<a href="Point.html">Point</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The location of the Rectangle object's top-left corner determined by the <i>x</i> and      <i>y</i> values of the point.           </p><p><img src ="../../images/rectangle.jpg" alt="rectangle with properties shown" /></p>           <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Point.html" target="">Point</a>
+<br>
+<a href="#x" target="">x</a>
+<br>
+<a href="#y" target="">y</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example sets the Rectangle object's <code>topLeft</code> property using the      values in a Point object. Notice that <code>rect.x</code> and      <code>rect.y</code> are changed.      <div class='listing'><pre>
+import flash.geom.Rectangle;
+import flash.geom.Point;
+
+var rect:Rectangle = new Rectangle();
+trace(rect.left);    // 0
+trace(rect.top);    // 0
+trace(rect.x);    // 0
+trace(rect.y);    // 0
+
+var myTopLeft:Point = new Point(5, 15);
+rect.topLeft = myTopLeft;
+trace(rect.left);    // 5
+trace(rect.top);    // 15
+trace(rect.x);    // 5
+trace(rect.y);    // 15
+</pre></div>          <p></p>
+</div>
+<a name="width"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">width</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var width:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The width of the rectangle in pixels. Changing the value of the <code>width</code> property of a Rectangle object      has no effect on the <code>x</code>, <code>y</code>, and <code>height</code>      properties.           </p><p><img src ="../../images/rectangle.jpg" alt="rectangle with properties shown" /></p>           <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Rectangle.html#x" target="">Rectangle.x</a>
+<br>
+<a href="Rectangle.html#y" target="">Rectangle.y</a>
+<br>
+<a href="Rectangle.html#height" target="">Rectangle.height</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a Rectangle object and change its <code>width</code> property      from 10 to 20. Notice that <code>rect.right</code> also      changes.          <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect:Rectangle = new Rectangle(5, 5, 10, 10);
+trace(rect.width); // 10
+trace(rect.right); // 15
+
+rect.width = 20;
+trace(rect.width); // 20
+trace(rect.right); // 25
+</pre></div>      <p></p>
+</div>
+<a name="x"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">x</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var x:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The <i>x</i> coordinate of the top-left corner of the rectangle. Changing      the value of the <i>x</i> property of a Rectangle object has no effect on the      <code>y</code>,      <code>width</code>, and <code>height</code> properties.           The <i>x</i> coordinate of the top-left corner of the rectangle. Changing      the <code>left</code> property of a Rectangle object has no effect on the <code>y</code>      and <code>height</code> properties; however, it does affect the <code>width</code>      property, whereas changing the <code>x</code> value does <i>not</i> affect the      <code>width</code> property.           </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Rectangle.html#left" target="">Rectangle.left</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates an empty Rectangle and sets its <code>x</code> property      to 10. Notice that <code>rect.left</code> is also changed.          <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect:Rectangle = new Rectangle();
+trace(rect.x);     // 0
+trace(rect.left); // 0
+
+rect.x = 10;
+trace(rect.x);     // 10
+trace(rect.left); // 10
+</pre></div>      <p></p>
+</div>
+<a name="y"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">y</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var y:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The <i>y</i> coordinate of the top-left corner of the rectangle. Changing      the value of the <code>y</code> property of a Rectangle object has no effect on the      <code>x</code>,      <code>width</code>, and <code>height</code> properties.           </p><p>The value of the <code>y</code> property is equal to the value of      the <code>top</code> property.</p>           <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Rectangle.html#x" target="">Rectangle.x</a>
+<br>
+<a href="Rectangle.html#width" target="">Rectangle.width</a>
+<br>
+<a href="Rectangle.html#height" target="">Rectangle.height</a>
+<br>
+<a href="Rectangle.html#top" target="">Rectangle.top</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates an empty Rectangle and sets its <code>y</code> property      to 10. Notice that <code>rect.top</code> is also changed.          <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect:Rectangle = new Rectangle();
+trace(rect.y);     // 0
+trace(rect.top); // 0
+
+rect.y = 10;
+trace(rect.y);     // 10
+trace(rect.top); // 10
+</pre></div>      <p></p>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="Rectangle()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">Rectangle</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function Rectangle(x:<a href="../../Number.html">Number</a>, y:<a href="../../Number.html">Number</a>, width:<a href="../../Number.html">Number</a>, height:<a href="../../Number.html">Number</a>)</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Creates a new Rectangle object whose top-left corner is specified by the <code>x</code>      and <code>y</code> parameters. If you call this constructor function without parameters,      a rectangle with <code>x</code>, <code>y</code>, <code>width</code>, and <code>height</code>      properties set to 0 is created.           </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="../../Number.html">Number</a></code> &mdash; The <i>x</i> coordinate of the top-left corner of the rectangle.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:<a href="../../Number.html">Number</a></code> &mdash; The <i>y</i> coordinate of the top-left corner of the rectangle.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">width</span>:<a href="../../Number.html">Number</a></code> &mdash; The width of the rectangle in pixels.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">height</span>:<a href="../../Number.html">Number</a></code> &mdash; The height of the rectangle in pixels.           </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Rectangle.html#x" target="">Rectangle.x</a>
+<br>
+<a href="Rectangle.html#y" target="">Rectangle.y</a>
+<br>
+<a href="Rectangle.html#width" target="">Rectangle.width</a>
+<br>
+<a href="Rectangle.html#height" target="">Rectangle.height</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a Rectangle object with the specified parameters.          <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect:Rectangle = new Rectangle(5, 10, 50, 100);
+trace(rect.toString()); // (x=5, y=10, w=50, h=100)
+</pre></div>          <p></p>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="clone()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clone</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clone():<a href="Rectangle.html">Rectangle</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Returns a new Rectangle object with the same values for the <code>x</code>, <code>y</code>,      <code>width</code>, and <code>height</code> properties as the original Rectangle object.           </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Rectangle.html">Rectangle</a></code> &mdash; 
+A new Rectangle object with the same values for the <code>x</code>, <code>y</code>,      <code>width</code>, and <code>height</code> properties as the original Rectangle object.           
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Rectangle.html#x" target="">Rectangle.x</a>
+<br>
+<a href="Rectangle.html#y" target="">Rectangle.y</a>
+<br>
+<a href="Rectangle.html#width" target="">Rectangle.width</a>
+<br>
+<a href="Rectangle.html#height" target="">Rectangle.height</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates three Rectangle objects and compares them.  <code>rect_1</code>      is created using the Rectangle constructor.  <code>rect_2</code> is created by setting it equal to      <code>rect_1</code>.  And, <code>clonedRect</code> is created by cloning <code>rect_1</code>.  Notice      that while <code>rect_2</code> evaluates as being equal to <code>rect_1</code>, <code>clonedRect</code>,      even though it contains the same values as <code>rect_1</code>, does not.      <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect_1:Rectangle = new Rectangle(1, 2, 4, 8);
+var rect_2:Rectangle = rect_1;
+var clonedRect:Rectangle = rect_1.clone();
+
+trace(rect_1 == rect_2);        // true
+trace(rect_1 == clonedFilter);    // false
+
+for(var i in rect_1) {
+    trace(">> " + i + ": " + rect_1[i]);
+    >> toString: [type Function]
+    >> equals: [type Function]
+    >> union: [type Function]
+    >> intersects: [type Function]
+    >> intersection: [type Function]
+    >> containsRectangle: [type Function]
+    >> containsPoint: [type Function]
+    >> contains: [type Function]
+    >> offsetPoint: [type Function]
+    >> offset: [type Function]
+    >> inflatePoint: [type Function]
+    >> inflate: [type Function]
+    >> size: (x=4, y=8)
+    >> bottomRight: (x=5, y=10)
+    >> topLeft: (x=1, y=2)
+    >> bottom: 10
+    >> top: 2
+    >> right: 5
+    >> left: 1
+    >> isEmpty: [type Function]
+    >> setEmpty: [type Function]
+    >> clone: [type Function]
+    >> height: 8
+    >> width: 4
+    >> y: 2
+    >> x: 1
+}
+
+for(var i in clonedRect) {
+    trace(">> " + i + ": " + clonedRect[i]);
+    >> toString: [type Function]
+    >> equals: [type Function]
+    >> union: [type Function]
+    >> intersects: [type Function]
+    >> intersection: [type Function]
+    >> containsRectangle: [type Function]
+    >> containsPoint: [type Function]
+    >> contains: [type Function]
+    >> offsetPoint: [type Function]
+    >> offset: [type Function]
+    >> inflatePoint: [type Function]
+    >> inflate: [type Function]
+    >> size: (x=4, y=8)
+    >> bottomRight: (x=5, y=10)
+    >> topLeft: (x=1, y=2)
+    >> bottom: 10
+    >> top: 2
+    >> right: 5
+    >> left: 1
+    >> isEmpty: [type Function]
+    >> setEmpty: [type Function]
+    >> clone: [type Function]
+    >> height: 8
+    >> width: 4
+    >> y: 2
+    >> x: 1
+}
+</pre></div>      To further demonstrate the relationships between <code>rect_1</code>, <code>rect_2</code>, and <code>clonedRect</code>      the example below modifies the <code>x</code> property of <code>rect_1</code>.  Modifying <code>x</code> demonstrates      that the <code>clone()</code> method creates a new instance based on values of the <code>rect_1</code> instead of pointing to      them in reference.      <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect_1:Rectangle = new Rectangle(1, 2, 4, 8);
+var rect_2:Rectangle = rect_1;
+var clonedRect:Rectangle = rect_1.clone();
+
+trace(rect_1.x);            // 1
+trace(rect_2.x);            // 1
+trace(clonedRect.x);        // 1
+
+rect_1.x = 10;
+
+trace(rect_1.x);            // 10
+trace(rect_2.x);            // 10
+trace(clonedRect.x);        // 1
+</pre></div>     <p></p>
+</div>
+<a name="contains()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">contains</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function contains(x:<a href="../../Number.html">Number</a>, y:<a href="../../Number.html">Number</a>):<a href="../../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Determines whether the specified point is contained within the rectangular region defined      by this Rectangle object.           </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="../../Number.html">Number</a></code> &mdash; The <i>x</i>-value (horizontal position) of the point.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:<a href="../../Number.html">Number</a></code> &mdash; The <i>y</i>-value (vertical position) of the point.      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; 
+If the specified point is contained in the Rectangle object, returns <code>true</code>;      otherwise <code>false</code>.           
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Point.html" target="">Point</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a Rectangle object and tests whether each      of three coordinate pairs falls within its boundaries.          <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect:Rectangle = new Rectangle(10, 10, 50, 50);
+trace(rect.contains(59, 59));    // true
+trace(rect.contains(10, 10));    // true
+trace(rect.contains(60, 60));    // false
+</pre></div>          <p></p>
+</div>
+<a name="containsPoint()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">containsPoint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function containsPoint(pt:<a href="Point.html">Point</a>):<a href="../../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Determines whether the specified point is contained within the rectangular region defined      by this Rectangle object. This method is similar to the <code>Rectangle.contains()</code> method,      except that it takes a Point object as a parameter.           </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">pt</span>:<a href="Point.html">Point</a></code> &mdash; The point, as represented by its <i>x</i>,<i>y</i> values.      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; 
+If the specified point is contained within this Rectangle object, returns      <code>true</code>; otherwise <code>false</code>.           
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Rectangle.html#contains()" target="">Rectangle.contains()</a>
+<br>
+<a href="Point.html" target="">Point</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a Rectangle object and three Point objects,      and tests whether each of the points falls within the boundaries of the rectangle.             <div class='listing'><pre>
+import flash.geom.Rectangle;
+import flash.geom.Point;
+
+var rect:Rectangle = new Rectangle(10, 10, 50, 50);
+trace(rect.containsPoint(new Point(10, 10)));    // true
+trace(rect.containsPoint(new Point(59, 59)));    // true
+trace(rect.containsPoint(new Point(60, 60)));    // false
+</pre></div>          <p></p>
+</div>
+<a name="containsRectangle()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">containsRectangle</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function containsRectangle(rect:<a href="Rectangle.html">Rectangle</a>):<a href="../../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Determines whether the Rectangle object specified by the <code>rect</code> parameter is contained      within this Rectangle object. A Rectangle object is said to contain another if the second      Rectangle object falls entirely within the boundaries of the first.           </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">rect</span>:<a href="Rectangle.html">Rectangle</a></code> &mdash; The Rectangle object being checked.           </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; 
+If the Rectangle object that you specify is contained by this Rectangle object, returns      <code>true</code>; otherwise <code>false</code>.      
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates four new Rectangle objects and determines whether rectangle A contains rectangle B, C, or D.          <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rectA:Rectangle = new Rectangle(10, 10, 50, 50);
+var rectB:Rectangle = new Rectangle(10, 10, 50, 50);
+var rectC:Rectangle = new Rectangle(10, 10, 51, 51);
+var rectD:Rectangle = new Rectangle(15, 15, 45, 45);
+
+trace(rectA.containsRectangle(rectB)); // true
+trace(rectA.containsRectangle(rectC)); // false
+trace(rectA.containsRectangle(rectD)); // true
+</pre></div>          <p></p>
+</div>
+<a name="equals()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">equals</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function equals(toCompare:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Determines whether the object specified in the <code>toCompare</code> parameter is      equal to this Rectangle object. This method compares the <code>x</code>, <code>y</code>,      <code>width</code>, and <code>height</code> properties of an object against the same properties of this Rectangle object.          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">toCompare</span>:<a href="../../Object.html">Object</a></code> &mdash; The rectangle to compare to this Rectangle object.          </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; 
+If the object has exactly the same values for the      <code>x</code>, <code>y</code>, <code>width</code>, and <code>height</code> properties      as this Rectangle object, returns <code>true</code>; otherwise <code>false</code>.           
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Rectangle.html#x" target="">Rectangle.x</a>
+<br>
+<a href="Rectangle.html#y" target="">Rectangle.y</a>
+<br>
+<a href="Rectangle.html#width" target="">Rectangle.width</a>
+<br>
+<a href="Rectangle.html#height" target="">Rectangle.height</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>In the following example, <code>rect_1</code> and <code>rect_2</code> are equal, but <code>rect_3</code>      is not equal to the other two objects because its <code>x</code>, <code>y</code>, <code>width</code>, and <code>height</code>      properties are not equal to those of <code>rect_1</code> and <code>rect_2</code>.          <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect_1:Rectangle = new Rectangle(0, 0, 50, 100);
+var rect_2:Rectangle = new Rectangle(0, 0, 50, 100);
+var rect_3:Rectangle = new Rectangle(10, 10, 60, 110);
+
+trace(rect_1.equals(rect_2)); // true;
+trace(rect_1.equals(rect_3)); // false;
+</pre></div>          <p></p>Even though the method signature expects only an abstract object,      only other Rectangle instances are treated as equal.          <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect_1:Rectangle = new Rectangle(0, 0, 50, 100);
+var nonRect:Object = new Object();
+nonRect.x = 0;
+nonRect.y = 0;
+nonRect.width = 50;
+nonRect.height = 100;
+trace(rect_1.equals(nonRect));
+</pre></div>          <p></p>
+</div>
+<a name="inflate()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">inflate</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function inflate(dx:<a href="../../Number.html">Number</a>, dy:<a href="../../Number.html">Number</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Increases the size of the Rectangle object by the specified amounts. The center point of the      Rectangle object stays the same, and its size increases to the left and right by the      <code>dx</code> value, and to the top and the bottom by the <code>dy</code> value.           </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">dx</span>:<a href="../../Number.html">Number</a></code> &mdash; The value to be added to the left and the right of the Rectangle object. The following      equation is used to calculate the new width and position of the rectangle:           <div class='listing'><pre>
+x -= dx;
+width += 2 * dx;
+</pre></div>           </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">dy</span>:<a href="../../Number.html">Number</a></code> &mdash; The value to be added to the top and the bottom of the Rectangle object. The      following equation is used to calculate the new height and position of the rectangle.           <div class='listing'><pre>
+y -= dy;
+height += 2 * dy;
+</pre></div>           </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Rectangle.html#x" target="">Rectangle.x</a>
+<br>
+<a href="Rectangle.html#y" target="">Rectangle.y</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a Rectangle object and increases the value of its <code>width</code> property by 16 * 2 (32) and of its <code>height</code> property by 32 * 2 (64)          <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect:Rectangle = new Rectangle(1, 2, 4, 8);
+trace(rect.toString()); // (x=1, y=2, w=4, h=8)
+
+rect.inflate(16, 32);
+trace(rect.toString()); // (x=-15, y=-30, w=36, h=72)    
+</pre></div>      <p></p>
+</div>
+<a name="inflatePoint()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">inflatePoint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function inflatePoint(pt:<a href="Point.html">Point</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Increases the size of the Rectangle object.      This method is similar to the <code>Rectangle.inflate()</code> method,      except that it takes a Point object as a parameter.          </p><p>The following two code examples give the same result:</p>           <div class='listing'><pre>
+rect1 = new flash.geom.Rectangle(0,0,2,5);
+rect1.inflate(2,2)
+</pre></div>           <div class='listing'><pre>
+rect1 = new flash.geom.Rectangle(0,0,2,5);
+pt1 = new flash.geom.Point(2,2);
+rect1.inflatePoint(pt1)
+</pre></div>           <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">pt</span>:<a href="Point.html">Point</a></code> &mdash; Increases the rectangle by the <i>x</i> and <i>y</i> coordinate values of the point.           </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Point.html" target="">Point</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a Rectangle object and inflates it by the <i>x</i> (horizontal) and <i>y</i> (vertical) amounts found in a point.          <div class='listing'><pre>
+import flash.geom.Rectangle;
+import flash.geom.Point;
+
+var rect:Rectangle = new Rectangle(0, 0, 2, 5);
+trace(rect.toString()); // (x=0, y=0, w=2, h=5
+
+var myPoint:Point = new Point(2, 2);
+rect.inflatePoint(myPoint);
+trace(rect.toString()); // (x=-2, y=-2, w=6, h=9)
+</pre></div>           <p></p>
+</div>
+<a name="intersection()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">intersection</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function intersection(toIntersect:<a href="Rectangle.html">Rectangle</a>):<a href="Rectangle.html">Rectangle</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>If the Rectangle object specified in the <code>toIntersect</code> parameter intersects with this Rectangle object, the <code>      intersection()</code> method returns the area of intersection as a Rectangle object. If the rectangles do not intersect,      this method returns an empty Rectangle object with its      properties set to 0.          </p><p><img src ="../../images/rectangle_union.jpg" alt="rectangles showing intersection" /></p>           <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">toIntersect</span>:<a href="Rectangle.html">Rectangle</a></code> &mdash; The Rectangle object to compare against to see if it intersects with      this Rectangle object.          </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Rectangle.html">Rectangle</a></code> &mdash; 
+A Rectangle object that equals the area of intersection. If the rectangles do not      intersect, this method returns an empty Rectangle object; that is, a rectangle with its <code>x</code>,      <code>y</code>, <code>width</code>, and <code>height</code> properties set to 0.      
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example determines the area where <code>rect_1</code> intersects <code>rect_2</code>.          <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect_1:Rectangle = new Rectangle(0, 0, 50, 50);
+var rect_2:Rectangle = new Rectangle(25, 25, 100, 100);
+var intersectingArea:Rectangle = rect_1.intersection(rect_2);
+trace(intersectingArea.toString()); // (x=25, y=25, w=25, h=25)
+</pre></div>          <p></p>
+</div>
+<a name="intersects()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">intersects</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function intersects(toIntersect:<a href="Rectangle.html">Rectangle</a>):<a href="../../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Determines whether the object specified in the <code>toIntersect</code> parameter intersects      with this Rectangle object. This method checks the <code>x</code>, <code>y</code>,      <code>width</code>, and <code>height</code> properties of the specified Rectangle object to see      if it intersects with this Rectangle object.          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">toIntersect</span>:<a href="Rectangle.html">Rectangle</a></code> &mdash; The Rectangle object to compare against this Rectangle object.          </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; 
+If the specified object intersects with this Rectangle object, returns <code>true</code>;      otherwise <code>false</code>.           
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Rectangle.html#x" target="">Rectangle.x</a>
+<br>
+<a href="Rectangle.html#y" target="">Rectangle.y</a>
+<br>
+<a href="Rectangle.html#width" target="">Rectangle.width</a>
+<br>
+<a href="Rectangle.html#height" target="">Rectangle.height</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example determines whether <code>rectA</code> intersects with <code>rectB</code> or <code>rectC</code>.          <div class='listing'><pre>
+import flash.geom.Rectangle;
+var rectA:Rectangle = new Rectangle(10, 10, 50, 50);
+var rectB:Rectangle = new Rectangle(59, 59, 50, 50);
+var rectC:Rectangle = new Rectangle(60, 60, 50, 50);
+var rectAIntersectsB:Boolean = rectA.intersects(rectB);
+var rectAIntersectsC:Boolean = rectA.intersects(rectC);
+trace(rectAIntersectsB); // true
+trace(rectAIntersectsC); // false
+
+var firstPixel:Rectangle = new Rectangle(0, 0, 1, 1);
+var adjacentPixel:Rectangle = new Rectangle(1, 1, 1, 1);
+var pixelsIntersect:Boolean = firstPixel.intersects(adjacentPixel);
+trace(pixelsIntersect); // false
+</pre></div>          <p></p>
+</div>
+<a name="isEmpty()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">isEmpty</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function isEmpty():<a href="../../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Determines whether or not this Rectangle object is empty.           </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; 
+If the Rectangle object's width or height is less than      or equal to 0, returns <code>true</code>; otherwise <code>false</code>.           
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates an empty Rectangle object and verifies that it is empty.          <div class='listing'><pre>
+import flash.geom.*;
+var rect:Rectangle = new Rectangle(1, 2, 0, 0);
+trace(rect.toString()); // (x=1, y=2, w=0, h=0)
+trace(rect.isEmpty()); // true
+</pre></div>          <p></p>The following example creates a non-empty Rectangle and makes it become empty.          <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect:Rectangle = new Rectangle(1, 2, 4, 8);
+trace(rect.isEmpty()); // false
+rect.width = 0;
+trace(rect.isEmpty()); // true
+rect.width = 4;
+trace(rect.isEmpty()); // false
+rect.height = 0;
+trace(rect.isEmpty()); // true
+</pre></div>      <p></p>
+</div>
+<a name="offset()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">offset</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function offset(dx:<a href="../../Number.html">Number</a>, dy:<a href="../../Number.html">Number</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Adjusts the location of the Rectangle object, as determined by its top-left corner,      by the specified amounts.           </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">dx</span>:<a href="../../Number.html">Number</a></code> &mdash; Moves the <i>x</i> value of the Rectangle object by this amount.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">dy</span>:<a href="../../Number.html">Number</a></code> &mdash; Moves the <i>y</i> value of the Rectangle object by this amount.           </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a Rectangle object and offsets its <i>x</i> and <i>y</i> values by 5 and 10 respectively          <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect:Rectangle = new Rectangle(1, 2, 4, 8);
+trace(rect.toString()); // (x=1, y=2, w=4, h=8)
+
+rect.offset(16, 32);
+trace(rect.toString()); // (x=17, y=34, w=4, h=8)
+</pre></div>      <p></p>
+</div>
+<a name="offsetPoint()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">offsetPoint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function offsetPoint(pt:<a href="Point.html">Point</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Adjusts the location of the Rectangle object using a Point object as a parameter.      This method is similar to the <code>Rectangle.offset()</code> method, except that it takes a Point      object as a parameter.           </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">pt</span>:<a href="Point.html">Point</a></code> &mdash; A Point object to use to offset this Rectangle object.           </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Point.html" target="">Point</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example offsets a Rectangle by using the values found in a point.          <div class='listing'><pre>
+import flash.geom.Rectangle;
+import flash.geom.Point;
+    
+var rect:Rectangle = new Rectangle(1, 2, 4, 8);
+trace(rect.toString()); // (x=1, y=2, w=4, h=8)
+
+var myPoint:Point = new Point(16, 32);
+rect.offsetPoint(myPoint);
+trace(rect.toString()); // (x=17, y=34, w=4, h=8)
+</pre></div>          <p></p>
+</div>
+<a name="setEmpty()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setEmpty</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setEmpty():Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Sets all of the Rectangle object's properties to 0. A Rectangle object is empty if its width or      height is less than or equal to 0.      </p><p> This method sets the values of the <code>x</code>, <code>y</code>,      <code>width</code>, and <code>height</code> properties to 0.</p>          <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Rectangle.html#x" target="">Rectangle.x</a>
+<br>
+<a href="Rectangle.html#y" target="">Rectangle.y</a>
+<br>
+<a href="Rectangle.html#width" target="">Rectangle.width</a>
+<br>
+<a href="Rectangle.html#height" target="">Rectangle.height</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a non-empty Rectangle object and makes it empty.          <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect:Rectangle = new Rectangle(5, 10, 50, 100);
+trace(rect.isEmpty()); // false
+rect.setEmpty();
+trace(rect.isEmpty()); // true
+</pre></div>      <p></p>
+</div>
+<a name="toString()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function toString():<a href="../../String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Builds and returns a string that lists the horizontal and vertical positions      and the width and height of the Rectangle object.          </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; 
+A string that lists the value of each of the following properties of the Rectangle object: <code>x</code>, <code>y</code>, <code>width</code>, and <code>height</code>.           
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Rectangle.html#x" target="">Rectangle.x</a>
+<br>
+<a href="Rectangle.html#y" target="">Rectangle.y</a>
+<br>
+<a href="Rectangle.html#width" target="">Rectangle.width</a>
+<br>
+<a href="Rectangle.html#height" target="">Rectangle.height</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example concatenates a string representation of <code>rect_1</code> with some helpful      debugging text.           <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect_1:Rectangle = new Rectangle(0, 0, 50, 100);
+trace("Rectangle 1 : " + rect_1.toString()); // Rectangle 1 : (x=0, y=0, w=50, h=100)
+</pre></div>          <p></p>
+</div>
+<a name="union()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">union</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function union(toUnion:<a href="Rectangle.html">Rectangle</a>):<a href="Rectangle.html">Rectangle</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Adds two rectangles together to create a new Rectangle object, by      filling in the horizontal and vertical space between the two rectangles.          </p><p><img src ="../../images/rectangle_union.jpg" alt="rectangle with union shown" /></p>          <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">toUnion</span>:<a href="Rectangle.html">Rectangle</a></code> &mdash; A Rectangle object to add to this Rectangle object.          </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Rectangle.html">Rectangle</a></code> &mdash; 
+A new Rectangle object that is the union of the two rectangles.           
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a Rectangle object out of the union of two others.      <p>For example, consider a rectangle with properties <code>x=20</code>, <code>y=50</code>, <code>width=60</code>, and      <code>height=30</code> (20, 50, 60, 30), and a second rectangle with properties (150, 130, 50, 30).      The union of these two rectangles is a larger rectangle that encompasses the two rectangles      with the properties (20, 50, 180, 110).</p>      <div class='listing'><pre>
+import flash.geom.Rectangle;
+
+var rect_1:Rectangle = new Rectangle(20, 50, 60, 30);
+var rect_2:Rectangle = new Rectangle(150, 130, 50, 30);
+var combined:Rectangle = rect_1.union(rect_2);
+trace(combined.toString()); // (x=20, y=50, w=180, h=110)
+</pre></div>           <p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

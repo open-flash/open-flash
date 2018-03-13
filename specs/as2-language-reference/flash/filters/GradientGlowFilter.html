@@ -1,0 +1,998 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="GradientGlowFilter,flash.filters.GradientGlowFilter,alphas,angle,blurX,blurY,colors,distance,knockout,quality,ratios,strength,type,clone" name="keywords">
+<title>flash.filters.GradientGlowFilter</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'GradientGlowFilter - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="../../language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="../../appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="../../index.html?flash/filters/GradientGlowFilter.html&amp;flash/filters/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;GradientGlowFilter</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class GradientGlowFilter"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">flash.filters</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class GradientGlowFilter</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">GradientGlowFilter <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../images/inherit-arrow.gif"> <a href="BitmapFilter.html">BitmapFilter</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../images/inherit-arrow.gif"> <a href="../../Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p>
+<p></p>The GradientGlowFilter class lets you apply a gradient glow effect to a variety of   objects in Flash. A gradient glow is a realistic-looking glow with a color gradient that   you can control. You can apply a gradient glow around   the inner or outer edge of an object or on top of an object.    <p>The use of filters depends on the object to which you apply the filter:</p>     <ul><li>To apply filters to movie clips, text fields, and buttons at runtime, use the   <code>filters</code> property. Setting the <code>filters</code> property of an object   does not modify the object, and you can undo the filter by clearing the <code>filters</code> property. </li>     <li>To apply filters to BitmapData instances, use the <code>BitmapData.applyFilter()</code> method.   Calling <code>applyFilter()</code> on a BitmapData object takes the source BitmapData object   and the filter object and generates a filtered image as a result.</li>   </ul>    <p>You can also apply filter effects to images and video during authoring.   For more information, see your authoring documentation.</p>     <p>If you apply a filter to a movie clip or button, the <code>cacheAsBitmap</code> property of the   movie clip or button is set to <code>true</code>. If you clear all filters, the original value of   <code>cacheAsBitmap</code> is restored.</p>    <p>This filter supports Stage scaling. However, it does not support general scaling, rotation,   and skewing; if the object itself is scaled (if <code>_xscale</code> and <code>_yscale</code> are not  100%), the   filter effect is not scaled. It is scaled only when the Stage is zoomed.</p>     <p>A filter is not applied if the resulting image exceeds 2880 pixels in width or height.   For example, if you zoom in on a large movie clip with a filter applied, the filter is   turned off if the resulting image exceeds the limit of 2880 pixels.</p>    <p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#ratios" target="">GradientGlowFilter.ratios</a>
+<br>
+<a href="../display/BitmapData.html#applyFilter()" target="">BitmapData.applyFilter()</a>
+<br>
+<a href="../../Button.html#cacheAsBitmap" target="">Button.cacheAsBitmap</a>
+<br>
+<a href="../../Button.html#filters" target="">Button.filters</a>
+<br>
+<a href="GlowFilter.html" target="">GlowFilter class</a>
+<br>
+<a href="../../MovieClip.html#cacheAsBitmap" target="">MovieClip.cacheAsBitmap</a>
+<br>
+<a href="../../MovieClip.html#filters" target="">MovieClip.filters</a>
+<br>
+<a href="../../TextField.html#filters" target="">TextField.filters</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#alphas">alphas</a> : <a href="../../Array.html">Array</a>
+<div class="summaryTableDescription">An array of alpha transparency values for the corresponding colors in the <code>colors</code> array.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#angle">angle</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The angle, in degrees.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#blurX">blurX</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The amount of horizontal blur.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#blurY">blurY</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The amount of vertical blur.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#colors">colors</a> : <a href="../../Array.html">Array</a>
+<div class="summaryTableDescription">An array of colors that defines a gradient.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#distance">distance</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The offset distance of the glow.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#knockout">knockout</a> : <a href="../../Boolean.html">Boolean</a>
+<div class="summaryTableDescription">Specifies whether the object has a knockout effect.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#quality">quality</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The number of times to apply the filter.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ratios">ratios</a> : <a href="../../Array.html">Array</a>
+<div class="summaryTableDescription">An array of color distribution ratios for the corresponding colors in the <code>colors</code> array.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#strength">strength</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The strength of the imprint or spread.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#type">type</a> : <a href="../../String.html">String</a>
+<div class="summaryTableDescription">The placement of the filter effect.</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="../../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../../Object.html#__proto__">__proto__</a>, <a href="../../Object.html#__resolve">__resolve</a>, <a href="../../Object.html#constructor">constructor</a>, <a href="../../Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#GradientGlowFilter()">GradientGlowFilter</a>([distance:<a href="../../Number.html">Number</a>], [angle:<a href="../../Number.html">Number</a>], [colors:<a href="../../Array.html">Array</a>], [alphas:<a href="../../Array.html">Array</a>], [ratios:<a href="../../Array.html">Array</a>], [blurX:<a href="../../Number.html">Number</a>], [blurY:<a href="../../Number.html">Number</a>], [strength:<a href="../../Number.html">Number</a>], [quality:<a href="../../Number.html">Number</a>], [type:<a href="../../String.html">String</a>], [knockout:<a href="../../Boolean.html">Boolean</a>])</div>
+<div class="summaryTableDescription">Initializes the filter with the specified parameters.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clone()">clone</a>():<a href="GradientGlowFilter.html">GradientGlowFilter</a>
+</div>
+<div class="summaryTableDescription">Returns a copy of this filter object.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromBitmapFilter"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="BitmapFilter.html">BitmapFilter</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="BitmapFilter.html#clone()">clone</a></code></td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="../../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../../Object.html#addProperty()">addProperty</a>, <a href="../../Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="../../Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="../../Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="../../Object.html#registerClass()">registerClass</a>, <a href="../../Object.html#toString()">toString</a>, <a href="../../Object.html#unwatch()">unwatch</a>, <a href="../../Object.html#valueOf()">valueOf</a>, <a href="../../Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="alphas"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">alphas</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var alphas:<a href="../../Array.html">Array</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>An array of alpha transparency values for the corresponding colors in      the <code>colors</code> array. Valid values for each element in the array are 0 to 1.      For example, .25 sets the alpha transparency value to 25%.          </p><p>The <code>alphas</code> property cannot be changed by directly modifying its values.      Instead, you must get a reference to <code>alphas</code>, make the change to the      reference, and then set <code>alphas</code> to the reference.</p>          <p>The <code>colors</code>, <code>alphas</code>, and <code>ratios</code> properties are all related.      The first element in the <code>colors</code> array      corresponds to the first element in the <code>alphas</code> array      and in the <code>ratios</code> array, and so on.</p>           <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#colors" target="">GradientGlowFilter.colors</a>
+<br>
+<a href="#ratios" target="">GradientGlowFilter.ratios</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example changes the <code>alphas</code> property on an existing movie clip      when a user clicks it.      <div class='listing'><pre>
+import flash.filters.GradientGlowFilter;
+var mc:MovieClip = createGradientGlowRectangle("GlowAlphas");
+mc.onRelease = function() {
+    var filter:GradientGlowFilter = this.filters[0];
+    var alphas:Array = filter.alphas;
+    alphas.pop();
+    alphas.pop();
+    alphas.push(.3);
+    alphas.push(1);
+    filter.alphas = alphas;
+    this.filters = new Array(filter);
+}
+
+function createGradientGlowRectangle(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 100;
+    var h:Number = 100;
+    art.beginFill(0x003366);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+    art._x = 20;
+    art._y = 20;
+
+    var colors:Array = [0xFFFFFF, 0xFF0000, 0xFFFF00, 0x00CCFF];
+    var alphas:Array = [0, 1, 1, 1];
+    var ratios:Array = [0, 63, 126, 255];
+    var filter:GradientGlowFilter = new GradientGlowFilter(0, 45, colors, alphas, ratios, 55, 55, 2.5, 2, "outer", false);
+    var filterArray:Array = new Array();
+    filterArray.push(filter);
+    art.filters = filterArray;
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="angle"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">angle</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var angle:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The angle, in degrees. Valid values are 0 to 360. The default is 45.           </p><p>The angle value represents the angle of the theoretical light source falling on the object and      determines the placement of the effect relative to the object. If <code>distance</code> is set to 0, the effect      is not offset from the object, and therefore the <code>angle</code> property has no effect.</p>          <br>
+<span class="label">Example</span>
+<br>The following example changes the <code>angle</code> property on an existing movie clip      when a user clicks it.      <div class='listing'><pre>
+import flash.filters.GradientGlowFilter;
+var mc:MovieClip = createGradientGlowRectangle("GlowAngle");
+mc.onRelease = function() {
+    var filter:GradientGlowFilter = this.filters[0];
+    filter.distance = 50;
+    filter.angle = 90;
+    this.filters = new Array(filter);
+}
+
+function createGradientGlowRectangle(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 100;
+    var h:Number = 100;
+    art.beginFill(0x003366);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+    art._x = 20;
+    art._y = 20;
+
+    var colors:Array = [0xFFFFFF, 0xFF0000, 0xFFFF00, 0x00CCFF];
+    var alphas:Array = [0, 1, 1, 1];
+    var ratios:Array = [0, 63, 126, 255];
+    var filter:GradientGlowFilter = new GradientGlowFilter(0, 45, colors, alphas, ratios, 55, 55, 2.5, 2, "outer", false);
+    var filterArray:Array = new Array();
+    filterArray.push(filter);
+    art.filters = filterArray;
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="blurX"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">blurX</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var blurX:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The amount of horizontal blur. Valid values are 0 to 255. A blur of 1 or      less means that the original image is copied as is. The default value      is 4. Values that are a power of 2 (such as 2, 4, 8, 16, and 32) are optimized      to render more quickly than other values.      </p><br>
+<span class="label">Example</span>
+<br>The following example changes the <code>blurX</code> property on an existing movie clip      when a user clicks it.      <div class='listing'><pre>
+import flash.filters.GradientGlowFilter;
+var mc:MovieClip = createGradientGlowRectangle("GlowBlurX");
+mc.onRelease = function() {
+    var filter:GradientGlowFilter = this.filters[0];
+    filter.blurX = 255;
+    this.filters = new Array(filter);
+}
+
+function createGradientGlowRectangle(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 100;
+    var h:Number = 100;
+    art.beginFill(0x003366);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+    art._x = 20;
+    art._y = 20;
+
+    var colors:Array = [0xFFFFFF, 0xFF0000, 0xFFFF00, 0x00CCFF];
+    var alphas:Array = [0, 1, 1, 1];
+    var ratios:Array = [0, 63, 126, 255];
+    var filter:GradientGlowFilter = new GradientGlowFilter(0, 45, colors, alphas, ratios, 55, 55, 2.5, 2, "outer", false);
+    var filterArray:Array = new Array();
+    filterArray.push(filter);
+    art.filters = filterArray;
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="blurY"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">blurY</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var blurY:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The amount of vertical blur. Valid values are 0 to 255. A blur of 1 or less      means that the original image is copied as is. The default value is      4. Values that are a power of 2 (such as 2, 4, 8, 16, and 32) are optimized      to render more quickly than other values.      </p><br>
+<span class="label">Example</span>
+<br>The following example changes the <code>blurY</code> property on an existing movie clip      when a user clicks it.      <div class='listing'><pre>
+import flash.filters.GradientGlowFilter;
+var mc:MovieClip = createGradientGlowRectangle("GlowBlurY");
+mc.onRelease = function() {
+    var filter:GradientGlowFilter = this.filters[0];
+    filter.blurY = 255;
+    this.filters = new Array(filter);
+}
+
+function createGradientGlowRectangle(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 100;
+    var h:Number = 100;
+    art.beginFill(0x003366);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+    art._x = 20;
+    art._y = 20;
+
+    var colors:Array = [0xFFFFFF, 0xFF0000, 0xFFFF00, 0x00CCFF];
+    var alphas:Array = [0, 1, 1, 1];
+    var ratios:Array = [0, 63, 126, 255];
+    var filter:GradientGlowFilter = new GradientGlowFilter(0, 45, colors, alphas, ratios, 55, 55, 2.5, 2, "outer", false);
+    var filterArray:Array = new Array();
+    filterArray.push(filter);
+    art.filters = filterArray;
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="colors"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">colors</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var colors:<a href="../../Array.html">Array</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>An array of colors that defines a gradient.          For example, red is 0xFF0000, blue is 0x0000FF, and so on.          </p><p>The <code>colors</code> property cannot be changed by directly modifying its values.      Instead, you must get a reference to <code>colors</code>, make the change to the      reference, and then set <code>colors</code> to the reference.</p>          <p>The <code>colors</code>, <code>alphas</code>, and <code>ratios</code> properties are all related.      The first element in the <code>colors</code> array      corresponds to the first element in the <code>alphas</code> array      and in the <code>ratios</code> array, and so on.</p>          <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#alphas" target="">GradientGlowFilter.alphas</a>
+<br>
+<a href="#ratios" target="">GradientGlowFilter.ratios</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example changes the <code>colors</code> property on an existing movie clip      when a user clicks it.      <div class='listing'><pre>
+import flash.filters.GradientGlowFilter;
+var mc:MovieClip = createGradientGlowRectangle("GlowColors");
+mc.onRelease = function() {
+    var filter:GradientGlowFilter = this.filters[0];
+    var colors:Array = filter.colors;
+    colors.pop();
+    colors.push(0xFF00FF);
+    filter.colors = colors;
+    this.filters = new Array(filter);
+}
+
+function createGradientGlowRectangle(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 100;
+    var h:Number = 100;
+    art.beginFill(0x003366);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+    art._x = 20;
+    art._y = 20;
+
+    var colors:Array = [0xFFFFFF, 0xFF0000, 0xFFFF00, 0x00CCFF];
+    var alphas:Array = [0, 1, 1, 1];
+    var ratios:Array = [0, 63, 126, 255];
+    var filter:GradientGlowFilter = new GradientGlowFilter(0, 45, colors, alphas, ratios, 55, 55, 2.5, 2, "outer", false);
+    var filterArray:Array = new Array();
+    filterArray.push(filter);
+    art.filters = filterArray;
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="distance"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">distance</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var distance:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The offset distance of the glow. The default value is 4.      </p><br>
+<span class="label">Example</span>
+<br>The following example changes the <code>distance</code> property on an existing movie clip      when a user clicks it.      <div class='listing'><pre>
+import flash.filters.GradientGlowFilter;
+var mc:MovieClip = createGradientGlowRectangle("GlowDistance");
+mc.onRelease = function() {
+    var filter:GradientGlowFilter = this.filters[0];
+    filter.distance = 20;
+    this.filters = new Array(filter);
+}
+
+function createGradientGlowRectangle(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 100;
+    var h:Number = 100;
+    art.beginFill(0x003366);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+    art._x = 20;
+    art._y = 20;
+
+    var colors:Array = [0xFFFFFF, 0xFF0000, 0xFFFF00, 0x00CCFF];
+    var alphas:Array = [0, 1, 1, 1];
+    var ratios:Array = [0, 63, 126, 255];
+    var filter:GradientGlowFilter = new GradientGlowFilter(0, 45, colors, alphas, ratios, 55, 55, 2.5, 2, "outer", false);
+    var filterArray:Array = new Array();
+    filterArray.push(filter);
+    art.filters = filterArray;
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="knockout"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">knockout</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var knockout:<a href="../../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Specifies whether the object has a knockout effect. A knockout effect       makes the object's fill transparent and reveals the background color of the document.      The value <code>true</code> specifies a knockout effect;      the default is <code>false</code> (no knockout effect).      </p><br>
+<span class="label">Example</span>
+<br>The following example changes the <code>knockout</code> property on an existing movie clip      when a user clicks it.      <div class='listing'><pre>
+import flash.filters.GradientGlowFilter;
+var mc:MovieClip = createGradientGlowRectangle("GlowKnockout");
+mc.onRelease = function() {
+    var filter:GradientGlowFilter = this.filters[0];
+    filter.knockout = true;
+    this.filters = new Array(filter);
+}
+
+function createGradientGlowRectangle(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 100;
+    var h:Number = 100;
+    art.beginFill(0x003366);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+    art._x = 20;
+    art._y = 20;
+
+    var colors:Array = [0xFFFFFF, 0xFF0000, 0xFFFF00, 0x00CCFF];
+    var alphas:Array = [0, 1, 1, 1];
+    var ratios:Array = [0, 63, 126, 255];
+    var filter:GradientGlowFilter = new GradientGlowFilter(0, 45, colors, alphas, ratios, 55, 55, 2.5, 2, "outer", false);
+    var filterArray:Array = new Array();
+    filterArray.push(filter);
+    art.filters = filterArray;
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="quality"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">quality</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var quality:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The number of times to apply the filter. Valid values are 0 to 15. The default value is 1, which      is equivalent to low quality. A value of 2 is medium quality, and a value of 3 is high quality. Filters with lower values      are rendered more quickly.          </p><p>For most applications, a <code>quality</code> value of 1, 2, or 3 is sufficient. Although you can      use additional numeric values up to 15 to achieve different effects, higher values are rendered more      slowly. Instead of increasing the value of <code>quality</code>, you can often get a similar effect,      and with faster rendering, by simply increasing the values of <code>blurX</code> and      <code>blurY</code>.</p>          <br>
+<span class="label">Example</span>
+<br>The following example changes the <code>quality</code> property on an existing movie clip      when a user clicks it.      <div class='listing'><pre>
+import flash.filters.GradientGlowFilter;
+var mc:MovieClip = createGradientGlowRectangle("GlowQuality");
+mc.onRelease = function() {
+    var filter:GradientGlowFilter = this.filters[0];
+    filter.quality = 3;
+    this.filters = new Array(filter);
+}
+
+function createGradientGlowRectangle(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 100;
+    var h:Number = 100;
+    art.beginFill(0x003366);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+    art._x = 20;
+    art._y = 20;
+
+    var colors:Array = [0xFFFFFF, 0xFF0000, 0xFFFF00, 0x00CCFF];
+    var alphas:Array = [0, 1, 1, 1];
+    var ratios:Array = [0, 63, 126, 255];
+    var filter:GradientGlowFilter = new GradientGlowFilter(0, 45, colors, alphas, ratios, 55, 55, 2.5, 2, "outer", false);
+    var filterArray:Array = new Array();
+    filterArray.push(filter);
+    art.filters = filterArray;
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="ratios"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ratios</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var ratios:<a href="../../Array.html">Array</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>An array of color distribution ratios for the corresponding colors in the      <code>colors</code> array. Valid values are      0 to 255.          </p><p>The <code>ratios</code> property cannot be changed by directly modifying its values.      Instead, you must get a reference to <code>ratios</code>, make the change to the      reference, and then set <code>ratios</code> to the reference.</p>          <p>The <code>colors</code>, <code>alphas</code>, and <code>ratios</code> properties are all related.      The first element in the <code>colors</code> array      corresponds to the first element in the <code>alphas</code> array      and in the <code>ratios</code> array, and so on.</p>           <p>Think of the gradient glow filter as a glow that emanates from      the center of the object (if the <code>distance</code> value is set to 0),      with gradients that are stripes of color blending into each other. The first color      in the <code>colors</code> array is the outermost color of the glow.      The last color is the innermost color of the glow.</p>          <p>Each value in the <code>ratios</code> array sets      the position of the color on the radius of the gradient, where 0 represents      the outermost point of the gradient and 255 represents the innermost point of      the gradient. The ratio values can range from 0 to 255 pixels,      in increasing value; for example [0, 64, 128, 200, 255]. Values from 0 to 128      appear on the outer edges of the glow. Values from 129 to 255 appear in the inner      area of the glow. Depending on the ratio values of the colors and the <code>type</code>      value of the filter, the filter colors might be obscured by the object to which      the filter is applied.</p>          <p>In the following code and image, a filter is applied to a black circle movie      clip, with the type set to <code>"full"</code>. For instructional purposes, the first color      in the <code>colors</code> array, pink, has an <code>alpha</code> value of 1,      so it shows against the white document background. (In practice, you probably would      not want the first color showing in this way.) Note the last color in the      array, yellow, obscures the black circle to which the filter is applied:</p>          <p><pre>var colors = [0xFFCCFF, 0x0000FF, 0x9900FF, 0xFF0000, 0xFFFF00];
+     var alphas = [1, 1, 1, 1, 1];
+     var ratios = [0, 32, 64, 128, 225];
+     var myGGF = new GradientGlowFilter(0, 0, colors, alphas, ratios, 50, 50, 1, 2, "full", false);
+     </pre></p>      <p><img src="../../images/gradientGlowDiagram.jpg" alt="circle with glow filter applied" /></p>           <p>To achieve a seamless effect with your document background when you set the <code>type</code>      value to <code>"outer"</code> or <code>"full"</code>, set the first color in the      array to the same color as the document background, or set the      alpha value of the first color to 0; either technique makes the filter blend in with the background.</p>          <p>If you make two small changes in the code, the effect of the glow can be very      different, even with the same <code>ratios</code> and <code>colors</code> arrays. Set      the alpha value of the first      color in the array to 0, to make the filter blend in with the document's      white background; and set the <code>type</code> property to      <code>"outer"</code> or <code>"inner"</code>.      Observe the results, as shown in the following images.</p>      <p><img src="../../images/gradientGlowOuter.jpg" alt="circle with outer glow filter applied" />      <img src="../../images/gradientGlowInner.jpg" alt="circle with inner glow filter applied" /></p>      <p>Keep in mind that the spread of the colors in the gradient varies based on the values      of the <code>blurX</code>, <code>blurY</code>, <code>strength</code>, and <code>quality</code>      properties, as well as the <code>ratios</code> values.</p>      <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#colors" target="">GradientGlowFilter.colors</a>
+<br>
+<a href="#alphas" target="">GradientGlowFilter.alphas</a>
+<br>
+<a href="../../MovieClip.html#beginGradientFill()" target="">MovieClip.beginGradientFill()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example changes the <code>ratios</code> property on an existing movie clip      when a user clicks it.      <div class='listing'><pre>
+import flash.filters.GradientGlowFilter;
+var mc:MovieClip = createGradientGlowRectangle("GlowRatios");
+mc.onRelease = function() {
+    var filter:GradientGlowFilter = this.filters[0];
+    var ratios:Array = filter.ratios;
+    ratios.shift();
+    ratios.unshift(40);
+    filter.ratios = ratios;
+    this.filters = new Array(filter);
+}
+
+function createGradientGlowRectangle(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 100;
+    var h:Number = 100;
+    art.beginFill(0x003366);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+    art._x = 20;
+    art._y = 20;
+
+    var colors:Array = [0xFFFFFF, 0xFF0000, 0xFFFF00, 0x00CCFF];
+    var alphas:Array = [0, 1, 1, 1];
+    var ratios:Array = [0, 63, 126, 255];
+    var filter:GradientGlowFilter = new GradientGlowFilter(0, 45, colors, alphas, ratios, 55, 55, 2.5, 2, "outer", false);
+    var filterArray:Array = new Array();
+    filterArray.push(filter);
+    art.filters = filterArray;
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="strength"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">strength</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var strength:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The strength of the imprint or spread. The higher the value, the more color is imprinted      and the stronger the contrast between the glow and the background. Valid values are 0 to 255.      A value of 0 means that the filter is not applied. The default value is 1.      </p><br>
+<span class="label">Example</span>
+<br>The following example changes the <code>strength</code> property on an existing movie clip      when a user clicks it.      <div class='listing'><pre>
+import flash.filters.GradientGlowFilter;
+var mc:MovieClip = createGradientGlowRectangle("GlowStrength");
+mc.onRelease = function() {
+    var filter:GradientGlowFilter = this.filters[0];
+    filter.strength = 1;
+    this.filters = new Array(filter);
+}
+
+function createGradientGlowRectangle(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 100;
+    var h:Number = 100;
+    art.beginFill(0x003366);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+    art._x = 20;
+    art._y = 20;
+
+    var colors:Array = [0xFFFFFF, 0xFF0000, 0xFFFF00, 0x00CCFF];
+    var alphas:Array = [0, 1, 1, 1];
+    var ratios:Array = [0, 63, 126, 255];
+    var filter:GradientGlowFilter = new GradientGlowFilter(0, 45, colors, alphas, ratios, 55, 55, 2.5, 2, "outer", false);
+    var filterArray:Array = new Array();
+    filterArray.push(filter);
+    art.filters = filterArray;
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="type"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">type</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var type:<a href="../../String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The placement of the filter effect. Possible values are:      <ul><li><code>"outer"</code>: Glow on the outer edge of the object</li>      <li><code>"inner"</code>: Glow on the inner edge of the object; the default</li>      <li><code>"full"</code>: Glow on top of the object</li>      </ul>      </p><p>The default value is <code>"inner"</code>.</p>      <br>
+<span class="label">Example</span>
+<br>The following example changes the <code>type</code> property on an existing movie clip      when a user clicks it.      <div class='listing'><pre>
+import flash.filters.GradientGlowFilter;
+var mc:MovieClip = createGradientGlowRectangle("GlowType");
+mc.onRelease = function() {
+    var filter:GradientGlowFilter = this.filters[0];
+    filter.type = "inner";
+    filter.strength = 1;
+    this.filters = new Array(filter);
+}
+
+function createGradientGlowRectangle(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 100;
+    var h:Number = 100;
+    art.beginFill(0x003366);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+    art._x = 20;
+    art._y = 20;
+
+    var colors:Array = [0xFFFFFF, 0xFF0000, 0xFFFF00, 0x00CCFF];
+    var alphas:Array = [0, 1, 1, 1];
+    var ratios:Array = [0, 63, 126, 255];
+    var filter:GradientGlowFilter = new GradientGlowFilter(0, 45, colors, alphas, ratios, 55, 55, 2.5, 2, "outer", false);
+    var filterArray:Array = new Array();
+    filterArray.push(filter);
+    art.filters = filterArray;
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="GradientGlowFilter()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">GradientGlowFilter</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function GradientGlowFilter([distance:<a href="../../Number.html">Number</a>], [angle:<a href="../../Number.html">Number</a>], [colors:<a href="../../Array.html">Array</a>], [alphas:<a href="../../Array.html">Array</a>], [ratios:<a href="../../Array.html">Array</a>], [blurX:<a href="../../Number.html">Number</a>], [blurY:<a href="../../Number.html">Number</a>], [strength:<a href="../../Number.html">Number</a>], [quality:<a href="../../Number.html">Number</a>], [type:<a href="../../String.html">String</a>], [knockout:<a href="../../Boolean.html">Boolean</a>])</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Initializes the filter with the specified parameters.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">distance</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The offset distance of the glow. The default is 4.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">angle</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The angle, in degrees. Valid values are 0 to 360. The default is 45.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">colors</span>:<a href="../../Array.html">Array</a></code>&nbsp;[optional] &mdash; An array of colors that defines a gradient.          For example, red is 0xFF0000, blue is 0x0000FF, and so on.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">alphas</span>:<a href="../../Array.html">Array</a></code>&nbsp;[optional] &mdash; An array of alpha transparency values for the corresponding colors in      the <code>colors</code> array. Valid values for each element in the array are 0 to 1.      For example, a value of .25 sets the alpha transparency value to 25%.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">ratios</span>:<a href="../../Array.html">Array</a></code>&nbsp;[optional] &mdash; An array of color distribution ratios. Valid values are          0 to 255. This value defines the percentage of the width where the color          is sampled at 100 percent.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">blurX</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The amount of horizontal blur. Valid values are 0 to 255. A blur of 1 or          less means that the original image is copied as is. The default value      is 4. Values that are a power of 2 (such as 2, 4, 8, 16 and 32) are optimized      to render more quickly than other values.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">blurY</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The amount of vertical blur. Valid values are 0 to 255. A blur of 1 or less          means that the original image is copied as is. The default value      is 4. Values that are a power of 2 (such as 2, 4, 8, 16 and 32) are optimized      to render more quickly than other values.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">strength</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The strength of the imprint or spread. The higher the value, the more color is      imprinted and the stronger the contrast between the glow and the background.      Valid values are 0 to 255. The larger the value, the stronger the imprint. A value of 0      means the filter is not applied. The default value is 1.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">quality</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The number of times to apply the filter. Valid values are 0 to 15. The default value is 1, which      is equivalent to low quality. A value of 2 is medium quality, and a value of 3 is high quality.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:<a href="../../String.html">String</a></code>&nbsp;[optional] &mdash; The placement of the filter effect. Possible values are:      <ul><li><code>"outer"</code>: Glow on the outer edge of the object</li>      <li><code>"inner"</code>: Glow on the inner edge of the object; the default</li>      <li><code>"full"</code>: Glow on top of the object</li>      </ul>      <p>The default value is <code>"inner"</code>.</p>      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">knockout</span>:<a href="../../Boolean.html">Boolean</a></code>&nbsp;[optional] &mdash; Specifies whether the object has a knockout effect. A knockout effect       makes the object's fill transparent and reveals the background color of the document.      The value <code>true</code> specifies a knockout effect;      the default is <code>false</code> (no knockout effect).          </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a gradient glow filter, assigns      its values, and applies it to a flat rectangle image.          <div class='listing'><pre>
+import flash.filters.GradientGlowFilter;
+var art:MovieClip = createRectangle(100, 100, 0x003366, "gradientGlowFilterExample");
+var distance:Number = 0;
+var angleInDegrees:Number = 45;
+var colors:Array = [0xFFFFFF, 0xFF0000, 0xFFFF00, 0x00CCFF];
+var alphas:Array = [0, 1, 1, 1];
+var ratios:Array = [0, 63, 126, 255];
+var blurX:Number = 50;
+var blurY:Number = 50;
+var strength:Number = 2.5;
+var quality:Number = 3;
+var type:String = "outer";
+var knockout:Boolean = false;
+
+var filter:GradientGlowFilter = new GradientGlowFilter(distance, 
+                                                        angleInDegrees, 
+                                                        colors, 
+                                                        alphas, 
+                                                        ratios, 
+                                                        blurX, 
+                                                        blurY, 
+                                                        strength, 
+                                                        quality, 
+                                                        type, 
+                                                        knockout);
+var filterArray:Array = new Array();
+filterArray.push(filter);
+art.filters = filterArray;
+
+function createRectangle(w:Number, h:Number, bgColor:Number, name:String):MovieClip {
+    var mc:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    mc.beginFill(bgColor);
+    mc.lineTo(w, 0);
+    mc.lineTo(w, h);
+    mc.lineTo(0, h);
+    mc.lineTo(0, 0);
+    mc._x = 20;
+    mc._y = 20;
+    return mc;
+}
+</pre></div>          <p></p>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="clone()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clone</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clone():<a href="GradientGlowFilter.html">GradientGlowFilter</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Returns a copy of this filter object.      </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="GradientGlowFilter.html">GradientGlowFilter</a></code> &mdash; 
+A new GradientGlowFilter instance with all the      same properties as the original GradientGlowFilter instance.      
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates three GradientGlowFilter objects and compares them; <code>filter_1</code>      is created by using the GradientGlowFilter construtor; <code>filter_2</code> is created by setting it equal to      <code>filter_1</code>; and, <code>clonedFilter</code> is created by cloning <code>filter_1</code>.  Notice      that although <code>filter_2</code> evaluates as being equal to <code>filter_1</code>, <code>clonedFilter</code>,      even though it contains the same values as <code>filter_1</code>, does not.      <div class='listing'><pre>
+import flash.filters.GradientGlowFilter;
+
+var colors:Array = [0xFFFFFF, 0xFF0000, 0xFFFF00, 0x00CCFF];
+var alphas:Array = [0, 1, 1, 1];
+var ratios:Array = [0, 63, 126, 255];
+var filter_1:GradientGlowFilter = new GradientGlowFilter(0, 45, colors, alphas, ratios, 55, 55, 2.5, 2, "outer", false);
+var filter_2:GradientGlowFilter = filter_1;
+var clonedFilter:GradientGlowFilter = filter_1.clone();
+
+trace(filter_1 == filter_2);        // true
+trace(filter_1 == clonedFilter);    // false
+
+for(var i in filter_1) {
+    trace(">> " + i + ": " + filter_1[i]);
+    // >> clone: [type Function]
+    // >> type: outer
+    // >> knockout: false
+    // >> strength: 2.5
+    // >> quality: 2
+    // >> blurY: 55
+    // >> blurX: 55
+    // >> ratios: 0,63,126,255
+    // >> alphas: 0,1,1,1
+    // >> colors: 16777215,16711680,16776960,52479
+    // >> angle: 45
+    // >> distance: 0
+}
+
+for(var i in clonedFilter) {
+    trace(">> " + i + ": " + clonedFilter[i]);
+    // >> clone: [type Function]
+    // >> type: outer
+    // >> knockout: false
+    // >> strength: 2.5
+    // >> quality: 2
+    // >> blurY: 55
+    // >> blurX: 55
+    // >> ratios: 0,63,126,255
+    // >> alphas: 0,1,1,1
+    // >> colors: 16777215,16711680,16776960,52479
+    // >> angle: 45
+    // >> distance: 0
+}
+</pre></div>      To further demonstrate the relationships between <code>filter_1</code>, <code>filter_2</code>, and <code>clonedFilter</code>,      the following example below modifies the <code>knockout</code> property of <code>filter_1</code>. Modifying <code>knockout</code> demonstrates      that the <code>clone()</code> method creates a new instance based on the values of <code>filter_1</code> instead of pointing to      them in reference.      <div class='listing'><pre>
+import flash.filters.GradientGlowFilter;
+
+var colors:Array = [0xFFFFFF, 0xFF0000, 0xFFFF00, 0x00CCFF];
+var alphas:Array = [0, 1, 1, 1];
+var ratios:Array = [0, 63, 126, 255];
+var filter_1:GradientGlowFilter = new GradientGlowFilter(0, 45, colors, alphas, ratios, 55, 55, 2.5, 2, "outer", false);
+var filter_2:GradientGlowFilter = filter_1;
+var clonedFilter:GradientGlowFilter = filter_1.clone();
+
+trace(filter_1.knockout);            // false
+trace(filter_2.knockout);            // false
+trace(clonedFilter.knockout);        // false
+
+filter_1.knockout = true;
+
+trace(filter_1.knockout);            // true
+trace(filter_2.knockout);            // true
+trace(clonedFilter.knockout);        // false
+</pre></div>      <p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

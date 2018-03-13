@@ -1,0 +1,267 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="TextRenderer,flash.text.TextRenderer,displayMode,maxLevel,setAdvancedAntialiasingTable" name="keywords">
+<title>flash.text.TextRenderer</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'TextRenderer - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="../../language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="../../appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="../../index.html?flash/text/TextRenderer.html&amp;flash/text/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;TextRenderer</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class TextRenderer"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">flash.text</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class TextRenderer</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">TextRenderer <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../images/inherit-arrow.gif"> <a href="../../Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p>
+<p></p>The TextRenderer class provides functionality for the advanced anti-aliasing capability of    embedded fonts. Advanced anti-aliasing allows font faces to render at very high quality at   small sizes. Use advanced anti-aliasing with applications that have a lot of small text. Adobe does not recommend using advanced   anti-aliasing for very large fonts (larger than 48 points).   Advanced anti-aliasing is available in Flash Player 8 only.     <p>To set advanced anti-aliasing on a text field, set the <code>antiAliasType</code> property of   the TextField instance. The following example requires a shared font in the library with a linkage identifier   named, <code>"CustomFont"</code>.</p>   <div class='listing'><pre>
+var txtFormat:TextFormat = new TextFormat();
+txtFormat.font = "CustomFont";
+
+var label:TextField = this.createTextField("label", this.getNextHighestDepth(), 10, 10, 200, 20);
+label.setNewTextFormat(txtFormat);
+label.text = "Hello World";
+label.embedFonts = true;
+label.antiAliasType = "advanced";
+</pre></div>     <p>Advanced anti-aliasing provides continuous stroke modulation (CSM), which is continuous   modulation of both stroke weight and edge sharpness. As an advanced feature, you can   use the <code>setAdvancedAntialiasingTable()</code> method to define settings for specific   typefaces and font sizes. </p>      <p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../../TextField.html#antiAliasType" target="">TextField.antiAliasType</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#displayMode">displayMode</a> : <a href="../../String.html">String</a>
+<div class="summaryTableDescription">[static]Controls the rendering of advanced anti-aliased text.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#maxLevel">maxLevel</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">[static]Sets the adaptively sampled distance fields (ADFs) quality level for advanced anti-aliasing.</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="../../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../../Object.html#__proto__">__proto__</a>, <a href="../../Object.html#__resolve">__resolve</a>, <a href="../../Object.html#constructor">constructor</a>, <a href="../../Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setAdvancedAntialiasingTable()">setAdvancedAntialiasingTable</a>(fontName:<a href="../../String.html">String</a>, fontStyle:<a href="../../String.html">String</a>, colorType:<a href="../../String.html">String</a>, advancedAntialiasingTable:<a href="../../Array.html">Array</a>):Void</div>
+<div class="summaryTableDescription">[static]Sets a custom continuous stroke modulation (CSM) lookup table for a font.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="../../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../../Object.html#addProperty()">addProperty</a>, <a href="../../Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="../../Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="../../Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="../../Object.html#registerClass()">registerClass</a>, <a href="../../Object.html#toString()">toString</a>, <a href="../../Object.html#unwatch()">unwatch</a>, <a href="../../Object.html#valueOf()">valueOf</a>, <a href="../../Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="displayMode"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">displayMode</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var displayMode:<a href="../../String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 9</td>
+</tr>
+</table>
+<p></p><p>Controls the rendering of advanced anti-aliased text. The visual quality of text is very subjective, and while       Flash Player tries to use the best settings for various conditions, designers may choose a different       look or feel for their text. Also, using <code>displayMode</code> allows a designer to override Flash       Player's subpixel choice and create visual consistency independent of the user's hardware.       </p><p>The following values for <code>displayMode</code> allow the designer to set the global       subpixel rendering mode for advanced anti-aliasing:</p>       <ul>       <li><code>"default"</code> allows Flash Player to choose LCD or CRT mode.</li>       <li><code>"lcd"</code> forces Flash Player to use LCD sub-pixel antialiasing. Depending on the font and       the hardware, this setting can result in much higher-resolution text or "coloring" of text.</li>       <li><code>"crt"</code> forces Flash Player to display grayscale antialiasing. While this setting       avoids the "coloring" of text, some users may think it appears more "fuzzy".</li>       </ul>       <p><b>Note:</b> While this property is available for ActionScript 2.0, you can use it only when publishing       to Flash Player 9 or later.</p>            </div>
+<a name="maxLevel"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">maxLevel</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var maxLevel:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Sets the adaptively sampled distance fields (ADFs) quality level for advanced anti-aliasing. The only acceptable values are       3, 4, and 7. The default is 4.             </p><p>Advanced anti-aliasing uses ADFs to       represent the outlines that determine a glyph. The higher the quality, the more       cache space is required for ADF structures. A value of <code>3</code> takes the least amount       of memory and provides the lowest quality. Larger fonts require more cache space;       at a font size of 64 pixels, the quality level increases from <code>3</code> to <code>4</code> or       from <code>4</code> to <code>7</code> unless the level is already set to <code>7</code>.</p>             <br>
+<span class="label">Example</span>
+<br>The following example specifies the <code>maxLevel</code> value for the entire       SWF file, and then displays a text field with the value set. For the       text in this example to display correctly, there must be a font symbol available with       a linkage identifier of <code>"CustomFont"</code>.       <div class='listing'><pre>
+import flash.text.TextRenderer;
+TextRenderer.maxLevel = 3;
+
+var txtFormat:TextFormat = new TextFormat();
+txtFormat.font = "CustomFont";
+txtFormat.size = 64;
+
+var label:TextField = this.createTextField("label", this.getNextHighestDepth(), 10, 10, 500, 100);
+label.setNewTextFormat(txtFormat);
+label.text = "Hello World";
+label.embedFonts = true;
+trace("TextRenderer.maxLevel: " + TextRenderer.maxLevel);
+</pre></div>      <p></p>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="setAdvancedAntialiasingTable()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setAdvancedAntialiasingTable</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function setAdvancedAntialiasingTable(fontName:<a href="../../String.html">String</a>, fontStyle:<a href="../../String.html">String</a>, colorType:<a href="../../String.html">String</a>, advancedAntialiasingTable:<a href="../../Array.html">Array</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Sets a custom continuous stroke modulation (CSM) lookup table for a font.       Flash Player attempts to detect the best CSM for your font. If you are not       satisfied with the CSM that the Flash Player provides, you can customize       your own CSM by using the <code>setAdvancedAntialiasingTable()</code> method.             </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">fontName</span>:<a href="../../String.html">String</a></code> &mdash; The name of the font for which you are applying settings.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">fontStyle</span>:<a href="../../String.html">String</a></code> &mdash; The font style can be <code>"bold"</code>, <code>"bolditalic"</code>, <code>"italic"</code>, and <code>"none"</code>.             </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">colorType</span>:<a href="../../String.html">String</a></code> &mdash; This value can be either <code>"dark"</code> or <code>"light"</code>.             </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">advancedAntialiasingTable</span>:<a href="../../Array.html">Array</a></code> &mdash; An array of CSM settings for the specified font. Each       setting is an object with the following properties:             <ul>               <li><code>fontSize</code></li>         <li><code>insideCutOff</code></li>         <li><code>outsideCutOff</code></li>            </ul>             <p>The <code>advancedAntialiasingTable</code> array can contain multiple entries       that specify CSM settings for different font sizes. (See example.)</p>             <p>The <code>fontSize</code> is the size, in pixels, for which the settings apply.</p>             <p>Advanced anti-aliasing uses adaptively sampled distance fields (ADFs) to       represent the outlines that determine a glyph. Adobe Flash Player uses an outside cutoff value (<code>outsideCutOff</code>),       below which densities are set to zero, and an inside cutoff value (<code>insideCutOff</code>), above which densities       are set to a maximum density value (such as 255). Between these two cutoff values,       the mapping function is a linear curve ranging from zero at the outside cutoff       to the maximum density at the inside cutoff.</p>            <p>Adjusting the outside and inside cutoff values affects stroke weight and       edge sharpness. The spacing between these two parameters is comparable to twice the           filter radius of classic anti-aliasing methods; a narrow spacing provides a sharper edge,       while a wider spacing provides a softer, more filtered edge. When       the spacing is zero, the resulting density image is a bi-level bitmap. When the       spacing is very wide, the resulting density image has a watercolor-like edge.</p>             <p>Typically, users prefer sharp, high-contrast edges at small point sizes, and       softer edges for animated text and larger point sizes. </p>             <p>The outside cutoff typically has a negative value, and the inside cutoff typically       has a positive value, and their midpoint typically lies near zero. Adjusting these       parameters to shift the midpoint toward negative infinity increases the stroke       weight; shifting the midpoint toward positive infinity decreases the stroke weight.       Make sure that the outside cutoff value is always less than or equal to the inside cutoff value.</p>                  </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates two anti-alias entries and two text fields to       illustrate them. For this example to work, the SWF file must have a shared font embedded with a linkage identifier of <code>      "myArial"</code>.       To embed the font, follow these steps:       <ol>       <li>Open your Library.</li>       <li>Click the Library options menu in the upper-right corner of the Library.</li>       <li>Select New Font from the pop-up menu.</li>       <li>Name the font <b>myArial</b>.</li>       <li>Select Arial from the font pop-up menu.</li>       <li>Click OK.</li>       <li>Right-click the newly created font, and select Linkage.</li>       <li>Select the Export for ActionScript check box.</li>       <li>Click OK to accept the default identifier, myArial.</li>       </ol>             <div class='listing'><pre>
+import flash.text.TextRenderer;
+
+var antiAliasEntry_1 = {fontSize:24, insideCutoff:1.61, outsideCutoff:-3.43};
+var antiAliasEntry_2 = {fontSize:48, insideCutoff:0.8, outsideCutoff:-0.8};
+var arialTable:Array = new Array(antiAliasEntry_1, antiAliasEntry_2);
+
+var lbl_1:TextField = createLabel(0, 0, 300, 100, 24);
+var lbl_2:TextField = createLabel(0, 100, 300, 100, 48);
+
+TextRenderer.setAdvancedAntialiasingTable("Arial", "none", "dark", arialTable);
+
+function createLabel(x:Number, y:Number, width:Number, height:Number, fontSize:Number):TextField {
+    var depth:Number = this.getNextHighestDepth();
+    
+    var tmpTxt = this.createTextField("txt_" + depth, depth, x, y, width, height);
+    tmpTxt.antiAliasType = "advanced";
+    tmpTxt.gridFitType = "pixel";
+    tmpTxt.border = true;
+    tmpTxt.text = "Hello World";
+    tmpTxt.embedFonts = true;
+    tmpTxt.setTextFormat(getTextFormat(fontSize));
+    return tmpTxt;
+}
+
+function getTextFormat(fontSize:Number):TextFormat {
+    var tf:TextFormat = new TextFormat();
+    tf.align = "center";
+    tf.size = fontSize;
+    tf.font = "myArial";
+    return tf;
+}
+</pre></div>             <p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

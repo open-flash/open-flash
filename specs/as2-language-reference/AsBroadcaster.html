@@ -1,0 +1,388 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="print.css" type="text/css" media="print">
+<meta content="AsBroadcaster,_listeners,addListener,broadcastMessage,initialize,removeListener" name="keywords">
+<title>AsBroadcaster</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="asdoc.js"></script><script type="text/javascript" language="javascript" src="cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'AsBroadcaster - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('all-classes.html')" href="package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('all-classes.html')" href="class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('index-list.html')" href="all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="index.html?AsBroadcaster.html&amp;class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;AsBroadcaster</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class AsBroadcaster"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">Top Level</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class AsBroadcaster</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">AsBroadcaster <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="images/inherit-arrow.gif"> <a href="Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p></p>Provides event notification and listener management capabilities that you can add to user-defined objects. This class is intended for advanced users who want to create custom event handling mechanisms. You can use this class to make any object an event broadcaster and to create one or more listener objects that receive notification anytime the broadcasting object calls the <code>broadcastMessage()</code> method.   <p>There is no constructor function for the AsBroadcaster class. To use this class, follow this process:</p>   <ul>     <li>Select or create an object to serve as the event broadcaster.</li>     <li>Make the object an event broadcaster by calling the static <code>AsBroadcaster.initialize(obj:Object)</code> method, where the <code>obj</code> parameter is the name of the object that you selected to be the broadcaster.</li>     <li>Select or create one or more listener objects. Listener objects receive notification whenever the broadcasting object broadcasts a message</li>     <li>Define a listener method for each of your listener objects. The listener method  executes ActionScript code in response to the event notification. The name of the method must match the name of the event that is broadcasted by the broadcasting object.</li>     <li>Register each listener object with the event broadcaster by calling <code>myBroadcaster.addListener(myListener)</code>, where <code>myBroadcaster</code> is the name of the event broadcaster object and <code>myListener</code> is the name of the listener object. Each event broadcaster stores a list of listener objects to be notified when a message is broadcast. Use the <code>addListener()</code> method to add listeners to the list, and use <code>removeListener()</code> to remove listeners from the list.</li>     <li>Finally, to broadcast a message, call the <code>myBroadcaster.broadcastMessage(eventName:String)</code> method, where <code>myBroadcaster</code> is the name of the event broadcaster and <code>eventName</code> is the name of the event that matches the name of the listener method.</li>   </ul>    <p><strong>Note: </strong>A common mistake is to capitalize the second letter of <i>AsBroadcaster</i>. When calling the <code>AsBroadcaster.initialize()</code> method, ensure that the second letter is lowercase. Any misspelling of <i>AsBroadcaster</i> fails silently.</p>    <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_listeners">_listeners</a> : <a href="Array.html">Array</a>
+<div class="summaryTableDescription">[read-only]A list of references to all registered listener objects.</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="Object.html#__proto__">__proto__</a>, <a href="Object.html#__resolve">__resolve</a>, <a href="Object.html#constructor">constructor</a>, <a href="Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addListener()">addListener</a>(listenerObj:<a href="Object.html">Object</a>):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Registers an object to receive event notification messages.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#broadcastMessage()">broadcastMessage</a>(eventName:<a href="String.html">String</a>):Void</div>
+<div class="summaryTableDescription">Sends an event message to each object in the list of listeners.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#initialize()">initialize</a>(obj:<a href="Object.html">Object</a>):Void</div>
+<div class="summaryTableDescription">[static]Adds event notification and listener management functionality to a given object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeListener()">removeListener</a>(listenerObj:<a href="Object.html">Object</a>):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Removes an object from the list of objects that receive event notification messages.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="Object.html#addProperty()">addProperty</a>, <a href="Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="Object.html#registerClass()">registerClass</a>, <a href="Object.html#toString()">toString</a>, <a href="Object.html#unwatch()">unwatch</a>, <a href="Object.html#valueOf()">valueOf</a>, <a href="Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="_listeners"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_listeners</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>_listeners:<a href="Array.html">Array</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A list of references to all registered listener objects. This property is intended for internal use, and is not intended for direct manipulation. Objects are added to and removed from this array by calls to the <code>addListener()</code> and <code>removelistener()</code> methods.       </p><p>You can call this property only from an object that was initialized by using the <code>AsBroadcaster.initialize()</code> method.</p>       <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get _listeners():<a href="Array.html">Array</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="AsBroadcaster.html#initialize()" target="">AsBroadcaster.initialize()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to use the <code>length</code> property to ascertain the number of listener objects currently registered to an event broadcaster. The following code works if it is added to the first full example in the Examples section of the <code>AsBroadcaster.initialize()</code> entry:       <div class='listing'><pre>
+trace(someObject._listeners.length); // Output: 2
+</pre></div> <p>For advanced users, the following example shows how to use the <code>_listeners</code> property to list all of the listeners registered with an event broadcaster, along with all of the properties of each listener object. The following example creates two different listener methods for the first listener object.</p>       <div class='listing'><pre>
+var someObject:Object = new Object();         // create broadcast object
+
+var myListener1:Object = new Object();        // create listener object
+var myListener2:Object = new Object();        // create listener object
+
+myListener1.someEvent = function() {          // create listener method
+    trace("myListener1 received someEvent");
+}
+myListener1.anotherEvent = function() {       // create another listener method
+    trace("myListener1 received anotherEvent");
+}
+myListener2.someEvent = function() {          // create listener method
+    trace("myListener2 received someEvent");
+}
+
+AsBroadcaster.initialize(someObject);         // make someObject an event broadcaster
+someObject.addListener(myListener1);          // register myListener1 as listener
+someObject.addListener(myListener2);          // register myListener2 as listener
+
+var numListeners:Number = someObject._listeners.length;  // get number of registered listeners
+
+// cycle through all listener objects, listing all properties of each listener object
+for (var i:Number = 0; i &lt; numListeners; i++) {
+    trace("Listener " + i + " listens for these events:");
+    for (item in someObject._listeners[i]) {
+        trace ("   " + item + ": " + someObject._listeners[i][item]);
+    }
+}
+</pre></div>             <p></p>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addListener(listenerObj:<a href="Object.html">Object</a>):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Registers an object to receive event notification messages. This method is called on the broadcasting object and the listener object is sent as an argument.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">listenerObj</span>:<a href="Object.html">Object</a></code> &mdash; The name of the listener object that receives event notification.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+Although this method technically returns a Boolean value, in practical terms it returns       <code>Void</code> because it always returns the value <code>true</code>.             
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="AsBroadcaster.html#initialize()" target="">AsBroadcaster.initialize()</a>
+<br>
+<a href="AsBroadcaster.html#removeListener()" target="">AsBroadcaster.removeListener()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example is an excerpt from the full example provided in the entry for the <code>AsBroadcaster.initialize()</code> method.       <div class='listing'><pre>
+someObject.addListener(myListener1);          // Register myListener1 as listener.
+someObject.addListener(myListener2);          // Register myListener2 as listener.
+</pre></div>       <p></p>
+</div>
+<a name="broadcastMessage()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">broadcastMessage</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function broadcastMessage(eventName:<a href="String.html">String</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Sends an event message to each object in the list of listeners.       When the message is received by the listening object, Flash Player        attempts to invoke a function of the same name on the listening object.       Suppose that your object broadcasts an event message like this:       <div class='listing'><pre>
+obj.broadcastMessage("onAlert");
+</pre></div>       </p><p>When this message is received, Flash Player invokes a method named <code>onAlert()</code> on the receiving listener object.</p>       <p><strong>Note: </strong>You can pass arguments to your listener functions by including additional arguments to the <code>broadcastMessage()</code> method. Any arguments that appear after the <code>eventName</code> parameter are received as arguments by the listener method.</p>            <p>You can call this method only from an object that was initialized by using the <code>AsBroadcaster.initialize()</code> method.</p>       <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">eventName</span>:<a href="String.html">String</a></code> &mdash; The name of the event to broadcast. The name of any listener methods must match this parameter in order to receive the broadcast event. You can pass arguments to the listener methods by including additional arguments after <code>eventName</code>.       </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="AsBroadcaster.html#initialize()" target="">AsBroadcaster.initialize()</a>
+<br>
+<a href="AsBroadcaster.html#removeListener()" target="">AsBroadcaster.removeListener()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example is an excerpt from the first full example provided in the entry for the <code>AsBroadcaster.initialize()</code> method:       <div class='listing'><pre>
+someObject.broadcastMessage("someEvent");     // Broadcast the "someEvent" message.    
+</pre></div>       <p>The following example is an excerpt from the second full example provided in the entry for the <code>AsBroadcaster.initialize()</code> method. It shows how to send arguments to listener methods.</p>       <div class='listing'><pre>
+someObject.broadcastMessage("someEvent", 3, "arbitrary string");
+</pre></div>           <p></p>
+</div>
+<a name="initialize()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">initialize</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function initialize(obj:<a href="Object.html">Object</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Adds event notification and listener management functionality to a given object. This is a static method; it must be called by using the AsBroadcaster class (where <code>someObject</code> is the name of the object to be initialized as an event broadcaster):       <div class='listing'><pre>
+AsBroadcaster.initialize(someObject);
+</pre></div>        </p><p><strong>Note: </strong>A common mistake is to capitalize the second letter of <i>AsBroadcaster</i>. When calling the <code>AsBroadcaster.initialize()</code> method, ensure that the second letter is lowercase. Any misspelling of <i>AsBroadcaster</i> will fail silently.</p>            <p>This method adds the <code>_listeners</code> property along with the following three methods to the object specified by the <code>obj</code> parameter:</p>       <ul>       <li><code>obj.addListener()</code></li>       <li><code>obj.removeListener()</code></li>       <li><code>obj.broadcastMessage()</code></li>       </ul>       <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">obj</span>:<a href="Object.html">Object</a></code> &mdash; An object to serve as a broadcasting object.            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a generic object, <code>someObject</code>, and turns it into an event broadcaster. The output should be the strings shown in the two <code>trace()</code> statements:       <div class='listing'><pre>
+var someObject:Object = new Object();         // Creates broadcast object.
+
+var myListener1:Object = new Object();        // Creates listener object.
+var myListener2:Object = new Object();        // Creates listener object.
+
+myListener1.someEvent = function() {          // Creates listener method.
+    trace("myListener1 received someEvent");
+}
+myListener2.someEvent = function() {          // Creates listener method.
+    trace("myListener2 received someEvent");
+}
+
+AsBroadcaster.initialize(someObject);         // Makes someObject an event broadcaster.
+someObject.addListener(myListener1);          // Registers myListener1 as listener.
+someObject.addListener(myListener2);          // Registers myListener2 as listener.
+someObject.broadcastMessage("someEvent");     // Broadcasts the "someEvent" message.
+</pre></div>            <p>The following example shows how to pass extra arguments to a listener method by using the <code>broadcastMessage()</code> method. The output should be the three strings shown in the three <code>trace()</code> statements, which also include the arguments passed in through the <code>broadcastMessage()</code> method.</p>       <div class='listing'><pre>
+var someObject:Object = new Object();
+
+var myListener:Object = new Object();     
+myListener.someEvent = function(param1:Number, param2:String) { 
+    trace("myListener received someEvent");
+    trace("param1: " + param1);
+    trace("param2: " + param2);
+}
+
+AsBroadcaster.initialize(someObject);     
+someObject.addListener(myListener);          
+someObject.broadcastMessage("someEvent", 3, "arbitrary string");
+</pre></div>            <p></p>
+</div>
+<a name="removeListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeListener(listenerObj:<a href="Object.html">Object</a>):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Removes an object from the list of objects that receive event notification messages.            </p><p>You can call this method only from an object that has been initialized by using the <code>AsBroadcaster.initialize()</code> method.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">listenerObj</span>:<a href="Object.html">Object</a></code> &mdash; The name of a listener object that is registered to receive event notification from the broadcasting object.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+Returns <code>true</code> if the listener object is removed, and <code>false</code> otherwise.       
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="AsBroadcaster.html#addListener()" target="">AsBroadcaster.addListener()</a>
+<br>
+<a href="AsBroadcaster.html#initialize()" target="">AsBroadcaster.initialize()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to remove a listener from the list of registered listeners. The following code works if it is added to the first full example in the Examples section of the <code>AsBroadcaster.initialize()</code> entry. The <code>trace()</code> statements are included only to verify that the number of registered listeners is reduced by one after calling the <code>removeListener()</code> method.       <div class='listing'><pre>
+trace(someObject._listeners.length);    // Output: 2
+someObject.removeListener(myListener1);
+trace(someObject._listeners.length);    // Output: 1
+</pre></div>       <p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

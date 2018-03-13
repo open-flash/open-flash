@@ -1,0 +1,1301 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="print.css" type="text/css" media="print">
+<meta content="Camera,activityLevel,bandwidth,currentFps,fps,height,index,keyFrameInterval,loopback,motionLevel,motionTimeOut,muted,name,names,quality,width,get,setKeyFrameInterval,setLoopback,setMode,setMotionLevel,setQuality" name="keywords">
+<title>Camera</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="asdoc.js"></script><script type="text/javascript" language="javascript" src="cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Camera - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('all-classes.html')" href="package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('all-classes.html')" href="class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('index-list.html')" href="all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="index.html?Camera.html&amp;class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Camera</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Camera"); titleBar_setSubNav(false,true,false,false,true,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">Top Level</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Camera</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Camera <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="images/inherit-arrow.gif"> <a href="Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p></p>The Camera class is primarily for use with Flash Media Server, but can be used in a limited way without the server.    <p>The Camera class lets you capture video from a video camera attached to the computer that is running Flash Player&#x2014;for example,   to monitor a video feed from a web camera attached to your local system. (Flash provides similar audio capabilities; for more information,   see the  Microphone class entry.)</p>    <p><strong>Warning: </strong>When a SWF file tries to access the camera returned by <code>Camera.get()</code>, Flash Player   displays a Privacy dialog box that lets the user choose whether to allow or deny access to the camera. (Make sure your Stage size is   at least 215 x 138 pixels for the Camera class examples; this is the minimum size Flash requires to display the dialog box.) End users and administrative users may also disable camera access on a per-site or global basis. </p>    <p>To create or reference a Camera object, use the <code>Camera.get()</code> method.</p>    <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#activityLevel">activityLevel</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[read-only]A numeric value that specifies the amount of motion the camera is detecting.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#bandwidth">bandwidth</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[read-only]An integer that specifies the maximum amount of bandwidth the current outgoing video feed can use, in bytes.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#currentFps">currentFps</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[read-only]The rate at which the camera is capturing data, in frames per second.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#fps">fps</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[read-only]The maximum rate at which you want the camera to capture data, in frames per second.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#height">height</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[read-only]The current capture height, in pixels.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#index">index</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[read-only]A zero-based integer that specifies the index of the camera, as reflected in the array returned by <code>Camera.names</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#keyFrameInterval">keyFrameInterval</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[read-only]A number that specifies which video frames are transmitted in full (called keyframes) instead of being interpolated by the video compression algorithm.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#loopback">loopback</a> : <a href="Boolean.html">Boolean</a>
+<div class="summaryTableDescription">[read-only]A Boolean value that specifies whether a local view of what the camera is capturing is compressed (<code>true</code>) or uncompressed (<code>false</code>).</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#motionLevel">motionLevel</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[read-only]A numeric value that specifies the amount of motion required to invoke <code>Camera.onActivity(true)</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#motionTimeOut">motionTimeOut</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[read-only]The number of milliseconds between the time the camera stops detecting motion and the time <code>Camera.onActivity</code><code> (false)</code> is invoked.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#muted">muted</a> : <a href="Boolean.html">Boolean</a>
+<div class="summaryTableDescription">[read-only]A Boolean value that specifies whether the user has denied access to the camera (<code>true</code>) or allowed access (<code>false</code>) in the Flash Player Privacy Settings panel.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#name">name</a> : <a href="String.html">String</a>
+<div class="summaryTableDescription">[read-only]A string that specifies the name of the current camera, as returned by the camera hardware.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#names">names</a> : <a href="Array.html">Array</a>
+<div class="summaryTableDescription">[static][read-only]Retrieves an array of strings reflecting the names of all available cameras without displaying the Flash Player Privacy Settings panel.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#quality">quality</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[read-only]An integer specifying the required level of picture quality, as determined by the amount of compression being applied to each video frame.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#width">width</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[read-only]The current capture width, in pixels.</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="Object.html#__proto__">__proto__</a>, <a href="Object.html#__resolve">__resolve</a>, <a href="Object.html#constructor">constructor</a>, <a href="Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#get()">get</a>([index:<a href="Number.html">Number</a>]):<a href="Camera.html">Camera</a>
+</div>
+<div class="summaryTableDescription">[static]Returns a reference to a Camera object for capturing video.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setKeyFrameInterval()">setKeyFrameInterval</a>(keyFrameInterval:<a href="Number.html">Number</a>):Void</div>
+<div class="summaryTableDescription">Specifies which video frames are transmitted in full (called keyframes) instead of being interpolated by the video compression algorithm.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setLoopback()">setLoopback</a>(compress:<a href="Boolean.html">Boolean</a>):Void</div>
+<div class="summaryTableDescription">Set to <code>true</code> to use a compressed video stream for a local view of what the camera is transmitting.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setMode()">setMode</a>([width:<a href="Number.html">Number</a>], [height:<a href="Number.html">Number</a>], [fps:<a href="Number.html">Number</a>], [favorArea:<a href="Boolean.html">Boolean</a>]):Void</div>
+<div class="summaryTableDescription">Sets the camera capture mode to the native mode that best meets the specified requirements.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setMotionLevel()">setMotionLevel</a>([motionLevel:<a href="Number.html">Number</a>], [timeOut:<a href="Number.html">Number</a>]):Void</div>
+<div class="summaryTableDescription">Specifies how much motion is required to invoke <code>Camera.onActivity(true)</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setQuality()">setQuality</a>([bandwidth:<a href="Number.html">Number</a>], [quality:<a href="Number.html">Number</a>]):Void</div>
+<div class="summaryTableDescription">Sets the maximum amount of bandwidth per second or the required picture quality of the current outgoing video feed.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="Object.html#addProperty()">addProperty</a>, <a href="Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="Object.html#registerClass()">registerClass</a>, <a href="Object.html#toString()">toString</a>, <a href="Object.html#unwatch()">unwatch</a>, <a href="Object.html#valueOf()">valueOf</a>, <a href="Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<a name="eventSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Events</div>
+<table id="summaryTableEvent" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Event</th><th>Summary</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onActivity">onActivity</a> = function(active:<a href="Boolean.html">Boolean</a>) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked when the camera starts or stops detecting motion.</td><td class="summaryTableOwnerCol">Camera</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onStatus">onStatus</a> = function(infoObject:<a href="Object.html">Object</a>) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked when the user allows or denies access to the camera.</td><td class="summaryTableOwnerCol">Camera</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="activityLevel"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">activityLevel</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>activityLevel:<a href="Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A numeric value that specifies the amount of motion the camera is detecting. Values range from 0 (no motion is being detected) to 100 (a large amount of motion is being detected). The value of this property can help you determine if you need to pass a setting to <code>Camera.setMotionLevel()</code>.       </p><p>If the camera is available but is not yet being used because <code>Video.attachVideo()</code> has not been called, this property is set to -1.</p>       <p>If you are streaming only uncompressed local video, this property is set only if you have assigned a function to the <code>Camera.onActivity</code> event handler. Otherwise, it is undefined.</p>            <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get activityLevel():<a href="Number.html">Number</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#motionLevel" target="">Camera.motionLevel</a>
+<br>
+<a href="Camera.html#setMotionLevel()" target="">Camera.setMotionLevel()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br><span class="flexonly">The following example detects the amount of motion the camera detects using the <code>activityLevel</code> property:</span>       <span class="flashonly">This example detects the amount of motion the camera detects using the <code>activityLevel</code> property and a ProgressBar instance. Create a new video instance by selecting New Video from the Library options menu. Add an instance to the Stage and give it the instance name <code>my_video</code>. Add a ProgressBar component instance to the Stage and give it the instance name <code>activity_pb</code>. Then add the following ActionScript to Frame 1 of the Timeline:</span>       <div class='listing'><pre>
+// video instance on the Stage.
+var my_video:Video;
+var activity_pb:mx.controls.ProgressBar;
+var my_cam:Camera = Camera.get();
+my_video.attachVideo(my_cam);
+activity_pb.mode = "manual";
+activity_pb.label = "Activity %3%%";
+
+this.onEnterFrame = function() {
+    activity_pb.setProgress(my_cam.activityLevel, 100);
+};
+my_cam.onActivity = function(isActive:Boolean) {
+    var themeColor:String = (isActive) ? "haloGreen" : "haloOrange";
+    activity_pb.setStyle("themeColor", themeColor);
+};
+</pre></div>            <p></p>
+</div>
+<a name="bandwidth"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">bandwidth</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>bandwidth:<a href="Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>An integer that specifies the maximum amount of bandwidth the current outgoing video feed can use, in bytes.       A value of 0 means that Flash video can use as much bandwidth as needed to maintain the desired frame quality.             </p><p>To set this property, use <code>Camera.setQuality()</code>.</p>            <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get bandwidth():<a href="Number.html">Number</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#setQuality()" target="">Camera.setQuality()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example changes the maximum amount of bandwidth used by the camera feed.       <span class="flashonly">Create a new video instance by selecting New Video from the Library options menu.       Add an instance to the Stage and give it the instance name <code>my_video</code>. Add a NumericStepper component       instance to the Stage and give it the instance name <code>bandwidth_nstep</code>.       Then add the following ActionScript to Frame 1 of the Timeline:</span>       <div class='listing'><pre>
+var bandwidth_nstep:mx.controls.NumericStepper;
+var my_video:Video;
+var my_cam:Camera = Camera.get();
+my_video.attachVideo(my_cam);
+this.createTextField("bandwidth_txt", this.getNextHighestDepth(), 0, 0, 100, 22);
+bandwidth_txt.autoSize = true;
+this.onEnterFrame = function() {
+    bandwidth_txt.text = "Camera is currently using "+my_cam.bandwidth+" bytes ("+Math.round(my_cam.bandwidth/1024)+" KB) bandwidth.";
+};
+//
+bandwidth_nstep.minimum = 0;
+bandwidth_nstep.maximum = 128;
+bandwidth_nstep.stepSize = 16;
+bandwidth_nstep.value = my_cam.bandwidth/1024;
+function changeBandwidth(evt:Object) {
+    my_cam.setQuality(evt.target.value 1024, 0);
+}
+bandwidth_nstep.addEventListener("change", changeBandwidth);
+</pre></div>            <p>The <code>MovieClip.getNextHighestDepth()</code> method used in this example requires       Flash Player 7 or later. If your SWF file includes a version 2 component, use the version 2 components'       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method.       </p>             <p></p>
+</div>
+<a name="currentFps"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">currentFps</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>currentFps:<a href="Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>The rate at which the camera is capturing data, in frames per second. This property cannot be set; however, you can use the <code>Camera.setMode()</code> method to set a related property--<code>Camera.fps</code>--which specifies the maximum frame rate at which you would like the camera to capture data.            </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get currentFps():<a href="Number.html">Number</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#setMode()" target="">Camera.setMode()</a>
+<br>
+<a href="Camera.html#fps" target="">Camera.fps</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br><span class="flexonly">The following example detects the rate in frames per second that the camera captures data, using the <code>currentFps</code> property:</span>       <span class="flashonly">The following example detects the rate in frames per second that the camera captures data, using the <code>currentFps</code> property and a ProgressBar instance. Create a new video instance by selecting New Video from the Library options menu. Add an instance to the Stage and give it the instance name <code>my_video</code>. Add a ProgressBar component instance to the Stage and give it the instance name fps_pb. Then add the following ActionScript to Frame 1 of the Timeline:</span>       <div class='listing'><pre>
+var my_video:Video;
+var fps_pb:mx.controls.ProgressBar;
+var my_cam:Camera = Camera.get();
+my_video.attachVideo(my_cam);
+this.onEnterFrame = function() {
+    fps_pb.setProgress(my_cam.fps-my_cam.currentFps, my_cam.fps);
+};
+
+fps_pb.setStyle("fontSize", 10);
+fps_pb.setStyle("themeColor", "haloOrange");
+fps_pb.labelPlacement = "top";
+fps_pb.mode = "manual";
+fps_pb.label = "FPS: %2 (%3%% dropped)";
+</pre></div>            <p></p>
+</div>
+<a name="fps"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">fps</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>fps:<a href="Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>The maximum rate at which you want the camera to capture data, in frames per second. The maximum rate possible depends on the capabilities of the camera; that is, if the camera doesn't support the value you set here, this frame rate will not be achieved.       <ul>         <li>To set a desired value for this property, use <code>Camera.setMode()</code>.</li>         <li>To determine the rate at which the camera is currently capturing data, use the <code>Camera.currentFps</code> property.</li>       </ul>            </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get fps():<a href="Number.html">Number</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#currentFps" target="">Camera.currentFps</a>
+<br>
+<a href="Camera.html#setMode()" target="">Camera.setMode()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br><span class="flexonly">The following example detects the rate in frames per second that the camera captures data, using the <code>currentFps</code> property:</span>       <span class="flashonly">The following example detects the rate in frames per second that the camera captures data, using the <code>currentFps</code> property and a ProgressBar instance. Create a new video instance by selecting New Video from the Library options menu. Add an instance to the Stage and give it the instance name <code>my_video</code>. Add a ProgressBar component instance to the Stage and give it the instance name fps_pb. Then add the following ActionScript to Frame 1 of the Timeline:</span>       <div class='listing'><pre>
+var my_video:Video;
+var fps_pb:mx.controls.ProgressBar;
+var my_cam:Camera = Camera.get();
+my_video.attachVideo(my_cam);
+this.onEnterFrame = function() {
+    fps_pb.setProgress(my_cam.fps-my_cam.currentFps, my_cam.fps);
+};
+
+fps_pb.setStyle("fontSize", 10);
+fps_pb.setStyle("themeColor", "haloOrange");
+fps_pb.labelPlacement = "top";
+fps_pb.mode = "manual";
+fps_pb.label = "FPS: %2 (%3%% dropped)";
+</pre></div>       <p><strong>Note: </strong>The <code>setMode()</code> function does not guarantee the requested fps setting; it sets the fps you requested or the fastest fps available.</p>            <p></p>
+</div>
+<a name="height"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">height</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>height:<a href="Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>The current capture height, in pixels. To set a value for this property, use <code>Camera.setMode()</code>.            </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get height():<a href="Number.html">Number</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#width" target="">Camera.width</a>
+<br>
+<a href="Camera.html#setMode()" target="">Camera.setMode()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following code displays the current width, height and FPS of a video instance in a Label component instance on the Stage. <span class="flashonly">Create a new video instance by selecting New Video from the Library options menu. Add an instance to the Stage and give it the instance name <code>my_video</code>. Add a Label component instance to the Stage and give it the instance name dimensions_lbl. Then add the following ActionScript to Frame 1 of the Timeline:</span>       <div class='listing'><pre>
+var my_cam:Camera = Camera.get();
+var my_video:Video;
+my_video.attachVideo(my_cam);
+var dimensions_lbl:mx.controls.Label;
+dimensions_lbl.setStyle("fontSize", 9);
+dimensions_lbl.setStyle("fontWeight", "bold");
+dimensions_lbl.setStyle("textAlign", "center");
+dimensions_lbl.text = "width: "+my_cam.width+", height: "+my_cam.height+", FPS: "+my_cam.fps;
+</pre></div>       <p>See also the example for <code>Camera.setMode()</code>. </p>            <p></p>
+</div>
+<a name="index"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">index</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>index:<a href="Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A zero-based integer that specifies the index of the camera, as reflected in the array returned by <code>Camera.names</code>.            </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get index():<a href="Number.html">Number</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#names" target="">Camera.names</a>
+<br>
+<a href="Camera.html#get()" target="">Camera.get()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example displays an array of cameras in a text field that is created at runtime, and tells you which camera you are currently using. Create a new video instance by selecting New Video from the Library options menu. Add an instance to the Stage and give it the instance name <code>my_video</code>. Add a Label component instance to the Stage and give it the instance name camera_lbl. Then add the following ActionScript to Frame 1 of the Timeline:       <div class='listing'><pre>
+var camera_lbl:mx.controls.Label;
+var my_cam:Camera = Camera.get();
+var my_video:Video;
+my_video.attachVideo(my_cam);
+
+camera_lbl.text = my_cam.index+". "+my_cam.name;
+this.createTextField("cameras_txt", this.getNextHighestDepth(), 25, 160, 160, 80);
+cameras_txt.html = true;
+cameras_txt.border = true;
+cameras_txt.wordWrap = true;
+cameras_txt.multiline = true;
+for (var i = 0; i&lt;Camera.names.length; i++) {
+    cameras_txt.htmlText += "&lt;li&gt;&lt;u&gt;&lt;a href=\"asfunction:changeCamera,"+i+"\"&gt;"+Camera.names[i]+"&lt;/a&gt;&lt;/u&gt;&lt;/li&gt;";
+}
+function changeCamera(index:Number) {
+    my_cam = Camera.get(index);
+    my_video.attachVideo(my_cam);
+    camera_lbl.text = my_cam.index+". "+my_cam.name;
+}
+</pre></div>            <p>The <code>MovieClip.getNextHighestDepth()</code> method used in this example requires       Flash Player 7 or later. If your SWF file includes a version 2 component, use the version 2 components'       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method.       </p>             <p></p>
+</div>
+<a name="keyFrameInterval"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">keyFrameInterval</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>keyFrameInterval:<a href="Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A number that specifies which video frames are transmitted in full (called keyframes) instead of being       interpolated by the video compression algorithm.       The default value is 15, which means every 15th frame is a keyframe.       A value of 1 means that every frame is a keyframe. The allowed values are 1 through 48.       </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get keyFrameInterval():<a href="Number.html">Number</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#setKeyFrameInterval()" target="">Camera.setKeyFrameInterval()</a>
+</div>
+</div>
+<a name="loopback"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">loopback</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>loopback:<a href="Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A Boolean value that specifies whether a local view of what the camera is capturing is compressed (<code>true</code>)       or uncompressed (<code>false</code>).       The loopback is normally <code>true</code> for live transmission using Flash Media Server. The default value is <code>false</code>.       </p><p>To set this value, use <code>Camera.setLoopback()</code>.       To set the amount of compression used when this property is <code>true</code>, use <code>Camera.setQuality()</code>.</p>       <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get loopback():<a href="Boolean.html">Boolean</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#setLoopback()" target="">Camera.setLoopback()</a>
+<br>
+<a href="Camera.html#setQuality()" target="">Camera.setQuality()</a>
+</div>
+</div>
+<a name="motionLevel"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">motionLevel</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>motionLevel:<a href="Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A numeric value that specifies the amount of motion required to invoke <code>Camera.onActivity(true)</code>. Acceptable values range from 0 to 100. The default value is 50.       </p><p>Video can be displayed regardless of the value of the <code>motionLevel</code> property. For more information, see <code>Camera.setMotionLevel()</code>.</p>            <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get motionLevel():<a href="Number.html">Number</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#event:onActivity" target="">Camera.onActivity</a>
+<br>
+<a href="Camera.html#event:onStatus" target="">Camera.onStatus</a>
+<br>
+<a href="Camera.html#setMotionLevel()" target="">Camera.setMotionLevel()</a>
+<br>
+<a href="Camera.html#activityLevel" target="">Camera.activityLevel</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example continually detects the motion level of a camera feed. <span class="flashonly">Create a new video instance by selecting New Video from the Library options menu. Add an instance to the Stage and give it the instance name <code>my_video</code>. Add a Label component instance to the Stage and give it the instance name motionLevel_lbl, a NumericStepper with the instance name <code>motionLevel_nstep</code>, and a ProgressBar with the instance name motion_pb. Then add the following ActionScript to Frame 1 of the Timeline:</span>       <div class='listing'><pre>
+var my_cam:Camera = Camera.get();
+var my_video:Video;
+my_video.attachVideo(my_cam);
+
+// configure the ProgressBar component instance
+var motion_pb:mx.controls.ProgressBar;
+motion_pb.mode = "manual";
+motion_pb.label = "Motion: %3%%";
+
+var motionLevel_lbl:mx.controls.Label;
+// configure the NumericStepper component instance
+var motionLevel_nstep:mx.controls.NumericStepper;
+motionLevel_nstep.minimum = 0;
+motionLevel_nstep.maximum = 100;
+motionLevel_nstep.stepSize = 5;
+motionLevel_nstep.value = my_cam.motionLevel;
+
+// Continuously update the progress of the ProgressBar component instance to the activityLevel 
+// of the current Camera instance, which is defined in my_cam 
+this.onEnterFrame = function() {
+    motion_pb.setProgress(my_cam.activityLevel, 100);
+};
+
+// When the level of activity goes above or below the number defined in Camera.motionLevel, 
+// trigger the onActivity event handler. 
+my_cam.onActivity = function(isActive:Boolean) {
+    // If isActive equals true, set the themeColor variable to "haloGreen". 
+    // Otherwise set the themeColor to "haloOrange". 
+    var themeColor:String = (isActive) ? "haloGreen" : "haloOrange";
+    motion_pb.setStyle("themeColor", themeColor);
+};
+
+function changeMotionLevel() {
+    // Set the motionLevel property for my_cam Camera instance to the value of the NumericStepper 
+    // component instance. Maintain the current motionTimeOut value of the my_cam Camera instance. 
+    my_cam.setMotionLevel(motionLevel_nstep.value, my_cam.motionTimeOut);
+}
+motionLevel_nstep.addEventListener("change", changeMotionLevel);
+</pre></div>            <p></p>
+</div>
+<a name="motionTimeOut"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">motionTimeOut</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>motionTimeOut:<a href="Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>The number of milliseconds between the time the camera stops detecting motion and the time <code>Camera.onActivity</code><code>       (false)</code> is invoked. The default value is 2000 (2 seconds).       </p><p>To set this value, use <code>Camera.setMotionLevel()</code>. </p>            <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get motionTimeOut():<a href="Number.html">Number</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#setMotionLevel()" target="">Camera.setMotionLevel()</a>
+<br>
+<a href="Camera.html#event:onActivity" target="">Camera.onActivity</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>In the following example, the ProgressBar instance changes its halo theme color when the activity level falls below the motion level. You can set the number of seconds for the <code>motionTimeOut</code> property using a NumericStepper instance. <span class="flashonly">Create a new video instance by selecting New Video from the Library options menu. Add an instance to the Stage and give it the instance name <code>my_video</code>. Add a Label component instance to the Stage and give it the instance name motionLevel_lbl, a NumericStepper with the instance name motionTimeOut_nstep, and a ProgressBar with the instance name motion_pb. Then add the following ActionScript to Frame 1 of the Timeline:</span>       <div class='listing'><pre>
+var motionLevel_lbl:mx.controls.Label;
+var motion_pb:mx.controls.ProgressBar;
+var motionTimeOut_nstep:mx.controls.NumericStepper;
+var my_cam:Camera = Camera.get();
+var my_video:Video;
+my_video.attachVideo(my_cam);
+
+this.onEnterFrame = function() {
+    motionLevel_lbl.text = "activityLevel: "+my_cam.activityLevel;
+};
+
+motion_pb.indeterminate = true;
+my_cam.onActivity = function(isActive:Boolean) {
+    if (isActive) {
+    motion_pb.setStyle("themeColor", "haloGreen");
+    motion_pb.label = "Motion is above "+my_cam.motionLevel;
+    } else {
+    motion_pb.setStyle("themeColor", "haloOrange");
+    motion_pb.label = "Motion is below "+my_cam.motionLevel;
+    }
+};
+function changeMotionTimeOut() {
+    my_cam.setMotionLevel(my_cam.motionLevel, motionTimeOut_nstep.value 1000);
+}
+motionTimeOut_nstep.addEventListener("change", changeMotionTimeOut);
+motionTimeOut_nstep.value = my_cam.motionTimeOut/1000;
+</pre></div>            <p></p>
+</div>
+<a name="muted"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">muted</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>muted:<a href="Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A Boolean value that specifies whether the user has denied access to the camera (<code>true</code>) or allowed access (<code>false</code>) in the Flash Player Privacy Settings panel. When this value changes, <code>Camera.onStatus</code> is invoked. For more information, see <code>Camera.get()</code>.            </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get muted():<a href="Boolean.html">Boolean</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#get()" target="">Camera.get()</a>
+<br>
+<a href="Camera.html#event:onStatus" target="">Camera.onStatus</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>In the following example, an error message could be displayed if <code>my_cam.muted</code> evaluates to true. <span class="flashonly">Create a new video instance by selecting New Video from the Library options menu. Add an instance to the Stage and give it the instance name <code>my_video</code>. Then add the following ActionScript to Frame 1 of the Timeline:</span>       <div class='listing'><pre>
+var my_cam:Camera = Camera.get();
+var my_video:Video;
+my_video.attachVideo(my_cam);
+my_cam.onStatus = function(infoObj:Object) {
+    if (my_cam.muted) {
+    // If user is denied access to their Camera, you can display an error message here. You can display the user's Camera/Privacy settings again using System.showSettings(0); 
+    trace("User denied access to Camera");
+    System.showSettings(0);
+    }
+};
+</pre></div>            <p></p>
+</div>
+<a name="name"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">name</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>name:<a href="String.html">String</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A string that specifies the name of the current camera, as returned by the camera hardware.            </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get name():<a href="String.html">String</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#get()" target="">Camera.get()</a>
+<br>
+<a href="Camera.html#names" target="">Camera.names</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br><span class="flashonly">The following example displays the name of the default camera in a text field.</span> <span class="flexonly">The following example writes the name of the default camera to the log file.</span> In Windows, this name is the same as the device name listed in the Scanners and Cameras Control Panel. <span class="flashonly">Create a new video instance by selecting New Video from the Library options menu. Add an instance to the Stage and give it the instance name <code>my_video</code>. Then add the following ActionScript to Frame 1 of the Timeline:</span>       <div class='listing'><pre>
+var my_cam:Camera = Camera.get();
+var my_video:Video;
+my_video.attachVideo(my_cam);
+
+this.createTextField("name_txt", this.getNextHighestDepth(), 0, 0, 100, 22);
+name_txt.autoSize = true;
+name_txt.text = my_cam.name;
+</pre></div>            <p>The <code>MovieClip.getNextHighestDepth()</code> method used in this example requires       Flash Player 7 or later. If your SWF file includes a version 2 component, use the version 2 components'       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method.       </p>             <p></p>
+</div>
+<a name="names"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">names</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>names:<a href="Array.html">Array</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Retrieves an array of strings reflecting the names of all available cameras without displaying the    Flash Player Privacy Settings panel. This array behaves in the same way as any other ActionScript array, implicitly providing    the zero-based index of each camera and the number of cameras on the system (by means of <code>Camera.names.length</code>).    For more information, see the <code>Camera.names</code> Array class entry.      </p><p>Calling the <code>Camera.names</code> property requires an extensive examination of the hardware, and it may take several seconds    to build the array. In most cases, you can just use the default camera.</p>    <p><strong>Note: </strong>The correct syntax is <code>Camera.names</code>. To assign the return value to a variable, use syntax like    <code><em>cam_array</em></code><code> = Camera.names</code>. To determine the name of the current camera, use    <code><em>active_cam</em></code><code>.name</code>.</p>      <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get names():<a href="Array.html">Array</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#get()" target="">Camera.get()</a>
+<br>
+<a href="Camera.html#index" target="">Camera.index</a>
+<br>
+<a href="Camera.html#name" target="">Camera.name</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example uses the default camera unless more than one camera is available, in which case the user can choose    which camera to set as the default camera. If only one camera is present, then the default camera is used. <span class="flashonly">    Create a new video instance by selecting New Video from the Library options menu. Add an instance to the Stage and give it the    instance name <code>my_video</code>. Then add the following ActionScript to Frame 1 of the Timeline:</span>    <div class='listing'><pre>
+var my_video:Video;
+var cam_array:Array = Camera.names;
+if (cam_array.length&gt;1) {
+    System.showSettings(3);
+}
+var my_cam:Camera = Camera.get();
+my_video.attachVideo(my_cam);
+</pre></div>      <p></p>
+</div>
+<a name="quality"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">quality</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>quality:<a href="Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>An integer specifying the required level of picture quality, as determined by the amount of compression being applied to each video frame. Acceptable quality values range from 1 (lowest quality, maximum compression) to 100 (highest quality, no compression). The default value is 0, which means that picture quality can vary as needed to avoid exceeding available bandwidth.            </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get quality():<a href="Number.html">Number</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#setQuality()" target="">Camera.setQuality()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example uses a NumericStepper instance to specify the amount of compression applied to the camera feed. <span class="flashonly">Create a new video instance by selecting New Video from the Library options menu. Add an instance to the Stage and give it the instance name <code>my_video</code>. Add a NumericStepper with the instance name quality_nstep. Then add the following ActionScript to Frame 1 of the Timeline:</span>       <div class='listing'><pre>
+var quality_nstep:mx.controls.NumericStepper;
+
+var my_cam:Camera = Camera.get();
+var my_video:Video;
+my_video.attachVideo(my_cam);
+
+quality_nstep.minimum = 0;
+quality_nstep.maximum = 100;
+quality_nstep.stepSize = 5;
+quality_nstep.value = my_cam.quality;
+
+function changeQuality() {
+    my_cam.setQuality(my_cam.bandwidth, quality_nstep.value);
+}
+quality_nstep.addEventListener("change", changeQuality);
+</pre></div>            <p></p>
+</div>
+<a name="width"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">width</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>width:<a href="Number.html">Number</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>The current capture width, in pixels. To set a desired value for this property, use <code>Camera.setMode()</code>.            </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get width():<a href="Number.html">Number</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#height" target="">Camera.height</a>
+<br>
+<a href="Camera.html#setMode()" target="">Camera.setMode()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following code displays the current width, height and FPS of a video instance in a Label component instance on the Stage. <span class="flashonly">Create a new video instance by selecting New Video from the Library options menu. Add an instance to the Stage and give it the instance name <code>my_video</code>. Add a Label component instance to the Stage and give it the instance name dimensions_lbl. Then add the following ActionScript to Frame 1 of the Timeline:</span>       <div class='listing'><pre>
+var my_cam:Camera = Camera.get();
+var my_video:Video;
+my_video.attachVideo(my_cam);
+var dimensions_lbl:mx.controls.Label;
+dimensions_lbl.setStyle("fontSize", 9);
+dimensions_lbl.setStyle("fontWeight", "bold");
+dimensions_lbl.setStyle("textAlign", "center");
+dimensions_lbl.text = "width: "+my_cam.width+", height: "+my_cam.height+", FPS: "+my_cam.fps;
+</pre></div>       <p>See also the example for <code>Camera.setMode()</code>. </p>            <p></p>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="get()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">get</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function get([index:<a href="Number.html">Number</a>]):<a href="Camera.html">Camera</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Returns a reference to a Camera object for capturing video. To actually begin capturing the video, you must attach the Camera object to a Video object (see <code>Video.attachVideo()</code>).    </p><p>Unlike objects that you create using the <code>new</code> constructor, multiple calls to <code>Camera.get()</code> reference the same camera. Thus, if your script contains the lines <code>first_cam = Camera.get()</code> and <code>second_cam = Camera.get()</code>, both <code>first_cam</code> and <code>second_cam</code> reference the same (default) camera.</p>    <p>In general, you shouldn't pass a value for <code><em>index</em></code>; simply use <code>Camera.get()</code> to return a reference to the default camera. By means of the Camera settings panel (discussed later in this section), the user can specify the default camera Flash should use. If you pass a value for <code><em>index</em></code>, you might be trying to reference a camera other than the one the user prefers. You might use <code><em>index</em></code> in rare cases--for example, if your application is capturing video from two cameras at the same time.</p>    <p>When a SWF file tries to access the camera returned by <code>Camera.get()</code>, Flash Player displays a Privacy dialog box that lets the user choose whether to allow or deny access to the camera. (Make sure your Stage size is at least 215 x 138 pixels; this is the minimum size Flash requires to display the dialog box.) </p>    <p>When the user responds to this dialog box, the <code>Camera.onStatus</code> event handler returns an information object that indicates the user's response. To determine whether the user has denied or allowed access to the camera without processing this event handler, use the <code>Camera.muted</code> property.</p>    <p>The user can also specify permanent privacy settings for a particular domain by right-clicking (Windows) or Control-clicking (Macintosh) while a SWF file is playing, selecting Settings, opening the Privacy panel, and selecting Remember. </p>    <p>You can't use ActionScript to set the Allow or Deny value for a user, but you can display the Privacy panel for the user by using <code>System.showSettings(0)</code>. If the user selects Remember, Flash Player no longer displays the Privacy dialog box for SWF files from this domain.</p>    <p>If <code>Camera.get</code> returns <code>null</code>, either the camera is in use by another application, or there are no cameras installed on the system. To determine whether any cameras are installed, use <code>Camera.names.length</code>. To display the Flash Player Camera Settings panel, which lets the user choose the camera to be referenced by <code>Camera.get()</code>, use <code>System.showSettings(3)</code>. </p>    <p>Scanning the hardware for cameras takes time. When Flash finds at least one camera, the hardware is not scanned again for the lifetime of the player instance. However, if Flash doesn't find any cameras, it will scan each time <code>Camera.get</code> is called. This is helpful if a user has forgotten to connect the camera; if your SWF file provides a Try Again button that calls <code>Camera.get</code>, Flash can find the camera without the user having to restart the SWF file.</p>    <p><strong>Note: </strong>The correct syntax is <code>Camera.get()</code>. To assign the Camera object to a variable, use syntax like <code>active_cam = Camera.get()</code>.</p>        <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">index</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; A zero-based integer that specifies which camera to get, as determined from the array returned by the <code>Camera.names</code> property. To get the default camera (which is recommended for most applications), omit this parameter.        </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Camera.html">Camera</a></code> &mdash; 
+If <code>index</code> is not specified, this method returns a reference to the default camera or, if it is in use by another application, to the first available camera. (If there is more than one camera installed, the user may specify the default camera in the Flash Player Camera Settings panel.) If no cameras are available or installed, the method returns <code>null</code>. If <code>index</code> is specified, this method returns a reference to the requested camera, or <code>null</code> if it is not available.         
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#index" target="">Camera.index</a>
+<br>
+<a href="Camera.html#muted" target="">Camera.muted</a>
+<br>
+<a href="Camera.html#names" target="">Camera.names</a>
+<br>
+<a href="Camera.html#event:onStatus" target="">Camera.onStatus</a>
+<br>
+<a href="Camera.html#setMode()" target="">Camera.setMode()</a>
+<br>
+<a href="System.html#showSettings()" target="">System.showSettings()</a>
+<br>
+<a href="Video.html#attachVideo()" target="">Video.attachVideo()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example lets you select an active camera to use from a ComboBox instance. The current active camera is displayed in a Label instance. <span class="flashonly">Create a new video instance by selecting New Video from the Library options menu. Add an instance to the Stage and give it the instance name <code>my_video</code>. Add a Label component instance to the Stage and give it the instance name camera_lbl, and a ComboBox component instance and give it the instance name <code>cameras_cb</code>. Then add the following ActionScript to Frame 1 of the Timeline:</span>    <div class='listing'><pre>
+var my_cam:Camera = Camera.get();
+var my_video:Video;
+my_video.attachVideo(my_cam);
+var camera_lbl:mx.controls.Label;
+var cameras_cb:mx.controls.ComboBox;
+camera_lbl.text = my_cam.name;
+cameras_cb.dataProvider = Camera.names;
+function changeCamera():Void {
+    my_cam = Camera.get(cameras_cb.selectedIndex);
+    my_video.attachVideo(my_cam);
+    camera_lbl.text = my_cam.name;
+}
+cameras_cb.addEventListener("change", changeCamera);
+camera_lbl.setStyle("fontSize", 9);
+cameras_cb.setStyle("fontSize", 9);
+</pre></div>      <p></p>
+</div>
+<a name="setKeyFrameInterval()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setKeyFrameInterval</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setKeyFrameInterval(keyFrameInterval:<a href="Number.html">Number</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Specifies which video frames are transmitted in full (called keyframes) instead of being interpolated by the video compression algorithm.       This method is generally applicable only if you are transmitting video using Flash Media Server.       </p><p>For more information, see the       <a target="mm_external" href="http://www.adobe.com/support/documentation">Flash Media Server documentation</a>.</p>       <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">keyFrameInterval</span>:<a href="Number.html">Number</a></code> &mdash; A number specifying which video frames are transmitted in full (called keyframes) The default is 15.       </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#keyFrameInterval" target="">Camera.keyFrameInterval</a>
+</div>
+</div>
+<a name="setLoopback()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setLoopback</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setLoopback(compress:<a href="Boolean.html">Boolean</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Set to <code>true</code> to use a compressed video stream for a local view of what the camera is transmitting.       The default is <code>false</code>.       This method is generally applicable only if you are transmitting video using Flash Media Server.       </p><p>To set the amount of compression used when you set compress to <code>true</code>, use <code>Camera.setQuality()</code>.</p>       <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">compress</span>:<a href="Boolean.html">Boolean</a></code> &mdash; A boolean value that is <code>true</code> to use a compressed stream or <code>false</code> to use an uncompressed       stream of the view the camera is receiving.       </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#loopback" target="">Camera.loopback</a>
+<br>
+<a href="Camera.html#setQuality()" target="">Camera.setQuality()</a>
+</div>
+</div>
+<a name="setMode()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setMode</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setMode([width:<a href="Number.html">Number</a>], [height:<a href="Number.html">Number</a>], [fps:<a href="Number.html">Number</a>], [favorArea:<a href="Boolean.html">Boolean</a>]):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Sets the camera capture mode to the native mode that best meets the specified requirements. If the camera does not have a native mode that matches all the parameters you pass, Flash selects a capture mode that most closely synthesizes the requested mode. This manipulation may involve cropping the image and dropping frames.       </p><p>By default, Flash drops frames as needed to maintain image size. To minimize the number of dropped frames, even if this means reducing the size of the image, pass <code>false</code> for the <code>favorArea</code> parameter.</p>       <p>When choosing a native mode, Flash tries to maintain the requested aspect ratio whenever possible. For example, if you issue the command <code><em>active_cam</em></code>.<code>setMode</code>(<code>400, 400, 30</code>), and the maximum width and height values available on the camera are 320 and 288, Flash sets both the width and height at 288; by setting these properties to the same value, Flash maintains the 1:1 aspect ratio you requested.</p>       <p>To determine the values assigned to these properties after Flash selects the mode that most closely matches your requested values, use <code>Camera.width</code>, <code>Camera.height</code>, and <code>Camera.fps</code>.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">width</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; The requested capture width, in pixels. The default value is 160.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">height</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; The requested capture height, in pixels. The default value is 120.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">fps</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; The requested rate at which the camera should capture data, in frames per second. The default value is 15.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">favorArea</span>:<a href="Boolean.html">Boolean</a></code>&nbsp;[optional] &mdash; A Boolean value that specifies how to manipulate the width, height, and frame rate if the camera does not have a native mode that meets the specified requirements. The default value is <code>true</code>, which means that maintaining capture size is favored; using this parameter selects the mode that most closely matches <code><em>width</em></code> and <code><em>height</em></code> values, even if doing so adversely affects performance by reducing the frame rate. To maximize frame rate at the expense of camera height and width, pass <code>false</code> for the <code>favorArea</code> parameter.            </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#fps" target="">Camera.fps</a>
+<br>
+<a href="Camera.html#height" target="">Camera.height</a>
+<br>
+<a href="Camera.html#width" target="">Camera.width</a>
+<br>
+<a href="Camera.html#currentFps" target="">Camera.currentFps</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example sets the camera capture mode. You can type a frame rate into a TextInput instance and press Enter or Return to apply the frame rate. <span class="flashonly">Create a new video instance by selecting New Video from the Library options menu. Add an instance to the Stage and give it the instance name <code>my_video</code>. Add a TextInput component instance with the instance name fps_ti. Then add the following ActionScript to Frame 1 of the Timeline:</span>       <div class='listing'><pre>
+var my_cam:Camera = Camera.get();
+var my_video:Video;
+my_video.attachVideo(my_cam);
+
+fps_ti.maxChars = 2;
+fps_ti.restrict = [0-9];
+fps_lbl.text = "Current: "+my_cam.fps+" fps";
+
+function changeFps():Void {
+    my_cam.setMode(my_cam.width, my_cam.height, fps_ti.text);
+    fps_lbl.text = "Current: "+my_cam.fps+" fps";
+    fps_ti.text = my_cam.fps;
+    Selection.setSelection(0,2);
+}
+fps_ti.addEventListener("enter", changeFps);
+</pre></div>            <p></p>
+</div>
+<a name="setMotionLevel()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setMotionLevel</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setMotionLevel([motionLevel:<a href="Number.html">Number</a>], [timeOut:<a href="Number.html">Number</a>]):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Specifies how much motion is required to invoke <code>Camera.onActivity(true)</code>. Optionally sets the number of milliseconds that must elapse without activity before Flash considers motion to have stopped and invokes <code>Camera.onActivity(false)</code>.       </p><p><strong>Note: </strong>Video can be displayed regardless of the value of the <code>sensitivity</code> parameter. This parameter determines only when and under what circumstances <code>Camera.onActivity</code> is invoked--not whether video is actually being captured or displayed.</p>       <ul>         <li>To prevent the camera from detecting motion at all, pass a value of 100 for <code><em>sensitivity</em></code>; <code>Camera.onActivity</code> is never invoked. (You would probably use this value only for testing purposes--for example, to temporarily disable any actions set to occur when <code>Camera.onActivity</code> is invoked.)</li>         <li>To determine the amount of motion the camera is currently detecting, use the <code>Camera.activityLevel</code> property.       <p>Motion sensitivity values correspond directly to activity values. Complete lack of motion is an activity value of 0. Constant motion is an activity value of 100. Your activity value is less than your motion sensitivity value when you're not moving; when you are moving, activity values frequently exceed your motion sensitivity value.</p>       <p>This method is similar in purpose to <code>Microphone.setSilenceLevel()</code>; both methods are used to specify when the <code>onActivity</code> event handler should be invoked. However, these methods have a significantly different impact on publishing streams:</p>         </li>         <li><code>Microphone.setSilenceLevel()</code> is designed to optimize bandwidth. When an audio stream is considered silent, no audio data is sent. Instead, a single message is sent, indicating that silence has started. </li>         <li><code>Camera.setMotionLevel()</code> is designed to detect motion and does not affect bandwidth usage. Even if a video stream does not detect motion, video is still sent.</li>       </ul>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">motionLevel</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; A numeric value that specifies the amount of motion required to invoke <code>Camera.onActivity(true)</code>. Acceptable values range from 0 to 100. The default value is 50.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">timeOut</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; A numeric parameter that specifies how many milliseconds must elapse without activity before Flash considers activity to have stopped and invokes the <code>Camera.onActivity(false)</code> event handler. The default value is 2000 (2 seconds).            </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#motionLevel" target="">Camera.motionLevel</a>
+<br>
+<a href="Camera.html#motionTimeOut" target="">Camera.motionTimeOut</a>
+<br>
+<a href="Camera.html#event:onActivity" target="">Camera.onActivity</a>
+<br>
+<a href="Camera.html#activityLevel" target="">Camera.activityLevel</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br><span class="flashonly">The following example sends messages to the Output panel when video activity starts or stops.</span> <span class="flexonly">The following example writes to the log file when video activity starts or stops.</span> Change the motion sensitivity value of 30 to a higher or lower number to see how different values affect motion detection.       <div class='listing'><pre>
+// Assumes a Video object named "myVideoObject" is on the Stage
+active_cam = Camera.get();
+x = 0;
+function motion(mode) {
+    trace(x + ": " + mode);
+    x++;
+}
+active_cam.onActivity = function(mode) {
+    motion(mode);
+}
+active_cam.setMotionLevel(30, 500);
+myVideoObject.attachVideo(active_cam);
+</pre></div>            <p></p>
+</div>
+<a name="setQuality()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setQuality</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setQuality([bandwidth:<a href="Number.html">Number</a>], [quality:<a href="Number.html">Number</a>]):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Sets the maximum amount of bandwidth per second or the required picture quality of the current outgoing video feed. This method is generally applicable only if you are transmitting video using Flash Media Server.       </p><p>Use this method to specify which element of the outgoing video feed is more important to your application--bandwidth use or picture quality.</p>       <ul>         <li>To indicate that bandwidth use takes precedence, pass a value for <code><em>bandwidth</em></code> and 0 for <code><em>frameQuality</em></code>. Flash will transmit video at the highest quality possible within the specified bandwidth. If necessary, Flash will reduce picture quality to avoid exceeding the specified bandwidth. In general, as motion increases, quality decreases.</li>         <li>To indicate that quality takes precedence, pass 0 for <code><em>bandwidth</em></code> and a numeric value for <code><em>frameQuality</em></code>. Flash will use as much bandwidth as required to maintain the specified quality. If necessary, Flash will reduce the frame rate to maintain picture quality. In general, as motion increases, bandwidth use also increases.</li>         <li>To specify that both bandwidth and quality are equally important, pass numeric values for both parameters. Flash will transmit video that achieves the specified quality and that doesn't exceed the specified bandwidth. If necessary, Flash will reduce the frame rate to maintain picture quality without exceeding the specified bandwidth.</li>       </ul>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">bandwidth</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer that specifies the maximum amount of bandwidth that the current outgoing video feed can use, in bytes per second. To specify that Flash video can use as much bandwidth as needed to maintain the value of <code><em>frameQuality</em></code>, pass 0 for <code><em>bandwidth</em></code>. The default value is 16384.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">quality</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer that specifies the required level of picture quality, as determined by the amount of compression being applied to each video frame. Acceptable values range from 1 (lowest quality, maximum compression) to 100 (highest quality, no compression). To specify that picture quality can vary as needed to avoid exceeding bandwidth, pass 0 for <code><em>quality</em></code>. The default value is 0.            </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#get()" target="">Camera.get()</a>
+<br>
+<a href="Camera.html#quality" target="">Camera.quality</a>
+<br>
+<a href="Camera.html#bandwidth" target="">Camera.bandwidth</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following examples illustrate how to use this method to control bandwidth use and picture quality.       <div class='listing'><pre>
+// Ensure that no more than 8192 (8K/second) is used to send video
+active_cam.setQuality(8192,0);
+
+// Ensure that no more than 8192 (8K/second) is used to send video
+// with a minimum quality of 50
+active_cam.setQuality(8192,50);
+
+// Ensure a minimum quality of 50, no matter how much bandwidth it takes
+active_cam.setQuality(0,50);
+</pre></div>            <p></p>
+</div>
+<div class="detailSectionHeader">Event detail</div>
+<a name="event:onActivity"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onActivity</td><td class="detailHeaderType">event&nbsp;handler</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onActivity = function(active:<a href="Boolean.html">Boolean</a>) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Invoked when the camera starts or stops detecting motion. If you want to respond to this event handler,       you must create a function to process its activity value.       </p><p>To specify the amount of motion required to invoke <code>Camera.onActivity(true)</code> and the       amount of time that must elapse without activity before invoking Camera.on<code>Activity(false)</code>,       use <code>Camera.setMotionLevel()</code>.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">active</span>:<a href="Boolean.html">Boolean</a></code> &mdash; A Boolean value set to true when the camera starts detecting motion, false when the motion stops.            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br><span class="flashonly">The following example displays true or false in the Output panel when the camera starts or stops detecting motion:</span> <span class="flexonly">The following example writes to the log file when the camera starts or stops detecting motion:</span>       <div class='listing'><pre>
+// Assumes a Video object named "myVideoObject" is on the Stage
+active_cam = Camera.get();
+myVideoObject.attachVideo(active_cam);
+active_cam.setMotionLevel(10, 500);
+active_cam.onActivity = function(mode)
+{
+    trace(mode);
+}
+</pre></div>            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#setMotionLevel()" target="">Camera.setMotionLevel()</a>
+</div>
+</div>
+<a name="event:onStatus"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onStatus</td><td class="detailHeaderType">event&nbsp;handler</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onStatus = function(infoObject:<a href="Object.html">Object</a>) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Invoked when the user allows or denies access to the camera. If you want to respond to this event handler, you must create a function to process the information object generated by the camera.       </p><p>When a SWF file tries to access the camera, Flash Player displays a Privacy dialog box that lets the user choose whether to allow or deny access.</p>       <ul><li>If the user allows access, the <code>Camera.muted</code> property is set to false, and this handler is invoked with an information object whose code property is "Camera.Unmuted" and whose level property is "Status".</li>       <li>If the user denies access, the <code>Camera.muted</code> property is set to true, and this handler is invoked with an information object whose code property is "Camera.Muted" and whose level property is "Status".</li></ul>       <p>To determine whether the user has denied or allowed access to the camera without processing this event handler, use the <code>Camera.muted</code> property.</p>       <p>Note: If the user chooses to permanently allow or deny access for all SWF files from a specified domain, this handler is not invoked for SWF files from that domain unless the user later changes the privacy setting. For more information, see <code>Camera.get()</code>.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">infoObject</span>:<a href="Object.html">Object</a></code> &mdash; A parameter defined according to the status message.            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br><span class="flashonly">The following ActionScript is used to display a message whenever the user allows or denies access to the camera:</span> <span class="flexonly">The following event handler writes the results of the trace() method to the log file:</span>       <div class='listing'><pre>
+var my_cam:Camera = Camera.get();
+var my_video:Video;
+my_video.attachVideo(my_cam);
+my_cam.onStatus = function(infoObj:Object) {
+    switch (infoObj.code) {
+    case 'Camera.Muted' :
+    trace("Camera access is denied");
+    break;
+    case 'Camera.Unmuted' :
+    trace("Camera access granted");
+    break;
+    }
+}
+</pre></div>            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Camera.html#get()" target="">Camera.get()</a>
+<br>
+<a href="Camera.html#muted" target="">Camera.muted</a>
+<br>
+<a href="System.html#showSettings()" target="">System.showSettings()</a>
+<br>
+<a href="System.html#event:onStatus" target="">System.onStatus</a>
+</div>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

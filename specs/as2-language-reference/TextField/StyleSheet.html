@@ -1,0 +1,691 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../print.css" type="text/css" media="print">
+<meta content="StyleSheet,TextField.StyleSheet,clear,getStyle,getStyleNames,load,parseCSS,setStyle,transform" name="keywords">
+<title>TextField.StyleSheet</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../asdoc.js"></script><script type="text/javascript" language="javascript" src="../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'StyleSheet - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../all-classes.html')" href="../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../all-classes.html')" href="../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="../language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('../index-list.html')" href="../all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="../appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="../index.html?TextField/StyleSheet.html&amp;TextField/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;StyleSheet</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class StyleSheet"); titleBar_setSubNav(false,false,false,false,true,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">TextField</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class StyleSheet</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">StyleSheet <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../images/inherit-arrow.gif"> <a href="../Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p>
+<p></p>The StyleSheet class lets you create a StyleSheet object that contains text   formatting rules for font size, color, and other styles. You can then apply   styles defined by a style sheet to a TextField object that contains HTML- or   XML-formatted text. The text in the TextField object is automatically   formatted according to the tag styles defined by the StyleSheet object. You can use text styles   to define new formatting tags, redefine built-in HTML tags, or create style classes that you can apply to certain HTML tags.     <p>To apply styles to a TextField object, assign the StyleSheet   object to a TextField object's <code>styleSheet</code> property.</p>   <p><strong>Note:</strong> A text field with a style sheet applied to it is not editable. In other words, a text field with the <code>type</code> property set to <code>"input"</code> applies the style sheet formatting to the default text for the text field, but the content will no longer be editable by the user. Consider using the TextFormat class to assign styles to input text fields.</p>       <p>Flash Player supports a subset of properties in the original CSS1 specification   (<a target="mm_external" href="http://www.w3.org/TR/REC-CSS1">www.w3.org/TR/REC-CSS1</a>).   The following table shows the supported Cascading Style Sheet (CSS) properties and values, as well as their corresponding   ActionScript property names. (Each ActionScript property name is derived from the corresponding   CSS property name; if the name contains a hyphen, the hyphen is omitted and the subsequent character is capitalized.)</p>     <table class="innertable">       <tr>       <th>   CSS property       </th>       <th>     ActionScript property       </th>       <th>   Usage and supported values       </th>     </tr>       <tr>       <td>   <p><code>color</code></p>       </td>       <td>   <p><code>color</code></p>       </td>         <td>   <p>Only hexadecimal color values are supported. Named colors (such as <code>blue</code>)   are not supported. Colors are written in the following format: <code>#FF0000</code>.</p>       </td>     </tr>         <tr>       <td>   <p><code>display</code></p>         </td>       <td>   <p><code>display</code></p>       </td>       <td>   <p>Supported values are <code>inline</code>, <code>block</code>, and <code>none</code>.</p>         </td>     </tr>       <tr>       <td>   <p><code>font-family</code></p>       </td>       <td>     <p><code>fontFamily</code></p>       </td>       <td>   <p>A comma-separated list of fonts to use, in descending order of desirability. Any font   family name can be used. If you specify a generic font name, it is converted to an   appropriate device font. The following font conversions are available: <code>mono</code> is   converted to <code>_typewriter</code>, <code>sans-serif</code> is converted to   <code>_sans</code>, and <code>serif</code> is converted to <code>_serif</code>.</p>         </td>     </tr>       <tr>       <td>   <p><code>font-size</code></p>       </td>       <td>   <p><code>fontSize</code></p>       </td>       <td>   <p>Only the numeric part of the value is used. Units (px, pt) are not parsed; pixels and points   are equivalent.</p>         </td>     </tr>         <tr>       <td>   <p><code>font-style</code></p>       </td>       <td>   <p><code>fontStyle</code></p>       </td>       <td>   <p>Recognized values are <code>normal</code> and <code>italic</code>.</p>         </td>     </tr>         <tr>       <td>   <p><code>font-weight</code></p>       </td>       <td>   <p><code>fontWeight</code></p>       </td>         <td>   <p>Recognized values are <code>normal</code> and <code>bold</code>. </p>       </td>     </tr>       <tr>       <td>   <p><code>kerning</code></p>       </td>       <td>   <p><code>kerning</code></p>       </td>       <td>   <p>Recognized values are <code>true</code> and <code>false</code>.   Kerning is supported for embedded fonts only. Certain fonts, such as Courier New, do not support kerning.   The kerning property is only supported in SWF files created in Windows, not in SWF files created on the   Macintosh. However, these SWF files can be played in non-Windows versions of Flash Player and the kerning   still applies.</p>       </td>     </tr>       <tr>       <td><code>leading</code></td>       <td><code>leading</code></td>       <td>The amount of space that is uniformly distributed between lines. The value specifies the          number of pixels that are added after each line. A negative value condenses the space       between lines. Only the numeric part of the value is used. Units (px, pt) are not parsed;       pixels and points are equivalent. Available in Flash Player 8 and later.</td>     </tr>       <tr>       <td>   <p><code>letter-spacing</code></p>       </td>       <td>   <p><code>letterSpacing</code></p>       </td>       <td>   <p>The amount of space that is uniformly distributed between characters.   The value specifies the number of pixels that are added to the advance after each   character. A negative value condenses the space between characters. Only the numeric part of the   value is used. Units (px, pt) are not parsed; pixels and points are equivalent.</p>       </td>     </tr>       <tr>       <td>   <p><code>margin-left</code></p>       </td>       <td>   <p><code>marginLeft</code></p>       </td>       <td>   <p>Only the numeric part of the value is used. Units (px, pt) are not parsed; pixels and points   are equivalent.</p>       </td>     </tr>       <tr>       <td>   <p><code>margin-right</code></p>       </td>       <td>   <p><code>marginRight</code></p>       </td>       <td>   <p>Only the numeric part of the value is used. Units (px, pt) are not parsed; pixels and   points are equivalent.</p>         </td>     </tr>       <tr>       <td>   <p><code>text-align</code></p>       </td>       <td>     <p><code>textAlign</code></p>       </td>       <td>   <p>Recognized values are <code>left</code>, <code>center</code>, <code>right</code>, and   <code>justify</code>.</p>       </td>     </tr>       <tr>       <td>   <p><code>text-decoration</code></p>       </td>       <td>   <p><code>textDecoration</code></p>       </td>         <td>   <p>Recognized values are <code>none</code> and <code>underline</code>.</p>       </td>     </tr>       <tr>       <td>   <p><code>text-indent</code></p>       </td>       <td>   <p><code>textIndent</code></p>       </td>         <td>   <p>Only the numeric part of the value is used. Units (px, pt) are not parsed; pixels and   points are equivalent.</p>       </td>     </tr>       </table>     <span class="flexonly"><p>You can use the StyleSheet class to perform low-level text rendering.   However, in Flex, you typically use the Label, Text, TextArea, and TextInput controls to process text.</p></span>     <p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../TextField.html" target="">TextField</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#StyleSheet()">StyleSheet</a>()</div>
+<div class="summaryTableDescription">Creates a StyleSheet object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clear()">clear</a>():Void</div>
+<div class="summaryTableDescription">Removes all styles from the specified StyleSheet object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getStyle()">getStyle</a>(name:<a href="../String.html">String</a>):<a href="../Object.html">Object</a>
+</div>
+<div class="summaryTableDescription">Returns a copy of the style object associated with the specified style (<code>name</code>).</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getStyleNames()">getStyleNames</a>():<a href="../Array.html">Array</a>
+</div>
+<div class="summaryTableDescription">Returns an array that contains the names (as strings) of all of the styles registered in this style sheet.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#load()">load</a>(url:<a href="../String.html">String</a>):<a href="../Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Starts loading the CSS file into the StyleSheet.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#parseCSS()">parseCSS</a>(cssText:<a href="../String.html">String</a>):<a href="../Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Parses the CSS in <code>cssText</code> and loads the StyleSheet with it.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setStyle()">setStyle</a>(name:<a href="../String.html">String</a>, style:<a href="../Object.html">Object</a>):Void</div>
+<div class="summaryTableDescription">Adds a new style with the specified name to the StyleSheet object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#transform()">transform</a>(style:<a href="../Object.html">Object</a>):<a href="../TextFormat.html">TextFormat</a>
+</div>
+<div class="summaryTableDescription">Extends the CSS parsing capability.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../Object.html#addProperty()">addProperty</a>, <a href="../Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="../Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="../Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="../Object.html#registerClass()">registerClass</a>, <a href="../Object.html#toString()">toString</a>, <a href="../Object.html#unwatch()">unwatch</a>, <a href="../Object.html#valueOf()">valueOf</a>, <a href="../Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<a name="eventSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Events</div>
+<table id="summaryTableEvent" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Event</th><th>Summary</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onLoad">onLoad</a> = function(success:<a href="../Boolean.html">Boolean</a>) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked when a <code>load()</code> operation has completed.</td><td class="summaryTableOwnerCol">StyleSheet</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="StyleSheet()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">StyleSheet</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function StyleSheet()</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Creates a StyleSheet object.    </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="StyleSheet.html#getStyle()" target="">getStyle()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example loads in a style sheet and traces the styles that load into the document. Add the following   ActionScript to your ActionScript or FLA file:   <div class='listing'><pre>
+import TextField.StyleSheet;
+var my_styleSheet:StyleSheet = new StyleSheet();
+my_styleSheet.onLoad = function(success:Boolean) {
+    if (success) {
+        trace("Styles loaded:");
+        var styles_array:Array = my_styleSheet.getStyleNames();
+        trace(styles_array.join(newline));
+    } else {
+        trace("Error loading CSS");
+    }
+};
+my_styleSheet.load("styles.css");
+</pre></div>   <p><span class="flashonly">The styles.css file contains two styles, called <code>.heading</code> and <code>.mainbody</code>, so the following information is displayed in the Output panel:</span><span class="flexonly">The styles.css file contains two styles called <code>.heading</code> and <code>.mainbody</code>; the following information writes to the log file:</span></p>   <pre><code>
+  Styles loaded:
+  .heading
+  .mainBody
+  </code></pre>   <p>The complete code for styles.css is found in the example for <code>getStyle()</code>.</p>     <p></p>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="clear()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clear</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clear():Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Removes all styles from the specified StyleSheet object.    </p><br>
+<span class="label">Example</span>
+<br><span class="flashonly">The following example loads a StyleSheet called styles.css into a SWF file, and displays the styles that are loaded in the Output panel.</span><span class="flexonly"> The following example loads a StyleSheet called styles.css into a SWF file, and writes the styles that are loaded to the log file.</span> When you click <code>clear_btn</code>, all styles from the <code>my_styleSheet</code> object are removed.   <div class='listing'><pre>
+// Create a new StyleSheet object
+import TextField.StyleSheet;
+var my_styleSheet:StyleSheet = new StyleSheet();
+
+my_styleSheet.onLoad = function(success:Boolean) {
+    if (success) {
+        trace("Styles loaded.");
+        var styles_array:Array = my_styleSheet.getStyleNames();
+        for (var i = 0; I &lt; styles_array.length; i++) {
+            trace("\t"+styles_array[i]);
+        }
+        trace("");
+    } else {
+        trace("Error loading CSS");
+    }
+};
+
+// Start the loading operation
+my_styleSheet.load("styles.css");
+
+clear_btn.onRelease = function() {
+    my_styleSheet.clear();
+    trace("Styles cleared.");
+    var styles_array:Array = my_styleSheet.getStyleNames();
+    for (var i = 0; i&lt;styles_array.length; i++) {
+        trace("\t"+styles_array[i]);
+    }
+    trace("");
+};
+</pre></div>     <p></p>
+</div>
+<a name="getStyle()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getStyle</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getStyle(name:<a href="../String.html">String</a>):<a href="../Object.html">Object</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Returns a copy of the style object associated with the specified style (<code>name</code>). If there is no style object   associated with <code>name</code>, the method returns <code>null</code>.     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:<a href="../String.html">String</a></code> &mdash; The name of the style to retrieve.    </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../Object.html">Object</a></code> &mdash; 
+A style object; otherwise <code>null</code>.    
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="StyleSheet.html#setStyle()" target="">getStyle()</a>
+<br>
+<a href="StyleSheet.html#getStyleNames()" target="">getStyleNames()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br><span class="flashonly">The following example loads styles from a CSS file, parses the StyleSheet and displays style names   and property values in the Output panel.</span> <span class="flexonly">The following example loads styles from a CSS file, parses the   StyleSheet and writes style names and property values to the log file.</span> Create a ActionScript file called   StyleSheetTracer.as and enter the following code in the file:   <div class='listing'><pre>
+import TextField.StyleSheet;
+class StyleSheetTracer {
+    // StyleSheetTracer.displayFromURL  
+    // This method displays the CSS style sheet at
+    // the specified URL in the Output panel.
+    static function displayFromURL(url:String):Void {
+        // Create a new StyleSheet object
+        var my_styleSheet:StyleSheet = new StyleSheet();
+        // The load operation is asynchronous, so set up
+        // a callback function to display the loaded StyleSheet. 
+        my_styleSheet.onLoad = function(success:Boolean) {
+            if (success) {
+                StyleSheetTracer.display(this);
+            } else {
+                trace("Error loading style sheet "+url);
+            }
+        };
+        // Start the loading operation.
+        my_styleSheet.load(url);
+    }
+    static function display(my_styleSheet:StyleSheet):Void {
+        var styleNames:Array = my_styleSheet.getStyleNames();
+        if (!styleNames.length) {
+            trace("This is an empty style sheet.");
+        } else {
+            for (var i = 0; i&lt;styleNames.length; i++) {
+                var styleName:String = styleNames[i];
+                trace("Style "+styleName+":");
+                var styleObject:Object = my_styleSheet.getStyle(styleName);
+                for (var propName in styleObject) {
+                    var propValue = styleObject[propName];
+                    trace("\t"+propName+": "+propValue);
+                }
+                trace("");
+            }
+        }
+    }
+}
+</pre></div>   <p>Create a CSS document called styles.css, which has two styles called <code>.heading</code> and <code>.mainBody</code> that define   properties for <code>font-family</code>, <code>font-size</code> and <code>font-weight</code>. Enter the following code in the CSS   document:</p>   <pre><code>
+  .heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .mainBody {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  </code></pre>   <p>Finally, in a FLA or ActionScript file, enter the following ActionScript to load the external style sheet, styles.css:</p>   <div class='listing'><pre>
+StyleSheetTracer.displayFromURL("styles.css");
+</pre></div>   <p><span class="flashonly">This displays the following in the Output panel:</span><span class="flexonly">This writes the following information to the log file:</span></p>   <pre><code>
+  Style .heading:
+    fontWeight: bold
+    fontSize: 24px
+    fontFamily: Arial, Helvetica, sans-serif
+  
+  Style .mainBody:
+    fontWeight: normal
+    fontSize: 12px
+    fontFamily: Arial, Helvetica, sans-serif
+  </code></pre>     <p></p>
+</div>
+<a name="getStyleNames()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getStyleNames</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getStyleNames():<a href="../Array.html">Array</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Returns an array that contains the names (as strings) of all of the styles registered in this style   sheet.     </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../Array.html">Array</a></code> &mdash; 
+An array of style names (as strings).    
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#getStyle()" target="">StyleSheet.getStyle()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>This example creates a StyleSheet object named <code>styleSheet</code> that contains two styles, <code>heading</code> and <code>bodyText</code>. <span class="flashonly">It then invokes the StyleSheet object's <code>getStyleNames()</code> method, assigns the results to the array <code>names_array</code>, and displays the contents of the array in the Output panel.</span><span class="flexonly">It then invokes the StyleSheet object's <code>getStyleNames()</code> method, assigns the results to the array <code>names_array</code>, and writes the contents of the array to the log file.</span>   <div class='listing'><pre>
+import TextField.StyleSheet;
+var my_styleSheet:StyleSheet = new StyleSheet();
+my_styleSheet.setStyle("heading", {fontsize:&#39;24px&#39;});
+my_styleSheet.setStyle("bodyText", {fontsize:&#39;12px&#39;});
+var names_array:Array = my_styleSheet.getStyleNames();
+trace(names_array.join("\n"));
+</pre></div>   <p><span class="flashonly">The following information appears in the Output panel:</span><span class="flexonly">The following information writes to the log file:</span></p>   <pre><code>
+  bodyText
+  heading
+  </code></pre>     <p></p>
+</div>
+<a name="load()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">load</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function load(url:<a href="../String.html">String</a>):<a href="../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Starts loading the CSS file into the StyleSheet. The load operation is asynchronous; use the   <code>onLoad()</code> callback handler to determine when the file has finished loading. The CSS file must reside in the same domain as   the SWF file that is loading it.    </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">url</span>:<a href="../String.html">String</a></code> &mdash; The URL of a CSS file to load. The URL must be in the same domain as the URL where the   SWF file currently resides.     </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../Boolean.html">Boolean</a></code> &mdash; 
+<code>false</code> if no parameter (<code>null</code>) is passed; <code>true</code> otherwise. Use the   <code>onLoad()</code> callback handler to check the success of a loaded StyleSheet.     
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="StyleSheet.html#event:onLoad" target="">StyleSheet.onLoad</a>
+<br>
+<a href="StyleSheet.html#getStyle()" target="">StyleSheet.getStyle()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>For an example of asynchronously loading style sheets using ActionScript 2.0, see the example for   <code>getStyle()</code>.     <p>The following example loads the CSS file named styles.css into the StyleSheet object   <code>my_styleSheet</code>. When the file has loaded successfully, the StyleSheet object   is applied to a TextField object named <code>news_txt</code>.</p>     <div class='listing'><pre>
+import TextField.StyleSheet;
+this.createTextField("news_txt", 999, 10, 10, 320, 240);
+news_txt.multiline = true;
+news_txt.wordWrap = true;
+news_txt.html = true;
+
+var my_styleSheet:StyleSheet = new StyleSheet();
+my_styleSheet.onLoad = function(success:Boolean) {
+    if (success) {
+    news_txt.styleSheet = my_styleSheet;
+    news_txt.htmlText = "&lt;p class=\"heading\"&gt;Heading goes here!&lt;/p&gt;"
+        + "&lt;p class=\"mainBody\"&gt;Lorem ipsum dolor sit amet, consectetuer "
+        + "adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet "
+        + "dolore magna aliquam erat volutpat.&lt;/p&gt;";
+    }
+};
+my_styleSheet.load("styles.css");
+</pre></div>     <p>For the complete code for styles.css, see the example for <code>getStyle()</code>. </p>    <p></p>
+</div>
+<a name="parseCSS()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">parseCSS</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function parseCSS(cssText:<a href="../String.html">String</a>):<a href="../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Parses the CSS in <code>cssText</code> and loads the StyleSheet with it. If a style in <code>cssText</code> is already in the StyleSheet, the StyleSheet retains its properties, and only the ones in <code>cssText</code> are added or changed.   </p><p>To extend the native CSS parsing capability, you can override this method by creating a subclass of the StyleSheet class.</p>    <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">cssText</span>:<a href="../String.html">String</a></code> &mdash; The CSS text to parse.    </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../Boolean.html">Boolean</a></code> &mdash; 
+A Boolean value that indicates whether the text was parsed successfully (<code>true</code>) or not (<code>false</code>).    
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example parses the CSS in <code>css_str</code>.<span class="flashonly"> The script displays information about whether it parsed the CSS successfully, and then displays the parsed CSS in the Output panel.</span><span class="flexonly"> The ActionScript writes information about whether it parsed successfully, and then writes the parsed CSS in the log file.</span>     <div class='listing'><pre>
+import TextField.StyleSheet;
+var css_str:String = ".heading {font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold; }";
+var my_styleSheet:StyleSheet = new StyleSheet();
+if (my_styleSheet.parseCSS(css_str)) {
+    trace("parsed successfully");
+    dumpStyles(my_styleSheet);
+} else {
+    trace("unable to parse CSS");
+}
+//
+function dumpStyles(styles:StyleSheet):Void {
+    var styleNames_array:Array = styles.getStyleNames();
+    for (var i = 0; i&lt;styleNames_array.length; i++) {
+        var styleName_str:String = styleNames_array[i];
+        var styleObject:Object = styles.getStyle(styleName_str);
+        trace(styleName_str);
+        for (var prop in styleObject) {
+            trace("\t"+prop+": "+styleObject[prop]);
+        }
+        trace("");
+    }
+}
+</pre></div>      <p></p>
+</div>
+<a name="setStyle()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setStyle</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setStyle(name:<a href="../String.html">String</a>, style:<a href="../Object.html">Object</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Adds a new style with the specified name to the StyleSheet object. If the named style does not already exist in the StyleSheet, it is added. If the named style already exists in the StyleSheet, it is replaced. If the <code>style</code> parameter is <code>null</code>, the named style is removed.   </p><p>Flash Player creates a copy of the style object that you pass to this method.</p>     <p>For a list of supported styles, see the table in the description for the StyleSheet class.</p>    <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:<a href="../String.html">String</a></code> &mdash; The name of the style to add to the StyleSheet.    </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">style</span>:<a href="../Object.html">Object</a></code> &mdash; An object that describes the style, or <code>null</code>.     </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../operators.html#object_initializer" target="">{} object initializer</a>
+<br>
+<a href="StyleSheet.html" target="">TextField.StyleSheet class</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example adds a style named <code>emphasized</code> to the StyleSheet <code>myStyleSheet</code>. The style includes two style properties: <code>color</code> and <code>fontWeight</code>. The style object is defined with the <code>{}</code> operator.   <pre><code>
+  myStyleSheet.setStyle("emphasized", {color:&#39;#000000&#39;,fontWeight:&#39;bold&#39;});
+  </code></pre>   <p>You could also create a style object using an instance of the Object class, and then pass that object (<code>styleObj</code>) as   the <code>style</code> parameter, as the next example shows:</p>   <div class='listing'><pre>
+import TextField.StyleSheet;
+var my_styleSheet:StyleSheet = new StyleSheet();
+
+var styleObj:Object = new Object();
+styleObj.color = "#000000";
+styleObj.fontWeight = "bold";
+my_styleSheet.setStyle("emphasized", styleObj);
+delete styleObj;
+
+var styleNames_array:Array = my_styleSheet.getStyleNames();
+for (var i=0;i&lt;styleNames_array.length;i++) {
+    var styleName:String = styleNames_array[i];
+    var thisStyle:Object = my_styleSheet.getStyle(styleName);
+    trace(styleName);
+    for (var prop in thisStyle) {
+        trace("\t"+prop+": "+thisStyle[prop]);
+    }
+    trace("");
+}
+</pre></div>   <p><span class="flashonly">The following information appears in the Output panel:</span><span class="flexonly">The following information writes to the log file:</span></p>   <pre><code>
+  emphasized
+    fontWeight: bold
+    color: #000000
+  </code></pre>   <p><strong>Note: </strong>Because Flash Player creates a copy of the style object you pass to <code>setStyle()</code>, the <code>   delete styleObj</code> command in the code example reduces memory usage by deleting the original style object passed to   <code>setStyle()</code>.</p>    <p></p>
+</div>
+<a name="transform()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">transform</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function transform(style:<a href="../Object.html">Object</a>):<a href="../TextFormat.html">TextFormat</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Extends the CSS parsing capability. Advanced developers can override this method by extending the StyleSheet class.    </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">style</span>:<a href="../Object.html">Object</a></code> &mdash; An object that describes the style, containing style rules as properties of the object, or <code>null</code>.    </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../TextFormat.html">TextFormat</a></code> &mdash; 
+A TextFormat object containing the result of the mapping of CSS rules to text format properties.    
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example extends the <code>transform()</code> method:   <div class='listing'><pre>
+import TextField.StyleSheet;
+class AdvancedCSS extends StyleSheet {
+    public function AdvancedCSS() {
+        trace("AdvancedCSS instantiated");
+    }
+
+    public function transform(styleObject):TextFormat {
+        trace("tranform called");
+    }
+}
+</pre></div>     <p></p>
+</div>
+<div class="detailSectionHeader">Event detail</div>
+<a name="event:onLoad"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onLoad</td><td class="detailHeaderType">event&nbsp;handler</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onLoad = function(success:<a href="../Boolean.html">Boolean</a>) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Invoked when a <code>load()</code> operation has completed. If the StyleSheet loaded successfully, the <code>success</code> parameter   is <code>true</code>. If the document was not received, or if an error occurred in receiving the response from the server, the <code>   success</code> parameter is <code>false</code>.     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">success</span>:<a href="../Boolean.html">Boolean</a></code> &mdash; A Boolean value that indicates whether the CSS file loaded successfully (<code>true</code>) or not   (<code>false</code>).    </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example loads the CSS file named styles.css into the StyleSheet object <code>my_styleSheet</code>. When the file has finished loading successfully, the StyleSheet object is applied to a TextField object named <code>news_txt</code>.   <div class='listing'><pre>
+import TextField.StyleSheet;
+this.createTextField("news_txt", 999, 10, 10, 320, 240);
+news_txt.multiline = true;
+news_txt.wordWrap = true;
+news_txt.html = true;
+
+var my_styleSheet:StyleSheet = new StyleSheet();
+my_styleSheet.onLoad = function(success:Boolean) {
+    if (success) {
+    news_txt.styleSheet = my_styleSheet;
+    news_txt.htmlText = "&lt;p class=\"heading\"&gt;Heading goes here!"
+        + "&lt;/p&gt;&lt;p class=\"mainBody\"&gt;Lorem ipsum dolor "
+        + "sit amet, consectetuer adipiscing elit, sed diam nonummy "
+        + "nibh euismod tincidunt ut laoreet dolore magna aliquam "
+        + "erat volutpat.&lt;/p&gt;";
+    }
+};
+my_styleSheet.load("styles.css");
+</pre></div>   <p>For the complete code for styles.css, see the example for <code>getStyle()</code>. For an example of asynchronously loading style sheets using ActionScript 2.0, see the example for <code>getStyle()</code>.</p>     <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="StyleSheet.html#load()" target="">StyleSheet.load()</a>
+<br>
+<a href="StyleSheet.html#getStyle()" target="">StyleSheet.getStyle()</a>
+</div>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

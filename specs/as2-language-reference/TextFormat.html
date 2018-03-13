@@ -1,0 +1,982 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="print.css" type="text/css" media="print">
+<meta content="TextFormat,align,blockIndent,bold,bullet,color,font,indent,italic,kerning,leading,leftMargin,letterSpacing,rightMargin,size,tabStops,target,underline,url,getTextExtent" name="keywords">
+<title>TextFormat</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="asdoc.js"></script><script type="text/javascript" language="javascript" src="cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'TextFormat - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('all-classes.html')" href="package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('all-classes.html')" href="class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('index-list.html')" href="all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="index.html?TextFormat.html&amp;class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;TextFormat</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class TextFormat"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">Top Level</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class TextFormat</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">TextFormat <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="images/inherit-arrow.gif"> <a href="Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p></p>The TextFormat class represents character formatting information. Use the TextFormat class   to create specific text formatting for text fields. You can apply text formatting   to both static and dynamic text fields. The properties of the TextFormat class apply to device and   embedded fonts. However, for embedded fonts, bold and italic text actually require specific fonts. If you   want to display bold or italic text with an embedded font, you need to embed the bold and italic variations   of that font.       <p> You must use the constructor <code>new TextFormat()</code> to create a TextFormat object before   calling its methods. </p>     <p> You can set TextFormat parameters to <code>null</code> to indicate that they are undefined. When   you apply a TextFormat object to a text field using <code>TextField.setTextFormat()</code>, only its   defined properties are applied, as in the following example:</p>     <div class='listing'><pre>
+this.createTextField("my_txt", this.getNextHighestDepth(), 0, 0, 100, 22); 
+my_txt.autoSize = true; 
+my_txt.text = "Lorem ipsum dolor sit amet..."; 
+
+var my_fmt:TextFormat = new TextFormat(); 
+my_fmt.bold = true; 
+my_txt.setTextFormat(my_fmt); 
+</pre></div>     <p>This code first creates an empty TextFormat object with all of its properties <code>null</code>,   and then sets the <code>bold</code> property to a defined value.   The <code>MovieClip.getNextHighestDepth()</code> method used in this example requires   Flash Player 7 or later. If your SWF file includes a version 2 component, use the version 2 components'   DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method.   </p>     <p>The code <code>my_txt.setTextFormat(my_fmt)</code> only changes the <code>bold</code> property of   the text field's default text format, because the <code>bold</code> property is the only one defined   in <code>my_fmt </code>. All other aspects of the text field's default text format remain unchanged.   </p>     <p>When <code>TextField.getTextFormat()</code> is invoked, a TextFormat object is returned with all   of its properties defined; no property is <code>null</code>.</p>     <p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="TextField.html#setTextFormat()" target="">TextField.setTextFormat()</a>
+<br>
+<a href="TextField.html#getTextFormat()" target="">TextField.getTextFormat()</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#align">align</a> : <a href="String.html">String</a>
+<div class="summaryTableDescription">A string that indicates the alignment of the paragraph.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#blockIndent">blockIndent</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">A number that indicates the block indentation in points.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#bold">bold</a> : <a href="Boolean.html">Boolean</a>
+<div class="summaryTableDescription">A Boolean value that specifies whether the text is boldface.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#bullet">bullet</a> : <a href="Boolean.html">Boolean</a>
+<div class="summaryTableDescription">A Boolean value that indicates that the text is part of a bulleted list.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#color">color</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">Indicates the color of text.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#font">font</a> : <a href="String.html">String</a>
+<div class="summaryTableDescription">The name of the font for text in this text format, as a string.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#indent">indent</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">An integer that indicates the indentation from the left margin to the first character in the paragraph.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#italic">italic</a> : <a href="Boolean.html">Boolean</a>
+<div class="summaryTableDescription">A Boolean value that indicates whether text in this text format is italicized.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#kerning">kerning</a> : <a href="Boolean.html">Boolean</a>
+<div class="summaryTableDescription">A Boolean value that indicates whether kerning is enabled or disabled.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#leading">leading</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">An integer that represents the amount of vertical space in pixels (called <i>leading</i>) between lines.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#leftMargin">leftMargin</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">The left margin of the paragraph, in points.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#letterSpacing">letterSpacing</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">The amount of space that is uniformly distributed between characters.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#rightMargin">rightMargin</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">The right margin of the paragraph, in points.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#size">size</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">The point size of text in this text format.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#tabStops">tabStops</a> : <a href="Array.html">Array</a>
+<div class="summaryTableDescription">Specifies custom tab stops as an array of non-negative integers.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#target">target</a> : <a href="String.html">String</a>
+<div class="summaryTableDescription">Indicates the target window where the hyperlink is displayed.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#underline">underline</a> : <a href="Boolean.html">Boolean</a>
+<div class="summaryTableDescription">A Boolean value that indicates whether the text that uses this text format is underlined (<code>true</code>) or not (<code>false</code>).</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#url">url</a> : <a href="String.html">String</a>
+<div class="summaryTableDescription">Indicates the URL that text in this text format hyperlinks to.</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="Object.html#__proto__">__proto__</a>, <a href="Object.html#__resolve">__resolve</a>, <a href="Object.html#constructor">constructor</a>, <a href="Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#TextFormat()">TextFormat</a>([font:<a href="String.html">String</a>], [size:<a href="Number.html">Number</a>], [color:<a href="Number.html">Number</a>], [bold:<a href="Boolean.html">Boolean</a>], [italic:<a href="Boolean.html">Boolean</a>], [underline:<a href="Boolean.html">Boolean</a>], [url:<a href="String.html">String</a>], [target:<a href="String.html">String</a>], [align:<a href="String.html">String</a>], [leftMargin:<a href="Number.html">Number</a>], [rightMargin:<a href="Number.html">Number</a>], [indent:<a href="Number.html">Number</a>], [leading:<a href="Number.html">Number</a>])</div>
+<div class="summaryTableDescription">Creates a TextFormat object with the specified properties.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getTextExtent()">getTextExtent</a>(text:<a href="String.html">String</a>, [width:<a href="Number.html">Number</a>]):<a href="Object.html">Object</a>
+</div>
+<div class="summaryTableDescription">Returns text measurement information for the text string <code>text</code> in the format specified by <code>my_fmt</code>.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="Object.html#addProperty()">addProperty</a>, <a href="Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="Object.html#registerClass()">registerClass</a>, <a href="Object.html#toString()">toString</a>, <a href="Object.html#unwatch()">unwatch</a>, <a href="Object.html#valueOf()">valueOf</a>, <a href="Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="align"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">align</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var align:<a href="String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6 &mdash; The "justify" value is available beginning with Flash Player 8.</td>
+</tr>
+</table>
+<p></p><p>A string that indicates the alignment of the paragraph. You can apply this property to static and dynamic text. The following       list shows possible values for this property:       <ul>       <li><code>"left"</code>&#x2014;The paragraph is left-aligned.</li>       <li><code>"center"</code>&#x2014;The paragraph is centered.</li>       <li><code>"right"</code>&#x2014;The paragraph is right-aligned.</li>       <li><code>"justify"</code>&#x2014;The paragraph is justified. (This value was added in Flash Player 8.)</li>       </ul>       The default value is <code>null</code>, which indicates that the property is undefined.            </p><br>
+<span class="label">Example</span>
+<br>The following example shows the <code>align</code> property       being set to justify, which causes the characters on each line to be spread out       so that the text looks more evenly spaced horizontally.       <div class='listing'><pre>
+var format:TextFormat = new TextFormat();
+format.align = "justify";
+
+var txtField:TextField = this.createTextField("txtField", this.getNextHighestDepth(), 100, 100, 300, 100);
+txtField.multiline = true;
+txtField.wordWrap = true;
+txtField.border = true;
+txtField.text = "When this text is justified, it will be "
+    + "spread out to more cleanly fill the horizontal "
+    + "space for each line. This can be considered an "
+    + "improvement over regular left-aligned text that "
+    + "will simply wrap and do no more.";
+txtField.setTextFormat(format);
+</pre></div>            <p>The <code>MovieClip.getNextHighestDepth()</code> method used in this example requires       Flash Player 7 or later. If your SWF file includes a version 2 component, use the version 2 components'       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method.       </p>             <p></p>
+</div>
+<a name="blockIndent"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">blockIndent</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var blockIndent:<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A number that indicates the block indentation in points. Block indentation is applied to an       entire block of text; that is, to all lines of the text. In contrast, normal indentation       (<code>TextFormat.indent</code>) affects only the first line of each paragraph. If this       property is <code>null</code>, the TextFormat object does not specify block indentation.            </p><br>
+<span class="label">Example</span>
+<br>This example creates a text field with a border and sets the blockIndent to 20.             <div class='listing'><pre>
+this.createTextField("mytext",1,100,100,100,100);
+mytext.multiline = true;
+mytext.wordWrap = true;
+mytext.border = true;
+
+var myformat:TextFormat = new TextFormat();
+myformat.blockIndent = 20;
+
+mytext.text = "This is my first test field object text";
+mytext.setTextFormat(myformat);
+</pre></div>            <p></p>
+</div>
+<a name="bold"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">bold</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var bold:<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A Boolean value that specifies whether the text is boldface. The default value is       <code>null</code>, which indicates that the property is undefined. If the value is       <code>true</code>, then the text is boldface.            </p><br>
+<span class="label">Example</span>
+<br>The following example creates a text field that includes characters in boldface.            <div class='listing'><pre>
+var my_fmt:TextFormat = new TextFormat();
+my_fmt.bold = true;
+
+this.createTextField("my_txt", 1, 100, 100, 300, 100);
+my_txt.multiline = true;
+my_txt.wordWrap = true;
+my_txt.border = true;
+my_txt.text = "This is my test field object text";
+my_txt.setTextFormat(my_fmt);
+</pre></div>            <p></p>
+</div>
+<a name="bullet"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">bullet</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var bullet:<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A Boolean value that indicates that the text is part of a bulleted list. In a bulleted list,       each paragraph of text is indented. To the left of the first line of each paragraph, a bullet       symbol is displayed. The default value is <code>null</code>.            </p><br>
+<span class="label">Example</span>
+<br>The following example creates a new text field at runtime, and enters a string with a       line break into the field. The TextFormat class is used to format the characters by adding       bullets to each line in the text field. This is demonstrated in the following ActionScript:             <div class='listing'><pre>
+var my_fmt:TextFormat = new TextFormat();
+my_fmt.bullet = true;
+
+this.createTextField("my_txt", 1, 100, 100, 300, 100);
+my_txt.multiline = true;
+my_txt.wordWrap = true;
+my_txt.border = true;
+my_txt.text = "this is my text"+newline;
+my_txt.text += "this is more text"+newline;
+my_txt.setTextFormat(my_fmt);
+</pre></div>            <p></p>
+</div>
+<a name="color"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">color</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var color:<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Indicates the color of text. A number containing three 8-bit RGB components; for example,       0xFF0000 is red, and 0x00FF00 is green.            </p><br>
+<span class="label">Example</span>
+<br>The following example creates a text field and sets the text color to red.             <div class='listing'><pre>
+var my_fmt:TextFormat = new TextFormat();
+my_fmt.blockIndent = 20;
+my_fmt.color = 0xFF0000; // hex value for red 
+
+this.createTextField("my_txt", 1, 100, 100, 300, 100);
+my_txt.multiline = true;
+my_txt.wordWrap = true;
+my_txt.border = true;
+my_txt.text = "this is my first test field object text";
+my_txt.setTextFormat(my_fmt);
+</pre></div>            <p></p>
+</div>
+<a name="font"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">font</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var font:<a href="String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>The name of the font for text in this text format, as a string. The default value is       <code>null</code>, which indicates that the property is undefined.            </p><br>
+<span class="label">Example</span>
+<br>The following example creates a text field and sets the font to Courier.             <div class='listing'><pre>
+this.createTextField("mytext",1,100,100,100,100);
+mytext.multiline = true;
+mytext.wordWrap = true;
+mytext.border = true;
+
+var myformat:TextFormat = new TextFormat();
+myformat.font = "Courier";
+
+mytext.text = "this is my first test field object text";
+mytext.setTextFormat(myformat);
+</pre></div>            <p></p>
+</div>
+<a name="indent"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">indent</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var indent:<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6 &mdash; The ability to use negative values is available as of Flash Player 8.</td>
+</tr>
+</table>
+<p></p><p>An integer that indicates the indentation from the left margin to the first character in       the paragraph. A positive value indicates normal indentation. You can use a negative value,       but the negative indentation only applies if the left margin is       greater than 0. To set the margin greater than 0, use the <code>indent</code> property or       the <code>blockIndent</code> property of the TextFormat object. The default value is       <code>null</code>, which indicates that the property is undefined.            </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#blockIndent" target="">blockIndent</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a text field and sets the indentation to 10:       <div class='listing'><pre>
+this.createTextField("mytext",1,100,100,100,100);
+mytext.multiline = true;
+mytext.wordWrap = true;
+mytext.border = true;
+
+var myformat:TextFormat = new TextFormat();
+myformat.indent = 10;
+
+mytext.text = "this is my first test field object text";
+mytext.setTextFormat(myformat);
+</pre></div>            <p></p>
+</div>
+<a name="italic"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">italic</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var italic:<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A Boolean value that indicates whether text in this text format is italicized. The default       value is <code>null</code>, which indicates that the property is undefined.            </p><br>
+<span class="label">Example</span>
+<br>The following example creates a text field and sets the text style to italic.       <div class='listing'><pre>
+this.createTextField("mytext",1,100,100,100,100);
+mytext.multiline = true;
+mytext.wordWrap = true;
+mytext.border = true;
+
+var myformat:TextFormat = new TextFormat();
+myformat.italic = true;
+
+mytext.text = "This is my first text field object text";
+mytext.setTextFormat(myformat);
+</pre></div>            <p></p>
+</div>
+<a name="kerning"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">kerning</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var kerning:<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>A Boolean value that indicates whether kerning is enabled or disabled. Kerning puts a predetermined       amount of space between certain character pairs to improve readability.       The default value is <code>false</code>, which indicates that kerning is disabled.             </p><p>Kerning is supported for embedded fonts only.       Certain fonts, such as Courier New, do not support kerning. </p>             <span class="flashonly"><p>The <code>kerning</code> property is only supported in SWF files       created in Windows, not in SWF files created on the Macintosh. However,       Windows SWF files <em>can</em> be played in non-Windows versions of Flash Player,        and the kerning will still apply.</p></span>             <p>Use kerning only when necessary, such as with headings in large fonts.</p>             <br>
+<span class="label">Example</span>
+<br>The following example shows two text fields: The format of the first       uses red text with <code>kerning</code> set to <code>false</code>, and the format of       the second uses blue text with <code>kerning</code> set to <code>true</code>.       To use this example, you add a font symbol to the Library, and then select Arial as the       font. In the Linkage Properties dialog box for the font, you set the       Identifier name to <code>"Font 1"</code>, select Export for ActionScript, and then select       Export in First Frame.             <div class='listing'><pre>
+var fmt1:TextFormat = new TextFormat();
+fmt1.font = "Font 1";
+fmt1.size = 50;
+fmt1.color = 0xFF0000;
+fmt1.kerning = false;
+
+var fmt2:TextFormat = new TextFormat();
+fmt2.font = "Font 1";
+fmt2.size = 50;
+fmt2.color = 0x0000FF;
+fmt2.kerning = true;
+
+this.createTextField("tf1", this.getNextHighestDepth(), 10, 10, 400, 100);
+tf1.embedFonts = true;
+tf1.text = "Text 7AVA-7AVA";
+tf1.setTextFormat(fmt1);  
+
+this.createTextField("tf2", this.getNextHighestDepth(), 10, 40, 400, 100);
+tf2.embedFonts = true;
+tf2.text = tf1.text;
+tf2.setTextFormat(fmt2);
+</pre></div>             <p>If your SWF file includes a version 2 component, use the version 2 components'       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method,       which is used in this example.       </p>            <p></p>
+</div>
+<a name="leading"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">leading</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var leading:<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>An integer that represents the amount of vertical space in pixels       (called <i>leading</i>) between lines.       The default value is <code>null</code>, which indicates that the property is undefined.              </p><p>Flash Player 8 supports <i>negative leading</i>, meaning that the amount of space between lines       is less than the text height. Negative leading can be useful when you want to put lines       of text, such as headings, very close together.       To prevent the overlap of text, you use negative leading for lines       of text that do not contain descenders, such as text that is all uppercase.</p>            <br>
+<span class="label">Example</span>
+<br>The following example creates a text field and sets the leading to 10.       <div class='listing'><pre>
+var my_fmt:TextFormat = new TextFormat();
+my_fmt.leading = 10;
+
+this.createTextField("my_txt", 1, 100, 100, 100, 100);
+my_txt.multiline = true;
+my_txt.wordWrap = true;
+my_txt.border = true;
+my_txt.text = "This is my first text field object text";
+my_txt.setTextFormat(my_fmt);
+</pre></div>            <p></p>
+</div>
+<a name="leftMargin"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">leftMargin</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var leftMargin:<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>The left margin of the paragraph, in points. The default value is <code>null</code>, which       indicates that the property is undefined.            </p><br>
+<span class="label">Example</span>
+<br>The following example creates a text field and sets the left margin to 20 points.       <div class='listing'><pre>
+this.createTextField("mytext",1,100,100,100,100);
+mytext.multiline = true;
+mytext.wordWrap = true;
+mytext.border = true;
+
+var myformat:TextFormat = new TextFormat();
+myformat.leftMargin = 20;
+
+mytext.text = "this is my first test field object text";
+mytext.setTextFormat(myformat);
+</pre></div>            <p></p>
+</div>
+<a name="letterSpacing"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">letterSpacing</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var letterSpacing:<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The amount of space that is uniformly distributed between characters.       The Number value specifies the number of pixels that are added to the space after each       character. A negative value condenses the space between characters.             </p><p>System fonts support integer values only; however, for embedded fonts, you can       specify floating point (noninteger) values (such as 2.6). </p>             <br>
+<span class="label">Example</span>
+<br>The following code example uses two TextFormat objects to apply positive and negative values       of <code>letterSpacing</code> to different ranges of text in a text field.             <div class='listing'><pre>
+this.createTextField("mytext", this.getNextHighestDepth(), 10, 10, 200, 100);
+mytext.multiline = true;
+mytext.wordWrap = true;
+mytext.border = true;
+
+var format1:TextFormat = new TextFormat();
+format1.letterSpacing = -1;
+
+var format2:TextFormat = new TextFormat();
+format2.letterSpacing = 10;
+
+mytext.text = "Eat at \nJOE'S.";
+mytext.setTextFormat(0, 7, format1);
+mytext.setTextFormat(8, 12, format2);
+</pre></div>             <p>If your SWF file includes a version 2 component, use the version 2 components'       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method,       which is used in this example.       </p>             <p></p>
+</div>
+<a name="rightMargin"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rightMargin</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var rightMargin:<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>The right margin of the paragraph, in points. The default value is <code>null</code>, which       indicates that the property is undefined.            </p><br>
+<span class="label">Example</span>
+<br>The following example creates a text field and sets the right margin to 20 points.       <div class='listing'><pre>
+this.createTextField("mytext",1,100,100,100,100);
+mytext.multiline = true;
+mytext.wordWrap = true;
+mytext.border = true;
+
+var myformat:TextFormat = new TextFormat();
+myformat.rightMargin = 20;
+
+mytext.text = "this is my first test field object text";
+mytext.setTextFormat(myformat);
+</pre></div>            <p></p>
+</div>
+<a name="size"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">size</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var size:<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>The point size of text in this text format. The default value is <code>null</code>, which       indicates that the property is undefined.            </p><br>
+<span class="label">Example</span>
+<br>The following example creates a text field and sets the text size to 20 points.       <div class='listing'><pre>
+this.createTextField("mytext",1,100,100,100,100);
+mytext.multiline = true;
+mytext.wordWrap = true;
+mytext.border = true;
+
+var myformat:TextFormat = new TextFormat();
+myformat.size = 20;
+
+mytext.text = "This is my first text field object text";
+mytext.setTextFormat(myformat);
+</pre></div>            <p></p>
+</div>
+<a name="tabStops"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">tabStops</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var tabStops:<a href="Array.html">Array</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Specifies custom tab stops as an array of non-negative integers. Each tab stop is specified in       pixels. If custom tab stops are not specified (<code>null</code>), the default tab stop is 4       (average character width).            </p><br>
+<span class="label">Example</span>
+<br>The following example creates two text fields, one with tab stops every 40 pixels, and       the other with tab stops every 75 pixels.       <div class='listing'><pre>
+this.createTextField("mytext",1,100,100,400,100);
+mytext.border = true;
+var myformat:TextFormat = new TextFormat();
+myformat.tabStops = [40,80,120,160];
+mytext.text = "A\tB\tC\tD";            // \t is the tab stop character
+mytext.setTextFormat(myformat);
+
+this.createTextField("mytext2",2,100,220,400,100);
+mytext2.border = true;
+var myformat2:TextFormat = new TextFormat();
+myformat2.tabStops = [75,150,225,300];
+mytext2.text ="A\tB\tC\tD";
+mytext2.setTextFormat(myformat2);
+</pre></div>            <p></p>
+</div>
+<a name="target"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">target</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var target:<a href="String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Indicates the target window where the hyperlink is displayed. If the target window is an empty       string, the text is displayed in the default target window <code>_self</code>. You can choose a       custom name or one of the following four names: <code>_self</code> specifies the current frame       in the current window, <code>_blank</code> specifies a new window, <code>_parent</code>       specifies the parent of the current frame, and <code>_top</code> specifies the top-level frame       in the current window. If the <code>TextFormat.url</code> property is an empty string or       <code>null</code>, you can get or set this property, but the property will have no effect.            </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="TextFormat.html#url" target="">TextFormat.url</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a text field with a hyperlink to the Adobe website.       The example uses <code>TextFormat.target</code> to display the Adobe website in a new       browser window.             <div class='listing'><pre>
+var myformat:TextFormat = new TextFormat();
+myformat.url = "http://www.Adobe.com";
+myformat.target = "_blank";
+
+this.createTextField("mytext",1,100,100,200,100);
+mytext.multiline = true;
+mytext.wordWrap = true;
+mytext.border = true;
+mytext.html = true;
+mytext.text = "Go to adobe.com";
+mytext.setTextFormat(myformat);
+</pre></div>            <p></p>
+</div>
+<a name="underline"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">underline</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var underline:<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A Boolean value that indicates whether the text that uses this text format is underlined       (<code>true</code>) or not (<code>false</code>). This underlining is similar to that produced       by the <code>&lt;U&gt;</code> tag, but the latter is not true underlining, because it does not       skip descenders correctly. The default value is <code>null</code>, which indicates that the       property is undefined.            </p><br>
+<span class="label">Example</span>
+<br>The following example creates a text field and sets the text style to underline.             <div class='listing'><pre>
+this.createTextField("mytext",1,100,100,200,100);
+mytext.multiline = true;
+mytext.wordWrap = true;
+mytext.border = true;
+
+var myformat:TextFormat = new TextFormat();
+myformat.underline = true;
+mytext.text = "This is my first text field object text";
+mytext.setTextFormat(myformat);
+</pre></div>            <p></p>
+</div>
+<a name="url"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">url</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var url:<a href="String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Indicates the URL that text in this text format hyperlinks to. If the <code>url</code> property       is an empty string, the text does not have a hyperlink. The default value is <code>null</code>,       which indicates that the property is undefined.            </p><br>
+<span class="label">Example</span>
+<br>This example creates a text field that is a hyperlink to the Adobe website.             <div class='listing'><pre>
+var myformat:TextFormat = new TextFormat();
+myformat.url = "http://www.adobe.com";
+
+this.createTextField("mytext",1,100,100,200,100);
+mytext.multiline = true;
+mytext.wordWrap = true;
+mytext.border = true;
+mytext.html = true;
+mytext.text = "Go to Adobe.com";
+mytext.setTextFormat(myformat);
+</pre></div>            <p></p>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="TextFormat()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">TextFormat</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function TextFormat([font:<a href="String.html">String</a>], [size:<a href="Number.html">Number</a>], [color:<a href="Number.html">Number</a>], [bold:<a href="Boolean.html">Boolean</a>], [italic:<a href="Boolean.html">Boolean</a>], [underline:<a href="Boolean.html">Boolean</a>], [url:<a href="String.html">String</a>], [target:<a href="String.html">String</a>], [align:<a href="String.html">String</a>], [leftMargin:<a href="Number.html">Number</a>], [rightMargin:<a href="Number.html">Number</a>], [indent:<a href="Number.html">Number</a>], [leading:<a href="Number.html">Number</a>])</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Creates a TextFormat object with the specified properties. You can then change the       properties of the TextFormat object to change the formatting of text fields.             </p><p>Any parameter may be set to <code>null</code> to indicate that it is not defined. All of the       parameters are optional; any omitted parameters are treated as <code>null</code>.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">font</span>:<a href="String.html">String</a></code>&nbsp;[optional] &mdash; The name of a font for text as a string.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">size</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer that indicates the point size.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; The color of text using this text format. A number containing three 8-bit RGB       components; for example, 0xFF0000 is red, and 0x00FF00 is green.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">bold</span>:<a href="Boolean.html">Boolean</a></code>&nbsp;[optional] &mdash; A Boolean value that indicates whether the text is boldface.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">italic</span>:<a href="Boolean.html">Boolean</a></code>&nbsp;[optional] &mdash; A Boolean value that indicates whether the text is italicized.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">underline</span>:<a href="Boolean.html">Boolean</a></code>&nbsp;[optional] &mdash; A Boolean value that indicates whether the text is underlined.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">url</span>:<a href="String.html">String</a></code>&nbsp;[optional] &mdash; The URL to which the text in this text format hyperlinks. If <code>url</code> is an       empty string, the text does not have a hyperlink.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">target</span>:<a href="String.html">String</a></code>&nbsp;[optional] &mdash; The target window where the hyperlink is displayed. If the target window is an       empty string, the text is displayed in the default target window <code>_self</code>. If the       <code>url</code> parameter is set to an empty string or to the value <code>null</code>, you can       get or set this property, but the property will have no effect.        </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">align</span>:<a href="String.html">String</a></code>&nbsp;[optional] &mdash; The alignment of the paragraph, represented as a string. If <code>"left"</code>,       the paragraph is left-aligned. If <code>"center"</code>, the paragraph is centered. If       <code>"right"</code>, the paragraph is right-aligned.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">leftMargin</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; Indicates the left margin of the paragraph, in points.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rightMargin</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; Indicates the right margin of the paragraph, in points.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">indent</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer that indicates the indentation from the left margin to the first            character in the paragraph.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">leading</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; A number that indicates the amount of leading vertical space between lines.       </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a TextFormat object, formats the <code>stats_txt</code>       text field, and creates a new text field to display the text in:            <div class='listing'><pre>
+// Define a TextFormat which is used to format the stats_txt text field.
+var my_fmt:TextFormat = new TextFormat();
+my_fmt.bold = true;
+my_fmt.font = "Arial";
+my_fmt.size = 12;
+my_fmt.color = 0xFF0000;
+// Create a text field to display the player's statistics.
+this.createTextField("stats_txt", 5000, 10, 0, 530, 22);
+// Apply the TextFormat to the text field.
+stats_txt.setNewTextFormat(my_fmt);
+stats_txt.selectable = false;
+stats_txt.text = "Lorem ipsum dolor sit amet...";
+</pre></div>            <span class="flashonly">           <p>For another example, see the Flash Samples page at           <a href="http://www.adobe.com/go/learn_fl_samples" target="newWindow">www.adobe.com/go/learn_fl_samples</a>.            Download and decompress the Samples zip file and go to the ActionScript2.0\Animation           folder to access the animation.fla file.</p></span>            <p></p>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="getTextExtent()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getTextExtent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getTextExtent(text:<a href="String.html">String</a>, [width:<a href="Number.html">Number</a>]):<a href="Object.html">Object</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6 &mdash; The width parameter is supported in Flash Player 7.</td>
+</tr>
+</table>
+<p></p><p>Returns text measurement information for the text string <code>text</code> in the format       specified by <code>my_fmt</code>. The text string is treated as plain text (not HTML).             </p><p>The method returns an object with six properties: <code>ascent</code>, <code>descent</code>,       <code>width</code>, <code>height</code>, <code>textFieldHeight</code>, and       <code>textFieldWidth</code>. All measurements are in pixels.</p>             <p>If a <code>width</code> parameter is specified, word wrapping is applied to the specified       text. This lets you determine the height at which a text box shows all of the specified text.</p>             <p>The <code>ascent</code> and <code>descent</code> measurements provide, respectively, the       distance above and below the baseline for a line of text. The baseline for the first line of       text is positioned at the text field's origin plus its <code>ascent</code> measurement.</p>             <p>The <code>width</code> and <code>height</code> measurements provide the width and height of       the text string. The <code>textFieldHeight</code> and <code>textFieldWidth</code> measurements       provide the height and width required for a text field object to display the entire text       string. Text fields have a 2-pixel-wide gutter around them, so the value of       <code>textFieldHeight</code> is equal the value of <code>height</code> + 4; likewise, the value       of <code>textFieldWidth</code> is always equal to the value of <code>width</code> + 4. </p>             <p>If you are creating a text field based on the text metrics, use <code>textFieldHeight</code>       rather than <code>height</code> and <code>textFieldWidth</code> rather than       <code>width</code>.</p>             <p>The following figure illustrates these measurements.</p>             <p>       <img src="images/text-metrics_as2.jpg" alt="An image illustrating text metrics"></img></p>             <p>When setting up your TextFormat object, set all the attributes exactly as they will be set       for the creation of the text field, including font name, font size, and leading. The default       value for leading is 2.</p>              <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">text</span>:<a href="String.html">String</a></code> &mdash; A string.                 </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">width</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; A number that represents the width, in pixels, at which the specified text should       wrap.                 </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Object.html">Object</a></code> &mdash; 
+An object with the properties <code>width</code>, <code>height</code>,       <code>ascent</code>, <code>descent</code>, <code>textFieldHeight</code>,       <code>textFieldWidth</code>.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>This example creates a single-line text field that's just big enough to display a text       string using the specified formatting.             <div class='listing'><pre>
+var my_str:String = "Small string";
+
+// Create a TextFormat object,
+// and apply its properties.
+var my_fmt:TextFormat = new TextFormat();
+with (my_fmt) {
+    font = "Arial";
+    bold = true;
+}
+
+// Obtain metrics information for the text string
+// with the specified formatting.
+var metrics:Object = my_fmt.getTextExtent(my_str);
+
+// Create a text field just large enough to display the text.
+this.createTextField("my_txt", this.getNextHighestDepth(), 100, 100, metrics.textFieldWidth, 
+metrics.textFieldHeight);
+my_txt.border = true;
+my_txt.wordWrap = true;
+// Assign the same text string and TextFormat object to the my_txt object.
+my_txt.text = my_str;
+my_txt.setTextFormat(my_fmt);
+</pre></div>             <p>The following example creates a multiline, 100-pixel-wide text field that's high enough to       display a string with the specified formatting. </p>       <div class='listing'><pre>
+// Create a TextFormat object.
+var my_fmt:TextFormat = new TextFormat();
+// Specify formatting properties for the TextFormat object:
+my_fmt.font = "Arial";
+my_fmt.bold = true;
+my_fmt.leading = 4;
+
+// The string of text to be displayed
+var textToDisplay:String = "Adobe Flash Player 9 text metrics demonstration.";
+
+// Obtain text measurement information for the string,
+// wrapped at 100 pixels.
+var metrics:Object = my_fmt.getTextExtent(textToDisplay, 100);
+
+// Create a new TextField object using the metric
+// information just obtained.
+this.createTextField("my_txt", this.getNextHighestDepth(), 50, 50-metrics.ascent, 100, 
+metrics.textFieldHeight);
+my_txt.wordWrap = true;
+my_txt.border = true;
+// Assign the text and the TextFormat object to the TextObject:
+my_txt.text = textToDisplay;
+my_txt.setTextFormat(my_fmt);
+</pre></div>            <p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

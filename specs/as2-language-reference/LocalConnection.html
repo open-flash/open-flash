@@ -1,0 +1,736 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="print.css" type="text/css" media="print">
+<meta content="LocalConnection,isPerUser,close,connect,domain,send" name="keywords">
+<title>LocalConnection</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="asdoc.js"></script><script type="text/javascript" language="javascript" src="cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'LocalConnection - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('all-classes.html')" href="package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('all-classes.html')" href="class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('index-list.html')" href="all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="index.html?LocalConnection.html&amp;class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;LocalConnection</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class LocalConnection"); titleBar_setSubNav(false,true,false,false,true,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">Top Level</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public dynamic  class LocalConnection</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">LocalConnection <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="images/inherit-arrow.gif"> <a href="Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p></p>The LocalConnection class lets you develop SWF files that can send instructions to each other without the use of <code>fscommand()</code>   or JavaScript. LocalConnection objects can communicate only among SWF files that are running on the same client computer, but they can be   running in different applications--for example, a SWF file running in a browser and a SWF file running in a projector.      <span class="flexonly">(A projector is a SWF file saved in a format that can run as a stand-alone application--that is, without Flash Player.)</span>     You can use LocalConnection objects to send and receive data within a single SWF file, but this is not a standard implementation; all the examples   in this section illustrate communication between different SWF files.      <p>The primary methods used to send and receive data are <code>LocalConnection.send()</code> and <code>LocalConnection.connect()</code>.   At its most basic, your code will implement the following commands; notice that both the <code>LocalConnection.send()</code> and   <code>LocalConnection.connect()</code> commands specify the same connection name, <code>lc_name</code>:</p>     <div class='listing'><pre>
+// Code in the receiving SWF file
+this.createTextField("result_txt", 1, 10, 10, 100, 22);
+result_txt.border = true;
+var receiving_lc:LocalConnection = new LocalConnection();
+receiving_lc.methodToExecute = function(param1:Number, param2:Number) {
+    result_txt.text = param1+param2;
+};
+receiving_lc.connect("lc_name");
+
+// Code in the sending SWF file
+var sending_lc:LocalConnection = new LocalConnection();
+sending_lc.send("lc_name", "methodToExecute", 5, 7);
+    </pre></div>       <p>The simplest way to use a LocalConnection object is to allow communication only between LocalConnection objects located in the same    domain because you won't have security issues. However, if you need to allow communication between domains, you have several ways to    implement security measures. For more information, see the discussion of the <code>connectionName</code> parameter in    <code>LocalConnection.send()</code> and the <code>LocalConnection.allowDomain</code> and <code>LocalConnection.domain()</code> entries. </p>    <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#isPerUser">isPerUser</a> : <a href="Boolean.html">Boolean</a>
+<div class="summaryTableDescription">Indicates whether the LocalConnection object is scoped to the current user (<code>true</code>) or is globally accessible to all users on the computer (<code>false</code>).</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="Object.html#__proto__">__proto__</a>, <a href="Object.html#__resolve">__resolve</a>, <a href="Object.html#constructor">constructor</a>, <a href="Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#LocalConnection()">LocalConnection</a>()</div>
+<div class="summaryTableDescription">Creates a LocalConnection object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#close()">close</a>():Void</div>
+<div class="summaryTableDescription">Closes (disconnects) a LocalConnection object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#connect()">connect</a>(connectionName:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Prepares a LocalConnection object to receive commands from a <code>LocalConnection.send()</code> command (called the <em>sending LocalConnection object</em>).</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#domain()">domain</a>():<a href="String.html">String</a>
+</div>
+<div class="summaryTableDescription">Returns a string representing the domain of the location of the current SWF file.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#send()">send</a>(connectionName:<a href="String.html">String</a>, methodName:<a href="String.html">String</a>, [args:<a href="Object.html">Object</a>]):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Invokes the method named <code>method</code> on a connection opened with the <code>LocalConnection.connect(</code><code>connectionName</code><code>)</code> command (the receiving LocalConnection object).</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="Object.html#addProperty()">addProperty</a>, <a href="Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="Object.html#registerClass()">registerClass</a>, <a href="Object.html#toString()">toString</a>, <a href="Object.html#unwatch()">unwatch</a>, <a href="Object.html#valueOf()">valueOf</a>, <a href="Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<a name="eventSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Events</div>
+<table id="summaryTableEvent" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Event</th><th>Summary</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:allowDomain">allowDomain</a> = function([sendingDomain:<a href="String.html">String</a>]) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked whenever receiving_lc receives a request to invoke a method from a sending LocalConnection object.</td><td class="summaryTableOwnerCol">LocalConnection</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:allowInsecureDomain">allowInsecureDomain</a> = function([sendingDomain:<a href="String.html">String</a>]) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked whenever receiving_lc, which is in a SWF file hosted at a domain using a secure protocol (HTTPS), receives a request to invoke a method from a sending LocalConnection object that is in a SWF file hosted at a nonsecure protocol.</td><td class="summaryTableOwnerCol">LocalConnection</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onStatus">onStatus</a> = function(infoObject:<a href="Object.html">Object</a>) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked after a sending LocalConnection object tries to send a command to a receiving LocalConnection object.</td><td class="summaryTableOwnerCol">LocalConnection</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="isPerUser"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">isPerUser</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var isPerUser:<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 10.0.32</td>
+</tr>
+</table>
+<p></p><p>Indicates whether the LocalConnection object is scoped to the current user (<code>true</code>) or is globally accessible       to all users on the computer (<code>false</code>). This property only affects content running on Mac OS X; other platforms ignore this parameter.       Connections on Windows and Linux operating systems are always per-user.       In Flash Player 10.0.22 and earlier, all LocalConnection objects on Mac OS X have a global scope.       Always set this property to <code>true</code>, unless you need to preserve compatibility with previous versions.       In future releases, the default value of this property might change to <code>true</code>.       The value of this property is locked for individual LocalConnection instances and cannot be altered after <code>close()</code> , <code>send()</code> or <code>connect()</code>       methods are called on that instance.            </p><p>The default value is <code>false</code>.</p>            </div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="LocalConnection()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">LocalConnection</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function LocalConnection()</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Creates a LocalConnection object.    </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="LocalConnection.html#connect()" target="">LocalConnection.connect()</a>
+<br>
+<a href="LocalConnection.html#send()" target="">LocalConnection.send()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how receiving and sending SWF files create LocalConnnection objects.   The two SWF files can use the same name or different names for their respective LocalConnection objects.   In this example they use different names.   <div class='listing'><pre>
+// Code in the receiving SWF file
+this.createTextField("result_txt", 1, 10, 10, 100, 22);
+result_txt.border = true;
+var receiving_lc:LocalConnection = new LocalConnection();
+receiving_lc.methodToExecute = function(param1:Number, param2:Number) {
+    result_txt.text = param1+param2;
+};
+receiving_lc.connect("lc_name");
+</pre></div>   <p>The following SWF file sends the request to the first SWF file.</p>   <div class='listing'><pre>
+// Code in the sending SWF file
+var sending_lc:LocalConnection = new LocalConnection();
+sending_lc.send("lc_name", "methodToExecute", 5, 7);
+</pre></div>    <p></p>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="close()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">close</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function close():Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Closes (disconnects) a LocalConnection object. Issue this command when you no longer want the object to accept commands&#x2014;for example, when you want to issue a  <code>LocalConnection.connect()</code> command using the same <code>connectionName</code> parameter in another SWF file.            </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="LocalConnection.html#connect()" target="">LocalConnection.connect()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example closes a connection called <code>receiving_lc</code> when you click a Button component instance called <code>close_button</code>:       <div class='listing'><pre>
+this.createTextField("welcome_txt", this.getNextHighestDepth(), 10, 10, 100, 22);
+this.createTextField("status_txt", this.getNextHighestDepth(), 10, 42, 100,44);
+
+var receiving_lc:LocalConnection = new LocalConnection();
+receiving_lc.sayHello = function(name:String) {
+    welcome_txt.text = "Hello, "+name;
+};
+receiving_lc.connect("lc_name");
+var closeListener:Object = new Object();
+closeListener.click = function(evt:Object) {
+    receiving_lc.close();
+    status_txt.text = "connection closed";
+};
+close_button.addEventListener("click", closeListener);
+</pre></div>            <p>The <code>MovieClip.getNextHighestDepth()</code> method used in this example requires       Flash Player 7 or later. If your SWF file includes a version 2 component, use the version 2 components'       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method.       </p>             <p></p>
+</div>
+<a name="connect()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">connect</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function connect(connectionName:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Prepares a LocalConnection object to receive commands from a <code>LocalConnection.send()</code> command (called the <em>sending LocalConnection object</em>). The object used with this command is called the <em>receiving LocalConnection object</em>. The receiving and sending objects must be running on the same client computer.       </p><p>Make sure you define the methods attached to <code><em>receiving_lc</em></code> before calling this method, as shown in all the examples in this section. </p>       <p>By default, Flash Player resolves <code>connectionName</code> into a value of <code>"</code><code><em>superdomain</em></code><code>:connectionName"</code>, where <code><em>superdomain</em></code> is the superdomain of the SWF file containing the <code>LocalConnection.connect()</code> command. For example, if the SWF file containing the receiving LocalConnection object is located at www.someDomain.com, <code>connectionName</code> resolves to <code>"someDomain.com:connectionName"</code>. (If a SWF file is located on the client computer, the value assigned to <code>superdomain</code> is <code>"localhost"</code>.)</p>       <p>Also by default, Flash Player lets the receiving LocalConnection object accept commands only from sending LocalConnection objects whose connection name also resolves into a value of <code>"</code><code><em>superdomain</em></code><code>:connectionName"</code>. In this way, Flash makes it simple for SWF files located in the same domain to communicate with each other.</p>       <p>If you are implementing communication only between SWF files in the same domain, specify a string for <code>connectionName</code> that does not begin with an underscore (_) and that does not specify a domain name (for example, <code>"myDomain:connectionName"</code>). Use the same string in the <code>LocalConnection.connect(</code><code>connectionName</code><code>)</code> command. </p>       <p>If you are implementing communication between SWF files in different domains, specifying a string for <code><em>connectionName </em></code>that begins with an underscore (_) will make the SWF with the receiving LocalConnection object more portable between domains. Here are the two possible cases:</p>       <ul>         <li>If the string for <code><em>connectionName </em></code>does not begin with an underscore (_), Flash Player adds a prefix with the superdomain and a colon (for example, <code>"myDomain:connectionName"</code>). Although this ensures that your connection does not conflict with connections of the same name from other domains, any sending LocalConnection objects must specify this superdomain (for example, <code>"myDomain:connectionName"</code>). If the SWF with the receiving LocalConnection object is moved to another domain, the player changes the prefix to reflect the new superdomain (for example, <code>"anotherDomain:connectionName"</code>). All sending LocalConnection objects would have to be manually edited to point to the new superdomain.</li>         <li>If the string for <code><em>connectionName </em></code>begins with an underscore (for example, <code>"_connectionName"</code>), Flash Player does not add a prefix to the string. This means that the receiving and sending LocalConnection objects will use identical strings for <code>connectionName</code>. If the receiving object uses <code>LocalConnection.allowDomain</code> to specify that connections from any domain will be accepted, the SWF with the receiving LocalConnection object can be moved to another domain without altering any sending LocalConnection objects.</li>       </ul>       <p>For more information, see the discussion of <code>connectionName</code> in <code>LocalConnection.send()</code> and also the <code>LocalConnection.allowDomain</code> and <code>LocalConnection.domain()</code> entries.</p>       <p><strong>Note: </strong>Colons are used as special characters to separate the superdomain from the <code>connectionName</code> string. A string for <code>connectionName</code> that contains a colon is not valid.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">connectionName</span>:<a href="String.html">String</a></code> &mdash; A string that corresponds to the connection name specified in the <code>LocalConnection.send()</code> command that wants to communicate with <code><em>receiving_lc</em></code>.                 </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+  A Boolean value: <code>true</code> if no other process running on the same client computer has already issued this command using the same value for the <code><em>connectionName </em></code>parameter; <code>false</code> otherwise.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="LocalConnection.html#send()" target="">LocalConnection.send()</a>
+<br>
+<a href="LocalConnection.html#event:allowDomain" target="">LocalConnection.allowDomain</a>
+<br>
+<a href="LocalConnection.html#domain()" target="">LocalConnection.domain()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how a SWF file in a particular domain can invoke a method named <code>printOut</code> in a receiving SWF file in the same domain.             <p>First, create one SWF file with the following code:</p>       <div class='listing'><pre>
+this.createTextField("tf", this.getNextHighestDepth(), 10, 10, 300, 100);
+var aLocalConnection:LocalConnection = new LocalConnection();
+aLocalConnection.connect("demoConnection");
+aLocalConnection.printOut = function(aString:String):Void{
+    tf.text += aString;
+}
+</pre></div>             <p>Then create a second with the following code:</p>             <div class='listing'><pre>
+var sending_lc:LocalConnection = new LocalConnection();
+sending_lc.send("demoConnection", "printOut", "This is a message from file B. Hello.");
+</pre></div>             <p>To test this example, run the first SWF file, and then run the second one.</p>             <p>Here is another example. SWF 1 contains the following code, which creates a new Sound object that plays back an MP3 file at runtime. A ProgressBar called <code>playback_pb</code> displays the playback progress of the MP3 file. A Label component instance called <code>song_lbl</code> displays the name of the MP3 file. Buttons in different SWF files will be used to control the playback using a LocalConnection object.</p>       <div class='listing'><pre>
+var playback_pb:mx.controls.ProgressBar;
+var my_sound:Sound;
+playback_pb.setStyle("themeColor", "haloBlue");
+this.createEmptyMovieClip("timer_mc", this.getNextHighestDepth());
+var receiving_lc:LocalConnection = new LocalConnection();
+receiving_lc.playMP3 = function(mp3Path:String, mp3Name:String) {
+    song_lbl.text = mp3Name;
+    playback_pb.indeterminate = true;
+    my_sound = new Sound();
+    my_sound.onLoad = function(success:Boolean) {
+    playback_pb.indeterminate = false;
+    };
+    my_sound.onSoundComplete = function() {
+    delete timer_mc.onEnterFrame;
+    };
+    timer_mc.onEnterFrame = function() {
+    playback_pb.setProgress(my_sound.position, my_sound.duration);
+    };
+    my_sound.loadSound(mp3Path, true);
+};
+receiving_lc.connect("lc_name");
+</pre></div>       <p>SWF 2 contains a button called <code>play_btn</code>. When you click the button, it connects to SWF 1 and passes two variables. The first variable contains the MP3 file to stream, and the second variable is the filename that you display in the Label component instance in SWF 1.</p>       <div class='listing'><pre>
+play_btn.onRelease = function() {
+    var sending_lc:LocalConnection = new LocalConnection();
+    sending_lc.send("lc_name", "playMP3", "song1.mp3", "Album - 01 - Song");
+};
+</pre></div>       <p>SWF 3 contains a button called <code>play_btn</code>. When you click the button, it connects to SWF 1 and passes two variables. The first variable contains the MP3 file to stream, and the second variable is the filename that you display in the Label component instance in SWF 1.</p>       <div class='listing'><pre>
+play_btn.onRelease = function() {
+    var sending_lc:LocalConnection = new LocalConnection();
+    sending_lc.send("lc_name", "playMP3", "song2.mp3", "Album - 02 - Another Song");
+};
+</pre></div>            <p>The <code>MovieClip.getNextHighestDepth()</code> method used in these examples requires       Flash Player 7 or later. If your SWF file includes a version 2 component, use the version 2 components'       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method.       </p>             <p></p>
+</div>
+<a name="domain()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">domain</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function domain():<a href="String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6 &mdash; Behavior changed in Flash Player 7.</td>
+</tr>
+</table>
+<p></p><p>Returns a string representing the domain of the location of the current SWF file.       </p><p>In SWF files published for Flash Player 6, the returned string is the superdomain of the current SWF file. For example, if the SWF file is located at www.adobe.com, this command returns <code>"adobe.com"</code>. </p>       <p>In SWF files published for Flash Player 7 or later, the returned string is the exact domain of the current SWF file. For example, if the SWF file is located at www.adobe.com, this command returns <code>"www.adobe.com"</code>. </p>       <p>If the current SWF file is a local file residing on the client computer, this command returns <code>"localhost"</code>.</p>       <p>The most common way to use this command is to include the domain name of the sending LocalConnection object as a parameter to the method you plan to invoke in the receiving LocalConnection object or with <code>LocalConnection.allowDomain</code> to accept commands from a specified domain. If you are enabling communication only between LocalConnection objects that are located in the same domain, you probably don't need to use this command.</p>            <p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; 
+  A string representing the domain of the location of the current SWF file; for more information, see the Description section.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="LocalConnection.html#event:allowDomain" target="">LocalConnection.allowDomain</a>
+<br>
+<a href="LocalConnection.html#connect()" target="">LocalConnection.connect()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>In the following example, a receiving SWF file accepts commands only from SWF files located in the same domain or at adobe.com:       <div class='listing'><pre>
+// If both the sending and receiving SWF files are Flash Player 6,
+// then use the superdomain
+var my_lc:LocalConnection = new LocalConnection();
+my_lc.allowDomain = function(sendingDomain):String{
+    return (sendingDomain==this.domain() || sendingDomain=="adobe.com");
+}
+
+// If either the sending or receiving SWF file is Flash Player 7 or later, 
+// then use the exact domain. In this case, commands from a SWF file posted
+// at www.adobe.com will be accepted, but those from one posted at
+// a different subdomain, e.g. blogs.adobe.com, will not.
+var my_lc:LocalConnection = new LocalConnection();
+my_lc.allowDomain = function(sendingDomain):String{
+    return (sendingDomain==this.domain() || sendingDomain=="www.adobe.com");
+}
+</pre></div>       <p>In the following example, a sending SWF file located at www.yourdomain.com invokes a method in a receiving SWF file located at www.mydomain.com. The sending SWF file includes its domain name as a parameter to the method it invokes, so the receiving SWF file can return a reply value to a LocalConnection object in the correct domain. The sending SWF file also specifies that it will accept commands only from SWF files at mydomain.com. </p>       <p>Line numbers are included for reference purposes. The sequence of events is described in the following list:</p>       <ul>         <li>The receiving SWF file prepares to receive commands on a connection named <code>"sum"</code> (line 11). The Flash Player resolves the name of this connection to <code>"mydomain.com:sum"</code> (see <code>LocalConnection.connect()</code>).</li>         <li>The sending SWF file prepares to receive a reply on the LocalConnection object named <code>"result"</code> (line 67). It also specifies that it will accept commands only from SWF files at mydomain.com (lines 51 to 53). </li>         <li>The sending SWF file invokes the <code>aSum</code> method of a connection named <code>"mydomain.com:sum"</code> (line 68) and passes the following parameters: its superdomain, the name of the connection to receive the reply (<code>"result"</code>), and the values to be used by <code>aSum</code> (123 and 456).</li>         <li>The <code>aSum</code> method (line 6) is invoked with the following values: sender = <code>"mydomain.com:result"</code>, <code>replyMethod</code> = <code>"aResult"</code>, <code>n1</code> = 123, and <code>n2</code> = 456. It then executes the following line of code:       <div class='listing'><pre>
+this.send("mydomain.com:result", "aResult", (123 + 456));
+</pre></div>         </li>         <li>The <code>aResult</code> method (line 54) shows the value returned by <code>aSum</code> (579).       <div class='listing'><pre>
+    // The receiving SWF at http://www.mydomain.com/folder/movie.swf
+    // contains the following code
+    
+    1     var aLocalConnection:LocalConnection = new LocalConnection();
+    2     aLocalConnection.allowDomain = function() 
+    3     { 
+        // Allow connections from any domain
+    4      return true; 
+    5     }
+    6    aLocalConnection.aSum = function(sender, replyMethod, n1, n2) 
+    7    { 
+    8      this.send(sender, replyMethod, (n1 + n2));
+    9    }
+    10  
+    11    aLocalConnection.connect("sum");
+    
+    // The sending SWF at http://www.yourdomain.com/folder/movie.swf
+    // contains the following code 
+    
+    50    var lc:LocalConnection = new LocalConnection();
+    51    lc.allowDomain = function(aDomain) { 
+            // Allow connections only from mydomain.com
+    52      return (aDomain == "mydomain.com"); 
+    53    }
+    54    lc.aResult = function(aParam) { 
+    55      trace("The sum is " + aParam);
+    56    }
+</pre></div>       </li>       </ul>           <div class='listing'><pre>
+        // determine our domain and see if we need to truncate it
+    57    var channelDomain:String = lc.domain();
+    58    if (getVersion() &gt;= 7 &amp;&amp; this.getSWFVersion() &gt;= 7)
+    59    {
+            // split domain name into elements
+    60      var domainArray:Array = channelDomain.split(".");
+        
+            // if more than two elements are found,
+            // chop off first element to create superdomain
+    61      if (domainArray.length &gt; 2)
+    62       {
+    63         domainArray.shift();
+    64         channelDomain = domainArray.join(".");
+    65       }
+    66    }
+    
+    67    lc.connect("result");
+    68    lc.send("mydomain.com:sum", "aSum", channelDomain + &#39;:&#39; + "result",<br />      "aResult", 123, 456);
+    </pre></div>            <p></p>
+</div>
+<a name="send()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">send</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function send(connectionName:<a href="String.html">String</a>, methodName:<a href="String.html">String</a>, [args:<a href="Object.html">Object</a>]):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Invokes the method named <code>method</code> on a connection opened with the <code>LocalConnection.connect(</code><code>connectionName</code><code>)</code> command (the receiving LocalConnection object). The object used with this command is called the sending LocalConnection object. The SWF files that contain the sending and receiving objects must be running on the same client computer.       </p><p>There is a 40 kilobyte limit to the amount of data you can pass as parameters to this command. If the command returns <code>false</code> but your syntax is correct, try dividing the <code>LocalConnection.send()</code> requests into multiple commands, each with less than 40K of data.</p>       <p>As discussed in the entry <code>LocalConnection.connect()</code>, Flash adds the current superdomain to <code>connectionName</code> by default. If you are implementing communication between different domains, you need to define <code>connectionName</code> in both the sending and receiving LocalConnection objects in such a way that Flash does not add the current superdomain to <code>connectionName</code>. You can do this in one of the following two ways:</p>       <ul>         <li>Use an underscore (_) at the beginning of <code>connectionName</code> in both the sending and receiving LocalConnection objects. In the SWF file containing the receiving object, use <code>LocalConnection.allowDomain</code> to specify that connections from any domain will be accepted. This implementation lets you store your sending and receiving SWF files in any domain.</li>         <li>Include the superdomain in <code>connectionName</code> in the sending LocalConnection object--for example, <code>myDomain.com:myConnectionName</code>. In the receiving object, use <code>LocalConnection.allowDomain</code> to specify that connections from the specified superdomain will be accepted (in this case, myDomain.com) or that connections from any domain will be accepted.</li>       </ul>       <p><strong>Note: </strong>You cannot specify a superdomain in <code>connectionName</code> in the receiving LocalConnection object--you can only do this in the sending LocalConnection object.</p>            <p>When using this method, consider the Flash Player security model. By default, a LocalConnection object       is associated with the sandbox of the SWF file that created it, and cross-domain calls to LocalConnection objects are not allowed unless the       <code>LocalConnection.allowDomain()</code> method has been invoked.  </p>            <p>For more information related to security, see the following: </p>            <ul>          <li>"Understanding Security" in <i>Learning ActionScript 2.0 in Flash</i></li>       <li>The Flash Player Developer Center Topic:       <a href="http://www.adobe.com/go/devnet_security_en" target="external">Security</a></li>       </ul>                  <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">connectionName</span>:<a href="String.html">String</a></code> &mdash; A string that corresponds to the connection name specified in the <code>LocalConnection.connect()</code> command that wants to communicate with <code><em>sending_lc</em></code>.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">methodName</span>:<a href="String.html">String</a></code> &mdash; A string specifying the name of the method to be invoked in the receiving LocalConnection object. The following method names cause the command to fail: <code>send</code>, <code>connect</code>, <code>close</code>, <code>domain</code>, <code>onStatus</code>, and <code>allowDomain</code>.           </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">args</span>:<a href="Object.html">Object</a></code>&nbsp;[optional] &mdash; Arguments to be passed to the specified method.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+A Boolean value: <code>true</code> if Flash can carry out the request; <code>false</code> otherwise.       <p><strong>Note: </strong>A return value of <code>true</code> does not necessarily mean that Flash successfully connected to a receiving LocalConnection object; it means only that the command is syntactically correct. To determine whether the connection succeeded, see <code>LocalConnection.onStatus</code>.</p>            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="LocalConnection.html#event:allowDomain" target="">LocalConnection.allowDomain</a>
+<br>
+<a href="LocalConnection.html#connect()" target="">LocalConnection.connect()</a>
+<br>
+<a href="LocalConnection.html#domain()" target="">LocalConnection.domain()</a>
+<br>
+<a href="LocalConnection.html#event:onStatus" target="">LocalConnection.onStatus</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>For an example of communicating between LocalConnection objects located in the same domain, see <code>LocalConnection.connect()</code>. For an example of communicating between LocalConnection objects located in any domain, see <code>LocalConnection.allowDomain</code>. For an example of communicating between LocalConnection objects located in specified domains, see <code>LocalConnection.allowDomain</code> and <code>LocalConnection.domain()</code>.            <p></p>
+</div>
+<div class="detailSectionHeader">Event detail</div>
+<a name="event:allowDomain"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">allowDomain</td><td class="detailHeaderType">event&nbsp;handler</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public allowDomain = function([sendingDomain:<a href="String.html">String</a>]) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Invoked whenever receiving_lc receives a request to invoke a method from a sending LocalConnection object. Flash expects the code you implement in this handler to return a Boolean value of true or false. If the handler doesn't return true, the request from the sending object is ignored, and the method is not invoked.       </p><p>When this event handler is absent, Flash Player applies a default security policy, which is equivalent to the following code:</p>       <div class='listing'><pre>
+my_lc.allowDomain = function (sendingDomain)
+{
+    return (sendingDomain == this.domain());
+}
+</pre></div>       <p>Use <code>LocalConnection.allowDomain</code> to explicitly permit LocalConnection objects from specified domains, or from any domain, to execute methods of the receiving LocalConnection object. If you don't declare the sendingDomain parameter, you probably want to accept commands from any domain, and the code in your handler would be simply return true. If you do declare sendingDomain, you probably want to compare the value of sendingDomain with domains from which you want to accept commands. The following examples show both implementations.</p>       <p>In files authored for Flash Player 6, the <code>sendingDomain</code> parameter contains the superdomain of the caller. In files authored for Flash Player 7 or later, the <code>sendingDomain</code> parameter contains the exact domain of the caller. In the latter case, to allow access by SWF files hosted at either www.domain.com or store.domain.com, you must explicitly allow access from both domains. </p>       <div class='listing'><pre>
+// For Flash Player 6
+receiving_lc.allowDomain = function(sendingDomain) {
+    return(sendingDomain=="domain.com");
+}
+// For Flash Player 7 or later
+receiving_lc.allowDomain = function(sendingDomain) {
+    return(sendingDomain=="www.domain.com" ||
+        sendingDomain=="store.domain.com");
+}
+</pre></div>       <p>Also, for files authored for Flash Player 7 or later, you can't use this method to let SWF files hosted using a secure protocol (HTTPS) allow access from SWF files hosted in nonsecure protocols; you must use the <code>LocalConnection.allowInsecureDomain</code> event handler instead.</p>       <p>Occasionally, you might encounter the following situation. Suppose you load a child SWF file from a different domain. You want to implement this method so that the child SWF file can make LocalConnection calls to the parent SWF file, but you don't know the final domain from which the child SWF file will come. This can happen, for example, when you use load-balancing redirects or third-party servers.</p>       <p>In this situation, you can use the <code>MovieClip._url</code> property in your implementation of this method. For example, if you load a SWF file into my_mc, you can then implement this method by checking whether the domain argument matches the domain of <code>my_mc._url</code>. (You must parse the domain out of the full URL contained in <code>my_mc._url</code>.)</p>       <p>If you do this, make sure that you wait until the SWF file in <code>my_mc</code> is loaded, because the _url property will not have its final, correct value until the file is completely loaded. The best way to determine when a child SWF file finishes loading is to use <code>MovieClipLoader.onLoadComplete</code>.</p>       <p>The opposite situation can also occur: You might create a child SWF file that wants to accept LocalConnection calls from its parent but doesn't know the domain of its parent. In this situation, implement this method by checking whether the domain argument matches the domain of _parent._url. Again, you must parse the domain out of the full URL from _parent._url. In this situation, you don't have to wait for the parent SWF file to load; the parent will already be loaded by the time the child loads.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sendingDomain</span>:<a href="String.html">String</a></code>&nbsp;[optional] &mdash; A string that specifies the domain of the SWF file that contains the sending LocalConnection object.                </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how a LocalConnection object in a receiving SWF file can permit SWF files from any domain to invoke its methods. Compare this to the example in <code>LocalConnection.connect()</code>, in which only SWF files from the same domain can invoke the <code>trace()</code> method in the receiving SWF file. For a discussion of the use of the underscore (_) in the connection name, see <code>LocalConnection.send()</code>.       <div class='listing'><pre>
+this.createTextField("welcome_txt", this.getNextHighestDepth(), 10, 10, 100, 20);
+var my_lc:LocalConnection = new LocalConnection();
+my_lc.allowDomain = function(sendingDomain:String) {
+    domain_txt.text = sendingDomain;
+    return true;
+};
+my_lc.allowInsecureDomain = function(sendingDomain:String) {
+    return (sendingDomain == this.domain());
+}
+my_lc.sayHello = function(name:String) {
+    welcome_txt.text = "Hello, "+name;
+};
+my_lc.connect("_mylc");    
+</pre></div>            <p>The following example sends a string to the previous SWF file and displays a status message about whether the local connection was able to connect to the file. A TextInput component called <code>name_ti</code>, a TextArea instance called <code>status_ta</code> and a Button instance called <code>send_button</code> are used to display content.</p>       <div class='listing'><pre>
+var sending_lc:LocalConnection;
+var sendListener:Object = new Object();
+sendListener.click = function(evt:Object) {
+    sending_lc = new LocalConnection();
+    sending_lc.onStatus = function(infoObject:Object) {
+    switch (infoObject.level) {
+    case 'status' :
+        status_ta.text = "LocalConnection connected successfully.";
+        break;
+    case 'error' :
+        status_ta.text = "LocalConnection encountered an error.";
+        break;
+    }
+    };
+    sending_lc.send("_mylc", "sayHello", name_ti.text);
+};
+send_button.addEventListener("click", sendListener);
+</pre></div>             <p>If your SWF file includes a version 2 component, use the version 2 components'       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method used in the       previous example.       </p>             <p>In the following example, the receiving SWF file, which resides in <code>thisDomain.com</code>, accepts commands only from SWF files located in <code>thisDomain.com</code> or <code>thatDomain.com</code>:</p>             <div class='listing'><pre>
+var aLocalConn:LocalConnection = new LocalConnection();
+aLocalConn.Trace = function(aString) {
+    aTextField += aString+newline;
+};
+aLocalConn.allowDomain = function(sendingDomain) {
+    return (sendingDomain == this.domain() || sendingDomain == "www.adobe.com");
+};
+aLocalConn.connect("_mylc");<br /></pre></div>       <p>When published for Flash Player 7 or later, exact domain matching is used. This means that the example will fail if the SWF files are located at www.thatDomain.com but will work if the files are located at thatDomain.com.</p>            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="LocalConnection.html#connect()" target="">LocalConnection.connect()</a>
+<br>
+<a href="LocalConnection.html#domain()" target="">LocalConnection.domain()</a>
+<br>
+<a href="LocalConnection.html#send()" target="">LocalConnection.send()</a>
+<br>
+<a href="MovieClip.html#_url" target="">MovieClip._url</a>
+<br>
+<a href="MovieClipLoader.html#event:onLoadComplete" target="">MovieClipLoader.onLoadComplete</a>
+<br>
+<a href="global_props.html#_parent" target="">_parent</a>
+</div>
+</div>
+<a name="event:allowInsecureDomain"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">allowInsecureDomain</td><td class="detailHeaderType">event&nbsp;handler</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public allowInsecureDomain = function([sendingDomain:<a href="String.html">String</a>]) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Invoked whenever receiving_lc, which is in a SWF file hosted at a domain using a secure protocol (HTTPS), receives a request to invoke a method from a sending LocalConnection object that is in a SWF file hosted at a nonsecure protocol. Flash expects the code you implement in this handler to return a Boolean value of <code>true</code> or <code>false</code>. If the handler doesn't return true, the request from the sending object is ignored, and the method is not invoked.          </p><p>By default, SWF files hosted using the HTTPS protocol can be accessed only by other SWF files hosted using the HTTPS protocol. This implementation maintains the integrity provided by the HTTPS protocol.</p>          <p>Using this method to override the default behavior is not recommended, as it compromises HTTPS security. However, you might need to do so, for example, if you need to permit access to HTTPS files published for Flash Player 7 or later from HTTP files published for Flash Player 6.</p>          <p>A SWF file published for Flash Player 6 can use the <code>LocalConnection.allowDomain</code> event handler to permit HTTP to HTTPS access. However, because security is implemented differently in Flash Player 7, you must use the <code>LocalConnection.allowInsecureDomain()</code> method to permit such access in SWF files published for Flash Player 7 or later.</p>          <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sendingDomain</span>:<a href="String.html">String</a></code>&nbsp;[optional] &mdash; A string that specifies the domain of the SWF file that contains the sending LocalConnection object.              </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example allows connections from the current domain or from www.adobe.com, or allows insecure connections only from the current domain.      <div class='listing'><pre>
+this.createTextField("welcome_txt", this.getNextHighestDepth(), 10, 10, 100, 20);
+var my_lc:LocalConnection = new LocalConnection();
+my_lc.allowDomain = function(sendingDomain:String) {
+    domain_txt.text = sendingDomain;
+    return (sendingDomain == this.domain() || sendingDomain == "www.adobe.com");
+};
+my_lc.allowInsecureDomain = function(sendingDomain:String) {
+    return (sendingDomain == this.domain());
+}
+my_lc.sayHello = function(name:String) {
+    welcome_txt.text = "Hello, "+name;
+};
+my_lc.connect("lc_name");
+</pre></div>           <p>If your SWF file includes a version 2 component, use the version 2 components'       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method       used in this example.       </p>            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="LocalConnection.html#event:allowDomain" target="">LocalConnection.allowDomain</a>
+<br>
+<a href="LocalConnection.html#connect()" target="">LocalConnection.connect()</a>
+</div>
+</div>
+<a name="event:onStatus"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onStatus</td><td class="detailHeaderType">event&nbsp;handler</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onStatus = function(infoObject:<a href="Object.html">Object</a>) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Invoked after a sending LocalConnection object tries to send a command to a receiving LocalConnection object. If you want to respond to this event handler, you must create a function to process the information object sent by the LocalConnection object.        </p><p>If the information object returned by this event handler contains a level value of status, Flash successfully sent the command to a receiving LocalConnection object. This does not mean that Flash successfully invoked the specified method of the receiving LocalConnection object; it means only that Flash could send the command. For example, the method is not invoked if the receiving LocalConnection object doesn't allow connections from the sending domain or if the method does not exist. The only way to know for sure if the method was invoked is to have the receiving object send a reply to the sending object.</p>       <p>If the information object returned by this event handler contains a level value of error, Flash cannot send the command to a receiving LocalConnection object, most likely because there is no receiving LocalConnection object connected whose name corresponds to the name specified in the <code>sending_lc.send()</code> command that invoked this handler.</p>       <p>In addition to this <code>onStatus</code> handler, Flash also provides a "super" function called <code>System.onStatus</code>. If <code>onStatus</code> is invoked for a particular object and there is no function assigned to respond to it, Flash processes a function assigned to <code>System.onStatus</code> if it exists.</p>       <p>In most cases, you implement this handler only to respond to error conditions, as shown in the following example. </p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">infoObject</span>:<a href="Object.html">Object</a></code> &mdash; A parameter defined according to the status message. For details about this parameter, see the Description section.            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example displays a status message about whether the SWF file connects to another local connection object called <code>lc_name</code>. A TextInput component called <code>name_ti</code>, a TextArea instance called <code>status_ta</code> and a Button instance called <code>send_button</code> are used to display content.       <div class='listing'><pre>
+var sending_lc:LocalConnection;
+var sendListener:Object = new Object();
+sendListener.click = function(evt:Object) {
+    sending_lc = new LocalConnection();
+    sending_lc.onStatus = function(infoObject:Object) {
+        switch (infoObject.level) {
+        case 'status' :
+            status_ta.text = "LocalConnection connected successfully.";
+                break;
+        case 'error' :
+            status_ta.text = "LocalConnection encountered an error.";
+            break;
+        }
+    };
+    sending_lc.send("lc_name", "sayHello", name_ti.text);
+};
+send_button.addEventListener("click", sendListener);
+</pre></div>            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="LocalConnection.html#send()" target="">LocalConnection.send()</a>
+<br>
+<a href="System.html#event:onStatus" target="">System.onStatus</a>
+</div>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

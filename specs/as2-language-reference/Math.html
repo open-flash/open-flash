@@ -1,0 +1,1397 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="print.css" type="text/css" media="print">
+<meta content="Math,E,LN10,LN2,LOG10E,LOG2E,PI,SQRT1_2,SQRT2,abs,acos,asin,atan,atan2,ceil,cos,exp,floor,log,max,min,pow,random,round,sin,sqrt,tan" name="keywords">
+<title>Math</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="asdoc.js"></script><script type="text/javascript" language="javascript" src="cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Math - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('all-classes.html')" href="package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('all-classes.html')" href="class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('index-list.html')" href="all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="index.html?Math.html&amp;class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Math</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Math"); titleBar_setSubNav(true,false,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">Top Level</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Math</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Math <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="images/inherit-arrow.gif"> <a href="Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p>
+<p></p>The Math class is a top-level class whose methods and properties you can use without using a constructor.   <p>Use the methods and properties of this class to access and manipulate mathematical constants and functions.   All the properties and methods of the Math class are static and must be called using the syntax   <code>Math.method(</code><code><em>parameter</em></code><code>)</code> or <code>Math.constant</code>.   In ActionScript, constants are defined with the maximum precision of double-precision IEEE-754 floating-point numbers.</p>   <p>Several Math class methods use the measure of an angle in radians as a parameter.You can use the following equation   to calculate radian values before calling the method and then provide the calculated value as the parameter, or you can   provide the entire right side of the equation (with the angle's measure in degrees in place of <code>degrees</code>) as   the radian parameter.</p>   <p>To calculate a radian value, use the following formula:</p>   <div class='listing'><pre>
+radians = degrees &#42; Math.PI/180
+</pre></div>   <p>The following is an example of passing the equation as a parameter to calculate the sine of a 45&#176; angle:</p>   <p><code>Math.sin(45 &#42; Math.PI/180) </code>is the same as <code>Math.sin(.7854)</code></p>    <p></p>
+<br>
+<hr>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#abs()">abs</a>(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">[static]Computes and returns an absolute value for the number specified by the parameter <code>x</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#acos()">acos</a>(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">[static]Computes and returns the arc cosine of the number specified in the parameter <code>x</code>, in radians.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#asin()">asin</a>(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">[static]Computes and returns the arc sine for the number specified in the parameter <code>x</code>, in radians.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#atan()">atan</a>(tangent:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">[static]Computes and returns the value, in radians, of the angle whose tangent is specified in the parameter <code>tangent</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#atan2()">atan2</a>(y:<a href="Number.html">Number</a>, x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">[static]Computes and returns the angle of the point <code>y</code>/<code>x</code> in radians, when measured counterclockwise from a circle's <em>x</em> axis (where 0,0 represents the center of the circle).</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#ceil()">ceil</a>(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">[static]Returns the ceiling of the specified number or expression.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#cos()">cos</a>(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">[static]Computes and returns the cosine of the specified angle in radians.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#exp()">exp</a>(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">[static]Returns the value of the base of the natural logarithm (<em>e</em>), to the power of the exponent specified in the parameter <code>x</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#floor()">floor</a>(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">[static]Returns the floor of the number or expression specified in the parameter <code>x</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#log()">log</a>(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">[static]Returns the natural logarithm of parameter <code>x</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#max()">max</a>(x:<a href="Number.html">Number</a>, y:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">[static]Evaluates <code>x</code> and <code>y</code> and returns the larger value.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#min()">min</a>(x:<a href="Number.html">Number</a>, y:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">[static]Evaluates <code>x</code> and <code>y</code> and returns the smaller value.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#pow()">pow</a>(x:<a href="Number.html">Number</a>, y:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">[static]Computes and returns <code>x</code> to the power of <code>y</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#random()">random</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">[static]Returns a pseudo-random number n, where 0 &lt;= n &lt; 1.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#round()">round</a>(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">[static]Rounds the value of the parameter <code>x</code> up or down to the nearest integer and returns the value.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#sin()">sin</a>(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">[static]Computes and returns the sine of the specified angle in radians.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#sqrt()">sqrt</a>(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">[static]Computes and returns the square root of the specified number.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#tan()">tan</a>(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">[static]Computes and returns the tangent of the specified angle.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="Object.html#addProperty()">addProperty</a>, <a href="Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="Object.html#registerClass()">registerClass</a>, <a href="Object.html#toString()">toString</a>, <a href="Object.html#unwatch()">unwatch</a>, <a href="Object.html#valueOf()">valueOf</a>, <a href="Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<table id="summaryTableConstant" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#E">E</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[static]A mathematical constant for the base of natural logarithms, expressed as <em>e</em>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#LN10">LN10</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[static]A mathematical constant for the natural logarithm of 10, expressed as log<sub>e</sub>10, with an approximate value of 2.302585092994046.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#LN2">LN2</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[static]A mathematical constant for the natural logarithm of 2, expressed as log<sub>e</sub>2, with an approximate value of 0.6931471805599453.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#LOG10E">LOG10E</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[static]A mathematical constant for the base-10 logarithm of the constant e (<code>Math.E</code>), expressed as log<sub>10</sub>e, with an approximate value of 0.4342944819032518.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#LOG2E">LOG2E</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[static]A mathematical constant for the base-2 logarithm of the constant e (<code>Math.E</code>), expressed as log<sub>2</sub>e, with an approximate value of 1.442695040888963387.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#PI">PI</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[static]A mathematical constant for the ratio of the circumference of a circle to its diameter, expressed as pi, with a value of 3.141592653589793.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#SQRT1_2">SQRT1_2</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[static]A mathematical constant for the square root of one-half, with an approximate value of 0.7071067811865476.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#SQRT2">SQRT2</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">[static]A mathematical constant for the square root of 2, with an approximate value of 1.4142135623730951.</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="Object.html#__proto__">__proto__</a>, <a href="Object.html#__resolve">__resolve</a>, <a href="Object.html#constructor">constructor</a>, <a href="Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="abs()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">abs</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function abs(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>Computes and returns an absolute value for the number specified by the parameter <code>x</code>.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="Number.html">Number</a></code> &mdash; A number.       </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+A number.      
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how <code>Math.abs()</code> returns the absolute value of a number and does not affect the value of the <code>x</code> parameter (called <code>num</code> in this example):    <div class='listing'><pre>
+var num:Number = -12;
+var numAbsolute:Number = Math.abs(num);
+trace(num); // output: -12
+trace(numAbsolute); // output: 12
+</pre></div>      <p></p>
+</div>
+<a name="acos()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">acos</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function acos(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>Computes and returns the arc cosine of the number specified in the parameter <code>x</code>, in radians.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="Number.html">Number</a></code> &mdash; A number from -1.0 to 1.0.      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+A number; the arc cosine of the parameter <code>x</code>.      
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Math.html#asin()" target="">Math.asin()</a>
+<br>
+<a href="Math.html#atan()" target="">Math.atan()</a>
+<br>
+<a href="Math.html#atan2()" target="">Math.atan2()</a>
+<br>
+<a href="Math.html#cos()" target="">Math.cos()</a>
+<br>
+<a href="Math.html#sin()" target="">Math.sin()</a>
+<br>
+<a href="Math.html#tan()" target="">Math.tan()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example displays the arc cosine for several values.    <div class='listing'><pre>
+trace(Math.acos(-1)); // output: 3.14159265358979
+trace(Math.acos(0));  // output: 1.5707963267949
+trace(Math.acos(1));  // output: 0
+</pre></div>        <p></p>
+</div>
+<a name="asin()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">asin</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function asin(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>Computes and returns the arc sine for the number specified in the parameter <code>x</code>, in radians.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="Number.html">Number</a></code> &mdash; A number from -1.0 to 1.0.      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+A number between negative pi divided by 2 and positive pi divided by 2.      
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Math.html#acos()" target="">Math.acos()</a>
+<br>
+<a href="Math.html#atan()" target="">Math.atan()</a>
+<br>
+<a href="Math.html#atan2()" target="">Math.atan2()</a>
+<br>
+<a href="Math.html#cos()" target="">Math.cos()</a>
+<br>
+<a href="Math.html#sin()" target="">Math.sin()</a>
+<br>
+<a href="Math.html#tan()" target="">Math.tan()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example displays the arc sine for several values.    <div class='listing'><pre>
+trace(Math.asin(-1)); // output: -1.5707963267949
+trace(Math.asin(0));  // output: 0
+trace(Math.asin(1));  // output: 1.5707963267949
+</pre></div>        <p></p>
+</div>
+<a name="atan()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">atan</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function atan(tangent:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>Computes and returns the value, in radians, of the angle whose tangent is specified in the parameter <code>tangent</code>. The return value is between negative pi divided by 2 and positive pi divided by 2.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">tangent</span>:<a href="Number.html">Number</a></code> &mdash; A number that represents the tangent of an angle.      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+A number between negative pi divided by 2 and positive pi divided by 2.      
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Math.html#acos()" target="">Math.acos()</a>
+<br>
+<a href="Math.html#asin()" target="">Math.asin()</a>
+<br>
+<a href="Math.html#atan2()" target="">Math.atan2()</a>
+<br>
+<a href="Math.html#cos()" target="">Math.cos()</a>
+<br>
+<a href="Math.html#sin()" target="">Math.sin()</a>
+<br>
+<a href="Math.html#tan()" target="">Math.tan()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example displays the angle value for several tangents.    <div class='listing'><pre>
+trace(Math.atan(-1)); // output: -0.785398163397448
+trace(Math.atan(0));  // output: 0
+trace(Math.atan(1));  // output: 0.785398163397448
+</pre></div>      <p></p>
+</div>
+<a name="atan2()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">atan2</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function atan2(y:<a href="Number.html">Number</a>, x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>Computes and returns the angle of the point <code>y</code>/<code>x</code> in radians, when measured counterclockwise from a circle's <em>x</em> axis (where 0,0 represents the center of the circle). The return value is between positive pi and negative pi.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:<a href="Number.html">Number</a></code> &mdash; A number specifying the <em>y</em> coordinate of the point.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="Number.html">Number</a></code> &mdash; A number specifying the <em>x </em>coordinate of the point.      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+A number.      
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Math.html#acos()" target="">Math.acos()</a>
+<br>
+<a href="Math.html#asin()" target="">Math.asin()</a>
+<br>
+<a href="Math.html#atan()" target="">Math.atan()</a>
+<br>
+<a href="Math.html#cos()" target="">Math.cos()</a>
+<br>
+<a href="Math.html#sin()" target="">Math.sin()</a>
+<br>
+<a href="Math.html#tan()" target="">Math.tan()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example returns the angle, in radians, of the point specified by the coordinates (0, 10), such that x = 0 and y = 10. Note that the first parameter to atan2 is always the y coordinate.    <div class='listing'><pre>
+trace(Math.atan2(10, 0)); // output: 1.5707963267949
+</pre></div>        <p></p>
+</div>
+<a name="ceil()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ceil</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function ceil(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>Returns the ceiling of the specified number or expression. The ceiling of a number is the closest integer that is greater than or equal to the number.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="Number.html">Number</a></code> &mdash; A number or expression.      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer that is both closest to, and greater than or equal to, parameter <code>x</code>.      
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Math.html#floor()" target="">Math.floor()</a>
+<br>
+<a href="Math.html#round()" target="">Math.round()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following code returns a value of 13:    <div class='listing'><pre>
+Math.ceil(12.5);
+</pre></div>        <p></p>
+</div>
+<a name="cos()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">cos</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function cos(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>Computes and returns the cosine of the specified angle in radians. To calculate a radian, see the description of the Math class entry.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="Number.html">Number</a></code> &mdash; A number that represents an angle measured in radians.      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+A number from -1.0 to 1.0.      
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Math.html#acos()" target="">Math.acos()</a>
+<br>
+<a href="Math.html#asin()" target="">Math.asin()</a>
+<br>
+<a href="Math.html#atan()" target="">Math.atan()</a>
+<br>
+<a href="Math.html#atan2()" target="">Math.atan2()</a>
+<br>
+<a href="Math.html#sin()" target="">Math.sin()</a>
+<br>
+<a href="Math.html#tan()" target="">Math.tan()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example displays the cosine for several different angles.    <div class='listing'><pre>
+trace (Math.cos(0));         // 0 degree angle. Output: 1
+trace (Math.cos(Math.PI/2)); // 90 degree angle. Output: 6.12303176911189e-17
+trace (Math.cos(Math.PI));   // 180 degree angle. Output: -1
+trace (Math.cos(Math.PI&#42;2)); // 360 degree angle. Output: 1
+</pre></div>    <p><strong>Note: </strong>The cosine of a 90 degree angle is zero, but because of the inherent inaccuracy of decimal    calculations using binary numbers, Flash Player will report a number extremely close to, but not exactly equal to, zero.</p>        <p></p>
+</div>
+<a name="exp()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">exp</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function exp(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>Returns the value of the base of the natural logarithm (<em>e</em>), to the power of the exponent specified in the parameter <code>x</code>. The constant <code>Math.E</code> can provide the value of <em>e</em>.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="Number.html">Number</a></code> &mdash; The exponent; a number or expression.      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+A number.      
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Math.html#E" target="">Math.E</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example displays the logarithm for two number values.    <div class='listing'><pre>
+trace(Math.exp(1)); // output: 2.71828182845905
+trace(Math.exp(2)); // output: 7.38905609893065
+</pre></div>      <p></p>
+</div>
+<a name="floor()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">floor</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function floor(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>Returns the floor of the number or expression specified in the parameter <code>x</code>. The floor is the closest integer that is less than or equal to the specified number or expression.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="Number.html">Number</a></code> &mdash; A number or expression.      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+The integer that is both closest to, and less than or equal to, parameter <code>x</code>.      
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following code returns a value of 12:    <div class='listing'><pre>
+<code>Math.floor(12.5);</code>
+</pre></div>    <p>The following code returns a value of -7:</p>    <div class='listing'><pre>
+Math.floor(-6.5);
+</pre></div>      <p></p>
+</div>
+<a name="log()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">log</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function log(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>Returns the natural logarithm of parameter <code>x</code>.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="Number.html">Number</a></code> &mdash; A number or expression with a value greater than 0.      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+The natural logarithm of parameter <code>x</code>.      
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example displays the logarithm for three numerical values.    <div class='listing'><pre>
+trace(Math.log(0)); // output: -Infinity
+trace(Math.log(1)); // output: 0
+trace(Math.log(2)); // output: 0.693147180559945
+trace(Math.log(Math.E)); // output: 1
+</pre></div>      <p></p>
+</div>
+<a name="max()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">max</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function max(x:<a href="Number.html">Number</a>, y:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>Evaluates <code>x</code> and <code>y</code> and returns the larger value.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="Number.html">Number</a></code> &mdash; A number or expression.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:<a href="Number.html">Number</a></code> &mdash; A number or expression.      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+A number.      
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Math.html#min()" target="">Math.min()</a>
+<br>
+<a href="Date.html" target="">Date class</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example displays <code>Thu Dec 30 00:00:00 GMT-0700 2004</code>, which is the larger of the evaluated expressions.    <div class='listing'><pre>
+var date1:Date = new Date(2004, 11, 25);
+var date2:Date = new Date(2004, 11, 30);
+var maxDate:Number = Math.max(date1.getTime(), date2.getTime());
+trace(new Date(maxDate).toString());
+</pre></div>        <p></p>
+</div>
+<a name="min()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">min</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function min(x:<a href="Number.html">Number</a>, y:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>Evaluates <code>x</code> and <code>y</code> and returns the smaller value.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="Number.html">Number</a></code> &mdash; A number or expression.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:<a href="Number.html">Number</a></code> &mdash; A number or expression.      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+A number.      
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Math.html#max()" target="">Math.max()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example displays <code>Sat Dec 25 00:00:00 GMT-0700 2004</code>, which is the smaller of the evaluated expressions.    <div class='listing'><pre>
+var date1:Date = new Date(2004, 11, 25);
+var date2:Date = new Date(2004, 11, 30);
+var minDate:Number = Math.min(date1.getTime(), date2.getTime());
+trace(new Date(minDate).toString());
+</pre></div>        <p></p>
+</div>
+<a name="pow()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">pow</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function pow(x:<a href="Number.html">Number</a>, y:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>Computes and returns <code>x</code> to the power of <code>y</code>.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="Number.html">Number</a></code> &mdash; A number to be raised to a power.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:<a href="Number.html">Number</a></code> &mdash; A number specifying a power the parameter <code>x</code> is raised to.      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+A number.      
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example uses <code>Math.pow</code> and <code>Math.sqrt</code> to calculate the length of a line.    <div class='listing'><pre>
+this.createEmptyMovieClip("canvas_mc", this.getNextHighestDepth());
+var mouseListener:Object = new Object();
+mouseListener.onMouseDown = function() {
+    this.origX = _xmouse;
+    this.origY = _ymouse;
+};
+mouseListener.onMouseUp = function() {
+    this.newX = _xmouse;
+    this.newY = _ymouse;
+    var minY = Math.min(this.origY, this.newY);
+    var nextDepth:Number = canvas_mc.getNextHighestDepth();
+    var line_mc:MovieClip = canvas_mc.createEmptyMovieClip("line"+nextDepth+"_mc", nextDepth);
+    line_mc.moveTo(this.origX, this.origY);
+    line_mc.lineStyle(2, 0x000000, 100);
+    line_mc.lineTo(this.newX, this.newY);
+    var hypLen:Number = Math.sqrt(Math.pow(line_mc._width, 2)+Math.pow(line_mc._height, 2));
+    line_mc.createTextField("length"+nextDepth+"_txt", canvas_mc.getNextHighestDepth(), this.origX, this.origY-22, 100, 22);
+    line_mc[&#39;length&#39;+nextDepth+&#39;_txt&#39;].text = Math.round(hypLen) +" pixels";
+};
+Mouse.addListener(mouseListener);
+</pre></div>          <p>The <code>MovieClip.getNextHighestDepth()</code> method used in this example requires       Flash Player 7 or later. If your SWF file includes a version 2 component, use the version 2 components'       DepthManager class instead of the <code>MovieClip.getNextHighestDepth()</code> method.       </p>           <p></p>
+</div>
+<a name="random()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">random</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function random():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>Returns a pseudo-random number n, where 0 &lt;= n &lt; 1. The number returned is called a "pseudo-random" number because it is, technically, calculated in an undisclosed manner.      </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+A number.      
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example outputs 100 random integers between 4 and 11    (inclusively):    <div class='listing'><pre>
+function randRange(min:Number, max:Number):Number {
+    var randomNum:Number = Math.floor(Math.random() &#42; (max - min + 1)) + min;
+    return randomNum;
+}
+for (var i = 0; i &lt; 100; i++) {
+    var n:Number = randRange(4, 11)
+    trace(n);
+}
+</pre></div>        <p></p>
+</div>
+<a name="round()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">round</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function round(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>Rounds the value of the parameter <code>x</code> up or down to the nearest integer and returns the value. If parameter <code>x</code> is equidistant from its two nearest integers (that is, the number ends in .5), the value is rounded up to the next higher integer.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="Number.html">Number</a></code> &mdash; A number.      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+A number; an integer.      
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Math.html#ceil()" target="">Math.ceil()</a>
+<br>
+<a href="Math.html#floor()" target="">Math.floor()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example returns a random number between two specified integers.    <div class='listing'><pre>
+function randRange(min:Number, max:Number):Number {
+    var randomNum:Number = Math.round(Math.random() &#42; (max-min+1) + (min-.5));
+    return randomNum;
+}
+for (var i = 0; i&lt;25; i++) {
+    trace(randRange(4, 11));
+}
+</pre></div>        <p></p>
+</div>
+<a name="sin()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">sin</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function sin(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>Computes and returns the sine of the specified angle in radians. To calculate a radian, see the description of the Math class entry.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="Number.html">Number</a></code> &mdash; A number that represents an angle measured in radians.      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+A number; the sine of the specified angle (between -1.0 and 1.0).      
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Math.html#acos()" target="">Math.acos()</a>
+<br>
+<a href="Math.html#asin()" target="">Math.asin()</a>
+<br>
+<a href="Math.html#atan()" target="">Math.atan()</a>
+<br>
+<a href="Math.html#atan2()" target="">Math.atan2()</a>
+<br>
+<a href="Math.html#cos()" target="">Math.cos()</a>
+<br>
+<a href="Math.html#tan()" target="">Math.tan()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example draws a circle using the mathematical constant pi, the sine of an angle, and the Drawing API.    <div class='listing'><pre>
+drawCircle(this, 100, 100, 50);
+//
+function drawCircle(mc:MovieClip, x:Number, y:Number, r:Number):Void {
+    mc.lineStyle(2, 0xFF0000, 100);
+    mc.moveTo(x+r, y);
+    mc.curveTo(r+x, Math.tan(Math.PI/8)&#42;r+y, Math.sin(Math.PI/4)&#42;r+x, Math.sin(Math.PI/4)&#42;r+y);
+    mc.curveTo(Math.tan(Math.PI/8)&#42;r+x, r+y, x, r+y);
+    mc.curveTo(-Math.tan(Math.PI/8)&#42;r+x, r+y, -Math.sin(Math.PI/4)&#42;r+x, Math.sin(Math.PI/4)&#42;r+y);
+    mc.curveTo(-r+x, Math.tan(Math.PI/8)&#42;r+y, -r+x, y);
+    mc.curveTo(-r+x, -Math.tan(Math.PI/8)&#42;r+y, -Math.sin(Math.PI/4)&#42;r+x, -Math.sin(Math.PI/4)&#42;r+y);
+    mc.curveTo(-Math.tan(Math.PI/8)&#42;r+x, -r+y, x, -r+y);
+    mc.curveTo(Math.tan(Math.PI/8)&#42;r+x, -r+y, Math.sin(Math.PI/4)&#42;r+x, -Math.sin(Math.PI/4)&#42;r+y);
+    mc.curveTo(r+x, -Math.tan(Math.PI/8)&#42;r+y, r+x, y);
+}
+</pre></div>        <p></p>
+</div>
+<a name="sqrt()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">sqrt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function sqrt(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>Computes and returns the square root of the specified number.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="Number.html">Number</a></code> &mdash; A number or expression greater than or equal to 0.      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+A number if parameter <em>x</em> is greater than or equal to zero; NaN (not a number) otherwise.      
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example uses <code>Math.pow</code> and <code>Math.sqrt</code> to calculate the length of a line.    <div class='listing'><pre>
+this.createEmptyMovieClip("canvas_mc", this.getNextHighestDepth());
+var mouseListener:Object = new Object();
+mouseListener.onMouseDown = function() {
+    this.origX = _xmouse;
+    this.origY = _ymouse;
+};
+mouseListener.onMouseUp = function() {
+    this.newX = _xmouse;
+    this.newY = _ymouse;
+    var minY = Math.min(this.origY, this.newY);
+    var nextDepth:Number = canvas_mc.getNextHighestDepth();
+    var line_mc:MovieClip = canvas_mc.createEmptyMovieClip("line"+nextDepth+"_mc", nextDepth);
+    line_mc.moveTo(this.origX, this.origY);
+    line_mc.lineStyle(2, 0x000000, 100);
+    line_mc.lineTo(this.newX, this.newY);
+    var hypLen:Number = Math.sqrt(Math.pow(line_mc._width, 2)+Math.pow(line_mc._height, 2));
+    line_mc.createTextField("length"+nextDepth+"_txt", canvas_mc.getNextHighestDepth(), this.origX, this.origY-22, 100, 22);
+    line_mc[&#39;length&#39;+nextDepth+&#39;_txt&#39;].text = Math.round(hypLen) +" pixels";
+};
+Mouse.addListener(mouseListener);
+</pre></div>      <p></p>
+</div>
+<a name="tan()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">tan</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function tan(x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>Computes and returns the tangent of the specified angle. To calculate a radian, use the information outlined in the introduction to the Math class.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:<a href="Number.html">Number</a></code> &mdash; A number that represents an angle measured in radians.      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+A number; tangent of parameter <code>x</code>.      
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Math.html#acos()" target="">Math.acos()</a>
+<br>
+<a href="Math.html#asin()" target="">Math.asin()</a>
+<br>
+<a href="Math.html#atan()" target="">Math.atan()</a>
+<br>
+<a href="Math.html#atan2()" target="">Math.atan2()</a>
+<br>
+<a href="Math.html#cos()" target="">Math.cos()</a>
+<br>
+<a href="Math.html#sin()" target="">Math.sin()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example draws a circle using the mathematical constant pi, the tangent of an angle, and the Drawing API.    <div class='listing'><pre>
+drawCircle(this, 100, 100, 50);
+//
+function drawCircle(mc:MovieClip, x:Number, y:Number, r:Number):Void {
+    mc.lineStyle(2, 0xFF0000, 100);
+    mc.moveTo(x+r, y);
+    mc.curveTo(r+x, Math.tan(Math.PI/8)&#42;r+y, Math.sin(Math.PI/4)&#42;r+x, Math.sin(Math.PI/4)&#42;r+y);
+    mc.curveTo(Math.tan(Math.PI/8)&#42;r+x, r+y, x, r+y);
+    mc.curveTo(-Math.tan(Math.PI/8)&#42;r+x, r+y, -Math.sin(Math.PI/4)&#42;r+x, Math.sin(Math.PI/4)&#42;r+y);
+    mc.curveTo(-r+x, Math.tan(Math.PI/8)&#42;r+y, -r+x, y);
+    mc.curveTo(-r+x, -Math.tan(Math.PI/8)&#42;r+y, -Math.sin(Math.PI/4)&#42;r+x, -Math.sin(Math.PI/4)&#42;r+y);
+    mc.curveTo(-Math.tan(Math.PI/8)&#42;r+x, -r+y, x, -r+y);
+    mc.curveTo(Math.tan(Math.PI/8)&#42;r+x, -r+y, Math.sin(Math.PI/4)&#42;r+x, -Math.sin(Math.PI/4)&#42;r+y);
+    mc.curveTo(r+x, -Math.tan(Math.PI/8)&#42;r+y, r+x, y);
+}
+</pre></div>        <p></p>
+</div>
+<a name="constantDetail"></a>
+<div class="detailSectionHeader">Constant detail</div>
+<a name="E"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">E</td><td class="detailHeaderType">constant</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var E:<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>A mathematical constant for the base of natural logarithms, expressed as <em>e</em>. The approximate value of <em>e</em><code> </code>is 2.71828182845905.      </p><br>
+<span class="label">Example</span>
+<br>This example shows how <code>Math.E</code> is used to compute continuously compounded interest for a simple case of 100 percent interest over a one-year period.    <div class='listing'><pre>
+var principal:Number = 100;
+var simpleInterest:Number = 100;
+var continuouslyCompoundedInterest:Number = (100 &#42; Math.E) - principal;
+
+trace ("Beginning principal: $" + principal);
+trace ("Simple interest after one year: $" + simpleInterest);
+trace ("Continuously compounded interest after one year: $" + continuouslyCompoundedInterest);
+
+//
+Output:
+Beginning principal: $100
+Simple interest after one year: $100
+Continuously compounded interest after one year: $171.828182845905
+
+</pre></div>      <p></p>
+</div>
+<a name="LN10"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">LN10</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var LN10:<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>A mathematical constant for the natural logarithm of 10, expressed as log<sub>e</sub>10, with an approximate value of 2.302585092994046.      </p><br>
+<span class="label">Example</span>
+<br>This example traces the value of <code>Math.LN10</code>.    <div class='listing'><pre>
+trace(Math.LN10);
+// output: 2.30258509299405
+</pre></div>      <p></p>
+</div>
+<a name="LN2"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">LN2</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var LN2:<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>A mathematical constant for the natural logarithm of 2, expressed as log<sub>e</sub>2, with an approximate value of 0.6931471805599453.      </p></div>
+<a name="LOG10E"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">LOG10E</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var LOG10E:<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>A mathematical constant for the base-10 logarithm of the constant e (<code>Math.E</code>), expressed as log<sub>10</sub>e, with an approximate value of 0.4342944819032518.      </p><p>The <code>Math.log()</code> method computes the natural logarithm of a number. Multiply the    result of <code>Math.log()</code> by <code>Math.LOG10E</code> obtain the base-10 logarithm. </p>      <br>
+<span class="label">Example</span>
+<br>This example shows how to obtain the base-10 logarithm of a number:    <div class='listing'><pre>
+trace(Math.log(1000) &#42; Math.LOG10E);
+// Output: 3
+</pre></div>      <p></p>
+</div>
+<a name="LOG2E"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">LOG2E</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var LOG2E:<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>A mathematical constant for the base-2 logarithm of the constant e (<code>Math.E</code>), expressed as log<sub>2</sub>e, with an approximate value of 1.442695040888963387.       </p><p>The <code>Math.log</code> method computes the natural logarithm of a number. Multiply the    result of <code>Math.log()</code> by <code>Math.LOG2E</code> obtain the base-2 logarithm. </p>      <br>
+<span class="label">Example</span>
+<br>This example shows how to obtain the base-2 logarithm of a number:    <div class='listing'><pre>
+trace(Math.log(16) &#42; Math.LOG2E);
+// Output: 4
+</pre></div>      <p></p>
+</div>
+<a name="PI"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">PI</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var PI:<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>A mathematical constant for the ratio of the circumference of a circle to its diameter, expressed as pi, with a value of 3.141592653589793.      </p><br>
+<span class="label">Example</span>
+<br>The following example draws a circle using the mathematical constant pi and the Drawing API.    <div class='listing'><pre>
+drawCircle(this, 100, 100, 50);
+//
+function drawCircle(mc:MovieClip, x:Number, y:Number, r:Number):Void {
+    mc.lineStyle(2, 0xFF0000, 100);
+    mc.moveTo(x+r, y);
+    mc.curveTo(r+x, Math.tan(Math.PI/8)&#42;r+y, Math.sin(Math.PI/4)&#42;r+x, Math.sin(Math.PI/4)&#42;r+y);
+    mc.curveTo(Math.tan(Math.PI/8)&#42;r+x, r+y, x, r+y);
+    mc.curveTo(-Math.tan(Math.PI/8)&#42;r+x, r+y, -Math.sin(Math.PI/4)&#42;r+x, Math.sin(Math.PI/4)&#42;r+y);
+    mc.curveTo(-r+x, Math.tan(Math.PI/8)&#42;r+y, -r+x, y);
+    mc.curveTo(-r+x, -Math.tan(Math.PI/8)&#42;r+y, -Math.sin(Math.PI/4)&#42;r+x, -Math.sin(Math.PI/4)&#42;r+y);
+    mc.curveTo(-Math.tan(Math.PI/8)&#42;r+x, -r+y, x, -r+y);
+    mc.curveTo(Math.tan(Math.PI/8)&#42;r+x, -r+y, Math.sin(Math.PI/4)&#42;r+x, -Math.sin(Math.PI/4)&#42;r+y);
+    mc.curveTo(r+x, -Math.tan(Math.PI/8)&#42;r+y, r+x, y);
+}
+</pre></div>      <p></p>
+</div>
+<a name="SQRT1_2"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">SQRT1_2</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var SQRT1_2:<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>A mathematical constant for the square root of one-half, with an approximate value of 0.7071067811865476.      </p><br>
+<span class="label">Example</span>
+<br>This example traces the value of <code>Math.SQRT1_2.</code>    <div class='listing'><pre>
+trace(Math.SQRT1_2);
+// Output: 0.707106781186548
+</pre></div>      <p></p>
+</div>
+<a name="SQRT2"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">SQRT2</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var SQRT2:<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; In Flash Player 4, the methods and properties of the Math class are emulated using approximations and might not be as accurate as the non-emulated math functions that Flash Player 5 supports.</td>
+</tr>
+</table>
+<p></p><p>A mathematical constant for the square root of 2, with an approximate value of 1.4142135623730951.      </p><br>
+<span class="label">Example</span>
+<br>This example traces the value of <code>Math.SQRT2.</code>    <div class='listing'><pre>
+trace(Math.SQRT2);
+// Output: 1.4142135623731
+</pre></div>      <p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

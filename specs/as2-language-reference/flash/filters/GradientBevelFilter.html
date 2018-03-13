@@ -1,0 +1,973 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="GradientBevelFilter,flash.filters.GradientBevelFilter,alphas,angle,blurX,blurY,colors,distance,knockout,quality,ratios,strength,type,clone" name="keywords">
+<title>flash.filters.GradientBevelFilter</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'GradientBevelFilter - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="../../language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="../../appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="../../index.html?flash/filters/GradientBevelFilter.html&amp;flash/filters/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;GradientBevelFilter</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class GradientBevelFilter"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">flash.filters</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class GradientBevelFilter</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">GradientBevelFilter <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../images/inherit-arrow.gif"> <a href="BitmapFilter.html">BitmapFilter</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../images/inherit-arrow.gif"> <a href="../../Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p>
+<p></p>The GradientBevelFilter class lets you apply a gradient bevel effect to  various objects in Flash. A gradient bevel is a beveled edge, enhanced with gradient color,  on the outside, inside, or top of an object. Beveled edges make objects look  three-dimensional.  <p>The use of filters depends on the object to which you apply the filter:</p>   <ul><li>To apply filters to movie clips, text fields, and buttons at runtime, use the  <code>filters</code> property. Setting the <code>filters</code> property of an object  does not modify the object, and you can undo the filter by clearing the <code>filters</code> property.</li>   <li>To apply filters to BitmapData instances, use the <code>BitmapData.applyFilter()</code> method.  Calling <code>applyFilter()</code> on a BitmapData object takes the source BitmapData object  and the filter object and generates a filtered image as a result.</li>  </ul>  <p>You can also apply filter effects to images and video during authoring.  For more information, see your authoring documentation.</p>   <p>If you apply a filter to a movie clip or button, the <code>cacheAsBitmap</code> property of the  movie clip or button is set to <code>true</code>. If you clear all filters, the original value of  <code>cacheAsBitmap</code> is restored.</p>  <p>This filter supports Stage scaling. However, it does not support general scaling, rotation,  and skewing; if the object itself is scaled (if <code>_xscale</code> and <code>_yscale</code> are not 100%), the  filter effect is not scaled. It is scaled only when the Stage is zoomed.</p>   <p>A filter is not applied if the resulting image exceeds 2880 pixels in width or height.  For example, if you zoom in on a large movie clip with a filter applied, the filter is  turned off if the resulting image exceeds the limit of 2880 pixels.</p>  <p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#ratios" target="">GradientBevelFilter.ratios</a>
+<br>
+<a href="../display/BitmapData.html#applyFilter()" target="">BitmapData.applyFilter()</a>
+<br>
+<a href="BevelFilter.html" target="">BevelFilter</a>
+<br>
+<a href="../../Button.html#filters" target="">Button.filters</a>
+<br>
+<a href="../../Button.html#cacheAsBitmap" target="">Button.cacheAsBitmap</a>
+<br>
+<a href="../../MovieClip.html#cacheAsBitmap" target="">MovieClip.cacheAsBitmap</a>
+<br>
+<a href="../../MovieClip.html#filters" target="">MovieClip.filters</a>
+<br>
+<a href="../../TextField.html#filters" target="">TextField.filters</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#alphas">alphas</a> : <a href="../../Array.html">Array</a>
+<div class="summaryTableDescription">An array of alpha transparency values for the corresponding colors in the <code>colors</code> array.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#angle">angle</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The angle, in degrees.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#blurX">blurX</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The amount of horizontal blur.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#blurY">blurY</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The amount of vertical blur.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#colors">colors</a> : <a href="../../Array.html">Array</a>
+<div class="summaryTableDescription">An array of RGB hexadecimal color values to use in the gradient.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#distance">distance</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The offset distance.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#knockout">knockout</a> : <a href="../../Boolean.html">Boolean</a>
+<div class="summaryTableDescription">Specifies whether the object has a knockout effect.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#quality">quality</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The number of times to apply the filter.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ratios">ratios</a> : <a href="../../Array.html">Array</a>
+<div class="summaryTableDescription">An array of color distribution ratios for the corresponding colors in the <code>colors</code> array.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#strength">strength</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The strength of the imprint or spread.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#type">type</a> : <a href="../../String.html">String</a>
+<div class="summaryTableDescription">The placement of the bevel effect.</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="../../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../../Object.html#__proto__">__proto__</a>, <a href="../../Object.html#__resolve">__resolve</a>, <a href="../../Object.html#constructor">constructor</a>, <a href="../../Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#GradientBevelFilter()">GradientBevelFilter</a>([distance:<a href="../../Number.html">Number</a>], [angle:<a href="../../Number.html">Number</a>], [colors:<a href="../../Array.html">Array</a>], [alphas:<a href="../../Array.html">Array</a>], [ratios:<a href="../../Array.html">Array</a>], [blurX:<a href="../../Number.html">Number</a>], [blurY:<a href="../../Number.html">Number</a>], [strength:<a href="../../Number.html">Number</a>], [quality:<a href="../../Number.html">Number</a>], [type:<a href="../../String.html">String</a>], [knockout:<a href="../../Boolean.html">Boolean</a>])</div>
+<div class="summaryTableDescription">Initializes the filter with the specified parameters.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clone()">clone</a>():<a href="GradientBevelFilter.html">GradientBevelFilter</a>
+</div>
+<div class="summaryTableDescription">Returns a copy of this filter object.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromBitmapFilter"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="BitmapFilter.html">BitmapFilter</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="BitmapFilter.html#clone()">clone</a></code></td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="../../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../../Object.html#addProperty()">addProperty</a>, <a href="../../Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="../../Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="../../Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="../../Object.html#registerClass()">registerClass</a>, <a href="../../Object.html#toString()">toString</a>, <a href="../../Object.html#unwatch()">unwatch</a>, <a href="../../Object.html#valueOf()">valueOf</a>, <a href="../../Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="alphas"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">alphas</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var alphas:<a href="../../Array.html">Array</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>An array of alpha transparency values for the corresponding colors in the      <code>colors</code> array. Valid values for each element      in the array are 0 to 1. For example, 0.25 sets a transparency value of 25%.          </p><p>The <code>alphas</code> property cannot be changed by directly modifying its values.      Instead, you must get a reference to <code>alphas</code>, make the change to the      reference, and then set <code>alphas</code> to the reference.</p>          <p>The <code>colors</code>, <code>alphas</code>, and <code>ratios</code> properties are all related.      The first element in the <code>colors</code> array      corresponds to the first element in the <code>alphas</code> array      and in the <code>ratios</code> array, and so on.</p>           <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#colors" target="">GradientBevelFilter.colors</a>
+<br>
+<a href="#ratios" target="">GradientBevelFilter.ratios</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example demonstrates how to set the <code>alphas</code> property on an existing entity.      <div class='listing'><pre>
+import flash.filters.GradientBevelFilter;
+
+var mc:MovieClip = setUpFilter("alphasExample");
+mc.onPress = function() {
+    var arr:Array = this.filters;
+    var alphas:Array = [0.2, 0, 0.2];
+    arr[0].alphas = alphas;
+    this.filters = arr;
+}
+mc.onRelease = function() {
+    var arr:Array = this.filters;
+    var alphas:Array = [1, 0, 1];
+    arr[0].alphas = alphas;
+    this.filters = arr;
+}
+
+function setUpFilter(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 150;
+    var h:Number = 150;
+    art.beginFill(0xCCCCCC);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+    
+    var colors:Array = [0xFFFFFF, 0xCCCCCC, 0x000000];
+    var alphas:Array = [1, 0, 1];
+    var ratios:Array = [0, 128, 255];
+    var filter:GradientBevelFilter = new GradientBevelFilter(5, 225, colors, alphas, ratios, 5, 5, 5, 2, "inner", false);
+    
+    art.filters = new Array(filter);
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="angle"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">angle</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var angle:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The angle, in degrees. Valid values are 0 to 360. The default is 45.          </p><p>The angle value represents the angle of the theoretical light source falling on the object.      The value determines the angle at which the gradient colors are applied to the object:      where the highlight and the shadow appear, or where the first color in the array appears.      The colors are then applied in the order in which they appear in the array.</p>          <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#ratios" target="">GradientBevelFilter.ratios</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example demonstrates how to set the <code>angle</code> property on an existing object.      <div class='listing'><pre>
+import flash.filters.GradientBevelFilter;
+
+var mc:MovieClip = setUpFilter("angleExample");
+mc.onRelease = function() {
+    var arr:Array = this.filters;
+    arr[0].angle = 45;
+    this.filters = arr;
+}
+
+function setUpFilter(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 150;
+    var h:Number = 150;
+    art.beginFill(0xCCCCCC);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+
+    var colors:Array = [0xFFFFFF, 0xCCCCCC, 0x000000];
+    var alphas:Array = [1, 0, 1];
+    var ratios:Array = [0, 128, 255];
+    var filter:GradientBevelFilter = new GradientBevelFilter(5, 225, colors, alphas, ratios, 5, 5, 5, 3, "inner", false);
+
+    art.filters = new Array(filter);
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="blurX"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">blurX</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var blurX:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The amount of horizontal blur. Valid values are 0 to 255. A blur of 1 or      less means that the original image is copied as is. The default value      is 4. Values that are a power of 2 (such as 2, 4, 8, 16 and 32) are optimized      to render more quickly than other values.      </p><br>
+<span class="label">Example</span>
+<br>The following example demonstrates how to set the <code>blurX</code> property on an existing object.      <div class='listing'><pre>
+import flash.filters.GradientBevelFilter;
+
+var mc:MovieClip = setUpFilter("blurXExample");
+mc.onRelease = function() {
+    var arr:Array = this.filters;
+    arr[0].blurX = 16;
+    this.filters = arr;
+}
+
+function setUpFilter(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 150;
+    var h:Number = 150;
+    art.beginFill(0xCCCCCC);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+
+    var colors:Array = [0xFFFFFF, 0xCCCCCC, 0x000000];
+    var alphas:Array = [1, 0, 1];
+    var ratios:Array = [0, 128, 255];
+    var filter:GradientBevelFilter = new GradientBevelFilter(5, 225, colors, alphas, ratios, 5, 5, 5, 3, "inner", false);
+
+    art.filters = new Array(filter);
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="blurY"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">blurY</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var blurY:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The amount of vertical blur. Valid values are 0 to 255. A blur of 1 or less      means that the original image is copied as is. The default value is      4. Values that are a power of 2 (such as 2, 4, 8, 16 and 32) are optimized      to render more quickly than other values.      </p><br>
+<span class="label">Example</span>
+<br>The following example demonstrates how to set the <code>blurY</code> property on an existing object.      <div class='listing'><pre>
+import flash.filters.GradientBevelFilter;
+
+var mc:MovieClip = setUpFilter("blurYExample");
+mc.onRelease = function() {
+    var arr:Array = this.filters;
+    arr[0].blurY = 16;
+    this.filters = arr;
+}
+
+function setUpFilter(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 150;
+    var h:Number = 150;
+    art.beginFill(0xCCCCCC);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+
+    var colors:Array = [0xFFFFFF, 0xCCCCCC, 0x000000];
+    var alphas:Array = [1, 0, 1];
+    var ratios:Array = [0, 128, 255];
+    var filter:GradientBevelFilter = new GradientBevelFilter(5, 225, colors, alphas, ratios, 5, 5, 5, 3, "inner", false);
+
+    art.filters = new Array(filter);
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="colors"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">colors</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var colors:<a href="../../Array.html">Array</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>An array of RGB hexadecimal color values to use in the gradient.      For example, red is 0xFF0000, blue is 0x0000FF, and so on.           </p><p>The <code>colors</code> property cannot be changed by directly modifying its values.      Instead, you must get a reference to <code>colors</code>, make the change to the      reference, and then set <code>colors</code> to the reference.</p>           <p>The <code>colors</code>, <code>alphas</code>, and <code>ratios</code> properties are all related.      The first element in the <code>colors</code> array      corresponds to the first element in the <code>alphas</code> array      and in the <code>ratios</code> array, and so on.</p>           <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#alphas" target="">GradientBevelFilter.alphas</a>
+<br>
+<a href="#ratios" target="">GradientBevelFilter.ratios</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example demonstrates how to set the <code>colors</code> property on an existing entity.      <div class='listing'><pre>
+import flash.filters.GradientBevelFilter;
+
+var mc:MovieClip = setUpFilter("colorsExample");
+mc.onPress = function() {
+    var arr:Array = this.filters;
+    var colors:Array = [0x000000, 0xCCCCCC, 0xFFFFFF];
+    arr[0].colors = colors;
+    this.filters = arr;
+}
+mc.onRelease = function() {
+    var arr:Array = this.filters;
+    var colors:Array = [0xFFFFFF, 0xCCCCCC, 0x000000];
+    arr[0].colors = colors;
+    this.filters = arr;
+}
+
+function setUpFilter(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 150;
+    var h:Number = 150;
+    art.beginFill(0xCCCCCC);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+
+    var colors:Array = [0xFFFFFF, 0xCCCCCC, 0x000000];
+    var alphas:Array = [1, 0, 1];
+    var ratios:Array = [0, 128, 255];
+    var filter:GradientBevelFilter = new GradientBevelFilter(5, 225, colors, alphas, ratios, 5, 5, 5, 2, "inner", false);
+
+    art.filters = new Array(filter);
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="distance"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">distance</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var distance:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The offset distance. The default value is 4.      </p><br>
+<span class="label">Example</span>
+<br>The following example demonstrates how to set the <code>distance</code> property on an existing object.      <div class='listing'><pre>
+import flash.filters.GradientBevelFilter;
+
+var mc:MovieClip = setUpFilter("distanceExample");
+mc.onRelease = function() {
+    var arr:Array = this.filters;
+    arr[0].distance = 1;
+    this.filters = arr;
+}
+
+function setUpFilter(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 150;
+    var h:Number = 150;
+    art.beginFill(0xCCCCCC);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+
+    var colors:Array = [0xFFFFFF, 0xCCCCCC, 0x000000];
+    var alphas:Array = [1, 0, 1];
+    var ratios:Array = [0, 128, 255];
+    var filter:GradientBevelFilter = new GradientBevelFilter(5, 225, colors, alphas, ratios, 5, 5, 5, 3, "inner", false);
+
+    art.filters = new Array(filter);
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="knockout"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">knockout</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var knockout:<a href="../../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Specifies whether the object has a knockout effect. A knockout effect       makes the object's fill transparent and reveals the background color of the document.      The value <code>true</code> specifies a knockout effect;      the default is <code>false</code> (no knockout effect).      </p><br>
+<span class="label">Example</span>
+<br>The following example demonstrates how to set the <code>knockout</code> property on an existing object.      <div class='listing'><pre>
+import flash.filters.GradientBevelFilter;
+
+var mc:MovieClip = setUpFilter("knockoutExample");
+mc.onRelease = function() {
+    var arr:Array = this.filters;
+    arr[0].knockout = true;
+    this.filters = arr;
+}
+
+function setUpFilter(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 150;
+    var h:Number = 150;
+    art.beginFill(0xCCCCCC);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+
+    var colors:Array = [0xFFFFFF, 0xCCCCCC, 0x000000];
+    var alphas:Array = [1, 0, 1];
+    var ratios:Array = [0, 128, 255];
+    var filter:GradientBevelFilter = new GradientBevelFilter(5, 225, colors, alphas, ratios, 5, 5, 5, 3, "inner", false);
+
+    art.filters = new Array(filter);
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="quality"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">quality</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var quality:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The number of times to apply the filter. Valid values are 0 to 15. The default value is 1, which      is equivalent to low quality. A value of 2 is medium quality, and a value of 3 is high quality. Filters with lower values      are rendered more quickly.          </p><p>For most applications, a <code>quality</code> value of 1, 2, or 3 is sufficient. Although you can      use additional numeric values up to 15 to achieve different effects, higher values are rendered more      slowly. Instead of increasing the value of <code>quality</code>, you can often get a similar effect,      and with faster rendering, by simply increasing the values of <code>blurX</code> and      <code>blurY</code>.</p>      <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#ratios" target="">GradientBevelFilter.ratios</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example demonstrates how to set the <code>quality</code> property on an existing      object.      <div class='listing'><pre>
+import flash.filters.GradientBevelFilter;
+
+var mc:MovieClip = setUpFilter("qualityExample");
+mc.onRelease = function() {
+    var arr:Array = this.filters;
+    arr[0].quality = 1; // low quality
+    this.filters = arr;
+}
+
+function setUpFilter(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 150;
+    var h:Number = 150;
+    art.beginFill(0xCCCCCC);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+
+    var colors:Array = [0xFFFFFF, 0xCCCCCC, 0x000000];
+    var alphas:Array = [1, 0, 1];
+    var ratios:Array = [0, 128, 255];
+    var filter:GradientBevelFilter = new GradientBevelFilter(5, 225, colors, alphas, ratios, 5, 5, 5, 3, "inner", false);
+
+    art.filters = new Array(filter);
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="ratios"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ratios</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var ratios:<a href="../../Array.html">Array</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>An array of color distribution ratios for the corresponding colors in the      <code>colors</code> array. Valid values for each element      in the array are 0 to 255.          </p><p>The <code>ratios</code> property cannot be changed by directly modifying its values.      Instead, you must get a reference to <code>ratios</code>, make the change to the      reference, and then set <code>ratios</code> to the reference.</p>          <p> The <code>colors</code>, <code>alphas</code>, and <code>ratios</code> properties are all related.      The first element in the <code>colors</code> array      corresponds to the first element in the <code>alphas</code> array      and in the <code>ratios</code> array, and so on.</p>          <p> To understand how the colors in a gradient bevel are distributed, think first of the colors      that you want in your gradient bevel. Consider that a simple bevel has a highlight color and shadow      color; a gradient bevel has a highlight gradient and a shadow gradient. Assume that the highlight      appears on the top-left corner, and the shadow appears on the bottom-right corner. Assume that one      possible usage of the filter has four colors in the highlight and four in the shadow. In addition      to the highlight and shadow, the filter uses a base fill color that appears where the edges of the      highlight and shadow meet. Therefore the total number of colors is nine, and the corresponding number      of elements in the ratios array is nine.</p>          <p> If you think of a gradient as composed of stripes of various colors, blending into each other,      each ratio value sets the position of the color on the radius of the gradient, where 0 represents      the outermost point of the gradient and 255 represents the innermost point of the gradient.      For a typical usage,      the middle value is 128, and that is the base fill value. To get the bevel effect shown in the      image below, assign the      ratio values as follows, using the example of nine colors:</p>          <ul>      <li> The first four colors range from 0-127, increasing in value so that each value is greater than      or equal to the previous one. This is the highlight bevel edge.</li>      <li> The fifth color (the middle color) is the base fill, set to 128. The pixel value of 128      sets the base fill, which appears either outside the shape (and around the bevel edges) if the type      is set to outer; or inside the shape, effectively covering the object's own fill, if the type      is set to inner.</li>      <li> The last four colors range from 129-255, increasing in value so that each value      is greater than or equal to the previous one. This is the shadow bevel edge.</li>      </ul>          <p> If you want an equal distribution of colors for each edge, use an odd number of colors,      where the middle color is the base fill. Distribute the values between 0-127 and 129-255      equally among your colors, then adjust the value to change the width of each stripe of color      in the gradient. For a gradient bevel with nine colors, a possible array is      [16, 32, 64, 96, 128, 160, 192, 224, 235]. The following image depicts the gradient bevel      as described:</p>           <p><img src="../../images/gradientBevelRainbow.jpg" alt="gradient bevel" /></p>          <p>Keep in mind that the spread of the colors in the gradient varies based on the values      of the <code>blurX</code>, <code>blurY</code>, <code>strength</code>, and <code>quality</code>      properties, as well as the <code>ratios</code> values.</p>           <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#alphas" target="">GradientBevelFilter.alphas</a>
+<br>
+<a href="#colors" target="">GradientBevelFilter.colors</a>
+<br>
+<a href="../../MovieClip.html#beginGradientFill()" target="">MovieClip.beginGradientFill()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example demonstrates how to set the <code>ratios</code> property on an existing entity.      <div class='listing'><pre>
+import flash.filters.GradientBevelFilter;
+
+var mc:MovieClip = setUpFilter("ratiosExample");
+mc.onPress = function() {
+    var arr:Array = this.filters;
+    var ratios:Array = [127, 128, 129];
+    arr[0].ratios = ratios;
+    this.filters = arr;
+}
+mc.onRelease = function() {
+    var arr:Array = this.filters;
+    var ratios:Array = [0, 128, 255];
+    arr[0].ratios = ratios;
+    this.filters = arr;
+}
+
+function setUpFilter(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 150;
+    var h:Number = 150;
+    art.beginFill(0xCCCCCC);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+    
+    var colors:Array = [0xFFFFFF, 0xCCCCCC, 0x000000];
+    var alphas:Array = [1, 0, 1];
+    var ratios:Array = [0, 128, 255];
+    var filter:GradientBevelFilter = new GradientBevelFilter(5, 225, colors, alphas, ratios, 5, 5, 5, 2, "inner", false);
+    
+    art.filters = new Array(filter);
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="strength"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">strength</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var strength:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The strength of the imprint or spread. The higher the value, the more color is imprinted      and the stronger the contrast between the bevel and the background.      Valid values are 0 to 255.      A value of 0 means that the filter is not applied. The default value is 1.      </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#ratios" target="">GradientBevelFilter.ratios</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example demonstrates how to set the <code>strength</code> property on an existing object.      <div class='listing'><pre>
+import flash.filters.GradientBevelFilter;
+
+var mc:MovieClip = setUpFilter("strengthExample");
+mc.onRelease = function() {
+    var arr:Array = this.filters;
+    arr[0].strength = 1;
+    this.filters = arr;
+}
+
+function setUpFilter(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 150;
+    var h:Number = 150;
+    art.beginFill(0xCCCCCC);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+
+    var colors:Array = [0xFFFFFF, 0xCCCCCC, 0x000000];
+    var alphas:Array = [1, 0, 1];
+    var ratios:Array = [0, 128, 255];
+    var filter:GradientBevelFilter = new GradientBevelFilter(5, 225, colors, alphas, ratios, 5, 5, 5, 3, "inner", false);
+
+    art.filters = new Array(filter);
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="type"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">type</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var type:<a href="../../String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The placement of the bevel effect. Possible values are:      <ul><li><code>"outer"</code>: Bevel on the outer edge of the object</li>      <li><code>"inner"</code>: Bevel on the inner edge of the object</li>      <li><code>"full"</code>: Bevel on top of the object</li>      </ul>      </p><p>The default value is <code>"inner"</code>.</p>      <br>
+<span class="label">Example</span>
+<br>The following example demonstrates how to set the <code>type</code> property on an existing object.      <div class='listing'><pre>
+import flash.filters.GradientBevelFilter;
+
+var mc:MovieClip = setUpFilter("typeExample");
+mc.onRelease = function() {
+    var arr:Array = this.filters;
+    arr[0].type = "outer";
+    this.filters = arr;
+}
+
+function setUpFilter(name:String):MovieClip {
+    var art:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 150;
+    var h:Number = 150;
+    art.beginFill(0xCCCCCC);
+    art.lineTo(w, 0);
+    art.lineTo(w, h);
+    art.lineTo(0, h);
+    art.lineTo(0, 0);
+
+    var colors:Array = [0xFFFFFF, 0xCCCCCC, 0x000000];
+    var alphas:Array = [1, 0, 1];
+    var ratios:Array = [0, 128, 255];
+    var filter:GradientBevelFilter = new GradientBevelFilter(5, 225, colors, alphas, ratios, 5, 5, 5, 3, "inner", false);
+
+    art.filters = new Array(filter);
+    return art;
+}
+</pre></div>      <p></p>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="GradientBevelFilter()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">GradientBevelFilter</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function GradientBevelFilter([distance:<a href="../../Number.html">Number</a>], [angle:<a href="../../Number.html">Number</a>], [colors:<a href="../../Array.html">Array</a>], [alphas:<a href="../../Array.html">Array</a>], [ratios:<a href="../../Array.html">Array</a>], [blurX:<a href="../../Number.html">Number</a>], [blurY:<a href="../../Number.html">Number</a>], [strength:<a href="../../Number.html">Number</a>], [quality:<a href="../../Number.html">Number</a>], [type:<a href="../../String.html">String</a>], [knockout:<a href="../../Boolean.html">Boolean</a>])</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Initializes the filter with the specified parameters.      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">distance</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The offset distance. Valid values are 0 to 8. The default value is 4.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">angle</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The angle, in degrees. Valid values are 0 to 360. The default is 45.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">colors</span>:<a href="../../Array.html">Array</a></code>&nbsp;[optional] &mdash; An array of RGB hexadecimal color values to use in the gradient.      For example, red is 0xFF0000, blue is 0x0000FF, and so on.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">alphas</span>:<a href="../../Array.html">Array</a></code>&nbsp;[optional] &mdash; An array of alpha transparency values for the corresponding colors in          the <code>colors</code> array. Valid values for each element in the array are 0 to 1.      For example, .25 sets a transparency value of 25%.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">ratios</span>:<a href="../../Array.html">Array</a></code>&nbsp;[optional] &mdash; An array of color distribution ratios; valid values are          0 to 255.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">blurX</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The amount of horizontal blur. Valid values are 0 to 255. A blur of 1 or          less means that the original image is copied as is. The default value          is 4. Values that are a power of 2 (such as 2, 4, 8, 16 and 32) are optimized      to render more quickly than other values.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">blurY</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The amount of vertical blur. Valid values are 0 to 255. A blur of 1 or less          means that the original image is copied as is. The default value is         4. Values that are a power of 2 (such as 2, 4, 8, 16 and 32) are optimized      to render more quickly than other values.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">strength</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The strength of the imprint or spread. The higher the value, the more color      is imprinted and the stronger the contrast between the bevel and the background.      Valid values are 0 to 255. A value of 0 means that the filter is not applied.      The default value is 1.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">quality</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The quality of the filter. Valid values are 0-15. The default value is 1.      In almost all cases, useful values are 1 (low quality), 2 (medium quality), and 3 (high quality).      Filters with lower values are rendered more quickly.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:<a href="../../String.html">String</a></code>&nbsp;[optional] &mdash; The placement of the bevel effect. Possible values are:      <ul><li><code>"outer"</code>: Bevel on the outer edge of the object</li>      <li><code>"inner"</code>: Bevel on the inner edge of the object</li>      <li><code>"full"</code>: Bevel on top of the object</li>      </ul>      <p>The default value is <code>"inner"</code>.</p>      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">knockout</span>:<a href="../../Boolean.html">Boolean</a></code>&nbsp;[optional] &mdash; Specifies whether a knockout effect is applied. The value <code>true</code>      makes the object's fill transparent and reveals the background color of the document. The      default is <code>false</code> (no knockout).      </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#ratios" target="">GradientBevelFilter.ratios</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a new GradientBevelFilter instance, assigns      its values, and applies it to a flat rectangle image.      <div class='listing'><pre>
+import flash.filters.GradientBevelFilter;
+import flash.filters.BitmapFilter;
+var art:MovieClip = setUpFlatRectangle(150, 150, 0xCCCCCC, "gradientBevelFilterExample");
+var distance:Number = 5;
+var angleInDegrees:Number = 225; // opposite 45 degrees
+var colors:Array = [0xFFFFFF, 0xCCCCCC, 0x000000];
+var alphas:Array = [1, 0, 1];
+var ratios:Array = [0, 128, 255];
+var blurX:Number = 8;
+var blurY:Number = 8;
+var strength:Number = 2;
+var quality:Number = 3;
+var type:String = "inner";
+var knockout:Boolean = true;
+
+var filter:GradientBevelFilter = new GradientBevelFilter(distance, 
+                                                            angleInDegrees, 
+                                                            colors, 
+                                                            alphas, 
+                                                            ratios, 
+                                                            blurX, 
+                                                            blurY, 
+                                                            strength, 
+                                                            quality, 
+                                                            type, 
+                                                            knockout);
+var filterArray:Array = new Array();
+filterArray.push(filter);
+art.filters = filterArray;
+
+function setUpFlatRectangle(w:Number, h:Number, bgColor:Number, name:String):MovieClip {
+    var mc:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    mc.beginFill(bgColor);
+    mc.lineTo(w, 0);
+    mc.lineTo(w, h);
+    mc.lineTo(0, h);
+    mc.lineTo(0, 0);
+    return mc;
+}
+</pre></div>           <p></p>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="clone()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clone</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clone():<a href="GradientBevelFilter.html">GradientBevelFilter</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Returns a copy of this filter object.      </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="GradientBevelFilter.html">GradientBevelFilter</a></code> &mdash; 
+A new GradientBevelFilter instance with all the      same properties as the original GradientBevelFilter instance.      
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates two rectangle shapes. The first,      <code>sourceClip</code> has a bevel effect. The second,      <code>resultClip</code> has no effect until it is clicked.      <div class='listing'><pre>
+import flash.filters.GradientBevelFilter;
+
+var sourceClip:MovieClip = setUpFlatRectangle(150, 150, 0xCCCCCC, "cloneSourceClip");
+var resultClip:MovieClip = setUpFlatRectangle(150, 150, 0xCCCCCC, "cloneResultClip");
+
+resultClip.source = sourceClip;
+
+var sourceFilter:GradientBevelFilter = getNewFilter();
+sourceClip.filters = new Array(sourceFilter);
+
+resultClip._x = 180;
+resultClip.onRelease = function() {
+    this.filters = new Array(this.source.filters[0].clone());
+}
+
+function setUpFlatRectangle(w:Number, h:Number, bgColor:Number, name:String):MovieClip {
+    var mc:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    mc.beginFill(bgColor);
+    mc.lineTo(w, 0);
+    mc.lineTo(w, h);
+    mc.lineTo(0, h);
+    mc.lineTo(0, 0);
+    return mc;
+}
+
+function getNewFilter():GradientBevelFilter {
+    var colors:Array = [0xFFFFFF, 0xCCCCCC, 0x000000];
+    var alphas:Array = [1, 0, 1];
+    var ratios:Array = [0, 128, 255];
+    return new GradientBevelFilter(5, 225, colors, alphas, ratios, 5, 5, 5, 2, "inner", false);
+}
+
+</pre></div>      <p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

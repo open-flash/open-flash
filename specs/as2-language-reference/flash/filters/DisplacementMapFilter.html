@@ -1,0 +1,1134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="DisplacementMapFilter,flash.filters.DisplacementMapFilter,alpha,color,componentX,componentY,mapBitmap,mapPoint,mode,scaleX,scaleY,clone" name="keywords">
+<title>flash.filters.DisplacementMapFilter</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'DisplacementMapFilter - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="../../language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="../../appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="../../index.html?flash/filters/DisplacementMapFilter.html&amp;flash/filters/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;DisplacementMapFilter</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class DisplacementMapFilter"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">flash.filters</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class DisplacementMapFilter</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">DisplacementMapFilter <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../images/inherit-arrow.gif"> <a href="BitmapFilter.html">BitmapFilter</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../images/inherit-arrow.gif"> <a href="../../Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p>
+<p></p>The DisplacementMapFilter class uses the pixel values from the specified BitmapData object  (called the <i>displacement map image</i>) to perform a displacement of an object on the Stage,  such as a MovieClip instance. You can use this filter to achieve a warped  or mottled effect on a BitmapData or MovieClip instance.   <p>The use of filters depends on the object to which you apply the filter.</p>   <p>To apply filters to movie clips at runtime, use the  <code>filters</code> property. Setting the <code>filters</code> property of an object  does not modify the object and can be undone by clearing the <code>filters</code> property.</p>   <p>To apply filters to BitmapData instances, use the <code>BitmapData.applyFilter()</code> method.  Calling <code>applyFilter()</code> on a BitmapData object modifies that BitmapData object  and cannot be undone.</p>   <p>You can also apply filter effects to images and video at authoring time.  For more information, see your authoring documentation.</p>   <p>If you apply a filter to a movie clip or button, the <code>cacheAsBitmap</code> property of the  movie clip or button is set to <code>true</code>. If you clear all filters, the original value of  <code>cacheAsBitmap</code> is restored.</p>  <p>The filter uses the following formula:</p>   <div class='listing'><pre>
+dstPixel[x, y] = srcPixel[x + ((componentX(x, y) - 128) * scaleX) / 256, y + ((componentY(x, y) - 128) * scaleY) / 256]
+</pre></div>  <p>where <code>componentX(x, y)</code> gets the <code>componentX</code> color value  from the <code>mapBitmap</code> property at <code>(x - mapPoint.x ,y - mapPoint.y)</code>.</p>  <p>The map image used by the filter is scaled to match the Stage scaling.  It is not scaled in any way when the object itself is scaled.</p>   <p>This filter supports Stage scaling, but not general scaling, rotation, or  skewing. If the object itself is scaled (if <i>x</i>-scale and <i>y</i>-scale are not 100%),  the filter effect is not scaled. It is scaled only when the Stage is zoomed in.</p>   Here is how the DisplacementMapFilter class works. For each pixel (<i>x</i>,<i>y</i>) in the <i>destination</i>  bitmap, the DisplacementMapFilter class does the following:   <ol>  <li> Gets the color from (<i>x</i>,<i>y</i>) in the <i>map</i> bitmap</li>  <li> Calculates an offset based on that color</li>  <li> Looks up that offset location (<i>x</i>+<i>dx</i>,<i>y</i>+<i>dy</i>) in the <i>source</i> bitmap</li>  <li> Writes that pixel to the destination(<i>x</i>,<i>y</i>), if boundary conditions permit</li>  </ol>  <p>A filter is not applied if the resulting image would exceed 2880 pixels in width  or height. For example, if you zoom in on a large movie clip with a filter applied, the  filter is turned off if the resulting image reaches the 2880-pixel limit.</p>  <p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../display/BitmapData.html#applyFilter()" target="">flash.display.BitmapData.applyFilter()</a>
+<br>
+<a href="../../MovieClip.html#filters" target="">MovieClip.filters</a>
+<br>
+<a href="../../MovieClip.html#cacheAsBitmap" target="">MovieClip.cacheAsBitmap</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#alpha">alpha</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">Specifies the alpha transparency value to use for out-of-bounds displacements.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#color">color</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">Specifies what color to use for out-of-bounds displacements.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#componentX">componentX</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">Describes which color channel to use in the map image to displace the <i>x</i> result.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#componentY">componentY</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">Describes which color channel to use in the map image to displace the <i>y</i> result.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#mapBitmap">mapBitmap</a> : <a href="../display/BitmapData.html">BitmapData</a>
+<div class="summaryTableDescription">A BitmapData object containing the displacement map data.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#mapPoint">mapPoint</a> : <a href="../geom/Point.html">Point</a>
+<div class="summaryTableDescription">A <code>flash.geom.Point</code> value that contains the offset of the upper-left corner of the target movie clip from the upper-left corner of the map image.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#mode">mode</a> : <a href="../../String.html">String</a>
+<div class="summaryTableDescription">The mode for the filter.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#scaleX">scaleX</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The multiplier to use to scale the <i>x</i> displacement result from the map calculation.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#scaleY">scaleY</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The multiplier to use to scale the <i>y</i> displacement result from the map calculation.</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="../../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../../Object.html#__proto__">__proto__</a>, <a href="../../Object.html#__resolve">__resolve</a>, <a href="../../Object.html#constructor">constructor</a>, <a href="../../Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#DisplacementMapFilter()">DisplacementMapFilter</a>(mapBitmap:<a href="../display/BitmapData.html">BitmapData</a>, mapPoint:<a href="../geom/Point.html">Point</a>, componentX:<a href="../../Number.html">Number</a>, componentY:<a href="../../Number.html">Number</a>, scaleX:<a href="../../Number.html">Number</a>, scaleY:<a href="../../Number.html">Number</a>, [mode:<a href="../../String.html">String</a>], [color:<a href="../../Number.html">Number</a>], [alpha:<a href="../../Number.html">Number</a>])</div>
+<div class="summaryTableDescription">Initializes a DisplacementMapFilter instance with the specified parameters.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clone()">clone</a>():<a href="DisplacementMapFilter.html">DisplacementMapFilter</a>
+</div>
+<div class="summaryTableDescription">Returns a copy of this filter object.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromBitmapFilter"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="BitmapFilter.html">BitmapFilter</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="BitmapFilter.html#clone()">clone</a></code></td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="../../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../../Object.html#addProperty()">addProperty</a>, <a href="../../Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="../../Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="../../Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="../../Object.html#registerClass()">registerClass</a>, <a href="../../Object.html#toString()">toString</a>, <a href="../../Object.html#unwatch()">unwatch</a>, <a href="../../Object.html#valueOf()">valueOf</a>, <a href="../../Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="alpha"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">alpha</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var alpha:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Specifies the alpha transparency value to use for out-of-bounds displacements.      This is specified as a normalized value from 0.0 to 1.0. For example,      0.25 sets a transparency value of 25%. The default is 0.      Use this property if the <code>mode</code> property is set to <code>3, COLOR</code>.       </p><br>
+<span class="label">Example</span>
+<br>The following example modifies the out-of-range      <code>alpha</code> property on the existing MovieClip      <code>filteredMc</code> to <code>0x00FF00</code> when a user clicks it.      <div class='listing'><pre>
+import flash.filters.DisplacementMapFilter;
+import flash.display.BitmapData;
+import flash.geom.Point;
+import flash.geom.Matrix;
+import flash.geom.ColorTransform;
+
+var filteredMc:MovieClip = createDisplacementMapRectangle();
+
+filteredMc.onPress = function() {
+    var filter:DisplacementMapFilter = this.filters[0];
+    filter.scaleY = 25;
+    filter.mode = "color";
+    filter.alpha = 0.25;
+    this.filters = new Array(filter);
+}
+
+function createDisplacementMapRectangle():MovieClip {
+    var mapBitmap:BitmapData = createGradientBitmap(300, 80, 0xFF000000, "radial");
+    var filter:DisplacementMapFilter = new DisplacementMapFilter(mapBitmap, new Point(-30, -30), 1, 1, 10, 10, "wrap", 0x000000, 0x000000);
+
+    var txtBlock:MovieClip = createTextBlock();
+    txtBlock._x = 30;
+    txtBlock._y = 30;
+    
+    txtBlock.filters = new Array(filter);
+
+    return txtBlock;
+}
+
+function createGradientBitmap(w:Number, h:Number, bgColor:Number, type:String, hide:Boolean):BitmapData {
+    var mc:MovieClip = this.createEmptyMovieClip("mc", 1);
+    var matrix:Matrix = new Matrix();
+    matrix.createGradientBox(w, h, 0, 0, 0);
+
+    mc.beginGradientFill(type, [0xFF0000, 0x0000FF], [100, 100], [0x55, 0x99], matrix, "pad");        
+    mc.lineTo(w, 0);
+    mc.lineTo(w, h);
+    mc.lineTo(0, h);
+    mc.lineTo(0, 0);
+    mc.endFill();
+    (hide == true) ? mc._alpha = 0 : mc._alpha = 100;
+    
+    var bmp:BitmapData = new BitmapData(w, h, true, bgColor);
+        bmp.draw(mc, new Matrix(), new ColorTransform(), "normal", bmp.rectangle, true);
+    mc.attachBitmap(bmp, this.getNextHighestDepth());
+    
+    return bmp;
+}
+
+function createTextBlock():MovieClip {
+    var txtBlock:MovieClip = this.createEmptyMovieClip("txtBlock", this.getNextHighestDepth());
+    txtBlock.createTextField("txt", this.getNextHighestDepth(), 0, 0, 300, 80);
+    txtBlock.txt.text = "watch the text bend with the displacement map";
+    return txtBlock;
+}
+</pre></div>          <p></p>
+</div>
+<a name="color"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">color</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var color:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Specifies what color to use for out-of-bounds displacements.  The valid range of      displacements is 0.0 to 1.0. Values are in hexadecimal format. The default value      for <code>color</code> is 0. Use this property if the <code>mode</code> property      is set to <code>3, COLOR</code>.      </p><br>
+<span class="label">Example</span>
+<br>The following example modifies the out-of-range      <code>color</code> property on the existing MovieClip      <code>filteredMc</code> to <code>0x00FF00</code> when a user clicks it.      <div class='listing'><pre>
+import flash.filters.DisplacementMapFilter;
+import flash.display.BitmapData;
+import flash.geom.Point;
+import flash.geom.Matrix;
+import flash.geom.ColorTransform;
+
+var filteredMc:MovieClip = createDisplacementMapRectangle();
+
+filteredMc.onPress = function() {
+    var filter:DisplacementMapFilter = this.filters[0];
+    filter.scaleY = 25;
+    filter.mode = "color";
+    filter.alpha = .25;
+    filter.color = 0x00FF00;
+    this.filters = new Array(filter);
+}
+
+function createDisplacementMapRectangle():MovieClip {
+    var mapBitmap:BitmapData = createGradientBitmap(300, 80, 0xFF000000, "radial");
+    var filter:DisplacementMapFilter = new DisplacementMapFilter(mapBitmap, new Point(-30, -30), 1, 1, 10, 10, "wrap", 0x000000, 0x000000);
+
+    var txtBlock:MovieClip = createTextBlock();
+    txtBlock._x = 30;
+    txtBlock._y = 30;
+    
+    txtBlock.filters = new Array(filter);
+
+    return txtBlock;
+}
+
+function createGradientBitmap(w:Number, h:Number, bgColor:Number, type:String, hide:Boolean):BitmapData {
+    var mc:MovieClip = this.createEmptyMovieClip("mc", 1);
+    var matrix:Matrix = new Matrix();
+    matrix.createGradientBox(w, h, 0, 0, 0);
+
+    mc.beginGradientFill(type, [0xFF0000, 0x0000FF], [100, 100], [0x55, 0x99], matrix, "pad");        
+    mc.lineTo(w, 0);
+    mc.lineTo(w, h);
+    mc.lineTo(0, h);
+    mc.lineTo(0, 0);
+    mc.endFill();
+    (hide == true) ? mc._alpha = 0 : mc._alpha = 100;
+    
+    var bmp:BitmapData = new BitmapData(w, h, true, bgColor);
+        bmp.draw(mc, new Matrix(), new ColorTransform(), "normal", bmp.rectangle, true);
+    mc.attachBitmap(bmp, this.getNextHighestDepth());
+    
+    return bmp;
+}
+
+function createTextBlock():MovieClip {
+    var txtBlock:MovieClip = this.createEmptyMovieClip("txtBlock", this.getNextHighestDepth());
+    txtBlock.createTextField("txt", this.getNextHighestDepth(), 0, 0, 300, 80);
+    txtBlock.txt.text = "watch the text bend with the displacement map";
+    return txtBlock;
+}
+</pre></div>          <p></p>
+</div>
+<a name="componentX"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">componentX</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var componentX:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Describes which color channel to use in the map image to displace the <i>x</i> result.      Possible values are 1 (red), 2 (green), 4 (blue), and 8 (alpha).           </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../display/BitmapData.html" target="">BitmapData class</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br> The following example changes the <code>componentX</code> property on the existing MovieClip      <code>filteredMc</code> when a user clicks it.  The value changes from 1 to 4, which changes the      color channel from red to blue.      <div class='listing'><pre>
+import flash.filters.DisplacementMapFilter;
+import flash.display.BitmapData;
+import flash.geom.Point;
+import flash.geom.Matrix;
+import flash.geom.ColorTransform;
+
+var filteredMc:MovieClip = createDisplacementMapRectangle();
+    
+filteredMc.onPress = function() {
+    var filter:DisplacementMapFilter = this.filters[0];
+    filter.componentX = 4;
+    this.filters = new Array(filter);
+}
+
+
+function createDisplacementMapRectangle():MovieClip {
+    var mapBitmap:BitmapData = createGradientBitmap(300, 80, 0xFF000000, "radial");
+    var filter:DisplacementMapFilter = new DisplacementMapFilter(mapBitmap, new Point(-30, -30), 1, 1, 10, 10, "wrap", 0x000000, 0x000000);
+
+    var txtBlock:MovieClip = createTextBlock();
+    txtBlock._x = 30;
+    txtBlock._y = 30;
+    
+    txtBlock.filters = new Array(filter);
+
+    return txtBlock;
+}
+
+function createGradientBitmap(w:Number, h:Number, bgColor:Number, type:String, hide:Boolean):BitmapData {
+    var mc:MovieClip = this.createEmptyMovieClip("mc", 1);
+    var matrix:Matrix = new Matrix();
+    matrix.createGradientBox(w, h, 0, 0, 0);
+
+    mc.beginGradientFill(type, [0xFF0000, 0x0000FF], [100, 100], [0x55, 0x99], matrix, "pad");        
+    mc.lineTo(w, 0);
+    mc.lineTo(w, h);
+    mc.lineTo(0, h);
+    mc.lineTo(0, 0);
+    mc.endFill();
+    (hide == true) ? mc._alpha = 0 : mc._alpha = 100;
+    
+    var bmp:BitmapData = new BitmapData(w, h, true, bgColor);
+        bmp.draw(mc, new Matrix(), new ColorTransform(), "normal", bmp.rectangle, true);
+    mc.attachBitmap(bmp, this.getNextHighestDepth());
+    
+    return bmp;
+}
+
+function createTextBlock():MovieClip {
+    var txtBlock:MovieClip = this.createEmptyMovieClip("txtBlock", this.getNextHighestDepth());
+    txtBlock.createTextField("txt", this.getNextHighestDepth(), 0, 0, 300, 80);
+    txtBlock.txt.text = "watch the text bend with the displacement map";
+    return txtBlock;
+}
+</pre></div>          <p></p>
+</div>
+<a name="componentY"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">componentY</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var componentY:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Describes which color channel to use in the map image to displace the <i>y</i> result.      Possible values are 1 (red), 2 (green), 4 (blue), and 8 (alpha).           </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../display/BitmapData.html" target="">BitmapData class</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br> The following example changes the <code>componentY</code> property on the existing MovieClip      <code>filteredMc</code> when a user clicks it.  The value changes from 1 to 4, which changes the      color channel from red to blue.      <div class='listing'><pre>
+import flash.filters.DisplacementMapFilter;
+import flash.display.BitmapData;
+import flash.geom.Point;
+import flash.geom.Matrix;
+import flash.geom.ColorTransform;
+
+var filteredMc:MovieClip = createDisplacementMapRectangle();
+    
+filteredMc.onPress = function() {
+    var filter:DisplacementMapFilter = this.filters[0];
+    filter.componentY = 4;
+    this.filters = new Array(filter);
+}
+
+function createDisplacementMapRectangle():MovieClip {
+    var mapBitmap:BitmapData = createGradientBitmap(300, 80, 0xFF000000, "radial");
+    var filter:DisplacementMapFilter = new DisplacementMapFilter(mapBitmap, new Point(-30, -30), 1, 1, 10, 10, "wrap", 0x000000, 0x000000);
+
+    var txtBlock:MovieClip = createTextBlock();
+    txtBlock._x = 30;
+    txtBlock._y = 30;
+    
+    txtBlock.filters = new Array(filter);
+
+    return txtBlock;
+}
+
+function createGradientBitmap(w:Number, h:Number, bgColor:Number, type:String, hide:Boolean):BitmapData {
+    var mc:MovieClip = this.createEmptyMovieClip("mc", 1);
+    var matrix:Matrix = new Matrix();
+    matrix.createGradientBox(w, h, 0, 0, 0);
+
+    mc.beginGradientFill(type, [0xFF0000, 0x0000FF], [100, 100], [0x55, 0x99], matrix, "pad");        
+    mc.lineTo(w, 0);
+    mc.lineTo(w, h);
+    mc.lineTo(0, h);
+    mc.lineTo(0, 0);
+    mc.endFill();
+    (hide == true) ? mc._alpha = 0 : mc._alpha = 100;
+    
+    var bmp:BitmapData = new BitmapData(w, h, true, bgColor);
+        bmp.draw(mc, new Matrix(), new ColorTransform(), "normal", bmp.rectangle, true);
+    mc.attachBitmap(bmp, this.getNextHighestDepth());
+    
+    return bmp;
+}
+
+function createTextBlock():MovieClip {
+    var txtBlock:MovieClip = this.createEmptyMovieClip("txtBlock", this.getNextHighestDepth());
+    txtBlock.createTextField("txt", this.getNextHighestDepth(), 0, 0, 300, 80);
+    txtBlock.txt.text = "watch the text bend with the displacement map";
+    return txtBlock;
+}
+</pre></div>          <p></p>
+</div>
+<a name="mapBitmap"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">mapBitmap</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var mapBitmap:<a href="../display/BitmapData.html">BitmapData</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>A BitmapData object containing the displacement map data.           </p><p>The <code>mapBitmap</code> property cannot be changed by directly modifying its value.      Instead, you must get a reference to <code>mapBitmap</code>, make the change to the      reference, and then set <code>mapBitmap</code> to the reference.</p>           <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../display/BitmapData.html" target="">flash.display.BitmapData</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br> The following example changes the <code>mapBitmap</code> property on the existing MovieClip      <code>filteredMc</code> when a user clicks it.      <div class='listing'><pre>
+import flash.filters.DisplacementMapFilter;
+import flash.display.BitmapData;
+import flash.geom.Point;
+import flash.geom.Matrix;
+import flash.geom.ColorTransform;
+
+var filteredMc:MovieClip = createDisplacementMapRectangle();
+var scope:Object = this;
+
+filteredMc.onPress = function() {
+    var filter:DisplacementMapFilter = this.filters[0];
+    filter.mapBitmap = scope.createGradientBitmap(300, 80, 0xFF000000, "linear");
+    this.filters = new Array(filter);
+}
+
+function createDisplacementMapRectangle():MovieClip {
+    var mapBitmap:BitmapData = createGradientBitmap(300, 80, 0xFF000000, "radial");
+    var filter:DisplacementMapFilter = new DisplacementMapFilter(mapBitmap, new Point(-30, -30), 1, 1, 10, 10, "wrap", 0x000000, 0x000000);
+
+    var txtBlock:MovieClip = createTextBlock();
+    txtBlock._x = 30;
+    txtBlock._y = 30;
+    
+    txtBlock.filters = new Array(filter);
+
+    return txtBlock;
+}
+
+function createGradientBitmap(w:Number, h:Number, bgColor:Number, type:String, hide:Boolean):BitmapData {
+    var mc:MovieClip = this.createEmptyMovieClip("mc", 1);
+    var matrix:Matrix = new Matrix();
+    matrix.createGradientBox(w, h, 0, 0, 0);
+
+    mc.beginGradientFill(type, [0xFF0000, 0x0000FF], [100, 100], [0x55, 0x99], matrix, "pad");        
+    mc.lineTo(w, 0);
+    mc.lineTo(w, h);
+    mc.lineTo(0, h);
+    mc.lineTo(0, 0);
+    mc.endFill();
+    (hide == true) ? mc._alpha = 0 : mc._alpha = 100;
+    
+    var bmp:BitmapData = new BitmapData(w, h, true, bgColor);
+        bmp.draw(mc, new Matrix(), new ColorTransform(), "normal", bmp.rectangle, true);
+    mc.attachBitmap(bmp, this.getNextHighestDepth());
+    
+    return bmp;
+}
+
+function createTextBlock():MovieClip {
+    var txtBlock:MovieClip = this.createEmptyMovieClip("txtBlock", this.getNextHighestDepth());
+    txtBlock.createTextField("txt", this.getNextHighestDepth(), 0, 0, 300, 80);
+    txtBlock.txt.text = "watch the text bend with the displacement map";
+    return txtBlock;
+}
+</pre></div>          <p></p>
+</div>
+<a name="mapPoint"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">mapPoint</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var mapPoint:<a href="../geom/Point.html">Point</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>A <code>flash.geom.Point</code> value that contains the offset of the upper-left corner of      the target movie clip from the upper-left corner of the map image.          </p><p>The <code>mapPoint</code> property cannot be changed by directly modifying its value.      Instead, you must get a reference to <code>mapPoint</code>, make the change to the      reference, and then set <code>mapPoint</code> to the reference.</p>           <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../geom/Point.html" target="">flash.geom.Point</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br> The following example changes the <code>mapPoint</code> property on the existing MovieClip      <code>filteredMc</code> when a user clicks it.      <div class='listing'><pre>
+import flash.filters.DisplacementMapFilter;
+import flash.display.BitmapData;
+import flash.geom.Point;
+import flash.geom.Matrix;
+import flash.geom.ColorTransform;
+
+var filteredMc:MovieClip = createDisplacementMapRectangle();
+
+filteredMc.onPress = function() {
+    var filter:DisplacementMapFilter = this.filters[0];
+    filter.mapPoint = new Point(-30, -40);
+    this.filters = new Array(filter);
+    this._x = 30;
+    this._y = 40;
+}
+
+function createDisplacementMapRectangle():MovieClip {
+    var mapBitmap:BitmapData = createGradientBitmap(300, 80, 0xFF000000, "radial");
+    var filter:DisplacementMapFilter = new DisplacementMapFilter(mapBitmap, new Point(-30, -30), 1, 1, 10, 10, "wrap", 0x000000, 0x000000);
+
+    var txtBlock:MovieClip = createTextBlock();
+    txtBlock._x = 30;
+    txtBlock._y = 30;
+    
+    txtBlock.filters = new Array(filter);
+
+    return txtBlock;
+}
+
+function createGradientBitmap(w:Number, h:Number, bgColor:Number, type:String, hide:Boolean):BitmapData {
+    var mc:MovieClip = this.createEmptyMovieClip("mc", 1);
+    var matrix:Matrix = new Matrix();
+    matrix.createGradientBox(w, h, 0, 0, 0);
+
+    mc.beginGradientFill(type, [0xFF0000, 0x0000FF], [100, 100], [0x55, 0x99], matrix, "pad");        
+    mc.lineTo(w, 0);
+    mc.lineTo(w, h);
+    mc.lineTo(0, h);
+    mc.lineTo(0, 0);
+    mc.endFill();
+    (hide == true) ? mc._alpha = 0 : mc._alpha = 100;
+    
+    var bmp:BitmapData = new BitmapData(w, h, true, bgColor);
+        bmp.draw(mc, new Matrix(), new ColorTransform(), "normal", bmp.rectangle, true);
+    mc.attachBitmap(bmp, this.getNextHighestDepth());
+    
+    return bmp;
+}
+
+function createTextBlock():MovieClip {
+    var txtBlock:MovieClip = this.createEmptyMovieClip("txtBlock", this.getNextHighestDepth());
+    txtBlock.createTextField("txt", this.getNextHighestDepth(), 0, 0, 300, 80);
+    txtBlock.txt.text = "watch the text bend with the displacement map";
+    return txtBlock;
+}
+</pre></div>          <p></p>
+</div>
+<a name="mode"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">mode</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var mode:<a href="../../String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The mode for the filter. Possible values are the following:      <ul>      <li><code>"wrap"</code> &#x2014; Wraps the displacement value to the other side of the source image. This is the default value.</li>      <li><code>"clamp"</code> &#x2014; Clamps the displacement value to the edge of the source image.</li>      <li><code>"ignore"</code> &#x2014; If the displacement value is out of range, ignores the displacement and uses the source pixel.</li>      <li><code>"color"</code> &#x2014; If the displacement value is outside the image,      substitutes a pixel value composed of the <code>alpha</code> and      <code>color</code> properties of the filter.</li>        </ul>      </p><br>
+<span class="label">Example</span>
+<br> The following example modifies <code>scaleY</code> to create a displacement      value that is out of range and then changes the <code>mode</code> property on the existing MovieClip      <code>filteredMc</code> to <code>ignore</code> when a user clicks it.      <div class='listing'><pre>
+import flash.filters.DisplacementMapFilter;
+import flash.display.BitmapData;
+import flash.geom.Point;
+import flash.geom.Matrix;
+import flash.geom.ColorTransform;
+
+var filteredMc:MovieClip = createDisplacementMapRectangle();
+
+filteredMc.onPress = function() {
+    var filter:DisplacementMapFilter = this.filters[0];
+    filter.scaleY = 25;
+    filter.mode = "ignore";
+    this.filters = new Array(filter);
+}
+
+function createDisplacementMapRectangle():MovieClip {
+    var mapBitmap:BitmapData = createGradientBitmap(300, 80, 0xFF000000, "radial");
+    var filter:DisplacementMapFilter = new DisplacementMapFilter(mapBitmap, new Point(-30, -30), 1, 1, 10, 10, "wrap", 0x000000, 0x000000);
+
+    var txtBlock:MovieClip = createTextBlock();
+    txtBlock._x = 30;
+    txtBlock._y = 30;
+    
+    txtBlock.filters = new Array(filter);
+
+    return txtBlock;
+}
+
+function createGradientBitmap(w:Number, h:Number, bgColor:Number, type:String, hide:Boolean):BitmapData {
+    var mc:MovieClip = this.createEmptyMovieClip("mc", 1);
+    var matrix:Matrix = new Matrix();
+    matrix.createGradientBox(w, h, 0, 0, 0);
+
+    mc.beginGradientFill(type, [0xFF0000, 0x0000FF], [100, 100], [0x55, 0x99], matrix, "pad");        
+    mc.lineTo(w, 0);
+    mc.lineTo(w, h);
+    mc.lineTo(0, h);
+    mc.lineTo(0, 0);
+    mc.endFill();
+    (hide == true) ? mc._alpha = 0 : mc._alpha = 100;
+    
+    var bmp:BitmapData = new BitmapData(w, h, true, bgColor);
+        bmp.draw(mc, new Matrix(), new ColorTransform(), "normal", bmp.rectangle, true);
+    mc.attachBitmap(bmp, this.getNextHighestDepth());
+    
+    return bmp;
+}
+
+function createTextBlock():MovieClip {
+    var txtBlock:MovieClip = this.createEmptyMovieClip("txtBlock", this.getNextHighestDepth());
+    txtBlock.createTextField("txt", this.getNextHighestDepth(), 0, 0, 300, 80);
+    txtBlock.txt.text = "watch the text bend with the displacement map";
+    return txtBlock;
+}
+</pre></div>     <p></p>
+</div>
+<a name="scaleX"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scaleX</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var scaleX:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The multiplier to use to scale the <i>x</i> displacement result from the map calculation.           </p><br>
+<span class="label">Example</span>
+<br> The following example changes the <code>scaleX</code> property on the existing MovieClip      <code>filteredMc</code> when a user clicks it.      <div class='listing'><pre>
+import flash.filters.DisplacementMapFilter;
+import flash.display.BitmapData;
+import flash.geom.Point;
+import flash.geom.Matrix;
+import flash.geom.ColorTransform;
+
+var filteredMc:MovieClip = createDisplacementMapRectangle();
+
+filteredMc.onPress = function() {
+    var filter:DisplacementMapFilter = this.filters[0];
+    filter.scaleX = 5;
+    this.filters = new Array(filter);
+}
+
+function createDisplacementMapRectangle():MovieClip {
+    var mapBitmap:BitmapData = createGradientBitmap(300, 80, 0xFF000000, "radial");
+    var filter:DisplacementMapFilter = new DisplacementMapFilter(mapBitmap, new Point(-30, -30), 1, 1, 10, 10, "wrap", 0x000000, 0x000000);
+
+    var txtBlock:MovieClip = createTextBlock();
+    txtBlock._x = 30;
+    txtBlock._y = 30;
+    
+    txtBlock.filters = new Array(filter);
+
+    return txtBlock;
+}
+
+function createGradientBitmap(w:Number, h:Number, bgColor:Number, type:String, hide:Boolean):BitmapData {
+    var mc:MovieClip = this.createEmptyMovieClip("mc", 1);
+    var matrix:Matrix = new Matrix();
+    matrix.createGradientBox(w, h, 0, 0, 0);
+
+    mc.beginGradientFill(type, [0xFF0000, 0x0000FF], [100, 100], [0x55, 0x99], matrix, "pad");        
+    mc.lineTo(w, 0);
+    mc.lineTo(w, h);
+    mc.lineTo(0, h);
+    mc.lineTo(0, 0);
+    mc.endFill();
+    (hide == true) ? mc._alpha = 0 : mc._alpha = 100;
+    
+    var bmp:BitmapData = new BitmapData(w, h, true, bgColor);
+        bmp.draw(mc, new Matrix(), new ColorTransform(), "normal", bmp.rectangle, true);
+    mc.attachBitmap(bmp, this.getNextHighestDepth());
+    
+    return bmp;
+}
+
+function createTextBlock():MovieClip {
+    var txtBlock:MovieClip = this.createEmptyMovieClip("txtBlock", this.getNextHighestDepth());
+    txtBlock.createTextField("txt", this.getNextHighestDepth(), 0, 0, 300, 80);
+    txtBlock.txt.text = "watch the text bend with the displacement map";
+    return txtBlock;
+}
+</pre></div>          <p></p>
+</div>
+<a name="scaleY"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scaleY</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var scaleY:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The multiplier to use to scale the <i>y</i> displacement result from the map calculation.           </p><br>
+<span class="label">Example</span>
+<br> The following example changes the <code>scaleY</code> property on the existing MovieClip      <code>filteredMc</code> when a user clicks it.      <div class='listing'><pre>
+import flash.filters.DisplacementMapFilter;
+import flash.display.BitmapData;
+import flash.geom.Point;
+import flash.geom.Matrix;
+import flash.geom.ColorTransform;
+
+var filteredMc:MovieClip = createDisplacementMapRectangle();
+    
+filteredMc.onPress = function() {
+    var filter:DisplacementMapFilter = this.filters[0];
+    filter.scaleY = 5;
+    this.filters = new Array(filter);
+}
+
+function createDisplacementMapRectangle():MovieClip {
+    var mapBitmap:BitmapData = createGradientBitmap(300, 80, 0xFF000000, "radial");
+    var filter:DisplacementMapFilter = new DisplacementMapFilter(mapBitmap, new Point(-30, -30), 1, 1, 10, 10, "wrap", 0x000000, 0x000000);
+
+    var txtBlock:MovieClip = createTextBlock();
+    txtBlock._x = 30;
+    txtBlock._y = 30;
+    
+    txtBlock.filters = new Array(filter);
+
+    return txtBlock;
+}
+
+function createGradientBitmap(w:Number, h:Number, bgColor:Number, type:String, hide:Boolean):BitmapData {
+    var mc:MovieClip = this.createEmptyMovieClip("mc", 1);
+    var matrix:Matrix = new Matrix();
+    matrix.createGradientBox(w, h, 0, 0, 0);
+
+    mc.beginGradientFill(type, [0xFF0000, 0x0000FF], [100, 100], [0x55, 0x99], matrix, "pad");        
+    mc.lineTo(w, 0);
+    mc.lineTo(w, h);
+    mc.lineTo(0, h);
+    mc.lineTo(0, 0);
+    mc.endFill();
+    (hide == true) ? mc._alpha = 0 : mc._alpha = 100;
+    
+    var bmp:BitmapData = new BitmapData(w, h, true, bgColor);
+        bmp.draw(mc, new Matrix(), new ColorTransform(), "normal", bmp.rectangle, true);
+    mc.attachBitmap(bmp, this.getNextHighestDepth());
+    
+    return bmp;
+}
+
+function createTextBlock():MovieClip {
+    var txtBlock:MovieClip = this.createEmptyMovieClip("txtBlock", this.getNextHighestDepth());
+    txtBlock.createTextField("txt", this.getNextHighestDepth(), 0, 0, 300, 80);
+    txtBlock.txt.text = "watch the text bend with the displacement map";
+    return txtBlock;
+}
+</pre></div>          <p></p>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="DisplacementMapFilter()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">DisplacementMapFilter</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function DisplacementMapFilter(mapBitmap:<a href="../display/BitmapData.html">BitmapData</a>, mapPoint:<a href="../geom/Point.html">Point</a>, componentX:<a href="../../Number.html">Number</a>, componentY:<a href="../../Number.html">Number</a>, scaleX:<a href="../../Number.html">Number</a>, scaleY:<a href="../../Number.html">Number</a>, [mode:<a href="../../String.html">String</a>], [color:<a href="../../Number.html">Number</a>], [alpha:<a href="../../Number.html">Number</a>])</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Initializes a DisplacementMapFilter instance with the specified parameters.           </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">mapBitmap</span>:<a href="../display/BitmapData.html">BitmapData</a></code> &mdash; A BitmapData object containing the displacement map data.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">mapPoint</span>:<a href="../geom/Point.html">Point</a></code> &mdash; A <code>flash.geom.Point</code> value that contains the offset of the upper-left corner of the          target movie clip from the upper-left corner of the map image.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">componentX</span>:<a href="../../Number.html">Number</a></code> &mdash; Describes which color channel to use in the map image to displace the <i>x</i> result.      Possible values are the following:      <ul>      <li><code>1</code> (red)</li>      <li><code>2</code> (green)</li>      <li><code>4</code> (blue)</li>      <li><code>8</code> (alpha)</li>      </ul>         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">componentY</span>:<a href="../../Number.html">Number</a></code> &mdash; Describes which color channel to use in the map image to displace the <i>y</i> result.      Possible values are the following:      <ul>      <li><code>1</code> (red)</li>      <li><code>2</code> (green)</li>      <li><code>4</code> (blue)</li>      <li><code>8</code> (alpha)</li>      </ul>      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">scaleX</span>:<a href="../../Number.html">Number</a></code> &mdash; The multiplier to use to scale the <i>x</i> displacement result from the map calculation.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">scaleY</span>:<a href="../../Number.html">Number</a></code> &mdash; The multiplier to use to scale the <i>y</i> displacement result from the map calculation.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">mode</span>:<a href="../../String.html">String</a></code>&nbsp;[optional] &mdash; The mode of the filter. Possible values are the following:      <ul>      <li><code>"wrap"</code> &#x2014; Wraps the displacement value to the other side of the source image.</li>      <li><code>"clamp"</code> &#x2014; Clamps the displacement value to the edge of the source image.</li>      <li><code>"ignore"</code> &#x2014; If the displacement value is out of range, ignores the displacement and uses the source pixel.</li>      <li><code>"color"</code> &#x2014; If the displacement value is outside the image,      substitutes a pixel value composed of the <code>alpha</code> and      <code>color</code> properties of the filter.</li>      </ul>      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; Specifies the color to use for out-of-bounds displacements. The valid range of      displacements is 0.0 to 1.0. Use this parameter if <code>mode</code> is set to <code>"color"</code>.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">alpha</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; Specifies what alpha value to use for out-of-bounds displacements.      This is specified as a normalized value from 0.0 to 1.0. For example,      .25 sets a transparency value of 25%. The default is 0.         Use this parameter if <code>mode</code> is set to <code>"color"</code>.      </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following constructor function creates a new instance of the filter:      <div class='listing'><pre>
+myFilter = new flash.filters.DisplacementMapFilter (mapBitmap, mapPoint, componentX, componentY, scale, [mode], [color], [alpha])
+</pre></div>      <p></p>The following example instantiates a new <code>DisplacementMapFilter</code> with      a radial gradient bitmap and applies it to the text containing MovieClip object      <code>txtBlock</code>.      <div class='listing'><pre>
+import flash.filters.DisplacementMapFilter;
+import flash.display.BitmapData;
+import flash.geom.Point;
+import flash.geom.Matrix;
+import flash.geom.ColorTransform;
+
+var mapBitmap:BitmapData = createGradientBitmap(300, 80, 0xFF000000, "radial");
+
+var mapPoint:Point = new Point(-30, -30);
+var componentX:Number = 1;
+var componentY:Number = 1;
+var scaleX:Number = 10;
+var scaleY:Number = 10;
+var mode:String = "wrap";
+var color:Number = 0x000000;
+var alpha:Number = 0x000000;
+
+var filter:DisplacementMapFilter = new DisplacementMapFilter(mapBitmap, mapPoint, componentX, componentY, scaleX, scaleY, mode, color, alpha);
+
+var txtBlock:MovieClip = createTextBlock();
+txtBlock._x = 30;
+txtBlock._y = 30;
+
+txtBlock.filters = new Array(filter);
+
+function createGradientBitmap(w:Number, h:Number, bgColor:Number, type:String, hide:Boolean):BitmapData {
+    var mc:MovieClip = this.createEmptyMovieClip("mc", 1);
+    var matrix:Matrix = new Matrix();
+    matrix.createGradientBox(w, h, 0, 0, 0);
+
+    mc.beginGradientFill(type, [0xFF0000, 0x0000FF], [100, 100], [0x55, 0x99], matrix, "pad");        
+    mc.lineTo(w, 0);
+    mc.lineTo(w, h);
+    mc.lineTo(0, h);
+    mc.lineTo(0, 0);
+    mc.endFill();
+    (hide == true) ? mc._alpha = 0 : mc._alpha = 100;
+    
+    var bmp:BitmapData = new BitmapData(w, h, true, bgColor);
+        bmp.draw(mc, new Matrix(), new ColorTransform(), "normal", bmp.rectangle, true);
+    mc.attachBitmap(bmp, this.getNextHighestDepth());
+    
+    return bmp;
+}
+
+function createTextBlock():MovieClip {
+    var txtBlock:MovieClip = this.createEmptyMovieClip("txtBlock", this.getNextHighestDepth());
+        txtBlock.createTextField("txt", this.getNextHighestDepth(), 0, 0, 300, 80);
+    txtBlock.txt.text = "watch the text bend with the displacement map";
+    return txtBlock;
+}
+</pre></div>          <p></p>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="clone()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clone</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clone():<a href="DisplacementMapFilter.html">DisplacementMapFilter</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Returns a copy of this filter object.      </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="DisplacementMapFilter.html">DisplacementMapFilter</a></code> &mdash; 
+A new DisplacementMapFilter instance with all the same properties as the      original one.      
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates three DisplacementMapFilter objects and compares them: <code>filter_1</code>      is created by using the <code>DisplacementMapFilter</code> constructor; <code>filter_2</code> is created by setting it equal to      <code>filter_1</code>; and <code>clonedFilter</code> is created by cloning <code>filter_1</code>. Notice      that although <code>filter_2</code> evaluates as being equal to <code>filter_1</code>, <code>clonedFilter</code>,      even though it contains the same values as <code>filter_1</code>, does not.      <div class='listing'><pre>
+import flash.filters.DisplacementMapFilter;
+import flash.display.BitmapData;
+import flash.geom.Point;
+import flash.geom.Matrix;
+import flash.geom.ColorTransform;
+
+var mapBitmap:BitmapData = createGradientBitmap(300, 80, 0xFF000000, "radial", true);
+
+var filter_1:DisplacementMapFilter = new DisplacementMapFilter(mapBitmap, new Point(-30, -30), 1, 1, 10, 10, "wrap", 0x000000, 0x000000);
+var filter_2:DisplacementMapFilter = filter_1;
+var clonedFilter:DisplacementMapFilter = filter_1.clone();
+
+trace(filter_1 == filter_2);        // true
+trace(filter_1 == clonedFilter);    // false
+
+for(var i in filter_1) {
+    trace(">> " + i + ": " + filter_1[i]);
+    // >> clone: [type Function]
+    // >> alpha: 0
+    // >> color: 0
+    // >> mode: wrap
+    // >> scaleY: 10
+    // >> scaleX: 10
+    // >> componentY: 1
+    // >> componentX: 1
+    // >> mapPoint: (-30, -30)
+    // >> mapBitmap: [object Object]
+}
+
+for(var i in clonedFilter) {
+    trace(">> " + i + ": " + clonedFilter[i]);
+    // >> clone: [type Function]
+    // >> alpha: 0
+    // >> color: 0
+    // >> mode: wrap
+    // >> scaleY: 10
+    // >> scaleX: 10
+    // >> componentY: 1
+    // >> componentX: 1
+    // >> mapPoint: (-30, -30)
+    // >> mapBitmap: [object Object]
+}        
+
+function createGradientBitmap(w:Number, h:Number, bgColor:Number, type:String, hide:Boolean):BitmapData {
+    var mc:MovieClip = this.createEmptyMovieClip("mc", 1);
+    var matrix:Matrix = new Matrix();
+    matrix.createGradientBox(w, h, 0, 0, 0);
+
+    mc.beginGradientFill(type, [0xFF0000, 0x0000FF], [100, 100], [0x55, 0x99], matrix, "pad");        
+    mc.lineTo(w, 0);
+    mc.lineTo(w, h);
+    mc.lineTo(0, h);
+    mc.lineTo(0, 0);
+    mc.endFill();
+    (hide == true) ? mc._alpha = 0 : mc._alpha = 100;
+    
+    var bmp:BitmapData = new BitmapData(w, h, true, bgColor);
+        bmp.draw(mc, new Matrix(), new ColorTransform(), "normal", bmp.rectangle, true);
+    mc.attachBitmap(bmp, this.getNextHighestDepth());
+    
+    return bmp;
+}
+</pre></div>      To further demonstrate the relationships between <code>filter_1</code>, <code>filter_2</code>, and <code>clonedFilter</code>,      the following example modifies the <code>mode</code> property of <code>filter_1</code>.  Modifying <code>mode</code> demonstrates      that the <code>clone()</code> method creates a new instance based on values of <code>filter_1</code> instead of pointing to      them in reference.      <div class='listing'><pre>
+import flash.filters.DisplacementMapFilter;
+import flash.display.BitmapData;
+import flash.geom.Point;
+import flash.geom.Matrix;
+import flash.geom.ColorTransform;
+
+var mapBitmap:BitmapData = createGradientBitmap(300, 80, 0xFF000000, "radial", true);
+
+var filter_1:DisplacementMapFilter = new DisplacementMapFilter(mapBitmap, new Point(-30, -30), 1, 1, 10, 10, "wrap", 0x000000, 0x000000);
+var filter_2:DisplacementMapFilter = filter_1;
+var clonedFilter:DisplacementMapFilter = filter_1.clone();
+
+trace(filter_1.mode);            // wrap
+trace(filter_2.mode);            // wrap
+trace(clonedFilter.mode);        // wrap
+    
+filter_1.mode = "ignore";
+
+trace(filter_1.mode);            // ignore
+trace(filter_2.mode);            // ignore
+trace(clonedFilter.mode);        // wrap
+
+function createGradientBitmap(w:Number, h:Number, bgColor:Number, type:String, hide:Boolean):BitmapData {
+    var mc:MovieClip = this.createEmptyMovieClip("mc", 1);
+    var matrix:Matrix = new Matrix();
+    matrix.createGradientBox(w, h, 0, 0, 0);
+
+    mc.beginGradientFill(type, [0xFF0000, 0x0000FF], [100, 100], [0x55, 0x99], matrix, "pad");        
+    mc.lineTo(w, 0);
+    mc.lineTo(w, h);
+    mc.lineTo(0, h);
+    mc.lineTo(0, 0);
+    mc.endFill();
+    (hide == true) ? mc._alpha = 0 : mc._alpha = 100;
+    
+    var bmp:BitmapData = new BitmapData(w, h, true, bgColor);
+        bmp.draw(mc, new Matrix(), new ColorTransform(), "normal", bmp.rectangle, true);
+    mc.attachBitmap(bmp, this.getNextHighestDepth());
+    
+    return bmp;
+}
+</pre></div>          <p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

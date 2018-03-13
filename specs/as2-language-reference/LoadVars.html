@@ -1,0 +1,934 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="print.css" type="text/css" media="print">
+<meta content="LoadVars,contentType,loaded,addRequestHeader,decode,getBytesLoaded,getBytesTotal,load,send,sendAndLoad,toString" name="keywords">
+<title>LoadVars</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="asdoc.js"></script><script type="text/javascript" language="javascript" src="cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'LoadVars - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('all-classes.html')" href="package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('all-classes.html')" href="class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('index-list.html')" href="all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="index.html?LoadVars.html&amp;class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;LoadVars</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class LoadVars"); titleBar_setSubNav(false,true,false,false,true,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">Top Level</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public dynamic  class LoadVars</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">LoadVars <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="images/inherit-arrow.gif"> <a href="Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p></p>You can use the LoadVars class to obtain  verification of successful data loading and to  monitor download progress. <span class="flashonly">  The LoadVars class is an alternative to the  <code>loadVariables()</code> function for transferring  variables between a Flash application and a  server.</span>    <p>The LoadVars class  lets you send all the variables in an object to a  specified URL and to load all the variables at a  specified URL into an object. It also lets you  send specific variables, rather than all   variables, which can make your application more  efficient. You can use the <code>LoadVars.onLoad</code>  handler to ensure that your application runs when  data is loaded, and not before.</p>  <p>The LoadVars class works much like the XML  class; it uses the <code>load()</code>,  <code>send()</code>, and <code>sendAndLoad()</code> methods to communicate with a server. The main  difference between the LoadVars class and the XML  class is that LoadVars transfers ActionScript  name and value pairs, rather than an XML Document Object Model (DOM) tree  stored in the XML object. The LoadVars class  follows the same security restrictions as the XML  class.</p>  <p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="global_functions.html#loadVariables()" target="">loadVariables()</a>
+<br>
+<a href="LoadVars.html#event:onLoad" target="">LoadVars.onLoad</a>
+<br>
+<a href="XML.html" target="">XML</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#contentType">contentType</a> : <a href="String.html">String</a>
+<div class="summaryTableDescription">The MIME type that is sent to the server when you call <code>LoadVars.send()</code> or <code>LoadVars.sendAndLoad()</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#loaded">loaded</a> : <a href="Boolean.html">Boolean</a>
+<div class="summaryTableDescription">A Boolean value that indicates whether a <code>load</code> or <code>sendAndLoad</code> operation has completed, <code>undefined</code> by default.</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="Object.html#__proto__">__proto__</a>, <a href="Object.html#__resolve">__resolve</a>, <a href="Object.html#constructor">constructor</a>, <a href="Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#LoadVars()">LoadVars</a>()</div>
+<div class="summaryTableDescription">Creates a LoadVars object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addRequestHeader()">addRequestHeader</a>(header:<a href="Object.html">Object</a>, headerValue:<a href="String.html">String</a>):Void</div>
+<div class="summaryTableDescription">Adds or changes HTTP request headers (such as <code>Content-Type</code> or <code>SOAPAction</code>) sent with <code>POST</code> actions.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#decode()">decode</a>(queryString:<a href="String.html">String</a>):Void</div>
+<div class="summaryTableDescription">Converts the variable string to properties of the specified LoadVars object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getBytesLoaded()">getBytesLoaded</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the number of bytes downloaded by <code>LoadVars.load()</code> or <code>LoadVars.sendAndLoad()</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getBytesTotal()">getBytesTotal</a>():<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns the total number of bytes downloaded by <code>LoadVars.load()</code> or <code>LoadVars.sendAndLoad()</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#load()">load</a>(url:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Downloads variables from the specified URL, parses the variable data, and places the resulting variables in <code>my_lv</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#send()">send</a>(url:<a href="String.html">String</a>, target:<a href="String.html">String</a>, [method:<a href="String.html">String</a>]):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Sends the variables in the <code><em>my_lv</em></code> object to the specified URL.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#sendAndLoad()">sendAndLoad</a>(url:<a href="String.html">String</a>, target:<a href="Object.html">Object</a>, [method:<a href="String.html">String</a>]):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">Posts variables in the <code>my_lv</code> object to the specified URL.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toString()">toString</a>():<a href="String.html">String</a>
+</div>
+<div class="summaryTableDescription">Returns a string containing all enumerable variables in <code><em>my_lv</em></code>, in the MIME content encoding <em>application/x-www-form-urlencoded</em>.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="Object.html#addProperty()">addProperty</a>, <a href="Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="Object.html#registerClass()">registerClass</a>, <a href="Object.html#toString()">toString</a>, <a href="Object.html#unwatch()">unwatch</a>, <a href="Object.html#valueOf()">valueOf</a>, <a href="Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<a name="eventSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Events</div>
+<table id="summaryTableEvent" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Event</th><th>Summary</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onData">onData</a> = function(src:<a href="String.html">String</a>) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked when data has completely downloaded from the server or when an error occurs while data is downloading from a server.</td><td class="summaryTableOwnerCol">LoadVars</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onHTTPStatus">onHTTPStatus</a> = function(httpStatus:<a href="Number.html">Number</a>) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked when Flash Player receives an HTTP status code from the server.</td><td class="summaryTableOwnerCol">LoadVars</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onLoad">onLoad</a> = function(success:<a href="Boolean.html">Boolean</a>) {}</div>
+</td><td class="summaryTableDescription summaryTableCol">Invoked when a <code>LoadVars.load()</code> or <code>LoadVars.sendAndLoad()</code> operation has ended.</td><td class="summaryTableOwnerCol">LoadVars</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="contentType"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">contentType</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var contentType:<a href="String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>The MIME type that is sent to       the server when you call       <code>LoadVars.send()</code> or       <code>LoadVars.sendAndLoad()</code>. The       default is       <em>application/x-www-form-urlencoded</em>.            </p><p> In Flash Player 10 and later, if you use a multipart Content-Type (for example "multipart/form-data")       that contains an upload (indicated by a "filename" parameter in a "content-disposition" header within the POST body),       the POST operation is subject to the security rules applied to uploads:</p>       <ul>       <li>The POST operation must be performed in response to a user-initiated action, such as a mouse click or key press.</li>       <li>If the POST operation is cross-domain (the POST target is not on the same server as the SWF file       that is sending the POST request),       the target server must provide a URL policy file that permits cross-domain access.</li>       </ul>       <p>Also, for any multipart Content-Type, the syntax must be valid (according to the RFC2046 standard).       If the syntax appears to be invalid, the POST operation is subject to the security rules applied to uploads.</p>            <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="LoadVars.html#send()" target="">LoadVars.send()</a>
+<br>
+<a href="LoadVars.html#sendAndLoad()" target="">LoadVars.sendAndLoad()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a LoadVars object and displays the default content type of the data that is sent to the server.       <div class='listing'><pre>
+var my_lv:LoadVars = new LoadVars();
+trace(my_lv.contentType);  // output: application/x-www-form-urlencoded
+</pre></div>            <p></p>
+</div>
+<a name="loaded"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">loaded</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var loaded:<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>A Boolean value that indicates       whether a <code>load</code> or <code>sendAndLoad</code> operation has       completed, <code>undefined</code> by default. When a <code>LoadVars.load()</code> or <code>LoadVars.sendAndLoad()</code> operation is started, the <code>loaded</code> property is set to <code>false</code>; when the operation completes, the <code>loaded</code> property is set to <code>true</code>. If the operation has not completed or has failed with an error, the <code>loaded</code> property remains set to <code>false</code>.       </p><p>This property is similar to the <code>XML.loaded</code>property.</p>       <p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="LoadVars.html#load()" target="">LoadVars.load()</a>
+<br>
+<a href="LoadVars.html#sendAndLoad()" target="">LoadVars.sendAndLoad()</a>
+<br>
+<a href="XML.html#load()" target="">XML.load()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br><span class="flashonly">The following example loads a text file and displays information in the Output panel when the operation completes.</span><span class="flexonly">The following example loads a text file and writes information to the log file when the operation completes.</span>       <div class='listing'><pre>
+var my_lv:LoadVars = new LoadVars();
+my_lv.onLoad = function(success:Boolean) {
+    trace("LoadVars loaded successfully: "+this.loaded);
+};
+my_lv.load("http://www.helpexamples.com/flash/params.txt");
+</pre></div>            <p></p>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="LoadVars()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">LoadVars</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function LoadVars()</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Creates a LoadVars object. You can then use the methods of that LoadVars      object to send and load data.      </p><br>
+<span class="label">Example</span>
+<br>The following example creates a LoadVars object called <code>my_lv</code>:      <div class='listing'><pre>
+var my_lv:LoadVars = new LoadVars();
+</pre></div>          <p></p>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addRequestHeader()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addRequestHeader</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addRequestHeader(header:<a href="Object.html">Object</a>, headerValue:<a href="String.html">String</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Adds or changes HTTP request       headers (such as <code>Content-Type</code>  or <code>SOAPAction</code>)       sent with <code>POST</code> actions.       In the first usage, you pass two strings       to the method: <code>header</code> and <code>headerValue</code>. In the second usage, you pass an array       of strings, alternating header names and header values.       </p><p>If multiple calls are made to set the       same header name, each successive value       will replace the value set in the       previous call.</p>            <p>Note that only the <code>LoadVars.send()</code> and <code>LoadVars.sendAndLoad()</code> methods support POST,       so the <code>addRequestHeader()</code> method is effective only for <code>LoadVars.send()</code> and <code>LoadVars.sendAndLoad()</code>,       and not for <code>LoadVars.load()</code>.</p>                 <p>The following request headers cannot be used, and the restricted terms are not case-sensitive          (for example, <code>Get</code>, <code>get</code>, and <code>GET</code> are all not allowed). Also,        hyphenated terms apply if an underscore character is used (for example, both <code>Content-Length</code> and        <code>Content_Length</code> are not allowed): </p>               <p><code>Accept-Charset</code>, <code>Accept-Encoding</code>, <code>Accept-Ranges</code>, <code>Age</code>, <code>Allow</code>,        <code>Allowed</code>, <code>Authorization</code>, <code>Charge-To</code>, <code>Connect</code>,        <code>Connection</code>,        <code>Content-Length</code>, <code>Content-Location</code>, <code>Content-Range</code>, <code>Cookie</code>,        <code>Date</code>, <code>Delete</code>,        <code>ETag</code>, <code>Expect</code>, <code>Get</code>, <code>Head</code>, <code>Host</code>, <code>Keep-Alive</code>,        <code>Last-Modified</code>, <code>Location</code>,        <code>Max-Forwards</code>, <code>Options</code>, <code>Origin</code>, <code>Post</code>,        <code>Proxy-Authenticate</code>, <code>Proxy-Authorization</code>, <code>Proxy-Connection</code>,        <code>Public</code>, <code>Put</code>,        <code>Range</code>, <code>Referer</code>, <code>Request-Range</code>, <code>Retry-After</code>, <code>Server</code>,        <code>TE</code>, <code>Trace</code>, <code>Trailer</code>, <code>Transfer-Encoding</code>,        <code>Upgrade</code>, <code>URI</code>, <code>User-Agent</code>, <code>Vary</code>, <code>Via</code>, <code>Warning</code>,        <code>WWW-Authenticate</code>, <code>x-flash-version</code>.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">header</span>:<a href="Object.html">Object</a></code> &mdash; A string or array of       strings that       represents an HTTP request header name.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">headerValue</span>:<a href="String.html">String</a></code> &mdash; A string that       represents the value associated with       <code>header</code>.            </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="LoadVars.html#send()" target="">LoadVars.send()</a>
+<br>
+<a href="LoadVars.html#sendAndLoad()" target="">LoadVars.sendAndLoad()</a>
+<br>
+<a href="XML.html#addRequestHeader()" target="">XML.addRequestHeader()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example adds a       custom HTTP header named <code>SOAPAction</code> with a value of <code>Foo</code> to the       <code>my_lv</code> object:       <div class='listing'><pre>
+my_lv.addRequestHeader("SOAPAction", "'Foo'");
+</pre></div>       <p>The following example creates an array named <code>headers</code> that contains two alternating HTTP headers and their associated values.       The array is passed as an argument to <code>addRequestHeader()</code>.</p>       <div class='listing'><pre>
+var headers = ["Content-Type", "text/plain", "X-ClientAppVersion", "2.0"];
+my_lv.addRequestHeader(headers);
+</pre></div>       <p>The following example creates a new       LoadVars object that adds a request       header called <code>FLASH-UUID</code>.       The header contains a variable that can       be checked by the server.</p>       <div class='listing'><pre>
+var my_lv:LoadVars = new LoadVars();
+my_lv.addRequestHeader("FLASH-UUID", "41472");
+my_lv.name = "Mort";
+my_lv.age = 26;
+my_lv.send("http://flash-mx.com/mm/cgivars.cfm", "_blank", "POST");
+</pre></div>                <p></p>
+</div>
+<a name="decode()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">decode</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function decode(queryString:<a href="String.html">String</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Converts the variable string to properties of the specified LoadVars object.       </p><p>This method is used internally by the <code>LoadVars.onData</code> event handler. Most users do not need to call this method directly. If you override the <code>LoadVars.onData</code> event handler, you can explicitly call <code>LoadVars.decode()</code> to parse a string of variables.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">queryString</span>:<a href="String.html">String</a></code> &mdash; A URL-encoded query string containing name/value pairs.                </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="LoadVars.html#event:onData" target="">LoadVars.onData</a>
+<br>
+<a href="XML.html#parseXML()" target="">XML.parseXML()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the three variables:       <div class='listing'><pre>
+// Create a new LoadVars object
+var my_lv:LoadVars = new LoadVars();
+//Convert the variable string to properties
+my_lv.decode("name=Mort&amp;score=250000");
+trace(my_lv.toString());
+// Iterate over properties in my_lv
+for (var prop in my_lv) {
+    trace(prop+" -&gt; "+my_lv[prop]);
+}
+</pre></div>            <p></p>
+</div>
+<a name="getBytesLoaded()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getBytesLoaded</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getBytesLoaded():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Returns the number of bytes downloaded by <code>LoadVars.load()</code> or <code>LoadVars.sendAndLoad()</code>. This method returns <code>undefined</code> if no load operation is in progress or if a load operation has not yet begun.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.       
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="LoadVars.html#load()" target="">LoadVars.load()</a>
+<br>
+<a href="LoadVars.html#sendAndLoad()" target="">LoadVars.sendAndLoad()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example uses a ProgressBar instance and a LoadVars object to download a text file. <span class="flashonly">When you test the file, two things are displayed in the Output panel:</span><span class="flexonly">When you test the file, two things write to the log file:</span> whether the file loads successfully and how much data loads into the SWF file. You must replace the URL parameter of the <code>LoadVars.load()</code> command so that the parameter refers to a valid text file using HTTP. If you attempt to use this example to load a local file that resides on your hard disk, this example will not work properly because in <span class="flashonly">Test Movie mode</span><span class="flexonly">test mode</span> Flash Player loads local files in their entirety. To see this code work, add a ProgressBar instance called <code>loadvars_pb</code> to the Stage. Then add the following ActionScript<span class ="flashonly"> to Frame 1 of the Timeline</span>:       <div class='listing'><pre>
+var loadvars_pb:mx.controls.ProgressBar;
+var my_lv:LoadVars = new LoadVars();
+loadvars_pb.mode = "manual";
+this.createEmptyMovieClip("timer_mc", 999);
+timer_mc.onEnterFrame = function() {
+    var lvBytesLoaded:Number = my_lv.getBytesLoaded();
+    var lvBytesTotal:Number = my_lv.getBytesTotal();
+    if (lvBytesTotal != undefined) {
+    trace("Loaded "+lvBytesLoaded+" of "+lvBytesTotal+" bytes.");
+    loadvars_pb.setProgress(lvBytesLoaded, lvBytesTotal);
+    }
+};
+my_lv.onLoad = function(success:Boolean) {
+    loadvars_pb.setProgress(my_lv.getBytesLoaded(), my_lv.getBytesTotal());
+    delete timer_mc.onEnterFrame;
+    if (success) {
+    trace("LoadVars loaded successfully.");
+    } else {
+    trace("An error occurred while loading variables.");
+    }
+};
+my_lv.load("<code><em>[place a valid URL pointing to a text file here]</em></code>");
+</pre></div>            <p></p>
+</div>
+<a name="getBytesTotal()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getBytesTotal</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getBytesTotal():<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Returns the total number of bytes downloaded by <code>LoadVars.load()</code> or <code>LoadVars.sendAndLoad()</code>. This method returns <code>undefined</code> if no load operation is in progress or if a load operation has not started. This method also returns <code>undefined</code> if the number of total bytes can't be determined (for example, if the download was initiated but the server did not transmit an HTTP content-length).            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="LoadVars.html#load()" target="">LoadVars.load()</a>
+<br>
+<a href="LoadVars.html#sendAndLoad()" target="">LoadVars.sendAndLoad()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example uses a ProgressBar instance and a LoadVars object to download a text file. <span class="flashonly">When you test the file, two things are displayed in the Output panel: </span><span class="flexonly">When you test the file, two things write to the log file: </span>whether the file loads successfully and how much data loads into the SWF file. You must replace the URL parameter of the <code>LoadVars.load()</code> command so that the parameter refers to a valid text file using HTTP. If you attempt to use this example to load a local file that resides on your hard disk, this example will not work properly because in test movie mode Flash Player loads local files in their entirety. To see this code work, add a ProgressBar instance called <code>loadvars_pb</code> to the Stage. Then add the following ActionScript<span class="flashonly"> to Frame 1 of the Timeline</span>:       <div class='listing'><pre>
+var loadvars_pb:mx.controls.ProgressBar;
+var my_lv:LoadVars = new LoadVars();
+loadvars_pb.mode = "manual";
+this.createEmptyMovieClip("timer_mc", 999);
+timer_mc.onEnterFrame = function() {
+    var lvBytesLoaded:Number = my_lv.getBytesLoaded();
+    var lvBytesTotal:Number = my_lv.getBytesTotal();
+    if (lvBytesTotal != undefined) {
+    trace("Loaded "+lvBytesLoaded+" of "+lvBytesTotal+" bytes.");
+    loadvars_pb.setProgress(lvBytesLoaded, lvBytesTotal);
+    }
+};
+my_lv.onLoad = function(success:Boolean) {
+    loadvars_pb.setProgress(my_lv.getBytesLoaded(), my_lv.getBytesTotal());
+    delete timer_mc.onEnterFrame;
+    if (success) {
+    trace("LoadVars loaded successfully.");
+    } else {
+    trace("An error occurred while loading variables.");
+    }
+};
+my_lv.load("<code><em>[place a valid URL pointing to a text file here]</em></code>");
+</pre></div>            <p></p>
+</div>
+<a name="load()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">load</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function load(url:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6 &mdash; Behavior changed in Flash Player 7.</td>
+</tr>
+</table>
+<p></p><p>Downloads variables from the specified URL, parses the variable data, and places the       resulting variables in <code>my_lv</code>. Any properties in <code>my_lv</code> with the same       names as downloaded variables are overwritten. Any properties in       <code>my_lv</code> with different names than downloaded variables are not deleted.       This is an asynchronous action.             </p><p>The downloaded data must be in the MIME content type       <em>application/x-www-form-urlencoded</em>.</p>       <span class="flashonly">This is the same format that is used by       <code>loadVariables()</code>.</span>             <span class="flashonly"><p>Also, in files published for Flash Player 7, case-sensitivity is       supported for external variables that are loaded with <code>LoadVars.load()</code>.</p></span>             <p>This method supports only GET requests. Therefore calling <code>LoadVars.addRequestHeader()</code>       is ineffective for calls to <code>load()</code>.</p>            <p>This method is similar to <code>XML.load()</code>.</p>             <p><strong>Note: </strong>If a file being loaded contains non-ASCII characters (as found       in many non-English languages), it is recommended that you save the       file with UTF-8 or UTF-16 encoding as opposed to a non-Unicode format       like ASCII.</p>             <p>When using this method, consider the Flash Player security model:</p>             <ul>       <li>Data loading is not allowed if the calling SWF file is in the local-with-file-system       sandbox and the target resource is from a network sandbox.</li>       <li>Data loading is also not allowed if the calling SWF file is from a network sandbox and the       target resource is local.</li>       <li>Data loading from a different domain requires a policy file on the target resource.</li>        <li>You cannot connect to commonly reserved ports. For a complete list of blocked       ports, see the <code>system.Security.loadPolicyFile()</code> entry.</li>            </ul>             <p>For more information related to security, see the following: </p>            <ul>          <li>"Understanding Security" in <i>Learning ActionScript 2.0 in Flash</i></li>       <li>The Flash Player Developer Center Topic:       <a href="http://www.adobe.com/go/devnet_security_en" target="external">Security</a></li>       </ul>            <p><strong>Note:</strong> IPv6 (Internet Protocol version 6) is supported<span platform="actionscript">       in Flash Player 9.0.115.0 and later</span>.            IPv6 is a version of Internet Protocol that supports       128-bit addresses (an improvement on the earlier IPv4 protocol that supports 32-bit       addresses). You might need to activate IPv6 on your networking interfaces. For more       information, see the Help for the operating system hosting the data.       If IPv6 is supported on the hosting system, you can specify numeric IPv6 literal addresses       in URLs enclosed in brackets ([])<span platform="actionscript">, as in the following</span>. </p>             <span platform="actionscript">       <pre>
+      rtmp://[2001:db8:ccc3:ffff:0:444d:555e:666f]:1935/test
+      </pre>       </span>             </p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">url</span>:<a href="String.html">String</a></code> &mdash; A string; the URL from which to download the variables. If the SWF file issuing this call       is running in a web browser, <code>url</code> must be in the same domain as the SWF file.             </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+<code>false</code> if no parameter (null) is passed; <code>true</code> otherwise. Use the       <code>onLoad()</code> event handler to check the success of loaded data.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="XML.html#load()" target="">XML.load()</a>
+<br>
+<a href="LoadVars.html#loaded" target="">LoadVars.loaded</a>
+<br>
+<a href="LoadVars.html#event:onLoad" target="">LoadVars.onLoad</a>
+<br>
+<a href="System.html#useCodepage" target="">System.useCodepage</a>
+<br>
+<a href="System/security.html#loadPolicyFile()" target="">System.security.loadPolicyFile() for a list of reserved ports</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following code defines an <code>onLoad</code> handler function that signals when       data is returned to the Flash application from a server-side PHP script, and then loads the       data in passvars.php.       <div class='listing'><pre>
+var my_lv:LoadVars = new LoadVars();
+my_lv.onLoad = function(success:Boolean) {
+    if (success) {
+    trace(this.toString());
+    } else {
+    trace("Error loading/parsing LoadVars.");
+    }
+};
+my_lv.load("http://www.helpexamples.com/flash/params.txt");
+</pre></div>       <span class="flashonly"><p>For another example, see the Flash Samples page at <a href="http://www.adobe.com/go/learn_fl_samples" target="newWindow">www.adobe.com/go/learn_fl_samples</a>.        Download and decompress the Samples zip file and go to the ActionScript2.0\DataIntegration\Guestbook folder to access the guestbook.fla file.</p>       </span>            <p></p>
+</div>
+<a name="send()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">send</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function send(url:<a href="String.html">String</a>, target:<a href="String.html">String</a>, [method:<a href="String.html">String</a>]):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Sends the variables in the <code><em>my_lv</em></code> object to the specified URL. All enumerable variables in <code><em>my_lv</em></code> are concatenated into a string in the <code><em>application/x-www-form-urlencoded</em></code> format by default, and the string is posted to the URL using the HTTP <code>POST</code> method. <span class="flashonly">This is the same format used by <code>loadVariables()</code>.</span>The MIME content type sent in the HTTP request headers is the value of <code>my_lv.contentType</code> or the default <code><em>application/x-www-form-urlencoded</em></code>. The <code>POST</code> method is used unless <code>GET</code> is specified.       </p><p>You must specify the <code>target</code> parameter to ensure that the script or application at the specified URL will be executed. If you omit the <code>target</code> parameter, the function will return <code>true</code>, but the script or application will not be executed.</p>       <p>The <code>send()</code> method is useful if you want the server response to:</p>       <ul>         <li>Replace the SWF content (use <code>"_self"</code> as the <code>target</code> parameter);</li>         <li>Appear in a new window (use <code>"_blank"</code> as the <code>target</code> parameter);</li>         <li>Appear in the parent or top-level frame (use <code>"_parent"</code> or <code>"_top"</code> as the <code>target</code> parameter); </li>         <li>Appear in a named frame (use the frame's name as a string for the <code>target</code> parameter).</li>       </ul>       <p>A successful <code>send()</code> method call will always open a new browser window or replace content in an existing window or frame. If you would rather send information to a server and continue playing your SWF file without opening a new window or replacing content in a window or frame, then you should use <code>LoadVars.sendAndLoad()</code>.</p>       <p>This method is similar to <code>XML.send()</code>.</p>       <p>The Flash test environment always uses the GET method. To test using the POST method, be sure you are attempting to use it from within a browser.</p>            <p>The use of this method is not allowed if the calling SWF file is in an untrusted local sandbox.</p>             <p>You cannot connect to commonly reserved ports. For a complete list of blocked       ports, see the <code>system.Security.loadPolicyFile()</code> entry.</p>            <p> In Flash Player 10 and later, if you use a multipart Content-Type (for example "multipart/form-data")       that contains an upload (indicated by a "filename" parameter in a "content-disposition" header within the POST body),       the POST operation is subject to the security rules applied to uploads:</p>       <ul>       <li>The POST operation must be performed in response to a user-initiated action, such as a mouse click or key press.</li>       <li>If the POST operation is cross-domain (the POST target is not on the same server as the SWF file       that is sending the POST request),       the target server must provide a URL policy file that permits cross-domain access.</li>       </ul>       <p>Also, for any multipart Content-Type, the syntax must be valid (according to the RFC2046 standard).       If the syntax appears to be invalid, the POST operation is subject to the security rules applied to uploads.</p>            <p>For more information related to security, see the following: </p>            <ul>          <li>"Understanding Security" in <i>Learning ActionScript 2.0 in Flash</i></li>       <li>The Flash Player Developer Center Topic:       <a href="http://www.adobe.com/go/devnet_security_en" target="external">Security</a></li>       </ul>            <p><strong>Note:</strong> IPv6 (Internet Protocol version 6) is supported<span platform="actionscript">       in Flash Player 9.0.115.0 and later</span>.            IPv6 is a version of Internet Protocol that supports       128-bit addresses (an improvement on the earlier IPv4 protocol that supports 32-bit       addresses). You might need to activate IPv6 on your networking interfaces. For more       information, see the Help for the operating system hosting the data.       If IPv6 is supported on the hosting system, you can specify numeric IPv6 literal addresses       in URLs enclosed in brackets ([])<span platform="actionscript">, as in the following</span>. </p>             <span platform="actionscript">       <pre>
+      rtmp://[2001:db8:ccc3:ffff:0:444d:555e:666f]:1935/test
+      </pre>       </span>            </p>           <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">url</span>:<a href="String.html">String</a></code> &mdash; A string; the URL to which to upload variables.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">target</span>:<a href="String.html">String</a></code> &mdash; A string; the browser window or frame in which any response will appear. You can enter the name of a specific window or select from the following reserved target names:           <ul>         <li><code>"_self"</code> specifies the current frame in the current window.</li>         <li><code>"_blank"</code> specifies a new window.</li>         <li><code>"_parent"</code> specifies the parent of the current frame.</li>         <li><code>"_top"</code> specifies the top-level frame in the current window.</li>       </ul>       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">method</span>:<a href="String.html">String</a></code>&nbsp;[optional] &mdash; A string; the <code>GET </code>or <code>POST</code> method of the HTTP protocol.    The default value is <code>POST</code>.       </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+A Boolean value; <code>false</code> if no parameters are specified, <code>true</code> otherwise.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="LoadVars.html#sendAndLoad()" target="">LoadVars.sendAndLoad()</a>
+<br>
+<a href="XML.html#send()" target="">XML.send()</a>
+<br>
+<a href="System/security.html#loadPolicyFile()" target="">System.security.loadPolicyFile() for a list of reserved ports</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example copies two values from text fields and sends the data to a CFM script, which is used to handle the information. For example, the script might check if the user got a high score and then insert that data into a database table.       <div class='listing'><pre>
+var my_lv:LoadVars = new LoadVars();
+my_lv.playerName = playerName_txt.text;
+my_lv.playerScore = playerScore_txt.text;
+my_lv.send("setscore.cfm", "_blank", "POST");
+</pre></div>            <p></p>
+</div>
+<a name="sendAndLoad()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">sendAndLoad</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function sendAndLoad(url:<a href="String.html">String</a>, target:<a href="Object.html">Object</a>, [method:<a href="String.html">String</a>]):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6 &mdash; Behavior changed in Flash Player 7.</td>
+</tr>
+</table>
+<p></p><p>Posts variables in the <code>my_lv</code> object to the specified URL. The server       response is downloaded, parsed as variable data, and the resulting variables are placed in the       <code>target</code> object.             </p><p>Variables are posted in the same manner as <code>LoadVars.send()</code>. Variables are       downloaded into <code>target</code> in the same manner as <code>LoadVars.load()</code>.</p>             <p>When using this method, consider the Flash Player security model:</p>             <ul>       <li>Data loading is not allowed if the calling SWF file is in the local-with-file-system       sandbox and the target resource is from a network sandbox.</li>       <li>Data loading is also not allowed if the calling SWF file is from a network sandbox and the       target resource is local.</li>       <li>Data loading from a different domain requires a policy file on the target resource.</li>        <li>You cannot connect to commonly reserved ports. For a complete list of blocked       ports, see the <code>system.Security.loadPolicyFile()</code> entry.</li>            </ul>       <p> In Flash Player 10 and later, if you use a multipart Content-Type (for example "multipart/form-data")       that contains an upload (indicated by a "filename" parameter in a "content-disposition" header within the POST body),       the POST operation is subject to the security rules applied to uploads:</p>       <ul>       <li>The POST operation must be performed in response to a user-initiated action, such as a mouse click or key press.</li>       <li>If the POST operation is cross-domain (the POST target is not on the same server as the SWF file       that is sending the POST request),       the target server must provide a URL policy file that permits cross-domain access.</li>       </ul>       <p>Also, for any multipart Content-Type, the syntax must be valid (according to the RFC2046 standard).       If the syntax appears to be invalid, the POST operation is subject to the security rules applied to uploads.</p>             <p>For more information related to security, see the following: </p>            <ul>          <li>"Understanding Security" in <i>Learning ActionScript 2.0 in Flash</i></li>       <li>The Flash Player Developer Center Topic:       <a href="http://www.adobe.com/go/devnet_security_en" target="external">Security</a></li>       </ul>            <p><strong>Note:</strong> IPv6 (Internet Protocol version 6) is supported<span platform="actionscript">       in Flash Player 9.0.115.0 and later</span>.            IPv6 is a version of Internet Protocol that supports       128-bit addresses (an improvement on the earlier IPv4 protocol that supports 32-bit       addresses). You might need to activate IPv6 on your networking interfaces. For more       information, see the Help for the operating system hosting the data.       If IPv6 is supported on the hosting system, you can specify numeric IPv6 literal addresses       in URLs enclosed in brackets ([])<span platform="actionscript">, as in the following</span>. </p>             <span platform="actionscript">       <pre>
+      rtmp://[2001:db8:ccc3:ffff:0:444d:555e:666f]:1935/test
+      </pre>       </span>             </p>      <p>This method is similar to <code>XML.sendAndLoad()</code>.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">url</span>:<a href="String.html">String</a></code> &mdash; A string; the URL to which to upload variables. If the SWF file issuing this call is running in a web browser, <code>url</code> must be in the same domain as the SWF file.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">target</span>:<a href="Object.html">Object</a></code> &mdash; The LoadVars or XML object that receives the downloaded variables.           </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">method</span>:<a href="String.html">String</a></code>&nbsp;[optional] &mdash; A string; the <code>GET </code>or <code>POST</code> method of the HTTP protocol.    The default value is <code>POST</code>.       </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+A Boolean value.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="LoadVars.html#send()" target="">LoadVars.send()</a>
+<br>
+<a href="LoadVars.html#load()" target="">LoadVars.load()</a>
+<br>
+<a href="XML.html#sendAndLoad()" target="">XML.sendAndLoad()</a>
+<br>
+<a href="System/security.html#loadPolicyFile()" target="">System.security.loadPolicyFile() for a list of reserved ports</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br><span class="flashonly">For the following example, add a TextInput instance called <code>name_ti</code>, a TextArea instance called <code>result_ta</code>, and a Button instance called <code>submit_button</code> to the Stage. When the user clicks the Login button instance in the following example, two LoadVars objects are created: <code>send_lv</code> and <code>result_lv</code>. The <code>send_lv</code> object copies the name from the <code>name_ti</code> instance and sends the data to greeting.cfm. The result from this script loads into the <code>result_lv</code> object, and the server response displays in the TextArea instance (<code>result_ta</code>). Add the following ActionScript to Frame 1 of the Timeline:       <div class='listing'><pre>
+var submitListener:Object = new Object();
+submitListener.click = function(evt:Object) {
+    var result_lv:LoadVars = new LoadVars();
+    result_lv.onLoad = function(success:Boolean) {
+    if (success) {
+        result_ta.text = result_lv.welcomeMessage;
+    } else {
+        result_ta.text = "Error connecting to server.";
+    }
+    };
+    var send_lv:LoadVars = new LoadVars();
+    send_lv.name = name_ti.text;
+    send_lv.sendAndLoad("http://www.flash-mx.com/mm/greeting.cfm", result_lv, "POST");
+};
+submit_button.addEventListener("click", submitListener);
+</pre></div>      <p>For another example, see the Flash Samples page at <a href="http://www.adobe.com/go/learn_fl_samples" target="newWindow">www.adobe.com/go/learn_fl_samples</a>.        Download and decompress the Samples zip file and go to the ActionScript2.0\Login folder to access the login.fla file.</p>       </span>            <p></p>
+</div>
+<a name="toString()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function toString():<a href="String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Returns a string containing all enumerable variables in <code><em>my_lv</em></code>, in the MIME content encoding <em>application/x-www-form-urlencoded</em>.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; 
+A string.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example instantiates a new <code>LoadVars()</code> object, creates two properties, and uses <code>toString()</code> to return a string containing both properties in URL encoded format:       <div class='listing'><pre>
+var my_lv:LoadVars = new LoadVars();
+my_lv.name = "Gary";
+my_lv.age = 26;
+trace (my_lv.toString()); //output: age=26&amp;name=Gary
+</pre></div>             <p></p>
+</div>
+<div class="detailSectionHeader">Event detail</div>
+<a name="event:onData"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onData</td><td class="detailHeaderType">event&nbsp;handler</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onData = function(src:<a href="String.html">String</a>) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Invoked when data has completely downloaded from the server or when an error occurs while data is downloading from a server. This handler is invoked before the data is parsed and can be used to call a custom parsing routine instead of the one built in to Flash Player. The value of the <code>src</code> parameter passed to the function assigned to <code>LoadVars.onData</code> can be either <code>undefined</code> or a string that contains the URL-encoded name-value pairs downloaded from the server. If the <code>src</code> parameter is <code>undefined</code>, an error occurred while downloading the data from the server.       </p><p>The default implementation of <code>LoadVars.onData</code> invokes <code>LoadVars.onLoad</code>. You can override this default implementation by assigning a custom function to <code>LoadVars.onData</code>, but <code>LoadVars.onLoad</code> is not called unless you call it in your implementation of <code>LoadVars.onData</code>.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">src</span>:<a href="String.html">String</a></code> &mdash; A string or <code>undefined</code>; the raw (unparsed) data from a <code>LoadVars.load()</code> or <code>LoadVars.sendAndLoad()</code> method call.                 </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example loads a text file and displays content in a TextArea instance called <code>content_ta</code> when the operation completes. <span class="flashonly">If an error occurs, then information displays in the Output panel.</span><span class="flexonly">If an error occurs, then information writes to the log file.</span>       <div class='listing'><pre>
+var my_lv:LoadVars = new LoadVars();
+my_lv.onData = function(src:String) {
+    if (src == undefined) {
+        trace("Error loading content.");
+        return;
+    }
+    content_ta.text = src;
+};
+my_lv.load("content.txt", my_lv, "GET");
+</pre></div>            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="LoadVars.html#event:onLoad" target="">LoadVars.onLoad</a>
+<br>
+<a href="LoadVars.html#event:onLoad" target="">LoadVars.onLoad</a>
+<br>
+<a href="LoadVars.html#load()" target="">LoadVars.load()</a>
+<br>
+<a href="LoadVars.html#sendAndLoad()" target="">LoadVars.sendAndLoad()</a>
+</div>
+</div>
+<a name="event:onHTTPStatus"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onHTTPStatus</td><td class="detailHeaderType">event&nbsp;handler</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onHTTPStatus = function(httpStatus:<a href="Number.html">Number</a>) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Invoked when Flash Player receives an HTTP status code from the server.       This handler lets you capture and act on HTTP status codes.            </p><p>The <code>onHTTPStatus</code> handler is invoked before <code>onData</code>,       which triggers calls to <code>onLoad</code> with a value of <code>undefined</code>       if the load fails. After <code>onHTTPStatus</code> is       triggered, <code>onData</code> is <i>always</i> triggered, whether       or not you override <code>onHTTPStatus</code>. To best use the <code>onHTTPStatus</code>       handler, you should write a function to catch the result of the <code>onHTTPStatus</code> call;       you can then use the result in your <code>onData</code> and <code>onLoad</code> handlers.       If <code>onHTTPStatus</code> is not invoked, this indicates that the player did not try to make       the URL request. This can happen because the request violates security sandbox rules for the SWF file.</p>             <p>If Flash Player cannot get a status code from the server,       or if it cannot communicate with the server, the default value       of 0 is passed to your ActionScript code. A value of 0 can be generated       in any player (for example, if a malformed URL is requested), and a value of 0 is always       generated by the Flash Player plug-in when it is run in the following browsers,       which do not pass HTTP status codes to the player:       Netscape, Mozilla, Safari, Opera, and Internet Explorer for the Macintosh.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">httpStatus</span>:<a href="Number.html">Number</a></code> &mdash; The HTTP status code returned by the server.       For example, a value of 404 indicates that the server       has not found a match for the requested URI.       HTTP status codes can be found in sections 10.4 and 10.5 of the HTTP specification       at <a target="mm_external" href = "ftp://ftp.isi.edu/in-notes/rfc2616.txt">ftp://ftp.isi.edu/in-notes/rfc2616.txt</a>.            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to use <code>onHTTPStatus()</code>       to help with debugging.  The example collects HTTP status codes and assigns       their value and type to an instance of the LoadVars object. (Notice       that this example creates the instance members <code>this.httpStatus</code> and <code>this.httpStatusType</code> at runtime.)       The <code>onData</code> method uses these instance members to trace information       about the HTTP response that can be useful in debugging.       <div class='listing'><pre>
+var myLoadVars:LoadVars = new LoadVars();
+
+myLoadVars.onHTTPStatus = function(httpStatus:Number) {
+    this.httpStatus = httpStatus;
+    if(httpStatus &lt; 100) {
+        this.httpStatusType = "flashError";
+    }
+    else if(httpStatus &lt; 200) {
+        this.httpStatusType = "informational";
+    }
+    else if(httpStatus &lt; 300) {
+        this.httpStatusType = "successful";
+    }
+    else if(httpStatus &lt; 400) {
+        this.httpStatusType = "redirection";
+    }
+    else if(httpStatus &lt; 500) {
+        this.httpStatusType = "clientError";
+    }
+    else if(httpStatus &lt; 600) {
+        this.httpStatusType = "serverError";
+    }
+}
+
+myLoadVars.onData = function(src:String) {
+    trace(">> " + this.httpStatusType + ": " + this.httpStatus);
+    if(src != undefined) {
+        this.decode(src);
+        this.loaded = true;
+        this.onLoad(true);
+    }
+    else {
+        this.onLoad(false);
+    }
+}
+
+myLoadVars.onLoad = function(success:Boolean) {
+}
+    
+myLoadVars.load("http://blogs.adobe.com/mxna/flashservices/getMostRecentPosts.cfm");
+</pre></div>      <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="XML.html#event:onHTTPStatus" target="">XML.onHTTPStatus</a>
+<br>
+<a href="LoadVars.html#load()" target="">LoadVars.load()</a>
+<br>
+<a href="LoadVars.html#sendAndLoad()" target="">LoadVars.sendAndLoad()</a>
+</div>
+</div>
+<a name="event:onLoad"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onLoad</td><td class="detailHeaderType">event&nbsp;handler</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<p>
+<code>public onLoad = function(success:<a href="Boolean.html">Boolean</a>) {}</code>
+</p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Invoked when a <code>LoadVars.load()</code> or <code>LoadVars.sendAndLoad()</code>       operation has ended. If the operation was successful, <code>my_lv</code>       is populated with variables downloaded by the operation, and these variables are       available when this handler is invoked.             </p><p>This handler is undefined by default.</p>             <p>This event handler is similar to <code>XML.onLoad</code>.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">success</span>:<a href="Boolean.html">Boolean</a></code> &mdash; A Boolean value that indicates whether the load operation ended       in success (<code>true</code>) or failure (<code>false</code>).            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br><span class="flashonly">The following example adds a TextInput instance       called <code>name_ti</code>, a TextArea instance called <code>result_ta</code>, and a       Button instance called <code>submit_button</code> to the Stage. When the user clicks the       Login button instance, two LoadVars objects are created:       <code>send_lv</code> and <code>result_lv</code>. The <code>send_lv</code> object copies       the name from the <code>name_ti</code> instance and sends the data to greeting.cfm.       The result from this script loads into the <code>result_lv</code> object, and the server       response is displayed in the TextArea instance (<code>result_ta</code>). Add the following       ActionScript on Frame 1 of the Timeline:             <div class='listing'><pre>
+var submitListener:Object = new Object();
+submitListener.click = function(evt:Object) {
+    var result_lv:LoadVars = new LoadVars();
+    result_lv.onLoad = function(success:Boolean) {
+        if (success) {
+            result_ta.text = result_lv.welcomeMessage;
+        } else {
+            result_ta.text = "Error connecting to server.";
+        }
+    };
+    var send_lv:LoadVars = new LoadVars();
+    send_lv.name = name_ti.text;
+    send_lv.sendAndLoad("http://www.flash-mx.com/mm/greeting.cfm", result_lv, "POST");
+};
+submit_button.addEventListener("click", submitListener);
+</pre></div>       For another example, see the Flash Samples page at <a href="http://www.adobe.com/go/learn_fl_samples" target="newWindow">www.adobe.com/go/learn_fl_samples</a>.        Download and decompress the Samples zip file and go to the ActionScript2.0\Login folder to access the login.fla file.       </span>            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="XML.html#event:onLoad" target="">XML.onLoad</a>
+<br>
+<a href="LoadVars.html#loaded" target="">LoadVars.loaded</a>
+<br>
+<a href="LoadVars.html#load()" target="">LoadVars.load()</a>
+<br>
+<a href="LoadVars.html#sendAndLoad()" target="">LoadVars.sendAndLoad()</a>
+</div>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

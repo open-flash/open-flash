@@ -1,0 +1,336 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="print.css" type="text/css" media="print">
+<meta content="CustomActions,get,install,list,uninstall" name="keywords">
+<title>CustomActions</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="asdoc.js"></script><script type="text/javascript" language="javascript" src="cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'CustomActions - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('all-classes.html')" href="package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('all-classes.html')" href="class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('index-list.html')" href="all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="index.html?CustomActions.html&amp;class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;CustomActions</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class CustomActions"); titleBar_setSubNav(false,false,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">Top Level</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class CustomActions</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">CustomActions <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="images/inherit-arrow.gif"> <a href="Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p></p>The methods of the CustomActions class allow a SWF file playing in the Flash authoring tool to manage any custom actions that are registered with the authoring tool. A SWF file can install and uninstall custom actions, retrieve the XML definition of a custom action, and retrieve the list of registered custom actions.   <p>You can use these methods to build SWF files that are extensions of the Flash authoring tool. Such an extension could, for example, use the Flash Application Protocol to navigate a UDDI repository and download web services into the Actions toolbox.</p>    <p></p>
+<br>
+<hr>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#get()">get</a>(name:<a href="String.html">String</a>):<a href="String.html">String</a>
+</div>
+<div class="summaryTableDescription">[static]Reads the contents of the custom action XML definition file named <code>name</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#install()">install</a>(name:<a href="String.html">String</a>, data:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">[static]Installs a new custom action XML definition file indicated by the <code>name</code> parameter.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#list()">list</a>():<a href="Array.html">Array</a>
+</div>
+<div class="summaryTableDescription">[static]Returns an Array object containing the names of all the custom actions that are registered with the Flash authoring tool.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#uninstall()">uninstall</a>(name:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">[static]Removes the Custom Actions XML definition file named <code>name</code>.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="Object.html#addProperty()">addProperty</a>, <a href="Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="Object.html#registerClass()">registerClass</a>, <a href="Object.html#toString()">toString</a>, <a href="Object.html#unwatch()">unwatch</a>, <a href="Object.html#valueOf()">valueOf</a>, <a href="Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="get()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">get</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function get(name:<a href="String.html">String</a>):<a href="String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Reads the contents of the custom action XML definition file named <code>name</code>.      </p><p>The name of the definition file must be a simple filename, without the .xml file extension, and without any directory separators (&#39;:&#39;, &#39;/&#39; or &#39;\&#39;). </p>      <p>If the definition file specified by the <code>name</code> cannot be found, a value of <code>undefined</code> is returned. If the custom action XML definition specified by the <code>name</code> parameter is located, it is read in its entirety and returned as a string.</p>      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:<a href="String.html">String</a></code> &mdash; The name of the custom action definition to retrieve.     </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; 
+If the custom action XML definition is located, returns a string; otherwise, returns <code>undefined</code>.      
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example lists the custom actions in a ComboBox instance, and gets the custom action when a Button instance is clicked. Drag an instance of a ComboBox, Button, and TextArea onto the Stage. Give the ComboBox an instance name of <code>customActionName_cb</code>, the TextArea an instance name of <code>customActionXml_ta</code>, and the Button an instance name of <code>view_button</code>. Enter the following ActionScript on Frame 1 of the Timeline:    <div class='listing'><pre>
+import mx.controls.*;
+
+var customActionName_cb:ComboBox;
+var customActionXml_ta:TextArea;
+var view_button:Button;
+
+customActionName_cb.dataProvider = CustomActions.list();
+
+customActionXml_ta.editable = false;
+
+var viewListener:Object = new Object();
+viewListener.click = function(evt:Object) {
+    var caName:String = String(customActionName_cb.selectedItem);
+    customActionXml_ta.text = CustomActions.get(caName);
+};
+view_button.addEventListener("click", viewListener);
+</pre></div>        <p></p>
+</div>
+<a name="install()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">install</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function install(name:<a href="String.html">String</a>, data:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Installs a new custom action XML definition file indicated by the <code>name</code> parameter. The contents of the file is specified by the string <code><em>customXML</em></code>.    </p><p>The name of the definition file must be a simple filename, without the .xml file extension, and without any directory separators (&#39;:&#39;, &#39;/&#39; or &#39;\&#39;). </p>    <p>If a custom actions file already exists with the name <code>name</code>, it is overwritten.</p>    <p>If the Configuration/ActionsPanel/CustomActions directory does not exist when this method is invoked, the directory is created.</p>      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:<a href="String.html">String</a></code> &mdash; The name of the custom action definition to install.     </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">data</span>:<a href="String.html">String</a></code> &mdash; The text of the XML definition to install.     </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+A Boolean value of <code>false</code> if an error occurs during installation; otherwise, a value of <code>true</code> is returned to indicate that the custom action has been successfully installed.      
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example installs information into the Actions panel from an XML file. Open a text editor and save a new document called dogclass.xml. Enter the following code:    <div class='listing'><pre>
+&lt;?xml version="1.0"?&gt;
+&lt;customactions&gt;
+    &lt;actionspanel&gt;
+    &lt;folder version="7" id="DogClass" index="true" name="Dog" tiptext="Dog Class"&gt;
+        &lt;string version="7" id="getFleas" name="getFleas" tiptext="gets number of fleas" text=".getFleas(% fleas %)" /&gt;
+    &lt;/folder&gt;
+    &lt;/actionspanel&gt;
+    &lt;colorsyntax&gt;
+        &lt;identifier text=".getFleas" /&gt;
+    &lt;/colorsyntax&gt;
+    &lt;codehints&gt;
+        &lt;typeinfo pattern=" _dog" object="Dog"/&gt;
+    &lt;/codehints&gt;
+&lt;/customactions&gt;
+</pre></div>    <p>Then open a new FLA file in the same directory and select Frame 1 of the Timeline. Enter the following code into the Actions panel:</p>    <div class='listing'><pre>
+var my_xml:XML = new XML();
+my_xml.ignoreWhite = true;
+my_xml.onLoad = function(success:Boolean) {
+    trace(success);
+    CustomActions.install("dogclass", this.firstChild);
+    trace(CustomActions.list());
+};
+my_xml.load("dogclass.xml");
+</pre></div>    <p>Select Control &gt; Test Movie, and if the XML loads successfully, you will see <code>true</code>, and an array containing the names of all the custom actions that are registered with the Flash authoring tool in the Output panel. Close the SWF file, and open the Actions panel. You will see a new item in the Actions toolbox called Dog, and inside that folder you see getFleas.</p>      <p></p>
+</div>
+<a name="list()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">list</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function list():<a href="Array.html">Array</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Returns an Array object containing the names of all the custom actions that are registered with the Flash authoring tool. The elements of the array are simple names, without the .xml file extension, and without any directory separators (for example, &#34;:&#34;, &#34;/&#34;, or &#34;\&#34;). If there are no registered custom actions, <code>list()</code> returns a zero-length array. If an error occurs, <code>list()</code> returns the value <code>undefined</code>.      </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Array.html">Array</a></code> &mdash; 
+An array.      
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example lists the custom actions in a ComboBox instance, and gets the custom action when a Button instance is clicked. Drag an instance of a ComboBox, Button, and TextArea onto the Stage. Give the ComboBox an instance name of <code>customActionName_cb</code>, the TextArea an instance name of <code>customActionXml_ta</code>, and the Button an instance name of <code>view_button</code>. Enter the following ActionScript on Frame 1 of the Timeline:    <div class='listing'><pre>
+import mx.controls.*;
+
+var customActionName_cb:ComboBox;
+var customActionXml_ta:TextArea;
+var view_button:Button;
+
+customActionName_cb.dataProvider = CustomActions.list();
+
+customActionXml_ta.editable = false;
+
+var viewListener:Object = new Object();
+viewListener.click = function(evt:Object) {
+    var caName:String = String(customActionName_cb.selectedItem);
+    customActionXml_ta.text = CustomActions.get(caName);
+};
+view_button.addEventListener("click", viewListener);
+</pre></div>      <p></p>
+</div>
+<a name="uninstall()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">uninstall</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function uninstall(name:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p><p>Removes the Custom Actions XML definition file named <code>name</code>.       </p><p>The name of the definition file must be a simple filename, without the .xml file extension, and without any directory separators (&#39;:&#39;, &#39;/&#39; or &#39;\&#39;). </p>      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:<a href="String.html">String</a></code> &mdash; The name of the custom action definition to uninstall.       </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; 
+A Boolean value of <code>false</code> if no custom actions are found with the name <code>name</code>. If the custom actions were successfully removed, a value of <code>true</code> is returned.      
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#install()" target="">install()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example installs a new custom action and displays an array containing the names of all the custom actions that are registered with the Flash authoring tool in the Output panel. When the uninstall_btn is clicked, the custom action is then uninstalled. An array containing names of the custom actions installed is displayed, and dogclass should then be removed from the array. Create a button called <code>uninstall_btn</code> and then enter the following ActionScript onto Frame 1 of the Timeline:    <div class='listing'><pre>
+var my_xml:XML = new XML();
+my_xml.ignoreWhite = true;
+my_xml.onLoad = function(success:Boolean) {
+    trace(success);
+    CustomActions.install("dogclass", this.firstChild);
+    trace(CustomActions.list());
+};
+my_xml.load("dogclass.xml");
+
+uninstall_btn.onRelease = function() {
+    CustomActions.uninstall("dogclass");
+    trace(CustomActions.list());
+};
+</pre></div>    <p>For information on creating dogclass.xml, see <code>CustomActions.install()</code>.</p>      <p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

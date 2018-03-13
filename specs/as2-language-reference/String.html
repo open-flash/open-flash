@@ -1,0 +1,980 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="print.css" type="text/css" media="print">
+<meta content="String,length,charAt,charCodeAt,concat,fromCharCode,indexOf,lastIndexOf,slice,split,substr,substring,toLowerCase,toString,toUpperCase,valueOf" name="keywords">
+<title>String</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="asdoc.js"></script><script type="text/javascript" language="javascript" src="cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'String - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('all-classes.html')" href="package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('all-classes.html')" href="class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('index-list.html')" href="all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="index.html?String.html&amp;class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;String</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class String"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">Top Level</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class String</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">String <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="images/inherit-arrow.gif"> <a href="Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5 &mdash; (became a native object in Flash Player 6, which improved performance significantly).</td>
+</tr>
+</table>
+<p></p>
+<p></p>The String class is a wrapper for the string primitive data type, and provides methods and   properties that let you manipulate primitive string value types. You can convert the value of any   object into a string using the <code>String()</code> function.     <p> All the methods of the String class, except for <code>concat()</code>,   <code>fromCharCode()</code>, <code>slice()</code>, and <code>substr()</code>, are generic, which   means the methods call <code>toString()</code> before performing their operations, and you can use   these methods with other non-String objects. </p>     <p>Because all string indexes are zero-based, the index of the last character for any string   <code>x</code> is <code>x.length - 1</code>.</p>     <p>You can call any of the methods of the String class using the constructor method <code>new   String</code> or using a string literal value. If you specify a string literal, the ActionScript   interpreter automatically converts it to a temporary String object, calls the method, and then   discards the temporary String object. You can also use the <code>String.length</code> property with   a string literal.</p>     <p>Do not confuse a string literal with a String object. In the following example, the first line   of code creates the string literal <code>first_string</code>, and the second line of code creates   the String object <code>second_string</code>:</p>     <div class='listing'><pre>
+var first_string:String = "foo" 
+var second_string:String = new String("foo") 
+</pre></div>     <p>Use string literals unless you specifically need to use a String object.</p>    <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#length">length</a> : <a href="Number.html">Number</a>
+<div class="summaryTableDescription">An integer specifying the number of characters in the specified String object.</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="Object.html#__proto__">__proto__</a>, <a href="Object.html#__resolve">__resolve</a>, <a href="Object.html#constructor">constructor</a>, <a href="Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#String()">String</a>(value:<a href="String.html">String</a>)</div>
+<div class="summaryTableDescription">Creates a new String object.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#charAt()">charAt</a>(index:<a href="Number.html">Number</a>):<a href="String.html">String</a>
+</div>
+<div class="summaryTableDescription">Returns the character in the position specified by the parameter <code>index</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#charCodeAt()">charCodeAt</a>(index:<a href="Number.html">Number</a>):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Returns a 16-bit integer from 0 to 65535 that represents the character specified by <code>index</code>.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#concat()">concat</a>(value:<a href="Object.html">Object</a>):<a href="String.html">String</a>
+</div>
+<div class="summaryTableDescription">Combines the value of the String object with the parameters and returns the newly formed string; the original value, <code>my_str</code>, is unchanged.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#fromCharCode()">fromCharCode</a>():<a href="String.html">String</a>
+</div>
+<div class="summaryTableDescription">[static]Returns a string comprising the characters represented by the Unicode values in the parameters.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#indexOf()">indexOf</a>(value:<a href="String.html">String</a>, [startIndex:<a href="Number.html">Number</a>]):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Searches the string and returns the position of the first occurrence of <code>value</code> found at or after <code>startIndex</code> within the calling string.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#lastIndexOf()">lastIndexOf</a>(value:<a href="String.html">String</a>, [startIndex:<a href="Number.html">Number</a>]):<a href="Number.html">Number</a>
+</div>
+<div class="summaryTableDescription">Searches the string from right to left and returns the index of the last occurrence of <code>value</code> found before <code>startIndex</code> within the calling string.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#slice()">slice</a>(start:<a href="Number.html">Number</a>, end:<a href="Number.html">Number</a>):<a href="String.html">String</a>
+</div>
+<div class="summaryTableDescription">Returns a string that includes the <code>start</code> character and all characters up to, but not including, the <code>end</code> character.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#split()">split</a>(delimiter:<a href="String.html">String</a>, [limit:<a href="Number.html">Number</a>]):<a href="Array.html">Array</a>
+</div>
+<div class="summaryTableDescription">Splits a String object into substrings by breaking it wherever the specified <code>delimiter</code> parameter occurs and returns the substrings in an array.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#substr()">substr</a>(start:<a href="Number.html">Number</a>, length:<a href="Number.html">Number</a>):<a href="String.html">String</a>
+</div>
+<div class="summaryTableDescription">Returns the characters in a string from the index specified in the <code>start</code> parameter through the number of characters specified in the <code>length</code> parameter.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#substring()">substring</a>(start:<a href="Number.html">Number</a>, end:<a href="Number.html">Number</a>):<a href="String.html">String</a>
+</div>
+<div class="summaryTableDescription">Returns a string comprising the characters between the points specified by the <code>start</code> and <code>end</code> parameters.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toLowerCase()">toLowerCase</a>():<a href="String.html">String</a>
+</div>
+<div class="summaryTableDescription">Returns a copy of this string, with all uppercase characters converted to lowercase.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toString()">toString</a>():<a href="String.html">String</a>
+</div>
+<div class="summaryTableDescription">Returns an object's properties as strings regardless of whether the properties are strings.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toUpperCase()">toUpperCase</a>():<a href="String.html">String</a>
+</div>
+<div class="summaryTableDescription">Returns a copy of this string, with all lowercase characters converted to uppercase.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#valueOf()">valueOf</a>():<a href="String.html">String</a>
+</div>
+<div class="summaryTableDescription">Returns the primitive value of a String instance.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="Object.html#addProperty()">addProperty</a>, <a href="Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="Object.html#registerClass()">registerClass</a>, <a href="Object.html#toString()">toString</a>, <a href="Object.html#unwatch()">unwatch</a>, <a href="Object.html#valueOf()">valueOf</a>, <a href="Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="length"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">length</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var length:<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>An integer specifying the number of characters in the specified String object.             </p><p>Because all string indexes are zero-based, the index of the last character for any string       <code>x</code> is <code>x.length - 1</code>.</p>            <br>
+<span class="label">Example</span>
+<br>The following example creates a new String object and uses <code>String.length</code>       to count the number of characters:             <div class='listing'><pre>
+var my_str:String = "Hello world!";
+trace(my_str.length); // output: 12
+</pre></div>            <p>The following example loops from 0 to <code>my_str.length</code>.<span class="flashonly">       The code checks the characters within a string, and if the string contains the       <code>&#64;</code> character, <code>true</code> displays in the Output panel.</span><span       class="flexonly"> The code checks the characters within a string, and if the string contains       the <code>&#64;</code> character, <code>true</code> writes to the log file.</span><span       class="flashonly"> If it does not contain the <code>&#64;</code> character, then       <code>false</code> displays in the Output panel.</span><span class="flexonly"> If it does not       contain the <code>&#64;</code> character, then <code>false</code> writes to the log       file.</span></p>             <div class='listing'><pre>
+function checkAtSymbol(my_str:String):Boolean {
+    for (var i = 0; i&lt;my_str.length; i++) {
+    if (my_str.charAt(i) == "&#64;") {
+        return true;
+    }
+    }
+    return false;
+}
+
+trace(checkAtSymbol("dog&#64;house.net")); // output: true
+trace(checkAtSymbol("Chris")); // output: false
+</pre></div>       <span class="flashonly">       <p>For another example, see the Flash Samples page at           <a href="http://www.adobe.com/go/learn_fl_samples" target="newWindow">www.adobe.com/go/learn_fl_samples</a>.            Download and decompress the Samples zip file and go to the ActionScript2.0\Strings folder to access the Strings.fla file.</p></span>            <p></p>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="String()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">String</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function String(value:<a href="String.html">String</a>)</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Creates a new String object.       </p><p><strong>Note: </strong>Because string literals use less overhead than String objects and are    generally easier to use, you should use string literals instead of the constructor for the String    class unless you have a good reason to use a String object rather than a string literal.</p>      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:<a href="String.html">String</a></code> &mdash; The initial value of the new String object.      </td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="charAt()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">charAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function charAt(index:<a href="Number.html">Number</a>):<a href="String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the character in the position specified by the parameter <code>index</code>.       If <code>index</code> is not a number from 0 to <code>string.length</code> - 1, an       empty string is returned.             </p><p>This method is similar to <code>String.charCodeAt()</code> except that the returned value is       a character, not a 16-bit integer character code.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">index</span>:<a href="Number.html">Number</a></code> &mdash; An integer specifying the position of a character in the string. The first       character is indicated by <code>0</code>, and the last character is indicated by       <code>my_str</code><code>.length-1</code>.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; 
+The character at the specified index. Or an empty <code>String</code> if the       specified index is outside the range of this <code>String</code>'s indices.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="String.html#charCodeAt()" target="">String.charCodeAt()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>In the following example, this method is called on the first letter of the string       "<code>Chris</code>":             <div class='listing'><pre>
+var my_str:String = "Chris";
+var firstChar_str:String = my_str.charAt(0);
+trace(firstChar_str); // output: C
+</pre></div>                 <p></p>
+</div>
+<a name="charCodeAt()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">charCodeAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function charCodeAt(index:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns a 16-bit integer from 0 to 65535 that represents the character specified by       <code>index</code>. If <code>index</code> is not a number from 0 to       <code>string.length</code> - 1, <code>NaN</code> is returned.             </p><p>This method is similar to <code>String.charAt()</code> except that the returned value is a       16-bit integer character code, not a character.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">index</span>:<a href="Number.html">Number</a></code> &mdash; An integer that specifies the position of a character in the string. The       first character is indicated by <code>0,</code> and the last character is indicated by       <code>my_str.length</code> - 1.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+An integer that represents the character specified by <code>index</code>.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="String.html#charAt()" target="">String.charAt()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>In the following example, this method is called on the first letter of the string       "Chris":             <div class='listing'><pre>
+var my_str:String = "Chris";
+var firstChar_num:Number = my_str.charCodeAt(0);
+trace(firstChar_num); // output: 67
+</pre></div>                 <p></p>
+</div>
+<a name="concat()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">concat</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function concat(value:<a href="Object.html">Object</a>):<a href="String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Combines the value of the String object with the parameters and returns the newly formed       string; the original value, <code>my_str</code>, is unchanged.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:<a href="Object.html">Object</a></code> &mdash; value1[,...valueN] Zero or more values to be concatenated.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; 
+A string.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates two strings and combines them using       <code>String.concat()</code>:             <div class='listing'><pre>
+var stringA:String = "Hello";
+var stringB:String = "World";
+var combinedAB:String = stringA.concat(" ", stringB);
+trace(combinedAB); // output: Hello World
+</pre></div>            <p></p>
+</div>
+<a name="fromCharCode()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">fromCharCode</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function fromCharCode():<a href="String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns a string comprising the characters represented by the Unicode values in the parameters.      </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; 
+  A string value of the specified Unicode character codes.      
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example uses <code>fromCharCode()</code> to insert an <code>&#64;</code>    character in the e-mail address:       <div class='listing'><pre>
+var address_str:String = "dog"+String.fromCharCode(64)+"house.net";
+trace(address_str); // output: dog&#64;house.net 
+</pre></div>      <p></p>
+</div>
+<a name="indexOf()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">indexOf</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function indexOf(value:<a href="String.html">String</a>, [startIndex:<a href="Number.html">Number</a>]):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Searches the string and returns the position of the first occurrence of <code>value</code>       found at or after <code>startIndex</code> within the calling string. This index is zero-based,       meaning that the first character in a string is considered to be at index 0--not index 1. If       <code>value</code> is not found, the method returns -1.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:<a href="String.html">String</a></code> &mdash; A string; the substring to search for.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">startIndex</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer specifying the starting index of the search.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+The position of the first occurrence of the specified substring or -1.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="String.html#lastIndexOf()" target="">String.lastIndexOf()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following examples use <code>indexOf()</code> to return the index of characters       and substrings:             <div class='listing'><pre>
+var searchString:String = "Lorem ipsum dolor sit amet.";
+var index:Number;
+
+index = searchString.indexOf("L");
+trace(index); // output: 0
+
+index = searchString.indexOf("l");
+trace(index); // output: 14
+
+index = searchString.indexOf("i");
+trace(index); // output: 6
+
+index = searchString.indexOf("ipsum");
+trace(index); // output: 6
+
+index = searchString.indexOf("i", 7);
+trace(index); // output: 19
+
+index = searchString.indexOf("z");
+trace(index); // output: -1
+</pre></div>                 <p></p>
+</div>
+<a name="lastIndexOf()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">lastIndexOf</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function lastIndexOf(value:<a href="String.html">String</a>, [startIndex:<a href="Number.html">Number</a>]):<a href="Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Searches the string from right to left and returns the index of the last occurrence of       <code>value</code> found before <code>startIndex</code> within the calling string. This index       is zero-based, meaning that the first character in a string is considered to be at index 0--not       index 1. If <code>value</code> is not found, the method returns -1.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:<a href="String.html">String</a></code> &mdash; The string for which to search.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">startIndex</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; An integer specifying the starting point from which to search for       <code>value</code>.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; 
+The position of the last occurrence of the specified substring or -1.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="String.html#indexOf()" target="">String.indexOf()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to use <code>lastIndexOf()</code> to return the index       of a certain character:             <div class='listing'><pre>
+var searchString:String = "Lorem ipsum dolor sit amet.";
+var index:Number;
+
+index = searchString.lastIndexOf("L");
+trace(index); // output: 0
+
+index = searchString.lastIndexOf("l");
+trace(index); // output: 14
+
+index = searchString.lastIndexOf("i");
+trace(index); // output: 19
+
+index = searchString.lastIndexOf("ipsum");
+trace(index); // output: 6
+
+index = searchString.lastIndexOf("i", 18);
+trace(index); // output: 6
+
+index = searchString.lastIndexOf("z");
+trace(index); // output: -1
+</pre></div>                 <p></p>
+</div>
+<a name="slice()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">slice</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function slice(start:<a href="Number.html">Number</a>, end:<a href="Number.html">Number</a>):<a href="String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns a string that includes the <code>start</code> character and all characters up       to, but not including, the <code>end</code> character. The original String object is       not modified. If the <code>end</code> parameter is not specified, the end of the       substring is the end of the string. If the character indexed by <code>start</code> is       the same as or to the right of the character indexed by <code>end</code>, the method       returns an empty string.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">start</span>:<a href="Number.html">Number</a></code> &mdash; The zero-based index of the starting point for the slice. If <code>start</code> is       a negative number, the starting point is determined from the end of the string, where -1 is the       last character.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">end</span>:<a href="Number.html">Number</a></code> &mdash; An integer that is one greater than the index of the ending point for the slice. The character       indexed by the <code>end</code> parameter is not included in the extracted string. If this       parameter is omitted, <code>String.length</code> is used. If <code>end</code> is a negative       number, the ending point is determined by counting back from the end of the string, where -1 is       the last character.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; 
+A substring of the specified string.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="String.html#substr()" target="">String.substr()</a>
+<br>
+<a href="String.html#substring()" target="">String.substring()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a variable, <code>my_str,</code> assigns it a String       value, and then calls the <code>slice()</code> method using a variety of values for both the       <code>start</code> and <code>end</code> parameters. <span       class="flashonly">Each call to <code>slice()</code> is wrapped in a <code>trace()</code>       statement that displays the output in the Output panel. </span><span class="flexonly">Each call       to the <code>slice()</code> method is wrapped in a <code>trace()</code> statement that sends       the output to the log file. </span>             <div class='listing'><pre>
+// Index values for the string literal
+// positive index:  0   1   2   3   4
+// string:          L   o   r   e   m
+// negative index: -5  -4  -3  -2  -1
+
+var my_str:String = "Lorem";
+
+// slice the first character
+trace("slice(0,1): "+my_str.slice(0, 1)); // output: slice(0,1): L
+trace("slice(-5,1): "+my_str.slice(-5, 1)); // output: slice(-5,1): L
+
+// slice the middle three characters
+trace("slice(1,4): "+my_str.slice(1, 4)); // slice(1,4): ore
+trace("slice(1,-1): "+my_str.slice(1, -1)); // slice(1,-1): ore
+
+// slices that return empty strings because start is not to the left of end
+trace("slice(1,1): "+my_str.slice(1, 1)); // slice(1,1):
+trace("slice(3,2): "+my_str.slice(3, 2)); // slice(3,2):
+trace("slice(-2,2): "+my_str.slice(-2, 2)); // slice(-2,2):
+
+// slices that omit the end parameter use String.length, which equals 5
+trace("slice(0): "+my_str.slice(0)); // slice(0): Lorem
+trace("slice(3): "+my_str.slice(3)); // slice(3): em
+</pre></div>       <span class="flashonly">       <p>For another example, see the Flash Samples page at           <a href="http://www.adobe.com/go/learn_fl_samples" target="newWindow">www.adobe.com/go/learn_fl_samples</a>.            Download and decompress the Samples zip file and go to the ActionScript2.0\Strings folder to access the Strings.fla file.</p></span>                  <p></p>
+</div>
+<a name="split()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">split</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function split(delimiter:<a href="String.html">String</a>, [limit:<a href="Number.html">Number</a>]):<a href="Array.html">Array</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Splits a String object into substrings by breaking it wherever the specified       <code>delimiter</code> parameter occurs and returns the substrings in an array. If you use an       empty string ("") as a delimiter, each character in the string is placed as an element in the       array.             </p><p>If the <code>delimiter</code> parameter is undefined, the entire string is placed into the       first element of the returned array.</p>            <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">delimiter</span>:<a href="String.html">String</a></code> &mdash; A string; the character or string at which <code>my_str</code> splits.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">limit</span>:<a href="Number.html">Number</a></code>&nbsp;[optional] &mdash; The number of items to place into the array.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Array.html">Array</a></code> &mdash; 
+An array containing the substrings of <code>my_str</code>.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Array.html#join()" target="">Array.join()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example returns an array with five elements:             <div class='listing'><pre>
+var my_str:String = "P,A,T,S,Y";
+var my_array:Array = my_str.split(",");
+for (var i = 0; i&lt;my_array.length; i++) {
+    trace(my_array[i]);
+}
+// output:
+    P
+    A
+    T
+    S
+    Y
+
+</pre></div>             <p>The following example returns an array with two elements, <code>"P"</code> and       <code>"A"</code>:</p>            <div class='listing'><pre>
+var my_str:String = "P,A,T,S,Y";
+var my_array:Array = my_str.split(",", 2);
+trace(my_array); // output: P,A
+</pre></div>             <p>The following example shows that if you use an empty string ("") for the       <code>delimiter</code> parameter, each character in the string is placed as an element       in the array:</p>             <div class='listing'><pre>
+var my_str:String = new String("Joe");
+var my_array:Array = my_str.split("");
+for (var i = 0; i&lt;my_array.length; i++) {
+    trace(my_array[i]);
+}
+// output:
+    J
+    o
+    e
+
+</pre></div>             <span class="flashonly">       <p>For another example, see the Flash Samples page at           <a href="http://www.adobe.com/go/learn_fl_samples" target="newWindow">www.adobe.com/go/learn_fl_samples</a>.            Download and decompress the Samples zip file and go to the ActionScript2.0\Strings folder to access the Strings.fla file.</p></span>            <p></p>
+</div>
+<a name="substr()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">substr</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function substr(start:<a href="Number.html">Number</a>, length:<a href="Number.html">Number</a>):<a href="String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the characters in a string from the index specified in the <code>start</code> parameter       through the number of characters specified in the <code>length</code> parameter. The       <code>substr</code> method does not change the string specified by <code>my_str</code>; it       returns a new string.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">start</span>:<a href="Number.html">Number</a></code> &mdash; An integer that indicates the position of the first character in       <code>my_str</code> to be used to create the substring. If <code>start</code>       is a negative number, the starting position is determined from the end of the string, where the       -1 is the last character.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">length</span>:<a href="Number.html">Number</a></code> &mdash; The number of characters in the substring being created. If       <code>length</code> is not specified, the substring includes all the characters from       the start to the end of the string.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; 
+A substring of the specified string.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a new string, <code>my_str</code> and uses       <code>substr()</code> to return the second word in the string; first, using a positive       <code>start</code> parameter, and then using a negative <code>start</code>       parameter:             <div class='listing'><pre>
+var my_str:String = new String("Hello world");
+var mySubstring:String = new String();
+mySubstring = my_str.substr(6,5);
+trace(mySubstring); // output: world
+
+mySubstring = my_str.substr(-5,5);
+trace(mySubstring); // output: world
+</pre></div>       <span class="flashonly">       <p>For another example, see the Flash Samples page at           <a href="http://www.adobe.com/go/learn_fl_samples" target="newWindow">www.adobe.com/go/learn_fl_samples</a>.            Download and decompress the Samples zip file and go to the ActionScript2.0\Strings folder to access the Strings.fla file.</p></span>            <p></p>
+</div>
+<a name="substring()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">substring</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function substring(start:<a href="Number.html">Number</a>, end:<a href="Number.html">Number</a>):<a href="String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns a string comprising the characters between the points specified by the       <code>start</code> and <code>end</code> parameters. If the <code>end</code> parameter is not       specified, the end of the substring is the end of the string. If the value of       <code>start</code> equals the value of <code>end</code>, the method returns an empty string. If       the value of <code>start</code> is greater than the value of <code>end</code>, the parameters       are automatically swapped before the function executes and the original value is unchanged.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">start</span>:<a href="Number.html">Number</a></code> &mdash; An integer that indicates the position of the first character of       <code>my_str</code> used to create the substring. Valid values for <code>start</code> are       0 through <code>String.length</code> - 1. If <code>start</code> is a negative value, 0       is used.            </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">end</span>:<a href="Number.html">Number</a></code> &mdash; An integer that is 1+ the index of the last character in       <code>my_str</code> to be extracted. Valid values for <code>end</code> are 1 through       <code>String.length</code>. The character indexed by the <code>end</code> parameter is not       included in the extracted string. If this parameter is omitted, <code>String.length</code> is       used. If this parameter is a negative value, 0 is used.            </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; 
+A substring of the specified string.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to use <code>substring()</code>:             <div class='listing'><pre>
+var my_str:String = "Hello world";
+var mySubstring:String = my_str.substring(6,11);
+trace(mySubstring); // output: world
+</pre></div>             <p>The following example shows what happens if a negative <code>start</code> parameter is       used:</p>             <div class='listing'><pre>
+var my_str:String = "Hello world";
+var mySubstring:String = my_str.substring(-5,5);
+trace(mySubstring); // output: Hello
+</pre></div>            <span class="flashonly">        <p>For another example, see the Flash Samples page at           <a href="http://www.adobe.com/go/learn_fl_samples" target="newWindow">www.adobe.com/go/learn_fl_samples</a>.            Download and decompress the Samples zip file and go to the ActionScript2.0\Strings folder to access the Strings.fla file.</p></span>            <p></p>
+</div>
+<a name="toLowerCase()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toLowerCase</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function toLowerCase():<a href="String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns a copy of this string, with all uppercase characters converted       to lowercase. The original string is unmodified.             </p><p>This method converts all characters (not simply A-Z) for which Unicode lowercase       equivalents exist. These  case mappings are defined in the       <a href="http://www.unicode.org/Public/UNIDATA/UnicodeData.txt" target="newWindow">UnicodeData.txt</a> file and the       <a href="http://www.unicode.org/Public/UNIDATA/SpecialCasing.txt" target="newWindow">SpecialCasings.txt</a> file, as defined       in the <a href="http://www.unicode.org/Public/UNIDATA/UCD.html" target="newWindow">Unicode Character Database</a>       specification. </p>             <p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; 
+A string.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="String.html#toUpperCase()" target="">String.toUpperCase()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a string with all uppercase characters and then creates       a copy of that string using <code>toLowerCase()</code> to convert all uppercase characters to       lowercase characters:             <div class='listing'><pre>
+var upperCase:String = "LOREM IPSUM DOLOR";
+var lowerCase:String = upperCase.toLowerCase();
+trace("upperCase: " + upperCase); // output: upperCase: LOREM IPSUM DOLOR
+trace("lowerCase: " + lowerCase); // output: lowerCase: lorem ipsum dolor
+</pre></div>             <span class="flashonly">       <p>For another example, see the Flash Samples page at           <a href="http://www.adobe.com/go/learn_fl_samples" target="newWindow">www.adobe.com/go/learn_fl_samples</a>.            Download and decompress the Samples zip file and go to the ActionScript2.0\Strings folder to access the Strings.fla file.</p></span>                 <p></p>
+</div>
+<a name="toString()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function toString():<a href="String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns an object's properties as strings regardless of whether the properties are strings.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; 
+The string.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example outputs an uppercase string that lists all of an object's properties, regardless of whether the       properties are strings:             <div class='listing'><pre>
+var employee:Object = new Object();
+employee.name = "bob";
+employee.salary = 60000;
+employee.id = 284759021;
+
+var employeeData:String = new String();
+for (prop in employee) 
+{
+    employeeData += employee[prop].toString().toUpperCase() + " ";
+}
+trace(employeeData);
+
+</pre></div>            If the <code>toString()</code> method were not included in this code,       and the line in the <code>for</code> loop used       <code>employee[prop].toUpperCase()</code>,       the output would be "<code>undefined undefined BOB</code>". Including the <code>toString()</code> method produces       the desired output: "<code>284759021 60000 BOB</code>".                  <p></p>
+</div>
+<a name="toUpperCase()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toUpperCase</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function toUpperCase():<a href="String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns a copy of this string, with all lowercase characters converted       to uppercase. The original string is unmodified.            </p><p>This method converts all characters (not simply a-z) for which Unicode uppercase       equivalents existThese  case mappings are defined in the       <a href="http://www.unicode.org/Public/UNIDATA/UnicodeData.txt" target="newWindow">UnicodeData.txt</a> file and the       <a href="http://www.unicode.org/Public/UNIDATA/SpecialCasing.txt" target="newWindow">SpecialCasings.txt</a> file, as defined       in the <a href="http://www.unicode.org/Public/UNIDATA/UCD.html" target="newWindow">Unicode Character Database</a>       specification. </p>                 <p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; 
+A string.            
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="String.html#toLowerCase()" target="">String.toLowerCase()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a string with all lowercase characters and then creates       a copy of that string using <code>toUpperCase()</code>:            <div class='listing'><pre>
+var lowerCase:String = "lorem ipsum dolor";
+var upperCase:String = lowerCase.toUpperCase();
+trace("lowerCase: " + lowerCase); // output: lowerCase: lorem ipsum dolor
+trace("upperCase: " + upperCase); // output: upperCase: LOREM IPSUM DOLOR
+</pre></div>             <span class="flashonly">       <p>For another example, see the Flash Samples page at           <a href="http://www.adobe.com/go/learn_fl_samples" target="newWindow">www.adobe.com/go/learn_fl_samples</a>.            Download and decompress the Samples zip file and go to the ActionScript2.0\Strings folder to access the Strings.fla file.</p></span>            <p></p>
+</div>
+<a name="valueOf()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">valueOf</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function valueOf():<a href="String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p><p>Returns the primitive value of a String instance. This method is designed to       convert a String object into a primitive string value. Because Flash Player       automatically calls <code>valueOf()</code> when necessary,       you rarely need to explicitly call this method.            </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; 
+The value of the string.            
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a new instance of the String class       and then shows that the <code>valueOf</code> method returns       the <i>primitive</i> value, rather than a reference to the new instance.             <div class='listing'><pre>
+var str:String = new String("Hello World");
+var value:String = str.valueOf();
+trace(str instanceof String); // true
+trace(value instanceof String); // false
+trace(str === value); // false
+</pre></div>             <p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

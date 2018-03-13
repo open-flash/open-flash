@@ -1,0 +1,853 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="Locale,mx.lang.Locale,autoReplace,languageCodeArray,stringIDArray,addDelayedInstance,addXMLPath,checkXMLStatus,getDefaultLang,initialize,loadLanguageXML,loadString,loadStringEx,setDefaultLang,setLoadCallback,setString" name="keywords">
+<title>mx.lang.Locale</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Locale - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="../../language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="../../appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="../../index.html?mx/lang/Locale.html&amp;mx/lang/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Locale</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Locale"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">mx.lang</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Locale</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Locale <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../images/inherit-arrow.gif"> <a href="../../Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p>
+<p></p>The mx.lang.Locale class allows you to control how multilanguage text is displayed in a SWF file.   The Flash Strings panel allows you to use string IDs instead of string literals in dynamic text fields. This allows you to create a SWF file that displays text loaded from a language-specific XML file. The XML file must use the XML Localization Interchange File Format(XLIFF). There are three ways to display the language-specific strings contained in the XLIFF files:   <ul>     <li><code>"automatically at runtime"</code>&#x2014;Flash Player replaces string IDs with strings from the XML file matching the default system language code returned by System.capabilities.language.</li>     <li><code>"manually using stage language"</code>&#x2014;String IDs are replaced by strings at compile time and cannot be changed by Flash Player.</li>     <li><code>"via ActionScript at runtime"</code>&#x2014;String ID replacement is controlled using ActionScript at runtime. This option gives you control over both the timing and language of string ID replacement.</li>   </ul>   <p>You can use the properties and methods of this class when you want to replace the string IDs "via ActionScript at runtime."</p>   <p>All of the properties and methods available are static, which means that they are accessed through the mx.lang.Locale class itself rather than through an instance of the class.</p>    <p><b>Note:</b> The Locale class is different from the other classes in the ActionScript 2.0 Language Reference, since it is not part of the Flash Player. Since this class installed in the Flash Authoring classpath it is automatically compiled into your SWF files. Using the Locale class increases the SWF size slightly since the class is compiled into the SWF.</p>   <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#autoReplace">autoReplace</a> : <a href="../../Boolean.html">Boolean</a>
+<div class="summaryTableDescription">[static]Determines whether strings are replaced automatically after loading the XML file.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#languageCodeArray">languageCodeArray</a> : <a href="../../Array.html">Array</a>
+<div class="summaryTableDescription">[static][read-only]An array containing language codes for the languages that have been specified or loaded into the FLA file.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#stringIDArray">stringIDArray</a> : <a href="../../Array.html">Array</a>
+<div class="summaryTableDescription">[static][read-only]An array containing all the string IDs in the FLA file.</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="../../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../../Object.html#__proto__">__proto__</a>, <a href="../../Object.html#__resolve">__resolve</a>, <a href="../../Object.html#constructor">constructor</a>, <a href="../../Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addDelayedInstance()">addDelayedInstance</a>(instance:<a href="../../Object.html">Object</a>, stringID:<a href="../../String.html">String</a>):Void</div>
+<div class="summaryTableDescription">[static]Adds the {instance, string ID} pair into the internal array for later use.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addXMLPath()">addXMLPath</a>(langCode:<a href="../../String.html">String</a>, path:<a href="../../String.html">String</a>):Void</div>
+<div class="summaryTableDescription">[static]Adds the {languageCode and languagePath} pair into the internal array for later use.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#checkXMLStatus()">checkXMLStatus</a>():<a href="../../Boolean.html">Boolean</a>
+</div>
+<div class="summaryTableDescription">[static]Returns <code>true</code> if the XML file is loaded; <code>false</code> otherwise.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getDefaultLang()">getDefaultLang</a>():<a href="../../String.html">String</a>
+</div>
+<div class="summaryTableDescription">[static]The default language code as set in the Strings panel dialog box or by calling the <code>setDefaultLang()</code> method.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#initialize()">initialize</a>():Void</div>
+<div class="summaryTableDescription">[static]Automatically determines the language to use and loads the XML language file.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#loadLanguageXML()">loadLanguageXML</a>(xmlLanguageCode:<a href="../../String.html">String</a>, customXmlCompleteCallback:<a href="../../Function.html">Function</a>):Void</div>
+<div class="summaryTableDescription">[static]Loads the specified XML language file.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#loadString()">loadString</a>(id:<a href="../../String.html">String</a>):<a href="../../String.html">String</a>
+</div>
+<div class="summaryTableDescription">[static]Returns the string value associated with the given string ID in the current language.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#loadStringEx()">loadStringEx</a>(stringID:<a href="../../String.html">String</a>, languageCode:<a href="../../String.html">String</a>):<a href="../../String.html">String</a>
+</div>
+<div class="summaryTableDescription">[static]Returns the string value associated with the given string ID and language code.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setDefaultLang()">setDefaultLang</a>(langCode:<a href="../../String.html">String</a>):Void</div>
+<div class="summaryTableDescription">[static]Sets the default language code.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setLoadCallback()">setLoadCallback</a>(loadCallback:<a href="../../Function.html">Function</a>):Void</div>
+<div class="summaryTableDescription">[static]Sets the callback function that is called after the XML file is loaded.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setString()">setString</a>(stringID:<a href="../../String.html">String</a>, languageCode:<a href="../../String.html">String</a>, stringValue:<a href="../../String.html">String</a>):Void</div>
+<div class="summaryTableDescription">[static]Sets the new string value of a given string ID and language code.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="../../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../../Object.html#addProperty()">addProperty</a>, <a href="../../Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="../../Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="../../Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="../../Object.html#registerClass()">registerClass</a>, <a href="../../Object.html#toString()">toString</a>, <a href="../../Object.html#unwatch()">unwatch</a>, <a href="../../Object.html#valueOf()">valueOf</a>, <a href="../../Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="autoReplace"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">autoReplace</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var autoReplace:<a href="../../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Determines whether strings are replaced automatically after loading the XML file. If set to <code>true</code>, the text      replacement method is equivalent to the Strings panel setting <code>"automatically at runtime"</code>. This means that Flash Player      will determine the default language of the host environment and automatically display the text in that language. If set to <code>      false</code>, the text replacement method is equivalent to the Strings panel setting <code>"via ActionScript at runtime"</code>.      This means that you are responsible for loading the appropriate XML file to display the text.            </p><p>The default value of this property reflects the setting that you select for Replace strings in the Strings panel dialog box:      <code>true</code> for <code>"automatically at runtime"</code> (the default setting) and <code>false</code> for "via ActionScript at      runtime". </p>            <br>
+<span class="label">Example</span>
+<br>The following example uses the <code>Locale.autoReplace</code> property to populate the dynamically created <code>      greeting_txt</code> text field on the Stage with the contents of the <code>IDS_GREETING</code> string in the English XML file. In      the Strings panel, click the Settings button to open the Settings dialog box. You can add two active languages using the Settings      dialog box: English (en) and French (fr), set the replacement strings radio option to <code>"via ActionScript at runtime"</code>,      and click OK. Finally, enter a string ID of <b>IDS_GREETING</b> in the Strings panel, and add text for each active language.       <div class='listing'><pre>
+import mx.lang.Locale;
+this.createTextField("greeting_txt", 10, 40, 40, 200, 20);
+greeting_txt.autoSize = "left";
+Locale.autoReplace = true;
+Locale.addDelayedInstance(greeting_txt, "IDS_GREETING");
+Locale.loadLanguageXML("en");
+</pre></div>       <p></p>
+</div>
+<a name="languageCodeArray"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">languageCodeArray</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>languageCodeArray:<a href="../../Array.html">Array</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>An array containing language codes for the languages that have been specified or loaded into the FLA file. The language codes are not sorted alphabetically.       </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get languageCodeArray():<a href="../../Array.html">Array</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example loads a language XML file based on the current value of a ComboBox component. You drag a ComboBox component onto the Stage and give it an instance name of <code>lang_cb</code>. Using the Text tool, you create a dynamic text field and give it an instance name of <code>greeting_txt</code>. In the Strings panel, you add at least two active languages, set the replace strings radio option to <code>"via ActionScript at runtime"</code>, and click OK. Next, you add a string ID of <b>IDS_GREETING</b> and enter text for each active language. Finally, you add the following ActionScript code to Frame 1 of the main Timeline:       <div class='listing'><pre>
+import mx.lang.Locale;
+Locale.setLoadCallback(localeListener);
+lang_cb.dataProvider = Locale.languageCodeArray.sort();
+lang_cb.addEventListener("change", langListener);
+
+function langListener(eventObj:Object):Void {
+    Locale.loadLanguageXML(eventObj.target.value);
+}
+function localeListener(success:Boolean):Void {
+    if (success) {
+        greeting_txt.text = Locale.loadString("IDS_GREETING");
+    } else {
+        greeting_txt.text = "unable to load language XML file.";
+    }
+}
+</pre></div>       <p></p>
+</div>
+<a name="stringIDArray"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">stringIDArray</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>stringIDArray:<a href="../../Array.html">Array</a></code>&nbsp;&nbsp;[read-only]<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>An array containing all the string IDs in the FLA file. The string IDs are not sorted alphabetically.             </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get stringIDArray():<a href="../../Array.html">Array</a></code>
+<br>
+<br>
+<span class="label">Example</span>
+<br>The following example traces the <code>Locale.stringIDArray</code> property for the currently loaded language XML file.      Click the Settings button in the Strings panel to open the Settings dialog box. Next, you add two active languages: English (en) and      French (fr), set the replace strings radio control to <code>"via ActionScript at runtime"</code>, and click OK. In the Strings      panel, you add a string ID of <b>IDS_GREETING</b>, and then add text for each active language.       <div class='listing'><pre>
+import mx.lang.Locale;
+Locale.setLoadCallback(localeCallback);
+Locale.loadLanguageXML("fr");
+function localeCallback(success:Boolean) {
+    trace(success);
+    trace(Locale.stringIDArray); // IDS_GREETING
+    trace(Locale.loadStringEx("IDS_GREETING", "fr")); // bonjour
+}
+</pre></div>       <p></p>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addDelayedInstance()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addDelayedInstance</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function addDelayedInstance(instance:<a href="../../Object.html">Object</a>, stringID:<a href="../../String.html">String</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Adds the {instance, string ID} pair into the internal array for later use.       This is primarily used by Flash when the strings replacement method is <code>"automatically at runtime"</code>.       </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">instance</span>:<a href="../../Object.html">Object</a></code> &mdash; Instance name of the text field to populate.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">stringID</span>:<a href="../../String.html">String</a></code> &mdash; Language string ID.             </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example uses the <code>autoReplace</code> property and <code>addDelayedInstance()</code> method to populate      a text field on the Stage with the <code>IDS_GREETING</code> string from the English XML language file.       <div class='listing'><pre>
+import mx.lang.Locale;
+greeting_txt.autoSize = "left";
+Locale.autoReplace = true;
+Locale.addDelayedInstance(greeting_txt, "IDS_GREETING");
+Locale.loadLanguageXML("en");
+</pre></div>       <p></p>
+</div>
+<a name="addXMLPath()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addXMLPath</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function addXMLPath(langCode:<a href="../../String.html">String</a>, path:<a href="../../String.html">String</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Adds the {languageCode and languagePath} pair into the internal array for later use.       This is primarily used by Flash when the strings replacement method is <code>"automatically at runtime"</code>       or <code>"via ActionScript at runtime"</code>.       </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">langCode</span>:<a href="../../String.html">String</a></code> &mdash; The language code.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">path</span>:<a href="../../String.html">String</a></code> &mdash; The XML path to add.             </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example uses the <code>setInterval()</code> method to check whether the language XML file has successfully      loaded.       <div class='listing'><pre>
+import mx.lang.Locale;
+Locale.setLoadCallback(localeCallback);
+Locale.loadLanguageXML("en");
+// create interval to check if language XML file is loaded
+var locale_int:Number = setInterval(checkLocaleStatus, 10);
+function checkLocaleStatus():Void {
+    if (Locale.checkXMLStatus()) {
+        clearInterval(locale_int);
+        trace("clearing interval &#64; " + getTimer() + " ms");
+    }
+}
+// callback function for Locale.setLoadCallback()
+function localeCallback(success:Boolean):Void {
+    greeting_txt.text = Locale.loadString("IDS_GREETING");
+}
+</pre></div>       <p></p>
+</div>
+<a name="checkXMLStatus()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">checkXMLStatus</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function checkXMLStatus():<a href="../../Boolean.html">Boolean</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Returns <code>true</code> if the XML file is loaded; <code>false</code> otherwise.       </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; 
+Returns <code>true</code> if the XML file is loaded; <code>false</code> otherwise.             
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example uses an interval to check every 10 milliseconds to see if the language file has successfully      loaded. Once the XML file has loaded, the <code>greeting_txt</code> text field instance on the Stage is populated with the      <code>IDS_GREETING</code> string from the language XML file.       <div class='listing'><pre>
+import mx.lang.Locale;
+Locale.setLoadCallback(localeCallback);
+Locale.loadLanguageXML("en");
+// create interval to check if language XML file is loaded
+var locale_int:Number = setInterval(checkLocaleStatus, 10);
+function checkLocaleStatus():Void {
+    if (Locale.checkXMLStatus()) {
+        clearInterval(locale_int);
+        trace("clearing interval &#64; " + getTimer() + " ms");
+    }
+}
+// callback function for Locale.setLoadCallback()
+function localeCallback(success:Boolean):Void {
+    greeting_txt.text = Locale.loadString("IDS_GREETING");
+}
+</pre></div>       <p></p>
+</div>
+<a name="getDefaultLang()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getDefaultLang</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getDefaultLang():<a href="../../String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The default language code as set in the Strings panel dialog box or by calling the <code>setDefaultLang()</code> method.             </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; 
+Returns the default language code.             
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#setDefaultLang()" target="">Locale.setDefaultLang()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a variable called <code>defLang</code>, which is used to hold the initial default language      for the Flash document. You click the Settings button in the Strings panel to launch the Settings dialog box. Then you add two active      languages: English (en) and French (fr), set the replace strings radio control to <code>"via ActionScript at runtime"</code>, and      click OK. In the Strings panel, you add a string ID of <b>IDS_GREETING</b>, and then add text for each active language.       <div class='listing'><pre>
+import mx.lang.Locale;
+var defLang:String = "fr";
+Locale.setDefaultLang(defLang);
+Locale.setLoadCallback(localeCallback);
+Locale.loadLanguageXML(Locale.getDefaultLang());
+function localeCallback(success:Boolean) {
+    if (success) {
+        trace(Locale.stringIDArray); // IDS_GREETING
+        trace(Locale.loadString("IDS_GREETING"));
+    } else {
+        trace("unable to load XML");
+    }
+}
+</pre></div>       <p></p>
+</div>
+<a name="initialize()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">initialize</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function initialize():Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Automatically determines the language to use and loads the XML language file.       This is primarily used by Flash when the strings replacement method is <code>"automatically at runtime"</code>.             </p><br>
+<span class="label">Example</span>
+<br>This example shows how to use the <code>initialize()</code> method to automatically populate the <code>greeting_txt      </code> text field on the Stage with the user's current OS language. Instead of using the <code>initialize()</code> method directly,      use the string replacement method of <code>"automatically at runtime"</code>.       <div class='listing'><pre>
+import mx.lang.Locale;
+trace(System.capabilities.language);
+Locale.autoReplace = true;
+Locale.addDelayedInstance(greeting_txt, "IDS_GREETING");
+Locale.initialize();
+</pre></div>       <p></p>
+</div>
+<a name="loadLanguageXML()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">loadLanguageXML</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function loadLanguageXML(xmlLanguageCode:<a href="../../String.html">String</a>, customXmlCompleteCallback:<a href="../../Function.html">Function</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Loads the specified XML language file.             </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">xmlLanguageCode</span>:<a href="../../String.html">String</a></code> &mdash; The language code for the XML language file that you want to load.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">customXmlCompleteCallback</span>:<a href="../../Function.html">Function</a></code> &mdash; Custom callback function to call when XML language file loads.             </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example uses the <code>loadLanguageXML()</code> method to load the English (en) XML language file. Once the      language file loads, the <code>localeCallback()</code> method is called and populates the <code>greeting_txt</code> text field on      the Stage with the contents of the <code>IDS_GREETING</code> string in the XML file.       <div class='listing'><pre>
+import mx.lang.Locale;
+Locale.setLoadCallback(localeCallback);
+Locale.loadLanguageXML("en");
+// create interval to check if language XML file is loaded
+var locale_int:Number = setInterval(checkLocaleStatus, 10);
+function checkLocaleStatus():Void {
+    if (Locale.checkXMLStatus()) {
+        clearInterval(locale_int);
+        trace("clearing interval &#64; " + getTimer() + " ms");
+    }
+}
+// callback function for Locale.setLoadCallback()
+function localeCallback(success:Boolean):Void {
+    greeting_txt.text = Locale.loadString("IDS_GREETING");
+}
+</pre></div>       <p></p>
+</div>
+<a name="loadString()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">loadString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function loadString(id:<a href="../../String.html">String</a>):<a href="../../String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Returns the string value associated with the given string ID in the current language.       </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">id</span>:<a href="../../String.html">String</a></code> &mdash; The identification (ID) number of the string to load.       </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; 
+The string value associated with the given string ID in the current language.             
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#loadStringEx()" target="">Locale.loadStringEx()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example uses an interval to check every 10 milliseconds to see if the language file has successfully      loaded. Once the XML file has loaded, the <code>greeting_txt</code> text field instance on the Stage is populated with the      <code>IDS_GREETING</code> string from the XML language file.       <div class='listing'><pre>
+import mx.lang.Locale;
+Locale.setLoadCallback(localeCallback);
+Locale.loadLanguageXML("en");
+// create interval to check if language XML file is loaded
+var locale_int:Number = setInterval(checkLocaleStatus, 10);
+function checkLocaleStatus():Void {
+    if (Locale.checkXMLStatus()) {
+        clearInterval(locale_int);
+        trace("clearing interval &#64; " + getTimer() + " ms");
+    }
+}
+// callback function for Locale.setLoadCallback()
+function localeCallback(success:Boolean):Void {
+    greeting_txt.text = Locale.loadString("IDS_GREETING");
+}
+</pre></div>       <p></p>
+</div>
+<a name="loadStringEx()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">loadStringEx</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function loadStringEx(stringID:<a href="../../String.html">String</a>, languageCode:<a href="../../String.html">String</a>):<a href="../../String.html">String</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Returns the string value associated with the given string ID and language code.       To avoid unexpected XML file loading, <code>loadStringEx()</code> does not load the XML language file if the XML file is not      already loaded. You should decide on the right time to call the <code>loadLanguageXML()</code> method if you want to load a XML      language file.       </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">stringID</span>:<a href="../../String.html">String</a></code> &mdash; The identification (ID) number of the string to load.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">languageCode</span>:<a href="../../String.html">String</a></code> &mdash; The language code.       </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; 
+The string value associated with the given string ID in the language specified by the <code>languageCode</code> parameter.             
+
+</td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#loadString()" target="">Locale.loadString()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example uses the <code>loadStringEx()</code> method to trace the value of the <code>IDS_GREETING</code>      string for the currently loaded French language XML file.       <div class='listing'><pre>
+import mx.lang.Locale;
+Locale.setLoadCallback(localeCallback);
+Locale.loadLanguageXML("fr");
+function localeCallback(success:Boolean) {
+    trace(success);
+    trace(Locale.stringIDArray); // IDS_GREETING
+    trace(Locale.loadStringEx("IDS_GREETING", "fr")); // bonjour
+}
+</pre></div>       <p></p>
+</div>
+<a name="setDefaultLang()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setDefaultLang</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function setDefaultLang(langCode:<a href="../../String.html">String</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Sets the default language code.       </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">langCode</span>:<a href="../../String.html">String</a></code> &mdash; A string representing a language code.             </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#getDefaultLang()" target="">Locale.getDefaultLang()</a>
+</div>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a variable called <code>defLang</code>, which is used to hold the initial default language for the Flash document. You click the Settings button in the Strings panel to open the Settings dialog box. Then you add two active languages: English (en) and French (fr), set the replace strings radio control to <code>"via ActionScript at runtime"</code>, and click OK. In the Strings panel, you add a string ID of <b>IDS_GREETING</b>, and then add text for each active language.       <div class='listing'><pre>
+import mx.lang.Locale;
+var defLang:String = "fr";
+Locale.setDefaultLang(defLang);
+Locale.setLoadCallback(localeCallback);
+Locale.loadLanguageXML(Locale.getDefaultLang());
+function localeCallback(success:Boolean) {
+    if (success) {
+        trace(Locale.stringIDArray); // IDS_GREETING
+        trace(Locale.loadString("IDS_GREETING"));
+    } else {
+        trace("unable to load XML");
+    }
+}
+</pre></div>       <p></p>
+</div>
+<a name="setLoadCallback()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setLoadCallback</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function setLoadCallback(loadCallback:<a href="../../Function.html">Function</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p><p>Sets the callback function that is called after the XML file is loaded.       </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">loadCallback</span>:<a href="../../Function.html">Function</a></code> &mdash; The function to call when the XML language file loads.             </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example uses an interval to check every 10 milliseconds to see if the language file has successfully      loaded. Once the XML file has loaded, the <code>greeting_txt</code> text field instance on the Stage is populated with the      <code>IDS_GREETING</code> string from the XML language file.       <div class='listing'><pre>
+import mx.lang.Locale;
+Locale.setLoadCallback(localeCallback);
+Locale.loadLanguageXML("en");
+// create interval to check if language XML file is loaded
+var locale_int:Number = setInterval(checkLocaleStatus, 10);
+function checkLocaleStatus():Void {
+    if (Locale.checkXMLStatus()) {
+        clearInterval(locale_int);
+        trace("clearing interval &#64; " + getTimer() + " ms");
+    }
+}
+// callback function for Locale.setLoadCallback()
+function localeCallback(success:Boolean):Void {
+    greeting_txt.text = Locale.loadString("IDS_GREETING");
+}
+</pre></div>       <p></p>
+</div>
+<a name="setString()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function setString(stringID:<a href="../../String.html">String</a>, languageCode:<a href="../../String.html">String</a>, stringValue:<a href="../../String.html">String</a>):Void</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Sets the new string value of a given string ID and language code.            </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">stringID</span>:<a href="../../String.html">String</a></code> &mdash; The identification (ID) number of the string to set.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">languageCode</span>:<a href="../../String.html">String</a></code> &mdash; The language code.       </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">stringValue</span>:<a href="../../String.html">String</a></code> &mdash; A string value.            </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example uses the <code>setString()</code> method to set the <code>IDS_WELCOME</code> string for both English      (en) and French (fr).       <div class='listing'><pre>
+import mx.lang.Locale;
+Locale.setString("IDS_WELCOME", "en", "hello");
+Locale.setString("IDS_WELCOME", "fr", "bonjour");
+trace(Locale.loadStringEx("IDS_WELCOME", "en")); // hello
+</pre></div>           <p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

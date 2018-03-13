@@ -1,0 +1,431 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="BlurFilter,flash.filters.BlurFilter,blurX,blurY,quality,clone" name="keywords">
+<title>flash.filters.BlurFilter</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'BlurFilter - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="../../language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="../../appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="../../index.html?flash/filters/BlurFilter.html&amp;flash/filters/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;BlurFilter</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class BlurFilter"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">flash.filters</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class BlurFilter</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">BlurFilter <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../images/inherit-arrow.gif"> <a href="BitmapFilter.html">BitmapFilter</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../images/inherit-arrow.gif"> <a href="../../Object.html">Object</a></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p>
+<p></p>The BlurFilter class lets you apply a blur visual effect to a variety of objects in Flash.   A blur effect softens the details of an image. You can produce blurs that   range from a softly unfocused look to a Gaussian blur, a hazy   appearance like viewing an image through semi-opaque glass. When the <code>quality</code> property   of this filter is set to 1, the result is a softly unfocused look.   When the <code>quality</code> property is set to 3, it approximates a Gaussian blur   filter.    <p>The use of filters depends on the object to which you apply the filter:</p>     <ul><li>To apply filters to movie clips, text fields, and buttons at runtime, use the   <code>filters</code> property. Setting the <code>filters</code> property of an object   does not modify the object, and you can undo the setting by clearing the <code>filters</code> property.</li>   <li>To apply filters to BitmapData instances, use the <code>BitmapData.applyFilter()</code> method.   Calling <code>applyFilter</code> on a BitmapData object takes the source BitmapData object   and the filter object and generates a filtered image as a result.</li>   </ul>     <p>You can also apply filter effects to images and video at authoring time.   For more information, see your authoring documentation.</p>     <p>If you apply a filter to a movie clip or button, the <code>cacheAsBitmap</code> property of the   movie clip or button is set to <code>true</code>. If you clear all filters, the original value of   <code>cacheAsBitmap</code> is restored.</p>     <p>This filter supports stage scaling. However, it does not support general scaling,   rotation, and skewing. If the object itself is scaled (<code>_xscale</code> and <code>_yscale</code> are not 100%), the   filter effect is not scaled. It is scaled only when you zoom in on the Stage.</p>    <p>A filter is not applied if the resulting image exceeds 2880 pixels in width or height.   If, for example, you zoom in on a large movie clip with a filter applied, the filter is   turned off if the resulting image exceeds the limit of 2880 pixels.</p>     <p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../../MovieClip.html#filters" target="">MovieClip.filters</a>
+<br>
+<a href="../../MovieClip.html#cacheAsBitmap" target="">MovieClip.cacheAsBitmap</a>
+<br>
+<a href="../../Button.html#filters" target="">Button.filters</a>
+<br>
+<a href="../../Button.html#cacheAsBitmap" target="">Button.cacheAsBitmap</a>
+<br>
+<a href="../../TextField.html#filters" target="">TextField.filters</a>
+<br>
+<a href="../display/BitmapData.html#applyFilter()" target="">flash.display.BitmapData.applyFilter()</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#blurX">blurX</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The amount of horizontal blur.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#blurY">blurY</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The amount of vertical blur.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#quality">quality</a> : <a href="../../Number.html">Number</a>
+<div class="summaryTableDescription">The number of times to perform the blur.</div>
+</td>
+</tr>
+</table>
+<a name="propertiesInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Properties inherited from class <a href="../../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../../Object.html#__proto__">__proto__</a>, <a href="../../Object.html#__resolve">__resolve</a>, <a href="../../Object.html#constructor">constructor</a>, <a href="../../Object.html#prototype">prototype</a></code></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#BlurFilter()">BlurFilter</a>([blurX:<a href="../../Number.html">Number</a>], [blurY:<a href="../../Number.html">Number</a>], [quality:<a href="../../Number.html">Number</a>])</div>
+<div class="summaryTableDescription">Initializes the filter with the specified parameters.</div>
+</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clone()">clone</a>():<a href="BlurFilter.html">BlurFilter</a>
+</div>
+<div class="summaryTableDescription">Returns a copy of this filter object.</div>
+</td>
+</tr>
+</table>
+<a name="methodsInheritedFromBitmapFilter"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="BitmapFilter.html">BitmapFilter</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="BitmapFilter.html#clone()">clone</a></code></td>
+</tr>
+</table>
+<a name="methodsInheritedFromObject"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th>Methods inherited from class <a href="../../Object.html">Object</a></th>
+</tr>
+<tr>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="inheritanceList"><code><a href="../../Object.html#addProperty()">addProperty</a>, <a href="../../Object.html#hasOwnProperty()">hasOwnProperty</a>, <a href="../../Object.html#isPropertyEnumerable()">isPropertyEnumerable</a>, <a href="../../Object.html#isPrototypeOf()">isPrototypeOf</a>, <a href="../../Object.html#registerClass()">registerClass</a>, <a href="../../Object.html#toString()">toString</a>, <a href="../../Object.html#unwatch()">unwatch</a>, <a href="../../Object.html#valueOf()">valueOf</a>, <a href="../../Object.html#watch()">watch</a></code></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="blurX"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">blurX</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var blurX:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The amount of horizontal blur. Valid values are from 0 to 255 (floating point). The      default value is 4. Values that are a power of 2 (such as 2, 4, 8, 16 and 32) are optimized      to render more quickly than other values.           </p><br>
+<span class="label">Example</span>
+<br>The following example changes the <code>blurX</code> property on an existing MovieClip instance      when a user clicks it.      <div class='listing'><pre>
+import flash.filters.BlurFilter;
+var mc:MovieClip = createBlurFilterRectangle("BlurFilterBlurX");
+mc.onRelease = function() {
+    var filter:BlurFilter = this.filters[0];
+    filter.blurX = 200;
+    this.filters = new Array(filter);
+}
+
+function createBlurFilterRectangle(name:String):MovieClip {
+    var rect:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 100;
+    var h:Number = 100;
+    rect.beginFill(0x003366);
+    rect.lineTo(w, 0);
+    rect.lineTo(w, h);
+    rect.lineTo(0, h);
+    rect.lineTo(0, 0);
+    rect._x = 20;
+    rect._y = 20;
+
+    var filter:BlurFilter = new BlurFilter(30, 30, 2);
+    var filterArray:Array = new Array();
+    filterArray.push(filter);
+    rect.filters = filterArray;
+    return rect;
+}
+</pre></div>     <p></p>
+</div>
+<a name="blurY"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">blurY</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var blurY:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The amount of vertical blur. Valid values are from 0 to 255 (floating point). The      default value is 4. Values that are a power of 2 (such as 2, 4, 8, 16 and 32) are optimized      to render more quickly than other values.          </p><br>
+<span class="label">Example</span>
+<br>The following example changes the <code>blurY</code> property on an existing MovieClip      instance when a user clicks it.      <div class='listing'><pre>
+import flash.filters.BlurFilter;
+var mc:MovieClip = createBlurFilterRectangle("BlurFilterBlurY");
+mc.onRelease = function() {
+    var filter:BlurFilter = this.filters[0];
+    filter.blurY = 200;
+    this.filters = new Array(filter);
+}
+
+function createBlurFilterRectangle(name:String):MovieClip {
+    var rect:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 100;
+    var h:Number = 100;
+    rect.beginFill(0x003366);
+    rect.lineTo(w, 0);
+    rect.lineTo(w, h);
+    rect.lineTo(0, h);
+    rect.lineTo(0, 0);
+    rect._x = 20;
+    rect._y = 20;
+
+    var filter:BlurFilter = new BlurFilter(30, 30, 2);
+    var filterArray:Array = new Array();
+    filterArray.push(filter);
+    rect.filters = filterArray;
+    return rect;
+}
+</pre></div>     <p></p>
+</div>
+<a name="quality"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">quality</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var quality:<a href="../../Number.html">Number</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>The number of times to perform the blur. Valid values are from 0-15. The default value is 1,      which is equivalent to low quality. A value of 2 is medium quality. A value of 3 is high quality and      approximates a Gaussian blur.           </p><p>For most applications, a <code>quality</code> value of 1, 2, or 3 is sufficient. Although you can      use additional numeric values up to 15 to increase the number of times the blur is applied, thus      getting a more blurred effect, be aware that higher values are rendered more      slowly. Instead of increasing the value of <code>quality</code>, you can often get a similar effect,      and with faster rendering, by simply increasing the values of <code>blurX</code> and      <code>blurY</code>.</p>           <br>
+<span class="label">Example</span>
+<br>The following example creates a rectangle and applies a blur filter with a      <code>quality</code> value of 1 to the rectangle. When you click the rectangle, the      <code>quality</code> increases to 3, and the rectangle becomes more blurry.      <div class='listing'><pre>
+import flash.filters.BlurFilter;
+var mc:MovieClip = createBlurFilterRectangle("BlurFilterQuality");
+mc.onRelease = function() {
+    var filter:BlurFilter = this.filters[0];
+    filter.quality = 3;
+    this.filters = new Array(filter);
+}
+
+function createBlurFilterRectangle(name:String):MovieClip {
+    var rect:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    var w:Number = 100;
+    var h:Number = 100;
+    rect.beginFill(0x003366);
+    rect.lineTo(w, 0);
+    rect.lineTo(w, h);
+    rect.lineTo(0, h);
+    rect.lineTo(0, 0);
+    rect._x = 20;
+    rect._y = 20;
+
+    var filter:BlurFilter = new BlurFilter(30, 30, 1);
+    var filterArray:Array = new Array();
+    filterArray.push(filter);
+    rect.filters = filterArray;
+    return rect;
+}
+</pre></div>     <p></p>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="BlurFilter()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">BlurFilter</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function BlurFilter([blurX:<a href="../../Number.html">Number</a>], [blurY:<a href="../../Number.html">Number</a>], [quality:<a href="../../Number.html">Number</a>])</code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Initializes the filter with the specified parameters.          The default values create a soft, unfocused image.           </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">blurX</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The amount to blur horizontally. Valid values are from 0 to 255 (floating-point      value). The default value is 4. Values that are a power of 2 (such as 2, 4, 8, 16 and 32) are optimized to render more quickly than other values.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">blurY</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The amount to blur vertically. Valid values are from 0 to 255 (floating-point      value). The default value is 4. Values that are a power of 2 (such as 2, 4, 8, 16 and 32) are optimized to render more quickly than other values.      </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">quality</span>:<a href="../../Number.html">Number</a></code>&nbsp;[optional] &mdash; The number of times to apply the filter. The default value is 1, which is equivalent      to low quality. A value of 2 is medium quality, and a value of 3 is high quality and approximates a Gaussian blur.          </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example instantiates a new <code>BlurFilter</code> constructor and applies it to a flat, rectangular shape:      <div class='listing'><pre>
+import flash.filters.BlurFilter;
+var rect:MovieClip = createRectangle(100, 100, 0x003366, "BlurFilterExample");
+
+var blurX:Number = 30;
+var blurY:Number = 30;
+var quality:Number = 3;
+
+var filter:BlurFilter = new BlurFilter(blurX, blurY, quality);
+var filterArray:Array = new Array();
+filterArray.push(filter);
+rect.filters = filterArray;
+
+function createRectangle(w:Number, h:Number, bgColor:Number, name:String):MovieClip {
+    var mc:MovieClip = this.createEmptyMovieClip(name, this.getNextHighestDepth());
+    mc.beginFill(bgColor);
+    mc.lineTo(w, 0);
+    mc.lineTo(w, h);
+    mc.lineTo(0, h);
+    mc.lineTo(0, 0);
+    mc._x = 20;
+    mc._y = 20;
+    return mc;
+}
+</pre></div>     <p></p>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="clone()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clone</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clone():<a href="BlurFilter.html">BlurFilter</a></code>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 8</td>
+</tr>
+</table>
+<p></p><p>Returns a copy of this filter object.           </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="BlurFilter.html">BlurFilter</a></code> &mdash; 
+A new BlurFilter instance with all the same      properties as the original BlurFilter instance.      
+
+</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates three BlurFilter objects and compares them. You can create the <code>filter_1</code>      object by using the <code>BlurFilter</code> constructor. You can create the <code>filter_2</code> object by setting it equal to      <code>filter_1</code>. You can create the <code>clonedFilter</code> object by cloning <code>filter_1</code>. Notice      that although <code>filter_2</code> evaluates as being equal to <code>filter_1</code>, <code>clonedFilter</code> does not,      even though it contains the same values as <code>filter_1</code>.      <div class='listing'><pre>
+import flash.filters.BlurFilter;
+
+var filter_1:BlurFilter = new BlurFilter(30, 30, 2);
+var filter_2:BlurFilter = filter_1;
+var clonedFilter:BlurFilter = filter_1.clone();
+
+trace(filter_1 == filter_2);        // true
+trace(filter_1 == clonedFilter);    // false
+
+for(var i in filter_1) {
+    trace(">> " + i + ": " + filter_1[i]);
+    // >> clone: [type Function]
+    // >> quality: 2
+    // >> blurY: 30
+    // >> blurX: 30
+}
+
+for(var i in clonedFilter) {
+    trace(">> " + i + ": " + clonedFilter[i]);
+    // >> clone: [type Function]
+    // >> quality: 2
+    // >> blurY: 30
+    // >> blurX: 30
+}
+</pre></div>      To further demonstrate the relationships between <code>filter_1</code>, <code>filter_2</code>, and <code>clonedFilter</code>,      the following example modifies the <code>quality</code> property of <code>filter_1</code>. Modifying <code>quality</code>      demonstrates that the <code>clone()</code> method creates a new instance based on values of the <code>filter_1</code> instead of      referring to the values.      <div class='listing'><pre>
+import flash.filters.BlurFilter;
+
+var filter_1:BlurFilter = new BlurFilter(30, 30, 2);
+var filter_2:BlurFilter = filter_1;
+var clonedFilter:BlurFilter = filter_1.clone();
+
+trace(filter_1.quality);            // 2
+trace(filter_2.quality);            // 2
+trace(clonedFilter.quality);        // 2
+
+filter_1.quality = 1;
+
+trace(filter_1.quality);            // 1
+trace(filter_2.quality);            // 1
+trace(clonedFilter.quality);        // 2
+</pre></div>     <p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->

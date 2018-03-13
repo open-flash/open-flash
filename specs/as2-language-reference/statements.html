@@ -1,0 +1,2328 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="print.css" type="text/css" media="print">
+<title>Statements, Keywords and Directives</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="asdoc.js"></script><script type="text/javascript" language="javascript" src="cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Statements, Keywords and Directives - Flash CS5 ActionScript 2.0 Language Reference';
+				var baseRef = '';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Flash CS5 ActionScript 2.0 Language Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('all-classes.html')" href="package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('all-classes.html')" href="class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a href="language-elements.html">Language&nbsp;Elements</a>&nbsp;| <a onclick="loadClassListFrame('index-list.html')" href="all-index-Symbols.html">Index</a>&nbsp;|&nbsp;<a href="appendixes.html">Appendixes</a>&nbsp;|&nbsp;<a href="index.html?statements.html&amp;all-classes.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Statements,&nbsp;Keywords&nbsp;&amp;&nbsp;Directives</td><td align="right" id="subNav" class="titleTableSubNav"></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Statements, Keywords & Directives"); titleBar_setSubNav(false,false,false,false,false,false,false,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<br>
+<p>Statements are language elements that perform or specify an action. For example, the return statement returns a result as a value of the function in which it executes. The if statement evaluates a condition to determine the next action that should be taken. The switch statement creates a branching structure for ActionScript statements.</p>
+<br>
+<a name="statementSummary"></a>
+<table class="summaryTable" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Statement summary</th>
+</tr>
+<tr class="row1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#break" class="signatureLink">break</a></td><td class="summaryTableLastCol">Appears within a loop (<code><A href="statements.html#for">for</A></code> , <code><A href="statements.html#for..in">for..in</A></code>, <code><A href="statements.html#do..while">do..while</A></code> or <code><A href="statements.html#while">while</A></code>) or within a block of statements associated with a particular case within a <code><A href="statements.html#switch">switch</A></code> statement.</td>
+</tr>
+<tr class="row0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#case" class="signatureLink">case</a></td><td class="summaryTableLastCol">Defines a condition for the <code>switch</code> statement.</td>
+</tr>
+<tr class="row1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#class" class="signatureLink">class</a></td><td class="summaryTableLastCol">Defines a custom class, which lets you instantiate objects that share methods and properties that you define.</td>
+</tr>
+<tr class="row0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#continue" class="signatureLink">continue</a></td><td class="summaryTableLastCol">Jumps past all remaining statements in the innermost loop and starts the next iteration of the loop as if control had passed through to the end of the loop normally.</td>
+</tr>
+<tr class="row1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#default" class="signatureLink">default</a></td><td class="summaryTableLastCol">Defines the default case for a <code>switch</code> statement.</td>
+</tr>
+<tr class="row0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#delete" class="signatureLink">delete</a></td><td class="summaryTableLastCol">Destroys the object reference specified by the <code><i>reference</i></code> parameter, and returns <code>true</code> if the reference is successfully deleted; <code>false</code> otherwise.</td>
+</tr>
+<tr class="row1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#do..while" class="signatureLink">do..while</a></td><td class="summaryTableLastCol">Similar to a <code>while</code> loop, except that the statements are executed once before the initial evaluation of the condition.</td>
+</tr>
+<tr class="row0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#else" class="signatureLink">else</a></td><td class="summaryTableLastCol">Specifies the statements to run if the condition in the <code>if</code> statement returns 
+			<code>false</code>.</td>
+</tr>
+<tr class="row1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#else_if" class="signatureLink">else if</a></td><td class="summaryTableLastCol">Evaluates a condition and specifies the statements to run if the condition in the initial 
+			<code>if</code> statement returns <code>false</code>.</td>
+</tr>
+<tr class="row0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#for" class="signatureLink">for</a></td><td class="summaryTableLastCol">Evaluates the <code><i>init</i></code> (initialize) expression once and then starts a looping sequence.</td>
+</tr>
+<tr class="row1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#for..in" class="signatureLink">for..in</a></td><td class="summaryTableLastCol">Iterates over the properties of an object or elements in an array and executes the <code><i>statement</i></code> for each property or element.</td>
+</tr>
+<tr class="row0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#function" class="signatureLink">function</a></td><td class="summaryTableLastCol">Comprises a set of statements that you define to perform a certain task.</td>
+</tr>
+<tr class="row1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#if" class="signatureLink">if</a></td><td class="summaryTableLastCol">Evaluates a condition to determine the next action in a SWF file.</td>
+</tr>
+<tr class="row0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#return" class="signatureLink">return</a></td><td class="summaryTableLastCol">Specifies the value returned by a function.</td>
+</tr>
+<tr class="row1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#set_variable" class="signatureLink">set variable</a></td><td class="summaryTableLastCol">Assigns a value to a variable.</td>
+</tr>
+<tr class="row0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#super" class="signatureLink">super</a></td><td class="summaryTableLastCol">Invokes the superclass' version of a method or constructor.</td>
+</tr>
+<tr class="row1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#switch" class="signatureLink">switch</a></td><td class="summaryTableLastCol">Creates a branching structure for ActionScript statements.</td>
+</tr>
+<tr class="row0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#throw" class="signatureLink">throw</a></td><td class="summaryTableLastCol">Generates, or <i>throws</i> , an error that can be handled, or <i>caught</i> , by a 
+			<code>catch{}</code> code block.</td>
+</tr>
+<tr class="row1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#try..catch..finally" class="signatureLink">try..catch..finally</a></td><td class="summaryTableLastCol">Enclose a block of code in which an error can occur, and then respond to the error.
+			</td>
+</tr>
+<tr class="row0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#var" class="signatureLink">var</a></td><td class="summaryTableLastCol">Used to declare local or Timeline variables.</td>
+</tr>
+<tr class="row1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#while" class="signatureLink">while</a></td><td class="summaryTableLastCol">Evaluates a condition and if the condition evaluates to <code>true</code> , runs a statement or series of statements before looping back to evaluate the condition again.</td>
+</tr>
+<tr class="row0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#with" class="signatureLink">with</a></td><td class="summaryTableLastCol">Lets you specify an object (such as a movie clip) with the <code><i>object</i></code> parameter and evaluate expressions and actions inside that object with the <code><i>statement(s)</i></code> parameter.</td>
+</tr>
+<tr>
+<th>&nbsp;</th><th colspan="2">Keyword summary</th>
+</tr>
+<tr class="row1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#dynamic" class="signatureLink">dynamic</a></td><td class="summaryTableLastCol">Specifies that objects based on the specified class can add and access dynamic properties at runtime.</td>
+</tr>
+<tr class="row0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#extends" class="signatureLink">extends</a></td><td class="summaryTableLastCol">Defines a class that is a subclass of another class; the latter is the superclass.
+			</td>
+</tr>
+<tr class="row1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#get" class="signatureLink">get</a></td><td class="summaryTableLastCol">Permits implicit <i>getting</i> of properties associated with objects based on classes you have defined in external class files.</td>
+</tr>
+<tr class="row0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#implements" class="signatureLink">implements</a></td><td class="summaryTableLastCol">Specifies that a class must define all the methods declared in the interface (or interfaces) being implemented.</td>
+</tr>
+<tr class="row1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#import" class="signatureLink">import</a></td><td class="summaryTableLastCol">Lets you access classes without specifying their fully qualified names.</td>
+</tr>
+<tr class="row0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#interface" class="signatureLink">interface</a></td><td class="summaryTableLastCol">Defines an interface.</td>
+</tr>
+<tr class="row1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#intrinsic" class="signatureLink">intrinsic</a></td><td class="summaryTableLastCol">Allows compile-time type checking of previously defined classes.</td>
+</tr>
+<tr class="row0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#private" class="signatureLink">private</a></td><td class="summaryTableLastCol">Specifies that a variable or function is available only to the class that declares or defines it or to subclasses of that class.</td>
+</tr>
+<tr class="row1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#public" class="signatureLink">public</a></td><td class="summaryTableLastCol">Specifies that a variable or function is available to any caller.</td>
+</tr>
+<tr class="row0">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#set" class="signatureLink">set</a></td><td class="summaryTableLastCol">Permits implicit setting of properties associated with objects based on classes you have defined in external class files.</td>
+</tr>
+<tr class="row1">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a href="#static" class="signatureLink">static</a></td><td class="summaryTableLastCol">Specifies that a variable or function is created only once per class rather than being created in every object based on that class.</td>
+</tr>
+</table>
+<div class="detailSectionHeader">Statement, Keyword &amp; Directive detail</div>
+<a name="break"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">break</td><td class="detailHeaderType">statement</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>break</code></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 4</td>
+</tr>
+</table>
+<p></p>
+<p>Appears within a loop (<code><A href="statements.html#for">for</A></code> , <code><A href="statements.html#for..in">for..in</A></code>, <code><A href="statements.html#do..while">do..while</A></code> or <code><A href="statements.html#while">while</A></code>) or within a block of statements associated with a particular case within a <code><A href="statements.html#switch">switch</A></code> statement. When used in a loop, the <code>break</code> statement instructs Flash to skip the rest of the loop body, stop the looping action, and execute the statement following the loop statement. When used in a 
+			<code>switch</code>, the <code>break</code> statement instructs Flash to skip the rest of the statements in that 
+			<code>case</code> block and jump to the first statement following the enclosing <code>switch</code> statement. <p>In nested loops, the <code>break</code> statement only skips the rest of the immediate loop and does not break out of the entire series of nested loops. For breaking out of an entire series of nested loops, see <code><A href="statements.html#try..catch..finally">try..catch..finally</A></code>.</p></p>
+<br>
+<span class="label">Example</span>
+<br>The following example uses the <code>break</code> statement to exit an otherwise infinite loop: <div class='listing'><pre>var i:Number = 0;
+while (true) { 
+    trace(i); 
+    if (i >= 10) { 
+        break; // this will terminate/exit the loop 
+    } 
+    i++; 
+} </pre></div> which <span class="flashonly">traces</span> <span class="flexonly">writes</span> the following output: <div class='listing'><pre>0 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10</pre></div>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#for" target="">for</a>
+</div>
+</div>
+<a name="case"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">case</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code> case <i>expression</i> : <i>statement(s)</i> </code></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 4</td>
+</tr>
+</table>
+<p></p>
+<p>Defines a condition for the <code>switch</code> statement. If the <code><i>expression</i></code> parameter equals the <code><i>expression</i></code> parameter of the <code>switch</code> statement using strict equality 
+			(<code>===</code>), then Flash Player will execute statements in the <code><i>statement(s)</i></code> parameter until it encounters a <code>break</code> statement or the end of the <code>switch</code> statement. <p>If you use the <code>case</code> statement outside a <code>switch</code> statement, it produces an error and the script doesn't compile.</p> <p><note><strong><i>Note: 
+			</i></strong>You should always end the <code><i>statement(s)</i></code> parameter with a break statement. If you omit the <code>break statement</code> from the <code><i>statement(s)</i></code> parameter, it continues executing with the next <code>case</code> statement instead of exiting the <code>switch</code> statement.</note></p></p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">expression</span>:<a href="String.html">String</a></code> &mdash; 
+					Any expression.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example defines conditions for the switch statement <code>thisMonth</code>. If 
+            <code>thisMonth</code> equals the expression in the case statement, the statement executes. <div class='listing'><pre>var thisMonth:Number = new Date().getMonth(); 
+switch (thisMonth) { 
+    case 0 : 
+        trace("January"); 
+        break; 
+    case 1 : 
+        trace("February"); 
+        break; 
+    case 5 : 
+    case 6 : 
+    case 7 : 
+        trace("Some summer month"); 
+        break; 
+    case 8 : 
+        trace("September"); 
+        break; 
+    default : 
+        trace("some other month"); 
+}</pre></div>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#break" target="">break</a>
+</div>
+</div>
+<a name="class"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">class</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>[dynamic] class <i>className</i> [ extends <i>superClass</i> ] [ implements <i>interfaceName</i>[, <i>interfaceName</i>... ] ] { 
+    // class definition here
+}</pre>
+			</td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0 &mdash; <span class="flashonly">To use this keyword, you must specify ActionScript 2.0 or later and Flash Player 6 or later in the Flash tab of your FLA file's Publish Settings dialog box. This keyword is supported only when used in external script files, not in scripts written in the Actions panel.</span></td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p>Defines a custom class, which lets you instantiate objects that share methods and properties that you define. For example, if you are developing an invoice-tracking system, you could create an invoice class that defines all the methods and properties that each invoice should have. You would then use the <code>new invoice()</code> command to create invoice objects. <p>The name of the class must match the name of the external file that contains the class. The name of the external file must be the name of the class with the file extension .as appended. For example, if you name a class Student, the file that defines the class must be named Student.as.</p> <p>If a class is within a package, the class declaration must use the fully qualified class name of the form base.sub1.sub2.MyClass. Also, the class's AS file must be stored within the path in a directory structure that reflects the package structure, such as base/sub1/sub2/MyClass.as. If a class definition is of the form "class MyClass," it is in the default package and the MyClass.as file should be in the top level of some directory in the path.</p> <p>For this reason, it's good practice to plan your directory structure before you begin creating classes. Otherwise, if you decide to move class files after you create them, you have to modify the class declaration statements to reflect their new location.</p> <p>You cannot nest class definitions; that is, you cannot define additional classes within a class definition.</p> <p>To indicate that objects can add and access dynamic properties at runtime, precede the class statement with the <code>dynamic</code> keyword. To declare that a class implements an interface, use the 
+			<code>implements</code> keyword. To create subclasses of a class, use the <code>extends</code> keyword. (A class can extend only one class, but can implement several interfaces.) You can use <code>implements</code> and <code>extends</code> in a single statement. The following examples show typical uses of the <code>implements</code> and <code>extends</code> keywords:</p> 
+			<div class='listing'><pre>class C implements Interface_i, Interface_j // OK 
+class C extends Class_d implements Interface_i, Interface_j // OK 
+class C extends Class_d, Class_e // not OK </pre></div> 
+			
+			</p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">className</span>:<a href="String.html">String</a></code> &mdash; 
+					The fully qualified name of the class.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a class called Plant. The Plant constructor takes two parameters. <div class='listing'><pre>// Filename Plant.as 
+class Plant { 
+    // Define property names and types 
+    var leafType:String; 
+    var bloomSeason:String; 
+    // Following line is constructor 
+    // because it has the same name as the class 
+    function Plant(param_leafType:String, param_bloomSeason:String) { 
+        // Assign passed values to properties when new Plant object is created 
+        this.leafType = param_leafType; 
+        this.bloomSeason = param_bloomSeason; 
+    } 
+    // Create methods to return property values, because best practice 
+    // recommends against directly referencing a property of a class 
+    function getLeafType():String { 
+        return leafType; 
+    } 
+    function getBloomSeason():String { 
+        return bloomSeason; 
+    } 
+}</pre></div> <span class="flashonly">In an external script file or in the Actions panel, use the <code>new</code> operator to create a Plant object.</span> <span class="flexonly">In your script, use the <code>new</code> operator to create a Plant object.</span> <div class='listing'><pre>var pineTree:Plant = new Plant("Evergreen", "N/A"); 
+// Confirm parameters were passed correctly 
+trace(pineTree.getLeafType()); 
+trace(pineTree.getBloomSeason()); </pre></div> The following example creates a class called ImageLoader. The <code>ImageLoader</code> constructor takes three parameters. <div class='listing'><pre>// Filename ImageLoader.as 
+class ImageLoader extends MovieClip { 
+    function ImageLoader(image:String, target_mc:MovieClip, init:Object) { 
+        var listenerObject:Object = new Object(); 
+        listenerObject.onLoadInit = function(target) { 
+            for (var i in init) { 
+                target[i] = init[i]; 
+            }
+        }; 
+        var JPEG_mcl:MovieClipLoader = new MovieClipLoader(); 
+        JPEG_mcl.addListener(listenerObject); 
+        JPEG_mcl.loadClip(image, target_mc); 
+    } 
+} </pre></div> <span class="flashonly">In an external script file or in the Actions panel, use the <code>new</code> operator to create an ImageLoader object.</span> <span class="flexonly">In your script, use the <code>new</code> operator to create an ImageLoader object.
+</span> <div class='listing'><pre>var jakob_mc:MovieClip = this.createEmptyMovieClip("jakob_mc", this.getNextHighestDepth()); 
+var jakob:ImageLoader = new ImageLoader("http://www.helpexamples.com/flash/images/image1.jpg", jakob_mc, {_x:10, _y:10, _alpha:70, _rotation:-5});</pre></div>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#dynamic" target="">dynamic</a>
+</div>
+</div>
+<a name="continue"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">continue</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>continue</code></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 4</td>
+</tr>
+</table>
+<p></p>
+<p>Jumps past all remaining statements in the innermost loop and starts the next iteration of the loop as if control had passed through to the end of the loop normally. It has no effect outside a loop.</p>
+<br>
+<span class="label">Example</span>
+<br>In the following <code>while</code> loop, <code>continue</code> causes the Flash interpreter to skip the rest of the loop body and jump to the top of the loop, where the condition is tested: <div class='listing'><pre>trace("example 1"); 
+var i:Number = 0; 
+while (i &lt; 10) { 
+    if (i % 3 == 0) { 
+        i++; 
+        continue; 
+    } 
+    trace(i); 
+    i++; 
+}</pre></div> <p>In the following <code>do..while</code> loop, <code>continue</code> causes the Flash interpreter to skip the rest of the loop body and jump to the bottom of the loop, where the condition is tested:</p> <div class='listing'><pre>trace("example 2"); 
+var i:Number = 0; 
+do { 
+    if (i % 3 == 0) { 
+        i++; 
+        continue; 
+    } 
+    trace(i); 
+    i++; 
+} 
+while (i &lt; 10); </pre></div> <p>In a <code>for</code> loop, <code>continue</code> causes the Flash interpreter to skip the rest of the loop body. In the following example, if the i modulo 3 equals 0, then the <code>trace(i)</code> statement is skipped:</p> <div class='listing'><pre>trace("example 3"); 
+for (var i = 0; i &lt; 10; i++) { 
+    if (i % 3 == 0) { 
+        continue; 
+    } 
+    trace(i); 
+}</pre></div> <p>In the following <code>for..in</code> loop, <code>continue</code> causes the Flash interpreter to skip the rest of the loop body and jump back to the top of the loop, where the next value in the enumeration is processed:</p> <div class='listing'><pre>for (i in _root) { 
+    if (i == "$version") { 
+        continue; 
+    } 
+    trace(i); 
+}</pre></div>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#do..while" target="">do..while</a>
+</div>
+</div>
+<a name="default"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">default</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>default: <i>statements</i> </code></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p>Defines the default case for a <code>switch</code> statement. The statements execute if the 
+			<code><i>expression</i></code> parameter of the <code>switch</code> statement doesn't equal (using the strict equality [<code>===</code>] operation) any of the <code><i>expression</i></code> parameters that follow the <code>case</code> keywords for a given 
+			<code>switch</code> statement. <p>A <code>switch</code> is not required to have a <code>default</code> case statement. A <code>default</code> case statement does not have to be last in the list. If you use a <code>default</code> statement outside a 
+			<code>switch</code> statement, it produces an error and the script doesn't compile.</p></p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">statements</span>:<a href="String.html">String</a></code> &mdash; 
+					Any statements.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>In the following example, the expression A does not equal the expressions B or D, so the statement following the <code>default</code> keyword is run <span class="flashonly">and the <code><A href="global_functions.html#trace()">trace()</A></code> statement is sent to the Output panel</span><span class="flexonly">and the <code>trace()</code> statement is sent to the log file</span>. <div class='listing'><pre>var dayOfWeek:Number = new Date().getDay(); 
+switch (dayOfWeek) { 
+    case 1 : 
+        trace("Monday"); 
+        break; 
+    case 2 : 
+        trace("Tuesday"); 
+        break; 
+    case 3 : 
+        trace("Wednesday"); 
+        break; 
+    case 4 : 
+        trace("Thursday"); 
+        break; 
+    case 5 : 
+        trace("Friday"); 
+        break; 
+    default : 
+        trace("Weekend"); 
+}</pre></div>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#switch" target="">switch</a>
+</div>
+</div>
+<a name="delete"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">delete</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>delete <i>reference</i></code></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p>
+<p>Destroys the object reference specified by the <code><i>reference</i></code> parameter, and returns <code>true</code> if the reference is successfully deleted; <code>false</code> otherwise. This operator is useful for freeing memory used by scripts. You can use the <code>delete</code> operator to remove references to objects. After all references to an object are removed, Flash Player removes the object and frees the memory used by that object. <p>Although <code>delete</code> is an operator, it is typically used as a statement, as shown in the following example:</p> <p><code>delete x;</code></p> <p>The <code>delete</code> operator can fail and return <code>false</code> if the <code><i>reference</i></code> parameter does not exist or cannot be deleted. You cannot delete predefined objects and properties, and you cannot delete variables that are declared within a function with the <code>var</code> statement. You cannot use the <code>delete</code> operator to remove movie clips.</p></p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">reference</span>:<a href="Object.html">Object</a></code> &mdash; 
+					The name of the variable or object to eliminate.
+				</td>
+</tr>
+</table>
+<p></p>
+<span class="label">Result</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="Boolean.html">Boolean</a></code> &mdash; A Boolean value.</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br><p>Usage 1: The following example creates an object, uses it, and deletes it when it is no longer needed:</p>
+<div class='listing'><pre>var account:Object = new Object(); 
+account.name = "Jon"; 
+account.balance = 10000; 
+trace(account.name); //output: Jon 
+delete account; 
+trace(account.name); //output: undefined </pre></div> <p>Usage 2: The following example deletes a property of an object:</p> <div class='listing'><pre>// create the new object "account" 
+var account:Object = new Object(); 
+// assign property name to the account 
+account.name = "Jon"; 
+// delete the property 
+delete account.name; </pre></div> <p>Usage 3: The following example deletes an object property:</p> <div class='listing'><pre>var my_array:Array = new Array(); 
+my_array[0] = "abc"; // my_array.length == 1 
+my_array[1] = "def"; // my_array.length == 2 
+my_array[2] = "ghi"; // my_array.length == 3 
+// my_array[2] is deleted, but Array.length is not changed 
+delete my_array[2]; 
+trace(my_array.length); // output: 3 
+trace(my_array); // output: abc,def,undefined</pre></div> <p>Usage 4: The following example shows the behavior of <code>delete</code> on object references:</p> <div class='listing'><pre>var ref1:Object = new Object(); 
+ref1.name = "Jody"; 
+// copy the reference variable into a new variable 
+// and delete ref1 
+ref2 = ref1; 
+delete ref1; 
+trace("ref1.name "+ref1.name); //output: ref1.name undefined 
+trace("ref2.name "+ref2.name); //output: ref2.name Jody </pre></div> <p>If <code>ref1</code> had not been copied into <code>ref2</code>, the object would have been deleted when <code>ref1</code> was deleted because there would be no references to it. If you delete <code>ref2</code>, there are no references to the object; it is destroyed, and the memory it used becomes available.</p>
+
+<p>Usage 5: The following example shows how the returned Boolean from <code>delete</code> can be used as a condition for future code execution. If an item has already been deleted, calling <code>delete</code> on the item again will return <code>false</code>.</p> <div class='listing'><pre>
+var my_array:Array = [ "abc", "def", "ghi" ];
+var deleteWasSuccessful:Boolean
+
+deleteWasSuccessful = delete my_array[0];
+if(deleteWasSuccessful) delete my_array[1];
+deleteWasSuccessful = delete my_array[0];
+if(deleteWasSuccessful) delete my_array[2];
+
+trace(my_array) // outputs: undefined,undefined,ghi</pre></div>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#var" target="">var</a>
+</div>
+</div>
+<a name="do..while"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">do..while</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>do { <i>statement(s)</i> } while (<i>condition</i>)</code></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 4</td>
+</tr>
+</table>
+<p></p>
+<p>Similar to a <code>while</code> loop, except that the statements are executed once before the initial evaluation of the condition. Subsequently, the statements are executed only if the condition evaluates to <code>true</code>. <p>A 
+			<code>do..while</code> loop ensures that the code inside the loop is executed at least once. Although this can also be done with a <code>while</code> loop by placing a copy of the statements to be executed before the <code>while</code> loop begins, many programmers believe that <code>do..while</code> loops are easier to read.</p> <p>If the condition always evaluates to <code>true</code>, the <code>do..while</code> loop is infinite. If you enter an infinite loop, you encounter problems with Flash Player and eventually get a warning message or crash the player. Whenever possible, you should use a <code>for</code> loop if you know the number of times that you want to loop. Although <code>for</code> loops are easy to read and debug, they cannot replace <code>do..while</code> loops in all circumstances.</p></p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">condition</span>:<a href="Boolean.html">Boolean</a></code> &mdash; 
+					The condition to evaluate. The <code><i>statement(s)</i></code> within the <code>do</code> block of code are executed as long as the <code><i>condition</i></code> parameter evaluates to <code>true</code> .
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br><p>The following example uses a <code>do..while</code> loop to evaluate whether a condition is 
+            <code>true,</code> and traces <code>myVar</code> until <code>myVar</code> is greater than 5. When <code>myVar</code> is greater than 5, the loop ends.</p> <div class='listing'><pre>var myVar:Number = 0; 
+do { 
+    trace(myVar); 
+    myVar++; 
+} 
+while (myVar &lt; 5); 
+/* output: 
+0 
+1 
+2 
+3 
+4
+*/</pre></div>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#break" target="">break</a>
+</div>
+</div>
+<a name="dynamic"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dynamic</td><td class="detailHeaderType">keyword</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>dynamic class <i>className</i> [ extends <i>superClass</i> ] [ implements <i>interfaceName</i>[, <i>interfaceName</i>... ] ] {
+    // class definition here 
+}</pre></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0 &mdash; <span class="flashonly">This keyword is supported only when used in external script files, not in scripts written in the Actions panel.</span></td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p>Specifies that objects based on the specified class can add and access dynamic properties at runtime. <p>Type checking on dynamic classes is less strict than type checking on nondynamic classes, because members accessed inside the class definition and on class instances are not compared with those defined in the class scope. Class member functions, however, can still be type checked for return type and parameter types. <span class="flashonly">This behavior is especially useful when you work with MovieClip objects, because there are many different ways of adding properties and objects to a movie clip dynamically, such as <code>MovieClip.createEmptyMovieClip()</code> and <code>MovieClip.createTextField()</code>.</span> </p> 
+			<p>Subclasses of dynamic classes are also dynamic.</p>
+			<p>Be sure to specify the type when declaring an object, as in the following:</p>
+			<div class='listing'><pre>var x:MyClass = new MyClass();</pre></div>
+			If you do <em>not</em> specify the type when declaring an object (as in the following) then the object is considered dynamic:
+			<div class='listing'><pre>var x = new MyClass();</pre></div>
+			
+			</p>
+<br>
+<span class="label">Example</span>
+<br>In the following example, class <code>Person2</code> has not yet been marked as dynamic, so calling an undeclared function on it generates an error at compile time: <div class='listing'><pre>class Person2 { 
+    var name:String; 
+    var age:Number; 
+    function Person2(param_name:String, param_age:Number) { 
+        trace ("anything"); 
+        this.name = param_name; 
+        this.age = param_age; 
+    } 
+}</pre></div> In a FLA or AS file that's in the same directory, add the following ActionScript<span class="flashonly"> to Frame 1 on the Timeline</span>: <div class='listing'><pre>// Before dynamic is added 
+var craig:Person2 = new Person2("Craiggers", 32); 
+for (i in craig) { 
+    trace("craig." + i + " = " + craig[i]); 
+} 
+/* output:
+craig.age = 32 
+craig.name = Craiggers */</pre></div> If you add an undeclared function, <code>dance</code> , an error is generated, as shown in the following example: <div class='listing'><pre>trace(""); 
+craig.dance = true; 
+for (i in craig) { 
+    trace("craig." + i + " = " + craig[i]); 
+} 
+/* output: **Error** Scene=Scene 1, layer=Layer 1, frame=1:Line 14: There is no property with the name 'dance'. craig.dance = true; Total ActionScript Errors: 1 Reported Errors: 1 */</pre></div> Add the <code>dynamic</code> keyword to the Person2 class, so that the first line appears as follows: <div class='listing'><pre>dynamic class Person2 { </pre></div> Test the code again, and you see the following output: <div class='listing'><pre>craig.dance = true craig.age = 32 craig.name = Craiggers</pre></div>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#class" target="">class</a>
+</div>
+</div>
+<a name="else"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">else</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>if (<i>condition</i>){ 
+    <i>statement(s)</i>; 
+} else { 
+    <i>statement(s)</i>; 
+}</pre></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 4</td>
+</tr>
+</table>
+<p></p>
+<p>Specifies the statements to run if the condition in the <code>if</code> statement returns 
+			<code>false</code>. The curly braces (<code>{}</code>) used to enclose the block of statements to be executed by the 
+			<code>else</code> statement are not necessary if only one statement will execute.</p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">condition</span>:<a href="Boolean.html">Boolean</a></code> &mdash; 
+					An expression that evaluates to <code>true</code> or <code>false</code>.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>In the following example, the <code>else</code> condition is used to check whether the 
+            <code>age_txt</code> variable is greater than or less than 18: <div class='listing'><pre>if (age_txt.text&gt;=18) { 
+    trace("welcome, user"); 
+} 
+else { 
+    trace("sorry, junior"); 
+    userObject.minor = true; 
+    userObject.accessAllowed = false; 
+}</pre></div> <p>In the following example, curly braces <code>({})</code> are not necessary because only one statement follows the 
+<code>else</code> statement:</p> <div class='listing'><pre>if (age_txt.text&gt;18) { trace("welcome, user"); } else trace("sorry, junior");</pre></div><p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#if" target="">if</a>
+</div>
+</div>
+<a name="else_if"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">else if</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>if(<i>condition</i>) { 
+    <i>statement(s)</i>; 
+} else if(<i>condition</i>) { 
+    <i>statement(s)</i>;
+}</pre></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 4</td>
+</tr>
+</table>
+<p></p>
+<p>Evaluates a condition and specifies the statements to run if the condition in the initial 
+			<code>if</code> statement returns <code>false</code>. If the <code>else if</code> condition returns <code>true</code>, the Flash interpreter runs the statements that follow the condition inside curly braces (<code>{}</code>). If the <code>else if</code> condition is <code>false</code>, Flash skips the statements inside the curly braces and runs the statements following the curly braces. <p>Use the <code>else</code> <code>if</code> statement to create branching logic in your scripts. If there are multiple branches, you should consider using a <A href="statements.html#switch"><code>switch</code></A> statement.</p></p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">condition</span>:<a href="Boolean.html">Boolean</a></code> &mdash; 
+					An expression that evaluates to <code>true</code> or <code>false</code>.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br><p>The following example uses <code>else if</code> statements to compare <code>score_txt</code> to a specified value:</p> <div class='listing'><pre>if (score_txt.text&gt;90) { 
+    trace("A"); 
+} 
+else if (score_txt.text&gt;75) { 
+    trace("B");
+} 
+else if (score_txt.text&gt;60) { 
+    trace("C"); 
+} 
+else { 
+    trace("F"); 
+}</pre></div><p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#if" target="">if</a>
+</div>
+</div>
+<a name="extends"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">extends</td><td class="detailHeaderType">keyword</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>class <i>className</i> extends <i>otherClassName</i> {}
+interface <i>interfaceName</i> extends <i>otherInterfaceName</i> {} </pre></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0 &mdash; <span class="flashonly">To use this keyword, you must specify ActionScript 2.0 or later and Flash Player 6 or later in the Flash tab of your FLA file's Publish Settings dialog box. This keyword is supported only when used in external script files, not in scripts written in the Actions panel.</span></td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p>Defines a class that is a subclass of another class; the latter is the superclass. The subclass inherits all the methods, properties, functions, and so on that are defined in the superclass. <p>Interfaces can also be extended by using the <code>extends</code> keyword. An interface that extends another interface includes all of the method declarations of the original interface.</p></p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">className</span>:<a href="String.html">String</a></code> &mdash; 
+					The name of the class that you are defining.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>In the following example, the Car class extends the Vehicle class so that all of its methods, properties, and functions are inherited. If your script instantiates a Car object, methods from both the Car class and the Vehicle class can be used. <p>The following example shows the contents of a file called Vehicle.as, which defines the Vehicle class: </p> <div class='listing'><pre>class Vehicle { 
+    var numDoors:Number; 
+    var color:String; 
+    function Vehicle(param_numDoors:Number, param_color:String) { 
+        this.numDoors = param_numDoors; 
+        this.color = param_color; 
+    } 
+    function start():Void { 
+        trace("[Vehicle] start"); 
+    } 
+    function stop():Void { 
+        trace("[Vehicle] stop"); 
+    } 
+    function reverse():Void { 
+        trace("[Vehicle] reverse"); 
+    } 
+}</pre></div> <p>The following example shows a second AS file, called Car.as, in the same directory. This class extends the Vehicle class, modifying it in three ways. First, the Car class adds a variable <code>fullSizeSpare</code> to track whether the car object has a full-size spare tire. Second, it adds a new method specific to cars, <code>activateCarAlarm()</code>, which activates the car's antitheft alarm. Third, it overrides the <code>stop()</code> function to add the fact that the Car class uses an antilock braking system to stop.</p> <div class='listing'><pre>class Car extends Vehicle { 
+    var fullSizeSpare:Boolean; 
+    function Car(param_numDoors:Number, param_color:String, param_fullSizeSpare:Boolean) { 
+        this.numDoors = param_numDoors; 
+        this.color = param_color; 
+        this.fullSizeSpare = param_fullSizeSpare; 
+    } 
+    function activateCarAlarm():Void { 
+        trace("[Car] activateCarAlarm"); 
+    } 
+    function stop():Void { 
+        trace("[Car] stop with anti-lock brakes"); 
+    } 
+}</pre></div> <p>The following example instantiates a Car object, calls a method that is defined in the Vehicle class 
+(<code>start()</code>), then calls the method that is overridden by the Car class (<code>stop()</code>), and finally calls a method from the Car class (<code>activateCarAlarm()</code>):</p> <div class='listing'><pre>var myNewCar:Car = new Car(2, "Red", true); 
+myNewCar.start(); // output: [Vehicle] start 
+myNewCar.stop(); // output: [Car] stop with anti-lock brakes 
+myNewCar.activateCarAlarm(); // output: [Car] activateCarAlarm</pre></div> <p>A subclass of the Vehicle class can also be written by using the keyword <code>super</code>, which the subclass can use to access properties and methods of the superclass. The following example shows a third AS file, called Truck.as, again in the same directory. The Truck class uses the <code>super</code> keyword in the constructor and again in the overridden <code>reverse()</code> function.</p> <div class='listing'><pre>class Truck extends Vehicle {
+    var numWheels:Number;
+    function Truck(param_numDoors:Number, param_color:String, param_numWheels:Number) { 
+        super(param_numDoors, param_color); 
+        this.numWheels = param_numWheels; 
+    } 
+    function reverse():Void { 
+        beep(); 
+        super.reverse(); 
+    } 
+    function beep():Void { 
+        trace("[Truck] make beeping sound"); 
+    } 
+}</pre></div> <p>The following example instantiates a Truck object, calls a method overridden by the Truck class (<code>reverse()</code>), and then calls a method defined in the Vehicle class (<code>stop()</code>): </p> <div class='listing'><pre>var myTruck:Truck = new Truck(2, "White", 18); 
+myTruck.reverse(); // output: [Truck] make beeping sound [Vehicle] reverse 
+myTruck.stop(); // output: [Vehicle] stop</pre></div>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#class" target="">class</a>
+</div>
+</div>
+<a name="for"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">for</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>for(<i>init</i>; <i>condition</i>; <i>next</i>) { 
+    <i>statement(s);</i> 
+}</pre>
+			</td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p>
+<p>Evaluates the <code><i>init</i></code> (initialize) expression once and then starts a looping sequence. The looping sequence begins by evaluating the <code><i>condition</i></code> expression. If the <code><i>condition</i></code> expression evaluates to true, <code><i>statement</i></code> is executed and the <code><i>next</i></code> expression is evaluated. The looping sequence then begins again with the evaluation of the <code><i>condition</i></code> expression. <p>The curly braces 
+			(<code>{}</code>) used to enclose the block of statements to be executed by the <code>for</code> statement are not necessary if only one statement will execute.</p></p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">init</span></code> &mdash; 
+					An expression to evaluate before beginning the looping sequence; usually an assignment expression. A <code>var</code> statement is also permitted for this parameter.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example uses <code>for</code> to add the elements in an array: <div class='listing'><pre>var my_array:Array = new Array(); 
+for (var i:Number = 0; i &lt; 10; i++) { 
+    my_array[i] = (i + 5) * 10;  
+} 
+trace(my_array); // output: 50,60,70,80,90,100,110,120,130,140 </pre></div> <span class="flexonly">The following results are written to the log file: <div class='listing'><pre>50 60 70 80 90 100 110 120 130 140</pre></div></span> The following example uses <code>for</code> to perform the same action repeatedly. In the code, the <code>for</code> loop adds the numbers from 1 to 100. <div class='listing'><pre>var sum:Number = 0; 
+for (var i:Number = 1; i &lt;= 100; i++) { 
+    sum += i; 
+} 
+trace(sum); // output: 5050</pre></div> The following example shows that curly braces ({}) are not necessary if only one statement will execute: <div class='listing'><pre>var sum:Number = 0; 
+for (var i:Number = 1; i &lt;= 100; i++) 
+    sum += i; 
+trace(sum); // output: 5050</pre></div>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="operators.html#increment" target="">++ (increment)</a>
+</div>
+</div>
+<a name="for..in"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">for..in</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>for (<i>variableIterant</i> in <i>object</i>) {
+    <i>statement(s);</i> 
+} </pre></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p>
+<p>Iterates over the properties of an object or elements in an array and executes the <code><i>statement</i></code> for each property or element. Methods of an object are not enumerated by the <code>for..in</code> action. <p>Some properties cannot be enumerated by the <code>for..in</code> action. For example, movie clip properties, such as <code>_x</code> and 
+			<code>_y</code>, are not enumerated. In external class files, static members are not enumerable, unlike instance members.
+            </p> <p>The <code>for..in</code> statement iterates over properties of objects in the iterated object's prototype chain. Properties of the object are enumerated first, then properties of its immediate prototype, then properties of the prototype's prototype, and so on. It iterates over the properties in reverse index order. The <code>for..in</code> statement does not enumerate the same property name twice. If the object <code>child</code> has prototype <code>parent</code> and both contain the property <code>prop</code>, the <code>for..in</code> statement called on <code>child</code> enumerates <code>prop</code> from <code>child</code> but ignores the one in <code>parent</code>.</p> <p>The curly braces (<code>{}</code>) that are used to enclose the block of statements to be executed by the <code>for..in</code> statement are not necessary if only one statement is executed.</p> <span class="flashonly"><p>If you write a <code>for..in</code> loop in a class file (an external AS file), then instance members are not available for the loop, but static members are. However, if you write a <code>for..in</code> loop in a FLA file for an instance of the class, then instance members are available but static ones are not.</p></span></p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">variableIterant</span>:<a href="String.html">String</a></code> &mdash; 
+					The name of a variable to act as the iterant, referencing each property of an object or element in an array.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br><p>The following example uses <code>for..in</code> to iterate over the properties of an object: </p>
+            <div class='listing'><pre>var myObject:Object = {firstName:"Tara", age:27, city:"San Francisco"}; 
+for (var prop in myObject) { 
+    trace("myObject."+prop+" = "+myObject[prop]); 
+} 
+//output 
+myObject.firstName = Tara 
+myObject.age = 27 
+myObject.city = San Francisco</pre></div> <p>The following example uses <code>for..in</code> to iterate over the elements of an array:</p> <div class='listing'><pre>var myArray:Array = new Array("one", "two", "three"); 
+for (var index in myArray) 
+    trace("myArray["+index+"] = " + myArray[index]); 
+// output: 
+myArray[2] = three 
+myArray[1] = two 
+myArray[0] = one</pre></div> <p>The following example uses the <code>typeof</code> operator with <code>for..in</code> to iterate over a particular type of child:</p> <div class='listing'><pre>for (var name in this) { 
+    if (typeof (this[name]) == "movieclip") { 
+        trace("I have a movie clip child named "+name); 
+    } 
+}</pre></div> <note><p><strong><i>Note: </i></strong>If you have several movie clips, the output consists of the instance names of those clips.</p></note> <span class="flashonly"><p>The following example enumerates the children of a movie clip and sends each to Frame 2 in its
+respective Timeline. The <code>RadioButtonGroup</code> movie clip is a parent with three children: <code>_RedRadioButton_</code>, <code>_GreenRadioButton_,</code>, and <code>_BlueRadioButton_</code>.</p>
+ <div class='listing'><pre>for (var name in RadioButtonGroup) { RadioButtonGroup[name].gotoAndStop(2); }</pre></div></span>
+            
+            <p></p>
+</div>
+<a name="function"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">function</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>Usage 1: (Declares a named function.)
+function <i>functionname</i>([<i>parameter0</i>, <i>parameter1</i>,...<i>parameterN</i>]){
+    <i>statement(s)</i>
+}
+Usage 2: (Declares an anonymous function and returns a reference to it.)
+function ([<i>parameter0</i>, <i>parameter1</i>,...<i>parameterN</i>]){ 
+    <i>statement(s)</i> 
+} </pre>
+			</td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p>
+<p>Comprises a set of statements that you define to perform a certain task. You can define a function in one location and invoke, or <i>call</i>, it from different scripts in a SWF file. When you define a function, you can also specify parameters for the function. Parameters are placeholders for values on which the function operates. You can pass different parameters to a function each time you call it so you can reuse a function in different situations. <p>Use the <A href="#return"><code>return</code></A> statement in a function's <code><i>statement(s)</i></code> to cause a function to generate, or <i>return</i>, a value.</p> <p>You can use this statement to define a <code>function</code> with the specified <code><i>functionname</i></code>, 
+			<code><i>parameters</i></code>, and <code><i>statement(s)</i></code>. When a script calls a function, the statements in the function's definition are executed. Forward referencing is permitted; within the same script, a function may be declared after it is called. A function definition replaces any previous definition of the same function. You can use this syntax wherever a statement is permitted. </p> <p>You can use the function statement to create an anonymous function and return a reference to it. This syntax is used in expressions and is particularly useful for installing methods in objects.</p> <p>For additional functionality, you can use the <A href="arguments.html"><code>arguments</code></A> object in your function definition. Some common uses of the 
+			<code>arguments</code> object are to create a function that accepts a variable number of parameters and to create a recursive anonymous function.</p></p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">functionname</span>:<a href="String.html">String</a></code> &mdash; 
+					The name of the declared function.
+				</td>
+</tr>
+</table>
+<p></p>
+<span class="label">Result</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; <br />Usage 1: The declaration form does not return anything. <br />Usage 2: A reference to the anonymous function.</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br><p>The following example defines the function <code>sqr</code>, which accepts one parameter and returns the <code>Math.pow(x, 2)</code> of the parameter:</p> <div class='listing'><pre>function sqr(x:Number) { 
+    return Math.pow(x, 2); 
+} 
+var y:Number = sqr(3); 
+trace(y); // output: 9</pre></div><p> If the function is defined and used in the same script, the function definition may appear after using the function: </p><div class='listing'><pre>var y:Number = sqr(3); 
+trace(y); // output: 9 
+function sqr(x:Number) { 
+    return Math.pow(x, 2); 
+}</pre></div> <span class="flashonly"><p>The following function creates a LoadVars object and loads params.txt into the SWF file. When the file successfully loads, <code>variables loaded</code> traces: </p><div class='listing'><pre>var myLV:LoadVars = new LoadVars(); 
+myLV.load("params.txt"); 
+myLV.onLoad = function(success:Boolean) { 
+    trace("variables loaded"); 
+}</pre></div></span>
+            
+            <p></p>
+</div>
+<a name="get"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">get</td><td class="detailHeaderType">keyword</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>function get <i>property</i> () { 
+    // your statements here 
+}</pre></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0 &mdash; <span class="flashonly">To use this keyword, you must specify ActionScript 2.0 or later and Flash Player 6 or later in the Flash tab of your FLA file's Publish Settings dialog box. This keyword is supported only when used in external script files, not in scripts written in the Actions panel.</span></td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p>Permits implicit <i>getting</i> of properties associated with objects based on classes you have defined in external class files. Using implicit get methods lets you access properties of objects without accessing the property directly. Implicit get/set methods are syntactic shorthand for the <code>Object.addProperty()</code> method in ActionScript 1.0.</p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">property</span>:<a href="String.html">String</a></code> &mdash; 
+					The word you use to refer to the property that <code>get</code> accesses; this value must be the same as the value used in the corresponding <code>set</code> command.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>In the following example, you define a Team class. The Team class includes get/set methods that let you retrieve and set properties within the class: <div class='listing'><pre>class Team { 
+    var teamName:String; 
+    var teamCode:String; 
+    var teamPlayers:Array = new Array(); 
+    function Team(param_name:String, param_code:String) { 
+        this.teamName = param_name; 
+        this.teamCode = param_code; 
+    } 
+    function get name():String { 
+        return this.teamName; 
+    } 
+    function set name(param_name:String):Void { 
+        this.teamName = param_name; 
+    } 
+}</pre></div> Enter the following ActionScript in a frame on the Timeline: <div class='listing'><pre>var giants:Team = new Team("San Fran", "SFO"); 
+trace(giants.name); 
+giants.name = "San Francisco"; 
+trace(giants.name); 
+/* output: 
+San Fran San Francisco */</pre></div> <p>When you trace giants.name, you use the <code>get</code> method to return the value of the property.</p>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Object.html#addProperty()" target="">Object.addProperty()</a>
+</div>
+</div>
+<a name="if"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">if</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>if(<i>condition</i>) { 
+    <i>statement(s)</i>; 
+}</pre></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 4</td>
+</tr>
+</table>
+<p></p>
+<p>Evaluates a condition to determine the next action in a SWF file. If the condition is 
+			<code>true</code>, Flash runs the statements that follow the condition inside curly braces (<code>{}</code>). If the condition is <code>false</code>, Flash skips the statements inside the curly braces and runs the statements following the curly braces. Use the <code>if</code> statement along with the <A href="#else"><code>else</code></A> and <A href="#else_if"><code>else if
+			</code></A> statements to create branching logic in your scripts. <p>The curly braces (<code>{}</code>) used to enclose the block of statements to be executed by the <code>if</code> statement are not necessary if only one statement will execute.</p>
+			</p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">condition</span>:<a href="Boolean.html">Boolean</a></code> &mdash; 
+					An expression that evaluates to <code>true</code> or <code>false</code>.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br><span class="flashonly">In the following example, the condition inside the parentheses evaluates the variable <code>name</code> to see if it has the literal value <code>"Erica"</code>. If it does, the <code>play()</code> function inside the curly braces runs. <div class='listing'><pre>if(name == "Erica"){ 
+    play(); 
+}</pre></div></span> <p>The following example uses an <code>if</code> statement to evaluate how long it takes a user to click the <code>submit_btn</code>instance in a SWF file. If a user clicks the button more than 10 seconds after the SWF file plays, the condition evaluates to <code>true</code> and the message inside the curly braces (<code>{}</code>) appears in a text field that's created at runtime (using <code>createTextField()</code>). If the user clicks the button less than 10 seconds after the SWF file plays, the condition evaluates to <code>false</code> and a different message appears.</p> <div class='listing'><pre>this.createTextField("message_txt", this.getNextHighestDepth, 0, 0, 100, 22); 
+message_txt.autoSize = true; 
+var startTime:Number = getTimer(); 
+this.submit_btn.onRelease = function() { 
+    var difference:Number = (getTimer() - startTime) / 1000; 
+    if (difference &gt; 10) { 
+        this._parent.message_txt.text = "Not very speedy, you took "+difference+" seconds."; 
+    } 
+    else { 
+        this._parent.message_txt.text = "Very good, you hit the button in "+difference+" seconds."; 
+    } 
+};</pre></div>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#else" target="">else</a>
+</div>
+</div>
+<a name="implements"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">implements</td><td class="detailHeaderType">keyword</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre><i>myClass</i> implements <i>interface01</i> [, <i>interface02</i> , ...]</pre></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0 &mdash; <span class="flashonly">To use this keyword, you must specify ActionScript 2.0 or later and Flash Player 6 or later in the Flash tab of your FLA file's Publish Settings dialog box. This keyword is supported only when used in external script files, not in scripts written in the Actions panel.</span></td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p>Specifies that a class must define all the methods declared in the interface (or interfaces) being implemented. </p>
+<br>
+<span class="label">Example</span>
+<br>See <A href="#interface"><code>interface</code></A>.<p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#class" target="">class</a>
+</div>
+</div>
+<a name="import"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">import</td><td class="detailHeaderType">keyword</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>import <i>className</i> 
+import <i>packageName</i>.*</pre></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0 &mdash; <span class="flashonly">To use this keyword, you must specify ActionScript 2.0 or later and Flash Player 6 or later in the Flash tab of your FLA file's Publish Settings dialog box. This keyword is supported only when used in external script files, not in scripts written in the Actions panel.</span></td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p>Lets you access classes without specifying their fully qualified names. For example, if you want to use a custom class macr.util.users.UserClass in a script, you must refer to it by its fully qualified name or import it; if you import it, you can refer to it by the class name: <div class='listing'><pre>// before importing 
+var myUser:macr.util.users.UserClass = new macr.util.users.UserClass(); 
+// after importing 
+import macr.util.users.UserClass; 
+var myUser:UserClass = new UserClass();</pre></div> <p>If there are several class files in the package 
+(<code><i>working_directory</i></code><code>/macr/utils/users</code>) that you want to access, you can import them all in a single statement, as shown in the following example:</p> <div class='listing'><pre>import macr.util.users.*;</pre></div> <p>You must issue the 
+<code>import</code> statement before you try to access the imported class without fully specifying its name.</p> <p>If you import a class but don't use it in your script, the class isn't exported as part of the SWF file. This means you can import large packages without being concerned about the size of the SWF file; the bytecode associated with a class is included in a SWF file only if that class is actually used.</p> <span class="flashonly"><p>The <code>import</code> statement applies only to the current script (frame or object) in which it's called. For example, suppose on Frame 1 of a Flash document you import all the classes in the macr.util package. On that frame, you can reference classes in that package by their simple names:</p> <div class='listing'><pre>// On Frame 1 of a FLA: 
+import macr.util.*; 
+var myFoo:foo = new foo();</pre></div> <p>On another frame script, however, you would need to reference classes in that package by their fully qualified names (<code>var myFoo:foo = new macr.util.foo();</code>) or add an <code>import</code> statement to the other frame that imports the classes in that package.</p> </span>
+			
+			</p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">className</span>:<a href="String.html">String</a></code> &mdash; 
+					The fully qualified name of a class you have defined in an external class file.
+					
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br><p></p>
+</div>
+<a name="interface"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">interface</td><td class="detailHeaderType">keyword</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>interface <i>InterfaceName</i> [extends <i>InterfaceName</i> ] {}</pre></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0 &mdash; <span class="flashonly">To use this keyword, you must specify ActionScript 2.0 or later and Flash Player 6 or later in the Flash tab of your FLA file's Publish Settings dialog box. This keyword is supported only when used in external script files, not in scripts written in the Actions panel.</span></td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p>Defines an interface. An interface is similar to a class, with the following important differences: <ul> <li>Interfaces contain only declarations of methods, not their implementation. That is, every class that implements an interface must provide an implementation for each method declared in the interface.</li> <li>Only public members are allowed in an interface definition; instance and class members are not permitted.</li> <li>The <code>get</code> and <code>set</code> statements are not allowed in interface definitions.</li> </ul> </p>
+<br>
+<span class="label">Example</span>
+<br>The following example shows several ways to define and implement interfaces: <div class='listing'><pre>(in top-level package .as files Ia, B, C, Ib, D, Ic, E) 
+// filename Ia.as 
+interface Ia { 
+    function k():Number; // method declaration only 
+    function n(x:Number):Number; // without implementation 
+} 
+// filename B.as 
+class B implements Ia { 
+    function k():Number {
+        return 25;
+    } 
+    function n(x:Number):Number {
+        return x + 5;
+    } 
+} <span class="flashonly">
+// external script or Actions panel </span> <span class="flexonly">
+// script file</span> 
+var mvar:B = new B(); 
+trace(mvar.k()); // 25 
+trace(mvar.n(7)); // 12 
+// filename c.as 
+class C implements Ia { 
+    function k():Number {
+        return 25;
+    } 
+} // error: class must implement all interface methods 
+// filename Ib.as 
+interface Ib { 
+    function o():Void; 
+} 
+class D implements Ia, Ib { 
+    function k():Number {
+        return 15;
+    } 
+    function n(x:Number):Number {
+        return x * x;
+    } 
+    function o():Void {
+        trace("o");
+    } 
+} <span class="flashonly">
+// external script or Actions panel </span> <span class="flexonly">
+// script file</span> 
+mvar = new D(); 
+trace(mvar.k()); // 15 
+trace(mvar.n(7)); // 49 
+trace(mvar.o()); // "o" 
+interface Ic extends Ia { 
+    function p():Void; 
+} 
+class E implements Ib, Ic { 
+    function k():Number {
+        return 25;
+    } 
+    function n(x:Number):Number {
+        return x + 5;
+    } 
+    function o():Void {
+        trace("o");
+    } 
+    function p():Void {
+        trace("p");
+    } 
+} </pre></div>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#class" target="">class</a>
+</div>
+</div>
+<a name="intrinsic"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">intrinsic</td><td class="detailHeaderType">keyword</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>intrinsic class <i>className</i> [extends <i>superClass</i>] [implements <i>interfaceName</i> [, <i>interfaceName</i>...] ] {
+    //class definition here
+}</pre>
+			</td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0 &mdash; <span class="flashonly">To use this keyword, you must specify ActionScript 2.0 or later and Flash Player 6 or later in the Flash tab of your FLA file's Publish Settings dialog box. This keyword is supported only when used in external script files, not in scripts written in the Actions panel.</span></td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p>Allows compile-time type checking of previously defined classes. Flash uses intrinsic class declarations to enable compile-time type checking of built-in classes such as <code>Array</code>, <code>Object</code>, and 
+			<code>String</code>. This keyword indicates to the compiler that no function implementation is required, and that no bytecode should be generated for it.<p>The <code>intrinsic</code> keyword can also be used with variable and function declarations. Flash uses this keyword to enable compile-time type checking for global functions and properties.</p><p>The <code>intrinsic</code> keyword was created specifically to enable compile-time type checking for built-in classes and objects, and global variables and functions. This keyword was not meant for general purpose use, but may be of some value to developers seeking to enable compile-time type checking with previously defined classes, especially if the classes are defined using ActionScript 1.0.</p><p>This keyword is supported only when used in external script files, not in scripts written in the Actions panel.</p></p>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how to enable compile-time file checking for a previously defined ActionScript 1.0 class. The code will generate a compile-time error because the call <code>myCircle.setRadius()</code> sends a <code>String</code> value as a parameter instead of a <code>Number</code> value. You can avoid the error by changing the parameter to a <code>Number</code> value (for example, by changing <code>"10"</code> to <code>10</code>).
+<div class='listing'><pre>
+// The following code must be placed in a file named Circle.as 
+// that resides within your classpath:
+intrinsic class Circle {
+    var radius:Number;
+    function Circle(radius:Number);
+    function getArea():Number;
+    function getDiameter():Number;
+    function setRadius(param_radius:Number):Number;
+}
+
+// This ActionScript 1.0 class definition may be placed in your FLA file.
+// Circle class is defined using ActionScript 1.0
+function Circle(radius) {
+    this.radius = radius;
+    this.getArea = function(){
+        return Math.PI*this.radius*this.radius;
+    };
+    this.getDiameter = function() {
+        return 2*this.radius;
+    };
+    this.setRadius = function(param_radius) {
+        this.radius = param_radius;
+    }
+}
+
+// ActionScript 2.0 code that uses the Circle class
+var myCircle:Circle = new Circle(5);
+trace(myCircle.getArea());
+trace(myCircle.getDiameter());
+myCircle.setRadius("10");
+trace(myCircle.radius);
+trace(myCircle.getArea());
+trace(myCircle.getDiameter());
+</pre></div>
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#class" target="">class</a>
+</div>
+</div>
+<a name="private"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">private</td><td class="detailHeaderType">keyword</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>class <i>someClassName</i>{
+    private var <i>name</i>;
+    private function <i>name</i>() {
+        // your statements here 
+    } 
+}</pre></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0 &mdash; <span class="flashonly">To use this keyword, you must specify ActionScript 2.0 or later and Flash Player 6 or later in the Flash tab of your FLA file's Publish Settings dialog box. This keyword is supported only when used in external script files, not in scripts written in the Actions panel.</span></td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p>Specifies that a variable or function is available only to the class that declares or defines it or to subclasses of that class. By default, a variable or function is available to any caller. Use this keyword if you want to restrict access to a variable or function. This keyword is intended as a software development aid to facilitate good coding practices such as encapsulation, and not as a security mechanism to obfuscate or secure sensitive data. It does not necessarily prevent access to a variable at runtime. <p>You can use this keyword only in class definitions, not in interface definitions.</p></p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:<a href="String.html">String</a></code> &mdash; 
+					The name of the variable or function that you want to specify as private.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example demonstrates how to restrict access to variables or functions by using the <code>private</code> keyword. Create a new AS file called Alpha.as: 
+            <div class='listing'><pre>
+class Alpha {
+    private var privateProperty = "visible only within class and subclasses";
+    public var publicProperty = "visible everywhere";
+}</pre></div> <p>In the same directory as Alpha.as, create a new AS file named Beta.as that contains the following code:</p>
+<div class='listing'><pre>
+class Beta extends Alpha {
+    function Beta() {
+        trace("privateProperty is " + privateProperty);
+    }
+}
+</pre></div>
+<p>As the following code demonstrates, the constructor for the Beta class is able to access the <code>privateProperty</code> property that is inherited from the Alpha class:</p>
+<div class='listing'><pre>
+var myBeta:Beta = new Beta(); // Output: privateProperty is visible only within class and subclasses
+</pre></div>
+<p>Attempts to access the <code>privateProperty</code> variable from outside the Alpha class or a class that inherits from the Alpha class result in an error. The following code, which resides outside of any class, causes an error:</p>
+<div class='listing'><pre>
+trace(myBeta.privateProperty); // Error
+</pre></div>            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#public" target="">public</a>
+</div>
+</div>
+<a name="public"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">public</td><td class="detailHeaderType">keyword</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>class someClassName{ 
+    public var <i>name</i>; 
+    public function <i>name</i>() { 
+        // your statements here 
+    } 
+}</pre></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0 &mdash; <span class="flashonly">To use this keyword, you must specify ActionScript 2.0 or later and Flash Player 6 or later in the Flash tab of your FLA file's Publish Settings dialog box. This keyword is supported only when used in external script files, not in scripts written in the Actions panel.</span></td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p>Specifies that a variable or function is available to any caller. Because variables and functions are public by default, this keyword is used primarily for stylistic reasons. For example, you might want to use it for reasons of consistency in a block of code that also contains private or static variables.</p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:<a href="String.html">String</a></code> &mdash; 
+					The name of the variable or function that you want to specify as public.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example shows how you can use public variables in a class file. Create a new class file called User.as and enter the following code: <div class='listing'><pre>class User { 
+    public var age:Number; 
+    public var name:String; 
+}</pre></div> <p>Then create a new FLA or AS file in the same directory, and enter the following ActionScript<span class="flashonly"> in Frame 1 of the Timeline</span>:</p> <div class='listing'><pre>import User; 
+var jimmy:User = new User(); 
+jimmy.age = 27; 
+jimmy.name = "jimmy";</pre></div> <p>If you change one of the public variables in the User class to a private variable, an error is generated when trying to access the property.</p> 
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#private" target="">private</a>
+</div>
+</div>
+<a name="return"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">return</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>return[<i>expression</i>]</code></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p>
+<p>Specifies the value returned by a function. The <code>return</code> statement evaluates <code><i>expression</i></code>and returns the result as a value of the function in which it executes. The <code>return</code> statement causes execution to return immediately to the calling function. If the <code>return</code> statement is used alone, it returns 
+			<code>undefined.</code> <p>You can't return multiple values. If you try to do so, only the last value is returned. In the following example, <code>c</code> is returned:</p> <div class='listing'><pre>return a, b, c ;</pre></div> <p>If you need to return multiple values, you might want to use an array or object instead.</p></p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">expression</span></code> &mdash; 
+					A string, number, Boolean, array, or object to evaluate and return as a value of the function. This parameter is optional.
+				</td>
+</tr>
+</table>
+<p></p>
+<span class="label">Result</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; The evaluated <code><i>expression</i></code> parameter, if provided.</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example uses the <code>return</code> statement inside the body of the <code>sum()</code> function to return the added value of the three parameters. The next line of code calls <code>sum()</code> and assigns the returned value to the variable <code>newValue</code>. <div class='listing'><pre>function sum(a:Number, b:Number, c:Number):Number { 
+    return (a + b + c); 
+} 
+var newValue:Number = sum(4, 32, 78); 
+trace(newValue); // output: 114</pre></div>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#function" target="">function</a>
+</div>
+</div>
+<a name="set"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">set</td><td class="detailHeaderType">keyword</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>function set <i>property</i>(<i>varName</i>) { 
+    // your statements here 
+}</pre>
+			</td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0 &mdash; <span class="flashonly">To use this keyword, you must specify ActionScript 2.0 or later and Flash Player 6 or later in the Flash tab of your FLA file's Publish Settings dialog box. This keyword is supported only when used in external script files, not in scripts written in the Actions panel.</span></td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p>Permits implicit setting of properties associated with objects based on classes you have defined in external class files. Using implicit set methods lets you modify the value of an object's property without accessing the property directly. Implicit get/set methods are syntactic shorthand for the <code>Object.addProperty()</code> method in ActionScript 1.0. </p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">property</span>:<a href="String.html">String</a></code> &mdash; 
+					Word that refers to the property that <code>set</code> will access; this value must be the same as the value used in the corresponding <code>get</code> command.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example creates a Login class that demonstrates how the <code>set</code> keyword can be used to set private variables: <div class='listing'><pre>class Login { 
+    private var loginUserName:String; 
+    private var loginPassword:String; 
+    public function Login(param_username:String, param_password:String) { 
+        this.loginUserName = param_username; 
+        this.loginPassword = param_password; 
+    } 
+    public function get username():String { 
+        return this.loginUserName; 
+    } 
+    public function set username(param_username:String):Void { 
+        this.loginUserName = param_username; 
+    } 
+    public function set password(param_password:String):Void { 
+        this.loginPassword = param_password; 
+    } 
+}</pre></div> <p>In a FLA or AS file that is in the same directory as Login.as, enter the following ActionScript<span class="flashonly"> in Frame 1 of the Timeline</span>:</p> <div class='listing'><pre>var gus:Login = new Login("Gus", "Smith"); 
+trace(gus.username); // output: Gus 
+gus.username = "Rupert"; 
+trace(gus.username); // output: Rupert</pre></div> <p>In the following example, the <code>get</code> function executes when the value is traced. The <code>set</code> function triggers only when you pass it a value, as shown in the line:</p> <div class='listing'><pre>gus.username = "Rupert";</pre></div>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#get" target="">get</a>
+</div>
+</div>
+<a name="set_variable"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">set variable</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>set("<i>variableString</i>",<i>expression</i>)</code></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 4</td>
+</tr>
+</table>
+<p></p>
+<p>Assigns a value to a variable. A <i>variable</i> is a container that holds data. The container is always the same, but the contents can change. By changing the value of a variable as the SWF file plays, you can record and save information about what the user has done, record values that change as the SWF file plays, or evaluate whether a condition is <code>true</code> or <code>false</code>. <p>Variables can hold any data type (for example, String, Number, Boolean, Object, or MovieClip). <span class="flashonly">The Timeline of each SWF file and movie clip has its own set of variables, and each variable has its own value independent of variables on other Timelines.</span></p> <p>Strict data typing is not supported inside a <code>set</code> statement. If you use this statement to set a variable to a value whose data type is different from the data type associated with the variable in a class file, no compiler error is generated.</p> <p>A subtle but important distinction to bear in mind is that the parameter <code><i>variableString</i></code> is a string, not a variable name. If you pass an existing variable name as the first parameter to <code>set()</code> without enclosing the name in quotation marks (""), the variable is evaluated before the value of <code><i>expression</i></code> is assigned to it. For example, if you create a string variable named <code>myVariable</code> and assign it the value "Tuesday," and then forget to use quotation marks, you will inadvertently create a new variable named <code>Tuesday</code> that contains the value you intended to assign to <code>myVariable</code>:</p> 
+<div class='listing'><pre>var myVariable:String = "Tuesday"; 
+set (myVariable, "Saturday"); 
+trace(myVariable); // outputs Tuesday 
+trace(Tuesday); // outputs Saturday</pre></div> 
+<p>You can avoid this situation by using quotation marks (""):</p> <div class='listing'><pre>set ("myVariable", "Saturday");
+trace(myVariable); //outputs Saturday</pre></div>
+			
+			</p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">variableString</span>:<a href="String.html">String</a></code> &mdash; 
+					A string that names a variable to hold the value of the <code><i>expression</i></code> parameter.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>In the following example, you assign a value to a variable. You are assigning the value of 
+            <code>"Jakob"</code> to the <code>name</code> variable. <div class='listing'><pre>set("name", "Jakob"); 
+trace(name);</pre></div> <p>The following code loops three times and creates three new variables, called <code>caption0</code>, 
+<code>caption1</code>, and <code>caption2</code>: </p> <div class='listing'><pre>for (var i = 0; i &lt; 3; i++) { 
+    set("caption" + i, "this is caption " + i); 
+} 
+trace(caption0); 
+trace(caption1); 
+trace(caption2);</pre></div>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#var" target="">var</a>
+</div>
+</div>
+<a name="static"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">static</td><td class="detailHeaderType">keyword</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>class someClassName{ 
+    static var <i>name</i>; 
+    static function <i>name</i>() { 
+        // your statements here 
+    } 
+}</pre></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Language version:&nbsp;</b></td><td>ActionScript 2.0 &mdash; <span class="flashonly">To use this keyword, you must specify ActionScript 2.0 or later and Flash Player 6 or later in the Flash tab of your FLA file's Publish Settings dialog box. This keyword is supported only when used in external script files, not in scripts written in the Actions panel.</span></td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p>Specifies that a variable or function is created only once per class rather than being created in every object based on that class. <p>You can access a static class member without creating an instance of the class by using the syntax <code>someClassName.name</code>. If you do create an instance of the class, you can also access a static member using the instance, but only through a non-static function that accesses the static member.</p> <p>You can use this keyword in class definitions only, not in interface definitions.</p></p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:<a href="String.html">String</a></code> &mdash; 
+					The name of the variable or function that you want to specify as static.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following example demonstrates how you can use the <code>static</code> keyword to create a counter that tracks how many instances of the class have been created. Because the <code>numInstances</code> variable is static, it will be created only once for the entire class, not for every single instance. Create a new AS file called Users.as and enter the following code: <div class='listing'><pre>class Users { 
+    private static var numInstances:Number = 0; 
+    function Users() { 
+        numInstances++; 
+    } 
+    static function get instances():Number { 
+        return numInstances; 
+    } 
+}</pre></div> <p>Create a FLA or AS document in the same directory, and enter the following ActionScript<span class="flashonly"> in Frame 1 of the Timeline</span>:</p> <div class='listing'><pre>trace(Users.instances); 
+var user1:Users = new Users(); 
+trace(Users.instances); 
+var user2:Users = new Users(); 
+trace(Users.instances); </pre></div>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#private" target="">private</a>
+</div>
+</div>
+<a name="super"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">super</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>super.<i>method</i>([<i>arg1, ..., argN</i>])
+super([<i>arg1, ..., argN</i>])</pre></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 6</td>
+</tr>
+</table>
+<p></p>
+<p>the first syntax style may be used within the body of an object method to invoke the superclass version of a method, and can optionally pass parameters <code>(arg1 ... argN)</code> to the superclass method. This is useful for creating subclass methods that add additional behavior to superclass methods, but also invoke the superclass methods to perform their original behavior.
+<p>
+The second syntax style may be used within the body of a constructor function to invoke the superclass version of the constructor function and may optionally pass it parameters. This is useful for creating a subclass that performs additional initialization, but also invokes the superclass constructor to perform superclass initialization.</p>
+			</p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">method</span>:<a href="Function.html">Function</a></code> &mdash; 
+					The method to invoke in the superclass.
+				</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">argN</span></code> &mdash; 
+					Optional parameters that are passed to the superclass version of the method (syntax 1) or to the constructor function of the superclass (syntax 2).
+				</td>
+</tr>
+</table>
+<p></p>
+<span class="label">Result</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Void</code> &mdash; Both forms invoke a function. The function may return any value.</td>
+</tr>
+</table>
+</div>
+<a name="switch"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">switch</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>switch (<i>expression</i>){
+    <i>caseClause</i>: 
+    [<i>defaultClause</i>:] 
+}</pre></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 4</td>
+</tr>
+</table>
+<p></p>
+<p>Creates a branching structure for ActionScript statements. As with the <code>if</code> statement, the <code>switch</code> statement tests a condition and executes statements if the condition returns a value of<code>true</code>. All switch statements should include a default case. The default case should include a break statement that prevents a fall-through error if another case is added later. When a case falls through, it doesn't have a break statement.</p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">expression</span></code> &mdash; 
+					Any expression.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>In the following example, if the <code>String.fromCharCode(Key.getAscii())</code> parameter evaluates to <code>A</code>, the <A href="global_functions.html#trace()"><code>trace</code>()</A> statement that follows <code>case "A"</code> executes; if the parameter evaluates to <code>a</code>, the <A href="global_functions.html#trace()"><code>trace()</code></A> statement that follows <code>case "a"</code>executes; and so on. If no <code>case</code> expression matches the <code>String.fromCharCode(Key.getAscii())</code> parameter, the <A href="global_functions.html#trace()"><code>trace()</code></A> statement that follows the <code>default</code> keyword executes. <div class='listing'><pre>var listenerObj:Object = new Object();
+listenerObj.onKeyDown = function() { 
+    switch (String.fromCharCode(Key.getAscii())) { 
+        case "A" : 
+            trace("you pressed A"); 
+            break; 
+        case "a" : 
+            trace("you pressed a"); 
+            break; 
+        case "E" : 
+        case "e" : 
+            trace("you pressed E or e"); 
+            break; 
+        case "I" : 
+        case "i" : 
+            trace("you pressed I or i"); 
+            break; 
+        default : 
+            trace("you pressed some other key"); 
+            break; 
+    } 
+};
+Key.addListener(listenerObj);</pre></div>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="operators.html#strict_equality" target="">=== (strict equality)</a>
+</div>
+</div>
+<a name="throw"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">throw</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>throw <i>expression</i> </code></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p>
+<p>Generates, or <i>throws</i>, an error that can be handled, or <i>caught</i>, by a <code>catch{}</code> code block. <span class="flashonly">If an exception is not caught by a <code>catch</code> block, the string representation of the thrown value is sent to the Output panel.</span> <span class="flexonly">If an exception is not caught by a <code>catch</code> or 
+			<code>finally</code> block, the string representation of the thrown value is sent to the log file.</span> <p>Typically, you throw instances of the Error class or its subclasses (see the Example section).</p></p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">expression</span>:<a href="Object.html">Object</a></code> &mdash; 
+					An ActionScript expression or object.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>In this example, a function named <code>checkEmail()</code> checks whether the string that is passed to it is a properly formatted e-mail address. If the string does not contain an @ symbol, the function throws an error. 
+            <div class='listing'><pre>function checkEmail(email:String) { 
+    if (email.indexOf("@") == -1) { 
+        throw new Error("Invalid email address"); 
+    } 
+} 
+checkEmail("someuser_theirdomain.com");</pre></div> <p>The following code then calls the <code>checkEmail()</code> function within a 
+<code>try</code> code block. If the <code>email_txt</code>string does not contain a valid e-mail address, the error message appears in a text field (<code>error_txt</code>).</p> <div class='listing'><pre>try { 
+    checkEmail("Joe Smith"); 
+} 
+catch (e) { 
+    error_txt.text = e.toString(); 
+}</pre></div> <p>In the following example, a subclass of the Error class is thrown. The <code>checkEmail()</code> function is modified to throw an instance of that subclass. </p> <div class='listing'><pre>// Define Error subclass InvalidEmailError // In InvalidEmailError.as: class InvalidEmailAddress extends Error { var message = "Invalid email address."; }</pre></div> <p>In a FLA or AS file, enter the following ActionScript<span class="flashonly"> in Frame 1 of the Timeline</span>:</p> <div class='listing'><pre>import InvalidEmailAddress; 
+function checkEmail(email:String) { 
+    if (email.indexOf("@") == -1) { 
+        throw new InvalidEmailAddress(); 
+    } 
+} 
+try { 
+    checkEmail("Joe Smith"); 
+} 
+catch (e) { 
+    this.createTextField("error_txt", this.getNextHighestDepth(), 0, 0, 100, 22); 
+    error_txt.autoSize = true; 
+    error_txt.text = e.toString(); 
+}</pre></div>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Error.html" target="">Error class</a>
+</div>
+</div>
+<a name="try..catch..finally"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">try..catch..finally</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>try {
+    <i>// ... try block ...</i> 
+} finally { 
+    <i>// ... finally block ...</i> 
+} 
+try { 
+    <i>// ... try block ...</i> 
+} catch(<i>error</i> [<i>:ErrorType1</i>]) {
+    <i>// ... catch block ...</i> 
+} [catch(<i>error</i>[<i>:ErrorTypeN</i>]) {
+    <i>// ... catch block ...</i> 
+}] [finally { 
+    <i>// ... finally block ...</i> 
+}]</pre></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 7</td>
+</tr>
+</table>
+<p></p>
+<p>Encloses a block of code in which an error can occur, and then respond to the error. If any code in the <code>try</code> code block throws an error (using the <A href="#throw"><code>throw</code></A> statement), control passes to the <code>catch</code> block, if one exists, and then to the <code>finally</code> code block, if one exists. The <code>finally</code> block is always executed, regardless of whether an error was thrown. If code in the <code>try</code> block doesn't throw an error (that is, if the <code>try</code> block completes normally), then the code in the <code>finally</code> block is still executed. The 
+			<code>finally</code> block is executed even if the <code>try</code> block exits using a <code>return</code> statement. <p>A <code>try</code> block must be followed by a <code>catch</code> block, a <code>finally</code> block, or both. A single <code>try</code> block can have multiple <code>catch</code> blocks but only one <code>finally</code> block. You can nest <code>try</code> blocks as many levels deep as necessary.</p> <p>The <code><i>error</i></code> parameter specified in a <code>catch</code> handler must be a simple identifier such as <code>e</code> or <code>theException</code> or <code>x</code>. The variable in a <code>catch</code> handler can also be typed. When used with multiple <code>catch</code> blocks, typed errors let you catch multiple types of errors thrown from a single <code>try</code> block.</p> <p>If the exception thrown is an object, the type matches if the thrown object is a subclass of the specified type. If an error of a specific type is thrown, the <code>catch</code> block that handles the corresponding error is executed. If an exception that is not of the specified type is thrown, the <code>catch</code> block is not executed and the exception is automatically thrown out of the <code>try</code> block to a <code>catch</code> handler that matches it. </p> <p>If an error is thrown within a function, and the function does not include a <code>catch</code> handler, then the ActionScript interpreter exits that function, as well as any caller functions, until a <code>catch</code> block is found. During this process, <code>finally</code> handlers are called at all levels.</p></p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">error</span>:<a href="Object.html">Object</a></code> &mdash; 
+					The expression thrown from a <code>throw</code> statement, typically an instance of the Error class or one of its subclasses.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br><p>The following example shows how to create a <code>try..finally</code> statement. Because code in the 
+            <code>finally</code> block is guaranteed to be executed, it is typically used to perform any necessary clean-up after a 
+            <code>try</code> block is executed. In the following example, <code>setInterval()</code>calls a function every 1000 millisecond (1 second). If an error occurs, an error is thrown and is caught by the <code>catch</code> block. The finally block is always executed whether or not an error occurs. Because <code>setInterval()</code> is used, <code>clearInterval()</code> must be placed in the <code>finally</code> block to ensure that the interval is cleared from memory:</p> <div class='listing'><pre>myFunction = function () { 
+    trace("this is myFunction"); 
+}; 
+try { 
+    myInterval = setInterval(this, "myFunction", 1000); 
+    throw new Error("my error"); 
+} 
+catch (myError:Error) { 
+    trace("error caught: "+myError); 
+} 
+finally { 
+    clearInterval(myInterval); 
+    trace("error is cleared"); 
+}</pre></div> <p>In the following example, the <code>finally</code> block is used to delete an ActionScript object, regardless of whether or not an error occurred. Create a new AS file called Account.as:</p> <div class='listing'><pre>class Account { 
+    var balance:Number = 1000; 
+    function getAccountInfo():Number { 
+        return (Math.round(Math.random() * 10) % 2); 
+    } 
+}</pre></div> <p>In the same directory as Account.as, create a new AS or FLA document and enter the following ActionScript<span class="flashonly"> in Frame 1 of the Timeline</span>:</p> <div class='listing'><pre>import Account; 
+var account:Account = new Account();
+try { 
+    var returnVal = account.getAccountInfo(); 
+    if (returnVal != 0) { 
+        throw new Error("Error getting account information."); 
+    } 
+} 
+finally { 
+    if (account != null) { 
+        delete account; 
+    } 
+}</pre></div> <p>The following example demonstrates a <code>try..catch</code> statement. The code in the <code>try</code> block is executed. If an exception is thrown by any code in the <code>try</code> block, control passes to the <code>catch</code> block, which shows the error message in a text field by using the <code>Error.toString()</code> method. </p> <p>In the same directory as Account.as, create a new FLA document and enter the following ActionScript<span class="flashonly"> in Frame 1 of the Timeline</span>:</p> <div class='listing'><pre>import Account; 
+var account:Account = new Account(); 
+try { 
+    var returnVal = account.getAccountInfo(); 
+    if (returnVal != 0) { 
+        throw new Error("Error getting account information."); 
+    } 
+    trace("success"); 
+} 
+catch (e) { 
+    this.createTextField("status_txt", this.getNextHighestDepth(), 0, 0, 100, 22); 
+    status_txt.autoSize = true; 
+    status_txt.text = e.toString(); 
+}</pre></div> <p>The following example shows a <code>try</code> code block with multiple, typed <code>catch</code> code blocks. Depending on the type of error that occurred, the <code>try</code> code block throws a different type of object. In this case, 
+<code>myRecordSet</code> is an instance of a (hypothetical) class named RecordSet whose <code>sortRows()</code> method can throw two types of errors, RecordSetException and MalformedRecord.</p> <p>In the following example, the RecordSetException and MalformedRecord objects are subclasses of the Error class. Each is defined in its own AS class file. </p> <div class='listing'><pre>// In RecordSetException.as: 
+class RecordSetException extends Error { 
+    var message = "Record set exception occurred."; 
+} 
+// In MalformedRecord.as: 
+class MalformedRecord extends Error { 
+    var message = "Malformed record exception occurred."; 
+}</pre></div> <p>Within the RecordSet class's <code>sortRows()</code> method, one of these previously defined error objects is thrown, depending on the type of exception that occurred. The following example shows how this code might look:</p> <div class='listing'><pre>class RecordSet { 
+    function sortRows() { 
+        var returnVal:Number = randomNum(); 
+        if (returnVal == 1) { 
+            throw new RecordSetException(); 
+        } 
+        else if (returnVal == 2) { 
+            throw new MalformedRecord(); 
+        } 
+    }
+    function randomNum():Number { 
+        return Math.round(Math.random() * 10) % 3; 
+    }
+}</pre></div> <p>Finally, in another AS file or FLA script, the following code invokes the <code>sortRows()</code> method on an instance of the RecordSet class. It defines <code>catch</code> blocks for each type of error that is thrown by <code>sortRows()</code></p> <div class='listing'><pre>import RecordSet; 
+var myRecordSet:RecordSet = new RecordSet();
+try { 
+    myRecordSet.sortRows(); 
+    trace("everything is fine"); 
+} 
+catch (e:RecordSetException) { 
+    trace(e.toString()); 
+} 
+catch (e:MalformedRecord) { 
+    trace(e.toString()); 
+}</pre></div>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Error.html" target="">Error class</a>
+</div>
+</div>
+<a name="var"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">var</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>var <i>variableName</i> [= <i>value1</i>][...,<i>variableNameN</i>[=<i>valueN</i>]] </code></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p>
+<p>Used to declare local variables. If you declare variables inside a function, the variables are local. They are defined for the function and expire at the end of the function call. More specifically, a variable defined using 
+			<code>var</code> is local to the code block containing it. Code blocks are demarcated by curly braces ({}). 
+			<span class="flashonly"><p>If you declare variables outside a function, the variables are available througout the timeline containing the statement.</p></span> <p>You cannot declare a variable scoped to another object as a local variable.</p> 
+			<div class='listing'><pre>my_array.length = 25; // ok 
+var my_array.length = 25; // syntax error </pre></div> <p>When you use <code>var</code>, you can strictly type the variable. </p> <p>You can declare multiple variables in one statement, separating the declarations with commas (although this syntax may reduce clarity in your code):</p><div class='listing'><pre>var first:String = "Bart", middle:String = "J.", last:String = "Bartleby";</pre></div> 
+<p><note><strong>Note: </strong>You must also use <code>var</code> when declaring properties inside class definitions in external scripts. Class files also support public, private, and static variable scopes. </note></p>
+			
+			</p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">variableName</span>:<a href="String.html">String</a></code> &mdash; 
+					An identifier.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br><p>The following ActionScript creates a new array of product names. <code>Array.push</code> adds an element onto the end of the array. If you want to use strict typing, it is essential that you use the <code>var</code> keyword. Without <code>var</code> before <code>product_array</code>, you get errors when you try to use strict typing.</p> <div class='listing'><pre>var product_array:Array = new Array("MX 2004", "Studio", "Dreamweaver", "Flash", "ColdFusion", "Contribute", "Breeze"); 
+product_array.push("Flex"); 
+trace(product_array); 
+// output: MX 2004,Studio,Dreamweaver,Flash,ColdFusion,Contribute,Breeze,Flex</pre></div>
+            
+            <p></p>
+</div>
+<a name="while"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">while</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>while(<i>condition</i>) { 
+    <i>statement(s)</i>; 
+}</pre></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 4</td>
+</tr>
+</table>
+<p></p>
+<p>Evaluates a condition and if the condition evaluates to <code>true</code>, runs a statement or series of statements before looping back to evaluate the condition again. After the condition evaluates to <code>false</code>, the statement or series of statements is skipped and the loop ends. <p>The <code>while</code> statement performs the following series of steps. Each repetition of steps 1 through 4 is called an <i>iteration</i> of the loop. The <code><i>condition</i></code> is retested at the beginning of each iteration, as shown in the following steps:</p> <ol> <li>The expression <code><i>condition</i></code> is evaluated.
+			</li> <li>If <code><i>condition</i></code> evaluates to <code>true</code> or a value that converts to the Boolean value <code>true</code>, such as a nonzero number, go to step 3.<br />Otherwise, the <code>while</code> statement is completed and execution resumes at the next statement after the <code>while</code> loop.</li> <li>Run the statement block <code><i>statement(s)</i></code>.</li> <li>Go to step 1.</li> </ol> <p>Looping is commonly used to perform an action while a counter variable is less than a specified value. At the end of each loop, the counter is incremented until the specified value is reached. At that point, the 
+			<code><i>condition</i></code> is no longer <code>true</code>, and the loop ends.</p> <p>The curly braces (<code>{}</code>) used to enclose the block of statements to be executed by the <code>while</code> statement are not necessary if only one statement will execute.</p></p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">condition</span>:<a href="Boolean.html">Boolean</a></code> &mdash; 
+					An expression that evaluates to <code>true</code> or <code>false</code>.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>In the following example, the <code>while</code> statement is used to test an expression. When the value of <code>i</code> is less than 20, the value of <code>i</code> is traced. When the condition is no longer <code>true</code>, the loop exits. <div class='listing'><pre>var i:Number = 0; 
+while (i &lt; 20) { 
+    trace(i); 
+    i += 3; 
+}</pre></div> <span class="flashonly">The following result is displayed in the Output panel.</span> <span class="flexonly">The following result is written to the log file.</span> <div class='listing'><pre>0 
+3 
+6 
+9 
+12
+15 
+18</pre></div>
+            
+            <p></p>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="#continue" target="">continue</a>
+</div>
+</div>
+<a name="with"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">with</td><td class="detailHeaderType">statement</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Usage</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><pre>with (<i>object:Object</i>) { 
+    <i>statement(s)</i>; 
+}</pre></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" style="white-space:nowrap"><b>Player version:&nbsp;</b></td><td>Flash Player 5</td>
+</tr>
+</table>
+<p></p>
+<p>Lets you specify an object (such as a movie clip) with the <code><i>object</i></code> parameter and evaluate expressions and actions inside that object with the <code><i>statement(s)</i></code> parameter. This prevents you from having to repeatedly write the object's name or the path to the object. <p>The <code><i>object</i></code> parameter becomes the context in which the properties, variables, and functions in the <code><i>statement(s)</i></code> parameter are read. For example, if <code><i>object</i></code> is <code>my_array</code>, and two of the properties specified are <code>length</code> and <code>concat</code>, those properties are automatically read as <code>my_array</code>.<code>length</code> and <code>my_array.concat</code>. In another example, if <code><i>object</i></code> is <code>state.california</code>, any actions or statements inside the <code>with</code> statement are called from inside the <code>california</code> instance.</p> <p>To find the value of an identifier in the <code><i>statement(s)</i></code> parameter, ActionScript starts at the beginning of the scope chain specified by the <code><i>object</i></code> and searches for the identifier at each level of the scope chain, in a specific order. </p> <p>The scope chain used by the <code>with</code> statement to resolve identifiers starts with the first item in the following list and continues to the last item:</p> <ul> <li>The object specified in the <code><i>object</i></code> parameter in the innermost <code>with</code> statement.</li> <li>The object specified in the 
+			<code><i>object</i></code> parameter in the outermost <code>with</code> statement. </li> <li>The Activation object. (A temporary object that is automatically created when a function is called that holds the local variables called in the function.)</li> <li>The movie clip that contains the currently executing script.</li> <li>The Global object (built-in objects such as Math and String).</li> </ul> <p><span class="flashonly">To set a variable inside a <code>with</code> statement, you must have declared the variable outside the <code>with</code> statement, or you must enter the full path to the Timeline on which you want the variable to live. If you set a variable in a <code>with</code> statement without declaring it, the <code>with</code> statement will look for the value according to the scope chain. If the variable doesn't already exist, the new value will be set on the Timeline from which the <code>with</code> statement was called.</span></p> <p>Instead of using <code>with()</code>, you can use direct paths. If you find that paths are long and cumbersome to type, you can create a local variable and store the path in the variable, which you can then reuse in your code, as shown in the following ActionScript:</p> <div class='listing'><pre>var shortcut = this._parent._parent.name_txt; shortcut.text = "Hank"; shortcut.autoSize = true;</pre></div></p>
+<p></p>
+<span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">object</span>:<a href="Object.html">Object</a></code> &mdash; 
+					An instance of an ActionScript object or movie clip.
+				</td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br><span class="flashonly">The following example sets the <code>_x</code> and <code>_y</code> properties of the <code>someOther_mc</code> instance, and then instructs <code>someOther_mc</code> to go to Frame 3 and stop. <div class='listing'><pre>with (someOther_mc) { 
+    _x = 50; 
+    _y = 100; 
+    gotoAndStop(3); 
+} </pre></div> The following code snippet shows how to write the preceding code without using a <code>with</code> statement. <div class='listing'><pre>someOther_mc._x = 50; 
+someOther_mc._y = 100; 
+someOther_mc.gotoAndStop(3);</pre></div></span> <p>The <code>with</code> statement is useful for accessing multiple items in a scope chain list simultaneously. In the following example, the built-in <code>Math</code> object is placed at the front of the scope chain. Setting <code>Math</code> as a default object resolves the identifiers <code>cos</code>, <code>sin</code>, and <code>PI</code> to <code>Math.cos</code>, <code>Math.sin</code>, and <code>Math.PI</code>, respectively. The identifiers <code>a</code>, <code>x</code>, 
+<code>y</code>, and <code>r</code> are not methods or properties of the <code>Math</code> object, but because they exist in the object activation scope of the function <code>polar()</code>, they resolve to the corresponding local variables.</p> <div class='listing'><pre>function polar(r:Number):Void { 
+    var a:Number, x:Number, y:Number; 
+    with (Math) { 
+        a = PI * pow(r, 2); 
+        x = r * cos(PI); 
+        y = r * sin(PI / 2); 
+    } 
+    trace("area = " + a); 
+    trace("x = " + x); 
+    trace("y = " + y); 
+} polar(3);</pre></div> <span class="flashonly">The following result is displayed in the Output panel.</span> <span class="flexonly">The following result is written to the log file.</span> <div class='listing'><pre>area = 28.2743338823081 
+x = -3 
+y = 3 </pre></div>
+            
+            <p></p>
+</div>
+<p></p>
+<center class="copyright"> &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. <br>Wed Apr 7 2010, 4:41 PM GMT-07:00 </center>
+</div>
+</body>
+</html>
+<!-- &copy; 2004-2010 Adobe Systems Incorporated. All rights reserved. Wed Apr 7 2010, 4:41 PM GMT-07:00 -->
