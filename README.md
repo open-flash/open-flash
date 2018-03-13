@@ -1,11 +1,39 @@
-**Note: This project is still in a very early stage. I hope that it will work out, but it's a
-large task that many other projects tried and abandoned. Feel free to submit suggestions.**
+<a href="https://github.com/open-flash/open-flash">
+    <img src="https://raw.githubusercontent.com/open-flash/open-flash/master/logo.png"
+    alt="Open Flash logo" title="Open Flash" align="right" width="64" height="64" />
+</a>
 
 # Open Flash
 
-Open Flash (aka "Save Flash") aims at providing an open-source easily-maintainable Flash Player
-to preserve the Flash animations that cannot be converted to another technology. That's why the
-main goal is compatibility and maintainability.
+_Open Flash_ is a project to create an open-source media player for SWF files. Its goal is to keep
+Flash animations accessible for archival purposes. It aims to achieve it by learning from related
+projects and building an ecosystem of reusable components.
+
+This is the main _Open Flash_ repository. It is used to track the overall progress of the project.
+
+- [Demo (Doμ Player)](https://github.com/open-flash/domu-player/)
+- [Doμ Player](https://github.com/open-flash/domu-player)
+- [SWF Tree](https://github.com/open-flash/swf-tree)
+- [SWF Parser](https://github.com/open-flash/swf-parser)
+- [SWF Emitter](https://github.com/open-flash/swf-emitter)
+- [SWF Renderer](https://github.com/open-flash/swf-renderer)
+- [Avmore](https://github.com/open-flash/avmore)
+
+## Why
+
+Flash had a great role in bringing interactive content to the Web. Despite its bad reputation
+(accessibility, security, ads, performance, ...), Flash enabled many users to easily create and
+share content. Keeping this content accessible for the future is valuable and having an
+open-source implementation of the technology is the best way to keep it accessible.
+
+I (_demurgos_) personally grew up with Flash games and one of my first computer projects was a mod
+for [the Caverns of Hammerfest](http://www.hfest.net/), a Flash platformer from 2006. I do not want
+to lose it. I recommend you
+[The Flash Games Postmortem](https://www.youtube.com/watch?v=65crLKNQR0E)
+<abbr title="Game Developers Conference">GDC</abbr> talk by John Cooney (jmtb02), a talk about the
+impact of Flash on today's games.
+
+## What
 
 The project is inspired by [Shumway](https://github.com/mozilla/shumway), ideally it should be
 possible to install a browser extension or just drop a `<script>` in the web page to keep
@@ -19,8 +47,12 @@ distribution and bug tracking. The current goal is to study the ideas and archit
 and split its features in smaller packages.
 
 The current packages are:
+- [Doμ Player](https://github.com/open-flash/domu-player)
 - [SWF Tree](https://github.com/open-flash/swf-tree): Provide a good model for SWF files (AST)
 - [SWF Parser](https://github.com/open-flash/swf-parser): Decode SWF files to the SWF Tree
+- [SWF Emitter](https://github.com/open-flash/swf-emitter)
+- [SWF Renderer](https://github.com/open-flash/swf-renderer)
+- [Avmore](https://github.com/open-flash/avmore): Actionscript VM
 - [SWF Renderer](https://github.com/open-flash/swf-renderer): Rendering backend
 
 They strive to be written both in Typescript and Rust. Typescript is the easiest way to target
@@ -42,42 +74,79 @@ control and strong integration with web technologies. The other solution is to r
 [Adobe's AVMPlus](https://github.com/adobe/avmplus) and port it to the web using something like
 Emscripten.
 
-## Background
+## Who
 
-**TODO**
+I'm _demurgos_. I am currently working on this project alone. I want to reach the Milestone 1
+(see below) before reaching out to other developers. If you have questions or want to contribute,
+you can open an issue on this repo.
 
-Basically, I don't hate Flash. I even have good memories with Flash games and saving Flash
-is like saving a part of Internet's history. I wrote an AVM1 disassembler in 2013. In May
-2017 I decided to rewrite it _while knowing what I do_. I wanted to reuse parts of Shumway, it
-turns out it was a lot more complicated than it should be in my opinion, so I started to isolate
-the AST definitions and the parser. I just wanted a disassembler, but then decided that Shumway
-was the perfect idea and it's a shame that it was discontinued so I'd try to re-use its ideas and
-make it more accessible. And then I learned that Flash was EOL... For the moment it was (is) still
-a side project in its early stage but I figured out that sharing it wouldn't hurt.
+## Roadmap
 
-<!--
+### Milestone 2
 
-I grew with the Web, and my first experience with it were Flash games and other shiny Flash
-animations or videos. I started development when things started to accelerate on the Web:
-Node.js just got released, we heard about promises from HTML5 and jQuery was reigning. I quickly
-acquired the belief that FLOSS and standards are the way to go and was happy to be able to
-experiment the new Web APIs without being locked in the Flash ecosystem. But I did not hate Flash,
-great things were done in Flash: it is a large part of the internet and losing it would be loosing
-part of the internet history. The possibility to loose all of this led me learn about Flash, get
-a hold about how it works and search for alternatives. In 2013, I wrote an AVM1 disassembler
-(the goal was to port code to JS). The code was awful but it worked, I could save some of my older
-files. I then moved on to other projects while still keeping an eye on Flash. The announcement of
-Shumway by Mozilla was a great relief for me: one of the long-time positive actors of the open
-Web was dedicating resources to save Flash. Unfortunately it got discontinued after two years of
-steady progress. The new Flash updates started to have issues with older files, browsers started
-to phase out Flash and the future was uncertain again. About two months ago (in May 2017) I decided
-to retrieve my old disassembler and rewrite it _while knowing what I do_ (it's a pretty good
-improvement) and controlling the whole pipe: I previously relied on external tools such as `flasm`.
-I knew I wanted to write using Typescript and Shumway was the perfect fit. It just needed to
-use their parser
+- Tasks:
 
--->
+  - Advertise project
 
-## Other projects
+### Milestone 1
+
+- Goal: Render the [Homestuck beta](http://www.mspaintadventures.com/?s=5) animation.
+  This files contains morph shapes, bitmaps and simple AVM1 code.
+
+- Status: Pending
+
+- Tasks:
+  - Write a proper scheduler
+  - Dissociate characters table, objects tree and display list 
+  - Prototype an Actionscript VM
+  - Support bitmaps
+  - Better support for frame navigation
+  - Split renderer, core player and DOM integration to different components
+
+### Milestone 0
+
+- Goal: Render the [squares.swf](https://open-flash.github.io/domu-player/squares.swf) file. This
+  file contains a single static shape with straight edges and solid colors.
+
+- Status: Complete
+
+- Tasks:
+  - [x] Learn the SWF format, collect relevant documentation
+  - [x] Define the Abstract Syntax Tree for SWF files
+  - [x] Write a parser
+  - [x] Setup browser builds
+  - [x] Prototype a canvas renderer
+
+## Related projects
+
+### Shumway
+
+- Repository: <https://github.com/mozilla/shumway>
+- Website: <https://mozilla.github.io/shumway>
+- Repository mirror: <https://github.com/open-flash/shumway>
+- Status: Discontinued
+- Last commit: 2016-03-29
+- First commit: 2012-01-02
+
+Web-based media player for SWF files.
+
+### Avmplus
+
+- Repository: <https://github.com/adobe/avmplus>
+- Repository mirror: <https://github.com/open-flash/avmplus>
+- Last published commit: 2016-03-24
+- First published commit: 2013-12-03
+
+Adobe's Actionscript Virtual Machine.
+
+### Swfdev
+
+- Website: <https://swfdec.freedesktop.org>
+- Repository mirror: <https://github.com/open-flash/swfdec>
+
+### Gnash
+
+- Website: <https://www.gnu.org/software/gnash>
+- Repository mirror: <https://github.com/open-flash/gnash>
 
 **TODO** (the list of software for Flash is staggering, but they all died out around 2011-2012)
