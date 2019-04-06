@@ -80,6 +80,10 @@ I'm _demurgos_. I am currently working on this project alone. I want to reach th
 (see below) before reaching out to other developers. If you have questions or want to contribute,
 you can open an issue on this repo.
 
+## Contributing
+
+- [Good first issues](https://github.com/search?q=org%3Aopen-flash+is%3Aopen+label%3A%22good+first+issue%22&type=Issues)
+
 ## Roadmap
 
 ### Milestone 2
