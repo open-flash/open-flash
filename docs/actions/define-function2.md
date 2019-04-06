@@ -8,6 +8,10 @@
 - Stack: `0 → 1`
 - SWF version: `7` (`6.65`)
 
+## Notes
+
+The length in the action header ignores the function body.
+
 ## Original documentation
 
 ### ActionDefineFunction2

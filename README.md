@@ -11,7 +11,7 @@ projects and building an ecosystem of reusable components.
 
 This is the main _Open Flash_ repository. It is used to track the overall progress of the project.
 
-- [Demo (Doμ Player)](https://github.com/open-flash/domu-player/)
+- [Demo (Doμ Player)](https://open-flash.github.io/domu-player/)
 - [Doμ Player](https://github.com/open-flash/domu-player)
 - [SWF Tree](https://github.com/open-flash/swf-tree)
 - [SWF Parser](https://github.com/open-flash/swf-parser)
