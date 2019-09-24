@@ -1,0 +1,556 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><title>flash.utils - Details Adobe ActionScript&reg; 3 (AS3) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">&nbsp;</a><br>
+								<h1 id="classProductName">Package flash.utils&nbsp;</h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><br><a name="methodSummary"></a>The flash.utils package contains a variety of package-level functions for timing code execution, retrieving information about classes and objects, and converting escape characters.<div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Function</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#clearInterval()" class="signatureLink">clearInterval</a>(id:<a href="../../uint.html">uint</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+ Cancels a specified setInterval() call.</div></td><td class="summaryTableOwnerCol">flash.utils</td></tr><tr class="" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#clearTimeout()" class="signatureLink">clearTimeout</a>(id:<a href="../../uint.html">uint</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+ Cancels a specified setTimeout() call.</div></td><td class="summaryTableOwnerCol">flash.utils</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#describeType()" class="signatureLink">describeType</a>(value:<a href="../../specialTypes.html#*">*</a>):<a href="../../XML.html">XML</a></div><div class="summaryTableDescription">
+	 Produces an XML object that describes the ActionScript object named as the parameter of 
+	 the method.</div></td><td class="summaryTableOwnerCol">flash.utils</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#escapeMultiByte()" class="signatureLink">escapeMultiByte</a>(value:<a href="../../String.html">String</a>):<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	  Returns an escaped copy of the input string encoded as either UTF-8 or system code page, depending on the value of System.useCodePage.</div></td><td class="summaryTableOwnerCol">flash.utils</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getDefinitionByName()" class="signatureLink">getDefinitionByName</a>(name:<a href="../../String.html">String</a>):<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+	 Returns a reference to the class object of the class specified by the name parameter.</div></td><td class="summaryTableOwnerCol">flash.utils</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getQualifiedClassName()" class="signatureLink">getQualifiedClassName</a>(value:<a href="../../specialTypes.html#*">*</a>):<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	  Returns the fully qualified class name of an object.</div></td><td class="summaryTableOwnerCol">flash.utils</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getQualifiedSuperclassName()" class="signatureLink">getQualifiedSuperclassName</a>(value:<a href="../../specialTypes.html#*">*</a>):<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	Returns the fully qualified class name of the base class of the object specified by the value 
+	parameter.</div></td><td class="summaryTableOwnerCol">flash.utils</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getTimer()" class="signatureLink">getTimer</a>():<a href="../../int.html">int</a></div><div class="summaryTableDescription">
+	 Used to compute relative time.</div></td><td class="summaryTableOwnerCol">flash.utils</td></tr><tr class="" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setInterval()" class="signatureLink">setInterval</a>(closure:<a href="../../Function.html">Function</a>, delay:<a href="../../Number.html">Number</a>, <a href="../../statements.html#..._(rest)_parameter">...</a> arguments):<a href="../../uint.html">uint</a></div><div class="summaryTableDescription">
+ Runs a function at a specified interval (in milliseconds).</div></td><td class="summaryTableOwnerCol">flash.utils</td></tr><tr class="" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setTimeout()" class="signatureLink">setTimeout</a>(closure:<a href="../../Function.html">Function</a>, delay:<a href="../../Number.html">Number</a>, <a href="../../statements.html#..._(rest)_parameter">...</a> arguments):<a href="../../uint.html">uint</a></div><div class="summaryTableDescription">
+ Runs a specified function after a specified delay (in milliseconds).</div></td><td class="summaryTableOwnerCol">flash.utils</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#unescapeMultiByte()" class="signatureLink">unescapeMultiByte</a>(value:<a href="../../String.html">String</a>):<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	  Returns an unescaped copy of the input string, which is decoded from either system code page page or UTF-8 depending on the value of System.useCodePage.</div></td><td class="summaryTableOwnerCol">flash.utils</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodDetail" id="methodDetail"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailSectionHeader"> Function detail </div><span id="pageFilter" runtime="Flash::9##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="clearInterval()" id="clearInterval()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="clearInterval(uint)" id="clearInterval(uint)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>clearInterval</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function clearInterval(id:<a href="../../uint.html">uint</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9</td></tr></table><p></p><p></p><p>
+ Cancels a specified <code>setInterval()</code> call.
+ 
+ </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">id</span>:<a href="../../uint.html">uint</a></code> &mdash; The ID of the <code>setInterval()</code> call, which you set to a variable,
+ as in the following:
+ 
+ </td></tr></table></p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="#setInterval()" target="">setInterval()</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example uses the <code>setInterval()</code> method to create a timed 
+ interval, calling the <code>myRepeatingFunction()</code> method after regular intervals of one
+ second.
+ <p>Each call of the <code>myRepeatingFunction</code> method increments the <code>counter</code>
+ property, and when it equals the <code>stopCount</code> property, the <code>clearInterval()
+ </code> method is called with the property <code>intervalId</code> which is a reference id to
+ the interval that was created earlier.</p>
+<div class="listing"><pre>
+package {
+    import flash.display.Sprite;
+    import flash.utils.*;
+
+    public class ClearIntervalExample extends Sprite {
+        private var intervalDuration:Number = 1000; // duration between intervals, in milliseconds
+        private var intervalId:uint;
+        private var counter:uint     = 0;
+        private var stopCount:uint     = 3;
+        
+        public function ClearIntervalExample() {
+            intervalId = setInterval(myRepeatingFunction, intervalDuration, "Hello", "World");
+        }
+
+        public function myRepeatingFunction():void {
+            trace(arguments[0] + " " + arguments[1]);
+
+            counter++;
+            if(counter == stopCount) {
+                trace("Clearing Interval");
+                clearInterval(intervalId);    
+            }
+        }
+    }
+}
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::9##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="clearTimeout()" id="clearTimeout()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="clearTimeout(uint)" id="clearTimeout(uint)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>clearTimeout</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function clearTimeout(id:<a href="../../uint.html">uint</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9</td></tr></table><p></p><p></p><p>
+ Cancels a specified <code>setTimeout()</code> call.
+ 
+ </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">id</span>:<a href="../../uint.html">uint</a></code> &mdash; The ID of the <code>setTimeout()</code> call, which you set to a variable,
+ as in the following:
+ 
+ </td></tr></table></p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="#setTimeout()" target="">setTimeout()</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example uses the <code>setTimeout()</code> method to call another  
+ method following a specified delay period.
+ <p>A loop is created to count to one million. If the system can process this request faster
+ than a second can expire, <code>clearTimeout()</code> will remove the <code>setTimeout()</code>
+ request, and <code>myDelayedFunction()</code> will not be called.</p>
+<div class="listing"><pre>
+package {
+    import flash.display.Sprite;
+    import flash.utils.*;
+
+    public class ClearTimeoutExample extends Sprite {
+        private var delay:Number = 1000; // delay before calling myDelayedFunction
+        private var intervalId:uint;
+        private var count:uint = 1000000;
+        
+        public function ClearTimeoutExample() {
+            intervalId = setTimeout(myDelayedFunction, delay);
+            startCounting();
+        }
+
+        public function startCounting():void {
+            var i:uint = 0;
+            do {
+                if(i == count-1) {
+                    clearTimeout(intervalId);
+                    trace("Your computer can count to " + count + " in less than " + delay/1000 + " seconds.");    
+                }
+                i++;
+            } while(i &lt; count)            
+        }
+        
+        public function myDelayedFunction():void {
+            trace("Time expired.");
+        }
+    }
+}
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="describeType()" id="describeType()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="describeType(any)" id="describeType(any)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>describeType</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function describeType(value:<a href="../../specialTypes.html#*">*</a>):<a href="../../XML.html">XML</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+	 Produces an XML object that describes the ActionScript object named as the parameter of 
+	 the method. This method implements the programming concept of <i>reflection</i> for the 
+	 ActionScript language.
+	 <p>If the <code>value</code> parameter is an instance of a type, the returned XML object includes all the instance properties of that type,
+	 but does not include any static properties. You can check for this condition when you parse the XML object by examining the value of the <code>&lt;type&gt;</code> tag's <code>isStatic</code> attribute, which is <code>false</code> when the <code>value</code> parameter is an instance of a type.</p>
+	 <p>To obtain the static properties of a type, pass the type itself for the <code>value</code> parameter. The returned XML object includes not only the type's static properties, but also all of its instance properties. 
+	 The instance properties are nested inside a tag named <code>&lt;factory&gt;</code> to distinguish them from the static properties.
+	 In this case, the <code>isStatic</code> attribute of the <code>&lt;type&gt;</code> tag is <code>true</code>.</p>
+	 <p><b>Note:</b> If you need only to traverse an object's inheritance hierarchy and do not need the other information provided by <code>describeType()</code>, 
+	 use the <code>getQualifiedClassName()</code> and <code>getQualifiedSuperclassName()</code> functions instead.</p>
+	 <p>The following table describes some of the tags and attributes of the XML object generated by <code>describeType()</code>
+	 (all class and interface names returned are in fully qualified format):</p>
+	 <table class="innertable" ><tr><th>Tag</th><th>Attribute</th><th>Description</th></tr><tr><td><code>&lt;type&gt;</code></td><td>&nbsp;</td><td>The root tag of the XML object.</td></tr><tr><td>&nbsp;</td><td>name</td><td>The name of the ActionScript object's data type.</td></tr><tr><td>&nbsp;</td><td>base</td><td>The immediate superclass of the ActionScript object's defining class. If the ActionScript object is a class object, the value is <code>Class</code>.</td></tr><tr><td>&nbsp;</td><td>isDynamic</td><td><code>true</code> if the ActionScript object's defining class is dynamic; <code>false</code> otherwise. If the ActionScript object is a class object, the value is <code>true</code> because the Class class is dynamic.</td></tr><tr><td>&nbsp;</td><td>isFinal</td><td><code>true</code> if the ActionScript object's defining class is final; <code>false</code> otherwise.</td></tr><tr><td>&nbsp;</td><td>isStatic</td><td><code>true</code> if the ActionScript object is a class object or constructor function; <code>false</code> otherwise. This attribute is named <code>isStatic</code> because if it is <code>true</code>, any tags that are not nested inside the <code>factory</code> tag are static.</td></tr><tr><td><code>&lt;extendsClass&gt;</code></td><td>&nbsp;</td><td>There is a separate <code>extendsClass</code> tag for each superclass of the ActionScript object's defining class.</td></tr><tr><td>&nbsp;</td><td>type</td><td>The name of a superclass that the ActionScript object's defining class extends.</td></tr><tr><td><code>&lt;implementsInterface&gt;</code></td><td>&nbsp;</td><td>There is a separate <code>implementsInterface</code> tag for each interface implemented by the ActionScript object's defining class or any of its superclasses.</td></tr><tr><td>&nbsp;</td><td>type</td><td>The name of an interface that the ActionScript object's defining class implements.</td></tr><tr><td><code>&lt;accessor&gt;</code></td><td>&nbsp;</td><td>An accessor is a property defined by getter and setter functions.</td></tr><tr><td>&nbsp;</td><td>name</td><td>The name of the accessor.</td></tr><tr><td>&nbsp;</td><td>access</td><td>The access rights of the property. Possible values include <code>readonly</code>, <code>writeonly</code>, and <code>readwrite</code>.</td></tr><tr><td>&nbsp;</td><td>type</td><td>The data type of the property.</td></tr><tr><td>&nbsp;</td><td>declaredBy</td><td>The class that contains the associated getter or setter functions.</td></tr><tr><td><code>&lt;constant&gt;</code></td><td>&nbsp;</td><td>A constant is a property defined with the <code>const</code> statement.</td></tr><tr><td>&nbsp;</td><td>name</td><td>The name of the constant.</td></tr><tr><td>&nbsp;</td><td>type</td><td>The data type of the constant.</td></tr><tr><td><code>&lt;method&gt;</code></td><td>&nbsp;</td><td>A method is a function declared as part of a class definition.</td></tr><tr><td>&nbsp;</td><td>name</td><td>The name of the method.</td></tr><tr><td>&nbsp;</td><td>declaredBy</td><td>The class that contains the method definition.</td></tr><tr><td>&nbsp;</td><td>returnType</td><td>The data type of the method's return value.</td></tr><tr><td><code>&lt;parameter&gt;</code></td><td>&nbsp;</td><td>There is a separate <code>parameter</code> tag for each parameter that a method defines. This tag is always nested inside a <code>&lt;method&gt;</code> tag.</td></tr><tr><td>&nbsp;</td><td>index</td><td>A number corresponding to the order in which the parameter appears in the method's parameter list. The first parameter has a value of 1.</td></tr><tr><td>&nbsp;</td><td>type</td><td>The data type of the parameter.</td></tr><tr><td>&nbsp;</td><td>optional</td><td><code>true</code> if the parameter is optional; <code>false</code> otherwise.</td></tr><tr><td><code>&lt;variable&gt;</code></td><td>&nbsp;</td><td>A variable is a property defined with the <code>var</code> statement.</td></tr><tr><td>&nbsp;</td><td>name</td><td>The name of the variable.</td></tr><tr><td>&nbsp;</td><td>type</td><td>The data type of the variable.</td></tr><tr><td><code>&lt;factory&gt;</code></td><td>&nbsp;</td><td>If the ActionScript object is a class object or constructor function, all instance properties and methods are nested inside this tag. If the <code>isStatic</code> attribute of the <code>&lt;type&gt;</code> tag is <code>true</code>, all properties and methods that are not nested within the <code>&lt;factory&gt;</code> tag are static. This tag appears only if the ActionScript object is a class object or constructor function.</td></tr></table>
+	 
+	 
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">value</span>:<a href="../../specialTypes.html#*">*</a></code> &mdash; The object for which a type description is desired. Any ActionScript value 
+	 may be passed to this method including all available ActionScript types, object 
+	 instances, primitive types such as uint, and class objects.
+	 
+	 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../XML.html">XML</a></code> &mdash; An XML object containing details about the object that was passed in as a parameter. 
+	 It provides the following information about the object:
+	 
+	 <ul><li>The class of the object</li><li>The attributes of the class</li><li>The inheritance tree from the class to its base classes</li><li>The interfaces implemented by the class</li><li>The declared instance properties of the class</li><li>The declared static properties of the class</li><li>The instance methods of the class</li><li>The static methods of the class </li><li>For each method of the class, the name, number of parameters, return type, 
+	 		and parameter types </li></ul>
+     <p><b>Note:</b> <code>describeType()</code> only shows public properties and methods, and will not show 
+     properties and methods that are private, package internal or in custom namespaces. </p>
+	 
+ 	 </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="#getQualifiedClassName()" target="">getQualifiedClassName()</a><br/><a href="#getQualifiedSuperclassName()" target="">getQualifiedSuperclassName()</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"><div class="listing"><pre>package {
+    import flash.display.Sprite;
+    import flash.utils.describeType;
+    
+    public class DescribeTypeExample extends Sprite {
+        public function DescribeTypeExample() {
+            var child:Sprite = new Sprite();
+            var description:XML = describeType(child);
+            trace(description..accessor.@name.toXMLString());
+        }
+    }
+}
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="escapeMultiByte()" id="escapeMultiByte()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="escapeMultiByte(String)" id="escapeMultiByte(String)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>escapeMultiByte</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function escapeMultiByte(value:<a href="../../String.html">String</a>):<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+	  Returns an escaped copy of the input string encoded as either UTF-8 or system code page, depending on the value of System.useCodePage.
+	  Use of System.useCodePage allows legacy content encoded in local code pages to be accessed by the runtime, but only on systems using that legacy code page.
+      For example, Japanese data encoded as <code>Shift-JIS</code> will only be escaped and unescaped properly on an OS using a Japanese default code page.
+	  
+	  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">value</span>:<a href="../../String.html">String</a></code> &mdash; The string to be escaped.
+	  
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; An escaped copy of the input string.  If System.useCodePage is <code>true</code>, the escaped string is encoded in the system code page.
+      If System.useCodePage is <code>false</code>, the escaped string is encoded in UTF-8.
+      For example, the input string "Crüe" will be escaped as "Cr%C3%BCe" on all systems if System.useCodePage is <code>false</code>.
+      If system.useCodePage is <code>true</code>, and the system uses a Latin code page, "Crüe" will be escaped as "Cr%FCe".  
+	  If the system uses a non Latin code page that does not contain the letter 'ü' the result will probably be "Cr?e".
+      Unescaping "Cr%C3%BCe" with System.useCodePage set to <code>true</code> will produce different undesired results on different systems, such as "CrÃ¼e" on a Latin system.
+      Similarly, unescaping "Cr%FCe" with System.useCodePage set to <code>false</code> could produce "Cre" or "Cr?e" or other variations depending on the code page of the system.	  
+	  
+	   
+	   </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getDefinitionByName()" id="getDefinitionByName()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getDefinitionByName(String)" id="getDefinitionByName(String)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getDefinitionByName</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function getDefinitionByName(name:<a href="../../String.html">String</a>):<a href="../../Object.html">Object</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+	 Returns a reference to the class object of the class specified by the <code>name</code> parameter.
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">name</span>:<a href="../../String.html">String</a></code> &mdash; The name of a class.
+	 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Object.html">Object</a></code> &mdash; Returns a reference to the class object of the class specified by the <code>name</code> parameter.
+	 
+	 </td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../ReferenceError.html">ReferenceError</a> </code> &mdash; No public definition exists with the
+	 specified name.
+	 
+     </td></tr></table><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example uses the class <code>GetDefinitionByNameExample</code> to 
+ create an orange square on the stage.  This is accomplished using the following steps:
+ <ol><li>Variables for the background color of orange and size of 80 pixels are declared, 
+     which will later be used in drawing the square.</li><li>Within the constructor, a variable <code>ClassReference</code> of type Class is 
+     assigned to Sprite.</li><li>An instance of ClassReference called <code>instance</code> is instantiated.</li><li>Since <code>instance</code> is, by reference, a Sprite object, a square can be
+     drawn and added to the display list using the methods available to Sprite.</li></ol>
+<div class="listing"><pre>
+package {
+    import flash.display.DisplayObject;
+    import flash.display.Sprite;
+    import flash.utils.getDefinitionByName;
+
+    public class GetDefinitionByNameExample extends Sprite {
+        private var bgColor:uint = 0xFFCC00;
+        private var size:uint = 80;
+
+        public function GetDefinitionByNameExample() {
+            var ClassReference:Class = getDefinitionByName("flash.display.Sprite") as Class;
+            var instance:Object = new ClassReference();
+            instance.graphics.beginFill(bgColor);
+            instance.graphics.drawRect(0, 0, size, size);
+            instance.graphics.endFill();
+            addChild(DisplayObject(instance));
+        }
+    }
+}
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getQualifiedClassName()" id="getQualifiedClassName()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getQualifiedClassName(any)" id="getQualifiedClassName(any)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getQualifiedClassName</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function getQualifiedClassName(value:<a href="../../specialTypes.html#*">*</a>):<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+	  Returns the fully qualified class name of an object.
+	  
+	  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">value</span>:<a href="../../specialTypes.html#*">*</a></code> &mdash; The object for which a fully qualified class name is desired. Any ActionScript value 
+	  may be passed to this method including all available ActionScript types, object 
+	  instances, primitive types such as uint, and class objects.
+	  
+	  </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; A string containing the fully qualified class name.
+	  </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="#describeType()" target="">describeType()</a><br/><a href="#getQualifiedSuperclassName()" target="">getQualifiedSuperclassName()</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getQualifiedSuperclassName()" id="getQualifiedSuperclassName()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getQualifiedSuperclassName(any)" id="getQualifiedSuperclassName(any)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getQualifiedSuperclassName</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function getQualifiedSuperclassName(value:<a href="../../specialTypes.html#*">*</a>):<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+	Returns the fully qualified class name of the base class of the object specified by the <code>value</code> 
+	parameter. This function provides a quicker way of retrieving the base class name than <code>describeType()</code>, but also
+    doesn't provide all the information <code>describeType()</code> does.
+	<p>After you retrieve the name of a class with this function, you can convert the class name to a class reference with the <code>getDefinitionByName()</code> function.</p>
+	<p><b>Note:</b> This function restricts itself to instance hierarchies, whereas the <code>describeType()</code> function
+	uses class object hierarchies if the <code>value</code> parameter is a data type. Calling <code>describeType()</code> on a data type returns the 
+	superclass based on the class object hierarchy, in which all class objects inherit from Class. The <code>getQualifiedSuperclassName()</code> 
+	function, however, ignores the class object hierarchy and returns the superclass based on the more familiar instance hierarchy.
+	For example, calling <code>getQualifiedSuperclassName(String)</code>
+	returns <code>Object</code> although technically the String class object inherits from Class. In other words, the results are
+    the same whether you use an instance of a type or the type itself.</p>
+	</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">value</span>:<a href="../../specialTypes.html#*">*</a></code> &mdash; Any value.
+	</td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; A fully qualified base class name, or <code>null</code> if none exists.
+	</td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="#describeType()" target="">describeType()</a><br/><a href="#getDefinitionByName()" target="">getDefinitionByName()</a><br/><a href="#getQualifiedClassName()" target="">getQualifiedClassName()</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getTimer()" id="getTimer()"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getTimer</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function getTimer():<a href="../../int.html">int</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+	 Used to compute relative time. For a Flash runtime processing ActionScript 3.0, this method returns the number of milliseconds that have elapsed
+	 since the Flash runtime virtual machine for ActionScript 3.0 (AVM2) started. For a Flash runtime processing ActionScript 2.0, this method returns
+	 the number of milliseconds since the Flash runtime began initialization. Flash runtimes use two 
+	 virtual machines to process ActionScript. AVM1 is the ActionScript virtual machine used to run ActionScript 1.0 and 2.0.
+ 	 AVM2 is the ActionScript virtual machine used to run ActionScript 3.0. The <code>getTimer()</code> method behavior for AVM1 is different than the
+ 	 behavior for AVM2.
+	 <p>For a calendar date (timestamp), see the Date object.</p> 	 
+	 
+	 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../int.html">int</a></code> &mdash; The number of milliseconds since the runtime was initialized (while processing ActionScript 2.0), or since the virtual machine started (while
+	 processing ActionScript 3.0). If the runtime starts playing one 
+	 SWF file, and another SWF file is loaded later, the return value is relative to when the first SWF file was 
+	 loaded.
+	 
+	 </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/display/AVM1Movie.html" target="">flash.display.AVM1Movie</a><br/><a href="../../Date.html" target="">Date class</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example uses the class <code>GetTimerExample</code> to get and print the
+ number of milliseconds since the runtime initialized.
+<div class="listing"><pre>
+package {
+    import flash.utils.getTimer;
+    import flash.display.Sprite;
+
+    public class GetTimerExample extends Sprite {
+        public function GetTimerExample() {
+            var duration:uint = getTimer();
+            trace("duration: " + duration);
+        }
+    }
+}
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::9##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="setInterval()" id="setInterval()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="setInterval(Function,Number,restParam)" id="setInterval(Function,Number,restParam)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>setInterval</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function setInterval(closure:<a href="../../Function.html">Function</a>, delay:<a href="../../Number.html">Number</a>, <a href="../../statements.html#..._(rest)_parameter">...</a> arguments):<a href="../../uint.html">uint</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9</td></tr></table><p></p><p></p><p>
+ Runs a function at a specified interval (in milliseconds).
+ 
+ <p>Instead of using the <code>setInterval()</code> method, consider 
+ creating a Timer object, with the specified interval, using 0 as the <code>repeatCount</code> 
+ parameter (which sets the timer to repeat indefinitely).</p>
+ 
+ <p>If you intend to use the <code>clearInterval()</code> method to cancel the 
+ <code>setInterval()</code> call, be sure to assign the <code>setInterval()</code> call to a
+ variable (which the <code>clearInterval()</code> function will later reference).
+ If you do not call the <code>clearInterval()</code> function to cancel the
+ <code>setInterval()</code> call, the object containing the set timeout closure 
+ function will not be garbage collected. </p>
+ 
+ </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">closure</span>:<a href="../../Function.html">Function</a></code> &mdash; The name of the function to execute. Do not include quotation marks or
+ parentheses, and do not specify parameters of the function to call. For example, use 
+ <code>functionName</code>, not <code>functionName()</code> or <code>functionName(param)</code>.
+ 
+ </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">delay</span>:<a href="../../Number.html">Number</a></code> &mdash; The interval, in milliseconds. 
+ 
+ </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><a href="../../statements.html#..._(rest)_parameter">...</a> <span class="label">arguments</span></code> &mdash; An optional list of arguments that are passed to the closure function.
+ 
+ </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../uint.html">uint</a></code> &mdash; Unique numeric identifier for the timed process. Use this identifier to cancel
+ the process, by calling the <code>clearInterval()</code> method.
+ 
+ </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="#clearInterval()" target="">clearInterval()</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example uses the <code>setInterval()</code> method to create a timed 
+ interval, calling the <code>myRepeatingFunction()</code> method after regular intervals of one
+ second.
+<div class="listing"><pre>
+package {
+    import flash.display.Sprite;
+    import flash.utils.*;
+
+    public class SetIntervalExample extends Sprite {
+        private var intervalDuration:Number = 1000; // duration between intervals, in milliseconds
+        
+        public function SetIntervalExample() {
+            var intervalId:uint = setInterval(myRepeatingFunction, intervalDuration, "Hello", "World");
+        }
+
+        public function myRepeatingFunction():void {
+            trace(arguments[0] + " " + arguments[1]);
+        }
+    }
+}
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::9##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="setTimeout()" id="setTimeout()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="setTimeout(Function,Number,restParam)" id="setTimeout(Function,Number,restParam)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>setTimeout</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function setTimeout(closure:<a href="../../Function.html">Function</a>, delay:<a href="../../Number.html">Number</a>, <a href="../../statements.html#..._(rest)_parameter">...</a> arguments):<a href="../../uint.html">uint</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9</td></tr></table><p></p><p></p><p>
+ Runs a specified function after a specified delay (in milliseconds).
+ 
+ <p>Instead of using this method, consider 
+ creating a Timer object, with the specified interval, using 1 as the <code>repeatCount</code> 
+ parameter (which sets the timer to run only once).</p>
+ 
+ <p>If you intend to use the <code>clearTimeout()</code> method to cancel the 
+ <code>setTimeout()</code> call, be sure to assign the <code>setTimeout()</code> call to a
+ variable (which the <code>clearTimeout()</code> function will later reference).
+ If you do not call the <code>clearTimeout()</code> function to cancel the
+ <code>setTimeout()</code> call, the object containing the set timeout closure 
+ function will not be garbage collected. </p>
+ 
+ </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">closure</span>:<a href="../../Function.html">Function</a></code> &mdash; The name of the function to execute. Do not include quotation marks or
+ parentheses, and do not specify parameters of the function to call. For example, use 
+ <code>functionName</code>, not <code>functionName()</code> or <code>functionName(param)</code>.
+ 
+ </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">delay</span>:<a href="../../Number.html">Number</a></code> &mdash; The delay, in milliseconds, until the function is executed. 
+ 
+ </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><a href="../../statements.html#..._(rest)_parameter">...</a> <span class="label">arguments</span></code> &mdash; An optional list of arguments that are passed to the closure function.
+ 
+ </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../uint.html">uint</a></code> &mdash; Unique numeric identifier for the timed process. Use this identifier to cancel
+ the process, by calling the <code>clearTimeout()</code> method.
+ 
+ </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="#clearTimeout()" target="">clearTimeout()</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example uses the <code>setTimeout()</code> method to call another  
+ method following a specified delay period.
+<div class="listing"><pre>
+package {
+    import flash.display.Sprite;
+    import flash.utils.*;
+
+    public class SetTimeoutExample extends Sprite {
+        private var delay:Number = 1000; // delay before calling myDelayedFunction
+        
+        public function SetTimeoutExample() {
+            var intervalId:uint = setTimeout(myDelayedFunction, delay, "Hello", "World");
+        }
+
+        public function myDelayedFunction():void {
+            trace(arguments[0] + " " + arguments[1]);
+        }
+    }
+}
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="unescapeMultiByte()" id="unescapeMultiByte()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="unescapeMultiByte(String)" id="unescapeMultiByte(String)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>unescapeMultiByte</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function unescapeMultiByte(value:<a href="../../String.html">String</a>):<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+	  Returns an unescaped copy of the input string, which is decoded from either system code page page or UTF-8 depending on the value of System.useCodePage.
+	  Use of System.useCodePage allows legacy content encoded in local code pages to be accessed by the runtime, but only on systems using that legacy code page.
+      For example, Japanese data encoded as <code>Shift-JIS</code> will only be escaped and unescaped properly on an OS using a Japanese default code page.
+	  
+	  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">value</span>:<a href="../../String.html">String</a></code> &mdash; The escaped string to be unescaped.
+	  
+	  </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; An unescaped copy of the input string.  If System.useCodePage is <code>true</code>, the escaped string is decoded from the system code page.
+      If System.useCodePage is <code>false</code>, the escaped string is decoded from UTF-8.
+      For example, if the input string is "Crüe" and System.useCodePage is <code>false</code>, the result will be "CrÃ¼e" on all systems.
+      If System.useCodePage is <code>true</code> and the input string is "Cr%FCe", and the system uses a Latin code page, the result will also be "CrÃ¼e".
+      Unescaping "Cr%C3%BCe" with System.useCodePage set to <code>true</code> will produce different undesired results on different systems, such as "CrÃÂ¼e" on a Latin system.
+      Similarly, unescaping "Cr%FCe" with System.useCodePage set to <code>false</code> could produce "Cre" or "Cr?e" or other variations depending on the code page of the system.
+	  
+	   
+	   </td></tr></table></div></span><p></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 07:03 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 07:03 PM -08:00  -->

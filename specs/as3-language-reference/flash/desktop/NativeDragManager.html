@@ -1,0 +1,469 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="air"><meta name="runtimever" content="air:1.0"><meta name="product" content="air"><meta name="productver" content="air:1.0"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="NativeDragManager,flash.desktop.NativeDragManager,dragInitiator,dropAction,isDragging,isSupported,acceptDragDrop,doDrag"><title>NativeDragManager - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">flash.desktop&nbsp;</a><br>
+								<h1 id="classProductName">NativeDragManager&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">flash.desktop</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  NativeDragManager</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">NativeDragManager  <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../Object.html">Object</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p></p>
+ The NativeDragManager class coordinates drag-and-drop operations. With the native drag-and-drop API, 
+ you can allow a user to drag data between an AIR application and the native operating system, 
+ between two applications, or between components within a single application.
+ 
+ <p>The following kinds of data can be transferred:</p>
+               <ul>
+                  <li>Bitmaps</li>
+                  <li>Files</li>
+                  <li>Text</li>
+                  <li>URL strings</li>
+                  <li>Serialized objects</li>
+                  <li>Object references (valid only within the originating application)</li>
+               </ul>
+ 
+               <p>
+                  <b>Note:</b> all NativeDragManager members are static. An instance of this class does not need to be created.</p>
+ 
+               <p>A drag-and-drop operation is a user interface gesture that begins with the user clicking a visible item and
+ dragging it elsewhere. During the drag gesture, interactive objects on the display list dispatch native drag events
+ as the gesture moves across the AIR application window. Handlers for these events can call 
+ the methods of the NativeDragManager class to indicate whether a dragged item 
+ can be dropped on an object. In response, the NativeDragManager changes the mouse pointer to provide 
+ feedback to the user.</p>
+ 
+               <p>
+                  <i>AIR profile support:</i> This feature is not supported 
+ on AIR for TV devices. Also, it is not supported on all mobile devices. You can test 
+ for support at run time using the <code>NativeDragManager.isSupported</code> property. See 
+ <a href="http://help.adobe.com/en_US/air/build/WS144092a96ffef7cc16ddeea2126bb46b82f-8000.html" >
+ AIR Profile Support</a> for more information regarding API support across multiple profiles.
+ </p> 
+ 
+               <p>
+                  <b>Drag actions</b>
+               </p>
+               <p>Drag-and-drop gestures are typically used for three types of operations, called <i>actions</i>. 
+ Since the meaning of these actions depends on the application context, 
+ the runtime does not enforce any particular behavior with respect to actions. 
+ However, properly implementing the actions improves the user experience with your application.
+ </p> 
+ 
+               <p>The possible actions are:</p>
+               <ul>
+                  <li>Copy &mdash; A copy of the data is made, leaving the original untouched. 
+ (When dragging objects within an application, care should be taken to copy the 
+ original object itself rather than the reference to that object.)</li>
+                  <li>Move &mdash; The data is moved from its original context into the context defined by the drop target, 
+ such as when moving an item from one list to another.</li>
+                  <li>Link &mdash; A reference or shortcut to the original data is created, 
+ leaving the item in its original context.</li>
+               </ul>
+ 
+               <p>The allowed actions can be set for a drag gesture by supplying an <code>allowedActions</code> parameter
+ in the <code>NativeDragManager.doDrag()</code> call that starts the drag operation. 
+ If no <code>allowedActions</code> parameter is provided, all
+ of the actions are allowed. Potential drag targets can check which actions are allowed by using the 
+ <code>allowedActions</code> property of a NativeDragEvent object, and should not accept a drop
+ that allows only incompatible actions (this is not enforced by the runtime, however).</p>
+ 
+               <p>If a drop target only implements a single action, the object can set the 
+ <code>dropAction</code> property of the NativeDragManager in the handlers for both
+ the <code>nativeDragEnter</code> and <code>nativeDragOver</code> events. Setting the
+ property before the drop, allows the drag manager to update the mouse pointer to 
+ indicate the supported action and also prevents
+ a user from choosing an incompatible action using modifier keys. If the specified action
+ is not one of the allowed actions, then a drop is not allowed, even if the target calls the
+ <code>acceptDrop()</code> method.</p>
+ 
+               <p>When accepting a drop, a potential drop target should specify the action chosen
+ by setting the <code>NativeDragManager.dropAction</code> property in response to the 
+ <code>nativeDragDrop</code> event. This action is reported back to the initiating
+ display object in the <code>nativeDragComplete</code> event. If no action is set by a drop target, 
+ then a default action is chosen from the allowed actions in this order of 
+ precedence: copy, move, link. The initiating object is responsible
+ for updating its internal state in response to the chosen action.</p> 
+ 
+               <p>String constants for the action names are defined in the NativeDragActions class.</p>
+  
+               <p>
+                  <b>Sequence of events</b>
+               </p>
+               <p>A drag gesture is begun by calling the <code>NativeDragManager.doDrag()</code> method 
+ within a <code>mouseDown</code> or <code>mouseMove</code> event handler and 
+ proceeds through the following event sequence in response to user actions:</p>
+               <ul>
+                  <li>
+                     <code>nativeDragStart</code> event &mdash; When <code>NativeDragManager.doDrag()</code> is called, 
+ the interactive object passed as a paramter to the method becomes the initiator 
+ object and dispatches a <code>nativeDragStart</code> event.</li>
+                  <li>
+                     <code>nativeDragUpdate</code> event &mdash; While the drag is in progress, the initiator object continually 
+ dispatches <code>nativeDragUpdate</code> events.</li>
+                  <li>
+                     <code>nativeDragEnter</code>, <code>nativeDragOver</code> events &mdash; When a drag 
+ gesture passes over an interactive object, that object dispatches a <code>nativeDragEnter</code> event. 
+ While the drag gesture remains over the interactive object, 
+ it continually dispatches <code>nativeDragOver</code> events. In response to either of these events, 
+ an object that serves as a potential drop target should check the properties of the event object 
+ to decide whether it can accept the drop. If the data format and allowed 
+ actions are appropriate, then the event handler for these events must call 
+ <code>NativeDragManager.acceptDrop()</code>, passing in a reference to the
+ display object to serve as the drag target (typically the object that 
+ dispatched the <code>nativeDragEnter</code> or <code>nativeDragOver</code> event). 
+ The user can then drop the dragged item onto the target.</li>
+                  <li>
+                     <code>nativeDragExit</code> event &mdash; When a drag gesture passes out of an
+ interactive object, the object dispatches a <code>nativeDragExit</code> event.
+ If the object had been designated as the drag target by an earlier call to the 
+ <code>NativeDragManager.acceptDrop()</code> method, that call is no longer valid
+ and <code>acceptDrop()</code> must be called again if the gesture re-enters the interactive object.</li>
+                  <li>
+                     <code>nativeDragDrop</code> event &mdash; The target display object dispatches a 
+ <code>nativeDragDrop</code> event when the user releases the mouse button over the object. 
+ The handler for this event can access the data in the <code>transferable</code> 
+ property of the event object and should set the <code>NativeDragManager.dropAction</code> property to
+ signal which action should be taken by the initiator object.</li>
+                  <li>
+                     <code>nativeDragComplete</code> &mdash; When the user releases the mouse button at the end of a drag gesture, 
+ the initiator object dispatches a <code>nativeDragComplete</code> event (whether or not the drop itself was consumated). 
+ The handler for this event can check the <code>dropAction</code> property of the event object to determine what, 
+ if any, modification should be made to its internal data state, such as removing a dragged-out item from a list. 
+ If <code>dropAction</code> is <code>NativeDragActions.NONE</code>, then the dragged item was not dropped on an eligible target.</li>
+               </ul>
+ 
+               <p>
+                  <b>Gestures between applications</b>
+               </p>
+               <p>When a drag gesture enters an AIR application window from a non-AIR application,
+ there is no initiator object to dispatch the <code>nativeDragStart</code> or <code>nativeDragComplete</code>
+ event. The events dispatched during the gesture will otherwise follow the same
+ pattern as that of a gesture starting and ending within the same AIR application.</p>
+ 
+               <p>When a drag gesture leaves an AIR application window, there is no target object to dispatch 
+ <code>nativeDragEnter</code>, <code>nativeDragOver</code>, or <code>nativeDragDrop</code> events. The initiator object
+ still dispatches a <code>nativeDragComplete</code> event, which reports the drag action set 
+ by the native operating system (or <code>none</code>, if the drop was not accepted).</p>
+ 
+               <p>When a drag gesture moves from one AIR application to another, the initiator
+ and target display objects dispatch events within their separate applications
+ as usual.</p>
+ 
+               <p>
+                  <b>Transfering information</b>
+               </p>
+               <p>The data transfered during a drag-and-drop gesture is contained in a Clipboard object. 
+ This data object is added to the drag operation with the 
+ <code>NativeDragManager.doDrag()</code> method that starts the drag gesture. 
+ Potential drop targets can access the Clipboard object through the 
+ <code>clipboard</code> property of the native drag event 
+ object. Once a drag operation has started, the Clipboard object can 
+ only be accessed in the event handler of a NativeDragEvent. Any other attempt 
+ to access the object generates a run-time error.</p>
+ 
+               <p>
+                  <b>Security considerations</b>
+               </p>
+               <p>The security sandboxes of the initiator and potential target objects determine how the 
+ the data being dragged can be accessed. If both objects are in the same sandbox, 
+ then the data can be accessed from any NativeDragEvent object. However,
+ if the initiator and target objects are in different sandboxes, the data can 
+ only be accessed in the target sandbox within the event 
+ handler for the <code>nativeDragDrop</code> event. Other native drag event handlers can still
+ still access the Clipboard object referenced in the event <code>clipboard</code>
+ property to determine which data formats are available, but calling the 
+ <code>clipboard.getData()</code> method generates a security error.</p>
+ 
+            <p></p><p id="moreExamples"><span class="classHeaderTableLabel">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7e8a.html" target="_blank">Drag and drop in AIR</a></div><p><span class="classHeaderTableLabel">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/events/NativeDragEvent.html" target="">flash.events.NativeDragEvent</a><br/><a href="NativeDragActions.html" target="">flash.desktop.NativeDragActions</a><br/><a href="NativeDragOptions.html" target="">flash.desktop.NativeDragOptions</a><br/><a href="Clipboard.html" target="">flash.desktop.Clipboard</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../Object.html#constructor" class="signatureLink">constructor</a> : <a href="../../Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#dragInitiator" class="signatureLink">dragInitiator</a> : <a href="../../flash/display/InteractiveObject.html">InteractiveObject</a><div class="summaryTableDescription">[static] [read-only] 
+	The interactive object passed to the NativeDragManager.doDrag() call that initiated the drag operation.</div></td><td class="summaryTableOwnerCol">NativeDragManager</td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#dropAction" class="signatureLink">dropAction</a> : <a href="../../String.html">String</a><div class="summaryTableDescription">[static] 
+	The drag action specified by the drop target.</div></td><td class="summaryTableOwnerCol">NativeDragManager</td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#isDragging" class="signatureLink">isDragging</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">[static] [read-only] 
+	Reports whether a drag operation is currently in progress.</div></td><td class="summaryTableOwnerCol">NativeDragManager</td></tr><tr class="" runtime="AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#isSupported" class="signatureLink">isSupported</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">[static] [read-only] 
+     The isSupported property is set to true if the 
+     NativeDragManager class is supported on the current platform, otherwise it is
+     set to false.</div></td><td class="summaryTableOwnerCol">NativeDragManager</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#acceptDragDrop()" class="signatureLink">acceptDragDrop</a>(target:<a href="../../flash/display/InteractiveObject.html">InteractiveObject</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[static] 
+	 Informs the NativeDragManager object that the specified target interactive object can accept a drop
+	 corresponding to the current drag event.</div></td><td class="summaryTableOwnerCol">NativeDragManager</td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#doDrag()" class="signatureLink">doDrag</a>(dragInitiator:<a href="../../flash/display/InteractiveObject.html">InteractiveObject</a>, clipboard:<a href="../../flash/desktop/Clipboard.html">Clipboard</a>, dragImage:<a href="../../flash/display/BitmapData.html">BitmapData</a> = null, offset:<a href="../../flash/geom/Point.html">Point</a> = null, allowedActions:<a href="../../flash/desktop/NativeDragOptions.html">NativeDragOptions</a> = null):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[static] 
+	 Starts a drag-and-drop operation.</div></td><td class="summaryTableOwnerCol">NativeDragManager</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="../../String.html">String</a>, isEnum:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toString()" class="signatureLink">toString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+	 Returns the primitive value of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="AIR::1.0##"><a name="propertyDetail" id="propertyDetail"></a><a name="dragInitiator" id="dragInitiator"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<h3>dragInitiator</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>dragInitiator:<a href="../../flash/display/InteractiveObject.html">InteractiveObject</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+	The interactive object passed to the <code>NativeDragManager.doDrag()</code> call that initiated the drag operation.
+	
+	</p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get dragInitiator():<a href="../../flash/display/InteractiveObject.html">InteractiveObject</a></code><br/></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="propertyDetail" id="propertyDetail"></a><a name="dropAction" id="dropAction"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<h3>dropAction</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>dropAction:<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+	The drag action specified by the drop target.
+	 
+     <p>The <code>dropAction</code> property
+     should be set in the handler for the <code>nativeDragDrop</code> event.
+     If <code>dropAction</code> is not set before the <code>nativeDragComplete</code>, 
+     the NativeDragManager sets the value with the first 
+     allowed action from the list: copy, move, or link (in that order).</p>
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get dropAction():<a href="../../String.html">String</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function set dropAction(value:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></code><br/><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="NativeDragActions.html" target="">flash.desktop.NativeDragActions</a></div></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="propertyDetail" id="propertyDetail"></a><a name="isDragging" id="isDragging"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<h3>isDragging</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>isDragging:<a href="../../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+	Reports whether a drag operation is currently in progress.
+	 
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get isDragging():<a href="../../Boolean.html">Boolean</a></code><br/></div></span><span id="pageFilter" runtime="AIR::2##"><a name="propertyDetail" id="propertyDetail"></a><a name="isSupported" id="isSupported"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<h3>isSupported</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>isSupported:<a href="../../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2</td></tr></table><p></p><p></p><p>
+     The <code>isSupported</code> property is set to <code>true</code> if the 
+     NativeDragManager class is supported on the current platform, otherwise it is
+     set to <code>false</code>. 
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get isSupported():<a href="../../Boolean.html">Boolean</a></code><br/></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="AIR::1.0##"><a name="acceptDragDrop()" id="acceptDragDrop()"></a><a name="acceptDragDrop(flash.display.InteractiveObject)" id="acceptDragDrop(flash.display.InteractiveObject)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;acceptDragDrop</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public static function acceptDragDrop(target:<a href="../../flash/display/InteractiveObject.html">InteractiveObject</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+	 Informs the NativeDragManager object that the specified target interactive object can accept a drop
+	 corresponding to the current drag event.
+	 
+     <p>This method should be called only when there is a <code>nativeDragDrop</code>
+     handler on the specified target object that can handle at least one of the 
+     data formats in the dragged item and at least one of the allowed actions.</p>
+     
+	 <p>This function can be called only within a <code>nativeDragEnter</code> or <code>nativeDragOver</code>
+	 event handler.</p>
+	 
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">target</span>:<a href="../../flash/display/InteractiveObject.html">InteractiveObject</a></code></td></tr></table></p></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="doDrag()" id="doDrag()"></a><a name="doDrag(flash.display.InteractiveObject,flash.desktop.Clipboard,flash.display.BitmapData,flash.geom.Point,flash.desktop.NativeDragOptions)" id="doDrag(flash.display.InteractiveObject,flash.desktop.Clipboard,flash.display.BitmapData,flash.geom.Point,flash.desktop.NativeDragOptions)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;doDrag</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function doDrag(dragInitiator:<a href="../../flash/display/InteractiveObject.html">InteractiveObject</a>, clipboard:<a href="../../flash/desktop/Clipboard.html">Clipboard</a>, dragImage:<a href="../../flash/display/BitmapData.html">BitmapData</a> = null, offset:<a href="../../flash/geom/Point.html">Point</a> = null, allowedActions:<a href="../../flash/desktop/NativeDragOptions.html">NativeDragOptions</a> = null):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+	 Starts a drag-and-drop operation.
+	 
+	 <p>To start a drag operation:</p>
+	 <ol><li>Create a new Clipboard object.</li><li>Add the data to be transferred in one or more formats.</li><li>Optionally, create a BitmapData object to serve as a proxy image during the drag.</li><li>Optionally, create a NativeDragOptions object to restrict the actions allowed in this operation. 
+     (If the <code>allowedActions</code> parameter is left <code>null</code>, all actions are allowed.)</li><li>Call <code>NativeDragManager.doDrag()</code>.</li></ol>
+	 
+     <p>The initiator object dispatches a <code>nativeDragStart</code> event after this method is called,
+     <code>nativeDragStart</code> events while the drag is in progress, and a 
+     <code>nativeDragComplete</code> event when the user releases the mouse button to end the drag gesture. 
+     The handler for the <code>nativeDragComplete</code> event can check the <code>dropAction</code> property of the 
+	 event to determine whether the drag-and-drop operation was successfully completed. 
+	 If <code>dropAction</code> is <code>NativeDragActions.NONE</code>, then the dragged item was not dropped 
+	 on an eligible target.</p>
+	 
+     <p>This method can be called only from within a <code>mouseDown</code> or 
+     <code>mouseMove</code> event handler. (If called in response to a 
+     <code>mouseMove</code> event, the mouse button must also be down.)</p>
+	 
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">dragInitiator</span>:<a href="../../flash/display/InteractiveObject.html">InteractiveObject</a></code> &mdash; Typically the object from which the drag gesture began. Receives the <code>nativeDragStart</code>
+	 and <code>nativeDragComplete</code> events.
+	 
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">clipboard</span>:<a href="../../flash/desktop/Clipboard.html">Clipboard</a></code> &mdash; The container object for data being dragged.
+	 
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">dragImage</span>:<a href="../../flash/display/BitmapData.html">BitmapData</a></code> (default = <code>null</code>)<code></code> &mdash; An optional proxy image displayed under the mouse pointer 
+     during the drag gesture. If <code>null</code>, no image is displayed.
+     
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">offset</span>:<a href="../../flash/geom/Point.html">Point</a></code> (default = <code>null</code>)<code></code> &mdash; The offset between the mouse hotspot and the top left 
+     corner of the drag image. Negative coordinates move the image up and 
+     to the left in relation to the hotspot. If <code>null</code>, the top 
+     left corner of the drag image is positioned at the mouse hotspot. 
+     
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">allowedActions</span>:<a href="../../flash/desktop/NativeDragOptions.html">NativeDragOptions</a></code> (default = <code>null</code>)<code></code> &mdash; Restricts the drag-and-drop actions allowed for 
+     this operation. If <code>null</code>, all actions are allowed.
+	 
+	 </td></tr></table></p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="NativeDragActions.html" target="">flash.desktop.NativeDragActions</a></div></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

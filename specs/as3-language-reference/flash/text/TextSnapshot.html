@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:9"><meta name="runtime" content="lite"><meta name="runtimever" content="lite:4"><meta name="product" content="flash player"><meta name="productver" content="flash player:9"><meta name="product" content="lite"><meta name="productver" content="lite:4"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="TextSnapshot,flash.text.TextSnapshot,charCount,findText,getSelected,getSelectedText,getText,getTextRunInfo,hitTestTextNearPos,setSelectColor,setSelected"><title>TextSnapshot - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">flash.text&nbsp;</a><br>
+								<h1 id="classProductName">TextSnapshot&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">flash.text</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  TextSnapshot</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">TextSnapshot  <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../Object.html">Object</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p></p> 
+ TextSnapshot objects let you work with static text in a movie clip. You can use them, for example, 
+ to lay out text with greater precision than that allowed by dynamic text, but still access the text
+ in a read-only way.
+ 
+ <p>You don't use a constructor to create a TextSnapshot object; it is returned by 
+ <code>flash.display.DisplayObjectContainer.textSnapshot</code> property.</p>
+ 
+ 
+            <p></p><p><span class="classHeaderTableLabel">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/display/DisplayObjectContainer.html#textSnapshot" target="">flash.display.DisplayObjectContainer.textSnapshot</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#charCount" class="signatureLink">charCount</a> : <a href="../../int.html">int</a><div class="summaryTableDescription">[read-only] 
+	 The number of characters in a TextSnapshot object.</div></td><td class="summaryTableOwnerCol">TextSnapshot</td></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../Object.html#constructor" class="signatureLink">constructor</a> : <a href="../../Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#findText()" class="signatureLink">findText</a>(beginIndex:<a href="../../int.html">int</a>, textToFind:<a href="../../String.html">String</a>, caseSensitive:<a href="../../Boolean.html">Boolean</a>):<a href="../../int.html">int</a></div><div class="summaryTableDescription">
+	 Searches the specified TextSnapshot object and returns the position of the first 
+	 occurrence of textToFind found at or after beginIndex.</div></td><td class="summaryTableOwnerCol">TextSnapshot</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getSelected()" class="signatureLink">getSelected</a>(beginIndex:<a href="../../int.html">int</a>, endIndex:<a href="../../int.html">int</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Returns a Boolean value that specifies whether a TextSnapshot object contains selected text in 
+	 the specified range.</div></td><td class="summaryTableOwnerCol">TextSnapshot</td></tr><tr class="" runtime="Flash::9.##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getSelectedText()" class="signatureLink">getSelectedText</a>(includeLineEndings:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns a string that contains all the characters specified by the corresponding 
+	 setSelected() method.</div></td><td class="summaryTableOwnerCol">TextSnapshot</td></tr><tr class="" runtime="Flash::9.##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getText()" class="signatureLink">getText</a>(beginIndex:<a href="../../int.html">int</a>, endIndex:<a href="../../int.html">int</a>, includeLineEndings:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns a string that contains all the characters specified by the beginIndex
+	 and endIndex parameters.</div></td><td class="summaryTableOwnerCol">TextSnapshot</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getTextRunInfo()" class="signatureLink">getTextRunInfo</a>(beginIndex:<a href="../../int.html">int</a>, endIndex:<a href="../../int.html">int</a>):<a href="../../Array.html">Array</a></div><div class="summaryTableDescription">
+	 Returns an array of objects that contains information about a run of text.</div></td><td class="summaryTableOwnerCol">TextSnapshot</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9.##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#hitTestTextNearPos()" class="signatureLink">hitTestTextNearPos</a>(x:<a href="../../Number.html">Number</a>, y:<a href="../../Number.html">Number</a>, maxDistance:<a href="../../Number.html">Number</a> = 0):<a href="../../Number.html">Number</a></div><div class="summaryTableDescription">
+	 Lets you determine which character within a TextSnapshot object is on or near the specified 
+	 x, y coordinates of the movie clip containing the text in the TextSnapshot object.</div></td><td class="summaryTableOwnerCol">TextSnapshot</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="../../String.html">String</a>, isEnum:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9.##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setSelectColor()" class="signatureLink">setSelectColor</a>(hexColor:<a href="../../uint.html">uint</a> = 0xFFFF00):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	 Specifies the color to use when highlighting characters that have been selected with the 
+	 setSelected() method.</div></td><td class="summaryTableOwnerCol">TextSnapshot</td></tr><tr class="" runtime="Flash::9.##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setSelected()" class="signatureLink">setSelected</a>(beginIndex:<a href="../../int.html">int</a>, endIndex:<a href="../../int.html">int</a>, select:<a href="../../Boolean.html">Boolean</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	 Specifies a range of characters in a TextSnapshot object to be selected or deselected.</div></td><td class="summaryTableOwnerCol">TextSnapshot</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toString()" class="signatureLink">toString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+	 Returns the primitive value of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="propertyDetail" id="propertyDetail"></a><a name="charCount" id="charCount"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>charCount</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>charCount:<a href="../../int.html">int</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+	 The number of characters in a TextSnapshot object.
+	 
+	 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get charCount():<a href="../../int.html">int</a></code><br/><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="TextSnapshot.html#getText()" target="">flash.text.TextSnapshot.getText()</a></div></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="findText()" id="findText()"></a><a name="findText(int,String,Boolean)" id="findText(int,String,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>findText</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function findText(beginIndex:<a href="../../int.html">int</a>, textToFind:<a href="../../String.html">String</a>, caseSensitive:<a href="../../Boolean.html">Boolean</a>):<a href="../../int.html">int</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+	 Searches the specified TextSnapshot object and returns the position of the first 
+	 occurrence of <code>textToFind</code> found at or after <code>beginIndex</code>. If 
+	 <code>textToFind</code> is not found, the method returns <code>-1</code>.
+	 
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">beginIndex</span>:<a href="../../int.html">int</a></code> &mdash; Specifies the starting point to search for the specified text.	 
+	 
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">textToFind</span>:<a href="../../String.html">String</a></code> &mdash; Specifies the text to search for. If you specify a string literal instead of a
+	 variable of type String, enclose the string in quotation marks.
+	 
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">caseSensitive</span>:<a href="../../Boolean.html">Boolean</a></code> &mdash; Specifies whether the text must match the case of the string in 
+	 <code>textToFind</code>. 
+	 
+	 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../int.html">int</a></code> &mdash; The zero-based index position of the first occurrence of the specified text, or -1.
+	 
+	 </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="TextSnapshot.html#getText()" target="">flash.text.TextSnapshot.getText()</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="getSelected()" id="getSelected()"></a><a name="getSelected(int,int)" id="getSelected(int,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getSelected</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getSelected(beginIndex:<a href="../../int.html">int</a>, endIndex:<a href="../../int.html">int</a>):<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+	 Returns a Boolean value that specifies whether a TextSnapshot object contains selected text in 
+	 the specified range. 
+	 
+	 <p>To search all characters, pass a value of <code>0</code> for <code>start</code>, and 
+	 <code>charCount</code> (or any very large number) for <code>end</code>. 
+	 To search a single character, pass the <code>end</code> parameter a value that is one greater 
+	 than the <code>start</code> parameter.</p>
+	 
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">beginIndex</span>:<a href="../../int.html">int</a></code> &mdash; Indicates the position of the first character to be examined. 
+	 Valid values for <code>beginIndex</code> are <code>0</code> through 
+	 <code>TextSnapshot.charCount - 1</code>. If <code>beginIndex</code> is a negative value, 
+	 <code>0</code> is used.
+	 
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">endIndex</span>:<a href="../../int.html">int</a></code> &mdash; A value that is one greater than the index of the last character to be examined. Valid values 
+	 for <code>endIndex</code> are <code>0</code> through <code>charCount</code>. 
+	 The character indexed by the <code>endIndex</code> parameter is not included in the extracted
+	 string. If this parameter is omitted, <code>charCount</code> is used. If this value is less than
+	 or equal to the value of <code>beginIndex</code>, <code>beginIndex + 1</code> is used.
+	 
+	 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; A Boolean value that indicates whether at least one character in the given range has been 
+	 selected by the corresponding <code>setSelected()</code> method (<code>true</code>); otherwise, 
+	 <code>false</code>.
+	 
+	 </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="TextSnapshot.html#charCount" target="">flash.text.TextSnapshot.charCount</a><br/><a href="TextSnapshot.html#getText()" target="">flash.text.TextSnapshot.getText()</a><br/><a href="TextSnapshot.html#getSelectedText()" target="">flash.text.TextSnapshot.getSelectedText()</a><br/><a href="TextSnapshot.html#setSelected()" target="">flash.text.TextSnapshot.setSelected()</a></div></div></span><span id="pageFilter" runtime="Flash::9.##Lite::4##"><a name="getSelectedText()" id="getSelectedText()"></a><a name="getSelectedText(Boolean)" id="getSelectedText(Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getSelectedText</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getSelectedText(includeLineEndings:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9., Flash Lite 4</td></tr></table><p></p><p></p><p>
+	 Returns a string that contains all the characters specified by the corresponding 
+	 <code>setSelected()</code> method. If no characters are specified (by the 
+	 <code>setSelected()</code> method), an empty string is returned.
+	 
+	 <p>If you pass <code>true</code> for <code>includeLineEndings</code>, 
+	 newline characters are inserted in the return string, and 
+	 the return string might be longer than the input range. If 
+	 <code>includeLineEndings</code> is <code>false</code> or omitted, the method returns 
+	 the selected text without adding any characters.</p>
+	 
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">includeLineEndings</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; An optional Boolean value that specifies 
+	 whether newline characters are inserted into the returned string where 
+	 appropriate. The default value is <code>false</code>.
+	 
+	 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; A string that contains all the characters specified by the 
+	 corresponding <code>setSelected()</code> command.
+	 
+	 </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="TextSnapshot.html#getSelected()" target="">flash.text.TextSnapshot.getSelected()</a><br/><a href="TextSnapshot.html#setSelected()" target="">flash.text.TextSnapshot.setSelected()</a></div></div></span><span id="pageFilter" runtime="Flash::9.##Lite::4##"><a name="getText()" id="getText()"></a><a name="getText(int,int,Boolean)" id="getText(int,int,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getText</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getText(beginIndex:<a href="../../int.html">int</a>, endIndex:<a href="../../int.html">int</a>, includeLineEndings:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9., Flash Lite 4</td></tr></table><p></p><p></p><p>
+	 Returns a string that contains all the characters specified by the <code>beginIndex</code>
+	 and <code>endIndex</code> parameters. If no characters are selected, an empty string is 
+	 returned. 
+	 
+	 <p>To return all characters, pass a value of <code>0</code> for <code>beginIndex</code> and <code>
+	 charCount</code> (or any very large number) for <code>endIndex</code>. 
+	 To return a single character, pass a value of <code>beginIndex + 1</code> for <code>endIndex</code>. </p>
+	 
+	 <p>If you pass a value of <code>true</code> for <code>includeLineEndings</code>, 
+	 newline characters are inserted in the string returned where deemed appropriate. In this case,
+	 the return string might be longer than the input range. If <code>includeLineEndings</code>
+	 is <code>false</code> or omitted, the selected text is returned without any characters added.</p>
+	 
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">beginIndex</span>:<a href="../../int.html">int</a></code> &mdash; Indicates the position of the first character to be included in the
+	 returned string. Valid values for <code>beginIndex</code> are<code>0</code> through 
+	 <code>charCount - 1</code>. If <code>beginIndex</code> is a negative value, 
+	 <code>0</code> is used.
+	 
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">endIndex</span>:<a href="../../int.html">int</a></code> &mdash; A value that is one greater than the index of the last character to be examined. Valid values
+	 for <code>endIndex</code> are <code>0</code> through <code>charCount</code>. The character 
+	 indexed by the <code>endIndex</code> parameter is not included in the extracted string. If this
+	 parameter is omitted, <code>charCount</code> is used. If this value is less than or 
+	 equal to the value of <code>beginIndex</code>, <code>beginIndex + 1</code> is used.
+	 
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">includeLineEndings</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; An optional Boolean value that specifies whether newline characters 
+	 are inserted (<code>true</code>) or are not inserted (<code>false</code>) into the returned string. 
+	 The default value is <code>false</code>.
+	 
+	 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; A string containing the characters in the specified range, or an empty string if no 
+	 characters are found in the specified range.
+	 
+	 </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="TextSnapshot.html#charCount" target="">flash.text.TextSnapshot.charCount</a><br/><a href="TextSnapshot.html#getSelectedText()" target="">flash.text.TextSnapshot.getSelectedText()</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="getTextRunInfo()" id="getTextRunInfo()"></a><a name="getTextRunInfo(int,int)" id="getTextRunInfo(int,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getTextRunInfo</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getTextRunInfo(beginIndex:<a href="../../int.html">int</a>, endIndex:<a href="../../int.html">int</a>):<a href="../../Array.html">Array</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+	 Returns an array of objects that contains information about a run of text. Each object corresponds
+	 to one character in the range of characters specified by the two method parameters. 
+	 
+	 <p><b>Note: </b> Using the <code>getTextRunInfo()</code> method for a large range of text can
+	 return a large object. Adobe recommends limiting the text range defined by the 
+	 <code>beginIndex</code> and <code>endIndex</code> parameters. </p>
+	 
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">beginIndex</span>:<a href="../../int.html">int</a></code> &mdash; The index value of the first character in a range of characters in a TextSnapshot
+	 object.
+	 
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">endIndex</span>:<a href="../../int.html">int</a></code> &mdash; The index value of the last character in a range of characters in a TextSnapshot 
+	 object.
+	 
+ 	 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Array.html">Array</a></code> &mdash; An array of objects in which each object contains information about a specific character 
+	 in the range of characters specified by the <code>beginIndex</code> and <code>endIndex</code> parameters.
+	 Each object contains the following eleven properties:
+	 <ul><li><code>indexInRun</code>&mdash;A zero-based integer index of the character
+	 		(relative to the entire string rather than the selected run of text).</li><li><code>selected</code>&mdash;A Boolean value that indicates whether the character is selected
+	 		<code>true</code>; <code>false</code> otherwise.</li><li><code>font</code>&mdash;The name of the character's font.</li><li><code>color</code>&mdash;The combined alpha and color value of the character. 
+	 		The first two hexadecimal digits represent the alpha value, and the remaining digits
+	 		represent the color value.</li><li><code>height</code>&mdash;The height of the character, in pixels.</li><li><code>matrix_a</code>, <code>matrix_b</code>, <code>matrix_c</code>, 
+	 	<code>matrix_d</code>, <code>matrix_tx</code>, and <code>matrix_ty</code>&mdash;
+	 		The values of a matrix that define the geometric transformation on the character. 
+	 	Normal, upright text always has a matrix of the form 
+	 	<code>[1 0 0 1 x y]</code>, where <code>x</code> and <code>y</code> 
+	 	are the position of the character within the parent movie clip, regardless of the height of 
+	 	the text. The matrix is in the parent movie clip coordinate system, and 
+	 	does not include any transformations that may be on that movie clip itself (or its parent). </li><li><code>corner0x</code>, <code>corner0y</code>, <code>corner1x</code>, <code>corner1y</code>, 
+	 		<code>corner2x</code>, <code>corner2y</code>, <code>corner3x</code>, 
+	 		and <code>corner3y</code>&mdash;The corners of the bounding box of 
+	 		the character, based on the coordinate system of the parent movie clip. 
+	 		These values are only available if the font used by the character is embedded in the
+	 		SWF file.</li></ul>
+	 
+	 </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/geom/Matrix.html" target="">Matrix class</a></div></div></span><span id="pageFilter" runtime="Flash::9.##Lite::4##"><a name="hitTestTextNearPos()" id="hitTestTextNearPos()"></a><a name="hitTestTextNearPos(Number,Number,Number)" id="hitTestTextNearPos(Number,Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>hitTestTextNearPos</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function hitTestTextNearPos(x:<a href="../../Number.html">Number</a>, y:<a href="../../Number.html">Number</a>, maxDistance:<a href="../../Number.html">Number</a> = 0):<a href="../../Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9., Flash Lite 4</td></tr></table><p></p><p></p><p>
+	 Lets you determine which character within a TextSnapshot object is on or near the specified 
+	 <code>x</code>, <code>y</code> coordinates of the movie clip containing the text in the TextSnapshot object.
+	 
+	 <p>If you omit or pass a value of <code>0</code> for <code>maxDistance</code>, the location specified 
+	 by the <code>x</code>, <code>y</code> coordinates must lie inside the bounding box of the TextSnapshot object. 
+	 </p>
+	 
+	 <p>This method works correctly only with fonts that include character metric information; however, 
+	 by default, the Flash authoring tool does not include this information for static text fields. 
+	 <span src="flashonly">Therefore, 
+	 the method might return <code>-1</code> instead of an index value. To ensure that an index 
+	 value is returned, you can force the Flash authoring tool to include the character metric 
+	 information for a font. To do this, add a dynamic text field that uses that font, select 
+	 Character Options for that dynamic text field, and then specify that font outlines should be 
+	 embedded for at least one character. (It doesn't matter which characters you specify, nor 
+	 whether they are the characters used in the static text fields.)</span></p>
+	 
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">x</span>:<a href="../../Number.html">Number</a></code> &mdash; A number that represents the <code>x</code> coordinate of the movie clip containing the
+	 text.
+	 
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">y</span>:<a href="../../Number.html">Number</a></code> &mdash; A number that represents the <code>y</code> coordinate of the movie clip containing the
+	 text.
+	 
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">maxDistance</span>:<a href="../../Number.html">Number</a></code> (default = <code>0</code>)<code></code> &mdash; An optional number that represents the maximum distance from 
+	 <code>x</code>, <code>y</code> that can be searched for 
+	 text. The distance is measured from the center point of each character. The 
+	 default value is <code>0</code>.
+	 
+	 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Number.html">Number</a></code> &mdash; A number representing the index value of the character that is nearest to the specified
+	 <code>x</code>, <code>y</code> coordinate. Returns 
+	 <code>-1</code> if no character is found, or if the font doesn't contain character metric information.
+	 
+	 </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/display/DisplayObject.html#x" target="">flash.display.DisplayObject.x</a><br/><a href="../../flash/display/DisplayObject.html#y" target="">flash.display.DisplayObject.y</a></div></div></span><span id="pageFilter" runtime="Flash::9.##Lite::4##"><a name="setSelectColor()" id="setSelectColor()"></a><a name="setSelectColor(uint)" id="setSelectColor(uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>setSelectColor</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setSelectColor(hexColor:<a href="../../uint.html">uint</a> = 0xFFFF00):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9., Flash Lite 4</td></tr></table><p></p><p></p><p>
+	 Specifies the color to use when highlighting characters that have been selected with the <code>
+	 setSelected()</code> method. The color is always opaque; you can't specify a 
+	 transparency value.
+	 
+	 <p>This method works correctly only with fonts that include character metric information; however, 
+	 by default, the Flash authoring tool does not include this information for static text fields. 
+	 Therefore, the method might return <code>-1</code> instead of an index value.<span src="flashonly"> To 
+	 ensure that an index value is returned, you can force the Flash authoring tool to include the 
+	 character metric information for a font. To do this, add a dynamic text field that uses that 
+	 font, select Character Options for that dynamic text field, and then specify that font outlines 
+	 should be embedded for at least one character. (It doesn't matter which characters you 
+	 specify, nor if they are the characters used in the static text fields.)</span></p>	 
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">hexColor</span>:<a href="../../uint.html">uint</a></code> (default = <code>0xFFFF00</code>)<code></code> &mdash; The color used for the border placed around characters that have been selected by the 
+	 corresponding <code>setSelected()</code> command, expressed in hexadecimal 
+	 format (0x<i>RRGGBB</i>).
+	 
+	 </td></tr></table></p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="TextSnapshot.html#setSelected()" target="">flash.text.TextSnapshot.setSelected()</a></div></div></span><span id="pageFilter" runtime="Flash::9.##Lite::4##"><a name="setSelected()" id="setSelected()"></a><a name="setSelected(int,int,Boolean)" id="setSelected(int,int,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>setSelected</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setSelected(beginIndex:<a href="../../int.html">int</a>, endIndex:<a href="../../int.html">int</a>, select:<a href="../../Boolean.html">Boolean</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9., Flash Lite 4</td></tr></table><p></p><p></p><p>
+	 Specifies a range of characters in a TextSnapshot object to be selected or deselected. 
+	 Characters that are selected are drawn with a colored rectangle behind them, matching the 
+	 bounding box of the character. The color of the bounding box is defined by 
+	 <code>setSelectColor()</code>.
+	 
+	 <p>To select or deselect all characters, pass a value of <code>0</code> for <code>beginIndex</code> and 
+	 <code>charCount</code> (or any very large number) for <code>endIndex</code>. To 
+	 specify a single character, pass a value of <code>start + 1</code> for <code>endIndex</code>. </p>
+	 
+	 <p>Because characters are individually marked as selected, you can call this method multiple 
+	 times to select multiple characters; that is, using this method does not deselect other 
+	 characters that have been set by this method.</p>
+	 
+	 <p>The colored rectangle that indicates a selection is displayed only for fonts that include
+	 character metric information; by default, Flash does not include this information for static 
+	 text fields. In some cases, this behavior means that text that is selected won't appear to be
+	 selected onscreen.<span src="flashonly"> To ensure that all selected text appears to be 
+	 selected, you can force the Flash authoring tool to include the character metric information
+	 for a font. To do this, add a dynamic text field that uses that font, select Character Options
+	 for that dynamic text field, and then specify that font outlines should be embedded for at least
+	 one character. It doesn't matter which characters you specify, nor even if they are the 
+	 characters used in the static text fields in question.</span></p>
+	 
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">beginIndex</span>:<a href="../../int.html">int</a></code> &mdash; Indicates the position of the first character to select. 
+	 Valid values for <code>beginIndex</code> are <code>0</code> through <code>charCount - 1</code>. 
+	 If <code>beginIndex</code> is a negative value, <code>0</code> is used.
+	 
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">endIndex</span>:<a href="../../int.html">int</a></code> &mdash; An integer that is 1+ the index of the last character to be 
+	 examined. Valid values for <code>end</code> are <code>0</code> through <code>charCount</code>. 
+	 The character indexed by the <code>end</code> parameter is not included in the extracted 
+	 string. If you omit this parameter, <code>TextSnapshot.charCount</code> is used. If the 
+	 value of <code>beginIndex</code> is less than or equal to the value of <code>endIndex</code>, 
+	 <code>beginIndex + 1</code> is used.
+	 
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">select</span>:<a href="../../Boolean.html">Boolean</a></code> &mdash; A Boolean value that specifies whether the text should be selected (<code>true</code>)
+	 or deselected (<code>false</code>).
+	 
+	 </td></tr></table></p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="TextSnapshot.html#charCount" target="">flash.text.TextSnapshot.charCount</a><br/><a href="TextSnapshot.html#setSelectColor()" target="">flash.text.TextSnapshot.setSelectColor()</a></div></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

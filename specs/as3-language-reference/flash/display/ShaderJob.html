@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:10"><meta name="runtime" content="air"><meta name="runtimever" content="air:1.5"><meta name="product" content="flash player"><meta name="productver" content="flash player:10"><meta name="product" content="air"><meta name="productver" content="air:1.5"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="ShaderJob,flash.display.ShaderJob,height,progress,shader,target,width,cancel,start"><title>ShaderJob - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">flash.display&nbsp;</a><br>
+								<h1 id="classProductName">ShaderJob&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">flash.display</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  ShaderJob</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">ShaderJob  <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../flash/events/EventDispatcher.html">EventDispatcher</a> <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../Object.html">Object</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p></p>
+	 A ShaderJob instance is used to execute a shader operation in stand-alone mode.
+	 The shader operation executes and returns its result data. It is up to the 
+	 developer to determine how to use the result.
+	 
+	 <p>There are two primary reasons for using a shader in stand-alone mode:</p>
+	 
+	              <ul>
+                  <li>Processing non-image data: Using a ShaderJob instance you have control 
+	       over input values and over how the shader result is used. The shader can 
+	       return the result as binary data or number data instead of image data.</li>
+                  <li>Background processing: Some shaders are complex and require a notable 
+	       amount of time to execute. Executing a complex shader in the main 
+	       execution of an application could slow down other parts of the application 
+	       such as user interaction or updating the screen. Using a ShaderJob instance, 
+	       you can execute the shader in the background. 
+	       When the shader is executed in this way, the shader operation runs separate 
+	       from the main execution of the application.</li>
+               </ul>
+	 
+	              <p>The <code>shader</code> property (or constructor parameter) specifies the 
+	 Shader instance representing the shader that is used for the operation. You 
+	 provide any parameter or input that the shader expects using the 
+	 associated ShaderParameter or ShaderInput instance.</p>
+	 
+	              <p>Before execution a ShaderJob operation, you provide an object into which the 
+	 result is written, by setting it as the value of the <code>target</code> property. 
+	 When the shader operation completes the result is written into the <code>target</code> object.</p>
+	 
+	              <p>To begin a background shader operation, 
+	 call the <code>start()</code> method. When the operation finishes the result is 
+	 written into the <code>target</code> object. At that point the ShaderJob 
+	 instance dispatches a <code>complete</code> 
+	 event, notifying listeners that the result is available.</p>
+	 
+	              <p>To execute a shader synchronously (that is, not running in the background), call 
+	 the <code>start()</code> method and pass <code>true</code> as an argument. The shader 
+	 runs in the main execution thread and your code pauses until the operation completes. When
+	 it finishes the result is written into the <code>target</code> object. At that point
+	 the application continues running at the next line of code.</p>
+	 
+	           <p></p><p id="moreExamples"><span class="classHeaderTableLabel">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WSB6091963-D939-42b7-A7BC-E1C0043B5C2C.html" target="_blank">Using a shader in stand-alone mode</a></div><p><span class="classHeaderTableLabel">Related API Elements</span></p><div class="seeAlso"><a href="Shader.html" target="">Shader</a><br/><a href="ShaderInput.html" target="">ShaderInput</a><br/><a href="ShaderParameter.html" target="">ShaderParameter</a><br/><a href="../../flash/events/ShaderEvent.html" target="">ShaderEvent</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../Object.html#constructor" class="signatureLink">constructor</a> : <a href="../../Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#height" class="signatureLink">height</a> : <a href="../../int.html">int</a><div class="summaryTableDescription">
+		 The height of the result data in the target if it is 
+		 a ByteArray or Vector.&lt;Number&gt; instance.</div></td><td class="summaryTableOwnerCol">ShaderJob</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#progress" class="signatureLink">progress</a> : <a href="../../Number.html">Number</a><div class="summaryTableDescription">[read-only] 
+		 The progress of a running shader.</div></td><td class="summaryTableOwnerCol">ShaderJob</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#shader" class="signatureLink">shader</a> : <a href="../../flash/display/Shader.html">Shader</a><div class="summaryTableDescription">
+		 The shader that's used for the operation.</div></td><td class="summaryTableOwnerCol">ShaderJob</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#target" class="signatureLink">target</a> : <a href="../../Object.html">Object</a><div class="summaryTableDescription">
+		 The object into which the result of the shader operation is written.</div></td><td class="summaryTableOwnerCol">ShaderJob</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#width" class="signatureLink">width</a> : <a href="../../int.html">int</a><div class="summaryTableDescription">
+		 The width of the result data in the target if it is 
+		 a ByteArray or Vector.&lt;Number&gt; instance.</div></td><td class="summaryTableOwnerCol">ShaderJob</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#ShaderJob()" class="signatureLink">ShaderJob</a>(shader:<a href="../../flash/display/Shader.html">Shader</a> = null, target:<a href="../../Object.html">Object</a> = null, width:<a href="../../int.html">int</a> = 0, height:<a href="../../int.html">int</a> = 0)</div><div class="summaryTableDescription">
+		 
+		 </div></td><td class="summaryTableOwnerCol">ShaderJob</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#addEventListener()" class="signatureLink">addEventListener</a>(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false, priority:<a href="../../int.html">int</a> = 0, useWeakReference:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	Registers an event listener object with an EventDispatcher object so that the listener 
+	receives notification of an event.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#cancel()" class="signatureLink">cancel</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+		 Cancels the currently running shader operation.</div></td><td class="summaryTableOwnerCol">ShaderJob</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#dispatchEvent()" class="signatureLink">dispatchEvent</a>(event:<a href="../../flash/events/Event.html">Event</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Dispatches an event into the event flow.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#hasEventListener()" class="signatureLink">hasEventListener</a>(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Checks whether the EventDispatcher object has any listeners registered for a specific type 
+	of event.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#removeEventListener()" class="signatureLink">removeEventListener</a>(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	Removes a listener from the EventDispatcher object.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="../../String.html">String</a>, isEnum:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#start()" class="signatureLink">start</a>(waitForCompletion:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+		 Starts a shader operation in synchronous or asynchronous mode, according to the 
+		 value of the waitForCompletion parameter.</div></td><td class="summaryTableOwnerCol">ShaderJob</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toString()" class="signatureLink">toString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+	 Returns the primitive value of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#willTrigger()" class="signatureLink">willTrigger</a>(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Checks whether an event listener is registered with this EventDispatcher object or any of 
+	its ancestors for the specified event type.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="eventSummary" id="eventSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Events</div><div class="showHideLinks"><a href="http://help.adobe.com/en_US/Flex/4.6/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7ee9.html" target="_blank">Click for more information on events</a></div><div class="showHideLinks"><div id="hideInheritedEvent" class="hideInheritedEvent"><a class="showHideLink" href="#eventSummary" onclick="javascript:setInheritedVisible(false,'Event');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Events</a></div><div id="showInheritedEvent" class="showInheritedEvent"><a class="showHideLink" href="#eventSummary" onclick="javascript:setInheritedVisible(true,'Event');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Events</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableEvent"><tr><th>&nbsp;</th><th colspan="2">Event</th><th> Summary </th><th>Defined By</th></tr><tr class="hideInheritedEvent" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#event:activate" class="signatureLink">activate</a></div></td><td class="summaryTableDescription summaryTableCol">[broadcast event] Dispatched when the Flash Player or AIR application gains operating system focus and becomes active.</td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:complete" class="signatureLink">complete</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatched when a ShaderJob that executes asynchronously finishes processing the data using the shader.</td><td class="summaryTableOwnerCol">ShaderJob</td></tr><tr class="hideInheritedEvent" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#event:deactivate" class="signatureLink">deactivate</a></div></td><td class="summaryTableDescription summaryTableCol">[broadcast event] Dispatched when the Flash Player or AIR application operating loses system focus and is becoming inactive.</td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="height" id="height"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>height</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>height:<a href="../../int.html">int</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 The height of the result data in the <code>target</code> if it is 
+		 a ByteArray or Vector.&lt;Number> instance. The size of the 
+		 ByteArray or Vector.&lt;Number> instance is enlarged 
+		 if necessary and existing data is overwritten.
+		 
+		 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get height():<a href="../../int.html">int</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set height(value:<a href="../../int.html">int</a>):<a href="../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="progress" id="progress"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>progress</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>progress:<a href="../../Number.html">Number</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 The progress of a running shader. This property is a value from 0 through 1.  
+		 Zero is the initial value (0% complete). One indicates that the shader 
+		 has completed its operation.
+		 
+		 <p>If the <code>cancel()</code> method is called this property becomes 
+		 <code>undefined</code>, and its value cannot be used reliably until the 
+		 shader operation starts again.</p>
+		 
+		 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get progress():<a href="../../Number.html">Number</a></code><br/></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="shader" id="shader"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>shader</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>shader:<a href="../../flash/display/Shader.html">Shader</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 The shader that's used for the operation. Any input or parameter that the 
+		 shader expects must be provided using the ShaderInput or ShaderParameter 
+		 property of the Shader instance's <code>data</code> property. An input must 
+		 be provided using its corresponding ShaderInput even if it is the same as 
+		 the <code>target</code> object.
+		 
+		 <p>To process a ByteArray containing a linear array of data (as opposed to 
+		 image data) set the corresponding ShaderInput instance's <code>height</code> 
+		 to 1 and <code>width</code> to the number of 32-bit floating-point values in 
+		 the ByteArray. In that case, the input in the shader must be defined with 
+		 the <code>image1</code> data type.</p>
+		 
+		 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get shader():<a href="../../flash/display/Shader.html">Shader</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set shader(value:<a href="../../flash/display/Shader.html">Shader</a>):<a href="../../specialTypes.html#void">void</a></code><br/><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="ShaderData.html" target="">flash.display.ShaderData</a><br/><a href="ShaderInput.html" target="">flash.display.ShaderInput</a><br/><a href="ShaderParameter.html" target="">flash.display.ShaderParameter</a></div></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="target" id="target"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>target</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>target:<a href="../../Object.html">Object</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 The object into which the result of the shader operation is written. 
+		 This object must be a BitmapData, ByteArray, or Vector.&lt;Number> instance.
+		 
+		 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get target():<a href="../../Object.html">Object</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set target(value:<a href="../../Object.html">Object</a>):<a href="../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="width" id="width"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>width</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>width:<a href="../../int.html">int</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 The width of the result data in the <code>target</code> if it is 
+		 a ByteArray or Vector.&lt;Number> instance. The size of the 
+		 ByteArray or Vector.&lt;Number> instance is enlarged 
+		 if necessary and existing data is overwritten.
+		 
+		 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get width():<a href="../../int.html">int</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set width(value:<a href="../../int.html">int</a>):<a href="../../specialTypes.html#void">void</a></code><br/></div></span><a name="constructorDetail" id="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="ShaderJob()" id="ShaderJob()"></a><a name="ShaderJob(flash.display.Shader,Object,int,int)" id="ShaderJob(flash.display.Shader,Object,int,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>ShaderJob</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function ShaderJob(shader:<a href="../../flash/display/Shader.html">Shader</a> = null, target:<a href="../../Object.html">Object</a> = null, width:<a href="../../int.html">int</a> = 0, height:<a href="../../int.html">int</a> = 0)</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p>
+		 
+		 </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">shader</span>:<a href="../../flash/display/Shader.html">Shader</a></code> (default = <code>null</code>)<code></code> &mdash; The shader to use for the operation.
+		 
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">target</span>:<a href="../../Object.html">Object</a></code> (default = <code>null</code>)<code></code> &mdash; The object into which the result of the shader operation
+		                 is written. This argument must be a BitmapData, ByteArray, or 
+		                 Vector.&lt;Number> instance.
+		 
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">width</span>:<a href="../../int.html">int</a></code> (default = <code>0</code>)<code></code> &mdash; The width of the result data in the <code>target</code> if it is 
+		                a ByteArray or Vector.&lt;Number> instance. The size of the 
+		                ByteArray or Vector.&lt;Number> instance is enlarged 
+		                if necessary and existing data is overwritten.
+		 
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">height</span>:<a href="../../int.html">int</a></code> (default = <code>0</code>)<code></code> &mdash; The height of the result data in the <code>target</code> if it is 
+		                 a ByteArray or Vector.&lt;Number> instance. The size of the 
+		                 ByteArray or Vector.&lt;Number> instance is enlarged 
+		                 if necessary and existing data is overwritten.
+         
+		 </td></tr></table></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="cancel()" id="cancel()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>cancel</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function cancel():<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 Cancels the currently running shader operation. Any result data that is already 
+		 computed is discarded. The <code>complete</code> event is not dispatched.
+		 
+		 <p>Calling <code>cancel()</code> multiple times has no additional effect.</p>
+		 
+		 </p></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="start()" id="start()"></a><a name="start(Boolean)" id="start(Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>start</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function start(waitForCompletion:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 Starts a shader operation in synchronous or asynchronous mode, according to the 
+		 value of the <code>waitForCompletion</code> parameter.
+		 
+		 <p>In asynchronous mode (when <code>waitForCompletion</code> 
+		 is <code>false</code>), which is the default, the 
+		 ShaderJob execution runs in the background. The shader operation does not affect the 
+		 responsiveness of the display or other operations. In asynchronous mode the <code>start()</code>
+		 call returns immediately and the program continues with the next line of code. When the asynchronous 
+		 shader operation finishes, the result is available and the <code>complete</code> 
+		 event is dispatched.</p>
+		 
+		 <p>Only one background ShaderJob operation 
+		 executes at a time. Shader operations are held in a queue until they execute. 
+		 If you call the <code>start()</code> method while a shader 
+		 operation is executing, the additional operation is added to the end of the queue. 
+		 Later, when its turn comes, it executes.</p>
+		 
+		 <p>To execute a shader operation in synchronous mode, call <code>start()</code> with a 
+		 <code>true</code> value for the <code>waitForCompletion</code> parameter (the only parameter). 
+		 Your code pauses at the point where <code>start()</code> is called until the shader operation 
+		 completes. At that point the result is available and execution continues with the next line 
+		 of code.</p>
+		 
+		 <p>When you call the <code>start()</code> method the Shader instance in the <code>shader</code> 
+		 property is copied internally. The 
+		 shader operation uses that internal copy, not a reference to the original shader. Any changes 
+		 made to the shader, such as changing a parameter value, input, or bytecode, are not applied 
+		 to the copied shader that's used for the shader processing. To incorporate shader changes 
+		 into the shader processing, call the <code>cancel()</code> method 
+		 (if necessary) and call the <code>start()</code> method again to restart the shader processing.</p>
+		 
+		 <p>While a shader operation is executing, the <code>target</code> object's value 
+		 is not changed. When the operation finishes (and the <code>complete</code> 
+		 event is dispatched in asynchronous mode) the entire result is written to the 
+		 <code>target</code> object at one time. If the <code>target</code> object is a 
+		 BitmapData instance and its <code>dispose()</code> method is called 
+		 before the operation finishes, the <code>complete</code> event is still 
+		 dispatched in asynchronous mode. However, the result data is not 
+		 written to the BitmapData object because it is in a disposed state.</p>
+         
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">waitForCompletion</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; Specifies whether to execute the shader in the background 
+		                          (<code>false</code>, the default) or in the main program 
+		                          execution (<code>true</code>).
+		 
+		 </td></tr></table></p><br/><span class="label">Events</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><b>complete</b>:<a href="../../flash/events/ShaderEvent.html"><code>ShaderEvent</code></a></code> &mdash; Dispatched when the operation finishes, if the 
+		                             <code>start()</code> method is called with a 
+		                             <code>waitForCompletion</code> argument of <code>true</code>.
+		 
+		 </td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../ArgumentError.html">ArgumentError</a> </code> &mdash; When the <code>target</code> property is <code>null</code> or is not 
+		                       a BitmapData, ByteArray, or Vector.&lt;Number> instance.
+		 
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../ArgumentError.html">ArgumentError</a> </code> &mdash; When the shader specifies an image input that isn't provided.
+		 
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../ArgumentError.html">ArgumentError</a> </code> &mdash; When a ByteArray or Vector.&lt;Number> instance is used as 
+		                       an input and the <code>width</code> 
+		                       and <code>height</code> properties aren't specified for the 
+		                       ShaderInput, or the specified values don't match the amount of 
+		                       data in the input object. See the <code>ShaderInput.input</code> 
+		                       property for more information.
+		 
+		 </td></tr></table></div></span><div class="detailSectionHeader"> Event Detail </div><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="event:complete" id="event:complete"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>complete</h3></td><td class="detailHeaderType"> Event </td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../flash/events/ShaderEvent.html"><code>flash.events.ShaderEvent</code></a><br/><span class="label">property ShaderEvent.type  =  </span><a href="../../flash/events/ShaderEvent.html#COMPLETE"><code>flash.events.ShaderEvent.COMPLETE</code></a><br/><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+	 Dispatched when a ShaderJob that executes asynchronously finishes processing 
+	 the data using the shader. A ShaderJob instance executes asynchronously when the 
+	 <code>start()</code> method is called with a <code>false</code> value for the 
+	 <code>waitForCompletion</code> parameter.
+	 
+	 </p>
+		 Defines the value of the <code>type</code> property of a <code>complete</code> event object.
+		 
+		 <p>This event has the following properties:</p>
+		 
+		 <table class="innertable" ><tr><th>Property</th><th>Value</th></tr><tr><td><code>bubbles</code></td><td><code>false</code></td></tr><tr><td><code>bitmapData</code></td><td>The BitmapData object 
+		             containing the result of the operation that finished (or 
+		             <code>null</code> if the target wasn't a BitmapData object).</td></tr><tr><td><code>byteArray</code></td><td>The ByteArray object containing 
+		             the result of the operation that finished (or <code>null</code> if 
+		             the target wasn't a ByteArray object).</td></tr><tr><td><code>cancelable</code></td><td><code>false</code>; there is 
+		             no default behavior to cancel.</td></tr><tr><td><code>currentTarget</code></td><td>The object that is 
+		             actively processing the event object with an event listener.</td></tr><tr><td><code>target</code></td><td>The ShaderJob object reporting completion.</td></tr><tr><td><code>vector</code></td><td>The Vector.&lt;Number> instance 
+		             containing the result of the operation that finished (or <code>null</code> if 
+		             the target wasn't a Vector.&lt;Number> instance).</td></tr></table>
+		 
+		 </div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,true,false,true,false,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

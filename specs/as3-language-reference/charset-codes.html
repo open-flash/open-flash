@@ -1,0 +1,1191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><link rel="stylesheet" href="style.css" type="text/css" media="screen"><link rel="stylesheet" href="print.css" type="text/css" media="print"><link rel="stylesheet" href="override.css" type="text/css"><link rel="stylesheet" href="asfilter.css" type="text/css"><link rel="stylesheet" href="ion.css" type="text/css"><title> Supported Character Sets  - Adobe ActionScript&reg; 3 (AS3) API Reference</title>
+		<link rel="stylesheet" href="./filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="./filter_new.css" type="text/css">
+			
+		<script src="./jquery.js" type="text/javascript"></script>
+		<script src="./s_chl_code.js" type="text/javascript"></script>
+		<script src="./jquery.zclip.js" type="text/javascript"></script>
+		<script src="./jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="./cookies.js" type="text/javascript"></script>
+		<script src="./asdoc.js" type="text/javascript"></script>
+		<script src="./iscroll.js" type="text/javascript"></script>
+		<script src="./AC_OETags.js" type="text/javascript"></script>
+		<script src="./omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "./";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="./index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="./package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="./class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="./whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="./all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="./appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="./search.html" onSubmit="searchfunctionsubmit('./')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('./')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="./help.js"></script>
+						<script language="javascript" type="text/javascript" src="./asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="./filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">&nbsp;</a><br>
+								<h1 id="classProductName"> Supported Character Sets &nbsp;</h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content">
+
+		<div style="height:15px;" width="100%"></div>
+		<p><div id="badgeAnchorSupport" class="ionBadgeWrapper"></div>
+		<div id="badgeContainerSupport"></div>
+		Flash Player and AIR support a subset of the style character set definitions specified by the IANA (<a href="http://www.iana.org/assignments/character-sets" target="external">http://www.iana.org/assignments/character-sets</a>).  The following table lists the supported character sets, and either the label value <em>or</em> an alias value (aliases point to the same base definition) can be used to specify the desired character set:</p>
+
+		<table cellpadding="3" cellspacing="0" class="summaryTable"><tr>
+
+				<th width="200px">Character Set</th>
+
+				<th width="150px">Label</th>
+
+				<th width="450px">Alias</th>
+
+			</tr><tbody><tr>
+
+					<td>Arabic (ASMO 708)</td>
+
+					<td>ASMO-708</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Arabic (DOS)</td>
+
+					<td>DOS-720</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Arabic (ISO)</td>
+
+					<td>iso-8859-6</td>
+
+					<td>arabic, csISOLatinArabic, ECMA-114, ISO_8859-6, ISO_8859-6:1987, iso-ir-127</td>
+
+				</tr><tr>
+
+					<td>Arabic (Mac)</td>
+
+					<td>x-mac-arabic</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Arabic (Windows)</td>
+
+					<td>windows-1256</td>
+
+					<td>cp1256</td>
+
+				</tr><tr>
+
+					<td>Baltic (DOS)</td>
+
+					<td>ibm775</td>
+
+					<td>CP500</td>
+
+				</tr><tr>
+
+					<td>Baltic (ISO)</td>
+
+					<td>iso-8859-4</td>
+
+					<td>csISOLatin4, ISO_8859-4, ISO_8859-4:1988, iso-ir-110, l4, latin4</td>
+
+				</tr><tr>
+
+					<td>Baltic (Windows)</td>
+
+					<td>windows-1257</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Central European (DOS)</td>
+
+					<td>ibm852</td>
+
+					<td>cp852</td>
+
+				</tr><tr>
+
+					<td>Central European (ISO)</td>
+
+					<td>iso-8859-2</td>
+
+					<td>csISOLatin2, iso_8859-2, iso_8859-2:1987, iso8859-2, iso-ir-101, l2, latin2</td>
+
+				</tr><tr>
+
+					<td>Central European (Mac)</td>
+
+					<td>x-mac-ce</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Central European (Windows)</td>
+
+					<td>windows-1250</td>
+
+					<td>x-cp1250</td>
+
+				</tr><tr>
+
+                    <td>Chinese National Standard</td>
+
+                    <td>gb18030</td>
+
+                    <td>&nbsp;</td>
+
+                </tr><tr>
+
+					<td>Chinese Simplified (EUC)</td>
+
+					<td>EUC-CN</td>
+
+					<td>x-euc-cn</td>
+
+				</tr><tr>
+
+					<td>Chinese Simplified (GB2312)</td>
+
+					<td>gb2312</td>
+
+					<td>chinese, CN-GB, csGB2312, csGB231280, csISO58GB231280, GB_2312-80, GB231280, GB2312-80, GBK, iso-ir-58</td>
+
+				</tr><tr>
+
+					<td>Chinese Simplified (GB18030)</td>
+
+					<td>gb18030</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Chinese Simplified (HZ)</td>
+
+					<td>hz-gb-2312</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Chinese Simplified (Mac)</td>
+
+					<td>x-mac-chinesesimp</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Chinese Traditional (Big5)</td>
+
+					<td>big5</td>
+
+					<td>cn-big5, csbig5, x-x-big5</td>
+
+				</tr><tr>
+
+					<td>Chinese Traditional (CNS)</td>
+
+					<td>x-Chinese-CNS</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Chinese Traditional (Eten)</td>
+
+					<td>x-Chinese-Eten</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Chinese Traditional (Mac)</td>
+
+					<td>x-mac-chinesetrad</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Cyrillic (DOS)</td>
+
+					<td>cp866</td>
+
+					<td>ibm866</td>
+
+				</tr><tr>
+
+					<td>Cyrillic (ISO)</td>
+
+					<td>iso-8859-5</td>
+
+					<td>csISOLatin5, csISOLatinCyrillic, cyrillic, ISO_8859-5, ISO_8859-5:1988, iso-ir-144, l5</td>
+
+				</tr><tr>
+
+					<td>Cyrillic (KOI8-R)</td>
+
+					<td>koi8-r</td>
+
+					<td>csKOI8R, koi, koi8, koi8r</td>
+
+				</tr><tr>
+
+					<td>Cyrillic (KOI8-U)</td>
+
+					<td>koi8-u</td>
+
+					<td>koi8-ru</td>
+
+				</tr><tr>
+
+					<td>Cyrillic (Mac)</td>
+
+					<td>x-mac-cyrillic</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Cyrillic (Windows)</td>
+
+					<td>windows-1251</td>
+
+					<td>x-cp1251</td>
+
+				</tr><tr>
+
+					<td>Europa</td>
+
+					<td>x-Europa</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>German (IA5)</td>
+
+					<td>x-IA5-German</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Greek (DOS)</td>
+
+					<td>ibm737</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Greek (ISO)</td>
+
+					<td>iso-8859-7</td>
+
+					<td>csISOLatinGreek, ECMA-118, ELOT_928, greek, greek8, ISO_8859-7, ISO_8859-7:1987, iso-ir-126</td>
+
+				</tr><tr>
+
+					<td>Greek (Mac)</td>
+
+					<td>x-mac-greek</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Greek (Windows)</td>
+
+					<td>windows-1253</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Greek, Modern (DOS)</td>
+
+					<td>ibm869</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Hebrew (DOS)</td>
+
+					<td>DOS-862</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Hebrew (ISO-Logical)</td>
+
+					<td>iso-8859-8-i</td>
+
+					<td>logical</td>
+
+				</tr><tr>
+
+					<td>Hebrew (ISO-Visual)</td>
+
+					<td>iso-8859-8</td>
+
+					<td>csISOLatinHebrew, hebrew, ISO_8859-8, ISO_8859-8:1988, ISO-8859-8, iso-ir-138, visual</td>
+
+				</tr><tr>
+
+					<td>Hebrew (Mac)</td>
+
+					<td>x-mac-hebrew</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Hebrew (Windows)</td>
+
+					<td>windows-1255</td>
+
+					<td>ISO_8859-8-I, ISO-8859-8, visual</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Arabic)</td>
+
+					<td>x-EBCDIC-Arabic</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Cyrillic Russian)</td>
+
+					<td>x-EBCDIC-CyrillicRussian</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Cyrillic Serbian-Bulgarian)</td>
+
+					<td>x-EBCDIC-CyrillicSerbianBulgarian</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Denmark-Norway)</td>
+
+					<td>x-EBCDIC-DenmarkNorway</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Denmark-Norway-Euro)</td>
+
+					<td>x-ebcdic-denmarknorway-euro</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Finland-Sweden)</td>
+
+					<td>x-EBCDIC-FinlandSweden</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Finland-Sweden-Euro)</td>
+
+					<td>x-ebcdic-finlandsweden-euro</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Finland-Sweden-Euro)</td>
+
+					<td>x-ebcdic-finlandsweden-euro</td>
+
+					<td>X-EBCDIC-France</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (France-Euro)</td>
+
+					<td>x-ebcdic-france-euro</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Germany)</td>
+
+					<td>x-EBCDIC-Germany</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Germany-Euro)</td>
+
+					<td>x-ebcdic-germany-euro</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Greek Modern)</td>
+
+					<td>x-EBCDIC-GreekModern</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Greek)</td>
+
+					<td>x-EBCDIC-Greek</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Hebrew)</td>
+
+					<td>x-EBCDIC-Hebrew</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Icelandic)</td>
+
+					<td>x-EBCDIC-Icelandic</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Icelandic-Euro)</td>
+
+					<td>x-ebcdic-icelandic-euro</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (International-Euro)</td>
+
+					<td>x-ebcdic-international-euro</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Italy)</td>
+
+					<td>x-EBCDIC-Italy</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Italy-Euro)</td>
+
+					<td>x-ebcdic-italy-euro</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Japanese and Japanese Katakana)</td>
+
+					<td>x-EBCDIC-JapaneseAndKana</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Japanese and Japanese-Latin)</td>
+
+					<td>x-EBCDIC-JapaneseAndJapaneseLatin</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Japanese and US-Canada)</td>
+
+					<td>x-EBCDIC-JapaneseAndUSCanada</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Japanese katakana)</td>
+
+					<td>x-EBCDIC-JapaneseKatakana</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Korean and Korean Extended)</td>
+
+					<td>x-EBCDIC-KoreanAndKoreanExtended</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Korean Extended)</td>
+
+					<td>x-EBCDIC-KoreanExtended</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Multilingual Latin-2)</td>
+
+					<td>CP870</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Simplified Chinese)</td>
+
+					<td>x-EBCDIC-SimplifiedChinese</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Spain)</td>
+
+					<td>X-EBCDIC-Spain</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Spain-Euro)</td>
+
+					<td>x-ebcdic-spain-euro</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Thai)</td>
+
+					<td>x-EBCDIC-Thai</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Traditional Chinese)</td>
+
+					<td>x-EBCDIC-TraditionalChinese</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Turkish Latin-5)</td>
+
+					<td>CP1026</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (Turkish)</td>
+
+					<td>x-EBCDIC-Turkish</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (UK)</td>
+
+					<td>x-EBCDIC-UK</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (UK-Euro)</td>
+
+					<td>x-ebcdic-uk-euro</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (US-Canada)</td>
+
+					<td>ebcdic-cp-us</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>IBM EBCDIC (US-Canada-Euro)</td>
+
+					<td>x-ebcdic-cp-us-euro</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Icelandic (DOS)</td>
+
+					<td>ibm861</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Icelandic (Mac)</td>
+
+					<td>x-mac-icelandic</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>ISCII Assamese</td>
+
+					<td>x-iscii-as</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>ISCII Bengali</td>
+
+					<td>x-iscii-be</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>ISCII Devanagari</td>
+
+					<td>x-iscii-de</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>ISCII Gujarathi</td>
+
+					<td>x-iscii-gu</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>ISCII Kannada</td>
+
+					<td>x-iscii-ka</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>ISCII Malayalam</td>
+
+					<td>x-iscii-ma</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>ISCII Oriya</td>
+
+					<td>x-iscii-or</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>ISCII Panjabi</td>
+
+					<td>x-iscii-pa</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>ISCII Tamil</td>
+
+					<td>x-iscii-ta</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>ISCII Telugu</td>
+
+					<td>x-iscii-te</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Japanese (EUC)</td>
+
+					<td>euc-jp</td>
+
+					<td>csEUCPkdFmtJapanese, Extended_UNIX_Code_Packed_Format_for_Japanese, x-euc, x-euc-jp</td>
+
+				</tr><tr>
+
+					<td>Japanese (JIS)</td>
+
+					<td>iso-2022-jp</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Japanese (JIS-Allow 1 byte Kana - SO/SI)</td>
+
+					<td>iso-2022-jp</td>
+
+					<td>_iso-2022-jp$SIO</td>
+
+				</tr><tr>
+
+					<td>Japanese (JIS-Allow 1 byte Kana)</td>
+
+					<td>csISO2022JP</td>
+
+					<td>_iso-2022-jp</td>
+
+				</tr><tr>
+
+					<td>Japanese (Mac)</td>
+
+					<td>x-mac-japanese</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Japanese (Shift-JIS)</td>
+
+					<td>shift_jis</td>
+
+					<td>csShiftJIS, csWindows31J, ms_Kanji, shift-jis, x-ms-cp932, x-sjis</td>
+
+				</tr><tr>
+
+					<td>Korean</td>
+
+					<td>ks_c_5601-1987</td>
+
+					<td>csKSC56011987, euc-kr, iso-ir-149, korean, ks_c_5601, ks_c_5601_1987, ks_c_5601-1989, KSC_5601, KSC5601</td>
+
+				</tr><tr>
+
+					<td>Korean (EUC)</td>
+
+					<td>euc-kr</td>
+
+					<td>csEUCKR</td>
+
+				</tr><tr>
+
+					<td>Korean (ISO)</td>
+
+					<td>iso-2022-kr</td>
+
+					<td>csISO2022KR</td>
+
+				</tr><tr>
+
+					<td>Korean (Johab)</td>
+
+					<td>Johab</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Korean (Mac)</td>
+
+					<td>x-mac-korean</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Latin 3 (ISO)</td>
+
+					<td>iso-8859-3</td>
+
+					<td>csISO, Latin3, ISO_8859-3, ISO_8859-3:1988, iso-ir-109, l3, latin3</td>
+
+				</tr><tr>
+
+					<td>Latin 9 (ISO)</td>
+
+					<td>iso-8859-15</td>
+
+					<td>csISO, Latin9, ISO_8859-15, l9, latin9</td>
+
+				</tr><tr>
+
+					<td>Norwegian (IA5)</td>
+
+					<td>x-IA5-Norwegian</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>OEM United States</td>
+
+					<td>IBM437</td>
+
+					<td>437, cp437, csPC8, CodePage437</td>
+
+				</tr><tr>
+
+					<td>Swedish (IA5)</td>
+
+					<td>x-IA5-Swedish</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Thai (Windows)</td>
+
+					<td>windows-874</td>
+
+					<td>DOS-874, iso-8859-11, TIS-620</td>
+
+				</tr><tr>
+
+					<td>Turkish (DOS)</td>
+
+					<td>ibm857</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Turkish (ISO)</td>
+
+					<td>iso-8859-9</td>
+
+					<td>csISO, Latin5, ISO_8859-9, ISO_8859-9:1989, iso-ir-148, l5, latin5</td>
+
+				</tr><tr>
+
+					<td>Turkish (Mac)</td>
+
+					<td>x-mac-turkish</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Turkish (Windows)</td>
+
+					<td>windows-1254</td>
+
+					<td>ISO_8859-9, ISO_8859-9:1989, iso-8859-9, iso-ir-148, latin5</td>
+
+				</tr><tr>
+
+					<td>Unicode</td>
+
+					<td>unicode</td>
+
+					<td>utf-16</td>
+
+				</tr><tr>
+
+					<td>Unicode (Big-Endian)</td>
+
+					<td>unicodeFFFE</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Unicode (UTF-7)</td>
+
+					<td>utf-7</td>
+
+					<td>csUnicode11UTF7, unicode-1-1-utf-7, x-unicode-2-0-utf-7</td>
+
+				</tr><tr>
+
+					<td>Unicode (UTF-8)</td>
+
+					<td>utf-8</td>
+
+					<td>unicode-1-1-utf-8, unicode-2-0-utf-8, x-unicode-2-0-utf-8</td>
+
+				</tr><tr>
+
+					<td>US-ASCII</td>
+
+					<td>us-ascii</td>
+
+					<td>ANSI_X3.4-1968, ANSI_X3.4-1986, ascii, cp367, csASCII, IBM367, ISO_646.irv:1991, ISO646-US, iso-ir-6us</td>
+
+				</tr><tr>
+
+					<td>Vietnamese (Windows)</td>
+
+					<td>windows-1258</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Western European (DOS)</td>
+
+					<td>ibm850</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Western European (IA5)</td>
+
+					<td>x-IA5</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Western European (ISO)</td>
+
+					<td>iso-8859-1</td>
+
+					<td>cp819, csISO, Latin1, ibm819, iso_8859-1, iso_8859-1:1987, iso8859-1, iso-ir-100, l1, latin1</td>
+
+				</tr><tr>
+
+					<td>Western European (Mac)</td>
+
+					<td>macintosh</td>
+
+					<td>&nbsp;</td>
+
+				</tr><tr>
+
+					<td>Western European (Windows)</td>
+
+					<td>Windows-1252</td>
+
+					<td>ANSI_X3.4-1968, ANSI_X3.4-1986, ascii, cp367, cp819, csASCII, IBM367, ibm819, ISO_646.irv:1991, iso_8859-1, iso_8859-1:1987, ISO646-US, iso8859-1, iso-8859-1, iso-ir-100, iso-ir-6, latin1, us, us-ascii, x-ansi</td>
+
+				</tr></tbody></table>
+
+		<div style="height:20px;" width="100%"></div>
+
+	<br><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 07:08 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 07:08 PM -08:00  -->

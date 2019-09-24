@@ -1,0 +1,542 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:9"><meta name="runtime" content="air"><meta name="runtimever" content="air:1.1"><meta name="product" content="flash player"><meta name="productver" content="flash player:9"><meta name="product" content="air"><meta name="productver" content="air:1.1"><meta name="product" content="flex"><meta name="prodver" content="flex:3"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="OLAPCube,mx.olap.OLAPCube,cubeBuildingTimeInterval,dataProvider,dimensions,elements,measureDimensionName,measures,name,queryBuildingTimeInterval,resultClass,workDuration,addEventListener,cancelQuery,cancelRefresh,dispatchEvent,execute,findDimension,hasEventListener,refresh,removeEventListener,toString,willTrigger"><title>OLAPCube - Adobe ActionScript&reg; 3 (AS3 Flex) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">mx.olap&nbsp;</a><br>
+								<h1 id="classProductName">OLAPCube&nbsp; - AS3 Flex</h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">mx.olap</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  OLAPCube</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">OLAPCube  <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../flash/utils/Proxy.html">Proxy</a></td></tr><tr><td class="classHeaderTableLabel">Implements</td><td> <a href="../../mx/olap/IOLAPCube.html">IOLAPCube</a>,  <a href="../../flash/events/IEventDispatcher.html">IEventDispatcher</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p></p>
+  The OLAPCube class represents an OLAP cube.
+ 
+  <p></p><a name="mxmlSyntaxSummary"></a><span class="classHeaderTableLabel">MXML Syntax</span><span id="showMxmlLink" style="display:none"><a href="#mxmlSyntaxSummary" onclick="toggleMXMLOnly();"><img src="../../images/collapsed.gif" title="collapsed" alt="collapsed" class="collapsedImage">Show MXML Syntax</a><br/></span><span id="hideMxmlLink"><a href="#mxmlSyntaxSummary" onclick="toggleMXMLOnly();"><img src="../../images/expanded.gif" title="expanded" alt="expanded" class="expandedImage">Hide MXML Syntax</a></span><div id="mxmlSyntax" class="mxmlSyntax">
+  <p>
+  The <code>&lt;mx:OLAPCube&gt;</code> tag inherits all of the tag attributes
+  of its superclass, and adds the following tag attributes:
+  </p>
+  <pre>
+  &lt;mx:OLAPCube
+    <b>Properties</b>
+    dataProvider=""
+    dimensions=""
+    elements=""
+    measures=""
+  /&gt;
+ 
+  </div><script language="javascript" type="text/javascript"><!--
+								setMXMLOnly();
+								--></script><p><span class="classHeaderTableLabel">Default MXML Property</span><code>elements</code></p><p id="moreExamples"><span class="classHeaderTableLabel">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/Flex/4.6/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7bd6.html" target="_blank">Preparing a cube for a query</a><br/><a href="http://help.adobe.com/en_US/Flex/4.6/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7bd5.html" target="_blank">Creating a query axis </a><br/><a href="http://help.adobe.com/en_US/Flex/4.6/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7bdc.html" target="_blank">Executing a query and returning
+the results to an OLAPDataGrid control</a><br/><a href="http://help.adobe.com/en_US/Flex/4.6/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7bd4.html" target="_blank">Writing a query for a simple OLAP
+cube </a><br/><a href="http://help.adobe.com/en_US/Flex/4.6/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7bd3.html" target="_blank">Writing a query for a complex OLAP
+cube </a><br/><a href="http://help.adobe.com/en_US/Flex/4.6/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7bd8.html" target="_blank">Creating a query using a nondefault
+measure</a></div><p><span class="classHeaderTableLabel">Related API Elements</span></p><div class="seeAlso"><a href="IOLAPCube.html" target="">mx.olap.IOLAPCube</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#dataProvider" class="signatureLink">dataProvider</a> : <a href="../../mx/collections/ICollectionView.html">ICollectionView</a><div class="summaryTableDescription">
+      The flat data used to populate the OLAP cube.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#dimensions" class="signatureLink">dimensions</a> : <a href="../../mx/collections/IList.html">IList</a><div class="summaryTableDescription">
+      
+      All dimensions in the cube, as a list of IOLAPDimension instances.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#elements" class="signatureLink">elements</a> : <a href="../../Array.html">Array</a><div class="summaryTableDescription">[write-only] 
+     Processes the input Array and initializes the dimensions
+     and measures properties based on the elements of the Array.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#measures" class="signatureLink">measures</a> : <a href="../../mx/collections/IList.html">IList</a><div class="summaryTableDescription">[write-only] 
+      Sets the measures of the OLAP cube, as a list of OLAPMeasure instances.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#name" class="signatureLink">name</a> : <a href="../../String.html">String</a><div class="summaryTableDescription">
+      
+      The name of the OLAP cube.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="protectedPropertySummary" id="protectedPropertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Protected Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProtectedProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#cubeBuildingTimeInterval" class="signatureLink">cubeBuildingTimeInterval</a> : <a href="../../int.html">int</a> = 5<div class="summaryTableDescription">
+      The time interval, in milliseconds, used by the timer of the refresh() method 
+      to iteratively build the cube.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#measureDimensionName" class="signatureLink">measureDimensionName</a> : <a href="../../String.html">String</a> = "Measures"<div class="summaryTableDescription">
+      Sets the name of the dimension for the measures of the OLAP cube.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#queryBuildingTimeInterval" class="signatureLink">queryBuildingTimeInterval</a> : <a href="../../int.html">int</a> = 1<div class="summaryTableDescription">
+      The time interval, in milliseconds, used by the timer of the execute() method 
+      to iteratively process queries.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#resultClass" class="signatureLink">resultClass</a> : <a href="../../Class.html">Class</a><div class="summaryTableDescription">
+      The class used by an OLAPCube instance to return the result.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#workDuration" class="signatureLink">workDuration</a> : <a href="../../int.html">int</a> = 50<div class="summaryTableDescription">
+      The time, in milliseconds, used by the refresh() method 
+      to iteratively build the cube.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#OLAPCube()" class="signatureLink">OLAPCube</a>(name:<a href="../../String.html">String</a> = null)</div><div class="summaryTableDescription">
+      Constructor.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addEventListener()" class="signatureLink">addEventListener</a>(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false, priority:<a href="../../int.html">int</a> = 0, useWeakReference:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+      Registers an event listener object with an EventDispatcher object so that the listener 
+      receives notification of an event.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#cancelQuery()" class="signatureLink">cancelQuery</a>(query:<a href="../../mx/olap/IOLAPQuery.html">IOLAPQuery</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+      
+      Aborts a query that has been submitted for execution.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#cancelRefresh()" class="signatureLink">cancelRefresh</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+      
+      Aborts the current cube refresh, if one is executing.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#dispatchEvent()" class="signatureLink">dispatchEvent</a>(event:<a href="../../flash/events/Event.html">Event</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+      Dispatches an event into the event flow.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#execute()" class="signatureLink">execute</a>(query:<a href="../../mx/olap/IOLAPQuery.html">IOLAPQuery</a>):<a href="../../mx/rpc/AsyncToken.html">mx.rpc:AsyncToken</a></div><div class="summaryTableDescription">
+      
+      Queues an OLAP query for execution.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#findDimension()" class="signatureLink">findDimension</a>(name:<a href="../../String.html">String</a>):<a href="../../mx/olap/IOLAPDimension.html">IOLAPDimension</a></div><div class="summaryTableDescription">
+      
+      Returns the dimension with the given name within the OLAP cube.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#hasEventListener()" class="signatureLink">hasEventListener</a>(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+      Checks whether the object has any listeners registered for a specific type of event.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#refresh()" class="signatureLink">refresh</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+      
+      Refreshes the cube from the data provider.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeEventListener()" class="signatureLink">removeEventListener</a>(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+      Removes a listener.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#toString()" class="signatureLink">toString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+      Returns the name of the cube
+     
+      </div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#willTrigger()" class="signatureLink">willTrigger</a>(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+      Checks whether an event listener is registered with this object or any of its ancestors for the specified event type.</div></td><td class="summaryTableOwnerCol">OLAPCube</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="eventSummary" id="eventSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Events</div><div class="showHideLinks"><a href="http://help.adobe.com/en_US/Flex/4.6/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7ee9.html" target="_blank">Click for more information on events</a></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableEvent"><tr><th>&nbsp;</th><th colspan="2">Event</th><th> Summary </th><th>Defined By</th></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:complete" class="signatureLink">complete</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatched when a cube has been created and is ready to be queried.</td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:progress" class="signatureLink">progress</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatched continuously as a cube is being created by a call to the refresh() method.</td><td class="summaryTableOwnerCol">OLAPCube</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:queryProgress" class="signatureLink">queryProgress</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatched continuously as a query result is being generated by a call to the execute() method.</td><td class="summaryTableOwnerCol">OLAPCube</td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="propertyDetail" id="propertyDetail"></a><a name="cubeBuildingTimeInterval" id="cubeBuildingTimeInterval"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>cubeBuildingTimeInterval</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>protected var cubeBuildingTimeInterval:<a href="../../int.html">int</a> = 5</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      The time interval, in milliseconds, used by the timer of the <code>refresh()</code> method 
+      to iteratively build the cube. 
+      You can set it to a higher value if you can wait longer before the cube is built. 
+      You can set it to a lower value, but it might negatively impact responsiveness of your application.
+      
+      </p></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="propertyDetail" id="propertyDetail"></a><a name="dataProvider" id="dataProvider"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>dataProvider</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>dataProvider:<a href="../../mx/collections/ICollectionView.html">ICollectionView</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      The flat data used to populate the OLAP cube. 
+      You must call the <code>refresh()</code> method 
+      to initialize the cube after setting this property.
+      
+      </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get dataProvider():<a href="../../mx/collections/ICollectionView.html">ICollectionView</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set dataProvider(value:<a href="../../mx/collections/ICollectionView.html">ICollectionView</a>):<a href="../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="propertyDetail" id="propertyDetail"></a><a name="dimensions" id="dimensions"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>dimensions</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>dimensions:<a href="../../mx/collections/IList.html">IList</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      
+      All dimensions in the cube, as a list of IOLAPDimension instances.
+      
+      </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get dimensions():<a href="../../mx/collections/IList.html">IList</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set dimensions(value:<a href="../../mx/collections/IList.html">IList</a>):<a href="../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="propertyDetail" id="propertyDetail"></a><a name="elements" id="elements"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>elements</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>elements:<a href="../../Array.html">Array</a></code>&nbsp;&nbsp;[write-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+     Processes the input Array and initializes the <code>dimensions</code>
+     and <code>measures</code> properties based on the elements of the Array.
+     Dimensions are represented in the Array by instances of the OLAPDimension class, 
+     and measures are represented by instances of the OLAPMeasure class.
+    
+     <p>Use this property to define the dimensions and measures of a cube in a single Array.</p>
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set elements(value:<a href="../../Array.html">Array</a>):<a href="../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="propertyDetail" id="propertyDetail"></a><a name="measureDimensionName" id="measureDimensionName"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>measureDimensionName</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>protected var measureDimensionName:<a href="../../String.html">String</a> = "Measures"</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Sets the name of the dimension for the measures of the OLAP cube. 
+     
+      </p><p> The default value is <code>"Measures".</code></p></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="propertyDetail" id="propertyDetail"></a><a name="measures" id="measures"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>measures</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>measures:<a href="../../mx/collections/IList.html">IList</a></code>&nbsp;&nbsp;[write-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Sets the measures of the OLAP cube, as a list of OLAPMeasure instances.
+      
+      </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set measures(value:<a href="../../mx/collections/IList.html">IList</a>):<a href="../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="propertyDetail" id="propertyDetail"></a><a name="name" id="name"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>name</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>name:<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      
+      The name of the OLAP cube.
+      
+      </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get name():<a href="../../String.html">String</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set name(value:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="propertyDetail" id="propertyDetail"></a><a name="queryBuildingTimeInterval" id="queryBuildingTimeInterval"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>queryBuildingTimeInterval</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>protected var queryBuildingTimeInterval:<a href="../../int.html">int</a> = 1</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      The time interval, in milliseconds, used by the timer of the <code>execute()</code> method 
+      to iteratively process queries. 
+      You can set it to a higher value if you can wait for longer 
+      before the cube generates the query result. 
+      You can set it to a lower value to obtain query results faster, 
+      but it might negatively impact the responsiveness of your application.
+      
+      </p></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="propertyDetail" id="propertyDetail"></a><a name="resultClass" id="resultClass"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>resultClass</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>protected var resultClass:<a href="../../Class.html">Class</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      The class used by an OLAPCube instance to return the result. 
+      You can replace the default class, OLAPResult, with your own implementation 
+      of the IOLAPResult interface to customize the result.
+     
+      </p><p> The default value is <code>OLAPResult.</code></p></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="propertyDetail" id="propertyDetail"></a><a name="workDuration" id="workDuration"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>workDuration</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>protected var workDuration:<a href="../../int.html">int</a> = 50</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      The time, in milliseconds, used by the <code>refresh()</code> method 
+      to iteratively build the cube. 
+      A higher value would mean more rows would get processed at each timer event.
+      You can set it to a higher value if you want the cube to be built faster, 
+      but it might negatively impact responsiveness of your application. 
+      
+      </p></div></span><a name="constructorDetail" id="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="OLAPCube()" id="OLAPCube()"></a><a name="OLAPCube(String)" id="OLAPCube(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>OLAPCube</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function OLAPCube(name:<a href="../../String.html">String</a> = null)</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p>
+      Constructor.
+     
+      </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">name</span>:<a href="../../String.html">String</a></code> (default = <code>null</code>)<code></code> &mdash; The name of the OLAP cube.
+      
+      </td></tr></table></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="addEventListener()" id="addEventListener()"></a><a name="addEventListener(String,Function,Boolean,int,Boolean)" id="addEventListener(String,Function,Boolean,int,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>addEventListener</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function addEventListener(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false, priority:<a href="../../int.html">int</a> = 0, useWeakReference:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Registers an event listener object with an EventDispatcher object so that the listener 
+      receives notification of an event.
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">type</span>:<a href="../../String.html">String</a></code> &mdash; The type of event.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listener</span>:<a href="../../Function.html">Function</a></code> &mdash; The listener function that processes the event. 
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">useCapture</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; Determines whether the listener works in the capture phase 
+      or the target and bubbling phases.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">priority</span>:<a href="../../int.html">int</a></code> (default = <code>0</code>)<code></code> &mdash; The priority level of the event listener. 
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">useWeakReference</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; Determines whether the reference to the listener is strong or weak. 
+      A strong reference (the default) prevents your listener from being garbage-collected. 
+      A weak reference does not.
+     
+      </td></tr></table></p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/events/EventDispatcher.html#addEventListener()" target="">flash.events.EventDispatcher.addEventListener()</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="cancelQuery()" id="cancelQuery()"></a><a name="cancelQuery(mx.olap.IOLAPQuery)" id="cancelQuery(mx.olap.IOLAPQuery)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>cancelQuery</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function cancelQuery(query:<a href="../../mx/olap/IOLAPQuery.html">IOLAPQuery</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      
+      Aborts a query that has been submitted for execution.
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">query</span>:<a href="../../mx/olap/IOLAPQuery.html">IOLAPQuery</a></code> &mdash; The query to abort.
+      
+      </td></tr></table></p></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="cancelRefresh()" id="cancelRefresh()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>cancelRefresh</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function cancelRefresh():<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      
+      Aborts the current cube refresh, if one is executing.
+      
+      </p></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="dispatchEvent()" id="dispatchEvent()"></a><a name="dispatchEvent(flash.events.Event)" id="dispatchEvent(flash.events.Event)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>dispatchEvent</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function dispatchEvent(event:<a href="../../flash/events/Event.html">Event</a>):<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Dispatches an event into the event flow. 
+      The event target is the object upon which the <code>dispatchEvent()</code> method is called.
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">event</span>:<a href="../../flash/events/Event.html">Event</a></code> &mdash; The Event object that is dispatched into the event flow. 
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; A value of <code>true</code> if the event was successfully dispatched. 
+      A value of <code>false</code> indicates failure or that the 
+      <code>preventDefault()</code> method was called on the event.
+     
+      </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/events/EventDispatcher.html#dispatchEvent()" target="">flash.events.EventDispatcher.dispatchEvent()</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="execute()" id="execute()"></a><a name="execute(mx.olap.IOLAPQuery)" id="execute(mx.olap.IOLAPQuery)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>execute</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function execute(query:<a href="../../mx/olap/IOLAPQuery.html">IOLAPQuery</a>):<a href="../../mx/rpc/AsyncToken.html">mx.rpc:AsyncToken</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      
+      Queues an OLAP query for execution.
+      After you call the <code>refresh()</code> method to update the cube, 
+      you must wait for a <code>complete</code> event 
+      before you call the <code>execute()</code> method.
+     
+      <p>OLAP cubes can be complex, so you do not want your application 
+      to pause while Flex calculates the results of your OLAP query. 
+      The <code>execute()</code> method returns an instance of the AsyncToken class, 
+      which lets you set up handlers for asynchronous operations so that 
+      your application can continue to execute during query processing.</p>
+     
+      <p>When using the AsyncToken class, you set up two functions to handle the query results. 
+      In this example, the showResult() function handles the query results when the query succeeds, 
+      and the showFault() function handles any errors detected during query execution: </p>
+     
+      <pre>
+      &lt;mx:Script>
+              
+              // Function to execute a query.
+              private function runQuery(cube:IOLAPCube):void {
+                  // Create a query instance.
+                  var query:IOLAPQuery = getQuery(cube);
+                  // Execute the query.
+                  var token:AsyncToken = cube.execute(query);
+                  // Set up handlers for the query results.
+                  token.addResponder(new AsyncResponder(showResult, showFault));
+              }
+              
+              // Handle a query fault.
+              private function showFault(result:FaultEvent, token:Object):void {
+                  Alert.show("Error in query.");
+              }
+      
+              // Handle a query success.
+              private function showResult(result:Object, token:Object):void {
+                  if (!result) {
+                      Alert.show("No results from query.");
+                      return;
+                  }
+      
+                  myOLAPDG.dataProvider= result as OLAPResult;            
+              }        
+      &lt;/mx:Script>
+      
+      &lt;mx:OLAPDataGrid id="myOLAPDG" width="100%" height="100%" />
+      </pre> 
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">query</span>:<a href="../../mx/olap/IOLAPQuery.html">IOLAPQuery</a></code> &mdash; The query to execute, represented by an IOLAPQuery instance.
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../mx/rpc/AsyncToken.html">mx.rpc:AsyncToken</a></code> &mdash; An AsyncToken instance.
+     
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="findDimension()" id="findDimension()"></a><a name="findDimension(String)" id="findDimension(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>findDimension</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function findDimension(name:<a href="../../String.html">String</a>):<a href="../../mx/olap/IOLAPDimension.html">IOLAPDimension</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      
+      Returns the dimension with the given name within the OLAP cube. 
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">name</span>:<a href="../../String.html">String</a></code> &mdash; The name of the dimension.
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../mx/olap/IOLAPDimension.html">IOLAPDimension</a></code> &mdash; An IOLAPDimension instance representing the dimension, 
+      or null if a dimension is not found.
+      
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="hasEventListener()" id="hasEventListener()"></a><a name="hasEventListener(String)" id="hasEventListener(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>hasEventListener</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function hasEventListener(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Checks whether the object has any listeners registered for a specific type of event. 
+      This lets you determine where an object has altered handling of 
+      an event type in the event flow hierarchy. 
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">type</span>:<a href="../../String.html">String</a></code> &mdash; The type of event.
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; A value of <code>true</code> if a listener of the specified type 
+      is registered; <code>false</code> otherwise.
+     
+      </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/events/EventDispatcher.html#hasEventListener()" target="">flash.events.EventDispatcher.hasEventListener()</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="refresh()" id="refresh()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>refresh</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function refresh():<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      
+      Refreshes the cube from the data provider. 
+      After setting the cube's schema, you must call this method to build the cube.
+     
+      <p>This method dispatches a <code>progress</code> event to indicate progress,
+      and dispatches a <code>complete</code> event when the cube is complete
+      and ready to execute queries.
+      You must wait for a <code>complete</code> event 
+      before you call the <code>execute()</code> method to run a query.</p>
+     
+      </p></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="removeEventListener()" id="removeEventListener()"></a><a name="removeEventListener(String,Function,Boolean)" id="removeEventListener(String,Function,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>removeEventListener</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeEventListener(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Removes a listener. 
+      If there no matching listener is registered, 
+      a call to this method has no effect.
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">type</span>:<a href="../../String.html">String</a></code> &mdash; The type of event.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listener</span>:<a href="../../Function.html">Function</a></code> &mdash; The listener object to remove.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">useCapture</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; Specifies whether the listener was registered for 
+      the capture phase or the target and bubbling phases. 
+     
+      </td></tr></table></p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/events/EventDispatcher.html#removeEventListener()" target="">flash.events.EventDispatcher.removeEventListener()</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="toString()" id="toString()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>toString</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function toString():<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Returns the name of the cube
+     
+      </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; The name of the cube.
+      
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="willTrigger()" id="willTrigger()"></a><a name="willTrigger(String)" id="willTrigger(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>willTrigger</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function willTrigger(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Checks whether an event listener is registered with this object or any of its ancestors for the specified event type. 
+      This method returns <code>true</code> if an event listener is triggered during any phase of the event flow 
+      when an event of the specified type is dispatched to this object or to any of its descendants.
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">type</span>:<a href="../../String.html">String</a></code> &mdash; The type of event.
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; A value of <code>true</code> if a listener of the 
+      specified type is triggered; <code>false</code> otherwise.
+     
+      </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/events/EventDispatcher.html#willTrigger()" target="">flash.events.EventDispatcher.willTrigger()</a></div></div></span><div class="detailSectionHeader"> Event Detail </div><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="event:complete" id="event:complete"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>complete</h3></td><td class="detailHeaderType"> Event </td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../mx/events/CubeEvent.html"><code>mx.events.CubeEvent</code></a><br/><span class="label">property CubeEvent.type  =  </span><a href="../../mx/events/CubeEvent.html#CUBE_COMPLETE"><code>mx.events.CubeEvent.CUBE_COMPLETE</code></a><br/><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+ Dispatched when a cube has been created
+ and is ready to be queried.
+
+ </p>
+      The <code>CubeEvent.CUBE_COMPLETE</code> constant defines the value of the 
+      <code>type</code> property of the event object for a 
+      <code>complete</code> event.
+     
+      <p>The properties of the event object have the following values:</p>
+      <table class="innertable" ><tr><th>Property</th><th>Value</th></tr><tr><td><code>bubbles</code></td><td><code>false</code></td></tr><tr><td><code>cancelable</code></td><td><code>true</code></td></tr><tr><td><code>currentTarget</code></td><td>The Object that defines the 
+           event listener that handles the event. For example, if you use 
+           <code>myButton.addEventListener()</code> to register an event listener, 
+           myButton is the value of the <code>currentTarget</code>. </td></tr><tr><td><code>description</code></td><td>Description of what is being processed.</td></tr><tr><td><code>progress</code></td><td>The number of elements in the cube 
+           that have been updated.</td></tr><tr><td><code>target</code></td><td>The Object that dispatched the event; 
+           it is not always the Object listening for the event. 
+           Use the <code>currentTarget</code> property to always access the 
+           Object listening for the event.</td></tr><tr><td><code>total</code></td><td>The total number of elements in the cube 
+           that need to be udpated.</td></tr><tr><td><code>type</code></td><td>CubeEvent.CUBE_COMPLETE</td></tr></table>
+     
+      </div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="event:progress" id="event:progress"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>progress</h3></td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../mx/events/CubeEvent.html"><code>mx.events.CubeEvent</code></a><br/><span class="label">property CubeEvent.type  =  </span><a href="../../mx/events/CubeEvent.html#CUBE_PROGRESS"><code>mx.events.CubeEvent.CUBE_PROGRESS</code></a><br/><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+ Dispatched continuously as a cube is being created
+ by a call to the <code>refresh()</code> method.
+
+ </p>
+      The <code>CubeEvent.CUBE_PROGRESS</code> constant defines the value of the 
+      <code>type</code> property of the event object for a 
+      <code>progress</code> event.
+     
+      <p>The properties of the event object have the following values:</p>
+      <table class="innertable" ><tr><th>Property</th><th>Value</th></tr><tr><td><code>bubbles</code></td><td><code>false</code></td></tr><tr><td><code>cancelable</code></td><td><code>true</code></td></tr><tr><td><code>currentTarget</code></td><td>The Object that defines the 
+           event listener that handles the event. For example, if you use 
+           <code>myButton.addEventListener()</code> to register an event listener, 
+           myButton is the value of the <code>currentTarget</code>. </td></tr><tr><td><code>description</code></td><td>Description of what is being processed.</td></tr><tr><td><code>progress</code></td><td>The number of elements in the cube 
+           that have been updated.</td></tr><tr><td><code>target</code></td><td>The Object that dispatched the event; 
+           it is not always the Object listening for the event. 
+           Use the <code>currentTarget</code> property to always access the 
+           Object listening for the event.</td></tr><tr><td><code>total</code></td><td>The total number of elements in the cube 
+           that need to be udpated.</td></tr><tr><td><code>type</code></td><td>CubeEvent.CUBE_PROGRESS</td></tr></table>
+     
+      </div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="event:queryProgress" id="event:queryProgress"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>queryProgress</h3></td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../mx/events/CubeEvent.html"><code>mx.events.CubeEvent</code></a><br/><span class="label">property CubeEvent.type  =  </span><a href="../../mx/events/CubeEvent.html#QUERY_PROGRESS"><code>mx.events.CubeEvent.QUERY_PROGRESS</code></a><br/><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+ Dispatched continuously as a query result is being generated
+ by a call to the <code>execute()</code> method.
+
+ </p>
+      The <code>CubeEvent.QUERY_PROGRESS</code> constant defines the value of the 
+      <code>type</code> property of the event object for a 
+      <code>queryProgress</code> event.
+     
+      <p>The properties of the event object have the following values:</p>
+      <table class="innertable" ><tr><th>Property</th><th>Value</th></tr><tr><td><code>bubbles</code></td><td><code>false</code></td></tr><tr><td><code>cancelable</code></td><td><code>true</code></td></tr><tr><td><code>currentTarget</code></td><td>The Object that defines the 
+           event listener that handles the event. For example, if you use 
+           <code>myButton.addEventListener()</code> to register an event listener, 
+           myButton is the value of the <code>currentTarget</code>. </td></tr><tr><td><code>description</code></td><td>Description of what is being processed.</td></tr><tr><td><code>progress</code></td><td>The number of elements in the cube 
+           that have been updated.</td></tr><tr><td><code>target</code></td><td>The Object that dispatched the event; 
+           it is not always the Object listening for the event. 
+           Use the <code>currentTarget</code> property to always access the 
+           Object listening for the event.</td></tr><tr><td><code>total</code></td><td>The total number of elements in the cube 
+           that need to be udpated.</td></tr><tr><td><code>type</code></td><td>CubeEvent.QUERY_PROGRESS</td></tr></table>
+     
+      </div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,true,false,true,false,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

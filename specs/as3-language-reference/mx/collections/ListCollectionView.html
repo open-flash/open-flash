@@ -1,0 +1,676 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:9"><meta name="runtime" content="air"><meta name="runtimever" content="air:1.1"><meta name="product" content="flash player"><meta name="productver" content="flash player:9"><meta name="product" content="air"><meta name="productver" content="air:1.1"><meta name="product" content="flex"><meta name="prodver" content="flex:3"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="ListCollectionView,mx.collections.ListCollectionView,filterFunction,length,list,localIndex,sort,addAll,addAllAt,addEventListener,addItem,addItemAt,contains,createCursor,disableAutoUpdate,dispatchEvent,enableAutoUpdate,getItemAt,getItemIndex,hasEventListener,initialized,itemUpdated,refresh,removeAll,removeEventListener,removeItemAt,setItemAt,toArray,toString,willTrigger"><title>ListCollectionView - Adobe ActionScript&reg; 3 (AS3 Flex) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">mx.collections&nbsp;</a><br>
+								<h1 id="classProductName">ListCollectionView&nbsp; - AS3 Flex</h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">mx.collections</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  ListCollectionView</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">ListCollectionView  <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../flash/utils/Proxy.html">Proxy</a></td></tr><tr><td class="classHeaderTableLabel">Implements</td><td> <a href="../../mx/collections/ICollectionView.html">ICollectionView</a>,  <a href="../../mx/collections/IList.html">IList</a>,  <a href="../../mx/core/IMXMLObject.html">IMXMLObject</a></td></tr><tr><td class="classHeaderTableLabel">Subclasses</td><td> <a href="../../mx/collections/ArrayCollection.html">ArrayCollection</a>,  <a href="../../mx/collections/XMLListCollection.html">XMLListCollection</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p></p>
+ The ListCollectionView class adds the properties and methods of the
+ <code>ICollectionView</code> interface to an object that conforms to the
+ <code>IList</code> interface. As a result, you can pass an object of this class
+ to anything that requires an <code>IList</code> or <code>ICollectionView</code>.
+ 
+ <p>This class also lets you use [ ] array notation
+ to access the <code>getItemAt()</code> and <code>setItemAt()</code> methods.
+ If you use code such as <code>myListCollectionView[index]</code>
+ Flex calls the <code>myListCollectionView</code> object's
+ <code>getItemAt()</code> or <code>setItemAt()</code> method.</p>
+ 
+            <p></p><a name="mxmlSyntaxSummary"></a><span class="classHeaderTableLabel">MXML Syntax</span><span id="showMxmlLink" style="display:none"><a href="#mxmlSyntaxSummary" onclick="toggleMXMLOnly();"><img src="../../images/collapsed.gif" title="collapsed" alt="collapsed" class="collapsedImage">Show MXML Syntax</a><br/></span><span id="hideMxmlLink"><a href="#mxmlSyntaxSummary" onclick="toggleMXMLOnly();"><img src="../../images/expanded.gif" title="expanded" alt="expanded" class="expandedImage">Hide MXML Syntax</a></span><div id="mxmlSyntax" class="mxmlSyntax">
+ 
+  <p>The <code>&lt;mx:ListCollectionView&gt;</code> has the following attributes,
+  which all of its subclasses inherit:</p>
+ 
+  <pre>
+  &lt;mx:ListCollectionView
+  <b>Properties</b>
+  filterFunction="null"
+  list="null"
+  sort="null"
+  <b>Events</b>
+  collectionChange="<i>No default</i>"
+  /&gt;
+  </pre>
+  
+  </div><script language="javascript" type="text/javascript"><!--
+								setMXMLOnly();
+								--></script><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#filterFunction" class="signatureLink">filterFunction</a> : <a href="../../Function.html">Function</a><div class="summaryTableDescription">
+      
+      A function that the view will use to eliminate items that do not
+      match the function's criteria.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#length" class="signatureLink">length</a> : <a href="../../int.html">int</a><div class="summaryTableDescription">[read-only] 
+      
+      The number of items in this view.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#list" class="signatureLink">list</a> : <a href="../../mx/collections/IList.html">IList</a><div class="summaryTableDescription">
+      The IList that this collection view wraps.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#sort" class="signatureLink">sort</a> : <a href="../../mx/collections/ISort.html">ISort</a><div class="summaryTableDescription">
+      
+      The ISort that will be applied to the ICollectionView.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="protectedPropertySummary" id="protectedPropertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Protected Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProtectedProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#localIndex" class="signatureLink">localIndex</a> : <a href="../../Array.html">Array</a><div class="summaryTableDescription">
+      When the view is sorted or filtered the localIndex property
+      contains an array of items in the sorted or filtered (ordered, reduced)
+      view, in the sorted order.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#ListCollectionView()" class="signatureLink">ListCollectionView</a>(list:<a href="../../mx/collections/IList.html">IList</a> = null)</div><div class="summaryTableDescription">
+      The ListCollectionView constructor.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addAll()" class="signatureLink">addAll</a>(addList:<a href="../../mx/collections/IList.html">IList</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+      Adds a list of items to the current list, placing them at the end of
+      the list in the order they are passed.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addAllAt()" class="signatureLink">addAllAt</a>(addList:<a href="../../mx/collections/IList.html">IList</a>, index:<a href="../../int.html">int</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+      Adds a list of items to the current list, placing them at the position
+      index passed in to the function.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addEventListener()" class="signatureLink">addEventListener</a>(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false, priority:<a href="../../int.html">int</a> = 0, useWeakReference:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+      
+	Registers an event listener object with an EventDispatcher object so that the listener
+	receives notification of an event.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addItem()" class="signatureLink">addItem</a>(item:<a href="../../Object.html">Object</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     
+      Adds the specified item to the end of the list.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addItemAt()" class="signatureLink">addItemAt</a>(item:<a href="../../Object.html">Object</a>, index:<a href="../../int.html">int</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     
+      Adds the item at the specified index.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#contains()" class="signatureLink">contains</a>(item:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+      
+      Returns whether the view contains the specified object.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#createCursor()" class="signatureLink">createCursor</a>():<a href="../../mx/collections/IViewCursor.html">IViewCursor</a></div><div class="summaryTableDescription">
+      
+      Creates a new IViewCursor that works with this view.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#disableAutoUpdate()" class="signatureLink">disableAutoUpdate</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+      
+      Prevents changes to the collection itself and items within the
+	  collection from being dispatched by the view.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#dispatchEvent()" class="signatureLink">dispatchEvent</a>(event:<a href="../../flash/events/Event.html">Event</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+      
+	Dispatches an event into the event flow.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#enableAutoUpdate()" class="signatureLink">enableAutoUpdate</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+      
+      Enables auto-updating.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getItemAt()" class="signatureLink">getItemAt</a>(index:<a href="../../int.html">int</a>, prefetch:<a href="../../int.html">int</a> = 0):<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+     
+      Gets the item at the specified index.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getItemIndex()" class="signatureLink">getItemIndex</a>(item:<a href="../../Object.html">Object</a>):<a href="../../int.html">int</a></div><div class="summaryTableDescription">
+     
+      Returns the index of the item if it is in the list such that
+      getItemAt(index) == item.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#hasEventListener()" class="signatureLink">hasEventListener</a>(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+      
+	Checks whether the EventDispatcher object has any listeners registered for a specific type 
+	of event.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#initialized()" class="signatureLink">initialized</a>(document:<a href="../../Object.html">Object</a>, id:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+       Called automatically by the MXML compiler when the ListCollectionView
+       is created using an MXML tag.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#itemUpdated()" class="signatureLink">itemUpdated</a>(item:<a href="../../Object.html">Object</a>, property:<a href="../../Object.html">Object</a> = null, oldValue:<a href="../../Object.html">Object</a> = null, newValue:<a href="../../Object.html">Object</a> = null):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+      
+      Notifies the view that an item has been updated.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#refresh()" class="signatureLink">refresh</a>():<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+     
+      Applies the sort and filter to the view.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeAll()" class="signatureLink">removeAll</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Remove all items from the list.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeEventListener()" class="signatureLink">removeEventListener</a>(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+      
+	Removes a listener from the EventDispatcher object.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeItemAt()" class="signatureLink">removeItemAt</a>(index:<a href="../../int.html">int</a>):<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+     
+      Removes the item at the specified index and returns it.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setItemAt()" class="signatureLink">setItemAt</a>(item:<a href="../../Object.html">Object</a>, index:<a href="../../int.html">int</a>):<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+     
+      Places the item at the specified index.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#toArray()" class="signatureLink">toArray</a>():<a href="../../Array.html">Array</a></div><div class="summaryTableDescription">
+     
+      Returns an Array that is populated in the same order as the IList
+      implementation.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#toString()" class="signatureLink">toString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+      Prints the contents of this view to a string and returns it.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#willTrigger()" class="signatureLink">willTrigger</a>(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+      
+	Checks whether an event listener is registered with this EventDispatcher object or any of its ancestors for the specified event type.</div></td><td class="summaryTableOwnerCol">ListCollectionView</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="eventSummary" id="eventSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Events</div><div class="showHideLinks"><a href="http://help.adobe.com/en_US/Flex/4.6/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7ee9.html" target="_blank">Click for more information on events</a></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableEvent"><tr><th>&nbsp;</th><th colspan="2">Event</th><th> Summary </th><th>Defined By</th></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:collectionChange" class="signatureLink">collectionChange</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatched when the ICollectionView has been updated in some way.</td><td class="summaryTableOwnerCol">ListCollectionView</td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="propertyDetail" id="propertyDetail"></a><a name="filterFunction" id="filterFunction"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>filterFunction</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>filterFunction:<a href="../../Function.html">Function</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      
+      A function that the view will use to eliminate items that do not
+      match the function's criteria.
+	  A filterFunction is expected to have the following signature:
+	 
+	  <pre>f(item:Object):Boolean</pre>
+	 
+	  where the return value is <code>true</code> if the specified item
+	  should remain in the view.
+	 
+      <p>If a filter is unsupported, Flex throws an error when accessing
+      this property.
+      You must call <code>refresh()</code> after setting the
+	  <code>filterFunction</code> property for the view to update.</p>
+	 
+ 	  <p>Note: The Flex implementations of ICollectionView retrieve all
+	  items from a remote location before executing the filter function.
+	  If you use paging, apply the filter to the remote collection before
+	  you retrieve the data.</p>
+	 
+      </p><p>This property can be used as the source for data binding. When this property is modified, it dispatches the  <code>filterFunctionChanged</code>  event.</p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get filterFunction():<a href="../../Function.html">Function</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set filterFunction(value:<a href="../../Function.html">Function</a>):<a href="../../specialTypes.html#void">void</a></code><br/><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="ListCollectionView.html#refresh()" target="">refresh()</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="propertyDetail" id="propertyDetail"></a><a name="length" id="length"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>length</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>length:<a href="../../int.html">int</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      
+      The number of items in this view.
+	  0 means no items, while -1 means that the length is unknown.
+      
+      </p><p>This property can be used as the source for data binding. When this property is modified, it dispatches the  <code>collectionChange</code>  event.</p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get length():<a href="../../int.html">int</a></code><br/></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="propertyDetail" id="propertyDetail"></a><a name="list" id="list"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>list</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>list:<a href="../../mx/collections/IList.html">IList</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      The IList that this collection view wraps.
+      
+      </p><p>This property can be used as the source for data binding. When this property is modified, it dispatches the  <code>listChanged</code>  event.</p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get list():<a href="../../mx/collections/IList.html">IList</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set list(value:<a href="../../mx/collections/IList.html">IList</a>):<a href="../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="propertyDetail" id="propertyDetail"></a><a name="localIndex" id="localIndex"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>localIndex</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>protected var localIndex:<a href="../../Array.html">Array</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      When the view is sorted or filtered the <code>localIndex</code> property
+      contains an array of items in the sorted or filtered (ordered, reduced)
+      view, in the sorted order.
+      The ListCollectionView class uses this property to access the items in 
+      the view.
+      The <code>localIndex</code> property should never contain anything
+      that is not in the source, but may not have everything in the source.  
+      This property is <code>null</code> when there is no sort.
+      
+      </p></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="propertyDetail" id="propertyDetail"></a><a name="sort" id="sort"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>sort</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>sort:<a href="../../mx/collections/ISort.html">ISort</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      
+      The ISort that will be applied to the ICollectionView.
+	  Setting the sort does not automatically refresh the view,
+	  so you must call the <code>refresh()</code> method
+	  after setting this property.
+      If sort is unsupported an error will be thrown when accessing
+      this property.
+	 
+	  <p>Note: The Flex implementations of ICollectionView retrieve all
+	  items from a remote location before executing a sort.
+	  If you use paging with a sorted list, apply the sort to the remote
+	  collection before you retrieve the data.</p>
+	 
+      </p><p>This property can be used as the source for data binding. When this property is modified, it dispatches the  <code>sortChanged</code>  event.</p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get sort():<a href="../../mx/collections/ISort.html">ISort</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set sort(value:<a href="../../mx/collections/ISort.html">ISort</a>):<a href="../../specialTypes.html#void">void</a></code><br/><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="ListCollectionView.html#refresh()" target="">refresh()</a></div></div></span><a name="constructorDetail" id="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="ListCollectionView()" id="ListCollectionView()"></a><a name="ListCollectionView(mx.collections.IList)" id="ListCollectionView(mx.collections.IList)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>ListCollectionView</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function ListCollectionView(list:<a href="../../mx/collections/IList.html">IList</a> = null)</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p>
+      The ListCollectionView constructor.
+     
+      </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">list</span>:<a href="../../mx/collections/IList.html">IList</a></code> (default = <code>null</code>)<code></code> &mdash; the IList this ListCollectionView is meant to wrap.
+      
+      </td></tr></table></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="addAll()" id="addAll()"></a><a name="addAll(mx.collections.IList)" id="addAll(mx.collections.IList)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>addAll</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function addAll(addList:<a href="../../mx/collections/IList.html">IList</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Adds a list of items to the current list, placing them at the end of
+      the list in the order they are passed.
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">addList</span>:<a href="../../mx/collections/IList.html">IList</a></code> &mdash; The list of items to add to the current list
+      
+      </td></tr></table></p></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="addAllAt()" id="addAllAt()"></a><a name="addAllAt(mx.collections.IList,int)" id="addAllAt(mx.collections.IList,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>addAllAt</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function addAllAt(addList:<a href="../../mx/collections/IList.html">IList</a>, index:<a href="../../int.html">int</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Adds a list of items to the current list, placing them at the position
+      index passed in to the function.  The items are placed at the index location
+      and placed in the order they are recieved.
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">addList</span>:<a href="../../mx/collections/IList.html">IList</a></code> &mdash; The list of items to add to the current list
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">index</span>:<a href="../../int.html">int</a></code> &mdash; The location of the current list to place the new items.
+      </td></tr></table></p><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../RangeError.html">RangeError</a> </code> &mdash; if index is less than 0 or greater than the length of the list. 
+      
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="addEventListener()" id="addEventListener()"></a><a name="addEventListener(String,Function,Boolean,int,Boolean)" id="addEventListener(String,Function,Boolean,int,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>addEventListener</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function addEventListener(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false, priority:<a href="../../int.html">int</a> = 0, useWeakReference:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      
+	Registers an event listener object with an EventDispatcher object so that the listener
+	receives notification of an event. You can register event listeners on all nodes in the
+	display list for a specific type of event, phase, and priority.
+	<p>After you successfully register an event listener, you cannot change its priority
+	through additional calls to <code>addEventListener()</code>. To change a listener's priority, you
+	must first call <code>removeEventListener()</code>. Then you can register the listener again with the new
+	priority level.</p>
+	<p>After the listener is registered, subsequent calls to 
+	<code>addEventListener()</code> with a different value for either <code>type</code> or <code>useCapture</code> result in the
+	creation of a separate listener registration. For example, if you first register a
+	listener with <code>useCapture</code> set to <code>true</code>, it listens only during the capture phase. If you
+	call <code>addEventListener()</code> again using the same listener object, but with <code>useCapture</code> set to
+	<code>false</code>, you have two separate listeners: one that listens during the capture phase, and
+	another that listens during the target and bubbling phases.</p>
+	<p>You cannot register an event listener for only the target phase or the bubbling phase. Those phases are coupled during registration because bubbling applies only to the ancestors of the target node.</p>
+	<p>When you no longer need an event listener, remove it by calling <code>EventDispatcher.removeEventListener()</code>; otherwise, memory problems might result. Objects
+	with registered event listeners are not automatically removed from memory because the
+	garbage collector does not remove objects that still have references.</p>
+	<p>Copying an EventDispatcher instance does not copy the event listeners attached to it.
+	(If your newly created node needs an event listener, you must attach the listener after
+	creating the node.) However, if you move an EventDispatcher instance, the event
+	listeners attached to it move along with it.</p>
+	<p>If the event listener is being registered on a node while an event is also being processed on 
+	this node, the event listener is not triggered during the current phase but may be 
+	triggered during a later phase in the event flow, such as the bubbling phase.</p>
+	<p>If an event listener is removed from a node while an event is being processed on the node, it is still triggered by the current actions. After it is removed, the event listener is never invoked again 
+	(unless it is registered again for future processing). </p>
+	
+	</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">type</span>:<a href="../../String.html">String</a></code> &mdash; The type of event.
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listener</span>:<a href="../../Function.html">Function</a></code> &mdash; The listener function that processes the event. This function must accept an event object 
+	as its only parameter and must return nothing, as this example shows:
+	<p><code>function(evt:Event):void</code></p>
+	The function can have any name.
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">useCapture</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; Determines whether the listener works in the capture phase or the target 
+	and bubbling phases. If <code>useCapture</code> is set to <code>true</code>, the  
+	listener processes the event only during the capture phase and not in the target or 
+	bubbling phase. If <code>useCapture</code> is <code>false</code>, the listener processes the event only
+	during the target or bubbling phase. To listen for the event in all three phases, call 
+	<code>addEventListener()</code> twice, once with <code>useCapture</code> set to <code>true</code>, 
+	then again with <code>useCapture</code> set to <code>false</code>.
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">priority</span>:<a href="../../int.html">int</a></code> (default = <code>0</code>)<code></code> &mdash; The priority level of the event listener. Priorities are designated by a 32-bit integer. The higher the number, the higher the priority. All listeners with priority <i>n</i> are processed before listeners of priority <i>n-1</i>. If two or more listeners share the same priority, they are processed in the order in which they were added. The default priority is 0. 
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">useWeakReference</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; Determines whether the reference to the listener is strong or weak. A strong 
+    reference (the default) prevents your listener from being garbage-collected. A weak 
+    reference does not. <p>Class-level member functions are not subject to garbage 
+    collection, so you can set <code>useWeakReference</code> to <code>true</code> for 
+    class-level member functions without subjecting them to garbage collection. If you set
+    <code>useWeakReference</code> to <code>true</code> for a listener that is a nested inner 
+    function, the function will be garbge-collected and no longer persistent. If you create 
+    references to the inner function (save it in another variable) then it is not 
+    garbage-collected and stays persistent.</p>
+	 
+	 </td></tr></table></p></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="addItem()" id="addItem()"></a><a name="addItem(Object)" id="addItem(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>addItem</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function addItem(item:<a href="../../Object.html">Object</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+     
+      Adds the specified item to the end of the list.
+      Equivalent to <code>addItemAt(item, length)</code>.
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">item</span>:<a href="../../Object.html">Object</a></code> &mdash; The item to add.
+      
+      </td></tr></table></p></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="addItemAt()" id="addItemAt()"></a><a name="addItemAt(Object,int)" id="addItemAt(Object,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>addItemAt</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function addItemAt(item:<a href="../../Object.html">Object</a>, index:<a href="../../int.html">int</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+     
+      Adds the item at the specified index.  
+      The index of any item greater than the index of the added item is increased by one.  
+      If the the specified index is less than zero or greater than the length
+      of the list, a RangeError is thrown.
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">item</span>:<a href="../../Object.html">Object</a></code> &mdash; The item to place at the index.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">index</span>:<a href="../../int.html">int</a></code> &mdash; The index at which to place the item.
+     
+      </td></tr></table></p></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="contains()" id="contains()"></a><a name="contains(Object)" id="contains(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>contains</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function contains(item:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      
+      Returns whether the view contains the specified object.
+	  Unlike the <code>IViewCursor.find<i>xxx</i></code> methods,
+	  this search is succesful only if it finds an item that exactly
+	  matches the parameter.
+      If the view has a filter applied to it this method may return
+	  <code>false</code> even if the underlying collection
+	  does contain the item.
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">item</span>:<a href="../../Object.html">Object</a></code> &mdash; The object to look for.
+	 
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; true if the ICollectionView, after applying any filter,
+      contains the item; false otherwise.
+      
+      </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="ListCollectionView.html#enableAutoUpdate()" target="">enableAutoUpdate()</a><br/><a href="../../mx/events/CollectionEvent.html" target="">mx.events.CollectionEvent</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="createCursor()" id="createCursor()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>createCursor</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function createCursor():<a href="../../mx/collections/IViewCursor.html">IViewCursor</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      
+      Creates a new IViewCursor that works with this view.
+     
+      </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../mx/collections/IViewCursor.html">IViewCursor</a></code> &mdash; A new IViewCursor implementation.
+     
+      
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="disableAutoUpdate()" id="disableAutoUpdate()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>disableAutoUpdate</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function disableAutoUpdate():<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      
+      Prevents changes to the collection itself and items within the
+	  collection from being dispatched by the view.
+	  Also prevents the view from updating the positions of items
+	  if the positions change in the collection.
+	  The changes will be queued and dispatched appropriately
+	  after <code>enableAutoUpdate</code> is called.
+	  If more events than updates to a single item occur,
+	  the view may end up resetting. 
+	  The <code>disableAutoUpdate</code> method acts cumulatively;
+	  the same number of calls to <code>enableAutoUpdate</code>
+	  are required for the view to dispatch events and refresh.
+	  Note that <code>disableAutoUpdate</code> only affects the
+      individual view; edits may be detected on an individual
+	  basis by other views.
+      
+      </p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="ICollectionView.html#enableAutoUpdate()" target="">mx.collections.ICollectionView.enableAutoUpdate()</a><br/><a href="../../mx/events/CollectionEvent.html" target="">mx.events.CollectionEvent</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="dispatchEvent()" id="dispatchEvent()"></a><a name="dispatchEvent(flash.events.Event)" id="dispatchEvent(flash.events.Event)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>dispatchEvent</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function dispatchEvent(event:<a href="../../flash/events/Event.html">Event</a>):<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      
+	Dispatches an event into the event flow. The event target is the
+	EventDispatcher object upon which <code>dispatchEvent()</code> is called.
+	
+	</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">event</span>:<a href="../../flash/events/Event.html">Event</a></code> &mdash; The event object dispatched into the event flow.
+	</td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; A value of <code>true</code> unless <code>preventDefault()</code> is called on the event, 
+	in which case it returns <code>false</code>.
+	 
+	 </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="enableAutoUpdate()" id="enableAutoUpdate()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>enableAutoUpdate</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function enableAutoUpdate():<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      
+      Enables auto-updating.
+	  See <code>disableAutoUpdate</code> for more information.
+	 
+      </p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="ICollectionView.html#disableAutoUpdate()" target="">mx.collections.ICollectionView.disableAutoUpdate()</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="getItemAt()" id="getItemAt()"></a><a name="getItemAt(int,int)" id="getItemAt(int,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getItemAt</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getItemAt(index:<a href="../../int.html">int</a>, prefetch:<a href="../../int.html">int</a> = 0):<a href="../../Object.html">Object</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+     
+      Gets the item at the specified index.
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">index</span>:<a href="../../int.html">int</a></code> &mdash; The index in the list from which to retrieve the item.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">prefetch</span>:<a href="../../int.html">int</a></code> (default = <code>0</code>)<code></code> &mdash; An <code>int</code> indicating both the direction
+      and number of items to fetch during the request if the item is
+      not local.
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Object.html">Object</a></code> &mdash; The item at that index, or <code>null</code> if there is none.
+     
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="getItemIndex()" id="getItemIndex()"></a><a name="getItemIndex(Object)" id="getItemIndex(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getItemIndex</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getItemIndex(item:<a href="../../Object.html">Object</a>):<a href="../../int.html">int</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+     
+      Returns the index of the item if it is in the list such that
+      getItemAt(index) == item.
+     
+      <p>Note: unlike <code>IViewCursor.find<i>xxx</i>()</code> methods,
+      The <code>getItemIndex()</code> method cannot take a parameter with 
+      only a subset of the fields in the item being serched for; 
+      this method always searches for an item that exactly matches
+      the input parameter.</p>
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">item</span>:<a href="../../Object.html">Object</a></code> &mdash; The item to find.
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../int.html">int</a></code> &mdash; The index of the item, or -1 if the item is not in the list.
+      
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="hasEventListener()" id="hasEventListener()"></a><a name="hasEventListener(String)" id="hasEventListener(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>hasEventListener</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function hasEventListener(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      
+	Checks whether the EventDispatcher object has any listeners registered for a specific type 
+	of event. This allows you to determine where an EventDispatcher object has altered handling of an event type in the event flow hierarchy. To determine whether 
+	a specific event type will actually trigger an event listener, use <code>IEventDispatcher.willTrigger()</code>.
+	<p>The difference between <code>hasEventListener()</code> and <code>willTrigger()</code> is that <code>hasEventListener()</code> examines only the object to which it belongs, whereas <code>willTrigger()</code> examines the entire event flow for the event specified by the <code>type</code> parameter.</p>
+	
+	</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">type</span>:<a href="../../String.html">String</a></code> &mdash; The type of event.
+	</td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; A value of <code>true</code> if a listener of the specified type is registered; <code>false</code> otherwise.
+	</td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="initialized()" id="initialized()"></a><a name="initialized(Object,String)" id="initialized(Object,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>initialized</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function initialized(document:<a href="../../Object.html">Object</a>, id:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+       Called automatically by the MXML compiler when the ListCollectionView
+       is created using an MXML tag.  
+       If you create the ListCollectionView through ActionScript, you 
+       must call this method passing in the MXML document and 
+       <code>null</code> for the <code>id</code>.
+      
+       </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">document</span>:<a href="../../Object.html">Object</a></code> &mdash; The MXML document containing this ListCollectionView.
+      
+       </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">id</span>:<a href="../../String.html">String</a></code> &mdash; Ignored.
+       
+       </td></tr></table></p></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="itemUpdated()" id="itemUpdated()"></a><a name="itemUpdated(Object,Object,Object,Object)" id="itemUpdated(Object,Object,Object,Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>itemUpdated</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function itemUpdated(item:<a href="../../Object.html">Object</a>, property:<a href="../../Object.html">Object</a> = null, oldValue:<a href="../../Object.html">Object</a> = null, newValue:<a href="../../Object.html">Object</a> = null):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      
+      Notifies the view that an item has been updated.
+	  This method is useful if the contents of the view do not implement
+	  <code>IPropertyChangeNotifier</code>.
+	  If the call to this method includes a <code>property</code> parameter,
+	  the view may be able to optimize its notification mechanism.
+      Otherwise it may choose to simply refresh the whole view.
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">item</span>:<a href="../../Object.html">Object</a></code> &mdash; The item within the view that was updated.
+	 
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">property</span>:<a href="../../Object.html">Object</a></code> (default = <code>null</code>)<code></code> &mdash; The name of the property that was updated.
+	 
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">oldValue</span>:<a href="../../Object.html">Object</a></code> (default = <code>null</code>)<code></code> &mdash; The old value of that property. (If property
+	  was null, this can be the old value of the item.).
+	 
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">newValue</span>:<a href="../../Object.html">Object</a></code> (default = <code>null</code>)<code></code> &mdash; The new value of that property. (If property
+	  was null, there's no need to specify this as the item is assumed
+	  to be the new value.)
+     
+      </td></tr></table></p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../mx/events/CollectionEvent.html" target="">mx.events.CollectionEvent</a><br/><a href="../../mx/core/IPropertyChangeNotifier.html" target="">mx.core.IPropertyChangeNotifier</a><br/><a href="../../mx/events/PropertyChangeEvent.html" target="">mx.events.PropertyChangeEvent</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="refresh()" id="refresh()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>refresh</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function refresh():<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+     
+      Applies the sort and filter to the view.
+	  The ICollectionView does not detect changes to a sort or
+	  filter automatically, so you must call the <code>refresh()</code>
+	  method to update the view after setting the <code>sort</code> 
+	  or <code>filterFunction</code> property.
+	  If your ICollectionView implementation also implements
+	  the IMXMLObject interface, you should to call the
+	  <code>refresh()</code> method from your <code>initialized()</code>
+	  method.
+	 
+      <p>Returns <code>true</code> if the refresh was successful
+	  and <code>false</code> if the sort is not yet complete
+	  (e.g., items are still pending).
+	  A client of the view should wait for a CollectionEvent event
+	  with the <code>CollectionEventKind.REFRESH</code> <code>kind</code>
+	  property to ensure that the <code>refresh()</code> operation is
+	  complete.</p>
+     
+      </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; <code>true</code> if the refresh() was complete,
+	  <code>false</code> if the refresh() is incomplete.
+      
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="removeAll()" id="removeAll()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>removeAll</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeAll():<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+     Remove all items from the list.
+      
+      </p></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="removeEventListener()" id="removeEventListener()"></a><a name="removeEventListener(String,Function,Boolean)" id="removeEventListener(String,Function,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>removeEventListener</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeEventListener(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      
+	Removes a listener from the EventDispatcher object. If there is no matching listener 
+	registered with the EventDispatcher object, a call to this method has no effect.
+	
+	</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">type</span>:<a href="../../String.html">String</a></code> &mdash; The type of event.
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listener</span>:<a href="../../Function.html">Function</a></code> &mdash; The listener object to remove.
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">useCapture</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; Specifies whether the listener was registered for the capture phase or the target and bubbling phases. If the listener was registered for both the capture phase and the target and bubbling phases, two calls to <code>removeEventListener()</code> are required to remove both: one call with <code>useCapture</code> set to <code>true</code>, and another call with <code>useCapture</code> set to <code>false</code>. 
+	 
+	 </td></tr></table></p></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="removeItemAt()" id="removeItemAt()"></a><a name="removeItemAt(int)" id="removeItemAt(int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>removeItemAt</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeItemAt(index:<a href="../../int.html">int</a>):<a href="../../Object.html">Object</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+     
+      Removes the item at the specified index and returns it.  
+      Any items that were after this index are now one index earlier.
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">index</span>:<a href="../../int.html">int</a></code> &mdash; The index from which to remove the item.
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Object.html">Object</a></code> &mdash; The item that was removed.
+     
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="setItemAt()" id="setItemAt()"></a><a name="setItemAt(Object,int)" id="setItemAt(Object,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>setItemAt</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setItemAt(item:<a href="../../Object.html">Object</a>, index:<a href="../../int.html">int</a>):<a href="../../Object.html">Object</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+     
+      Places the item at the specified index.  
+      If an item was already at that index the new item will replace it
+      and it will be returned.
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">item</span>:<a href="../../Object.html">Object</a></code> &mdash; The new item to be placed at the specified index.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">index</span>:<a href="../../int.html">int</a></code> &mdash; The index at which to place the item.
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Object.html">Object</a></code> &mdash; The item that was replaced, or <code>null</code> if none.
+     
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="toArray()" id="toArray()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>toArray</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function toArray():<a href="../../Array.html">Array</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+     
+      Returns an Array that is populated in the same order as the IList
+      implementation.
+      This method can throw an ItemPendingError.
+     
+      </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Array.html">Array</a></code> &mdash; The array.
+      
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="toString()" id="toString()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>toString</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function toString():<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Prints the contents of this view to a string and returns it.
+     
+      </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; The contents of this view, in string form.
+      
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="willTrigger()" id="willTrigger()"></a><a name="willTrigger(String)" id="willTrigger(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>willTrigger</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function willTrigger(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      
+	Checks whether an event listener is registered with this EventDispatcher object or any of its ancestors for the specified event type. This method returns <code>true</code> if an event listener is triggered during any phase of the event flow when an event of the specified type is dispatched to this EventDispatcher object or any of its descendants.
+	<p>The difference between <code>hasEventListener()</code> and <code>willTrigger()</code> is that <code>hasEventListener()</code> examines only the object to which it belongs, whereas <code>willTrigger()</code> examines the entire event flow for the event specified by the <code>type</code> parameter.</p>
+	
+	</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">type</span>:<a href="../../String.html">String</a></code> &mdash; The type of event.
+	</td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; A value of <code>true</code> if a listener of the specified type will be triggered; <code>false</code> otherwise.
+	 
+	 </td></tr></table></div></span><div class="detailSectionHeader"> Event Detail </div><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="event:collectionChange" id="event:collectionChange"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>collectionChange</h3></td><td class="detailHeaderType"> Event </td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../mx/events/CollectionEvent.html"><code>mx.events.CollectionEvent</code></a><br/><span class="label">property CollectionEvent.type  =  </span><a href="../../mx/events/CollectionEvent.html#COLLECTION_CHANGE"><code>mx.events.CollectionEvent.COLLECTION_CHANGE</code></a><br/><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+  Dispatched when the ICollectionView has been updated in some way.
+ 
+  </p>
+      The CollectionEvent.COLLECTION_CHANGE constant defines the value of the
+      <code>type</code> property of the event object for an event that is
+      dispatched when a collection has changed.
+     
+      <p>The properties of the event object have the following values.
+      Not all properties are meaningful for all kinds of events.
+	  See the detailed property descriptions for more information.</p>
+      <table class="innertable" ><tr><th>Property</th><th>Value</th></tr><tr><td><code>bubbles</code></td><td>false</td></tr><tr><td><code>cancelable</code></td><td>false</td></tr><tr><td><code>currentTarget</code></td><td>The Object that defines the
+           event listener that handles the event. For example, if you use
+           <code>myButton.addEventListener()</code> to register an event listener,
+           myButton is the value of the <code>currentTarget</code>. </td></tr><tr><td><code>items</code></td><td>An Array of objects with
+           information about the items affected by the event.
+	 		 The contents of this field depend on the event kind;
+	       for details see the <code>items</code> property</td></tr><tr><td><code>kind</code></td><td>The kind of event.
+           The valid values are defined in the CollectionEventKind 
+	       class as constants.</td></tr><tr><td><code>location</code></td><td>Location within the target collection
+             of the item(s) specified in the <code>items</code> property.</td></tr><tr><td><code>oldLocation</code></td><td>the previous location in the collection
+             of the item specified in the <code>items</code> property.</td></tr><tr><td><code>target</code></td><td>The Object that dispatched the event;
+           it is not always the Object listening for the event.
+           Use the <code>currentTarget</code> property to always access the
+           Object listening for the event.</td></tr><tr><td><code>type</code></td><td>CollectionEvent.COLLECTION_CHANGE</td></tr></table>
+     
+      </div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,true,false,true,false,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

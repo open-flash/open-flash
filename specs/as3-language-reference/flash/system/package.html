@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><title>flash.system - Details Adobe ActionScript&reg; 3 (AS3) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">&nbsp;</a><br>
+								<h1 id="classProductName">Package flash.system&nbsp;</h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><br><a name="methodSummary"></a>The flash.system package contains one package-level function, <code>fscommand()</code>, which facilitates communication between a SWF file and its container.<div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Function</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#fscommand()" class="signatureLink">fscommand</a>(command:<a href="../../String.html">String</a>, args:<a href="../../String.html">String</a> = ""):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+ Lets the SWF file communicate with either Flash Player or the program hosting Flash Player, 
+ such as a web browser.</div></td><td class="summaryTableOwnerCol">flash.system</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodDetail" id="methodDetail"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailSectionHeader"> Function detail </div><span id="pageFilter" runtime="Flash::9##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="fscommand()" id="fscommand()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="fscommand(String,String)" id="fscommand(String,String)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>fscommand</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function fscommand(command:<a href="../../String.html">String</a>, args:<a href="../../String.html">String</a> = ""):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9</td></tr></table><p></p><p></p><p>
+ Lets the SWF file communicate with either Flash Player or the program hosting Flash Player, 
+ such as a web browser. You can also use the <code>fscommand()</code> function to pass messages to 
+ Director or to Visual Basic, Visual C++, and other programs that can host ActiveX controls.
+ 
+  
+ <p>The <code>fscommand()</code> function lets a SWF file communicate with a script in a web page. 
+  However, script access is controlled by the web page's <code>allowScriptAccess</code> setting. 
+  (You set this attribute in the HTML code that embeds the SWF file&mdash;for
+  example, in the <code>PARAM</code> tag for Internet Explorer or the <code>EMBED</code> tag for Netscape.) </p>
+  <ul><li> When <code>allowScriptAccess</code> is set to <code>"sameDomain"</code> (the default), 
+  scripting is allowed only from SWF files that are in the same domain as the web page. </li><li> When <code>allowScriptAccess</code> is set to <code>"always"</code>, 
+  the SWF file can communicate with the HTML page in which it is embedded 
+  even when the SWF file is from a different domain than the HTML page. </li><li>When <code>allowScriptAccess</code> is set to <code>"never"</code>, 
+  the SWF file cannot communicate with any HTML page. Note that using this value is deprecated and not recommended, 
+  and shouldn't be necessary if you don't serve untrusted SWF files from your own domain. 
+  If you do need to serve untrusted SWF files, Adobe recommends that you create a distinct subdomain 
+  and place all untrusted content there. </li></ul>
+ 
+ <p>You can prevent a SWF file from using this method by setting the 
+ <code>allowNetworking</code> parameter of the the <code>object</code> and <code>embed</code> 
+ tags in the HTML page that contains the SWF content. </p>
+ 
+ <p>The <code>fscommand()</code> function is not allowed if the calling SWF file is in 
+  the local-with-file-system or local-with-network sandbox and the containing HTML page is in 
+  an untrusted sandbox.</p>
+ 
+ <p>For more information related to security, see the Flash Player Developer Center Topic: 
+ <a href="http://www.adobe.com/go/devnet_security_en" target="external">Security</a>.</p>
+ 
+ <p>Usage 1: To use <code>fscommand()</code> to send a message to Flash Player, you must use predefined commands and parameters. The 
+ following table shows the values that you can specify for the <code>fscommand()</code> function's <code>command</code> and 
+ <code>args</code> parameters. These values control SWF files that are playing in Flash Player, including projectors. (A 
+ <i>projector</i> is a SWF file saved in a format that can run as a stand-alone application&mdash;that is, without Flash Player.)</p>
+ 
+              <table class="innertable" ><tr><th>Command</th><th>Parameter (args)</th><th>Purpose</th></tr><tr><td><code>quit</code></td><td>None</td><td>Closes the projector.</td></tr><tr><td><code>fullscreen</code></td><td><code>true</code> or <code>false</code></td><td>Specifying <code>true</code> sets Flash Player to full-screen mode. Specifying 
+                      <code>false</code> returns the player to normal menu view.</td></tr><tr><td><code>allowscale</code></td><td><code>true</code> or <code>false</code></td><td>Specifying <code>false</code> sets the player so that the SWF file is always drawn 
+                      at its original size and never scaled. Specifying <code>true</code> forces the SWF file to scale to 100% of the 
+                      player.</td></tr><tr><td><code>showmenu</code></td><td><code>true</code> or <code>false</code></td><td>Specifying <code>true</code> enables the full set of context menu items. Specifying 
+                      <code>false</code> hides all of the context menu items except About Flash Player and Settings.</td></tr><tr><td><code>exec</code></td><td>Path to application </td><td>Executes an application from within the projector.</td></tr><tr><td><code>trapallkeys</code></td><td><code>true</code> or <code>false</code></td><td>Specifying <code>true</code> sends all key events, including accelerator keys, to 
+                      the <code>onClipEvent(keyDown/keyUp)</code> handler in Flash Player. </td></tr></table>
+ <p>Not all of the commands listed in the table are available in all applications: 
+ <ul><li>None of the commands are available in web players.</li><li>All of the commands are available in stand-alone projector applications.</li><li>AIR applications should use the flash.desktop.NativeApplication class for similar functions, such as
+ <code>NativeApplication.nativeApplication.exit()</code> instead of <code>fscommand("quit")</code>.</li><li>Only <code>allowscale</code> and <code>exec</code> are available in test-movie players.</li></ul>
+ </p>
+ 
+ <p>The <code>exec</code> command can contain only the characters A-Z, a-z, 0-9, period (.), and underscore (_). The <code>exec</code>
+ command runs in the subdirectory fscommand only. In other words, if you use the <code>exec</code> command to call an application, the
+ application must reside in a subdirectory named fscommand. The <code>exec</code> command works only from within a Flash projector  
+ file.</p>
+ 
+ <p>Usage 2: To use <code>fscommand()</code> to send a message to a scripting language such as JavaScript in a web browser, you can 
+ pass any two parameters in the <code>command</code> and <code>args</code> parameters. These parameters can be strings or  
+ expressions, and they are used in a JavaScript function that handles, or <i>catches</i>, the <code>fscommand()</code> function. </p>
+ 
+ <p>In a web browser, <code>fscommand()</code> calls the JavaScript function <code>moviename_DoFScommand</code>, which resides in the  
+ web page that contains the SWF file. For <code>moviename</code>, supply the name of the Flash object that you used for the 
+ <code>NAME</code> attribute of the <code>EMBED</code> tag or the ID property of the <code>OBJECT</code> tag. If you assign the SWF file
+ the name "myMovie", the JavaScript function <code>myMovie_DoFScommand</code> is called. </p>
+ 
+ <p>In the web page that contains the SWF file, set the <code>allowScriptAccess</code> attribute to allow or deny the SWF file's 
+ ability to access the web page, as described above. (You set this attribute in the HTML code that embeds the SWF file&mdash;for example, in the 
+ <code>PARAM</code> tag for Internet Explorer or the <code>EMBED</code> tag for Netscape.) </p>
+ 
+ <p>In Flash Player 10 and later running in a browser, using this method programmatically to
+ open a pop-up window may not be successful.  Various browsers (and browser configurations) may block pop-up windows 
+ at any time; it is not possible to guarantee any pop-up window will appear.  
+ However, for the best chance of success, use this method to open a pop-up window only in code that executes 
+ as a direct result of a user action (for example, in an event handler for a mouse click or key-press event.)</p>
+ 
+ <p>Usage 3: The <code>fscommand()</code> function can send messages to Director (Macromedia Director from Adobe). 
+ These messages are interpreted by Lingo (the Director scripting language) as strings, events, or executable Lingo 
+ code. If a message is a string or an event, you must write the Lingo code to receive the message from the 
+ <code>fscommand()</code> function and carry out an action in Director. For more information, see the Director Support 
+ Center at <a href="http://www.adobe.com/support/director/" target="external">www.adobe.com/support/director/</a>.</p>
+ 
+ <p>Usage 4: In VisualBasic, Visual C++, and other programs that can host ActiveX controls, <code>fscommand()</code> sends a VB event 
+ with two strings that can be handled in the environment's programming language. For more information, use the keywords "Flash method" 
+ to search the Flash Support Center at <a href="http://www.adobe.com/support/flash/" target="external">www.adobe.com/support/flash/</a>.</p>
+ <p><b>Note:</b> The ExternalInterface class provides better functionality
+ for communication between JavaScript and ActionScript (Usage 2) and between ActionScript and VisualBasic, Visual C++, or other 
+ programs that can host ActiveX controls (Usage 4). You should continue to use <code>fscommand()</code> for sending messages to Flash 
+ Player (Usage 1) and Director (Usage 3).</p>
+ 
+ </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">command</span>:<a href="../../String.html">String</a></code> &mdash; A string passed to the host application for any use, or a command passed to Flash Player.
+ 
+ </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">args</span>:<a href="../../String.html">String</a></code> (default = "<code></code>")<code></code> &mdash; A string passed to the host application for any use, or a value passed to Flash Player.
+ 
+ </td></tr></table></p><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Error.html">Error</a> </code> &mdash; If the function is not called in response to a user action, such as a mouse
+ event or keypress event.
+ 
+ </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/desktop/NativeApplication.html" target="">flash.desktop.NativeApplication</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example shows how <code>fscommand()</code> can be used to direct
+ Flash Player to go into full screen mode and not allow scaling.  An orange box is then
+ added to the stage using <code>draw()</code>.  In <code>draw()</code>, a <code>click</code>
+ event listener is added named <code>clickHandler()</code>, which responds to <code>click</code> 
+ events by directing Flash Player to exit using another call to <code>fscommand().</code>
+ 
+ <p><b>Note: </b> this example should be executed in the standalone Flash Player and
+ not within a web browser.</p>
+<div class="listing"><pre>
+package {
+    import flash.display.Sprite;
+    import flash.text.TextField;
+    import flash.system.fscommand;
+    import flash.events.MouseEvent;
+
+    public class FSCommandExample extends Sprite {
+        private var bgColor:uint = 0xFFCC00;
+        private var size:uint = 100;
+
+        public function FSCommandExample() {
+            fscommand("fullscreen", "true");
+            fscommand("allowscale", "false");
+            draw();
+        }
+
+        private function clickHandler(event:MouseEvent):void {
+            fscommand("quit");
+            trace("clickHandler");
+        }
+
+        private function draw():void {
+            var child:Sprite = new Sprite();
+            child.graphics.beginFill(bgColor);
+            child.graphics.drawRect(0, 0, size, size);
+            child.graphics.endFill();
+            child.buttonMode = true;
+            addEventListener(MouseEvent.CLICK, clickHandler);
+
+            var label:TextField = new TextField();
+            label.text = "quit";
+            label.selectable = false;
+            label.mouseEnabled = false;
+            child.addChild(label);
+
+            addChild(child);
+        }
+    }
+}
+</pre></div></div></span></div></span><p></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 07:03 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 07:03 PM -08:00  -->

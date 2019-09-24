@@ -1,0 +1,842 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:9"><meta name="runtime" content="air"><meta name="runtimever" content="air:2"><meta name="product" content="flash player"><meta name="productver" content="flash player:9"><meta name="product" content="air"><meta name="productver" content="air:2"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="AccessibilityImplementation,flash.accessibility.AccessibilityImplementation,errno,stub,accDoDefaultAction,accLocation,accSelect,getChildIDArray,get_accDefaultAction,get_accFocus,get_accName,get_accRole,get_accSelection,get_accState,get_accValue,get_selectionActiveIndex,get_selectionAnchorIndex,isLabeledBy"><title>AccessibilityImplementation - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">flash.accessibility&nbsp;</a><br>
+								<h1 id="classProductName">AccessibilityImplementation&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">flash.accessibility</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  AccessibilityImplementation</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">AccessibilityImplementation  <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../Object.html">Object</a></td></tr><tr><td class="classHeaderTableLabel">Subclasses</td><td> <a href="../../fl/accessibility/AccImpl.html">AccImpl</a>,  <a href="../../mx/accessibility/AccImpl.html">AccImpl</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 2</td></tr></table><p></p><p></p><p></p>
+ 
+ The AccessibilityImplementation class is the base class in Flash Player
+ that allows for the implementation of accessibility in components. 
+ This class enables communication between a component and a screen reader. 
+ Screen readers are used to translate screen content into synthesized speech 
+ or braille for visually impaired users.
+ 
+ <p>The AccessibilityImplementation class provides a set of methods that allow a component
+ developer to make information about system roles, object based events, and states available
+ to assistive technology.</p>
+ 
+               <p>Adobe Flash Player uses Microsoft Active Accessibility (MSAA), which provides a descriptive
+ and standardized way for applications and screen readers to communicate. For more information
+ on how the Flash Player works with MSAA, see the accessibility chapter in <i>Using Flex SDK</i>.</p>
+ 
+               <p>The methods of the AccessibilityImplementation class are a subset of the 
+ <a href="http://msdn.microsoft.com/en-us/library/ms696097(VS.85).aspx" >IAccessible</a> interface
+ for a component instance.</p>
+ 
+               <p>The way that an AccessibilityImplementation implements the IAccessible interface, 
+ and the events that it sends, depend on the kind of component being implemented.</p>
+ 
+               <p>Do not directly instantiate AccessibilityImplementation by calling its constructor.
+ Instead, create new accessibility implementations by extending the 
+ AccImpl class for each new component.
+ In Flash, see the fl.accessibility package. 
+ In Flex, see the mx.accessibility package and 
+ the accessibility chapter in <i>Using Flex SDK</i>.</p>
+               <p>
+                  <b>Note:</b> The AccessibilityImplementation class is not supported in AIR runtime versions before AIR 2. The class is
+ available for compilation in AIR versions before AIR 2, but is not supported in the runtime until AIR 2.</p>
+ 
+            <p></p><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../Object.html#constructor" class="signatureLink">constructor</a> : <a href="../../Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#errno" class="signatureLink">errno</a> : <a href="../../uint.html">uint</a><div class="summaryTableDescription">
+	 Indicates an error code.</div></td><td class="summaryTableOwnerCol">AccessibilityImplementation</td></tr><tr class="" runtime="Flash::9##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#stub" class="signatureLink">stub</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">
+	 Used to create a component accessibility stub.</div></td><td class="summaryTableOwnerCol">AccessibilityImplementation</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#AccessibilityImplementation()" class="signatureLink">AccessibilityImplementation</a>()</div><div class="summaryTableDescription">
+	 Static constructor.</div></td><td class="summaryTableOwnerCol">AccessibilityImplementation</td></tr><tr class="" runtime="Flash::9##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#accDoDefaultAction()" class="signatureLink">accDoDefaultAction</a>(childID:<a href="../../uint.html">uint</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	 An IAccessible method that performs the default action associated with the component
+	 that this AccessibilityImplementation represents or of one of its child elements.</div></td><td class="summaryTableOwnerCol">AccessibilityImplementation</td></tr><tr class="" runtime="Flash::9##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#accLocation()" class="signatureLink">accLocation</a>(childID:<a href="../../uint.html">uint</a>):<a href="../../specialTypes.html#*">*</a></div><div class="summaryTableDescription">
+	 MSAA method for returning a DisplayObject or Rectangle
+	 specifying the bounding box of a child element in the AccessibilityImplementation.</div></td><td class="summaryTableOwnerCol">AccessibilityImplementation</td></tr><tr class="" runtime="Flash::9##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#accSelect()" class="signatureLink">accSelect</a>(operation:<a href="../../uint.html">uint</a>, childID:<a href="../../uint.html">uint</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	 IAccessible method for altering the selection in the component 
+	 that this AccessibilityImplementation represents.</div></td><td class="summaryTableOwnerCol">AccessibilityImplementation</td></tr><tr class="" runtime="Flash::9##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#get_accDefaultAction()" class="signatureLink">get_accDefaultAction</a>(childID:<a href="../../uint.html">uint</a>):<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 MSAA method for returning the default action of the component
+	 that this AccessibilityImplementation represents or of one of its child elements.</div></td><td class="summaryTableOwnerCol">AccessibilityImplementation</td></tr><tr class="" runtime="Flash::9##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#get_accFocus()" class="signatureLink">get_accFocus</a>():<a href="../../uint.html">uint</a></div><div class="summaryTableDescription">
+	 MSAA method for returning the unsigned integer ID of the child element, if any, 
+	 that has child focus within the component.</div></td><td class="summaryTableOwnerCol">AccessibilityImplementation</td></tr><tr class="" runtime="Flash::9##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#get_accName()" class="signatureLink">get_accName</a>(childID:<a href="../../uint.html">uint</a>):<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 MSAA method for returning the name for the component
+	 that this AccessibilityImplementation represents or for one of its child elements.</div></td><td class="summaryTableOwnerCol">AccessibilityImplementation</td></tr><tr class="" runtime="Flash::9##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#get_accRole()" class="signatureLink">get_accRole</a>(childID:<a href="../../uint.html">uint</a>):<a href="../../uint.html">uint</a></div><div class="summaryTableDescription">
+	 MSAA method for returning the system role for the component
+	 that this AccessibilityImplementation represents or for one of its child elements.</div></td><td class="summaryTableOwnerCol">AccessibilityImplementation</td></tr><tr class="" runtime="Flash::9##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#get_accSelection()" class="signatureLink">get_accSelection</a>():<a href="../../Array.html">Array</a></div><div class="summaryTableDescription">
+	 MSAA method for returning an array containing the IDs of all child elements that are selected.</div></td><td class="summaryTableOwnerCol">AccessibilityImplementation</td></tr><tr class="" runtime="Flash::9##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#get_accState()" class="signatureLink">get_accState</a>(childID:<a href="../../uint.html">uint</a>):<a href="../../uint.html">uint</a></div><div class="summaryTableDescription">
+	 IAccessible method for returning the current runtime state of the component that this 
+	 AccessibilityImplementation represents or of one of its child elements.</div></td><td class="summaryTableOwnerCol">AccessibilityImplementation</td></tr><tr class="" runtime="Flash::9##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#get_accValue()" class="signatureLink">get_accValue</a>(childID:<a href="../../uint.html">uint</a>):<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 MSAA method for returning the runtime value of the component that this
+	 AccessibilityImplementation represents or of one of its child elements.</div></td><td class="summaryTableOwnerCol">AccessibilityImplementation</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#get_selectionActiveIndex()" class="signatureLink">get_selectionActiveIndex</a>():<a href="../../specialTypes.html#*">*</a></div><div class="summaryTableDescription"></div></td><td class="summaryTableOwnerCol">AccessibilityImplementation</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#get_selectionAnchorIndex()" class="signatureLink">get_selectionAnchorIndex</a>():<a href="../../specialTypes.html#*">*</a></div><div class="summaryTableDescription"></div></td><td class="summaryTableOwnerCol">AccessibilityImplementation</td></tr><tr class="" runtime="Flash::9##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getChildIDArray()" class="signatureLink">getChildIDArray</a>():<a href="../../Array.html">Array</a></div><div class="summaryTableDescription">
+	 Returns an array containing the unsigned integer IDs of all child elements
+	 in the AccessibilityImplementation.</div></td><td class="summaryTableOwnerCol">AccessibilityImplementation</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#isLabeledBy()" class="signatureLink">isLabeledBy</a>(labelBounds:<a href="../../flash/geom/Rectangle.html">Rectangle</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 
+	 Returns true or false to indicate whether a text object having 
+	 a bounding box specified by a x, y, width, and height 
+	 should be considered a label for the component that this AccessibilityImplementation represents.</div></td><td class="summaryTableOwnerCol">AccessibilityImplementation</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="../../String.html">String</a>, isEnum:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toString()" class="signatureLink">toString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+	 Returns the primitive value of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="Flash::9##AIR::2##"><a name="propertyDetail" id="propertyDetail"></a><a name="errno" id="errno"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>errno</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>public var errno:<a href="../../uint.html">uint</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 2</td></tr></table><p></p><p></p><p>
+	 Indicates an error code. Errors are indicated out-of-band, rather than in return values. 
+	 To indicate an error, set the <code>errno</code> property to one of the error codes
+	 documented in the AccessibilityImplementation Constants appendix. 
+	 This causes your return value to be ignored. The <code>errno</code> property
+	 of your AccessibilityImplementation is always cleared (set to zero) by the player
+	 before any AccessibilityImplementation method is called.
+	 
+	 </p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../accessibilityImplementationConstants.html" target="">AccessibilityImplementation Constants</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::2##"><a name="propertyDetail" id="propertyDetail"></a><a name="stub" id="stub"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>stub</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var stub:<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 2</td></tr></table><p></p><p></p><p>
+	 Used to create a component accessibility stub.
+	 If a component is released without an ActionScript accessibility implementation,
+	 Adobe recommends that you add a component accessibility stub. 
+	 This stub causes Flash Player, for accessibility purposes, to treat the component
+	 as a simple graphic rather than exposing the internal structure of buttons,
+	 textfields, and so on, within the component. 
+	 
+	 <p>To create a component accessibility stub,
+	 subclass the relevant AccImpl class, overriding the property stub
+	 with a value of <code>true</code>.</p> 
+	 
+	 </p><p><span class="label">Related API Elements</span></p><div class="seeAlso">The mx.accessibility.AccImpl class in Flex (\sdks\4.0.0\frameworks\projects\framework\src\mx\accessibility\AccImpl.as)<br/>The fl.accessibility.AccImpl class in Flash (\Local Settings\Application Data\Adobe\Flash CS5\en_US\Configuration\Classes\mx\accessibility\AccImpl.as)</div></div></span><a name="constructorDetail" id="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><span id="pageFilter" runtime="Flash::9##AIR::2##"><a name="AccessibilityImplementation()" id="AccessibilityImplementation()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>AccessibilityImplementation</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function AccessibilityImplementation()</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 2</td></tr></table><p></p><p>
+	 Static constructor. Do not directly instantiate AccessibilityImplementation by calling its constructor.
+	 Instead, create new accessibility implementations by extending the mx.accessibility.AccImpl
+	 class for each new component.
+	 
+	 </p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../mx/accessibility/AccImpl.html" target="">mx.accessibility.AccImpl</a></div></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::9##AIR::2##"><a name="accDoDefaultAction()" id="accDoDefaultAction()"></a><a name="accDoDefaultAction(uint)" id="accDoDefaultAction(uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>accDoDefaultAction</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function accDoDefaultAction(childID:<a href="../../uint.html">uint</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 2</td></tr></table><p></p><p></p><p>
+	 An IAccessible method that performs the default action associated with the component
+	 that this AccessibilityImplementation represents or of one of its child elements.
+	 
+	 <p>Implement this method only if the AccessibilityImplementation represents a UI element
+	 that has a default action in the MSAA model.</p>
+	 
+	 <p>If you are implementing <code>accDoDefaultAction()</code> only for the AccessibilityImplementation
+	 itself, or only for its child elements, you will need in some cases to indicate that there
+	 is no default action for the particular childID that was passed. 
+	 Do this by setting the <code>errno</code> property to <code>E_MEMBERNOTFOUND</code>.</p>
+	 
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">childID</span>:<a href="../../uint.html">uint</a></code> &mdash; An unsigned integer corresponding to one of the component's child elements,
+	 as defined by <code>getChildIDArray()</code>.
+	 
+	 </td></tr></table></p><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">Following is an example showing how this method is implemented to perform
+	 the appropriate default action in 
+	 the Flex mx.accessibility.ListBaseAccImpl class, the ListBase Accessibility Implementation. 
+	 For the ListBase and classes that inherit from it,
+	 performing the default action "Double Click" for one of its child list item elements 
+	 selects that element.
+	 <div class="listing" version="3.0"><pre>
+     override public function accDoDefaultAction(childID:uint):void
+     {
+         if (childID &gt; 0)
+             ListBase(master).selectedIndex = childID - 1;
+     }</pre></div>
+	 </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::2##"><a name="accLocation()" id="accLocation()"></a><a name="accLocation(uint)" id="accLocation(uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>accLocation</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function accLocation(childID:<a href="../../uint.html">uint</a>):<a href="../../specialTypes.html#*">*</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 2</td></tr></table><p></p><p></p><p>
+	 MSAA method for returning a <code>DisplayObject</code> or <code>Rectangle</code>
+	 specifying the bounding box of a child element in the AccessibilityImplementation.
+	 
+	 <p>This method is never called with a <code>childID</code> of zero. 
+	 If your AccessibilityImplementation will never contain child elements, you should not implement 
+	 this method. If your AccessibilityImplementation can contain child elements, 
+	 this method is mandatory.</p>
+	 
+	 <p>You can usually satisfy the requirements of this method by returning an 
+	 object that represents the child element itself. This works as long as the 
+	 child element is a <code>DisplayObject</code>. 
+	 In these cases, simply return the <code>DisplayObject</code> that corresponds to 
+	 the instance name associated with the relevant visual object in display list.</p>	
+	 
+	 <p>If a child element does not qualify for the technique described above, 
+	 you may do the bounding-box math yourself and return a <code>Rectangle</code> with:
+	 <code>x</code>, <code>y</code>, <code>width</code>, and <code>height</code> properties. 
+	 The <code>x</code> and <code>y</code> members specify the upper-left corner of the bounding box, and 
+	 the <code>width</code> and <code>height</code> members specify its size. All four members 
+	 should be in units of Stage pixels, and relative to the origin of the component 
+	 that the AccessibilityImplementation represents. The <code>x</code> and <code>y</code> properties may have 
+	 negative values, since the origin of a <code>DisplayObject</code> is not necessarily in its 
+	 upper-left corner.</p>
+	 
+	 <p>If the child element specified by <code>childID</code> is not visible (that is, <code>get_accState</code> 
+	 for that child would return a value including <code>STATE_SYSTEM_INVISIBLE</code>), you 
+	 may return <code>null</code> from <code>accLocation</code>. You can also 
+	 return a <code>Rectangle</code> representing the coordinates where the child element would 
+	 appear if it were visible.</p>
+	 
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">childID</span>:<a href="../../uint.html">uint</a></code> &mdash; An unsigned integer corresponding to one of the component's child elements
+	 as defined by <code>getChildIDArray()</code>.
+	 
+	 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../specialTypes.html#*">*</a></code> &mdash; <code>DisplayObject</code> or <code>Rectangle</code> specifying the bounding box
+	 of the child element specified by <code>childID</code> parameter.
+	 
+	 
+	 </td></tr></table><p id="learnMore"><span class="label">Learn more</span></p><div class="seeAlso"><a href="http://msdn.microsoft.com/en-us/library/ms696118(VS.85).aspx" target="_blank">Microsoft Accessibility Developer Center: IAccessible::accLocation</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/display/DisplayObject.html" target="">flash.display.DisplayObject</a><br/><a href="../../flash/geom/Rectangle.html" target="">flash.geom.Rectangle</a><br/><a href="AccessibilityImplementation.html#getChildIDArray()" target="">getChildIDArray()</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example shows how this method is implemented to return the location
+	 of a given child element in 
+	 the Flex mx.accessibility.ListBaseAccImpl class, the ListBase accessibility implementation.
+	 <div class="listing" version="3.0"><pre>
+     override public function accLocation(childID:uint):*
+     
+     {
+         var listBase:ListBase = ListBase(master);
+     
+         var index:uint = childID - 1;
+         
+         if (index &lt; listBase.verticalScrollPosition ||
+             index &gt;= listBase.verticalScrollPosition + listBase.rowCount)
+         {
+             return null;
+         }
+         var item:Object = getItemAt(index);
+     
+         return listBase.itemToItemRenderer(item);
+     }
+     </pre></div>
+	 </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::2##"><a name="accSelect()" id="accSelect()"></a><a name="accSelect(uint,uint)" id="accSelect(uint,uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>accSelect</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function accSelect(operation:<a href="../../uint.html">uint</a>, childID:<a href="../../uint.html">uint</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 2</td></tr></table><p></p><p></p><p>
+	 IAccessible method for altering the selection in the component 
+	 that this AccessibilityImplementation represents. 
+	 
+	 <p>The <code>childID</code> parameter will always be nonzero. This method 
+	 always applies to a child element rather than the overall component; 
+	 Flash Player manages the selection of the overall component itself.</p>
+	 
+	 <p>The <code>selFlag</code> parameter is a bitfield consisting of one or more selection flag constants
+	 that allows an MSAA client to indicate how the item referenced by the <code>childID</code> 
+	 should be selected or take focus. What follows are descriptions of the selection flag constants
+	 and what they communicate to the accessibility implementation.  
+	 As a practical matter, most implementations of this method in accessibility implementations
+	 that inherit from the Flex mx.accessibility.ListBaseAccImpl class 
+	 ignore the <code>selFlag</code> constant and instead rely on the component's keyboard selection behavior
+	 to handle multi-selection.</p>
+	 
+	 <p>The <code>selFlag</code> parameter may or may not contain the <code>SELFLAG_TAKEFOCUS</code> 
+	 flag. If it does, you should set the child focus to the specified <code>childID</code>, 
+	 and, unless <code>SELFLAG_EXTENDSELECTION</code> is also present, make that child element 
+	 the selection anchor. Otherwise, the child focus and selection anchor should 
+	 remain unmodified, despite the fact that additional flags described below 
+	 may modify the selection.</p>
+	 
+	 <p>The <code>selFlag</code> argument will always contain one of the following four 
+	 flags, which indicate what kind of selection modification is desired:</p>
+	 <ul><li><p><code>SELFLAG_TAKESELECTION</code>: Clear any existing selection, and set the selection 
+	 to the specified <code>childID</code>.</p>
+	 </li><li><p><code>SELFLAG_EXTENDSELECTION</code>: Calculate the range of child elements between 
+	 and including the selection anchor and the specified <code>childID</code>. If 
+	 <code>SELFLAG_ADDSELECTION</code> is present, add all of these child elements to the 
+	 selection. If <code>SELFLAG_REMOVESELECTION</code> is present, remove all of these child 
+	 elements from the selection. If neither <code>SELFLAG_ADDSELECTION</code> nor <code>SELFLAG_REMOVESELECTION</code> 
+	 is present, all of these child elements should take on the selection anchor's 
+	 selection state: if the selection anchor is selected, add these child elements 
+	 to the selection; otherwise remove them from the selection.</p>
+	 </li><li><p><code>SELFLAG_ADDSELECTION</code> (without <code>SELFLAG_EXTENDSELECTION</code>): Add the specified 
+	 <code>childID</code> to the selection.</p>
+	 </li><li><p><code>SELFLAG_REMOVESELECTION</code> (without <code>SELFLAG_EXTENDSELECTION</code>): Remove the 
+	 specified <code>childID</code> from the selection.</p></li></ul>
+	 
+	 <p>Note that for a non-multi-selectable component, the only valid <code>selFlag</code> 
+	 parameter values are <code>SELFLAG_TAKEFOCUS</code> and <code>SELFLAG_TAKESELECTION</code>.
+	 You could in theory 
+	 also choose to support <code>SELFLAG_REMOVESELECTION</code> for a non-multi-selectable 
+	 component that allowed the user to force a <code>null</code> selection, but in practice 
+	 most non-multi-selectable components do not work this way, and MSAA clients 
+	 may not attempt this type of operation.</p>
+	 
+	 <p>If you encounter flags that seem invalid, set <code>errno</code> to <code>E_INVALIDARG</code>.</p>
+	 <p>Finally, note that when <code>accSelect</code> is called, Flash Player 
+	 ensures that it has <i>host focus</i> (the window focus of its container 
+	 application), and that your component has focus within Flash Player.</p>
+	 
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">operation</span>:<a href="../../uint.html">uint</a></code> &mdash; A bitfield consisting of one or more selection flag constants to indicate
+	 how the item is selected or takes focus.  
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">childID</span>:<a href="../../uint.html">uint</a></code> &mdash; An unsigned integer corresponding to one of the component's child elements
+	 as defined by <code>getChildIDArray()</code>.
+	 
+	 </td></tr></table></p><p id="learnMore"><span class="label">Learn more</span></p><div class="seeAlso"><a href="http://msdn.microsoft.com/en-us/library/ms697291(VS.85).aspx" target="_blank">Microsoft Accessibility Developer Center: IAccessible::accSelect</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="AccessibilityImplementation.html#getChildIDArray()" target="">getChildIDArray()</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example shows how this method is implemented to select a child
+	 item in the Flex mx.accessibility.ListBaseAccImpl class, the ListBase accessibility implementation.
+	 <div class="listing" version="3.0"><pre>override public function accSelect(selFlag:uint, childID:uint):void
+     {
+         
+         var listBase:ListBase = ListBase(master);
+         
+         var index:uint = childID - 1;
+         
+         if (index &gt;= 0 && index &lt; listBase.dataProvider.length)
+             listBase.selectedIndex = index;
+     }
+     </pre></div>
+	 	
+	 </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::2##"><a name="get_accDefaultAction()" id="get_accDefaultAction()"></a><a name="get_accDefaultAction(uint)" id="get_accDefaultAction(uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>get_accDefaultAction</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function get_accDefaultAction(childID:<a href="../../uint.html">uint</a>):<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 2</td></tr></table><p></p><p></p><p>
+	 MSAA method for returning the default action of the component
+	 that this AccessibilityImplementation represents or of one of its child elements.
+	 
+	 <p>Implement this method only if the AccessibilityImplementation represents a UI element
+	 that has a default action in the MSAA model; be sure to return the exact string 
+	 that the MSAA model specifies.  
+	 For example, the default action string for a Button component is "Press."</p>
+	 
+	 <p>If you are implementing <code>get_accDefaultAction</code> only for the 
+	 AccessibilityImplementation itself, or only for its child elements, 
+	 you will need in some cases to indicate that there is no default action 
+	 for the particular <code>childID</code> that was passed. 
+	 Do this by simply returning <code>null</code>.</p>
+	 
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">childID</span>:<a href="../../uint.html">uint</a></code> &mdash; An unsigned integer corresponding to one of the component's child elements,
+	 as defined by <code>getChildIDArray()</code>.
+	 
+	 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; The default action string specified in the MSAA model for the AccessibilityImplementation
+	 or for one of its child elements.
+	 </td></tr></table><p id="learnMore"><span class="label">Learn more</span></p><div class="seeAlso"><a href="http://msdn.microsoft.com/en-us/library/ms696144(VS.85).aspx" target="_blank">Microsoft Accessibility Developer Center: IAccessible::get_accDefaultAction</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="AccessibilityImplementation.html#getChildIDArray()" target="">getChildIDArray()</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example shows how this method is implemented to return
+	 the appropriate default actions in the Flex mx.accessibility.ListBaseAccImpl class,
+	 the ListBase accessibility implementation.
+	 <div class="listing" version="3.0"><pre>override public function get_accDefaultAction(childID:uint):String
+     {
+         if (childID == 0)
+             return null;
+     
+         return "Double Click";
+     }</pre></div>
+	  
+	 </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::2##"><a name="get_accFocus()" id="get_accFocus()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>get_accFocus</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function get_accFocus():<a href="../../uint.html">uint</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 2</td></tr></table><p></p><p></p><p>
+	 MSAA method for returning the unsigned integer ID of the child element, if any, 
+	 that has child focus within the component. If no child has child focus, the method returns zero.
+	 
+	 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../uint.html">uint</a></code> &mdash; The unsigned integer ID of the child element, if any, that has child focus within the component.
+	 </td></tr></table><p id="learnMore"><span class="label">Learn more</span></p><div class="seeAlso"><a href="http://msdn.microsoft.com/en-us/library/ms696150(VS.85).aspx" target="_blank">Microsoft Accessibility Developer Center: IAccessible::get_accFocus</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="AccessibilityImplementation.html#getChildIDArray()" target="">getChildIDArray()</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example shows how this method is implemented to return the focused childID in
+	 the Flex mx.accessibility.ListBaseAccImpl class, the ListBase accessibility implementation.
+	 
+	 <div class="listing" version="3.0"><pre>override public function get_accFocus():uint
+     {
+     var index:uint = ListBase(master).selectedIndex;
+     
+     return index &gt;= 0 ? index + 1 : 0;
+     }</pre></div>
+	 
+	 </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::2##"><a name="get_accName()" id="get_accName()"></a><a name="get_accName(uint)" id="get_accName(uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>get_accName</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function get_accName(childID:<a href="../../uint.html">uint</a>):<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 2</td></tr></table><p></p><p></p><p>
+	 MSAA method for returning the name for the component
+	 that this AccessibilityImplementation represents or for one of its child elements.
+	 
+	 <p>In the case of the AccessibilityImplementation itself (<code>childID == 0</code>), 
+	 if this method is not implemented, or does not return a value, Flash Player 
+	 uses the <code>AccessibilityProperties.name</code> property value, if it is present.</p>
+	 
+	 <p>For AccessibilityImplementations that can have child elements, this method must be implemented,
+	 and must return a string value when <code>childID</code> is nonzero.</p>
+	 
+	 <p>Depending on the type of user interface element, names in MSAA mean one of two different 
+	 things: an author-assigned name, or the actual text content of the element. 
+	 Usually, an AccessibilityImplementation itself will fall into the former category. 
+	 Its <code>name</code> property is an author-assigned name. Child elements 
+	 always fall into the second category. Their names indicate their text content.</p>
+	 
+	 <p>When the <code>name</code> property of an AccessibilityImplementation has the meaning
+	 of an author-assigned name, there are two ways in which components can acquire names from authors.
+	 The first entails names present within the component itself; for example, a checkbox 
+	 component might include a text label that serves as its name. The second&mdash;a fallback from
+	 the first&mdash;entails names specified in the UI and ending 
+	 up in <code>AccessibilityProperties.name</code>. This fallback option allows users to specify 
+	 names just as they would for any other Sprite or MovieClip.</p>
+	 
+	 <p>This leaves three possibilities for the AccessibilityImplementation itself (<code>childID == zero</code>):</p>
+	 <ul><li><p><b>Author-assigned name within component.</b> The <code>get_accName</code> method 
+	 should be implemented and should return a string value that contains the 
+	 AccessibilityImplementation's name when <code>childID</code> is zero. If <code>childID</code> is zero but the 
+	 AccessibilityImplementation has no name, <code>get_accName</code> should return an empty string to prevent 
+	 the player from falling back to the <code>AccessibilityProperties.name</code> property.</p>
+	 </li><li><p><b>Author-assigned name from UI.</b> If the AccessibilityImplementation can have child 
+	 elements, the <code>get_accName</code> method should be implemented but should not return a value when
+	 <code>childID</code> is zero. If the AccessibilityImplementation will never have child elements, 
+     	 <code>get_accName</code> should not be implemented.</p>
+     	 </li><li><p><b>Name signifying content.</b> The <code>get_accName</code> method should be 
+     	 implemented and should return an appropriate string value when <code>childID</code> 
+     	 is zero. If <code>childId</code> is zero but the AccessibilityImplementation has no content, 
+	 <code>get_accName</code> should return an empty string to prevent the player from falling back to 
+     	 the <code>AccessibilityProperties.name</code> property.</p>
+     	 </li></ul>
+     	 <p>Note that for child elements (if the AccessibilityImplementation can have them), the third case 
+     	 always applies. The <code>get_accName</code> method should be implemented and should 
+     	 return an appropriate string value when <code>childID</code> is nonzero. </p>
+     	 
+     	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">childID</span>:<a href="../../uint.html">uint</a></code> &mdash; An unsigned integer corresponding to one of the component's child elements
+	 as defined by <code>getChildIDArray()</code>.
+	 
+	 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; Name of the component or one of its child elements.
+	 
+	 </td></tr></table><p id="learnMore"><span class="label">Learn more</span></p><div class="seeAlso"><a href="http://msdn.microsoft.com/en-us/library/ms696177(VS.85).aspx" target="_blank">Microsoft Accessibility Developer Center: IAccessible::get_accName</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="AccessibilityImplementation.html#getChildIDArray()" target="">getChildIDArray()</a><br/><a href="AccessibilityProperties.html" target="">flash.accessibility.AccessibilityProperties</a><br/><a href="AccessibilityProperties.html#name" target="">flash.accessibility.AccessibilityProperties.name</a><br/><a href="../../mx/accessibility/AccImpl.html#get_accName()" target="">mx.accessibility.AccImpl.get_accName()</a><br/><a href="../../mx/accessibility/AccImpl.html#getName()" target="">mx.accessibility.AccImpl.getName()</a><br/><a href="../../mx/accessibility/AccImpl.html#getStatusName()" target="">mx.accessibility.AccImpl.getStatusName()</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example shows how this method is implemented in 
+	 the Flex mx.accessibility.AccImpl class,
+	 the base accessibility implementation in Flex.
+	 <div class="listing" version="3.0"><pre>override public function get_accName(childID:uint):String
+     {
+         // Start with the name of the component's parent form 
+          // if the component is contained within a form
+         var accName:String = UIComponentAccImpl.getFormName(master);
+     
+         // If the element requested is the component itself, 
+         // append the value of any assigned accessibilityProperties.name    
+         if (childID == 0 && master.accessibilityProperties 
+             && master.accessibilityProperties.name 
+                 && master.accessibilityProperties.name != "")
+             accName += master.accessibilityProperties.name + " ";
+     
+         // Append the value of the childIDs name 
+     // returned by the component-specific override 
+     // of the mx.accessibility.AccImpl.getName() utility function,
+         // and append the component's status returned by the 
+     // component-specific override of the 
+     // mx.accessibility.AccImpl.getStatusName() utility function
+         accName += getName(childID) + getStatusName();
+     
+     // Return the assembled String if it is neither empty nor null, 
+     // otherwise return null
+         return (accName != null && accName != "") ? accName : null;
+     }</pre></div>
+	 
+	 
+	  </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::2##"><a name="get_accRole()" id="get_accRole()"></a><a name="get_accRole(uint)" id="get_accRole(uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>get_accRole</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function get_accRole(childID:<a href="../../uint.html">uint</a>):<a href="../../uint.html">uint</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 2</td></tr></table><p></p><p></p><p>
+	 MSAA method for returning the system role for the component
+	 that this AccessibilityImplementation represents or for one of its child elements.
+	 System roles are predefined for all the components in MSAA.	 
+	 
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">childID</span>:<a href="../../uint.html">uint</a></code> &mdash; An unsigned integer corresponding to one of the component's
+	 child elements as defined by <code>getChildIDArray()</code>.
+	 
+	 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../uint.html">uint</a></code> &mdash; System role associated with the component. 
+	  
+	 </td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Error.html">Error</a> </code> &mdash; Error code <a href="../../runtimeErrors.html#2143" >2143</a>, AccessibilityImplementation.get_accRole() must be overridden from its default.
+	 </td></tr></table><p id="learnMore"><span class="label">Learn more</span></p><div class="seeAlso"><a href="http://msdn.microsoft.com/en-us/library/ms696113(VS.85).aspx" target="_blank">Microsoft Accessibility Developer Center: IAccessible::get_accRole</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="AccessibilityImplementation.html#getChildIDArray()" target="">getChildIDArray()</a><br/><a href="../../accessibilityImplementationConstants.html" target="">AccessibilityImplementation Constants: Object Role Constants</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::2##"><a name="get_accSelection()" id="get_accSelection()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>get_accSelection</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function get_accSelection():<a href="../../Array.html">Array</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 2</td></tr></table><p></p><p></p><p>
+	 MSAA method for returning an array containing the IDs of all child elements that are selected. 
+	 The returned array may contain zero, one, or more IDs, all unsigned integers.
+	 
+	 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Array.html">Array</a></code> &mdash; An array of the IDs of all child elements that are selected.
+	 
+	 </td></tr></table><p id="learnMore"><span class="label">Learn more</span></p><div class="seeAlso"><a href="http://msdn.microsoft.com/en-us/library/ms696179(VS.85).aspx" target="_blank">Microsoft Accessibility Developer Center: IAccessible::get_accSelection</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="AccessibilityImplementation.html#getChildIDArray()" target="">getChildIDArray()</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example shows how this method is implemented to return the selected childIDs in
+	 the Flex mx.accessibility.ListBaseAccImpl class, the ListBase accessibility implementation.
+	 
+	 <div class="listing" version="3.0"><pre>
+     override public function get_accSelection():Array
+     {
+         var accSelection:Array = [];
+     
+         var selectedIndices:Array = ListBase(master).selectedIndices;
+         
+         var n:int = selectedIndices.length;
+         for (var i:int = 0; i &lt; n; i++)
+         {
+             accSelection[i] = selectedIndices[i] + 1;
+         }
+         
+         return accSelection;
+     }
+     </pre></div>
+	 
+	 </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::2##"><a name="get_accState()" id="get_accState()"></a><a name="get_accState(uint)" id="get_accState(uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>get_accState</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function get_accState(childID:<a href="../../uint.html">uint</a>):<a href="../../uint.html">uint</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 2</td></tr></table><p></p><p></p><p>
+	 IAccessible method for returning the current runtime state of the component that this 
+	 AccessibilityImplementation represents or of one of its child elements.
+	 
+	 <p>This method must return a combination of zero, one, or more of the predefined
+	 <a href="../../accessibilityImplementationConstants.html" >object state constants</a> for components in MSAA. 
+	 When more than one state applies, the state constants should be combined into a bitfield
+	 using <code>|</code>, the bitwise OR operator.</p>
+	 
+	 <p>To indicate that none of the state constants currently applies, this method should return zero.</p>
+	 
+	 <p>You should not need to track or report the STATE_SYSTEM_FOCUSABLE or STATE_SYSTEM_FOCUSED states. 
+	 Flash Player handles these states automatically.</p>
+	 
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">childID</span>:<a href="../../uint.html">uint</a></code> &mdash; An unsigned integer corresponding to one of the component's child elements
+	 as defined by <code>getChildIDArray()</code>.
+	 
+	 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../uint.html">uint</a></code> &mdash; A combination of zero, one, or more of the system state constants. 
+	 Multiple constants are assembled into a bitfield using <code>|</code>, the bitwise OR operator. 
+	 
+	 
+	 </td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Error.html">Error</a> </code> &mdash; Error code <a href="../../runtimeErrors.html#2144" >2144</a>, AccessibilityImplementation.get_accState() must be overridden from its default.
+	 </td></tr></table><p id="learnMore"><span class="label">Learn more</span></p><div class="seeAlso"><a href="http://msdn.microsoft.com/en-us/library/ms696191(VS.85).aspx" target="_blank">Microsoft Accessibility Developer Center: IAccessible::get_accState</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="AccessibilityImplementation.html#getChildIDArray()" target="">getChildIDArray()</a><br/><a href="../../accessibilityImplementationConstants.html" target="">AccessibilityImplementation Constants: Object State Constants</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example shows how this method is implemented to combine 
+	 more than one state constant in 
+	 mx.accessibility.ListBaseAccImpl, the Flex ListBase Accessibility Implementation.
+	 
+	 <div class="listing" version="3.0"><pre>
+     override public function get_accState(childID:uint):uint
+     {
+         var accState:uint = getState(childID);
+     
+         if (childID &gt; 0) 
+         {
+             var listBase:ListBase = ListBase(master);
+     
+             var index:uint = childID - 1;
+     
+             // For returning states (OffScreen and Invisible)
+             // when the list Item is not in the displayed rows.
+             if (index &lt; listBase.verticalScrollPosition ||
+                 index &gt;= listBase.verticalScrollPosition + listBase.rowCount)
+             {
+                 accState |= (STATE_SYSTEM_OFFSCREEN |
+                              STATE_SYSTEM_INVISIBLE);
+             }
+             else
+             {
+                 accState |= STATE_SYSTEM_SELECTABLE;
+     
+                 var item:Object = getItemAt(index);
+     
+                 var renderer:IListItemRenderer =
+                     listBase.itemToItemRenderer(item);
+     
+                 if (renderer != null && listBase.isItemSelected(renderer.data))
+                     accState |= STATE_SYSTEM_SELECTED | STATE_SYSTEM_FOCUSED;
+             }
+         }
+     
+         return accState;
+     }</pre></div>
+	 
+	 </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::2##"><a name="get_accValue()" id="get_accValue()"></a><a name="get_accValue(uint)" id="get_accValue(uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>get_accValue</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function get_accValue(childID:<a href="../../uint.html">uint</a>):<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 2</td></tr></table><p></p><p></p><p>
+	 MSAA method for returning the runtime value of the component that this
+	 AccessibilityImplementation represents or of one of its child elements.
+	 
+	 <p>Implement this method only if your AccessibilityImplementation represents a UI element
+	 that has a value in the MSAA model. Be aware that some UI elements that have an apparent 'value' 
+	 actually expose this value by different means, such as 
+	 <code>get_accName</code> (text, for example), 
+	 <code>get_accState</code> (check boxes, for example), or <code>get_accSelection</code> 
+	 (list boxes, for example).</p>
+	 
+	 <p>If you are implementing <code>get_accValue</code> only for the AccessibilityImplementation itself, or 
+	 only for its child elements, you will need in some cases to indicate that 
+	 there is no concept of value for the particular <code>childID</code> that was passed. 
+	 Do this by simply returning <code>null</code>.</p>
+	 
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">childID</span>:<a href="../../uint.html">uint</a></code> &mdash; An unsigned integer corresponding to one of the component's child elements
+	 as defined by <code>getChildIDArray()</code>.
+	 
+	 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; A string representing the runtime value of the component of of one of its child elements.
+	  
+	 </td></tr></table><p id="learnMore"><span class="label">Learn more</span></p><div class="seeAlso"><a href="http://msdn.microsoft.com/en-us/library/ms697312(VS.85).aspx" target="_blank">Microsoft Accessibility Developer Center: IAccessible::get_accValue</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="AccessibilityImplementation.html#getChildIDArray()" target="">getChildIDArray()</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example shows how this method is implemented to return the appropriate value based on
+	 the component's <code>selectedIndex</code> value in the Flex mx.accessibility.ListBaseAccImpl class,
+	 the ListBase accessibility implementation.
+	 
+	 <div class="listing" version="3.0"><pre>override public function get_accValue(childID:uint):String
+     {
+         var accValue:String;
+         
+         var listBase:ListBase = ListBase(master);
+         
+         var index:int = listBase.selectedIndex;
+         if (childID == 0)
+         {
+             if (index &gt; -1)
+             {
+                 var item:Object = getItemAt(index);
+     
+                 if (item is String)
+                 {
+                     accValue = item + " " + (index + 1) + " of " + listBase.dataProvider.length;
+                 }
+                 else
+                 {
+                     accValue = listBase.itemToLabel(item) + " " + (index + 1) +
+                                " of " + listBase.dataProvider.length;
+                 }
+             }
+         }
+     
+         return accValue;
+     }</pre></div>
+	 
+	 </div></span></div></span><span id="pageFilter"><a name="get_selectionActiveIndex()" id="get_selectionActiveIndex()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>get_selectionActiveIndex</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function get_selectionActiveIndex():<a href="../../specialTypes.html#*">*</a></code><p></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../specialTypes.html#*">*</a></code></td></tr></table></div></span><span id="pageFilter"><a name="get_selectionAnchorIndex()" id="get_selectionAnchorIndex()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>get_selectionAnchorIndex</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function get_selectionAnchorIndex():<a href="../../specialTypes.html#*">*</a></code><p></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../specialTypes.html#*">*</a></code></td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::2##"><a name="getChildIDArray()" id="getChildIDArray()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getChildIDArray</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getChildIDArray():<a href="../../Array.html">Array</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 2</td></tr></table><p></p><p></p><p>
+	 Returns an array containing the unsigned integer IDs of all child elements
+	 in the AccessibilityImplementation. 
+	 
+	 <p>The length of the array may be zero. The IDs in the array should 
+	 appear in the same logical order as the child elements they represent. If your 
+	 AccessibilityImplementation can contain child elements, this method is mandatory; otherwise, do
+	 not implement it.</p>
+	 
+	 <p>In assigning child IDs to your child elements, use any scheme that
+	 preserves uniqueness within each instance of your AccessibilityImplementation. Child IDs need not 
+	 be contiguous, and their ordering need not match the logical ordering of the 
+	 child elements. You should arrange so as to <i>not</i> reuse child IDs; if a child 
+	 element is deleted, its ID should never be used again for the lifetime of 
+	 that AccessibilityImplementation instance. Be aware that, due to implementation choices in the Flash 
+	 player code, undesirable behavior can result if you use child IDs that exceed 
+	 one million.</p>
+	 
+	 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Array.html">Array</a></code> &mdash; Array containing the unsigned integer IDs of all child elements in the AccessibilityImplementation.
+	 
+	 </td></tr></table><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example shows how this method is implemented to return an array
+	 of childIDs in the Flex mx.accessibility.ListBaseAccImpl class, 
+	 the ListBase Accessibility Implementation.
+	 
+	 <div class="listing" version="3.0"><pre>
+     override public function getChildIDArray():Array
+     {
+         var childIDs:Array = [];
+     
+         if (ListBase(master).dataProvider)
+         {
+             var n:uint = ListBase(master).dataProvider.length;
+             for (var i:int = 0; i &lt; n; i++)
+             {
+                 childIDs[i] = i + 1;
+             }
+         }
+         return childIDs;
+     }
+     </pre></div>
+	 
+	 </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::2##"><a name="isLabeledBy()" id="isLabeledBy()"></a><a name="isLabeledBy(flash.geom.Rectangle)" id="isLabeledBy(flash.geom.Rectangle)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>isLabeledBy</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function isLabeledBy(labelBounds:<a href="../../flash/geom/Rectangle.html">Rectangle</a>):<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 2</td></tr></table><p></p><p></p><p>
+	 
+	 Returns <code>true</code> or <code>false</code> to indicate whether a text object having 
+	 a bounding box specified by a <code>x</code>, <code>y</code>, <code>width</code>, and <code>height</code> 
+	 should be considered a label for the component that this AccessibilityImplementation represents. 
+	 
+	 <p>The <code>x</code> and <code>y</code> coordinates are relative to the upper-left corner 
+	 of the component to which the AccessibilityImplementation applies, and may be negative. All coordinates 
+	 are in units of Stage pixels.</p>
+	 
+	 <p>This method allows accessible components to fit into the Flash Player's search 
+	 for automatic labeling relationships, which allow text external to an object 
+	 to supply the object's name. This method is provided because it is expected 
+	 that the criteria for recognizing labels will differ from component to component. 
+	 If you implement this method, you should aim to use geometric criteria similar 
+	 to those in use inside the player code for buttons and textfields. Those criteria
+	 are as follows:</p>
+	 
+	 <p><ul><li>For buttons, any text falling entirely inside the button is considered a label.</li><li>For textfields, any text appearing nearby above and left-aligned, 
+	 or nearby to the left, is considered a label.</li></ul></p>
+	 
+	 <p>If the component that the AccessibilityImplementation represents should never participate in automatic 
+	 labeling relationships, do not implement <code>isLabeledBy</code>. This is equivalent 
+	 to always returning <code>false</code>. One case in which <code>isLabeledBy</code> should 
+	 not be implemented is when the AccessibilityImplementation falls into the "author-assigned name 
+	 within component" case described under <code>get_accName</code> above.</p>
+	 <p>Note that this method is not based on any <b>IAccessible</b> method; it is 
+	 specific to Flash.</p>
+	 
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">labelBounds</span>:<a href="../../flash/geom/Rectangle.html">Rectangle</a></code> &mdash; A Rectangle representing the bounding box of a text object.
+	 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; <code>true</code> or <code>false</code> to indicate whether a text object having the given label bounds should be considered a label for the component that this AccessibilityImplementation represents.
+	 </td></tr></table></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

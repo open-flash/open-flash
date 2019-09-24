@@ -1,0 +1,831 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:9"><meta name="runtime" content="air"><meta name="runtimever" content="air:1.1"><meta name="product" content="flash player"><meta name="productver" content="flash player:9"><meta name="product" content="air"><meta name="productver" content="air:1.1"><meta name="product" content="flex"><meta name="prodver" content="flex:3"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="IResourceManager,mx.resources.IResourceManager,localeChain,addResourceBundle,findResourceBundleWithResource,getBoolean,getBundleNamesForLocale,getClass,getInt,getLocales,getNumber,getObject,getPreferredLocaleChain,getResourceBundle,getString,getStringArray,getUint,initializeLocaleChain,installCompiledResourceBundles,loadResourceModule,removeResourceBundle,removeResourceBundlesForLocale,unloadResourceModule,update"><title>IResourceManager - Adobe ActionScript&reg; 3 (AS3 Flex) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">mx.resources&nbsp;</a><br>
+								<h1 id="classProductName">IResourceManager&nbsp; - AS3 Flex</h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">mx.resources</a></td></tr><tr><td class="classHeaderTableLabel">Interface</td><td class="classSignature">public  interface  IResourceManager extends  <a href="../../flash/events/IEventDispatcher.html">IEventDispatcher</a> </td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p></p>
+  The APIs of the IResourceManager interface 
+  provide localization support for Flex applications.
+ 
+  <p>There are three main concepts involved in localization:
+  locales, resources, and resource bundles.</p>
+ 
+               <p>A locale specifies a language and a country
+  for which your application has been localized.
+  For example, the locale <code>"en_US"</code>
+  specifies English as spoken in the United States.
+  (See the mx.resources.Locale class for more information.)</p>
+ 
+               <p>A resource is a named value that is locale-dependent.
+  For example, your application might have a resource
+  whose name is <code>"OPEN"</code>
+  and whose value for an English locale is <code>"Open"</code>
+  but whose value for a French locale is <code>"Ouvrir"</code>.</p>
+ 
+               <p>A resource bundle is a named group of resources
+  whose values have been localized for a particular locale.
+  A resource bundle is identified by the combination of its
+  <code>bundleName</code> and its <code>locale</code>,
+  and has a <code>content</code> object that contains
+  the name-value pairs for the bundle's resources.
+  See the documentation for mx.resources.IResourceBundle
+  for information about how you typically create resource
+  bundles from properties files.</p>
+ 
+               <p>A single ResourceManager object implementing the IResourceManager
+  interface manages multiple resource bundles, possibly for multiple
+  locales, and provides access to the resources that they contain.
+  For example, you can retrieve a specific resource as a String by calling
+  <code>resourceManager.getString(bundleName, resourceName)</code>.</p>
+ 
+               <p>All classes that extend UIComponent, Formatter, or Validator
+  have a <code>resourceManager</code> property
+  that provides a reference to the object implementing this interface.
+  Other classes can call <code>ResourceManager.getInstance()</code>
+  to obtain this object.</p>
+ 
+               <p>Resource retrieval methods such as <code>getString()</code>
+  search for resources in the locales specified
+  by the <code>localeChain</code> property.
+  By changing this property, you can make your application
+  suddenly use, for example, Japanese rather than English resources.</p>
+ 
+               <p>When your application starts, the ResourceManager is automatically
+  populated with whatever resource bundles were compiled
+  into the application.
+  If you create a code module, by default the resources that its classes
+  need are compiled into the module.
+  When the module is loaded into an application, any bundles that the
+  application does not already have are added to the ResourceManager.</p>
+ 
+               <p>You can compile "resource modules" which have only resources in them,
+  and load them with the <code>loadResourceModule()</code> method
+  of IResourceManager.
+  With resource modules, you can support multiple locales by loading
+  the resources you need at run time rather than compiling them into
+  your application.</p>
+ 
+               <p>Although the ResourceManager is normally populated with resource bundles
+  that were compiled into your application or loaded from modules,
+  you can also programmatically create resource bundles and add them
+  to the ResourceManager yourself with the <code>addResourceBundle()</code>
+  method.</p>
+ 
+            <p></p><p><span class="classHeaderTableLabel">Related API Elements</span></p><div class="seeAlso"><a href="ResourceManager.html" target="">mx.resources.ResourceManager</a><br/><a href="IResourceBundle.html" target="">mx.resources.IResourceBundle</a><br/><a href="ResourceBundle.html" target="">mx.resources.ResourceBundle</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#localeChain" class="signatureLink">localeChain</a> : <a href="../../Array.html">Array</a><div class="summaryTableDescription">
+      An Array of locale Strings, such as [ "en_US" ],
+      which specifies one or more locales to be searched for resources.</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/IEventDispatcher.html#addEventListener()" class="signatureLink">addEventListener</a>(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false, priority:<a href="../../int.html">int</a> = 0, useWeakReference:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	Registers an event listener object with an EventDispatcher object so that the listener
+	receives notification of an event.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/IEventDispatcher.html">IEventDispatcher</a></td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addResourceBundle()" class="signatureLink">addResourceBundle</a>(resourceBundle:<a href="../../mx/resources/IResourceBundle.html">IResourceBundle</a>, useWeakReference:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+      Adds the specified ResourceBundle to the ResourceManager
+      so that its resources can be accessed by ResourceManager
+      methods such as getString().</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/IEventDispatcher.html#dispatchEvent()" class="signatureLink">dispatchEvent</a>(event:<a href="../../flash/events/Event.html">Event</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Dispatches an event into the event flow.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/IEventDispatcher.html">IEventDispatcher</a></td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#findResourceBundleWithResource()" class="signatureLink">findResourceBundleWithResource</a>(bundleName:<a href="../../String.html">String</a>, resourceName:<a href="../../String.html">String</a>):<a href="../../mx/resources/IResourceBundle.html">IResourceBundle</a></div><div class="summaryTableDescription">
+      Searches the locales in the localeChain
+      for the specified resource and returns
+      the first resource bundle in which it is found.</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getBoolean()" class="signatureLink">getBoolean</a>(bundleName:<a href="../../String.html">String</a>, resourceName:<a href="../../String.html">String</a>, locale:<a href="../../String.html">String</a> = null):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+      Gets the value of a specified resource as a Boolean.</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getBundleNamesForLocale()" class="signatureLink">getBundleNamesForLocale</a>(locale:<a href="../../String.html">String</a>):<a href="../../Array.html">Array</a></div><div class="summaryTableDescription">
+      Returns an Array of Strings specifying the bundle names
+      for all ResourceBundle objects that exist in the ResourceManager
+      and that belong to the specified locale.</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getClass()" class="signatureLink">getClass</a>(bundleName:<a href="../../String.html">String</a>, resourceName:<a href="../../String.html">String</a>, locale:<a href="../../String.html">String</a> = null):<a href="../../Class.html">Class</a></div><div class="summaryTableDescription">
+      Gets the value of a specified resource as a Class.</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getInt()" class="signatureLink">getInt</a>(bundleName:<a href="../../String.html">String</a>, resourceName:<a href="../../String.html">String</a>, locale:<a href="../../String.html">String</a> = null):<a href="../../int.html">int</a></div><div class="summaryTableDescription">
+      Gets the value of a specified resource as an int.</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getLocales()" class="signatureLink">getLocales</a>():<a href="../../Array.html">Array</a></div><div class="summaryTableDescription">
+      Returns an Array of Strings specifying all locales for which
+      ResourceBundle objects exist in the ResourceManager.</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getNumber()" class="signatureLink">getNumber</a>(bundleName:<a href="../../String.html">String</a>, resourceName:<a href="../../String.html">String</a>, locale:<a href="../../String.html">String</a> = null):<a href="../../Number.html">Number</a></div><div class="summaryTableDescription">
+      Gets the value of a specified resource as a Number.</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getObject()" class="signatureLink">getObject</a>(bundleName:<a href="../../String.html">String</a>, resourceName:<a href="../../String.html">String</a>, locale:<a href="../../String.html">String</a> = null):<a href="../../specialTypes.html#*">*</a></div><div class="summaryTableDescription">
+      Gets the value of a specified resource as an Object.</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getPreferredLocaleChain()" class="signatureLink">getPreferredLocaleChain</a>():<a href="../../Array.html">Array</a></div><div class="summaryTableDescription">
+      Returns an Array of Strings specifying all locales for which
+      ResourceBundle objects exist in the ResourceManager,
+      ordered using  user preferences as reported by
+      Capabilities.language or
+      Capabilities.languages.</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getResourceBundle()" class="signatureLink">getResourceBundle</a>(locale:<a href="../../String.html">String</a>, bundleName:<a href="../../String.html">String</a>):<a href="../../mx/resources/IResourceBundle.html">IResourceBundle</a></div><div class="summaryTableDescription">
+      Returns a ResourceBundle with the specified locale
+      and bundleName that has been previously added
+      to the ResourceManager with addResourceBundle().</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getString()" class="signatureLink">getString</a>(bundleName:<a href="../../String.html">String</a>, resourceName:<a href="../../String.html">String</a>, parameters:<a href="../../Array.html">Array</a> = null, locale:<a href="../../String.html">String</a> = null):<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+      Gets the value of a specified resource as a String,
+      after substituting specified values for placeholders.</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getStringArray()" class="signatureLink">getStringArray</a>(bundleName:<a href="../../String.html">String</a>, resourceName:<a href="../../String.html">String</a>, locale:<a href="../../String.html">String</a> = null):<a href="../../Array.html">Array</a></div><div class="summaryTableDescription">
+      Gets the value of a specified resource as an Array of Strings.</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getUint()" class="signatureLink">getUint</a>(bundleName:<a href="../../String.html">String</a>, resourceName:<a href="../../String.html">String</a>, locale:<a href="../../String.html">String</a> = null):<a href="../../uint.html">uint</a></div><div class="summaryTableDescription">
+      Gets the value of a specified resource as a uint.</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/IEventDispatcher.html#hasEventListener()" class="signatureLink">hasEventListener</a>(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Checks whether the EventDispatcher object has any listeners registered for a specific type 
+	of event.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/IEventDispatcher.html">IEventDispatcher</a></td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#initializeLocaleChain()" class="signatureLink">initializeLocaleChain</a>(compiledLocales:<a href="../../Array.html">Array</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Initializes the localeChain property of the ResourceManager
+     using an algorithm that compares the operating system's list of user-preferred
+     locales with the list of locales available in the SWF.</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#installCompiledResourceBundles()" class="signatureLink">installCompiledResourceBundles</a>(applicationDomain:<a href="../../flash/system/ApplicationDomain.html">ApplicationDomain</a>, locales:<a href="../../Array.html">Array</a>, bundleNames:<a href="../../Array.html">Array</a>, useWeakReference:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../Array.html">Array</a></div><div class="summaryTableDescription">
+     Creates instances of all ResourceBundle subclasses that were compiled into the SWF
+     and adds them to the ResourceManager.</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#loadResourceModule()" class="signatureLink">loadResourceModule</a>(url:<a href="../../String.html">String</a>, update:<a href="../../Boolean.html">Boolean</a> = true, applicationDomain:<a href="../../flash/system/ApplicationDomain.html">ApplicationDomain</a> = null, securityDomain:<a href="../../flash/system/SecurityDomain.html">SecurityDomain</a> = null):<a href="../../flash/events/IEventDispatcher.html">IEventDispatcher</a></div><div class="summaryTableDescription">
+      Begins loading a resource module containing resource bundles.</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/IEventDispatcher.html#removeEventListener()" class="signatureLink">removeEventListener</a>(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	Removes a listener from the EventDispatcher object.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/IEventDispatcher.html">IEventDispatcher</a></td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeResourceBundle()" class="signatureLink">removeResourceBundle</a>(locale:<a href="../../String.html">String</a>, bundleName:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+      Removes the specified ResourceBundle from the ResourceManager
+      so that its resources can no longer be accessed by ResourceManager
+      methods such as getString().</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeResourceBundlesForLocale()" class="signatureLink">removeResourceBundlesForLocale</a>(locale:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+      Removes all ResourceBundles for the specified locale
+      from the ResourceManager so that their resources
+      can no longer be accessed by ResourceManager methods
+      such as getString().</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#unloadResourceModule()" class="signatureLink">unloadResourceModule</a>(url:<a href="../../String.html">String</a>, update:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+      Begins unloading a loaded resource module.</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#update()" class="signatureLink">update</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+      Dispatches a change event from the
+      ResourceManager.</div></td><td class="summaryTableOwnerCol">IResourceManager</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/IEventDispatcher.html#willTrigger()" class="signatureLink">willTrigger</a>(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Checks whether an event listener is registered with this EventDispatcher object or any of its ancestors for the specified event type.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/IEventDispatcher.html">IEventDispatcher</a></td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="propertyDetail" id="propertyDetail"></a><a name="localeChain" id="localeChain"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>localeChain</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>localeChain:<a href="../../Array.html">Array</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      An Array of locale Strings, such as <code>[ "en_US" ]</code>,
+      which specifies one or more locales to be searched for resources.
+      
+      <p>When you call the ResourceManager methods <code>getObject()</code>,
+      <code>getString()</code>, <code>getStringArray()</code>,
+      <code>getNumber()</code>, <code>getInt()</code>,
+      <code>getUint()</code>, <code>getBoolean()</code>, or
+      <code>getClass()</code> to get the value of a resource,
+      you specify a bundle name and a resource name,
+      but not a locale.
+      The ResourceManager starts with the first locale in the
+      <code>localeChain</code> and looks for a ResourceBundle
+      with the specified bundle name for that locale.
+      If such a ResourceBundle exists, and the specified resource
+      exists in it, then the value of that resource is returned.
+      Otherwise, the ResourceManager proceeds on to the other
+      locales in the <code>localeChain</code>.</p>
+     
+      <p>This scheme makes it possible to have locales that do not
+      necessarily contain a complete set of localized resources.
+      For example, if you are localizing your application for
+      Indian English rather than U.S. English, you need only
+      supply resources for the <code>en_IN</code> locale in which the
+      Indian spelling or usage differs from that in the U.S.,
+      and then set the <code>localeChain</code> property
+      to <code>[ "en_IN", "en_US" ]</code>.</p>
+     
+      <p>Many framework classes assume that they can always
+      obtain, from some locale, the resources that they expect,
+      and they will throw errors if they cannot do so.
+      Therefore, you must ensure that the <code>localeChain</code>
+      always contains a complete set of resources.
+      Unless you have done a complete localization of all the
+      framework's resources as well as your own application's
+      resources, you can keep the <code>"en_US"</code> locale
+      at the end of your <code>localeChain</code> to ensure this.</p>
+     
+      <p>Setting this property causes the ResourceManager to dispatch
+      a <code>"change"</code> Event.</p>
+      
+      </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get localeChain():<a href="../../Array.html">Array</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set localeChain(value:<a href="../../Array.html">Array</a>):<a href="../../specialTypes.html#void">void</a></code><br/></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="addResourceBundle()" id="addResourceBundle()"></a><a name="addResourceBundle(mx.resources.IResourceBundle,Boolean)" id="addResourceBundle(mx.resources.IResourceBundle,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>addResourceBundle</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function addResourceBundle(resourceBundle:<a href="../../mx/resources/IResourceBundle.html">IResourceBundle</a>, useWeakReference:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Adds the specified ResourceBundle to the ResourceManager
+      so that its resources can be accessed by ResourceManager
+      methods such as <code>getString()</code>.
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">resourceBundle</span>:<a href="../../mx/resources/IResourceBundle.html">IResourceBundle</a></code> &mdash; The resource bundle to be added.
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">useWeakReference</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; Determines if the ResourceManager
+      keeps a weak reference to the resource bundle.
+      If <code>useWeakReference</code> is <code>true</code> then the ResourceManager 
+      provides a weak reference to the resource bundle. When the 
+      caller chooses to use a weak reference it becomes the 
+      caller's responsibility to keep a hard reference the resource bundle 
+      so it is not garbaged collected prematurely. If <code>useWeakReference</code> is
+      <code>false</code>, the ResourceManager keeps a hard reference to the resource
+      bundle so it will not be garbage collected.
+      
+      <p>When a Flex sub-application or module automatically adds its compiled
+      resource bundles to the ResourceManager, it calls the <code>addResourceBundle()</code>
+      with <code>useWeakReference</code> set to <code>true</code>, to avoid becoming pinned in memory.
+      If you create resource bundles at runtime in a sub-application or 
+      module, you should do the same. You then need to hold on to these 
+      resource bundles with a hard reference to prevent them from being 
+      garbage collected.</p>
+      
+      </td></tr></table></p></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="findResourceBundleWithResource()" id="findResourceBundleWithResource()"></a><a name="findResourceBundleWithResource(String,String)" id="findResourceBundleWithResource(String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>findResourceBundleWithResource</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function findResourceBundleWithResource(bundleName:<a href="../../String.html">String</a>, resourceName:<a href="../../String.html">String</a>):<a href="../../mx/resources/IResourceBundle.html">IResourceBundle</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Searches the locales in the <code>localeChain</code>
+      for the specified resource and returns
+      the first resource bundle in which it is found.
+      If the resource isn't found, this method returns <code>null</code>.
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">bundleName</span>:<a href="../../String.html">String</a></code> &mdash; A bundle name such as <code>"MyResources"</code>.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">resourceName</span>:<a href="../../String.html">String</a></code> &mdash; The name of a resource in the resource bundle.
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../mx/resources/IResourceBundle.html">IResourceBundle</a></code> &mdash; The first ResourceBundle in the <code>localeChain</code>
+      that contains the specified resource, or <code>null</code>.
+      
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="getBoolean()" id="getBoolean()"></a><a name="getBoolean(String,String,String)" id="getBoolean(String,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getBoolean</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getBoolean(bundleName:<a href="../../String.html">String</a>, resourceName:<a href="../../String.html">String</a>, locale:<a href="../../String.html">String</a> = null):<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Gets the value of a specified resource as a Boolean.
+     
+      <p>This method first calls <code>getString()</code>
+      and converts the result to lowercase.
+      It then returns <code>true</code>
+      if the result was <code>"true"</code>.
+      and <code>false</code> otherwise.</p>
+     
+      <p>If the specified resource is not found,
+      this method returns <code>false</code>.</p>
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">bundleName</span>:<a href="../../String.html">String</a></code> &mdash; The name of a resource bundle.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">resourceName</span>:<a href="../../String.html">String</a></code> &mdash; The name of a resource in the resource bundle.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">locale</span>:<a href="../../String.html">String</a></code> (default = <code>null</code>)<code></code> &mdash; A specific locale to be used for the lookup,
+      or <code>null</code> to search all locales
+      in the <code>localeChain</code>.
+      This parameter is optional and defaults to <code>null</code>;
+      you should seldom need to specify it.
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; The resource value, as a Boolean,
+      or <code>false</code> if it is not found.
+      
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="getBundleNamesForLocale()" id="getBundleNamesForLocale()"></a><a name="getBundleNamesForLocale(String)" id="getBundleNamesForLocale(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getBundleNamesForLocale</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getBundleNamesForLocale(locale:<a href="../../String.html">String</a>):<a href="../../Array.html">Array</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Returns an Array of Strings specifying the bundle names
+      for all ResourceBundle objects that exist in the ResourceManager
+      and that belong to the specified locale.
+     
+      <p>The order of bundle names in this Array is not specified.</p>
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">locale</span>:<a href="../../String.html">String</a></code> &mdash; A locale string such as <code>"en_US"</code>.
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Array.html">Array</a></code> &mdash; An Array of bundle names.
+     
+      </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="IResourceBundle.html" target="">mx.resources.IResourceBundle</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="getClass()" id="getClass()"></a><a name="getClass(String,String,String)" id="getClass(String,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getClass</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getClass(bundleName:<a href="../../String.html">String</a>, resourceName:<a href="../../String.html">String</a>, locale:<a href="../../String.html">String</a> = null):<a href="../../Class.html">Class</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Gets the value of a specified resource as a Class.
+     
+      <p>This method calls <code>getObject()</code>
+      and coerces it to type Class using the <code>as</code> operator.
+      The result will be <code>null</code> if the resource value
+      was not a class reference.
+      It is useful if you have written a lines such as</p>
+     
+      <pre>
+      IMAGE=Embed("image.jpg")
+      BUTTON_SKIN=ClassReference("skins.ButtonSkin_en_US")
+      </pre>
+     
+      <p>in a properties file and want to obtain
+      the Class that the <code>Embed()</code>
+      or <code>ClassReference()</code> directive produced.</p> 
+     
+      <p>If the specified resource is not found,
+      this method returns <code>null</code>.</p>
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">bundleName</span>:<a href="../../String.html">String</a></code> &mdash; The name of a resource bundle.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">resourceName</span>:<a href="../../String.html">String</a></code> &mdash; The name of a resource in the resource bundle.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">locale</span>:<a href="../../String.html">String</a></code> (default = <code>null</code>)<code></code> &mdash; A specific locale to be used for the lookup,
+      or <code>null</code> to search all locales
+      in the <code>localeChain</code>.
+      This parameter is optional and defaults to <code>null</code>;
+      you should seldom need to specify it.
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Class.html">Class</a></code> &mdash; The resource value, as a <code>Class</code>,
+      or <code>null</code> if it is not found.
+      
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="getInt()" id="getInt()"></a><a name="getInt(String,String,String)" id="getInt(String,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getInt</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getInt(bundleName:<a href="../../String.html">String</a>, resourceName:<a href="../../String.html">String</a>, locale:<a href="../../String.html">String</a> = null):<a href="../../int.html">int</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Gets the value of a specified resource as an int.
+     
+      <p>This method calls <code>getObject()</code>
+      and casts the result to an int.
+      It is useful if you have written a line such as:</p>
+     
+      <pre>
+      MINIMUM=5
+      </pre>
+     
+      <p>in a properties file and want to obtain the value
+      5 rather than <code>"5"</code>.</p> 
+     
+      <p>If the specified resource is not found,
+      this method returns 0.</p>
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">bundleName</span>:<a href="../../String.html">String</a></code> &mdash; The name of a resource bundle.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">resourceName</span>:<a href="../../String.html">String</a></code> &mdash; The name of a resource in the resource bundle.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">locale</span>:<a href="../../String.html">String</a></code> (default = <code>null</code>)<code></code> &mdash; A specific locale to be used for the lookup,
+      or <code>null</code> to search all locales
+      in the <code>localeChain</code>.
+      This parameter is optional and defaults to <code>null</code>;
+      you should seldom need to specify it.
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../int.html">int</a></code> &mdash; The resource value, as an int,
+      or 0 if it is not found.
+      
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="getLocales()" id="getLocales()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getLocales</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getLocales():<a href="../../Array.html">Array</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Returns an Array of Strings specifying all locales for which
+      ResourceBundle objects exist in the ResourceManager.
+     
+      <p>The order of locales in this array is not specified.</p>
+     
+      </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Array.html">Array</a></code> &mdash; An Array of locale Strings.
+      
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="getNumber()" id="getNumber()"></a><a name="getNumber(String,String,String)" id="getNumber(String,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getNumber</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getNumber(bundleName:<a href="../../String.html">String</a>, resourceName:<a href="../../String.html">String</a>, locale:<a href="../../String.html">String</a> = null):<a href="../../Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Gets the value of a specified resource as a Number.
+     
+      <p>This method calls <code>getObject()</code>
+      and casts the result to a Number.
+      It is useful if you have written a line such as:</p>
+     
+      <pre>
+      LONGITUDE=170.3
+      </pre>
+     
+      <p>in a properties file and want to obtain the value
+      170.3 rather than <code>"170.3"</code>.</p> 
+     
+      <p>If the specified resource is not found,
+      this method returns <code>NaN</code>.</p>
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">bundleName</span>:<a href="../../String.html">String</a></code> &mdash; The name of a resource bundle.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">resourceName</span>:<a href="../../String.html">String</a></code> &mdash; The name of a resource in the resource bundle.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">locale</span>:<a href="../../String.html">String</a></code> (default = <code>null</code>)<code></code> &mdash; A specific locale to be used for the lookup,
+      or <code>null</code> to search all locales
+      in the <code>localeChain</code>.
+      This parameter is optional and defaults to <code>null</code>;
+      you should seldom need to specify it.
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Number.html">Number</a></code> &mdash; The resource value, as a Number,
+      or <code>NaN</code> if it is not found.
+      
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="getObject()" id="getObject()"></a><a name="getObject(String,String,String)" id="getObject(String,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getObject</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getObject(bundleName:<a href="../../String.html">String</a>, resourceName:<a href="../../String.html">String</a>, locale:<a href="../../String.html">String</a> = null):<a href="../../specialTypes.html#*">*</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Gets the value of a specified resource as an Object.
+     
+      <p>The value is returned exactly as it is stored
+      in the <code>content</code> Object of the ResourceBundle,
+      with no conversion.
+      If the resource was compiled from a properties files,
+      the resource value in the <code>content</code> Object 
+      is always a String unless you used the <code>Embed()</code>
+      or <code>ClassReference()</code> directive, in which case
+      it is a Class.
+      Use the <code>getString()</code>, <code>getStringArray()</code>, 
+      <code>getNumber()</code>, <code>getInt()</code>
+      <code>getUint()</code>, <code>getBoolean()</code>, and
+      <code>getClass()</code> methods to convert the value
+      to more specific types.</p>
+     
+      <p>If the specified resource is not found,
+      this method returns <code>undefined</code>.</p>
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">bundleName</span>:<a href="../../String.html">String</a></code> &mdash; The name of a resource bundle.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">resourceName</span>:<a href="../../String.html">String</a></code> &mdash; The name of a resource in the resource bundle.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">locale</span>:<a href="../../String.html">String</a></code> (default = <code>null</code>)<code></code> &mdash; A specific locale to be used for the lookup,
+      or <code>null</code> to search all locales
+      in the <code>localeChain</code>.
+      This parameter is optional and defaults to <code>null</code>;
+      you should seldom need to specify it.
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../specialTypes.html#*">*</a></code> &mdash; The resource value, exactly as it is stored
+      in the <code>content</code> Object,
+      or <code>undefined</code> if the resource is not found.
+      
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="getPreferredLocaleChain()" id="getPreferredLocaleChain()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getPreferredLocaleChain</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getPreferredLocaleChain():<a href="../../Array.html">Array</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Returns an Array of Strings specifying all locales for which
+      ResourceBundle objects exist in the ResourceManager,
+      ordered using  user preferences as reported by
+      <code>Capabilities.language</code> or
+      <code>Capabilities.languages</code>.
+     
+      </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Array.html">Array</a></code> &mdash; An Array of locale Strings.
+      
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="getResourceBundle()" id="getResourceBundle()"></a><a name="getResourceBundle(String,String)" id="getResourceBundle(String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getResourceBundle</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getResourceBundle(locale:<a href="../../String.html">String</a>, bundleName:<a href="../../String.html">String</a>):<a href="../../mx/resources/IResourceBundle.html">IResourceBundle</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Returns a ResourceBundle with the specified <code>locale</code>
+      and <code>bundleName</code> that has been previously added
+      to the ResourceManager with <code>addResourceBundle()</code>.
+      If no such ResourceBundle exists, this method returns <code>null</code>.
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">locale</span>:<a href="../../String.html">String</a></code> &mdash; A locale string such as <code>"en_US"</code>.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">bundleName</span>:<a href="../../String.html">String</a></code> &mdash; A bundle name such as <code>"MyResources"</code>.
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../mx/resources/IResourceBundle.html">IResourceBundle</a></code> &mdash; The ResourceBundle with the specified <code>locale</code>
+      and <code>bundleName</code> if one exists; otherwise <code>null</code>.
+     
+      </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="IResourceBundle.html" target="">mx.resources.IResourceBundle</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="getString()" id="getString()"></a><a name="getString(String,String,Array,String)" id="getString(String,String,Array,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getString</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getString(bundleName:<a href="../../String.html">String</a>, resourceName:<a href="../../String.html">String</a>, parameters:<a href="../../Array.html">Array</a> = null, locale:<a href="../../String.html">String</a> = null):<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Gets the value of a specified resource as a String,
+      after substituting specified values for placeholders.
+     
+      <p>This method calls <code>getObject()</code>
+      and then casts the result to a String.</p>
+     
+      <p>If a <code>parameters</code> Array is passed to this method,
+      the parameters in it are converted to Strings
+      and then substituted, in order, for the placeholders
+      <code>"{0}"</code>, <code>"{1}"</code>, and so on, in the String
+      before it is returned.</p>
+     
+      <p>If the specified resource is not found,
+      this method returns <code>null</code>.</p>
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">bundleName</span>:<a href="../../String.html">String</a></code> &mdash; The name of a resource bundle.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">resourceName</span>:<a href="../../String.html">String</a></code> &mdash; The name of a resource in the resource bundle.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">parameters</span>:<a href="../../Array.html">Array</a></code> (default = <code>null</code>)<code></code> &mdash; An Array of parameters that are
+      substituted for the placeholders.
+      Each parameter is converted to a String with the <code>toString()</code> method
+      before being substituted.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">locale</span>:<a href="../../String.html">String</a></code> (default = <code>null</code>)<code></code> &mdash; A specific locale to be used for the lookup,
+      or <code>null</code> to search all locales
+      in the <code>localeChain</code>.
+      This parameter is optional and defaults to <code>null</code>;
+      you should seldom need to specify it.
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; The resource value, as a String,
+      or <code>null</code> if it is not found.
+      
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="getStringArray()" id="getStringArray()"></a><a name="getStringArray(String,String,String)" id="getStringArray(String,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getStringArray</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getStringArray(bundleName:<a href="../../String.html">String</a>, resourceName:<a href="../../String.html">String</a>, locale:<a href="../../String.html">String</a> = null):<a href="../../Array.html">Array</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Gets the value of a specified resource as an Array of Strings.
+     
+      <p>This method assumes that the resource value is a String
+      containing a comma-separated list of items.
+      It calls the <code>getString()</code> method, splits the String
+      into items at the commas, and trims white space
+      before and after each item.
+      It is useful if you have written a line such as:</p>
+     
+      <pre>
+      COUNTRIES=India, China, Japan
+      </pre>
+     
+      <p>in a properties file and you want to obtain the value
+      <code>[ "India", "China", "Japan" ]</code>
+      rather than the value <code>"India, China, Japan"</code>.</p> 
+     
+      <p>If the specified resource is not found,
+      this method returns <code>null</code>.</p>
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">bundleName</span>:<a href="../../String.html">String</a></code> &mdash; The name of a resource bundle.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">resourceName</span>:<a href="../../String.html">String</a></code> &mdash; The name of a resource in the resource bundle.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">locale</span>:<a href="../../String.html">String</a></code> (default = <code>null</code>)<code></code> &mdash; A specific locale to be used for the lookup,
+      or <code>null</code> to search all locales
+      in the <code>localeChain</code>.
+      This parameter is optional and defaults to <code>null</code>;
+      you should seldom need to specify it.
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Array.html">Array</a></code> &mdash; The resource value, as an Array of Strings,
+      or <code>null</code> if it is not found.
+      
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="getUint()" id="getUint()"></a><a name="getUint(String,String,String)" id="getUint(String,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getUint</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getUint(bundleName:<a href="../../String.html">String</a>, resourceName:<a href="../../String.html">String</a>, locale:<a href="../../String.html">String</a> = null):<a href="../../uint.html">uint</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Gets the value of a specified resource as a uint.
+     
+      <p>This method calls the <code>getObject()</code> method
+      and casts the result to a uint.
+      It is useful if you have written a line such as:</p>
+     
+      <pre>
+      MINIMUM=5
+      </pre>
+     
+      <p>in a properties file and want to obtain the value
+      5 rather than <code>"5"</code>.</p> 
+     
+      <p>If the specified resource is not found,
+      this method returns 0.</p>
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">bundleName</span>:<a href="../../String.html">String</a></code> &mdash; The name of a resource bundle.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">resourceName</span>:<a href="../../String.html">String</a></code> &mdash; The name of a resource in the resource bundle.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">locale</span>:<a href="../../String.html">String</a></code> (default = <code>null</code>)<code></code> &mdash; A specific locale to be used for the lookup,
+      or <code>null</code> to search all locales
+      in the <code>localeChain</code>.
+      This parameter is optional and defaults to <code>null</code>;
+      you should seldom need to specify it.
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../uint.html">uint</a></code> &mdash; The resource value, as a uint,
+      or 0 if it is not found.
+      
+      </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="initializeLocaleChain()" id="initializeLocaleChain()"></a><a name="initializeLocaleChain(Array)" id="initializeLocaleChain(Array)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>initializeLocaleChain</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function initializeLocaleChain(compiledLocales:<a href="../../Array.html">Array</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+     Initializes the <code>localeChain</code> property of the ResourceManager
+     using an algorithm that compares the operating system's list of user-preferred
+     locales with the list of locales available in the SWF.
+    
+     <p>For example, if the user has indicated in the operating system that she
+     prefers French, and the SWF was compiled for the locales en_US, fr_FR, and de_DE,
+     then the <code>localeChain</code> will be set so that the first locale in it
+     is fr_FR.</p>
+    
+     <p>This method is used only by classes that implement the IFlexModuleFactory interface.</p>
+    
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">compiledLocales</span>:<a href="../../Array.html">Array</a></code> &mdash; An Array of Strings specifying the locales
+     for which the SWF was compiled.
+    
+     </td></tr></table></p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../mx/core/IFlexModuleFactory.html" target="">mx.core.IFlexModuleFactory</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="installCompiledResourceBundles()" id="installCompiledResourceBundles()"></a><a name="installCompiledResourceBundles(flash.system.ApplicationDomain,Array,Array,Boolean)" id="installCompiledResourceBundles(flash.system.ApplicationDomain,Array,Array,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>installCompiledResourceBundles</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function installCompiledResourceBundles(applicationDomain:<a href="../../flash/system/ApplicationDomain.html">ApplicationDomain</a>, locales:<a href="../../Array.html">Array</a>, bundleNames:<a href="../../Array.html">Array</a>, useWeakReference:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../Array.html">Array</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+     Creates instances of all ResourceBundle subclasses that were compiled into the SWF
+     and adds them to the ResourceManager.
+    
+     <p>For example, if the <code>locales</code> parameter is [ "en_US", "ja_JP" ]
+     and the <code>bundleNames</code> parameter is [ "core", "controls" ],
+     then four resource bundles will be installed.</p>
+    
+     <p>This method is used only by classes that implement the IFlexModuleFactory interface.</p>
+    
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">applicationDomain</span>:<a href="../../flash/system/ApplicationDomain.html">ApplicationDomain</a></code> &mdash;  The ApplicationDomain that is used to look up the resource bundle
+     classes by name.
+    
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">locales</span>:<a href="../../Array.html">Array</a></code> &mdash; An Array of Strings that specify the locales for which the SWF was compiled.
+    
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">bundleNames</span>:<a href="../../Array.html">Array</a></code> &mdash; An Array of Strings that specify the names of the resource bundles
+     that were compiled into the SWF.
+    
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">useWeakReference</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; A flag that specifyies whether the resource bundles should be
+     intalled into the ResourceManager using a weak reference.
+    
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Array.html">Array</a></code> &mdash; An Array of the ResourceBundle instances that were created
+     and added to the ResourceManager.
+      
+     </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../mx/core/IFlexModuleFactory.html" target="">mx.core.IFlexModuleFactory</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="loadResourceModule()" id="loadResourceModule()"></a><a name="loadResourceModule(String,Boolean,flash.system.ApplicationDomain,flash.system.SecurityDomain)" id="loadResourceModule(String,Boolean,flash.system.ApplicationDomain,flash.system.SecurityDomain)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>loadResourceModule</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function loadResourceModule(url:<a href="../../String.html">String</a>, update:<a href="../../Boolean.html">Boolean</a> = true, applicationDomain:<a href="../../flash/system/ApplicationDomain.html">ApplicationDomain</a> = null, securityDomain:<a href="../../flash/system/SecurityDomain.html">SecurityDomain</a> = null):<a href="../../flash/events/IEventDispatcher.html">IEventDispatcher</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Begins loading a resource module containing resource bundles.
+     
+      <p>Each call to this method returns a new event-dispatching object
+      that you can use to learn how the loading is progressing
+      and whether it completes successfully or results in an error.
+      This object dispatches <code>ResourceEvent.PROGRESS</code>,
+      <code>ResourceEvent.COMPLETE</code>, and
+      <code>ResourceEvent.ERROR</code> events.</p>
+     
+      <p>When the module has been loaded, the resource bundles
+      are added to the ResourceManager, but the <code>localeChain</code>
+      is left unchanged.
+      If the <code>update</code> parameter is <code>true</code>,
+      the <code>update()</code> method will be called.</p>
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">url</span>:<a href="../../String.html">String</a></code> &mdash; The URL from which to load the resource module.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">update</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>true</code>)<code></code> &mdash; Whether to call
+      the <code>update()</code> method when the module finishes loading.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">applicationDomain</span>:<a href="../../flash/system/ApplicationDomain.html">ApplicationDomain</a></code> (default = <code>null</code>)<code></code> &mdash; The ApplicationDomain passed to the
+      <code>load()</code> method of the IModuleInfo class
+      that loads the resource module.
+      This parameter is optional and defaults to <code>null</code>.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">securityDomain</span>:<a href="../../flash/system/SecurityDomain.html">SecurityDomain</a></code> (default = <code>null</code>)<code></code> &mdash; The SecurityDomain passed to the
+      <code>load()</code> method of the IModuleInfo class 
+      that loads the resource module.
+      This parameter is optional and defaults to <code>null</code>.
+     
+      </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/events/IEventDispatcher.html">IEventDispatcher</a></code> &mdash; An object that is associated with this particular load operation
+      that dispatches <code>ResourceEvent.PROGRESS</code>,
+      <code>ResourceEvent.COMPLETE</code>, and
+      <code>ResourceEvent.ERROR</code> events.
+     
+      </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../mx/events/ResourceEvent.html" target="">mx.events.ResourceEvent</a><br/><a href="IResourceManager.html#update()" target="">mx.resources.IResourceManager.update()</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="removeResourceBundle()" id="removeResourceBundle()"></a><a name="removeResourceBundle(String,String)" id="removeResourceBundle(String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>removeResourceBundle</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeResourceBundle(locale:<a href="../../String.html">String</a>, bundleName:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Removes the specified ResourceBundle from the ResourceManager
+      so that its resources can no longer be accessed by ResourceManager
+      methods such as <code>getString()</code>.
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">locale</span>:<a href="../../String.html">String</a></code> &mdash; A locale string such as <code>"en_US"</code>.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">bundleName</span>:<a href="../../String.html">String</a></code> &mdash; A bundle name such as <code>"MyResources"</code>.
+     
+      </td></tr></table></p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="IResourceBundle.html" target="">mx.resources.IResourceBundle</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="removeResourceBundlesForLocale()" id="removeResourceBundlesForLocale()"></a><a name="removeResourceBundlesForLocale(String)" id="removeResourceBundlesForLocale(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>removeResourceBundlesForLocale</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeResourceBundlesForLocale(locale:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Removes all ResourceBundles for the specified locale
+      from the ResourceManager so that their resources
+      can no longer be accessed by ResourceManager methods
+      such as <code>getString()</code>.
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">locale</span>:<a href="../../String.html">String</a></code> &mdash; A locale string such as <code>"en_US"</code>.
+     
+      </td></tr></table></p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="IResourceBundle.html" target="">mx.resources.IResourceBundle</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="unloadResourceModule()" id="unloadResourceModule()"></a><a name="unloadResourceModule(String,Boolean)" id="unloadResourceModule(String,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>unloadResourceModule</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function unloadResourceModule(url:<a href="../../String.html">String</a>, update:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Begins unloading a loaded resource module.
+     
+      <p>When the module is unloaded, its resource bundles
+      are removed from the ResourceManager, but the <code>localeChain</code>
+      is left unchanged.
+      If the <code>update</code> parameter is <code>true</code>,
+      the <code>update()</code> method will be called.</p>
+     
+      </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">url</span>:<a href="../../String.html">String</a></code> &mdash; The URL that was used to load the resource module.
+     
+      </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">update</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>true</code>)<code></code> &mdash; Whether to call
+      the <code>update()</code> method when the module finishes unloading.
+      
+      </td></tr></table></p></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><a name="update()" id="update()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>update</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function update():<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flex 3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.1</td></tr></table><p></p><p></p><p>
+      Dispatches a <code>change</code> event from the
+      ResourceManager.
+     
+      <p>This causes binding expressions to re-evaluate
+      if they involve the ResourceManager methods
+      <code>getObject()</code>, <code>getString()</code>, 
+      <code>getStringArray()</code>, <code>getNumber()</code>, 
+      <code>getInt()</code>, <code>getUint()</code>, 
+      <code>getBoolean()</code>, or <code>getClass()</code>.</p>
+     
+      <p>This also causes the <code>resourcesChanged()</code> method
+      of a UIComponent, Formatter, or Validator to execute.
+      Many components implement this method to update
+      their state based on the latest resources.</p>
+      
+      </p></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

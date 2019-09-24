@@ -1,0 +1,637 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:10"><meta name="runtime" content="air"><meta name="runtimever" content="air:1.0"><meta name="product" content="flash player"><meta name="productver" content="flash player:10"><meta name="product" content="air"><meta name="productver" content="air:1.0"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="Clipboard,flash.desktop.Clipboard,formats,generalClipboard,supportsFilePromise,clear,clearData,getData,hasFormat,setData,setDataHandler"><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" src="../../AC_OETags.js" type="text/javascript"></script><title>Clipboard - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">flash.desktop&nbsp;</a><br>
+								<h1 id="classProductName">Clipboard&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">flash.desktop</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  Clipboard</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Clipboard  <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../Object.html">Object</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.0</td></tr></table><p></p><p></p><p></p>
+ The Clipboard class provides a container for transferring data and objects through the clipboard. 
+ The operating system clipboard can be accessed through the static <code>generalClipboard</code> property.
+ 
+ <p>A Clipboard object can contain the same information in more than one format. 
+ By supplying information in multiple formats, you increase the chances that another 
+ application will be able to use that information. Add data to a Clipboard object 
+ with the <code>setData()</code> or <code>setDataHandler()</code> method.</p> 
+ 
+               <p>The standard formats are:</p>
+               <ul>
+                  <li>BITMAP_FORMAT: a BitmapData object (AIR only)</li>
+                  <li>FILE_LIST_FORMAT: an array of File objects (AIR only)</li>
+                  <li>HTML_FORMAT: HTML-formatted string data</li>
+                  <li>TEXT_FORMAT: string data</li>
+                  <li>RICH_TEXT_FORMAT: a ByteArray containing Rich Text Format data</li>
+                  <li>URL_FORMAT: a URL string (AIR only)</li>
+               </ul>
+               <p>These constants for the names of the standard formats are defined in the ClipboardFormats class.</p>
+ 
+               <p>When a transfer to or from the operating system occurs,
+ the standard formats are automatically translated between 
+ <span>ActionScript</span> data types and the native operating system clipboard types.</p>
+ 
+               <p>You can use application-defined formats to add 
+ <span>ActionScript</span> objects to a 
+ Clipboard object. If an object is serializable, both a reference and a clone 
+ of the object can be made available. Object references are valid only within the 
+ originating application.</p>
+ 
+               <p>When it is computationally expensive to convert the information to be transferred into a 
+ particular format, you can supply the name of a function that performs the conversion. 
+ The function is called if and only if that format is read by the receiving component or application. 
+ Add a deferred rendering function to a Clipboard object with the  <code>setDataHandler()</code> method. 
+ Note that in some cases, 
+ the operating system calls the function before a drop occurs. For example, when you use a handler function to 
+ provide the data for a file dragged from an AIR application to the file system, the operating 
+ system calls the data handler function as soon as the drag gesture leaves the AIR application&mdash;typically resulting 
+ in an undesireable pause as the file data is downloaded or created.</p>
+ 
+               <p>
+                  <b>Note for AIR applications:</b> The clipboard object referenced by the event objects dispatched for HTML 
+ drag-and-drop and copy-and-paste events are not the same type as the AIR Clipboard object.
+ The JavaScript clipboard object is described in the AIR developer's guide.</p>
+ 
+               <p>
+                  <b>Note for Flash Player applications:</b> In Flash Player 10, a paste operation from the clipboard first
+ requires a user event (such as a keyboard shortcut for the Paste command or a mouse click on the Paste command
+ in a context menu). <code>Clipboard.getData()</code>
+ will return the contents of the clipboard only if the InteractiveObject has received
+ and is acting on a paste event. Calling <code>Clipboard.getData()</code> under any other circumstances
+ will be unsuccessful. The same restriction applies in AIR for content outside the
+ application sandbox.</p> 
+ 
+               <p>On Linux, clipboard data does not persist when an AIR application closes.</p>
+  
+            <p></p><p><a href="#includeExamplesSummary">View the examples</a></p><p id="moreExamples"><span class="classHeaderTableLabel">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS88A6374C-1D6C-4faa-968C-5354C78587E2.html" target="_blank">Copy and paste</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7e8a.html" target="_blank">Drag and drop in AIR</a></div><p><span class="classHeaderTableLabel">Related API Elements</span></p><div class="seeAlso"><a href="NativeDragManager.html" target="">flash.desktop.NativeDragManager</a><br/><a href="ClipboardFormats.html" target="">flash.desktop.ClipboardFormats</a><br/><a href="ClipboardTransferMode.html" target="">flash.desktop.ClipboardTransferMode</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../Object.html#constructor" class="signatureLink">constructor</a> : <a href="../../Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::10##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#formats" class="signatureLink">formats</a> : <a href="../../Array.html">Array</a><div class="summaryTableDescription">[read-only] 
+	An array of strings containing the names of the data formats available
+	in this Clipboard object.</div></td><td class="summaryTableOwnerCol">Clipboard</td></tr><tr class="" runtime="Flash::10##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#generalClipboard" class="signatureLink">generalClipboard</a> : <a href="../../flash/desktop/Clipboard.html">Clipboard</a><div class="summaryTableDescription">[static] [read-only] 
+	 The operating system clipboard.</div></td><td class="summaryTableOwnerCol">Clipboard</td></tr><tr class="" runtime="AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#supportsFilePromise" class="signatureLink">supportsFilePromise</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">[read-only] 
+    Indicates whether the file promise clipboard format is supported on the client system.</div></td><td class="summaryTableOwnerCol">Clipboard</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="Flash::10##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#Clipboard()" class="signatureLink">Clipboard</a>()</div><div class="summaryTableDescription">
+	Creates an empty Clipboard object.</div></td><td class="summaryTableOwnerCol">Clipboard</td></tr><tr class="" runtime="Flash::10##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#clear()" class="signatureLink">clear</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	Deletes all data representations from this Clipboard object.</div></td><td class="summaryTableOwnerCol">Clipboard</td></tr><tr class="" runtime="Flash::10##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#clearData()" class="signatureLink">clearData</a>(format:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	Deletes the data representation for the specified format.</div></td><td class="summaryTableOwnerCol">Clipboard</td></tr><tr class="" runtime="Flash::10##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getData()" class="signatureLink">getData</a>(format:<a href="../../String.html">String</a>, transferMode:<a href="../../String.html">String</a> = "originalPreferred"):<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+	Gets the clipboard data if data in the specified format is present.</div></td><td class="summaryTableOwnerCol">Clipboard</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#hasFormat()" class="signatureLink">hasFormat</a>(format:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Checks whether data in the specified format exists in this Clipboard object.</div></td><td class="summaryTableOwnerCol">Clipboard</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::10##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setData()" class="signatureLink">setData</a>(format:<a href="../../String.html">String</a>, data:<a href="../../Object.html">Object</a>, serializable:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Adds a representation of the information to be transferred in the specified data format.</div></td><td class="summaryTableOwnerCol">Clipboard</td></tr><tr class="" runtime="Flash::10##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setDataHandler()" class="signatureLink">setDataHandler</a>(format:<a href="../../String.html">String</a>, handler:<a href="../../Function.html">Function</a>, serializable:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Adds a reference to a handler function that produces the data to be transfered.</div></td><td class="summaryTableOwnerCol">Clipboard</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="../../String.html">String</a>, isEnum:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toString()" class="signatureLink">toString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+	 Returns the primitive value of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="Flash::10##AIR::1.0##"><a name="propertyDetail" id="propertyDetail"></a><a name="formats" id="formats"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>formats</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>formats:<a href="../../Array.html">Array</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.0</td></tr></table><p></p><p></p><p>
+	An array of strings containing the names of the data formats available
+	in this Clipboard object.
+	
+	<p>String constants for the names of the standard formats are defined in the
+	ClipboardFormats class. Other, application-defined, strings may also be used as format
+	names to transfer data as an object.</p>
+	
+	</p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get formats():<a href="../../Array.html">Array</a></code><br/><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="ClipboardFormats.html" target="">flash.desktop.ClipboardFormats</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody"> The following example reads the <code>formats</code> array of the system clipboard:
+<div class="listing"><pre>
+ var availableFormats:Array = Clipboard.generalClipboard.formats;
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.0##"><a name="propertyDetail" id="propertyDetail"></a><a name="generalClipboard" id="generalClipboard"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>generalClipboard</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>generalClipboard:<a href="../../flash/desktop/Clipboard.html">Clipboard</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.0</td></tr></table><p></p><p></p><p>
+	 The operating system clipboard.
+	 
+	 <p>Any data pasted to the system clipboard is available to other 
+	 applications. This may include insecure remote code running in
+	 a web browser.</p>
+	 
+	 <p><b>Note:</b> In Flash Player 10 applications, a paste operation from the clipboard first
+	 requires a user event (such as a keyboard shortcut for the Paste command or a mouse click on the Paste command
+	 in a context menu). <code>Clipboard.getData()</code>
+	 will return the contents of the clipboard only if the InteractiveObject has received
+	 and is acting on a paste event. Calling <code>Clipboard.getData()</code> under any other circumstances
+	 will be unsuccessful. The same restriction applies in AIR for content outside the
+	 application sandbox.</p>
+	 
+	 <p>The <code>generalClipboard</code> object is created automatically.
+	 You cannot assign another instance of a Clipboard to this property.
+	 Instead, you use the <code>getData()</code> and <code>setData()</code>
+	 methods to read and write data to the existing object.</p>
+	 
+	 <p>You should always clear the clipboard before writing new data to it
+	 to ensure that old data in all formats is erased.</p>
+	 
+	 <p>The <code>generalClipboard</code> object cannot be passed to the AIR NativeDragManager. 
+	 Create a new Clipboard object for native drag-and-drop operations in an AIR application.</p>
+	 
+	 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get generalClipboard():<a href="../../flash/desktop/Clipboard.html">Clipboard</a></code><br/><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody"> To write to the operating system clipboard:
+<div class="listing"><pre>
+ import flash.desktop.ClipboardFormats;
+ 
+ var copy:String = "A string to copy to the system clipboard.";
+ Clipboard.generalClipboard.clear();
+ Clipboard.generalClipboard.setData(ClipboardFormats.TEXT_FORMAT, copy);
+</pre></div></div></span><span id="pageFilter"><div class="detailBody"> To read from the operating system clipboard:
+<div class="listing"><pre>
+ import flash.desktop.ClipboardFormats;
+ 
+ var pasteData:String  = Clipboard.generalClipboard.getData(ClipboardFormats.TEXT_FORMAT) as String;
+</pre></div></div></span></div></span><span id="pageFilter" runtime="AIR::2##"><a name="propertyDetail" id="propertyDetail"></a><a name="supportsFilePromise" id="supportsFilePromise"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<h3>supportsFilePromise</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>supportsFilePromise:<a href="../../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2</td></tr></table><p></p><p></p><p>
+    Indicates whether the file promise clipboard format is supported on the client system. 
+    
+    </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get supportsFilePromise():<a href="../../Boolean.html">Boolean</a></code><br/></div></span><a name="constructorDetail" id="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><span id="pageFilter" runtime="Flash::10##AIR::1.0##"><a name="Clipboard()" id="Clipboard()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>Clipboard</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function Clipboard()</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.0</td></tr></table><p></p><p>
+	Creates an empty Clipboard object.
+	
+	<p>Create Clipboard objects to hold the data of a native drag-and-drop gesture in Adobe AIR. Clipboard
+	objects can be used for only one drag-and-drop gesture; they cannot be reused.</p>
+	
+	<p>Do not create a Clipboard object for copy-and-paste operations. Use the single 
+	<code>Clipboard.generalClipboard</code> object instead.</p>
+	
+	</p><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/errors/IllegalOperationError.html">IllegalOperationError</a> </code> &mdash; <code>new Clipboard()</code> is not supported in Flash Player, since only the operating system clipboard can be used in Flash Player. For copy-and-paste operations involving the operating system clipboard, use the Clipboard.generalClipboard object rather than creating a new Clipboard object. Does not throw an error in an AIR application.
+	
+	</td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Clipboard.html#generalClipboard" target="">generalClipboard</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example creates a new clipboard for use with the NativeDragManager
+ class.
+ 
+ <p><b>Note:</b> For copy-and-paste operations involving the operating system clipboard, 
+ use the <code>Clipboard.generalClipboard</code> object rather than creating a new clipboard.</p>
+<div class="listing"><pre>
+ import flash.desktop.Clipboard;
+ 
+ var clipboard:Clipboard = new Clipboard();
+</pre></div></div></span></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::10##AIR::1.0##"><a name="clear()" id="clear()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>clear</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function clear():<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.0</td></tr></table><p></p><p></p><p>
+	Deletes all data representations from this Clipboard object.
+	
+ 	</p><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; Call to generalClipboard.clear() is not permitted in this context.
+	In Flash Player, you can only call this method successfully during the processing of a user event 
+	(as in a key press or mouse click). In AIR, this restriction only applies to content outside of the 
+	application security sandbox.
+  	</td></tr></table><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example clears the system clipboard:
+<div class="listing"><pre>
+ Clipboard.generalClipboard.clear();
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.0##"><a name="clearData()" id="clearData()"></a><a name="clearData(String)" id="clearData(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>clearData</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function clearData(format:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.0</td></tr></table><p></p><p></p><p>
+	Deletes the data representation for the specified format.
+	
+ 	</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">format</span>:<a href="../../String.html">String</a></code> &mdash; The data format to remove.
+	</td></tr></table></p><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; Call to generalClipboard.clearData() is not permitted in this context.
+	In Flash Player, you can only call this method successfully during the processing of a user event 
+	(as in a key press or mouse click). In AIR, this restriction only applies to content outside of the 
+	application security sandbox.
+	</td></tr></table><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example clears any data having the format 
+ <code>ClipboardFormats.TEXT_FORMAT</code> from the system clipboard:
+<div class="listing"><pre>
+ import flash.desktop.ClipboardFormats;
+ 
+ Clipboard.generalClipboard.clearData(ClipboardFormats.TEXT_FORMAT);
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.0##"><a name="getData()" id="getData()"></a><a name="getData(String,String)" id="getData(String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getData</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getData(format:<a href="../../String.html">String</a>, transferMode:<a href="../../String.html">String</a> = "originalPreferred"):<a href="../../Object.html">Object</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.0</td></tr></table><p></p><p></p><p>
+	Gets the clipboard data if data in the specified format is present.
+	
+	<p>Flash Player requires that the <code>getData()</code> be called in a <code>paste</code> event handler.
+	In AIR, this restriction only applies to content outside of the application security sandbox.</p>
+	
+	<p>When a standard data format is accessed, the data is returned as a new 
+	object of the corresponding Flash data type.</p>
+	
+	<p>When an application-defined format is accessed, the value of the 
+	<code>transferMode</code> parameter determines whether a reference to the original
+	object or an anonymous object containing a serialized copy of the original
+	object is returned. When an <code>originalPreferred</code> or <code>clonePreferred</code> mode is specified, 
+	Flash Player or AIR returns the alternate version if the preferred version is not available. 
+	When an <code>originalOnly</code> or <code>cloneOnly</code> mode is specified, Flash Player or AIR returns 
+	<code>null</code> if the requested version is not available.</p>
+	
+	</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">format</span>:<a href="../../String.html">String</a></code> &mdash; The data format to return. The format string can contain one of the standard
+	names defined in the ClipboardFormats class, or an application-defined name.
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">transferMode</span>:<a href="../../String.html">String</a></code> (default = "<code>originalPreferred</code>")<code></code> &mdash; Specifies whether to return a reference or serialized copy
+	when an application-defined data format is accessed. The value must be one
+	of the names defined in the ClipboardTransferMode class. This value is
+	ignored for the standard data formats; a copy is always returned.
+	</td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Object.html">Object</a></code> &mdash; An object of the type corresponding to the data format.
+	
+	</td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Error.html">Error</a> </code> &mdash; <code>transferMode</code> is not one of the names defined in the ClipboardTransferMode class.
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../flash/errors/IllegalOperationError.html">IllegalOperationError</a> </code> &mdash; The Clipboard object requested is no longer in scope (AIR only).
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; Reading from or writing to the clipboard is not permitted in this context. 
+	In Flash Player, you can only call this method successfully during the processing of a <code>paste</code> event.
+	In AIR, this restriction only applies to content outside of the application security sandbox.
+	
+	</td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Clipboard.html#setData()" target="">setData()</a><br/><a href="ClipboardFormats.html" target="">flash.desktop.ClipboardFormats</a><br/><a href="ClipboardTransferMode.html" target="">flash.desktop.ClipboardTransferMode</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example reads text from the system clipboard, if available:
+<div class="listing"><pre>
+ import flash.desktop.ClipboardFormats;
+
+ var pasteData:String = Clipboard.generalClipboard.getData(ClipboardFormats.TEXT_FORMAT) as String;
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="hasFormat()" id="hasFormat()"></a><a name="hasFormat(String)" id="hasFormat(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>hasFormat</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function hasFormat(format:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+	Checks whether data in the specified format exists in this Clipboard object.
+	
+	<p>Use the constants in the ClipboardFormats class to reference the standard format names.</p>
+	
+	</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">format</span>:<a href="../../String.html">String</a></code> &mdash; The format type to check.
+	</td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; <code>true</code>, if data in the specified format is present.
+	
+	</td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/errors/IllegalOperationError.html">IllegalOperationError</a> </code> &mdash; The Clipboard object requested is no longer in scope.
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; Reading from or writing to the clipboard is not permitted in this context.
+	
+	</td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="ClipboardFormats.html" target="">flash.desktop.ClipboardFormats</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example tests the system clipboard to determine 
+ whether text-formatted data is available:
+<div class="listing"><pre>
+if(Clipboard.generalClipboard.hasFormat(ClipboardFormats.TEXT_FORMAT)){
+    //do something 
+}
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.0##"><a name="setData()" id="setData()"></a><a name="setData(String,Object,Boolean)" id="setData(String,Object,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>setData</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setData(format:<a href="../../String.html">String</a>, data:<a href="../../Object.html">Object</a>, serializable:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.0</td></tr></table><p></p><p></p><p>
+	Adds a representation of the information to be transferred in the specified data format.
+	
+	<p>In the application sandbox of Adobe AIR, <code>setData()</code> can be called anytime. In other
+	contexts, <code>setData()</code> can only be called in response to a user-generated event such as 
+	a key press or mouse click.</p>
+	
+	<p>Different representations of the same information can be added to the clipboard as 
+	different formats, which increases the ability of other components or applications to 
+	make use of the available data. 
+	For example, an image could be added as bitmap data for use by image editing applications, 
+	as a URL, and as an encoded PNG file for transfer to the native file system.</p>
+	
+	<p>The data parameter must be the appropriate data type for the specified format:</p>
+	<table class="innertable" ><tr><th>Format</th><th>Type</th><th>Description</th></tr><tr><td><code>ClipboardFormats.TEXT_FORMAT</code></td><td><code>String</code></td><td>string data</td></tr><tr><td><code>ClipboardFormats.HTML_FORMAT</code></td><td><code>String</code></td><td>HTML string data</td></tr><tr><td><code>ClipboardFormats.URL_FORMAT</code></td><td><code>String</code></td><td>URL string (AIR only)</td></tr><tr><td><code>ClipboardFormats.RICH_TEXT_FORMAT</code></td><td><code>ByteArray</code></td><td>Rich Text Format data</td></tr><tr><td><code>ClipboardFormats.BITMAP_FORMAT</code></td><td><code>BitmapData</code></td><td>bitmap data (AIR only)</td></tr><tr><td><code>ClipboardFormats.FILE_LIST_FORMAT</code></td><td>array of <code>File</code></td><td>an array of files (AIR only)</td></tr><tr><td>Custom format name</td><td>any</td><td>object reference and serialized clone</td></tr></table>
+	
+	<p>Custom format names cannot begin with "air:" or "flash:". To prevent name collisions
+	when using custom formats, you may want to use your application ID or a package name as a
+	prefix to the format, such as "com.example.applicationName.dataPacket".</p>
+	
+	<p>When transferring within or between applications, the <code>serializable</code> parameter 
+	determines whether both a reference and a copy are available, or whether only a reference to 
+	an object is available. Set <code>serializable</code> to <code>true</code> to make both the reference 
+	and a copy of the data object available. Set <code>serializable</code> to <code>false</code> 
+	to make only the object reference available. Object references are valid only within the current 
+	application so setting <code>serializable</code> to <code>false</code> also means that the data
+	in that format is not available to other Flash Player or AIR applications. A component can choose to get 
+	the reference or the copy of the object by setting the appropriate clipboard transfer mode 
+	when accessing the data for that format.</p>
+	
+	<p><b>Note:</b> The standard formats are always converted to native formats when data is pasted or
+	dragged outside a supported application, so the value of the <code>serializable</code>
+	parameter does not affect the availability of data in the standard formats to non-Flash-based applications.</p>
+	
+	<p>To defer rendering of the data for a format, use the <code>setDataHandler()</code> method instead.
+	If both the <code>setData()</code> and the <code>setDataHandler()</code> methods are used to add a
+	data representation with the same format name, then the handler function will never be called.</p>
+	
+	<p><b>Note:</b> On Mac OS, when you set the <code>format</code> parameter to <code>ClipboardFormats.URL_FORMAT</code>, 
+	the URL is transferred only if it is a valid URL. Otherwise, the Clipboard object is emptied (and calling 
+	<code>getData()</code> returns <code>null</code>).</p> 
+	
+	</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">format</span>:<a href="../../String.html">String</a></code> &mdash; The format of the data.
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">data</span>:<a href="../../Object.html">Object</a></code> &mdash; The information to add. 
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">serializable</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>true</code>)<code></code> &mdash; Specify <code>true</code> for objects that can be serialized (and deserialized).
+	
+	</td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; <code>true</code> if the data was succesfully set; 
+	<code>false</code> otherwise. In Flash Player, returns <code>false</code> when <code>format</code> is an
+	unsupported member of ClipboardFormats. (Flash Player does not support <code>ClipboardFormats.URL_FORMAT</code>,
+	<code>ClipboardFormats.FILE_LIST_FORMAT</code>, <code>ClipboardFormats.FILE_PROMISE_LIST_FORMAT</code>,
+	 or <code>ClipboardFormats.BITMAP_FORMAT</code>).
+	
+	</td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/errors/IllegalOperationError.html">IllegalOperationError</a> </code> &mdash; The Clipboard object requested is no longer in scope (which can occur
+	with clipboards created for drag-and-drop operations).
+	
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; Reading from or writing to the clipboard is not permitted in this context.
+	In Flash Player, you can only call this method successfully during the processing of a user event 
+	(as in a key press or mouse click). In AIR, this restriction only applies to content outside of the 
+	application security sandbox.
+	
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../TypeError.html">TypeError</a> </code> &mdash; <code>format</code> or <code>data</code> is <code>null</code>.
+	
+	</td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Clipboard.html#setDataHandler()" target="">setDataHandler()</a><br/><a href="Clipboard.html#getData()" target="">getData()</a><br/><a href="ClipboardFormats.html" target="">flash.desktop.ClipboardFormats</a><br/><a href="ClipboardTransferMode.html" target="">flash.desktop.ClipboardTransferMode</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example adds content to the system clipboard in both 
+ text and HTML formats:
+<div class="listing"><pre>
+ import flash.desktop.ClipboardFormats;
+ 
+ var htmlString:String = "&lt;html&gt;&lt;body&gt;Body content&lt;/body&gt;&lt;/html&gt;";
+ Clipboard.generalClipboard.setData(ClipboardFormats.TEXT_FORMAT, urlString);
+ Clipboard.generalClipboard.setData(ClipboardFormats.HTML_FORMAT, urlString);
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.0##"><a name="setDataHandler()" id="setDataHandler()"></a><a name="setDataHandler(String,Function,Boolean)" id="setDataHandler(String,Function,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>setDataHandler</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setDataHandler(format:<a href="../../String.html">String</a>, handler:<a href="../../Function.html">Function</a>, serializable:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.0</td></tr></table><p></p><p></p><p>
+	Adds a reference to a handler function that produces the data to be transfered.
+	
+	<p>Use a handler function to defer creation or rendering of the data until it is actually accessed.</p>
+	
+	<p>The handler function must return the appropriate data type for the specified format:</p>
+	<table class="innertable" ><tr><th>Format</th><th>Return Type</th></tr><tr><td><code>ClipboardFormats.TEXT_FORMAT</code></td><td><code>String</code></td></tr><tr><td><code>ClipboardFormats.HTML_FORMAT</code></td><td><code>String</code></td></tr><tr><td><code>ClipboardFormats.URL_FORMAT</code></td><td><code>String</code> (AIR only)</td></tr><tr><td><code>ClipboardFormats.RICH_TEXT_FORMAT</code></td><td><code>ByteArray</code></td></tr><tr><td><code>ClipboardFormats.BITMAP_FORMAT</code></td><td><code>BitmapData</code> (AIR only)</td></tr><tr><td><code>ClipboardFormats.FILE_LIST_FORMAT</code></td><td>Array of <code>File</code> (AIR only)</td></tr><tr><td><code>ClipboardFormats.FILE_PROMISE_LIST_FORMAT</code></td><td>Array of <code>File</code> (AIR only)</td></tr><tr><td>Custom format name</td><td>Non-void</td></tr></table>
+	
+	<p>The handler function is called when and only when the data in the specified format is read. Note that in some cases, 
+	the operating system calls the function before a drop occurs. For example, when you use a handler function to 
+	provide the data for a file dragged from an AIR application to the file system, the operating 
+	system calls the data handler function as soon as the drag gesture leaves the AIR application&mdash;typically resulting 
+	in an undesireable pause as the file data is downloaded or created. You can use a URLFilePromise for this purpose instead.</p>
+	 
+	<p>Note that the underlying data can change between the time the handler is added and the time the data is
+	read unless your application takes steps to protect the data. 
+	The behavior that occurs when data on the clipboard represented by a handler function is read more than once 
+	is not guaranteed. The clipboard might return the data produced by the first function call or it might call the 
+	function again. Do not rely on either behavior.</p>
+	
+	
+	<p>In the application sandbox of Adobe AIR, <code>setDataHandler()</code> can be called anytime. In other
+	contexts, <code>setDataHandler()</code> can only be called in response to a user-generated event such as 
+	a key press or mouse click.</p>
+	
+	<p>To add data directly to this Clipboard object, use the <code>setData()</code> method instead.     
+	If both the <code>setData()</code> and the <code>setDataHandler()</code> methods are called with the same
+	format name, then the handler function is never called.</p>
+	
+	<p><b>Note:</b> On Mac OS, when you set the <code>format</code> parameter to <code>ClipboardFormats.URL_FORMAT</code>, 
+	the URL is transferred only if the handler function returns a valid URL. Otherwise, the Clipboard object is emptied 
+	(and calling <code>getData()</code> returns <code>null</code>).</p>
+	
+	</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">format</span>:<a href="../../String.html">String</a></code> &mdash; A function that returns the data to be transferred.
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">handler</span>:<a href="../../Function.html">Function</a></code> &mdash; The format of the data. 
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">serializable</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>true</code>)<code></code> &mdash; Specify <code>true</code> if the object returned by <code>handler</code> 
+	can be serialized (and deserialized).
+	
+	</td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; <code>true</code> if the handler was succesfully set; 
+	<code>false</code> otherwise.
+	
+	</td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../TypeError.html">TypeError</a> </code> &mdash; <code>format</code> or <code>handler</code> is <code>null</code>.
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../flash/errors/IllegalOperationError.html">IllegalOperationError</a> </code> &mdash; The Clipboard object requested is no longer in scope (AIR only).
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; Reading from or writing to the clipboard is not permitted in this context.
+	In Flash Player, you can only call this method successfully during the processing of a user event 
+	(such as a key press or mouse click). In AIR, this restriction only applies to content outside of the 
+	application security sandbox.
+	
+	</td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Clipboard.html#setData()" target="">setData()</a><br/><a href="ClipboardFormats.html" target="">flash.desktop.ClipboardFormats</a><br/>flash.desktop.URLFilePromise</div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example adds a random number to the system clipboard  
+ through a deferred data function:
+<div class="listing"><pre>
+ import flash.desktop.ClipboardFormats;
+ 
+ Clipboard.generalClipboard.setDataHandler(ClipboardFormats.TEXT_FORMAT, randomNumberGenerator);
+
+ public function randomNumberGenerator():String{
+     return Math.random().toString();
+ }
+</pre></div></div></span></div></span><a name="includeExamplesSummary" id="includeExamplesSummary"></a><div class="detailSectionHeader">Examples<span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span></div><span id="pageFilter"><div class="exampleHeader">ClipboardExample.as</div><br/><div class="detailBody"> The following example, for Adobe AIR, uses the ClipboardExample class to 
+ copy a string from one variable to another via the system clipboard.  
+ This task is accomplished by performing the following steps:
+ 
+ <ol><li>Write the data, in this case a string, to <code>Clipboard.generalClipboard</code>.</li><li>Read the clipboard contents from <code>Clipboard.generalClipboard</code>.</li></ol>
+ <p><b>Note:</b> Because of security restrictions on accessing clipboard data, this example
+ does not work in Flash Player. In Flash Player, you can only call the <code>getData()</code>
+ method of the Clipboard object in a <code>paste</code> event handler.</p>
+<div class="listing"><pre>
+package
+{
+    import flash.display.Sprite;
+    import flash.desktop.Clipboard;
+    import flash.desktop.ClipboardFormats;
+    import flash.desktop.ClipboardTransferMode;
+
+    public class ClipboardExample extends Sprite
+    {
+        public function ClipboardExample()
+        {
+            var sally:String = "Sally";
+            var person:String;
+            
+            copy(sally);
+            person = paste();
+            trace(person); //traces: "Sally"
+        }
+
+        private function copy(text:String):void 
+        {
+            Clipboard.generalClipboard.clear();
+            Clipboard.generalClipboard.setData(ClipboardFormats.TEXT_FORMAT, text);
+        }
+        
+        private function paste():String
+        {
+            if(Clipboard.generalClipboard.hasFormat(ClipboardFormats.TEXT_FORMAT))
+            {
+                return String(Clipboard.generalClipboard.getData(ClipboardFormats.TEXT_FORMAT));
+            } 
+            else 
+            {
+                return null;
+            }
+        }
+        
+    }
+}
+</pre></div></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,true,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

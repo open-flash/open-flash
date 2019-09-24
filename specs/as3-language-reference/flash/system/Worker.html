@@ -1,0 +1,1002 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:11.4"><meta name="runtime" content="air"><meta name="runtimever" content="air:3.4"><meta name="product" content="flash player"><meta name="productver" content="flash player:11.4"><meta name="product" content="air"><meta name="productver" content="air:3.4"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="Worker,flash.system.Worker,current,isPrimordial,isSupported,state,addEventListener,createMessageChannel,getSharedProperty,removeEventListener,setSharedProperty,start,terminate"><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" src="../../AC_OETags.js" type="text/javascript"></script><title>Worker - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">flash.system&nbsp;</a><br>
+								<h1 id="classProductName">Worker&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">flash.system</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public final   class  Worker</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Worker  <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../flash/events/EventDispatcher.html">EventDispatcher</a> <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../Object.html">Object</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p></p>
+ A Worker object represents a <i>worker</i>, which is a virtual instance of the 
+ Flash runtime. Each Worker instance controls and provides access to the lifecycle 
+ and shared data of a single worker.
+ 
+ <p>A worker allows you to execute code "in the background" at the same time 
+ that other operations are running in another worker (including the main 
+ swf's worker). In a non-worker context some operations, for example 
+ processing a large set of data in a loop, take so long to execute that they 
+ prevent the main application thread from updating the screen quickly enough. 
+ This can cause stuttering or freezing the screen.</p>
+ 
+               <p>Using a worker allows you to perform a long-running or slow operation in 
+ the background. Each worker runs its code in a separate thread of
+ execution from other workers. Long-running code in one worker does not 
+ block code in another worker from executing. Instead, the two sets of code
+ run in parallel. Consequently, a worker can be used to execute code in the 
+ background while the main application thread stays free to continue 
+ updating the screen.</p>
+ 
+               <p>This capability of simultaneously executing multiple sets of code 
+ instructions is known as <i>concurrency</i>.</p>
+ 
+               <p>
+                  <b>Note:</b> The use of workers for concurrency is supported in 
+ both Flash Player and AIR on desktop platforms. For mobile platforms, concurrency 
+ is supported in AIR on Android but not in AIR on iOS. You can use the static isSupported 
+ property to check whether concurrency is supported before attempting to use it. 
+ </p>
+ 
+               <p>You do not create Worker instances directly by calling the 
+ <code>Worker()</code> constructor. In contexts where the use of workers for 
+ concurrency is supported, at startup the runtime automatically creates the 
+ Worker associated with the main SWF, known as the <i>primordial worker</i>.</p>
+ 
+               <p>Each additional worker is created from a separate swf. To create a new 
+ instance of the Worker class, pass a ByteArray with the bytes of the 
+ background worker's swf as an argument to the WorkerDomain class's 
+ <code>createWorker()</code>method. There are three common ways to access the 
+ bytes of a swf for this purpose:</p>
+ 
+               <ul>
+                  <li>
+                     <p>Use the [Embed] metatag to embed the .swf file in the 
+       application as a ByteArray:</p>
+                     <div class="listing"><pre>
+ // Embed the SWF file
+ [Embed(source="../swfs/BgWorker.swf", mimeType="application/octet-stream")]
+ private static var BgWorker_ByteClass:Class;
+ 
+ private function createWorker():void
+ {
+   // create the background worker
+   var workerBytes:ByteArray = new BgWorker_ByteClass();
+   var bgWorker:Worker = WorkerDomain.current.createWorker(workerBytes);
+   
+   // listen for worker state changes to know when the worker is running
+   bgWorker.addEventListener(Event.WORKER_STATE, workerStateHandler);
+   
+   // set up communication between workers using 
+   // setSharedProperty(), createMessageChannel(), etc.
+   // ... (not shown)
+   
+   bgWorker.start();
+ }</pre></div>
+                  </li>
+                  <li>
+                     <p>Load an external SWF file using a URLLoader:</p>
+                     <div class="listing"><pre>
+ // load the SWF file
+ var workerLoader:URLLoader = new URLLoader();
+ workerLoader.dataFormat = URLLoaderDataFormat.BINARY;
+ workerLoader.addEventListener(Event.COMPLETE, loadComplete);
+ workerLoader.load(new URLRequest("BgWorker.swf"));
+ 
+ private function loadComplete(event:Event):void
+ {
+   // create the background worker
+   var workerBytes:ByteArray = event.target.data as ByteArray;
+   var bgWorker:Worker = WorkerDomain.current.createWorker(workerBytes);
+   
+   // listen for worker state changes to know when the worker is running
+   bgWorker.addEventListener(Event.WORKER_STATE, workerStateHandler);
+   
+   // set up communication between workers using 
+   // setSharedProperty(), createMessageChannel(), etc.
+   // ... (not shown)
+   
+   bgWorker.start();
+ }</pre></div>
+                  </li>
+                  <li>
+                     <p>Use a single swf as both the primordial worker and the 
+       background worker:</p>
+                     <div class="listing"><pre>
+ // The primordial worker's main class constructor
+ public function PrimordialWorkerClass()
+ {
+   init();
+ }
+ 
+ private function init():void
+ {
+   var swfBytes:ByteArray = this.loaderInfo.bytes;
+   
+   // Check to see if this is the primordial worker
+   if (Worker.current.isPrimordial)    
+   {
+     // create a background worker
+     var bgWorker:Worker = WorkerDomain.current.createWorker(swfBytes);
+     
+     // listen for worker state changes to know when the worker is running
+     bgWorker.addEventListener(Event.WORKER_STATE, workerStateHandler);
+     
+     // set up communication between workers using 
+     // setSharedProperty(), createMessageChannel(), etc.
+     // ... (not shown)
+     
+     bgWorker.start();
+   }
+   else // entry point for the background worker
+   {
+     // set up communication between workers using getSharedProperty()
+     // ... (not shown)
+     
+     // start the background work
+   }
+ }</pre></div>
+                  </li>
+               </ul>
+ 
+               <p>Workers execute in isolation from each other and do not have access to 
+ the same memory, variables, and code. However, there are three mechanisms 
+ available for passing messages and data between Worker instances:</p>
+ 
+               <ul>
+                  <li>Shared properties: Each worker has an internal set of named values 
+       that can be set and read both from within the worker itself as well as from 
+       other workers. You can set a value using the <code>setSharedProperty()</code> 
+       method and read a value using the <code>getSharedProperty()</code> method.</li>
+                  <li>MessageChannel: A MessageChannel object allows you to send one-way 
+       messages and data from one worker to another. Code in the receiving 
+       worker can listen for an event to be notified when a message arrives. 
+       To create a MessageChannel object, use the <code>createMessageChannel()</code> 
+       method.</li>
+                  <li>Shareable ByteArray: If a ByteArray object's <code>shareable</code> 
+       property is <code>true</code>, the same underlying memory is used for 
+       instances of that ByteArray in all workers. Because code in multiple 
+       workers can access the shared memory at the same time, your code should 
+       use the mechanisms described in the <code>ByteArray.shareable</code> 
+       property description to avoid problems from unexpected data changes.</li>
+               </ul>
+ 
+               <p>Several runtime APIs are not available in code running in a background 
+ worker. These primarily consist of APIs related to user input and output 
+ mechanisms, or operating system elements like windows and dragging. As a 
+ rule, for any API that isn't supported in all contexts, use the 
+ <code>isSupported</code>, <code>available</code>, and similar properties to 
+ check whether the API is available in the background worker context before 
+ attempting to use the API.</p>
+ 
+               <p>
+                  <b>Note:</b> Native Extensions are not supported for background and secondary workers.</p>
+ 
+               <p>Workers are useful because they decrease the chances of the frame rate 
+ dropping due to the main rendering thread being blocked by other code. 
+ However, workers require additional system memory and CPU use, which can 
+ be costly to overall application performance. Because each worker uses 
+ its own instance of the runtime virtual machine, even the overhead of a 
+ trivial worker can be large. When using workers, test your code across 
+ all your target platforms to ensure that the demands on the system are 
+ not too large. Adobe recommends that you do not use more than one or two 
+ background workers in a typical scenario.</p>
+ 
+            <p></p><p><a href="#includeExamplesSummary">View the examples</a></p><p id="moreExamples"><span class="classHeaderTableLabel">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS2f73111e7a180bd0-5856a8af1390d64d08c-8000.html" target="_blank">Understanding workers and concurrency</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS2f73111e7a180bd0-5856a8af1390d64d08c-7fff.html" target="_blank">Creating and managing workers</a></div><p id="learnMore"><span class="classHeaderTableLabel">Learn more</span></p><div class="seeAlso"><a href="http://gotoandlearn.com/play.php?id=162" target="_blank">Using ActionScript Workers by Lee Brimelow</a><br/><a href="http://esdot.ca/site/2012/intro-to-as3-workers-part-2-image-processing" target="_blank">Intro to AS3 Workers: Image Processing by Shawn Blais</a><br/><a href="http://esdot.ca/site/2012/intro-to-as3-workers-part-3-nape-physics-starling" target="_blank">Multithreaded Physics: Using AS3 Workers for a physics engine by Shawn Blais</a></div><p><span class="classHeaderTableLabel">Related API Elements</span></p><div class="seeAlso"><a href="WorkerDomain.html" target="">WorkerDomain class</a><br/><a href="WorkerDomain.html#createWorker()" target="">WorkerDomain.createWorker() method</a><br/><a href="MessageChannel.html" target="">MessageChannel class</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../Object.html#constructor" class="signatureLink">constructor</a> : <a href="../../Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#current" class="signatureLink">current</a> : <a href="../../flash/system/Worker.html">Worker</a><div class="summaryTableDescription">[static] [read-only] 
+    Provides access to the worker that contains the current code
+    
+    </div></td><td class="summaryTableOwnerCol">Worker</td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#isPrimordial" class="signatureLink">isPrimordial</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">[read-only] 
+    Indicates whether this worker is the primordial worker.</div></td><td class="summaryTableOwnerCol">Worker</td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#isSupported" class="signatureLink">isSupported</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">[static] [read-only] 
+    Indicates whether the current runtime context supports the use of Worker 
+    objects for concurrent code execution.</div></td><td class="summaryTableOwnerCol">Worker</td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#state" class="signatureLink">state</a> : <a href="../../String.html">String</a><div class="summaryTableDescription">[read-only] 
+    The current state of the worker in its lifecycle.</div></td><td class="summaryTableOwnerCol">Worker</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addEventListener()" class="signatureLink">addEventListener</a>(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false, priority:<a href="../../int.html">int</a> = 0, useWeakReference:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[override] 
+    
+	Registers an event listener object with an EventDispatcher object so that the listener 
+	receives notification of an event.</div></td><td class="summaryTableOwnerCol">Worker</td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#createMessageChannel()" class="signatureLink">createMessageChannel</a>(receiver:<a href="../../flash/system/Worker.html">Worker</a>):<a href="../../flash/system/MessageChannel.html">MessageChannel</a></div><div class="summaryTableDescription">
+    Creates a new MessageChannel instance to send messages from the worker on 
+    which the method is called to another receiver worker.</div></td><td class="summaryTableOwnerCol">Worker</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#dispatchEvent()" class="signatureLink">dispatchEvent</a>(event:<a href="../../flash/events/Event.html">Event</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Dispatches an event into the event flow.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getSharedProperty()" class="signatureLink">getSharedProperty</a>(key:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#*">*</a></div><div class="summaryTableDescription">
+    Retrieves a value stored in this worker with a named key.</div></td><td class="summaryTableOwnerCol">Worker</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#hasEventListener()" class="signatureLink">hasEventListener</a>(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Checks whether the EventDispatcher object has any listeners registered for a specific type 
+	of event.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeEventListener()" class="signatureLink">removeEventListener</a>(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[override] 
+    
+	Removes a listener from the EventDispatcher object.</div></td><td class="summaryTableOwnerCol">Worker</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="../../String.html">String</a>, isEnum:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setSharedProperty()" class="signatureLink">setSharedProperty</a>(key:<a href="../../String.html">String</a>, value:<a href="../../specialTypes.html#*">*</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+    Provides a named value that is available to code running in the worker's swf.</div></td><td class="summaryTableOwnerCol">Worker</td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#start()" class="signatureLink">start</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+    Starts the execution of the worker.</div></td><td class="summaryTableOwnerCol">Worker</td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#terminate()" class="signatureLink">terminate</a>():<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+    Stops this worker's code execution.</div></td><td class="summaryTableOwnerCol">Worker</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toString()" class="signatureLink">toString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+	 Returns the primitive value of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#willTrigger()" class="signatureLink">willTrigger</a>(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Checks whether an event listener is registered with this EventDispatcher object or any of 
+	its ancestors for the specified event type.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="eventSummary" id="eventSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Events</div><div class="showHideLinks"><a href="http://help.adobe.com/en_US/Flex/4.6/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7ee9.html" target="_blank">Click for more information on events</a></div><div class="showHideLinks"><div id="hideInheritedEvent" class="hideInheritedEvent"><a class="showHideLink" href="#eventSummary" onclick="javascript:setInheritedVisible(false,'Event');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Events</a></div><div id="showInheritedEvent" class="showInheritedEvent"><a class="showHideLink" href="#eventSummary" onclick="javascript:setInheritedVisible(true,'Event');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Events</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableEvent"><tr><th>&nbsp;</th><th colspan="2">Event</th><th> Summary </th><th>Defined By</th></tr><tr class="hideInheritedEvent" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#event:activate" class="signatureLink">activate</a></div></td><td class="summaryTableDescription summaryTableCol">[broadcast event] Dispatched when the Flash Player or AIR application gains operating system focus and becomes active.</td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedEvent" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#event:deactivate" class="signatureLink">deactivate</a></div></td><td class="summaryTableDescription summaryTableCol">[broadcast event] Dispatched when the Flash Player or AIR application operating loses system focus and is becoming inactive.</td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:workerState" class="signatureLink">workerState</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatched when the value of the worker's state property changes.</td><td class="summaryTableOwnerCol">Worker</td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="propertyDetail" id="propertyDetail"></a><a name="current" id="current"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>current</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>current:<a href="../../flash/system/Worker.html">Worker</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+    Provides access to the worker that contains the current code
+    
+    </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get current():<a href="../../flash/system/Worker.html">Worker</a></code><br/></div></span><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="propertyDetail" id="propertyDetail"></a><a name="isPrimordial" id="isPrimordial"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>isPrimordial</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>isPrimordial:<a href="../../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+    Indicates whether this worker is the primordial worker.
+    
+    <p>The <i>primordial worker</i> is the worker in which the initial swf is 
+    running. This worker controls the rendering to the screen.</p>
+    
+    <p>This property can be used to architect an application where the primordial
+    worker and the background worker are two instances of the same swf file. 
+    The alternative is to structure your code so that the background worker 
+    uses different code compiled to a different swf from the primorial worker.</p>
+    
+    </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get isPrimordial():<a href="../../Boolean.html">Boolean</a></code><br/></div></span><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="propertyDetail" id="propertyDetail"></a><a name="isSupported" id="isSupported"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>isSupported</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>isSupported:<a href="../../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+    Indicates whether the current runtime context supports the use of Worker 
+    objects for concurrent code execution.
+    
+    <p>If concurrency is available, this property's value is <code>true</code>.</p>
+    
+    </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get isSupported():<a href="../../Boolean.html">Boolean</a></code><br/></div></span><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="propertyDetail" id="propertyDetail"></a><a name="state" id="state"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>state</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>state:<a href="../../String.html">String</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+    The current state of the worker in its lifecycle. The possible values for
+    this property are defined in the WorkerState class.
+    
+    </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get state():<a href="../../String.html">String</a></code><br/><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="WorkerState.html" target="">flash.system.WorkerState</a></div></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="addEventListener()" id="addEventListener()"></a><a name="addEventListener(String,Function,Boolean,int,Boolean)" id="addEventListener(String,Function,Boolean,int,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>addEventListener</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code>override public function addEventListener(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false, priority:<a href="../../int.html">int</a> = 0, useWeakReference:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+    
+	Registers an event listener object with an EventDispatcher object so that the listener 
+	receives notification of an event. <span>You can register event listeners on all nodes in the 
+	display list for a specific type of event, phase, and priority.</span>
+	
+	
+	
+	<p>After you successfully register an event listener, you cannot change its priority
+	through additional calls to <code>addEventListener()</code>. To change a listener's
+	priority, you must first call <code>removeListener()</code>. Then you can register the
+	listener again with the new priority level. </p>
+	
+	<p>Keep in mind that after the listener is registered, subsequent calls to
+	<code>addEventListener()</code> with a different <code>type</code> or
+	<code>useCapture</code> value result in the creation of a separate listener registration. 
+	<span>For example, if you first register a listener with <code>useCapture</code> set to 
+	<code>true</code>, it listens only during the capture phase. If you call 
+	<code>addEventListener()</code> again using the same listener object, but with
+	<code>useCapture</code> set to <code>false</code>, you have two separate listeners: one
+	that listens during the capture phase and another that listens during the target and
+	bubbling phases.</span>
+	</p>
+	
+	<p>You cannot register an event listener for only the target phase or the bubbling 
+	phase. Those phases are coupled during registration because bubbling 
+	applies only to the ancestors of the target node.</p>
+	
+	<p>If you no longer need an event listener, remove it by calling 
+	<code>removeEventListener()</code>, or memory problems could result. Event listeners are not automatically
+	removed from memory because the garbage
+	collector does not remove the listener as long as the dispatching object exists (unless the <code>useWeakReference</code>
+	parameter is set to <code>true</code>).</p>
+		
+	<p>Copying an EventDispatcher instance does not copy the event listeners attached to it. 
+	(If your newly created node needs an event listener, you must attach the listener after
+    creating the node.) However, if you move an EventDispatcher instance, the event listeners 
+    attached to it move along with it.</p>
+	
+	
+	<p>If the event listener is being registered on a node while an event is being processed
+	on this node, the event listener is not triggered during the current phase but can be 
+	triggered during a later phase in the event flow, such as the bubbling phase.</p>
+	
+	<p>If an event listener is removed from a node while an event is being processed on the node,
+	it is still triggered by the current actions. After it is removed, the event listener is
+	never invoked again (unless registered again for future processing). </p>
+	
+	</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">type</span>:<a href="../../String.html">String</a></code> &mdash; The type of event.
+	
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listener</span>:<a href="../../Function.html">Function</a></code> &mdash; The listener function that processes the event. This function must accept
+    an Event object as its only parameter and must return nothing<span>, as this example shows:</span>
+	
+	
+    <div class="listing"><pre>function(evt:Event):void</pre></div>
+	
+	<p>The function can have any name.</p>
+	
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">useCapture</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; 
+	
+	<span>Determines whether the listener works in the capture phase or the 
+	target and bubbling phases. If <code>useCapture</code> is set to <code>true</code>, 
+	the listener processes the event only during the capture phase and not in the 
+	target or bubbling phase. If <code>useCapture</code> is <code>false</code>, the
+	listener processes the event only during the target or bubbling phase. To listen for
+	the event in all three phases, call <code>addEventListener</code> twice, once with 
+	<code>useCapture</code> set to <code>true</code>, then again with
+	<code>useCapture</code> set to <code>false</code>.</span>
+	
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">priority</span>:<a href="../../int.html">int</a></code> (default = <code>0</code>)<code></code> &mdash; The priority level of the event listener. The priority is designated by
+	a signed 32-bit integer. The higher the number, the higher the priority. All listeners
+	with priority <i>n</i> are processed before listeners of priority <i>n</i>-1. If two
+	or more listeners share the same priority, they are processed in the order in which they
+	were added. The default priority is 0.
+	
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">useWeakReference</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; Determines whether the reference to the listener is strong or
+	weak. A strong reference (the default) prevents your listener from being garbage-collected.
+    A weak reference does not. <p>Class-level member functions are not subject to garbage 
+    collection, so you can set <code>useWeakReference</code> to <code>true</code> for 
+    class-level member functions without subjecting them to garbage collection. If you set
+    <code>useWeakReference</code> to <code>true</code> for a listener that is a nested inner 
+    function, the function will be garbage-collected and no longer persistent. If you create 
+    references to the inner function (save it in another variable) then it is not 
+    garbage-collected and stays persistent.</p>
+	
+	</td></tr></table></p></div></span><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="createMessageChannel()" id="createMessageChannel()"></a><a name="createMessageChannel(flash.system.Worker)" id="createMessageChannel(flash.system.Worker)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>createMessageChannel</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function createMessageChannel(receiver:<a href="../../flash/system/Worker.html">Worker</a>):<a href="../../flash/system/MessageChannel.html">MessageChannel</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+    Creates a new MessageChannel instance to send messages from the worker on 
+    which the method is called to another receiver worker. Code in the 
+    worker that creates the MessageChannel object can use it 
+    to send one-way messages to the Worker object specified as 
+    the <code>receiver</code> argument.
+    
+    <p>Although a MessageChannel instance can be used to send messages and 
+    data from one Worker instance to another, at least one MessageChannel 
+    instance needs to be passed to a child Worker as a shared property by 
+    calling the Worker object's <code>setSharedProperty()</code> method.</p>
+    
+    <div class="listing"><pre>
+    outgoingChannel = Worker.current.createMessageChannel(bgWorker);
+    incomingChannel = bgWorker.createMessageChannel(Worker.current);
+    
+    bgWorker.setSharedProperty("incoming", outgoingChannel);
+    bgWorker.setSharedProperty("outgoing", incomingChannel);
+    
+    // listen for messages from the receiving MessageChannel
+    // This event is triggered when the background sends a message to this worker
+    incomingChannel.addEventListener(Event.CHANNEL_MESSAGE, incomingMessageHandler);</pre></div>
+    
+    </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">receiver</span>:<a href="../../flash/system/Worker.html">Worker</a></code> &mdash; The worker that will receive messages transmitted via 
+                    the created message channel
+    
+    </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/system/MessageChannel.html">MessageChannel</a></code> &mdash; The MessageChannel object created by the operation
+    
+    </td></tr></table></div></span><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="getSharedProperty()" id="getSharedProperty()"></a><a name="getSharedProperty(String)" id="getSharedProperty(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getSharedProperty</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getSharedProperty(key:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#*">*</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+    Retrieves a value stored in this worker with a named key.
+    
+    <p>Code in a child worker can call this method to retrieve a value as 
+    early as in the constructor of the worker swf's main class.</p>
+    
+    </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">key</span>:<a href="../../String.html">String</a></code> &mdash; The name of the shared property to retrieve
+    
+    </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../specialTypes.html#*">*</a></code> &mdash; The shared property value stored with the specified key, or 
+    <code>null</code> if no value is stored for the specified key
+    
+    </td></tr></table></div></span><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="removeEventListener()" id="removeEventListener()"></a><a name="removeEventListener(String,Function,Boolean)" id="removeEventListener(String,Function,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>removeEventListener</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>override public function removeEventListener(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+    
+	Removes a listener from the EventDispatcher object. If there is no matching listener registered with the EventDispatcher object, a call to this method has no effect.
+	
+	</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">type</span>:<a href="../../String.html">String</a></code> &mdash; The type of event.
+	
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listener</span>:<a href="../../Function.html">Function</a></code> &mdash; The listener object to remove.
+	
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">useCapture</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; 
+	
+	<span>Specifies whether the listener was registered for the capture phase or the 
+	target and bubbling phases. If the listener was registered for both the capture phase and the
+	target and bubbling phases, two calls to <code>removeEventListener()</code> are required 
+	to remove both, one call with <code>useCapture()</code> set to <code>true</code>, and another 
+	call with <code>useCapture()</code> set to <code>false</code>.</span>
+	
+	</td></tr></table></p></div></span><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="setSharedProperty()" id="setSharedProperty()"></a><a name="setSharedProperty(String,any)" id="setSharedProperty(String,any)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>setSharedProperty</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setSharedProperty(key:<a href="../../String.html">String</a>, value:<a href="../../specialTypes.html#*">*</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+    Provides a named value that is available to code running in the worker's swf.
+    
+    <p>You can call this method before calling the worker's <code>start()</code> 
+    method. In that case the shared property is available to code in the 
+    worker's swf at construction time.</p>
+    
+    <p>The value passed to the <code>value</code> parameter can be almost any 
+    object. Other than the exceptions noted below, any object that is passed 
+    to the <code>value</code> parameter is not passed by reference. Any changes made to the 
+    object in one worker after <code>setSharedProperty()</code> is called are 
+    not carried over to the other worker. The object is copied by 
+    serializing it to AMF3 format and deserializing it into a new object in the receiving worker. 
+    For this reason, any object that can't be serialized in AMF3 format, 
+    including display objects, can't be passed to the <code>value</code> parameter. 
+    In order for a custom class to be passed properly, the class definition 
+    must be registered using the <code>flash.net.registerClassAlias()</code> 
+    function or <code>[RemoteClass]</code> metadata. With either technique 
+    the same alias must be used for both worker's versions of the class.</p>
+    
+    <p>There are five types of objects that are an exception to the rule that 
+    objects aren't shared between workers:</p>
+    
+    <ul><li>Worker</li><li>MessageChannel</li><li>shareable ByteArray (a ByteArray object with its <code>shareable</code> property set to <code>true</code></li><li>Mutex</li><li>Condition</li></ul>
+    
+    <p>If you pass an instance of these objects to the <code>value</code> parameter, each worker has a reference to the same underlying object. Changes made to an instance in one worker are immediately available in other workers. In addition, if you pass the same instance of these objects more than once using <code>setSharedProperty()</code>, the runtime doesn't create a new copy of the object in the receiving worker. Instead, the same reference is re-used, reducing system memory use.</p>
+    
+    <p>Calling this method with <code>null</code> or <code>undefined</code> 
+    for the <code>value</code> argument clears any previously-set value for 
+    the specified <code>key</code> argument. Cleaning up a value in this way 
+    removes the reference to it, allowing it to be garbage collected.</p>
+    
+    <p>You can use any String value in the key argument. These shared 
+    properties are available to any code that has access to a worker. To 
+    avoid unintentionally overwriting a value, consider using a prefix, 
+    suffix, or similar mechanism to attempt to make your key names unique.</p>
+    
+    </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">key</span>:<a href="../../String.html">String</a></code> &mdash; The name under which the shared property is stored.
+    </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">value</span>:<a href="../../specialTypes.html#*">*</a></code> &mdash; The value of the shared property.
+    
+    </td></tr></table></p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="MessageChannel.html" target="">MessageChannel class</a><br/><a href="../../flash/utils/ByteArray.html#shareable" target="">ByteArray.shareable property</a><br/><a href="../../flash/concurrent/Mutex.html" target="">Mutex class</a><br/><a href="../../flash/concurrent/Condition.html" target="">Condition class</a></div></div></span><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="start()" id="start()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>start</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function start():<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+    Starts the execution of the worker. The runtime creates the worker thread 
+    and calls the constructor of the worker swf's main class.
+    
+    <p>This operation is asynchronous. Once the worker startup is complete, it 
+    changes its <code>state</code> property to <code>WorkerState.RUNNING</code> 
+    and dispatches a <code>workerState</code> event.</p>
+    
+    
+    </p></div></span><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="terminate()" id="terminate()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>terminate</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function terminate():<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+    Stops this worker's code execution. Calling this method aborts any current 
+    ActionScript in the worker's swf.
+    
+    </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; <code>true</code> if code in the worker was running and 
+    interrupted, or <code>false</code> if the worker was never started
+    
+    </td></tr></table></div></span><div class="detailSectionHeader"> Event Detail </div><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="event:workerState" id="event:workerState"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>workerState</h3></td><td class="detailHeaderType"> Event </td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../flash/events/Event.html"><code>flash.events.Event</code></a><br/><span class="label">property Event.type  =  </span><a href="../../flash/events/Event.html#WORKER_STATE"><code>flash.events.Event.WORKER_STATE</code></a><br/><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+Dispatched when the value of the worker's <code>state</code> property changes.  
+
+</p>
+	The <code>Event.WORKER_STATE</code> constant defines the value of the <code>type</code> property of a <code>workerState</code> event object.
+ 	
+ 	<p>This event has the following properties:</p>
+ 	
+ 	<table class="innertable" ><tr><th>Property</th><th>Value</th></tr><tr><td><code>bubbles</code></td><td><code>false</code></td></tr><tr><td><code>cancelable</code></td><td><code>false</code>; there is no default behavior to cancel.</td></tr><tr><td><code>currentTarget</code></td><td>The object that is actively processing the Event object with an event listener.</td></tr><tr><td><code>target</code></td><td>The object that dispatched this event.</td></tr></table>
+ 	
+	</div></span><a name="includeExamplesSummary" id="includeExamplesSummary"></a><div class="detailSectionHeader">Examples<span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span></div><span id="pageFilter"><div class="exampleHeader">WorkerExample.as</div><br/><div class="detailBody"> The following example demonstrates using a Worker object to 
+ perform a task in the background. It also shows communication between the 
+ parent worker and the background worker, including passing a custom class 
+ object between the workers.
+ 
+ <p>This example consists of three ActionScript classes: WorkerExample is the 
+ main class and the parent worker. BackgroundWorker is the class that does the 
+ background work. It's compiled as the main class of the background worker swf. 
+ CountResult is a custom class that's used to pass data between the two workers 
+ as a single object rather than as multiple values.</p>
+ 
+ <p>In this example, the background worker counts in a loop up to a number 
+ specified by the parent worker. As it makes progress in its work it sends 
+ progress messages to the parent worker. Finally, when the count is finished 
+ the background worker sends a message to the parent worker notifying it that it 
+ finished and how long it took to count.</p>
+ 
+ <p>The WorkerExample class is the main class of the swf, so it is the main 
+ class of the primordial worker. In the <code>initialize()</code> method, the 
+ code creates the background worker object using the bytes of the 
+ BackgroundWorker class, which are embedded using an <code>[Embed]</code> tag.</p>
+ 
+ <p>After creating the background worker by calling <code>WorkerDomain.createWorker()</code>, 
+ the code sets up communication between the workers. First the code creates a 
+ set of MessageChannel objects. It passes them to the background worker by 
+ calling its <code>setSharedProperty()</code> method. Finally it registers for 
+ the background Worker object's <code>workerState</code> event and starts up 
+ the worker by calling its <code>start()</code> method.</p>
+ 
+ <p>As the background worker does its work, it sends progress (and eventually 
+ result) messages to the parent worker. The parent worker uses this information 
+ to update the progress bar and the text indicator.</p>
+<div class="listing"><pre>
+package
+{
+    import com.adobe.example.vo.CountResult;
+    
+    import flash.display.Shape;
+    import flash.display.Sprite;
+    import flash.display.StageAlign;
+    import flash.display.StageScaleMode;
+    import flash.events.Event;
+    import flash.net.registerClassAlias;
+    import flash.system.MessageChannel;
+    import flash.system.Worker;
+    import flash.system.WorkerDomain;
+    import flash.system.WorkerState;
+    import flash.text.TextField;
+    import flash.text.TextFormat;
+    import flash.text.TextFormatAlign;
+    import flash.utils.ByteArray;
+    
+    public class WorkerExample extends Sprite
+    {
+        // ------- Embed the background worker swf as a ByteArray -------
+        [Embed(source="../workerswfs/BackgroundWorker.swf", mimeType="application/octet-stream")]
+        private static var BackgroundWorker_ByteClass:Class;
+        public static function get BackgroundWorker():ByteArray
+        {
+            return new BackgroundWorker_ByteClass();
+        }
+        
+        
+        private var bgWorker:Worker;
+        private var bgWorkerCommandChannel:MessageChannel;
+        private var progressChannel:MessageChannel;
+        private var resultChannel:MessageChannel;
+        
+        
+        public function WorkerExample()
+        {
+            initialize();
+        }
+        
+        
+        private function initialize():void
+        {
+            // create the user interface
+            setupStage();
+            createStatusText();
+            createProgressBar();
+            
+            // Register the alias so we can pass CountResult objects between workers
+            registerClassAlias("com.adobe.test.vo.CountResult", CountResult);
+            
+            // Create the background worker
+            bgWorker = WorkerDomain.current.createWorker(BackgroundWorker);
+            
+            // Set up the MessageChannels for communication between workers
+            bgWorkerCommandChannel = Worker.current.createMessageChannel(bgWorker);
+            bgWorker.setSharedProperty("incomingCommandChannel", bgWorkerCommandChannel);
+            
+            progressChannel = bgWorker.createMessageChannel(Worker.current);
+            progressChannel.addEventListener(Event.CHANNEL_MESSAGE, handleProgressMessage)
+            bgWorker.setSharedProperty("progressChannel", progressChannel);
+            
+            resultChannel = bgWorker.createMessageChannel(Worker.current);
+            resultChannel.addEventListener(Event.CHANNEL_MESSAGE, handleResultMessage);
+            bgWorker.setSharedProperty("resultChannel", resultChannel);
+            
+            // Start the worker
+            bgWorker.addEventListener(Event.WORKER_STATE, handleBGWorkerStateChange);
+            bgWorker.start();
+        }
+        
+        
+        private function handleBGWorkerStateChange(event:Event):void
+        {
+            if (bgWorker.state == WorkerState.RUNNING) 
+            {
+                _statusText.text = "Background worker started";
+                bgWorkerCommandChannel.send(["startCount", 100000000]);
+            }
+        }
+        
+        
+        private function handleProgressMessage(event:Event):void
+        {
+            var percentComplete:Number = progressChannel.receive();
+            setPercentComplete(percentComplete);
+            _statusText.text = Math.round(percentComplete).toString() + "% complete";
+        }
+        
+        
+        private function handleResultMessage(event:Event):void
+        {
+            var result:CountResult = resultChannel.receive() as CountResult;
+            setPercentComplete(100);
+            _statusText.text = "Counted to " + result.countTarget + " in " + (Math.round(result.countDurationSeconds * 10) / 10) + " seconds";
+        }
+        
+        
+        // ------- Create UI -------
+        
+        private var _currentPercentComplete:int = 0;
+        private var _needsValidation:Boolean = false;
+        private var _statusText:TextField;
+        private var _progressBarRect:Shape;
+        private var _progressBar:Shape;
+        
+        private function setupStage():void
+        {
+            stage.align = StageAlign.TOP_LEFT;
+            stage.scaleMode = StageScaleMode.NO_SCALE;
+            stage.stageWidth = 800;
+            stage.stageHeight = 600;
+            stage.color = 0xffffff;
+        }
+        
+        
+        private function createStatusText():void
+        {
+            _statusText = new TextField();
+            _statusText.width = 400;
+            _statusText.height = 25;
+            _statusText.x = (stage.stageWidth - _statusText.width) / 2;
+            _statusText.y = 150;
+            
+            var statusTextFormat:TextFormat = new TextFormat();
+            statusTextFormat.color = 0xeeeeee;
+            statusTextFormat.font = "Verdana";
+            statusTextFormat.align = TextFormatAlign.CENTER;
+            statusTextFormat.size = 16;
+            _statusText.defaultTextFormat = statusTextFormat;
+            _statusText.wordWrap = false;
+            _statusText.opaqueBackground = 0x999999;
+            _statusText.selectable = false;
+            
+            _statusText.text = "Initializing...";
+            
+            addChild(_statusText);
+        }
+        
+        
+        private function createProgressBar():void
+        {
+            _progressBarRect = new Shape();
+            _progressBarRect.graphics.beginFill(0x000000, 0);
+            _progressBarRect.graphics.lineStyle(2, 0x000000);
+            _progressBarRect.graphics.drawRect(0, 0, 400, 30);
+            _progressBarRect.graphics.endFill();
+            
+            _progressBarRect.x = (stage.stageWidth - _progressBarRect.width) / 2;
+            _progressBarRect.y = 100;
+            
+            addChild(_progressBarRect);
+            
+            _progressBar = new Shape();
+            _progressBar.graphics.beginFill(0x0000ee);
+            _progressBar.graphics.drawRect(0, 0, 391, 21);
+            _progressBar.x = _progressBarRect.x + 4;
+            _progressBar.y = _progressBarRect.y + 4;
+            
+            addChild(_progressBar);
+            
+            _progressBar.scaleX = 0;
+        }
+        
+        private function setPercentComplete(percentComplete:int):void
+        {
+            if (_currentPercentComplete == percentComplete)
+                return;
+            
+            _currentPercentComplete = percentComplete;
+            invalidateValue();
+        }
+        
+        
+        private function invalidateValue():void
+        {
+            if (_needsValidation)
+                return;
+            
+            _needsValidation = true;
+            addEventListener(Event.EXIT_FRAME, validate);
+        }
+        
+        private function validate(event:Event):void
+        {
+            removeEventListener(Event.EXIT_FRAME, validate);
+            _needsValidation = false;
+            
+            _redrawProgressBar();
+        }
+        
+        private function _redrawProgressBar():void
+        {
+            _progressBar.scaleX = _currentPercentComplete / 100;
+        }
+    }
+}
+</pre></div></div></span><span id="pageFilter"><div class="exampleHeader">WorkerExample.BackgroundWorker.as</div><br/><div class="detailBody"> This class contains the code for the background worker. This 
+ class is compiled into its own swf file. That swf file is then embedded in the 
+ main swf.
+ 
+ <p>In the <code>initialize()</code> method, it receives the MessageChannel 
+ objects that the parent worker passed in. They are used for communication 
+ between the two workers.</p>
+ 
+ <p>The parent worker calls the <code>send()</code> method on the 
+ <code>commandChannel</code> message channel to send a message. Inside the 
+ background worker, the runtime then dispatches the <code>channelMessage</code> 
+ event by calling the <code>handleCommandMessage()</code> method.</p>
+ 
+ <p>The background worker's actual work takes place in the 
+ <code>count()</code> method. As the background worker proceeds with its count, 
+ it sends progress messages to the parent worker by calling the <code>send()</code> 
+ method on the <code>progressChannel</code> MessageChannel object. When it 
+ finishes counting, it calls the <code>send()</code> method on the 
+ <code>resultChannel</code> MessageChannel object.</p>
+<div class="listing"><pre>
+package com.adobe.example.workers
+{
+    import com.adobe.example.vo.CountResult;
+    
+    import flash.display.Sprite;
+    import flash.events.Event;
+    import flash.net.registerClassAlias;
+    import flash.system.MessageChannel;
+    import flash.system.Worker;
+    import flash.utils.getTimer;
+    
+    public class BackgroundWorker extends Sprite
+    {
+        private var commandChannel:MessageChannel;
+        private var progressChannel:MessageChannel;
+        private var resultChannel:MessageChannel;
+        
+        
+        public function BackgroundWorker()
+        {
+            initialize();
+        }
+        
+        
+        private function initialize():void
+        {
+            registerClassAlias("com.adobe.test.vo.CountResult", CountResult);
+            
+            // Get the MessageChannel objects to use for communicating between workers
+            // This one is for receiving messages from the parent worker
+            commandChannel = Worker.current.getSharedProperty("incomingCommandChannel") as MessageChannel;
+            commandChannel.addEventListener(Event.CHANNEL_MESSAGE, handleCommandMessage);
+            // These are for sending messages to the parent worker
+            progressChannel = Worker.current.getSharedProperty("progressChannel") as MessageChannel;
+            resultChannel = Worker.current.getSharedProperty("resultChannel") as MessageChannel;
+        }        
+        
+        
+        private function handleCommandMessage(event:Event):void
+        {
+            if (!commandChannel.messageAvailable)
+                return;
+            
+            var message:Array = commandChannel.receive() as Array;
+            
+            if (message != null && message[0] == "startCount")
+            {
+                count(uint(message[1]));
+            }
+        }
+        
+        
+        private function count(targetValue:uint):void
+        {
+            var startTime:int = getTimer();
+            var onePercent:uint = uint(Math.ceil(targetValue / 100));
+            var oneHalfPercent:Number = onePercent / 2;
+            
+            var i:uint = 0;
+            while (i &lt; targetValue)
+            {
+                i++;
+                // only send progress messages every one-half-percent milestone
+                // to avoid flooding the message channel
+                if (i % oneHalfPercent == 0)
+                {
+                    progressChannel.send(i / onePercent);
+                }
+            }
+            
+            var elapsedTime:int = getTimer() - startTime;
+            var result:CountResult = new CountResult(targetValue, elapsedTime / 1000);
+            resultChannel.send(result);
+            
+            trace("counted to", targetValue.toString(), "in", elapsedTime, "milliseconds");
+        }
+    }
+}
+</pre></div></div></span><span id="pageFilter"><div class="exampleHeader">WorkerExample.CountResult.as</div><br/><div class="detailBody"> This class defines the CountResult value object. This is a 
+ custom class that is passed between the two workers. In order to pass a custom 
+ class between the workers, each worker calls the <code>registerClassAlias()</code> 
+ method, using the same alias name.
+<div class="listing"><pre>
+package com.adobe.example.vo
+{
+    public class CountResult
+    {
+        public function CountResult(countTarget:uint=0, countTime:Number=0)
+        {
+            this.countTarget = countTarget;
+            this.countDurationSeconds = countTime;
+        }
+        
+        public var countTarget:uint;
+        public var countDurationSeconds:Number;
+    }
+}
+</pre></div></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,true,false,true,true,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

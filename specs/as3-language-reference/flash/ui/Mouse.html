@@ -1,0 +1,446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:9"><meta name="product" content="flash player"><meta name="productver" content="flash player:9"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="Mouse,flash.ui.Mouse,cursor,supportsCursor,supportsNativeCursor,hide,registerCursor,show,unregisterCursor"><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" src="../../AC_OETags.js" type="text/javascript"></script><title>Mouse - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">flash.ui&nbsp;</a><br>
+								<h1 id="classProductName">Mouse&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">flash.ui</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public final   class  Mouse</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Mouse  <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../Object.html">Object</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9</td></tr></table><p></p><p></p><p></p>
+ The methods of the Mouse class are used to hide and show the mouse pointer,
+ or to set the pointer to a specific style.
+ The Mouse class is a top-level class whose properties and methods 
+ you can access without using a constructor. <span src="flashonly">The pointer is visible by default, 
+ but you can hide it and implement a custom pointer. </span>
+ 
+            <p></p><p><a href="#includeExamplesSummary">View the examples</a></p><p id="moreExamples"><span class="classHeaderTableLabel">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b8f499-7ff5.html" target="_blank">Customizing the mouse cursor</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7cff.html" target="_blank">Mouse input example: WordSearch </a></div><p id="learnMore"><span class="classHeaderTableLabel">Learn more</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7d00.html" target="_blank">Capturing mouse input</a><br/></div><p><span class="classHeaderTableLabel">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/events/MouseEvent.html" target="">flash.events.MouseEvent</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../Object.html#constructor" class="signatureLink">constructor</a> : <a href="../../Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::10.2##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#cursor" class="signatureLink">cursor</a> : <a href="../../String.html">String</a><div class="summaryTableDescription">[static]  
+	The name of the native cursor.</div></td><td class="summaryTableOwnerCol">Mouse</td></tr><tr class="" runtime="Flash::10.1##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#supportsCursor" class="signatureLink">supportsCursor</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">[static] [read-only] 
+	 Indicates whether the computer or device displays a persistent cursor.</div></td><td class="summaryTableOwnerCol">Mouse</td></tr><tr class="" runtime="Flash::10.2##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#supportsNativeCursor" class="signatureLink">supportsNativeCursor</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">[static] [read-only]  
+	Indicates whether the current configuration supports native cursors.</div></td><td class="summaryTableOwnerCol">Mouse</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#hide()" class="signatureLink">hide</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[static] 
+  	 Hides the pointer.</div></td><td class="summaryTableOwnerCol">Mouse</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::10.2##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#registerCursor()" class="signatureLink">registerCursor</a>(name:<a href="../../String.html">String</a>, cursor:<a href="../../flash/ui/MouseCursorData.html">MouseCursorData</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[static]  
+	Registers a native cursor under the given name, with the given data.</div></td><td class="summaryTableOwnerCol">Mouse</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="../../String.html">String</a>, isEnum:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#show()" class="signatureLink">show</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[static] 
+  	 Displays the pointer.</div></td><td class="summaryTableOwnerCol">Mouse</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toString()" class="signatureLink">toString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::10.2##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#unregisterCursor()" class="signatureLink">unregisterCursor</a>(name:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[static]  
+	Unregisters the native cursor with the given name.</div></td><td class="summaryTableOwnerCol">Mouse</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+	 Returns the primitive value of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="Flash::10.2##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="cursor" id="cursor"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>cursor</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>cursor:<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10.2, AIR 1.5</td></tr></table><p></p><p></p><p> 
+	The name of the native cursor.
+	
+	</p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get cursor():<a href="../../String.html">String</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function set cursor(value:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::10.1##AIR::2##"><a name="propertyDetail" id="propertyDetail"></a><a name="supportsCursor" id="supportsCursor"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>supportsCursor</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>supportsCursor:<a href="../../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10.1, AIR 2</td></tr></table><p></p><p></p><p>
+	 Indicates whether the computer or device displays a persistent cursor.
+	 
+	 <p>The <code>supportsCursor</code> property is <code>true</code> on most desktop computers
+	 and <code>false</code> on most mobile devices.</p>
+	 
+	 <p><b>Note:</b> Mouse events can be dispatched whether or not this property is <code>true</code>.
+	 However, mouse events may behave differently depending on the physical characteristics of the pointing device.</p>
+	 
+  	 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get supportsCursor():<a href="../../Boolean.html">Boolean</a></code><br/><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/system/Capabilities.html#touchscreenType" target="">flash.system.Capabilities.touchscreenType</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody"> The following example is a simple test that indicates current support for a persistent cursor, or not. When testing this example, click the
+ text field to see the property value:
+<div class="listing"><pre>
+import flash.events.*;
+import flash.display.*;
+import flash.ui.Mouse;
+import flash.text.TextField;
+
+var supportsCursorTxt:TextField = new TextField();
+supportsCursorTxt.width = 200;
+supportsCursorTxt.border = true;
+addChild(supportsCursorTxt);
+
+addEventListener (MouseEvent.CLICK, getScreenKeyboardType);
+
+function getScreenKeyboardType(e:MouseEvent):void{
+    supportsCursorTxt.text= "Supports Cursor is : " + String(flash.ui.Mouse.supportsCursor);
+
+}
+</pre></div></div></span><span id="pageFilter"><div class="detailBody"> The following example tests and responds to different user input environments.
+ This example assumes it is part of the code for a game that uses a cursor. First, the example tests
+ to see if the environment supports a cursor. If not, it then tests to see if the environment supports
+ interaction with a stylus. If so, then code can be inserted to customize the game for stylus use. 
+ If the environment supports finger interaction, code can be inserted to customize the program for the specific
+ needs of finger touches. If no pointing device is supported at all, then the developer needs to create
+ alternative cursors or some means of interaction, such as key presses.
+<div class="listing"><pre>
+if(Mouse.supportsCursor) {
+    //Game acts as before
+} else {
+    if(Capabilities.touchscreenType == TouchscreenType.STYLUS ){
+        //The Game has to change so that the character is chasing the location of the stylus as 
+        //it's dragged around. Some of the animations will have to change
+    }else if(Capabilities.touchscreenType = TouchscreenType.FINGER){
+        //Same as above, except that the hit-area is larger for a finger.
+    }else{
+        //There's no pointing device at all. The developer designs some sort of custom cursor to 
+        //be controlled with key presses or similar input
+    }
+}
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::10.2##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="supportsNativeCursor" id="supportsNativeCursor"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>supportsNativeCursor</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>supportsNativeCursor:<a href="../../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10.2, AIR 1.5</td></tr></table><p></p><p></p><p> 
+	Indicates whether the current configuration supports native cursors.
+	
+	</p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get supportsNativeCursor():<a href="../../Boolean.html">Boolean</a></code><br/></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::9##"><a name="hide()" id="hide()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>hide</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public static function hide():<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9</td></tr></table><p></p><p></p><p>
+  	 Hides the pointer. The pointer is visible by default.
+  	 
+	 <p><b>Note:</b> You need to call <code>Mouse.hide()</code> only once, regardless of
+	 the number of previous calls to <code>Mouse.show()</code>.</p>
+  	 
+  	 </p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/display/DisplayObject.html#mouseX" target="">flash.display.DisplayObject.mouseX</a><br/><a href="../../flash/display/DisplayObject.html#mouseY" target="">flash.display.DisplayObject.mouseY</a></div></div></span><span id="pageFilter" runtime="Flash::10.2##AIR::1.5##"><a name="registerCursor()" id="registerCursor()"></a><a name="registerCursor(String,flash.ui.MouseCursorData)" id="registerCursor(String,flash.ui.MouseCursorData)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>registerCursor</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function registerCursor(name:<a href="../../String.html">String</a>, cursor:<a href="../../flash/ui/MouseCursorData.html">MouseCursorData</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10.2, AIR 1.5</td></tr></table><p></p><p></p><p> 
+	Registers a native cursor under the given name, with the given data.
+	
+	</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">name</span>:<a href="../../String.html">String</a></code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">cursor</span>:<a href="../../flash/ui/MouseCursorData.html">MouseCursorData</a></code></td></tr></table></p></div></span><span id="pageFilter" runtime="Flash::9##"><a name="show()" id="show()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>show</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function show():<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9</td></tr></table><p></p><p></p><p>
+  	 Displays the pointer. The pointer is visible by default.
+  	 
+	 <p><b>Note:</b> You need to call <code>Mouse.show()</code> only once, regardless of
+	 the number of previous calls to <code>Mouse.hide()</code>.</p>
+  	 
+  	 </p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/display/DisplayObject.html#mouseX" target="">flash.display.DisplayObject.mouseX</a><br/><a href="../../flash/display/DisplayObject.html#mouseY" target="">flash.display.DisplayObject.mouseY</a></div></div></span><span id="pageFilter" runtime="Flash::10.2##AIR::1.5##"><a name="unregisterCursor()" id="unregisterCursor()"></a><a name="unregisterCursor(String)" id="unregisterCursor(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>unregisterCursor</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function unregisterCursor(name:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10.2, AIR 1.5</td></tr></table><p></p><p></p><p> 
+	Unregisters the native cursor with the given name.
+	
+	</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">name</span>:<a href="../../String.html">String</a></code></td></tr></table></p></div></span><a name="includeExamplesSummary" id="includeExamplesSummary"></a><div class="detailSectionHeader">Examples<span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span></div><span id="pageFilter"><div class="exampleHeader">MouseExample.as</div><br/><div class="detailBody"> The following example uses the MouseExample, SimpleButton,
+ ButtonDisplayState, and CustomCursor classes to place a simple button on the Stage. The button
+ has a custom pointer and the button changes when clicked.  This is accomplished with the following steps:
+ <ol><li>Declare the following instance properties: <code>cursor</code> of type CustomCursor, <code>child</code> of type
+  CustomButton, and <code>gutter</code> of type uint. </li><li>Assign <code>child</code> to a new CustomButton instance, set its <i>x</i> and 
+  <i>y</i> coordinates to 10 pixels each, and then add the instance to the display list.
+  The CustomButton class overrides the <code>downState</code>, <code>upState</code>, 
+  <code>overState</code>, and <code>hitTestState</code> properties in SimpleButton.  Each of these 
+  properties instantiates a ButtonDisplayState object, which draws a different square, depending 
+  on the state of the <code>child</code> instance.</li><li>The <code>child</code> instance is then used to add a <code>MOUSE_OVER</code> event listener and
+  <code>mouseOverHandler()</code> listener method, along with a <code>MOUSE_OUT</code> event listener and associated
+  <code>mouseOutHandler()</code> method.</li><li>The event listeners work as follows:
+  <ul><li><code>mouseOverHandler</code>: Hides the "normal" pointer and adds a <code>MOUSE_MOVE</code>
+      listener, which processes the mouse moves using <code>mouseMoveHandler()</code>, described
+      below.</li><li><code>mouseOutHandler</code>: When the mouse moves outside the custom button, the
+      "normal" pointer is shown, the <code>MOUSE_MOVE</code> event listener is removed, and the custom cursor's
+      visibility is set to <code>false</code>.</li><li><code>mouseMoveHandler</code>: Moves the custom cursor around wherever the pointer is 
+      moved and sets the custom cursor's visibility to <code>true</code>.</li></ul></li><li>Back in the <code>MouseExample</code> constructor, the cursor property is assigned to a new 
+  CustomCursor object and then added to the display list using <code>addChild()</code>.  
+  The CustomCursor class draws a small nearly black square in place of the "normal" pointer
+  whenever the mouse is over <code>child</code>.</li><li>A fourth event listener of type <code>MOUSE_LEAVE</code> is added, with the associated
+  <code>mouseLeaveHandler()</code> method.  In this method (called if the mouse leaves the Stage), 
+  <code>mouseOutHandler()</code> is passed a new <code>mouseMove</code> listener object, which essentially
+  removes the pointer so it is not left on the Stage.</li></ol>
+<div class="listing"><pre>
+package {
+    import flash.display.Sprite;
+    import flash.display.DisplayObject;
+    import flash.ui.Mouse;
+    import flash.events.*;
+
+    public class MouseExample extends Sprite {
+         private var cursor:CustomCursor;
+         private var child:CustomButton;
+         private var gutter:uint = 10;
+
+        public function MouseExample() {
+            child = new CustomButton();
+            child.x = gutter;
+            child.y = gutter;
+            addChild(child);
+
+            child.addEventListener(MouseEvent.MOUSE_OVER, mouseOverHandler);
+            child.addEventListener(MouseEvent.MOUSE_OUT, mouseOutHandler);
+
+            cursor = new CustomCursor();
+            addChild(cursor);
+
+            stage.addEventListener(Event.MOUSE_LEAVE, mouseLeaveHandler);
+        }
+
+        private function mouseOverHandler(event:MouseEvent):void {
+            trace("mouseOverHandler");
+            Mouse.hide();
+            child.addEventListener(MouseEvent.MOUSE_MOVE, mouseMoveHandler);
+        }
+
+        private function mouseOutHandler(event:MouseEvent):void {
+            trace("mouseOutHandler");
+            Mouse.show();
+            child.removeEventListener(MouseEvent.MOUSE_MOVE, mouseMoveHandler);
+            cursor.visible = false;
+        }
+
+        private function mouseMoveHandler(event:MouseEvent):void {
+            trace("mouseMoveHandler");
+            cursor.x = event.localX;
+            cursor.y = event.localY;
+            event.updateAfterEvent();
+            cursor.visible = true;
+        }
+
+        private function mouseLeaveHandler(event:Event):void {
+            trace("mouseLeaveHandler");
+            mouseOutHandler(new MouseEvent(MouseEvent.MOUSE_MOVE));
+        }
+    }
+}
+
+import flash.display.Shape;
+import flash.display.SimpleButton;
+    
+class CustomButton extends SimpleButton {
+    var upColor:uint = 0xFFCC00;
+    var overColor:uint = 0xCCFF00;
+    var downColor:uint = 0x00CCFF;
+    var size:uint = 80;
+    
+    public function CustomButton() {
+        downState = new ButtonDisplayState(downColor, size+10);
+        overState = new ButtonDisplayState(overColor, size);
+        upState = new ButtonDisplayState(upColor, size);
+        hitTestState = new ButtonDisplayState(upColor, size);
+    }
+}
+
+class ButtonDisplayState extends Shape {
+    var bgColor:uint;
+    var size:uint;
+    
+    public function ButtonDisplayState(bgColor:uint, size:uint) {
+        this.bgColor = bgColor;
+        this.size = size;
+        draw();
+    }
+    
+    private function draw():void {
+        graphics.clear();
+        graphics.beginFill(bgColor);
+        graphics.drawRect(0, 0, size, size);
+        graphics.endFill();
+    }
+}
+    
+class CustomCursor extends Shape {
+    var bgColor:uint = 0x333333;
+    var size:uint = 10;
+    
+    public function CustomCursor() {
+        visible = false;
+        draw();
+    }
+    
+    private function draw():void {
+        graphics.clear();
+        graphics.beginFill(bgColor);
+        graphics.drawRect(0, 0, size, size);
+        graphics.endFill();
+    }
+}
+</pre></div></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,true,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

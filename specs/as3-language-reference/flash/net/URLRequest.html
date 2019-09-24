@@ -1,0 +1,789 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:9"><meta name="runtime" content="lite"><meta name="runtimever" content="lite:4"><meta name="product" content="flash player"><meta name="productver" content="flash player:9"><meta name="product" content="lite"><meta name="productver" content="lite:4"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="URLRequest,flash.net.URLRequest,authenticate,cacheResponse,contentType,data,digest,followRedirects,idleTimeout,manageCookies,method,requestHeaders,url,useCache,userAgent,useRedirectedURL"><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" src="../../AC_OETags.js" type="text/javascript"></script><title>URLRequest - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">flash.net&nbsp;</a><br>
+								<h1 id="classProductName">URLRequest&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">flash.net</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public final   class  URLRequest</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">URLRequest  <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../Object.html">Object</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p></p>
+  The URLRequest class captures all of the information in a single HTTP request. URLRequest
+  objects are passed to the <code>load()</code> methods of the Loader, URLStream,
+  and URLLoader classes, and to other loading operations, to initiate URL downloads.
+  They are also passed to the <code>upload()</code> and <code>download()</code> methods
+  of the FileReference class.
+ 
+  <p>A SWF file in the local-with-filesystem sandbox may not load data from,
+  or provide data to, a resource that is in the network sandbox. </p>
+ 
+               <p>By default, the calling <span>SWF </span>file
+  and the URL you load must be in the same domain. For example, a <span>SWF </span>file
+  at www.adobe.com can load data only from sources that are also at www.adobe.com.
+  <span>To load data from a different domain, place a URL policy file on the server
+  hosting the data.</span>
+               </p>
+ 
+               <p> However, in Adobe AIR, content in the application security sandbox (content
+  installed with the AIR application) is not restricted by these security limitations.
+  For content running in Adobe AIR, files in the application security sandbox
+  can access URLs using any of the following URL schemes:</p>
+
+  
+ 
+               <ul>
+                  <li>
+                     <code>http</code> and <code>https</code> 
+                  </li>
+                  <li>
+                     <code>file</code> 
+                  </li>
+                  <li>
+                     <code>app-storage</code> 
+                  </li>
+                  <li>
+                     <code>app</code> 
+                  </li>
+               </ul>
+ 
+               <p>Content <span>running in Adobe AIR </span>that is not in the application security
+  sandbox observes the same restrictions as content running in the browser
+  <span>(in Flash Player)</span>, and loading is
+  governed by the content's domain<span> and any permissions granted in URL
+  policy files</span>.</p>
+ 
+               <p>For more information related to security, see the Flash Player Developer Center Topic:
+ <a href="http://www.adobe.com/go/devnet_security_en" target="external">Security</a>.</p>
+ 
+ 
+            <p></p><p><a href="#includeExamplesSummary">View the examples</a></p><p id="moreExamples"><span class="classHeaderTableLabel">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7d9e.html" target="_blank">Loading an external SWF file</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b8f6c0-7ffe.html" target="_blank">Basics of networking and communication</a></div><p id="learnMore"><span class="classHeaderTableLabel">Learn more</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7cfd.html" target="_blank">Loading external data</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7cb2.html" target="_blank">Using the URLRequest class </a><br/><a href="http://help.adobe.com/en_US/as3/dev/WSb2ba3b1aad8a27b02a2e08d61220f3e44be-7fff.html" target="_blank">Web service requests</a><br/></div><p><span class="classHeaderTableLabel">Related API Elements</span></p><div class="seeAlso"><a href="FileReference.html" target="">FileReference</a><br/><a href="URLRequestHeader.html" target="">URLRequestHeader</a><br/><a href="URLRequestDefaults.html" target="">URLRequestDefaults</a><br/><a href="URLLoader.html" target="">URLLoader</a><br/><a href="URLStream.html" target="">URLStream</a><br/><a href="../../flash/html/HTMLLoader.html" target="">HTMLLoader class</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#authenticate" class="signatureLink">authenticate</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">
+    Specifies whether authentication requests should be handled (true
+    or not (false) for this request.</div></td><td class="summaryTableOwnerCol">URLRequest</td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#cacheResponse" class="signatureLink">cacheResponse</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">
+    Specifies whether successful response data should be cached for this request.</div></td><td class="summaryTableOwnerCol">URLRequest</td></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../Object.html#constructor" class="signatureLink">constructor</a> : <a href="../../Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#contentType" class="signatureLink">contentType</a> : <a href="../../String.html">String</a><div class="summaryTableDescription">
+     The MIME content type of the content in the the data property.</div></td><td class="summaryTableOwnerCol">URLRequest</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#data" class="signatureLink">data</a> : <a href="../../Object.html">Object</a><div class="summaryTableDescription">
+     An object containing data to be transmitted with the URL request.</div></td><td class="summaryTableOwnerCol">URLRequest</td></tr><tr class="" runtime="Flash::9.0.115.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#digest" class="signatureLink">digest</a> : <a href="../../String.html">String</a><div class="summaryTableDescription">
+     A string that uniquely identifies the signed Adobe platform component to be stored
+     to (or retrieved from) the Flash Player cache.</div></td><td class="summaryTableOwnerCol">URLRequest</td></tr><tr class="" runtime="AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#followRedirects" class="signatureLink">followRedirects</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">
+    Specifies whether redirects are to be followed (true)
+    or not (false).</div></td><td class="summaryTableOwnerCol">URLRequest</td></tr><tr class="" runtime="AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#idleTimeout" class="signatureLink">idleTimeout</a> : <a href="../../Number.html">Number</a><div class="summaryTableDescription">
+	    Specifies the idle timeout value (in milliseconds) for this request.</div></td><td class="summaryTableOwnerCol">URLRequest</td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#manageCookies" class="signatureLink">manageCookies</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">
+    Specifies whether the HTTP protocol stack should manage cookies for this
+    request.</div></td><td class="summaryTableOwnerCol">URLRequest</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#method" class="signatureLink">method</a> : <a href="../../String.html">String</a><div class="summaryTableDescription">
+     Controls the HTTP form submission method.</div></td><td class="summaryTableOwnerCol">URLRequest</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#requestHeaders" class="signatureLink">requestHeaders</a> : <a href="../../Array.html">Array</a><div class="summaryTableDescription">
+     The array of HTTP request headers to be appended to the
+     HTTP request.</div></td><td class="summaryTableOwnerCol">URLRequest</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#url" class="signatureLink">url</a> : <a href="../../String.html">String</a><div class="summaryTableDescription">
+     The URL to be requested.</div></td><td class="summaryTableOwnerCol">URLRequest</td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#useCache" class="signatureLink">useCache</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">
+    Specifies whether the local cache should be consulted before this URLRequest
+    fetches data.</div></td><td class="summaryTableOwnerCol">URLRequest</td></tr><tr class="" runtime="AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#userAgent" class="signatureLink">userAgent</a> : <a href="../../String.html">String</a><div class="summaryTableDescription">
+    Specifies the user-agent string to be used in the HTTP request.</div></td><td class="summaryTableOwnerCol">URLRequest</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#URLRequest()" class="signatureLink">URLRequest</a>(url:<a href="../../String.html">String</a> = null)</div><div class="summaryTableDescription">
+     Creates a URLRequest object.</div></td><td class="summaryTableOwnerCol">URLRequest</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="../../String.html">String</a>, isEnum:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toString()" class="signatureLink">toString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::11.8##AIR::3.8##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#useRedirectedURL()" class="signatureLink">useRedirectedURL</a>(sourceRequest:<a href="../../flash/net/URLRequest.html">URLRequest</a>, wholeURL:<a href="../../Boolean.html">Boolean</a> = false, pattern:<a href="../../specialTypes.html#*">*</a> = null, replace:<a href="../../String.html">String</a> = null):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	 
+	 Allows substitution of a redirected URL from a source URLRequest for some portion of the URL  
+	 in a new URLRequest.</div></td><td class="summaryTableOwnerCol">URLRequest</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+	 Returns the primitive value of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="AIR::1.0##"><a name="propertyDetail" id="propertyDetail"></a><a name="authenticate" id="authenticate"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<h3>authenticate</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>authenticate:<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+    Specifies whether authentication requests should be handled (<code>true</code>
+    or not (<code>false</code>) for this request. If <code>false</code>, authentication
+    challenges return an HTTP error.
+    
+    <p>The supported authentication methods are:</p>
+    
+    <ul><li>Windows&mdash;HTTP Basic/Digest, Windows Integrated Authentication
+          (including NTLM and Kerberos), SSL Certificate Authentication.</li><li>Mac&mdash;HTTP Basic/Digest, NTLM, SSL Certificate Authentication.</li></ul>
+    
+    <p><b>Note</b>:The <code>FileReference.upload()</code>,
+    <code>FileReference.download()</code>, and <code>HTMLLoader.load()</code>
+    methods do not support the <code>URLRequest.authenticate</code> property.</p>
+    
+    </p><p> The default value is <code>true.</code></p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get authenticate():<a href="../../Boolean.html">Boolean</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set authenticate(value:<a href="../../Boolean.html">Boolean</a>):<a href="../../specialTypes.html#void">void</a></code><br/><br/><span class="label"> Throws </span><br/><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; The caller is not in the AIR application security sandbox.
+    
+    </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="URLRequestDefaults.html#authenticate" target="">flash.net.URLRequestDefaults.authenticate</a></div></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="propertyDetail" id="propertyDetail"></a><a name="cacheResponse" id="cacheResponse"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<h3>cacheResponse</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>cacheResponse:<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+    Specifies whether successful response data should be cached for this request.
+    When set to <code>true</code>, the AIR application uses the operating system's
+    HTTP cache.
+    
+    <p><b>Note</b>:The <code>HTMLLoader.load()</code> method
+    does not support the <code>URLRequest.cacheResponse</code> property.</p>
+    
+    </p><p> The default value is <code>true.</code></p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get cacheResponse():<a href="../../Boolean.html">Boolean</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set cacheResponse(value:<a href="../../Boolean.html">Boolean</a>):<a href="../../specialTypes.html#void">void</a></code><br/><br/><span class="label"> Throws </span><br/><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; The caller is not in the AIR application security sandbox.
+    
+    </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="URLRequestDefaults.html#cacheResponse" target="">flash.net.URLRequestDefaults.cacheResponse</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="propertyDetail" id="propertyDetail"></a><a name="contentType" id="contentType"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>contentType</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>contentType:<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     The MIME content type of the content in the the <code>data</code> property.
+     
+     <p>The default value is <code>application/x-www-form-urlencoded</code>.</p>
+     
+     <p><b>Note</b>:The <code>FileReference.upload()</code>,
+     <code>FileReference.download()</code>, and <code>HTMLLoader.load()</code> methods do not
+     support the <code>URLRequest.contentType</code> property.</p>
+     
+     <p>When sending a POST request, the values of the <code>contentType</code>
+     and <code>data</code> properties must correspond properly. The value of the <code>contentType</code>
+     property instructs servers on how to interpret the value of the <code>data</code> property. </p>
+     
+     <ul><li>If the value of the <code>data</code> property is a URLVariables object, the value of
+     <code>contentType</code> must be <code>application/x-www-form-urlencoded</code>. </li><li> If the value of the <code>data</code> property is any other type, the value of <code>contentType</code>
+     should indicate the type of the POST data that will be sent (which is the binary or string data
+     contained in the value of the <code>data</code> property). </li><li>For <code>FileReference.upload()</code>,
+     the Content-Type of the request is set automatically to <code>multipart/form-data</code>,
+     and the value of the <code>contentType</code> property is ignored.</li></ul>
+     
+     <p> In Flash Player 10 and later, if you use a multipart Content-Type (for example "multipart/form-data")
+     that contains an upload (indicated by a "filename" parameter in a "content-disposition" header within the POST body),
+     the POST operation is subject to the security rules applied to uploads:</p>
+     <ul><li>The POST operation must be performed in response to a user-initiated action, such as a mouse click or key press.</li><li>If the POST operation is cross-domain (the POST target is not on the same server as the SWF file
+     that is sending the POST request),
+     the target server must provide a URL policy file that permits cross-domain access.</li></ul>
+     <p>Also, for any multipart Content-Type, the syntax must be valid (according to the RFC2046 standards).
+     If the syntax appears to be invalid, the POST operation is subject to the security rules applied to uploads.</p>
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get contentType():<a href="../../String.html">String</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set contentType(value:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></code><br/><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="URLRequest.html#data" target="">data</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="propertyDetail" id="propertyDetail"></a><a name="data" id="data"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>data</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>data:<a href="../../Object.html">Object</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     An object containing data to be transmitted with the URL request.
+     
+     <p>This property is used in conjunction with the <code>method</code> property.
+     When the value of <code>method</code> is <code>GET</code>,
+     the value of <code>data</code> is appended to the value of <code>URLRequest.url</code>,
+     using HTTP query-string syntax. When the <code>method</code> value is <code>POST</code>
+     (or any value other than <code>GET</code>), the value
+     of <code>data</code> is transmitted in the body of the HTTP request.</p>
+     
+     <p>The URLRequest API offers binary <code>POST</code> support and support for URL-encoded variables,
+     as well as support for strings. The data object can be a ByteArray, URLVariables,
+     or String object.</p>
+     
+     <p>The way in which the data is used depends on the type of object used:</p>
+     
+     <ul><li>If the object is a ByteArray object, the binary
+     data of the ByteArray object is used as <code>POST</code> data. For <code>GET</code>, data of ByteArray type
+     is not supported. Also, data of ByteArray type is not supported for
+     <code>FileReference.upload()</code> and <code>FileReference.download()</code>.</li><li>If the object is a URLVariables object and the method is <code>POST</code>,
+     the variables are encoded using <i>x-www-form-urlencoded</i> format
+     and the resulting string is used as <code>POST</code> data. An exception is a call to
+     <code>FileReference.upload()</code>, in which the variables are sent as separate fields in
+     a <code>multipart/form-data</code> post.</li><li>If the object is a URLVariables object and the method is <code>GET</code>,
+     the URLVariables object defines variables to be sent with the URLRequest object.</li><li>Otherwise, the object is converted to a string, and the string
+     is used as the <code>POST</code> or <code>GET</code> data.</li></ul>
+     
+     <p>This data is not sent until a method, such as <code>navigateToURL()</code>
+     or <code>FileReference.upload()</code>, uses the URLRequest object.</p>
+     
+     <p><b>Note</b>: The value of <code>contentType</code> must correspond to the type of data
+     in the <code>data</code> property. See the note in the description of the
+     <code>contentType</code> property.</p>
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get data():<a href="../../Object.html">Object</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set data(value:<a href="../../Object.html">Object</a>):<a href="../../specialTypes.html#void">void</a></code><br/><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="URLRequest.html#method" target="">URLRequest.method</a><br/><a href="URLRequestMethod.html" target="">URLRequestMethod</a><br/><a href="URLVariables.html" target="">URLVariables</a><br/><a href="../../flash/utils/ByteArray.html" target="">flash.utils.ByteArray</a><br/><a href="URLRequest.html#contentType" target="">contentType</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody"> The following example opens the remote application hosted at 
+ http://www.[yourDomain].com/application.jsp in a new browser window and passes 
+ data about a user session, captured in a URLVariables object, to the application. 
+  
+ <p>Highlights of the example follow:</p>
+ <ol><li>The constructor function creates a URLRequest
+    instance named <code>request</code>, taking the URL of the remote application as a parameter.</li><li>A URLVariables object is created and two of its properties are assigned values.</li><li>The URLVariables object is assigned to the <code>data</code> property of the URLRequest object.</li><li>The example calls <code>navigateToURL</code>, which opens a new browser window
+    to the remote application's URL.</li></ol>
+ <p> <b>Note:</b> To run the example, the remote application URL in the example must be replaced
+ with a working URL. Additionally, you would need server code 
+ to process the information captured by Flash Player in the URLVariables object.</p>
+<div class="listing"><pre>
+package {
+    import flash.display.Sprite;
+    import flash.net.navigateToURL;
+    import flash.net.URLRequest;
+    import flash.net.URLVariables;
+
+    public class URLVariablesExample extends Sprite {
+
+        public function URLVariablesExample() {
+            var url:String = "http://www.[yourDomain].com/application.jsp";
+            var request:URLRequest = new URLRequest(url);
+            var variables:URLVariables = new URLVariables();
+            variables.exampleSessionId = new Date().getTime();
+            variables.exampleUserLabel = "guest";
+            request.data = variables;
+            navigateToURL(request);
+        }
+    }
+}
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::9.0.115.0##Lite::4##"><a name="propertyDetail" id="propertyDetail"></a><a name="digest" id="digest"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>digest</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>digest:<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9.0.115.0, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     A string that uniquely identifies the signed Adobe platform component to be stored
+     to (or retrieved from) the Flash Player cache. <span> An Adobe
+     platform component is a signed file (a SWZ file) that contains SWF content that is cached
+     persistently on a user's machine. All SWZ files are signed by Adobe. A digest
+     corresponds to a single cached file; if you change the file in any way, its digest
+     will change in an unpredictable way. By using a digest, you can verify the cached file across
+     multiple domains. Two files with the same digest are the same file, and two files with different
+     digests are not the same file. A file cannot (practically) be created to "spoof" a digest and
+     pretend to be another digest. </span>
+     
+     <p>The digest is based on an SHA-256 message digest algorithm
+     (64 characters long in hexadecimal format).</p>
+     
+     <p>For example, the Flex SDK includes a SWZ for the Flex framework (and it
+     provides the digest string for that SWZ file). You can post this SWZ on your web server and load it
+     in your SWF file (using the <code>load()</code> method of a URLLoader object). If the end user's
+     machine already has the matching SWZ file cached, the application uses the cached SWZ file.
+     (A SWZ file matches if its <code>digest</code> matches the one you provide.) Otherwise, the
+     application downloads the SWZ file from the URL you specify. </p>
+     
+     <p>Only set the <code>digest</code> parameter in a URLRequest object
+     used in a call to the <code>URLLoader.load()</code> method to load a SWZ file. If the <code>digest</code>
+     property of a a URLRequest object is set when it is used in other methods, the application throws an
+     IOError exception.</p>
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get digest():<a href="../../String.html">String</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set digest(value:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></code><br/><br/><span class="label"> Throws </span><br/><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../ArgumentError.html">ArgumentError</a> </code> &mdash; The digest provided does not match the digest of the file that is
+     extracted from the downloaded signed file or the signed file loaded out of the cache. The
+     application also throws this error if the provided digest is the wrong length or contains invalid
+     (nonhexadecimal) characters.
+     
+     </td></tr></table><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody"> The following example loads a remote file into the cache. At the end of the load, the byte array 
+ contains the actual file (not the signed file). The example completes the load operation by calling <code>loadBytes()</code>:
+<div class="listing"><pre>
+ 
+var myURLReq:URLRequest = new URLRequest();
+myURLReq.url = "http://yourdomain/users/jdoe/test01/_rsc/Automated/AssetCaching_rsc/test01/rsl.swz";
+myURLReq.digest = "3B0AA28C7A990385E044D80F5637FB036317BB41E044D80F5637FB036317BB41";
+var myURLLoader:URLLoader = new URLLoader();
+myURLLoader.dataFormat = URLLoaderDataFormat.BINARY;
+myURLLoader.addEventListener("complete", onC);
+
+myURLLoad.load(myURLReq);
+
+function onC(e) {
+    var someLoader:Loader = new Loader();
+    addChild(someLoader);
+    someLoader.loadBytes((ByteArray)(myURLLoad.data)); 
+}
+
+</pre></div></div></span></div></span><span id="pageFilter" runtime="AIR::1.0##Lite::4##"><a name="propertyDetail" id="propertyDetail"></a><a name="followRedirects" id="followRedirects"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>followRedirects</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>followRedirects:<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Lite 4</td></tr></table><p></p><p></p><p>
+    Specifies whether redirects are to be followed (<code>true</code>)
+    or not (<code>false</code>).
+    
+    <p><b>Note</b>:The <code>FileReference.upload()</code>,
+    <code>FileReference.download()</code>, and <code>HTMLLoader.load()</code> methods do not
+    support the <code>URLRequest.followRedirects</code> property.</p>
+    
+    </p><p> The default value is <code>true.</code></p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get followRedirects():<a href="../../Boolean.html">Boolean</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set followRedirects(value:<a href="../../Boolean.html">Boolean</a>):<a href="../../specialTypes.html#void">void</a></code><br/><br/><span class="label"> Throws </span><br/><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; The caller is not in the AIR application security sandbox.
+    
+    </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="URLRequestDefaults.html#followRedirects" target="">URLRequestDefaults.followRedirects</a></div></div></span><span id="pageFilter" runtime="AIR::2##"><a name="propertyDetail" id="propertyDetail"></a><a name="idleTimeout" id="idleTimeout"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<h3>idleTimeout</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>idleTimeout:<a href="../../Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2</td></tr></table><p></p><p></p><p>
+	    Specifies the idle timeout value (in milliseconds) for this request.
+	    
+	    <p>The idle timeout is the amount of time the client waits for a response from the server, after the connection is established,
+	    before abandoning the request.</p>
+	    
+	    <p><b>Note</b>: The <code>HTMLLoader.load()</code> method
+	    does not support the <code>URLRequest.idleTimeout</code> property.
+	    The HTMLLoader class defines its own <code>idleTimeout</code> property.</p>
+	    
+	    </p><p> The default value is <code>initialized from the URLRequestDefaults.idleTimeout property.</code></p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get idleTimeout():<a href="../../Number.html">Number</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set idleTimeout(value:<a href="../../Number.html">Number</a>):<a href="../../specialTypes.html#void">void</a></code><br/><br/><span class="label"> Throws </span><br/><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; The caller is not in the AIR application security sandbox.
+	    
+	    </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="URLRequestDefaults.html#idleTimeout" target="">URLRequestDefaults.idleTimeout</a></div></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="propertyDetail" id="propertyDetail"></a><a name="manageCookies" id="manageCookies"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<h3>manageCookies</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>manageCookies:<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+    Specifies whether the HTTP protocol stack should manage cookies for this
+    request. When <code>true</code>, cookies are added to the request
+    and response cookies are remembered. If <code>false</code>, cookies are
+    <i>not</i> added to the request and response cookies are <i>not</i>
+    remembered, but users can manage cookies themselves by direct header
+    manipulation.
+    
+    <b>Note:</b> On Windows, you cannot add cookies to a URL request manually
+    when <code>manageCookies</code> is set to <code>true</code>. On other operating systems,
+    adding cookies to a request is permitted irrespective of whether <code>manageCookies</code>
+    is set to <code>true</code> or <code>false</code>. When permitted, you can add cookies
+    to a request manually by adding a <code>URLRequestHeader</code> object containing the
+    cookie data to the <code>requestHeaders</code> array.
+      
+    <p>On Mac OS, cookies are shared with Safari. To clear cookies on Mac OS:</p>
+    
+    <ol><li>Open Safari.</li><li>Select Safari > Preferences, and click the Security panel.</li><li>Click the Show Cookies button.</li><li>Click the Reomove All button.</li></ol>
+    
+    <p>To clear cookies on Windows:</p>
+    
+    <ol><li>Open the Internet Properties control panel, and click the General tab.</li><li>Click the Delete Cookies button. </li></ol>
+    
+    </p><p> The default value is <code>true.</code></p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get manageCookies():<a href="../../Boolean.html">Boolean</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set manageCookies(value:<a href="../../Boolean.html">Boolean</a>):<a href="../../specialTypes.html#void">void</a></code><br/><br/><span class="label"> Throws </span><br/><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; The caller is not in the AIR application security sandbox.
+    
+    </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="URLRequestDefaults.html#manageCookies" target="">flash.net.URLRequestDefaults.manageCookies</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="propertyDetail" id="propertyDetail"></a><a name="method" id="method"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>method</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>method:<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Controls the HTTP form submission method.
+     
+     <p><span>For SWF content running in Flash Player
+     (in the browser), this property is limited to GET or
+     POST operations, and valid values are <code>URLRequestMethod.GET</code>
+     or <code>URLRequestMethod.POST</code>.</span></p>
+     
+     <p><span>For content running in Adobe AIR, you </span>
+     can use any string value
+     if the content is in the application security sandbox. Otherwise,
+     <span>as with content running in Flash Player,</span>
+     you are restricted to using GET or POST operations.</p>
+     
+     <p><span>For content running in Adobe AIR, when </span>
+     using the <code>navigateToURL()</code> function, the runtime treats a URLRequest that uses the POST
+     method (one that has its <code>method</code> property set to <code>URLRequestMethod.POST</code>)
+     as using the GET method.</p>
+     
+     <p><span><b>Note:</b>
+     If running in Flash Player and the referenced form has no body,
+     Flash Player automatically uses a GET operation, even if the method is set to
+     <code>URLRequestMethod.POST</code>. For this reason, it is recommended to always include
+     a "dummy" body to ensure that the correct method is used.</span></p>
+     
+     </p><p> The default value is <code>URLRequestMethod.GET.</code></p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get method():<a href="../../String.html">String</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set method(value:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></code><br/><br/><span class="label"> Throws </span><br/><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../ArgumentError.html">ArgumentError</a> </code> &mdash; If the <code>value</code> parameter is not
+     <code>URLRequestMethod.GET</code> or <code>URLRequestMethod.POST</code>.
+     
+     </td></tr></table><p id="learnMore"><span class="label">Learn more</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7cfd.html" target="_blank">Loading external data</a><br/></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="URLRequestMethod.html" target="">URLRequestMethod class</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody"> The following example opens the remote application hosted at 
+ http://www.[yourDomain].com/application.jsp in a new browser window and passes 
+ data about a user session, captured in a URLVariables object, to the application. 
+ It explicitly sets the value of the <code>URLRequest.method</code> property to 
+ <code>URLRequestMethod.POST</code>.
+ <p>Highlights of the example follow:</p>
+ <ol><li>The constructor function creates a URLRequest
+    instance named <code>request</code>, taking the URL of the remote application as a parameter.</li><li>A URLVariables object is created and two of its properties are assigned values.</li><li>The URLVariables object is assigned to the <code>data</code> property of the URLRequest object.</li><li>The value of the <code>URLRequest.method</code> property is set to 
+ <code>URLRequestMethod.POST</code>.</li><li>The example calls <code>navigateToURL</code>, which opens a new browser window
+    to the remote application's URL.</li></ol>
+ <p> <b>Note:</b> To run the example, the remote application URL in the example must be replaced
+ with a working URL. Additionally, you would need server code 
+ to process the information captured by Flash Player in the URLVariables object.</p>
+<div class="listing"><pre>
+package {
+    import flash.display.Sprite;
+    import flash.net.navigateToURL;
+    import flash.net.URLRequest;
+    import flash.net.URLRequestMethod;
+    import flash.net.URLVariables;
+
+    public class URLRequest_method extends Sprite {
+
+        public function URLRequest_method() {
+            var url:String = "http://www.[yourDomain].com/application.jsp";
+            var request:URLRequest = new URLRequest(url);
+            
+            var variables:URLVariables = new URLVariables();
+            variables.exampleSessionId = new Date().getTime();
+            variables.exampleUserLabel = "guest";
+            request.data = variables;
+            request.method = URLRequestMethod.POST;
+            
+            navigateToURL(request);
+        }
+    }
+}
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="propertyDetail" id="propertyDetail"></a><a name="requestHeaders" id="requestHeaders"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>requestHeaders</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>requestHeaders:<a href="../../Array.html">Array</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     The array of HTTP request headers to be appended to the
+     HTTP request. The array is composed of URLRequestHeader objects.
+     Each object in the array must be a URLRequestHeader object that
+     contains a name string and a value string, as follows:
+     <div class="listing"><pre>
+     var rhArray:Array = new Array(new URLRequestHeader("Content-Type", "text/html"));
+     </pre></div>
+     
+     <p><span>Flash Player and the AIR runtime impose</span>
+      certain restrictions on request headers;
+     for more information, see the URLRequestHeader class description.</p>
+     
+     <p>Not all methods that accept URLRequest parameters support the <code>requestHeaders</code> property,
+     consult the documentation for the method you are calling. For example, the <code>FileReference.upload()</code>
+     and <code>FileReference.download()</code> methods do not
+     support the <code>URLRequest.requestHeaders</code> property.</p>
+     <p>Due to browser limitations, custom HTTP request headers are only supported for <code>POST</code> requests,
+     not for <code>GET</code> requests.</p>
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get requestHeaders():<a href="../../Array.html">Array</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set requestHeaders(value:<a href="../../Array.html">Array</a>):<a href="../../specialTypes.html#void">void</a></code><br/><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="URLRequestHeader.html" target="">URLRequestHeader</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="propertyDetail" id="propertyDetail"></a><a name="url" id="url"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>url</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>url:<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     The URL to be requested.
+     
+     <p>Be sure to encode any characters that are either described as unsafe in the Uniform Resource Locator
+     specification (see http://www.faqs.org/rfcs/rfc1738.html) or that are reserved in the
+     URL scheme of the URLRequest object (when not used for their reserved purpose). For example,
+     use <code>"%25"</code> for the percent (%) symbol and <code>"%23"</code> for the number sign (#), as in
+     <code>"http://www.example.com/orderForm.cfm?item=%23B-3&discount=50%25"</code>.</p>
+     
+      <p>By default, the URL must be in the same domain as the calling file,
+      unless the content is running in the <span>Adobe AIR </span>application
+      security sandbox. <span>If you need to load data from a different domain,
+      put a URL policy file on the server that is hosting the data</span>. For more information,
+      see the description of the URLRequest class.</p>
+     
+     <p><span>For content running in Adobe AIR, files</span>
+      in the application security sandobx
+     &mdash; files installed with the AIR application &mdash; can access URLs using any of the
+     following URL schemes:</p>
+     
+     <ul><li><code>http</code> and <code>https</code> </li><li><code>file</code> </li><li><code>app-storage</code> </li><li><code>app</code> </li></ul>
+     
+     <p><b>Note:</b> IPv6 (Internet Protocol version 6) is supported<span> in
+     AIR and in Flash Player 9.0.115.0 and later</span>.
+     
+     IPv6 is a version of Internet Protocol that supports
+     128-bit addresses (an improvement on the earlier IPv4 protocol that supports 32-bit
+     addresses). You might need to activate IPv6 on your networking interfaces. For more
+     information, see the Help for the operating system hosting the data.
+     If IPv6 is supported on the hosting system, you can specify numeric IPv6 literal addresses
+     in URLs enclosed in brackets ([])<span>, as in the following</span>. </p>
+     
+     <span>
+     <pre>
+     rtmp://[2001:db8:ccc3:ffff:0:444d:555e:666f]:1935/test
+     </pre>
+     </span>
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get url():<a href="../../String.html">String</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set url(value:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></code><br/><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b8f6c0-7ffe.html" target="_blank">Basics of networking and communication</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b8f6c0-7fe1.html" target="_blank">IPv6 addresses</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody"> The following example shows how you can dynamically load an image using the Loader class in ActionScript 3.0. 
+ Example provided by 
+ <a href="http://actionscriptexamples.com/2008/03/02/dynamically-loading-an-image-in-actionscript-20-and-actionscript-30/" target="_mmexternal">ActionScriptExamples.com</a>. 
+<div class="listing"><pre>
+var url:String = "http://www.helpexamples.com/flash/images/image2.jpg";
+var urlRequest:URLRequest = new URLRequest(url);
+var loader:Loader = new Loader();
+loader.load(urlRequest);
+addChild(loader);
+</pre></div></div></span></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="propertyDetail" id="propertyDetail"></a><a name="useCache" id="useCache"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<h3>useCache</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>useCache:<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+    Specifies whether the local cache should be consulted before this URLRequest
+    fetches data.
+    
+    <p><b>Note</b>:The <code>HTMLLoader.load()</code> method
+    does not support the <code>URLRequest.useCache</code> property.</p>
+    
+    </p><p> The default value is <code>true.</code></p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get useCache():<a href="../../Boolean.html">Boolean</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set useCache(value:<a href="../../Boolean.html">Boolean</a>):<a href="../../specialTypes.html#void">void</a></code><br/><br/><span class="label"> Throws </span><br/><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; The caller is not in the AIR application security sandbox.
+    
+    </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="URLRequestDefaults.html#useCache" target="">flash.net.URLRequestDefaults.useCache</a></div></div></span><span id="pageFilter" runtime="AIR::1.0##Lite::4##"><a name="propertyDetail" id="propertyDetail"></a><a name="userAgent" id="userAgent"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>userAgent</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>userAgent:<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Lite 4</td></tr></table><p></p><p></p><p>
+    Specifies the user-agent string to be used in the HTTP request.
+    
+    <p>The default value is the same user agent string that is used by
+    Flash Player, which is different on Mac, Linux, and Windows.</p>
+    
+    <p><i>Note:</i> This property does not affect the user agent string when
+    the URLRequest object is used with the <code>load()</code> method of an
+    HTMLLoader object. To set the user agent string for an HTMLLoader object,
+    set the <code>userAgent</code> property of the HTMLLoader object or set
+    the static <code>URLRequestDefaults.userAgent</code> property.</p>
+    
+    </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get userAgent():<a href="../../String.html">String</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set userAgent(value:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></code><br/><br/><span class="label"> Throws </span><br/><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; The caller is not in the AIR application security sandbox.
+    
+    </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="URLRequestDefaults.html#userAgent" target="">flash.net.URLRequestDefaults.userAgent</a><br/><a href="../../flash/html/HTMLLoader.html#userAgent" target="">flash.html.HTMLLoader.userAgent</a></div></div></span><a name="constructorDetail" id="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="URLRequest()" id="URLRequest()"></a><a name="URLRequest(String)" id="URLRequest(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>URLRequest</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function URLRequest(url:<a href="../../String.html">String</a> = null)</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p>
+     Creates a URLRequest object.
+     
+     If <code>System.useCodePage</code> is <code>true</code>, the request is encoded using the
+     system code page, rather than Unicode.
+     
+     If <code>System.useCodePage</code> is <code>false</code>, the request is encoded using Unicode, rather than the
+     system code page.
+     
+     </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">url</span>:<a href="../../String.html">String</a></code> (default = <code>null</code>)<code></code> &mdash; The URL to be requested. You can set the URL later by using the <code>url</code> property.
+     
+     </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/system/System.html#useCodePage" target="">flash.system.System.useCodePage</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example shows how you can open new browser windows from Flash Player using the navigateToURL() method. 
+ Example provided by 
+ <a href="http://actionscriptexamples.com/2008/12/08/opening-urls-in-new-browser-windows-using-actionscript-30-and-actionscript-20/" target="_mmexternal">ActionScriptExamples.com</a>. 
+<div class="listing"><pre>
+// Requires
+// - Button symbol on Stage (or a display object, such as a MovieClip) with instance name "buttonSymbol"
+//
+buttonSymbol.addEventListener(MouseEvent.CLICK, buttonSymbol_click);
+ 
+function buttonSymbol_click(evt:MouseEvent):void {
+    var req:URLRequest = new URLRequest("http://www.adobe.com/");
+    navigateToURL(req, "_blank");
+}
+</pre></div></div></span></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::11.8##AIR::3.8##"><a name="useRedirectedURL()" id="useRedirectedURL()"></a><a name="useRedirectedURL(flash.net.URLRequest,Boolean,any,String)" id="useRedirectedURL(flash.net.URLRequest,Boolean,any,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>useRedirectedURL</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function useRedirectedURL(sourceRequest:<a href="../../flash/net/URLRequest.html">URLRequest</a>, wholeURL:<a href="../../Boolean.html">Boolean</a> = false, pattern:<a href="../../specialTypes.html#*">*</a> = null, replace:<a href="../../String.html">String</a> = null):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.8, AIR 3.8</td></tr></table><p></p><p></p><p>
+	 
+	 Allows substitution of a redirected URL from a source URLRequest for some portion of the URL  
+	 in a new URLRequest. After an initial request has been redirected, this allows subsequent reqeusts to
+	 be sent directly to the redirected server location. 
+	 
+	 <p>Once the initial URLRequest has completed, if <code>HTTPStatusEvent.redirected</code> is true, 
+	 this method can be called using the inital request as the <code>sourceRequest</code>. By default, the domain
+	 from the redirected URL will be used in place of the domain in this URLRequest's URL. <code>URLRequest.url</code> 
+	 must be set before calling this method. The method must be called before this URLRequest is loaded. 
+	 Optionally, if the <code>wholeURL</code> parameter is true, the entire url, minus the filename, from the source URLRequest 
+	 will be substituted for the entire URL minus the final filename in this URLRequest. Also, the caller can optionally supply 
+	 a string or regular expression in the <code>pattern</code> parameter. The pattern is searched for and replaced with the 
+	 string from the <code>replace</code> parameter. This search and replace happens after the URL substitution.</p>   
+	 
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">sourceRequest</span>:<a href="../../flash/net/URLRequest.html">URLRequest</a></code> &mdash; An URLRequest object that has already been requested and was redirected. The redirected URL will be used to substitute for part of the URL of this URLRequest object.	 
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">wholeURL</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; Whether to use just the domain of the sourceRequest final URL to substitute for the domain of this request's URL, or whether to use the entire URL minus the filename. The default is <code>false</code>.
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">pattern</span>:<a href="../../specialTypes.html#*">*</a></code> (default = <code>null</code>)<code></code> &mdash; A pattern to search for in the URL. Can be either a String or a RegExp object. The default is null.
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">replace</span>:<a href="../../String.html">String</a></code> (default = <code>null</code>)<code></code> &mdash; A string to use to replace for the pattern if found in the URL. The default is null. 
+	 
+	 </td></tr></table></p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/events/HTTPStatusEvent.html#redirected" target="">flash.events.HTTPStatusEvent.redirected</a></div></div></span><a name="includeExamplesSummary" id="includeExamplesSummary"></a><div class="detailSectionHeader">Examples<span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span></div><span id="pageFilter"><div class="exampleHeader">URLRequestExample.as</div><br/><div class="detailBody"> The following example creates a new Loader object and passes it
+ a URLRequest object that contains the path to an XML file. If the loading operation is
+ successful, a <code>complete</code> event is dispatched and the data in the XML
+ file traces to the output. Additional event handlers capture other events, including error
+ events.
+ <p>To run this example, place a file named XMLFile.xml in the same directory
+ as your SWF file.</p>
+<div class="listing"><pre>
+
+package {
+    import flash.display.Sprite;
+    import flash.events.*;
+    import flash.net.*;
+
+    public class URLRequestExample extends Sprite {
+        private var loader:URLLoader;
+        
+        public function URLRequestExample() {
+            loader = new URLLoader();
+            configureListeners(loader);
+
+            var request:URLRequest = new URLRequest("XMLFile.xml");
+            try {
+                loader.load(request);
+            } catch (error:Error) {
+                trace("Unable to load requested document.");
+            }
+        }
+
+        private function configureListeners(dispatcher:IEventDispatcher):void {
+            dispatcher.addEventListener(Event.COMPLETE, completeHandler);
+            dispatcher.addEventListener(Event.OPEN, openHandler);
+            dispatcher.addEventListener(ProgressEvent.PROGRESS, progressHandler);
+            dispatcher.addEventListener(SecurityErrorEvent.SECURITY_ERROR, securityErrorHandler);
+            dispatcher.addEventListener(HTTPStatusEvent.HTTP_STATUS, httpStatusHandler);
+            dispatcher.addEventListener(IOErrorEvent.IO_ERROR, ioErrorHandler);
+        }
+
+        private function completeHandler(event:Event):void {
+            var loader:URLLoader = URLLoader(event.target);
+            trace("completeHandler: " + loader.data);
+        }
+
+        private function openHandler(event:Event):void {
+            trace("openHandler: " + event);
+        }
+
+        private function progressHandler(event:ProgressEvent):void {
+            trace("progressHandler loaded:" + event.bytesLoaded + " total: " + event.bytesTotal);
+        }
+
+        private function securityErrorHandler(event:SecurityErrorEvent):void {
+            trace("securityErrorHandler: " + event);
+        }
+
+        private function httpStatusHandler(event:HTTPStatusEvent):void {
+            trace("httpStatusHandler: " + event);
+        }
+
+        private function ioErrorHandler(event:IOErrorEvent):void {
+            trace("ioErrorHandler: " + event);
+        }
+    }
+}
+</pre></div></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,true,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><link rel="stylesheet" href="style.css" type="text/css" media="screen"><link rel="stylesheet" href="print.css" type="text/css" media="print"><link rel="stylesheet" href="override.css" type="text/css"><link rel="stylesheet" href="asfilter.css" type="text/css"><link rel="stylesheet" href="ion.css" type="text/css"><title> Accessibility Implementation Constants  - Adobe ActionScript&reg; 3 (AS3) API Reference</title>
+		<link rel="stylesheet" href="./filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="./filter_new.css" type="text/css">
+			
+		<script src="./jquery.js" type="text/javascript"></script>
+		<script src="./s_chl_code.js" type="text/javascript"></script>
+		<script src="./jquery.zclip.js" type="text/javascript"></script>
+		<script src="./jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="./cookies.js" type="text/javascript"></script>
+		<script src="./asdoc.js" type="text/javascript"></script>
+		<script src="./iscroll.js" type="text/javascript"></script>
+		<script src="./AC_OETags.js" type="text/javascript"></script>
+		<script src="./omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "./";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="./index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="./package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="./class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="./whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="./all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="./appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="./search.html" onSubmit="searchfunctionsubmit('./')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('./')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="./help.js"></script>
+						<script language="javascript" type="text/javascript" src="./asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="./filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">&nbsp;</a><br>
+								<h1 id="classProductName"> Accessibility Implementation Constants &nbsp;</h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><p><div id="badgeAnchorSupport" class="ionBadgeWrapper"></div><div id="badgeContainerSupport"></div>AccessibilityImplementation constants are for use with
+the <a href="flash/accessibility/AccessibilityImplementation.html">flash.accessibility.AccessibilityImplementation
+class</a>.</p><p><a href="#WSedf167eee00ebe75673267112606d7822c-8000">Error codes</a><br><a href="#WSedf167eee00ebe75673267112606d7822c-7fff">Object role constants</a><br><a href="#WSedf167eee00ebe75673267112606d7822c-7ffe">Object state constants</a><br><a href="#WSedf167eee00ebe75673267112606d7822c-7ffd">Selection flags</a><br><a href="#WSedf167eee00ebe75673267112606d7822c-7ffc">Event constants</a><br></p><h3><a name="WSedf167eee00ebe75673267112606d7822c-8000">Error codes</a></h3><p>Assign these to the <a href="flash/accessibility/AccessibilityImplementation.html#errno">AccessibilityImplementation.errno</a> property
+to indicate errors.</p><pre>E_NOERROR         =  0x00000000;  // No error 
+E_FAIL            =  0x80004005;  // Generic or unexpected failure 
+E_MEMBERNOTFOUND  =  0x80020003;  // This property is inapplicable to this object 
+E_INVALIDARG      =  0x80070057;  // One or more arguments were invalid</pre><h3><a name="WSedf167eee00ebe75673267112606d7822c-7fff">Object role constants</a></h3><p>See <a href="http://msdn.microsoft.com/en-us/library/ms696152(VS.85).aspx">Microsoft's Accessibility Object Roles</a> for
+documentation.</p><pre>ROLE_SYSTEM_ALERT               =  0x08; 
+ROLE_SYSTEM_ANIMATION           =  0x36; 
+ROLE_SYSTEM_APPLICATION         =  0x0e; 
+ROLE_SYSTEM_BORDER              =  0x13; 
+ROLE_SYSTEM_BUTTONDROPDOWN      =  0x38; 
+ROLE_SYSTEM_BUTTONDROPDOWNGRID  =  0x3a; 
+ROLE_SYSTEM_BUTTONMENU          =  0x39; 
+ROLE_SYSTEM_CARET               =  0x07; 
+ROLE_SYSTEM_CELL                =  0x1d; 
+ROLE_SYSTEM_CHARACTER           =  0x20; 
+ROLE_SYSTEM_CHART               =  0x11; 
+ROLE_SYSTEM_CHECKBUTTON         =  0x2c; 
+ROLE_SYSTEM_CLIENT              =  0x0a; 
+ROLE_SYSTEM_CLOCK               =  0x3d; 
+ROLE_SYSTEM_COLUMN              =  0x1b; 
+ROLE_SYSTEM_COLUMNHEADER        =  0x19; 
+ROLE_SYSTEM_COMBOBOX            =  0x2e; 
+ROLE_SYSTEM_CURSOR              =  0x06; 
+ROLE_SYSTEM_DIAGRAM             =  0x35; 
+ROLE_SYSTEM_DIAL                =  0x31; 
+ROLE_SYSTEM_DIALOG              =  0x12; 
+ROLE_SYSTEM_DOCUMENT            =  0x0f; 
+ROLE_SYSTEM_DROPLIST            =  0x2f; 
+ROLE_SYSTEM_EQUATION            =  0x37; 
+ROLE_SYSTEM_GRAPHIC             =  0x28; 
+ROLE_SYSTEM_GRIP                =  0x04; 
+ROLE_SYSTEM_GROUPING            =  0x14; 
+ROLE_SYSTEM_HELPBALLOON         =  0x1f; 
+ROLE_SYSTEM_HOTKEYFIELD         =  0x32; 
+ROLE_SYSTEM_INDICATOR           =  0x27; 
+ROLE_SYSTEM_LINK                =  0x1e; 
+ROLE_SYSTEM_LIST                =  0x21; 
+ROLE_SYSTEM_LISTITEM            =  0x22; 
+ROLE_SYSTEM_MENUBAR             =  0x02; 
+ROLE_SYSTEM_MENUITEM            =  0x0c; 
+ROLE_SYSTEM_MENUPOPUP           =  0x0b; 
+ROLE_SYSTEM_OUTLINE             =  0x23; 
+ROLE_SYSTEM_OUTLINEITEM         =  0x24; 
+ROLE_SYSTEM_PAGETAB             =  0x25; 
+ROLE_SYSTEM_PAGETABLIST         =  0x3c; 
+ROLE_SYSTEM_PANE                =  0x10; 
+ROLE_SYSTEM_PROGRESSBAR         =  0x30; 
+ROLE_SYSTEM_PROPERTYPAGE        =  0x26; 
+ROLE_SYSTEM_PUSHBUTTON          =  0x2b; 
+ROLE_SYSTEM_RADIOBUTTON         =  0x2d; 
+ROLE_SYSTEM_ROW                 =  0x1c; 
+ROLE_SYSTEM_ROWHEADER           =  0x1a; 
+ROLE_SYSTEM_SCROLLBAR           =  0x03; 
+ROLE_SYSTEM_SEPARATOR           =  0x15; 
+ROLE_SYSTEM_SLIDER              =  0x33; 
+ROLE_SYSTEM_SOUND               =  0x05; 
+ROLE_SYSTEM_SPINBUTTON          =  0x34; 
+ROLE_SYSTEM_SPLITBUTTON =  0x3e; 
+ROLE_SYSTEM_STATICTEXT          =  0x29; 
+ROLE_SYSTEM_STATUSBAR           =  0x17; 
+ROLE_SYSTEM_TABLE               =  0x18; 
+ROLE_SYSTEM_TEXT                =  0x2a; 
+ROLE_SYSTEM_TITLEBAR            =  0x01; 
+ROLE_SYSTEM_TOOLBAR             =  0x16; 
+ROLE_SYSTEM_TOOLTIP             =  0x0d; 
+ROLE_SYSTEM_WHITESPACE          =  0x3b; 
+ROLE_SYSTEM_WINDOW              =  0x09;</pre><h3><a name="WSedf167eee00ebe75673267112606d7822c-7ffe">Object state constants</a></h3><p>See <a href="http://msdn.microsoft.com/en-us/library/ms696152(VS.85).aspx">Microsoft's Accessibility Object State Constants</a> for
+documentation.</p><pre>STATE_SYSTEM_ALERT_HIGH       =  0x10000000; 
+STATE_SYSTEM_ALERT_LOW        =  0x04000000; 
+STATE_SYSTEM_ALERT_MEDIUM     =  0x08000000; 
+STATE_SYSTEM_ANIMATED         =  0x00004000; 
+STATE_SYSTEM_BUSY             =  0x00000800; 
+STATE_SYSTEM_CHECKED          =  0x00000010; 
+STATE_SYSTEM_COLLAPSED        =  0x00000400; 
+STATE_SYSTEM_DEFAULT          =  0x00000100; 
+STATE_SYSTEM_EXPANDED         =  0x00000200; 
+STATE_SYSTEM_EXTSELECTABLE    =  0x02000000; 
+STATE_SYSTEM_FLOATING         =  0x00001000; 
+STATE_SYSTEM_FOCUSABLE        =  0x00100000; 
+STATE_SYSTEM_FOCUSED          =  0x00000004; 
+STATE_SYSTEM_HOTTRACKED       =  0x00000080; 
+STATE_SYSTEM_INDETERMINATE    =  0x00000020; 
+STATE_SYSTEM_INVISIBLE        =  0x00008000; 
+STATE_SYSTEM_LINKED           =  0x00400000; 
+STATE_SYSTEM_MARQUEED         =  0x00002000; 
+STATE_SYSTEM_MIXED            =  0x00000020; 
+STATE_SYSTEM_MOVEABLE         =  0x00040000; 
+STATE_SYSTEM_MULTISELECTABLE  =  0x01000000; 
+STATE_SYSTEM_NORMAL           =  0x00000000; 
+STATE_SYSTEM_OFFSCREEN        =  0x00010000; 
+STATE_SYSTEM_PRESSED          =  0x00000008; 
+STATE_SYSTEM_PROTECTED        =  0x20000000; 
+STATE_SYSTEM_READONLY         =  0x00000040; 
+STATE_SYSTEM_SELECTABLE       =  0x00200000; 
+STATE_SYSTEM_SELECTED         =  0x00000002; 
+STATE_SYSTEM_SELFVOICING      =  0x00080000; 
+STATE_SYSTEM_SIZEABLE         =  0x00020000; 
+STATE_SYSTEM_TRAVERSED        =  0x00800000; 
+STATE_SYSTEM_UNAVAILABLE      =  0x00000001;</pre><h3><a name="WSedf167eee00ebe75673267112606d7822c-7ffd">Selection flags</a></h3><p>The following constants are described in the AccessibilityImplementation
+class documentation under the <a href="flash/accessibility/AccessibilityImplementation.html#accSelect()">accSelect() </a>method.</p><pre>SELFLAG_TAKESELECTION    =  0x02; 
+SELFLAG_EXTENDSELECTION  =  0x04; 
+SELFLAG_ADDSELECTION     =  0x08; 
+SELFLAG_REMOVESELECTION  =  0x10;</pre><h3><a name="WSedf167eee00ebe75673267112606d7822c-7ffc">Event constants</a></h3><p>See <a href="http://msdn.microsoft.com/en-us/library/ms697187(VS.85).aspx">Microsoft's Accessibility Event Constants</a> for
+documentation.</p><pre>EVENT_OBJECT_CREATE               =  0x8000; 
+EVENT_OBJECT_DESTROY              =  0x8001; 
+EVENT_OBJECT_SHOW                 =  0x8002; 
+EVENT_OBJECT_HIDE                 =  0x8003; 
+EVENT_OBJECT_REORDER              =  0x8004; 
+EVENT_OBJECT_FOCUS                =  0x8005; 
+EVENT_OBJECT_SELECTION            =  0x8006; 
+EVENT_OBJECT_SELECTIONADD         =  0x8007; 
+EVENT_OBJECT_SELECTIONREMOVE      =  0x8008; 
+EVENT_OBJECT_SELECTIONWITHIN      =  0x8009; 
+EVENT_OBJECT_STATECHANGE          =  0x800a; 
+EVENT_OBJECT_LOCATIONCHANGE       =  0x800b; 
+EVENT_OBJECT_NAMECHANGE           =  0x800c; 
+EVENT_OBJECT_DESCRIPTIONCHANGE    =  0x800d; 
+EVENT_OBJECT_VALUECHANGE          =  0x800e; 
+EVENT_OBJECT_PARENTCHANGE         =  0x800f; 
+EVENT_OBJECT_HELPCHANGE           =  0x8010; 
+EVENT_OBJECT_DEFACTIONCHANGE      =  0x8011; 
+EVENT_OBJECT_ACCELERATORCHANGE    =  0x8012;</pre><br><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 07:09 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 07:09 PM -08:00  -->

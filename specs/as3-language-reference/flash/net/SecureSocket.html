@@ -1,0 +1,531 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:11"><meta name="runtime" content="air"><meta name="runtimever" content="air:2"><meta name="product" content="flash player"><meta name="productver" content="flash player:11"><meta name="product" content="air"><meta name="productver" content="air:2"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="SecureSocket,flash.net.SecureSocket,isSupported,serverCertificate,serverCertificateStatus,addBinaryChainBuildingCertificate,connect"><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" src="../../AC_OETags.js" type="text/javascript"></script><title>SecureSocket - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">flash.net&nbsp;</a><br>
+								<h1 id="classProductName">SecureSocket&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">flash.net</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  SecureSocket</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">SecureSocket  <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../flash/net/Socket.html">Socket</a> <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../flash/events/EventDispatcher.html">EventDispatcher</a> <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../Object.html">Object</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11, AIR 2</td></tr></table><p></p><p></p><p></p>
+ The SecureSocket class enables code to make socket connections using the Secure Sockets Layer (SSL)
+ and Transport Layer Security (TLS) protocols. 
+ 
+ <p>
+                  <i>AIR profile support:</i> This feature is supported 
+ on all desktop operating systems, but is not supported on all AIR for TV devices. 
+ On mobile devices, it is supported on Android, but not on iOS. You can test 
+ for support at run time using the <code>SecureSocket.isSupported</code> property. See 
+ <a href="http://help.adobe.com/en_US/air/build/WS144092a96ffef7cc16ddeea2126bb46b82f-8000.html" >
+ AIR Profile Support</a> for more information regarding API support across multiple profiles.</p>
+ 
+               <p>The SSL/TLS protocols provide a mechanism to handle both aspects of a secure socket connection: </p>
+               <ol>
+                  <li>Encryption of data communication over the socket</li>
+                  <li>Authentication of the host's identity via its certificate</li>
+               </ol>
+ 
+               <p>The supported encryption protocols are SSL 3.0 and higher, and TLS 1.0 and higher. (TLS is the successor
+ protocol for SSL. TLS 1.0 equals SSL 3.1, TLS 1.1 equals SSL 3.2, and so on.) SSL versions lower than 3.0
+ are not supported.</p>
+ 
+               <p>Validation of the server certificate is performed using the trust store and certificate validation 
+ support of the client platform. In addition you can add your own certificates programmatically with the 
+ <code>addBinaryChainBuildingCertificate()</code> method.</p> 
+ 
+               <p>The SecureSocket class only connects to servers with valid, trusted certificates. You cannot choose
+ to connect to a server in spite of a problem with its certificate. For example, there is no way to connect 
+ to a server with an expired certificate. The same is true for a certificate that doesn't chain to a trusted anchor certificate.
+ The connection will not be made, even though the certificate would be valid otherwise.</p>
+ 
+               <p>The SecureSocket class is useful for performing encrypted communication to a trusted server. In other respects,
+ a SecureSocket object behaves like a regular Socket object.</p>
+ 
+               <p>To use the SecureSocket class, create a SecureSocket object (<code>new SecureSocket()</code>). 
+ Next, set up your listeners, and then run <code>SecureSocket.connect(host, port)</code>. 
+ When you successfully connect to the server, the socket dispatches a <code>connect</code> event. A successful
+ connection is one in which the server's security protocols are supported and its certificate is valid and trusted.
+ If the certificate cannot be validated, the Socket dispatches an <code>IOError</code> event.</p>
+ 
+               <p>
+                  <b>Important:</b> The Online Certificate Status Protocol (OCSP) is not supported by all operating systems.
+ Users can also disable OCSP checking on individual computers. If OCSP is not supported or is disabled and
+ a certificate does not contain the information necessary to check revocation using a Certificate Revocation 
+ List (CRL), then certificate revocation is not checked. The certificate is accepted if otherwise valid.
+ This scenario could allow a server to use a revoked certificate.</p>
+ 
+            <p></p><p><a href="#includeExamplesSummary">View the examples</a></p><p id="moreExamples"><span class="classHeaderTableLabel">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7cfb.html" target="_blank">Binary client sockets</a></div><p><span class="classHeaderTableLabel">Related API Elements</span></p><div class="seeAlso"><a href="Socket.html" target="">Socket class</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../flash/net/Socket.html#bytesAvailable" class="signatureLink">bytesAvailable</a> : <a href="../../uint.html">uint</a><div class="summaryTableDescription">[read-only] 
+     The number of bytes of data available for reading in the input buffer.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedProperty" runtime="Flash::11##AIR::3.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../flash/net/Socket.html#bytesPending" class="signatureLink">bytesPending</a> : <a href="../../uint.html">uint</a><div class="summaryTableDescription">[read-only] 
+     Indicates the number of bytes remaining in the write buffer.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../flash/net/Socket.html#connected" class="signatureLink">connected</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">[read-only] 
+     Indicates whether this Socket object is currently connected.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../Object.html#constructor" class="signatureLink">constructor</a> : <a href="../../Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../flash/net/Socket.html#endian" class="signatureLink">endian</a> : <a href="../../String.html">String</a><div class="summaryTableDescription">
+     Indicates the byte order for the data.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="" runtime="Flash::11##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#isSupported" class="signatureLink">isSupported</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">[static] [read-only] 
+     Indicates whether secure sockets are supported on the current system.</div></td><td class="summaryTableOwnerCol">SecureSocket</td></tr><tr class="hideInheritedProperty" runtime="AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="../../flash/net/Socket.html#localAddress" class="signatureLink">localAddress</a> : <a href="../../String.html">String</a><div class="summaryTableDescription">[read-only] 
+     The IP address this socket is bound to on the local machine.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedProperty" runtime="AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="../../flash/net/Socket.html#localPort" class="signatureLink">localPort</a> : <a href="../../int.html">int</a><div class="summaryTableDescription">[read-only] 
+     The port this socket is bound to on the local machine.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../flash/net/Socket.html#objectEncoding" class="signatureLink">objectEncoding</a> : <a href="../../uint.html">uint</a><div class="summaryTableDescription">
+     Controls the version of AMF used when writing or reading an object.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedProperty" runtime="AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="../../flash/net/Socket.html#remoteAddress" class="signatureLink">remoteAddress</a> : <a href="../../String.html">String</a><div class="summaryTableDescription">[read-only] 
+     The IP address of the remote machine to which this socket is connected.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedProperty" runtime="AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="../../flash/net/Socket.html#remotePort" class="signatureLink">remotePort</a> : <a href="../../int.html">int</a><div class="summaryTableDescription">[read-only] 
+     The port on the remote machine to which this socket is connected.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="" runtime="Flash::11##AIR::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#serverCertificate" class="signatureLink">serverCertificate</a> : <a href="../../flash/security/X509Certificate.html">X509Certificate</a><div class="summaryTableDescription">[read-only] 
+     Holds the X.509 certificate obtained from the server after a secure SSL/TLS connection is established.</div></td><td class="summaryTableOwnerCol">SecureSocket</td></tr><tr class="" runtime="Flash::11##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#serverCertificateStatus" class="signatureLink">serverCertificateStatus</a> : <a href="../../String.html">String</a><div class="summaryTableDescription">[read-only] 
+     Returns the status of the server's certificate.</div></td><td class="summaryTableOwnerCol">SecureSocket</td></tr><tr class="hideInheritedProperty" runtime="Flash::10##AIR::1.5##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../flash/net/Socket.html#timeout" class="signatureLink">timeout</a> : <a href="../../uint.html">uint</a><div class="summaryTableDescription">
+     Indicates the number of milliseconds to wait for a connection.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="Flash::11##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#SecureSocket()" class="signatureLink">SecureSocket</a>()</div><div class="summaryTableDescription">
+    Creates a new SecureSocket object.</div></td><td class="summaryTableOwnerCol">SecureSocket</td></tr><tr class="" runtime="Flash::11##AIR::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addBinaryChainBuildingCertificate()" class="signatureLink">addBinaryChainBuildingCertificate</a>(certificate:<a href="../../flash/utils/ByteArray.html">ByteArray</a>, trusted:<a href="../../Boolean.html">Boolean</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Adds an X.509 certificate to the local certificate chain that your system uses for validating the server certificate.</div></td><td class="summaryTableOwnerCol">SecureSocket</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#addEventListener()" class="signatureLink">addEventListener</a>(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false, priority:<a href="../../int.html">int</a> = 0, useWeakReference:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	Registers an event listener object with an EventDispatcher object so that the listener 
+	receives notification of an event.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#close()" class="signatureLink">close</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Closes the socket.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="" runtime="Flash::11##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#connect()" class="signatureLink">connect</a>(host:<a href="../../String.html">String</a>, port:<a href="../../int.html">int</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[override] 
+     Connects the socket to the specified host and port using SSL or TLS.</div></td><td class="summaryTableOwnerCol">SecureSocket</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#dispatchEvent()" class="signatureLink">dispatchEvent</a>(event:<a href="../../flash/events/Event.html">Event</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Dispatches an event into the event flow.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#flush()" class="signatureLink">flush</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Flushes any accumulated data in the socket's output buffer.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#hasEventListener()" class="signatureLink">hasEventListener</a>(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Checks whether the EventDispatcher object has any listeners registered for a specific type 
+	of event.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#readBoolean()" class="signatureLink">readBoolean</a>():<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+     Reads a Boolean value from the socket.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#readByte()" class="signatureLink">readByte</a>():<a href="../../int.html">int</a></div><div class="summaryTableDescription">
+     Reads a signed byte from the socket.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#readBytes()" class="signatureLink">readBytes</a>(bytes:<a href="../../flash/utils/ByteArray.html">ByteArray</a>, offset:<a href="../../uint.html">uint</a> = 0, length:<a href="../../uint.html">uint</a> = 0):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Reads the number of data bytes specified by the length
+     parameter from the socket.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#readDouble()" class="signatureLink">readDouble</a>():<a href="../../Number.html">Number</a></div><div class="summaryTableDescription">
+     Reads an IEEE 754 double-precision floating-point number from the socket.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#readFloat()" class="signatureLink">readFloat</a>():<a href="../../Number.html">Number</a></div><div class="summaryTableDescription">
+     Reads an IEEE 754 single-precision floating-point number from the socket.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#readInt()" class="signatureLink">readInt</a>():<a href="../../int.html">int</a></div><div class="summaryTableDescription">
+     Reads a signed 32-bit integer from the socket.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#readMultiByte()" class="signatureLink">readMultiByte</a>(length:<a href="../../uint.html">uint</a>, charSet:<a href="../../String.html">String</a>):<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+     Reads a multibyte string from the byte stream, using the specified character set.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#readObject()" class="signatureLink">readObject</a>():<a href="../../specialTypes.html#*">*</a></div><div class="summaryTableDescription">
+     Reads an object from the socket, encoded in AMF serialized format.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#readShort()" class="signatureLink">readShort</a>():<a href="../../int.html">int</a></div><div class="summaryTableDescription">
+     Reads a signed 16-bit integer from the socket.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#readUnsignedByte()" class="signatureLink">readUnsignedByte</a>():<a href="../../uint.html">uint</a></div><div class="summaryTableDescription">
+     Reads an unsigned byte from the socket.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#readUnsignedInt()" class="signatureLink">readUnsignedInt</a>():<a href="../../uint.html">uint</a></div><div class="summaryTableDescription">
+     Reads an unsigned 32-bit integer from the socket.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#readUnsignedShort()" class="signatureLink">readUnsignedShort</a>():<a href="../../uint.html">uint</a></div><div class="summaryTableDescription">
+     Reads an unsigned 16-bit integer from the socket.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#readUTF()" class="signatureLink">readUTF</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+     Reads a UTF-8 string from the socket.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#readUTFBytes()" class="signatureLink">readUTFBytes</a>(length:<a href="../../uint.html">uint</a>):<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+     Reads the number of UTF-8 data bytes specified by the length
+     parameter from the socket, and returns a string.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#removeEventListener()" class="signatureLink">removeEventListener</a>(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	Removes a listener from the EventDispatcher object.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="../../String.html">String</a>, isEnum:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toString()" class="signatureLink">toString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+	 Returns the primitive value of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#willTrigger()" class="signatureLink">willTrigger</a>(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Checks whether an event listener is registered with this EventDispatcher object or any of 
+	its ancestors for the specified event type.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#writeBoolean()" class="signatureLink">writeBoolean</a>(value:<a href="../../Boolean.html">Boolean</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Writes a Boolean value to the socket.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#writeByte()" class="signatureLink">writeByte</a>(value:<a href="../../int.html">int</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Writes a byte to the socket.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#writeBytes()" class="signatureLink">writeBytes</a>(bytes:<a href="../../flash/utils/ByteArray.html">ByteArray</a>, offset:<a href="../../uint.html">uint</a> = 0, length:<a href="../../uint.html">uint</a> = 0):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Writes a sequence of bytes from the specified byte array.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#writeDouble()" class="signatureLink">writeDouble</a>(value:<a href="../../Number.html">Number</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Writes an IEEE 754 double-precision floating-point number to the socket.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#writeFloat()" class="signatureLink">writeFloat</a>(value:<a href="../../Number.html">Number</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Writes an IEEE 754 single-precision floating-point number to the socket.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#writeInt()" class="signatureLink">writeInt</a>(value:<a href="../../int.html">int</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Writes a 32-bit signed integer to the socket.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#writeMultiByte()" class="signatureLink">writeMultiByte</a>(value:<a href="../../String.html">String</a>, charSet:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Writes a multibyte string from the byte stream, using the specified character set.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#writeObject()" class="signatureLink">writeObject</a>(object:<a href="../../specialTypes.html#*">*</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Write an object to the socket in AMF serialized format.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#writeShort()" class="signatureLink">writeShort</a>(value:<a href="../../int.html">int</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Writes a 16-bit integer to the socket.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#writeUnsignedInt()" class="signatureLink">writeUnsignedInt</a>(value:<a href="../../uint.html">uint</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Writes a 32-bit unsigned integer to the socket.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#writeUTF()" class="signatureLink">writeUTF</a>(value:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Writes the following data to the socket: a 16-bit unsigned integer, which
+     indicates the length of the specified UTF-8 string in bytes, followed by
+     the string itself.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#writeUTFBytes()" class="signatureLink">writeUTFBytes</a>(value:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Writes a UTF-8 string to the socket.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="eventSummary" id="eventSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Events</div><div class="showHideLinks"><a href="http://help.adobe.com/en_US/Flex/4.6/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7ee9.html" target="_blank">Click for more information on events</a></div><div class="showHideLinks"><div id="hideInheritedEvent" class="hideInheritedEvent"><a class="showHideLink" href="#eventSummary" onclick="javascript:setInheritedVisible(false,'Event');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Events</a></div><div id="showInheritedEvent" class="showInheritedEvent"><a class="showHideLink" href="#eventSummary" onclick="javascript:setInheritedVisible(true,'Event');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Events</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableEvent"><tr><th>&nbsp;</th><th colspan="2">Event</th><th> Summary </th><th>Defined By</th></tr><tr class="hideInheritedEvent" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#event:activate" class="signatureLink">activate</a></div></td><td class="summaryTableDescription summaryTableCol">[broadcast event] Dispatched when the Flash Player or AIR application gains operating system focus and becomes active.</td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="" runtime="Flash::11##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:close" class="signatureLink">close</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatched when the server closes the socket connection.</td><td class="summaryTableOwnerCol">SecureSocket</td></tr><tr class="" runtime="Flash::11##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:connect" class="signatureLink">connect</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatched when a network connection has been established.</td><td class="summaryTableOwnerCol">SecureSocket</td></tr><tr class="hideInheritedEvent" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#event:deactivate" class="signatureLink">deactivate</a></div></td><td class="summaryTableDescription summaryTableCol">[broadcast event] Dispatched when the Flash Player or AIR application operating loses system focus and is becoming inactive.</td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="" runtime="Flash::11##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:ioError" class="signatureLink">ioError</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatched when an input or output error occurs that causes a send or receive operation to fail.</td><td class="summaryTableOwnerCol">SecureSocket</td></tr><tr class="hideInheritedEvent"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/net/Socket.html#event:outputProgress" class="signatureLink">outputProgress</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatched when a socket moves data from its write buffer to the networking transport layer</td><td class="summaryTableOwnerCol"><a href="../../flash/net/Socket.html">Socket</a></td></tr><tr class="" runtime="Flash::11##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:securityError" class="signatureLink">securityError</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatched when a call to SecureSocket.connect() fails because of a security restriction.</td><td class="summaryTableOwnerCol">SecureSocket</td></tr><tr class="" runtime="Flash::11##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:socketData" class="signatureLink">socketData</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatched when a socket has received data.</td><td class="summaryTableOwnerCol">SecureSocket</td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="Flash::11##AIR::2##"><a name="propertyDetail" id="propertyDetail"></a><a name="isSupported" id="isSupported"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>isSupported</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>isSupported:<a href="../../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11, AIR 2</td></tr></table><p></p><p></p><p>
+     Indicates whether secure sockets are supported on the current system.
+     
+     <p>Secure sockets are not supported on all platforms. Check this property 
+	 before attempting to create a SecureSocket instance.</p>
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get isSupported():<a href="../../Boolean.html">Boolean</a></code><br/></div></span><span id="pageFilter" runtime="Flash::11##AIR::3##"><a name="propertyDetail" id="propertyDetail"></a><a name="serverCertificate" id="serverCertificate"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>serverCertificate</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>serverCertificate:<a href="../../flash/security/X509Certificate.html">X509Certificate</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11, AIR 3</td></tr></table><p></p><p></p><p>
+     Holds the X.509 certificate obtained from the server after a secure SSL/TLS connection is established.
+     If a secure connection is not established, this property is set to <code>null</code>.
+     
+     <p>For more information on X.509 certificates, see <a href="http://tools.ietf.org/rfc/rfc2459" target="external">RFC2459</a>.</p>
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get serverCertificate():<a href="../../flash/security/X509Certificate.html">X509Certificate</a></code><br/></div></span><span id="pageFilter" runtime="Flash::11##AIR::2##"><a name="propertyDetail" id="propertyDetail"></a><a name="serverCertificateStatus" id="serverCertificateStatus"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>serverCertificateStatus</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>serverCertificateStatus:<a href="../../String.html">String</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11, AIR 2</td></tr></table><p></p><p></p><p>
+     Returns the status of the server's certificate.
+     
+     <p>The status is <code>CertificateStatus.UNKNOWN</code> until the
+     socket attempts to connect to a server. After validation, the status is one
+     of the strings enumerated by the CertificateStatus class. The connection only
+     succeeds when the certificate is valid and trusted. Thus, after a 
+     <code>connect</code> event, the value of <code>serverCertificateStatus</code> 
+     is always <code>trusted</code>.</p>
+     
+     <p><b>Note:</b> Once the certificate has been validated or rejected, the status
+     value is not updated until the next call to the <code>connect()</code> method.
+     Calling <code>close()</code> does not reset the status value to "unknown".</p>
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get serverCertificateStatus():<a href="../../String.html">String</a></code><br/><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/security/CertificateStatus.html" target="">CertificateStatus class</a></div></div></span><a name="constructorDetail" id="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><span id="pageFilter" runtime="Flash::11##AIR::2##"><a name="SecureSocket()" id="SecureSocket()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>SecureSocket</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function SecureSocket()</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11, AIR 2</td></tr></table><p></p><p>
+    Creates a new SecureSocket object.
+	
+	<p>Check <code>SecureSocket.isSupported</code> before attempting to create a SecureSocket 
+	instance. If SSL 3.0 or TLS 1.0 sockets are not supported, the runtime will throw an IllegalOperationError.</p>
+    
+	</p><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/errors/IllegalOperationError.html">IllegalOperationError</a> </code> &mdash; When SSL Version 3.0 (and higher) or TLS Version 1.0 (and higher) is not supported.
+    </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; Local untrusted SWF files cannot communicate with the Internet. You can work around this problem by reclassifying this SWF file as local-with-networking or trusted.
+	
+    </td></tr></table></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::11##AIR::3##"><a name="addBinaryChainBuildingCertificate()" id="addBinaryChainBuildingCertificate()"></a><a name="addBinaryChainBuildingCertificate(flash.utils.ByteArray,Boolean)" id="addBinaryChainBuildingCertificate(flash.utils.ByteArray,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>addBinaryChainBuildingCertificate</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function addBinaryChainBuildingCertificate(certificate:<a href="../../flash/utils/ByteArray.html">ByteArray</a>, trusted:<a href="../../Boolean.html">Boolean</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11, AIR 3</td></tr></table><p></p><p></p><p>
+     Adds an X.509 certificate to the local certificate chain that your system uses for validating the server certificate. 
+     The certificate is temporary, and lasts for the duration of the session.
+     
+     <p>Server certificate validation relies on your system's trust store for certificate chain building and validation. 
+     Use this method to programmatically add additional certification chains and trusted anchors.</p> 
+     
+     <p>
+     On Mac OS, the System keychain is the default keychain used during the SSL/TLS handshake process. 
+     Any intermediate certificates in that keychain are included when building the certification chain.
+     </p>
+     
+     <p>
+     The certificate you add with this API must be a DER-encoded X.509 certificate.
+     If the <code>trusted</code> parameter is true, the certificate you add with
+     this API is considered a trusted anchor.
+     </p>
+     
+     <p>For more information on X.509 certificates, see <a href="http://tools.ietf.org/rfc/rfc2459" target="external">RFC2459</a>.</p>
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">certificate</span>:<a href="../../flash/utils/ByteArray.html">ByteArray</a></code> &mdash; A ByteArray object containing a DER-encoded X.509 digital certificate.
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">trusted</span>:<a href="../../Boolean.html">Boolean</a></code> &mdash; Set to true to designate this certificate as a trust anchor.
+     
+     </td></tr></table></p><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../ArgumentError.html">ArgumentError</a> </code> &mdash; When the certificate cannot be added. 
+     
+     </td></tr></table></div></span><span id="pageFilter" runtime="Flash::11##AIR::2##"><a name="connect()" id="connect()"></a><a name="connect(String,int)" id="connect(String,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>connect</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>override public function connect(host:<a href="../../String.html">String</a>, port:<a href="../../int.html">int</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11, AIR 2</td></tr></table><p></p><p></p><p>
+     Connects the socket to the specified host and port using SSL or TLS.
+     
+     <p>When you call the <code>SecureSocket.connect()</code> method, the socket attempts SSL/TLS 
+     handshaking with the server.
+     If the handshake succeeds, the socket attempts to validate the server certificate. If the 
+     certificate is valid and trusted, then the secure socket connection is established, and
+ 	 the socket dispatches a <code>connect</code> event. If the handshake fails or the certificate cannot 
+ 	 be validated, the socket dispatches an <code>IOError</code> event. You can check the certificate 
+ 	 validation result by reading the <code>serverCertificateStatus</code> property after the  
+     <code>IOError</code> event is dispatched. (When a <code>connect</code> event is dispatched, the certificate
+ 	 status is always <code>trusted</code>.)</p>
+	 
+     <p>If the socket was already connected, the existing connection is closed first.</p>
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">host</span>:<a href="../../String.html">String</a></code> &mdash; The name or IP address of the host to connect to.
+     
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">port</span>:<a href="../../int.html">int</a></code> &mdash; The port number to connect to.
+     
+     </td></tr></table></p><br/><span class="label">Events</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><b>connect</b>:<a href="../../flash/events/Event.html"><code>Event</code></a></code> &mdash; Dispatched when a network connection has been 
+          established.
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><b>ioError</b>:<a href="../../flash/events/IOErrorEvent.html"><code>IOErrorEvent</code></a></code> &mdash; Dispatched if a host is specified and an 
+          input/output error occurs that causes the connection to fail.
+	      This includes SSL/TLS handshake errors and failure to
+	      successfully validate the host's server certificate.
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><b>securityError</b>:<a href="../../flash/events/SecurityErrorEvent.html"><code>SecurityErrorEvent</code></a></code> &mdash; Dispatched if a call to
+          <code>Socket.connect()</code> attempts to connect
+         either to a server that doesn't serve a socket policy file,
+         or to a server whose policy file doesn't grant the calling host access to the specified port.
+     For more information on policy files, see "Website controls (policy files)" in
+     the <i>ActionScript 3.0 Developer's Guide</i> and the Flash Player Developer Center Topic:
+     <a href="http://www.adobe.com/go/devnet_security_en" target="external">Security</a>.
+     </td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/errors/IOError.html">IOError</a> </code> &mdash; When you don't specify a host and the connection fails.
+	 
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; When you specify a socket port less than 
+	 zero or higher than 65535.
+     
+     </td></tr></table></div></span><div class="detailSectionHeader"> Event Detail </div><span id="pageFilter" runtime="Flash::11##AIR::2##"><a name="event:close" id="event:close"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>close</h3></td><td class="detailHeaderType"> Event </td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../flash/events/Event.html"><code>flash.events.Event</code></a><br/><span class="label">property Event.type  =  </span><a href="../../flash/events/Event.html#CLOSE"><code>flash.events.Event.CLOSE</code></a><br/><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11, AIR 2</td></tr></table><p></p><p></p><p>
+ Dispatched when the server closes the socket connection. 
+ 
+ <p>The <code>close</code> event is dispatched only when the server
+ closes the connection; it is not dispatched when you call the <code>Socket.close()</code> 
+ method.</p>
+ 
+ </p>
+	The <code>Event.CLOSE</code> constant defines the value of the <code>type</code> property of a <code>close</code> event object. 
+	
+	<p>This event has the following properties:</p>
+	
+	<table class="innertable" ><tr><th>Property</th><th>Value</th></tr><tr><td><code>bubbles</code></td><td><code>false</code></td></tr><tr><td><code>cancelable</code></td><td><code>false</code>; there is no default behavior to cancel.</td></tr><tr><td><code>currentTarget</code></td><td>The object that is actively processing the Event 
+	object with an event listener.</td></tr><tr><td><code>target</code></td><td>The object whose connection has been closed.</td></tr></table>
+	
+	</div></span><span id="pageFilter" runtime="Flash::11##AIR::2##"><a name="event:connect" id="event:connect"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>connect</h3></td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../flash/events/Event.html"><code>flash.events.Event</code></a><br/><span class="label">property Event.type  =  </span><a href="../../flash/events/Event.html#CONNECT"><code>flash.events.Event.CONNECT</code></a><br/><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11, AIR 2</td></tr></table><p></p><p></p><p>
+ Dispatched when a network connection has been established. 
+ 
+ </p>
+	The <code>Event.CONNECT</code> constant defines the value of the <code>type</code> property of a <code>connect</code> event object. 
+	
+	<p>This event has the following properties:</p>
+	<table class="innertable" ><tr><th>Property</th><th>Value</th></tr><tr><td><code>bubbles</code></td><td><code>false</code></td></tr><tr><td><code>cancelable</code></td><td><code>false</code>; there is no default behavior to cancel.</td></tr><tr><td><code>currentTarget</code></td><td>The object that is actively processing the Event 
+	object with an event listener.</td></tr><tr><td><code>target</code></td><td>The Socket or XMLSocket object that has established a network connection.</td></tr></table>
+	
+	</div></span><span id="pageFilter" runtime="Flash::11##AIR::2##"><a name="event:ioError" id="event:ioError"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>ioError</h3></td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../flash/events/IOErrorEvent.html"><code>flash.events.IOErrorEvent</code></a><br/><span class="label">property IOErrorEvent.type  =  </span><a href="../../flash/events/IOErrorEvent.html#IO_ERROR"><code>flash.events.IOErrorEvent.IO_ERROR</code></a><br/><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11, AIR 2</td></tr></table><p></p><p></p><p>
+ Dispatched when an input or output error occurs that causes a send or receive operation to fail.
+ 
+ <p>When a server certificate cannot be validated, the error event dispatched is an IOError. In this case,
+ you can check the <code>serverCertificateStatus</code> property to determine the cause of the problem.</p>
+  
+ </p>
+	Defines the value of the <code>type</code> property of an <code>ioError</code> event object.
+	<p>This event has the following properties:</p>
+	<table class="innertable" ><tr><th>Property</th><th>Value</th></tr><tr><td><code>bubbles</code></td><td><code>false</code></td></tr><tr><td><code>cancelable</code></td><td><code>false</code>; there is no default behavior to cancel.</td></tr><tr><td><code>currentTarget</code></td><td>The object that is actively processing the Event 
+	object with an event listener.</td></tr><tr><td><code>errorID</code></td><td>A reference number associated with the specific error (AIR only).</td></tr><tr><td><code>target</code></td><td>The network object experiencing the input/output error.</td></tr><tr><td><code>text</code></td><td>Text to be displayed as an error message.</td></tr></table>
+	
+	</div></span><span id="pageFilter" runtime="Flash::11##AIR::2##"><a name="event:securityError" id="event:securityError"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>securityError</h3></td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../flash/events/SecurityErrorEvent.html"><code>flash.events.SecurityErrorEvent</code></a><br/><span class="label">property SecurityErrorEvent.type  =  </span><a href="../../flash/events/SecurityErrorEvent.html#SECURITY_ERROR"><code>flash.events.SecurityErrorEvent.SECURITY_ERROR</code></a><br/><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11, AIR 2</td></tr></table><p></p><p></p><p>
+ Dispatched when a call to <code>SecureSocket.connect()</code> fails because of a security restriction.
+ 
+ <p>A security error event is dispatched when code running in Flash Player or in AIR outside the application 
+ security sandbox attempts to connect to a server in a different domain or to a port lower than 1024 and 
+ the server does not provide a policy file that allows the connection. Note that code running within the 
+ AIR application sandbox can connect to a server at any domain and on ports below 1024 without a policy file.</p>
+ 
+ </p>
+	The <code>SecurityErrorEvent.SECURITY_ERROR</code> constant defines the value of the <code>type</code> property of a <code>securityError</code> event object. 
+	
+	<p>This event has the following properties:</p>
+	<table class="innertable" ><tr><th>Property</th><th>Value</th></tr><tr><td><code>bubbles</code></td><td><code>false</code></td></tr><tr><td><code>cancelable</code></td><td><code>false</code>; there is no default behavior to cancel.</td></tr><tr><td><code>currentTarget</code></td><td>The object that is actively processing the Event 
+	object with an event listener.</td></tr><tr><td><code>target</code></td><td>The network object reporting the security error.</td></tr><tr><td><code>text</code></td><td>Text to be displayed as an error message.</td></tr></table>
+	
+	<p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="SecureSocket.html#connect()" target="">SecureSocket.connect()</a></div></div></span><span id="pageFilter" runtime="Flash::11##AIR::2##"><a name="event:socketData" id="event:socketData"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>socketData</h3></td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../flash/events/ProgressEvent.html"><code>flash.events.ProgressEvent</code></a><br/><span class="label">property ProgressEvent.type  =  </span><a href="../../flash/events/ProgressEvent.html#SOCKET_DATA"><code>flash.events.ProgressEvent.SOCKET_DATA</code></a><br/><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11, AIR 2</td></tr></table><p></p><p></p><p>
+ Dispatched when a socket has received data.
+ 
+ Events of type <code>socketData</code> do not use the <code>ProgressEvent.bytesTotal</code>
+ property. 
+ 
+ </p>
+	Defines the value of the <code>type</code> property of a <code>socketData</code> event object.
+	
+	<p>This event has the following properties:</p>
+	<table class="innertable" ><tr><th>Property</th><th>Value</th></tr><tr><td><code>bubbles</code></td><td><code>false</code></td></tr><tr><td><code>cancelable</code></td><td><code>false</code>; there is no default behavior to cancel.</td></tr><tr><td><code>currentTarget</code></td><td>The object that is actively processing the Event.</td></tr><tr><td><code>bytesLoaded</code></td><td>The number of items or bytes loaded at the time the listener processes the event.</td></tr><tr><td><code>bytesTotal</code></td><td>0; this property is not used by <code>socketData</code> event objects.</td></tr><tr><td><code>target</code></td><td>The socket reporting progress.</td></tr></table>
+	
+	</div></span><a name="includeExamplesSummary" id="includeExamplesSummary"></a><div class="detailSectionHeader">Examples<span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span></div><span id="pageFilter"><div class="exampleHeader">SecureSocketExample.as</div><br/><div class="detailBody"> The following example illustrates how to create and connect a 
+ SecureSocket object.
+<div class="listing"><pre>package
+{
+    import flash.display.Sprite;
+    import flash.errors.IOError;
+    import flash.events.Event;
+    import flash.events.IOErrorEvent;
+    import flash.net.SecureSocket;
+    
+    public class SecureSocketExample extends Sprite
+    {
+        private var secureSocket:SecureSocket = new SecureSocket();
+        
+        public function SecureSocketExample()
+        {
+            secureSocket.addEventListener( Event.CONNECT, onConnect )
+            secureSocket.addEventListener( IOErrorEvent.IO_ERROR, onError );
+            
+            try
+            {
+                secureSocket.connect( "208.77.188.166", 443 );
+            }
+            catch ( error:Error )
+            {
+                trace ( error.toString() );
+            }
+        }
+        
+        private function onConnect( event:Event ):void
+        {
+            trace("Connected.");
+        }
+        
+        private function onError( error:IOErrorEvent ):void
+        {
+            trace( error.text + ", " + secureSocket.serverCertificateStatus );
+        }
+    }
+}
+</pre></div></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,true,false,true,true,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

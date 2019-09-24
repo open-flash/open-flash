@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:11"><meta name="runtime" content="air"><meta name="runtimever" content="air:3.0"><meta name="product" content="flash player"><meta name="productver" content="flash player:11"><meta name="product" content="air"><meta name="productver" content="air:3.0"><link rel="stylesheet" href="style.css" type="text/css" media="screen"><link rel="stylesheet" href="print.css" type="text/css" media="print"><link rel="stylesheet" href="override.css" type="text/css"><link rel="stylesheet" href="asfilter.css" type="text/css"><link rel="stylesheet" href="ion.css" type="text/css"><meta name="keywords" content="JSON,globalClassifier.JSON,parse,stringify"><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" src="AC_OETags.js" type="text/javascript"></script><title>JSON - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="filter_new.css" type="text/css">
+			
+		<script src="jquery.js" type="text/javascript"></script>
+		<script src="s_chl_code.js" type="text/javascript"></script>
+		<script src="jquery.zclip.js" type="text/javascript"></script>
+		<script src="jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="cookies.js" type="text/javascript"></script>
+		<script src="asdoc.js" type="text/javascript"></script>
+		<script src="iscroll.js" type="text/javascript"></script>
+		<script src="AC_OETags.js" type="text/javascript"></script>
+		<script src="omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="search.html" onSubmit="searchfunctionsubmit('')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="help.js"></script>
+						<script language="javascript" type="text/javascript" src="asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">Top Level&nbsp;</a><br>
+								<h1 id="classProductName">JSON&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">Top Level</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public final   class  JSON</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">JSON  <img src="images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="Object.html">Object</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11, AIR 3.0</td></tr></table><p></p><p></p><p></p>
+    The JSON class lets applications import and export data using JavaScript Object Notation (JSON) format. JSON is an industry-standard data interchange
+    format that is described at <a href="http://www.json.org" >http://www.json.org</a>.
+    
+    <p>As a rule, the ActionScript JSON class adheres to the ECMA-262 specification. The following exceptions occur where ActionScript
+    provides greater flexibility than ECMAScript:</p>
+    
+               <ul>
+                  <li>
+                     <p>Unlike ECMAScript, the ActionScript JSON class encodes the following primitives data types as well as the objects that wrap them:</p>
+    
+                     <table class="innertable" ><tr><th>Primitive type</th><th>Wrapper class</th></tr><tr><td>string</td><td>String</td></tr><tr><td>number</td><td>Number</td></tr><tr><td>boolean</td><td>Boolean</td></tr></table>
+                  </li>
+                  <li>
+                     <p>
+                        <b>
+                           <code>parse()</code> method:</b> When the argument passed to the <code>reviver</code> parameter is not a function, ActionScript
+    throws a TypeError with error ID <code>kJSONInvalidReviver</code>. It also posts a localized error message.</p>
+                  </li>
+                  <li>
+                     <p>
+                        <b>
+                           <code>stringify()</code> method:</b> When the argument passed to the <code>replacer</code> parameter is neither an array or a function, ActionScript
+    throws a TypeError with error ID <code>kJSONInvalidReplacer</code>. It also  posts a localized error message.</p>
+                  </li>
+                  <li>
+                     <p>
+                        <b>
+                           <code>stringify()</code> method:</b> When the argument passed to the <code>space</code> parameter is not a String or a Number, it is converted to a
+    String. This string serves as the gap in the output. ECMA-262 requires the gap to be an empty string.</p>
+                  </li>
+                  <li>
+                     <p>
+                        <b>
+                           <code>stringify()</code> method:</b> When the code encounters a cyclic structure, it throws a TypeError with error ID <code>kJSONCyclicStructure</code>.
+    It also posts a localized error message.</p>
+                  </li>
+                  <li>
+                     <p>ECMA-262 specifies that JSON stringification enumerates the "own properties" of an object, meaning the object's dynamic properties. Because ActionScript classes can also
+    declare fixed properties, the ActionScript <code>stringify()</code> method enumerates both dynamic properties and public non-transient properties on ActionScript objects.
+    These properties include properties accessed by getters as well as properties accessed directly.</p>
+                  </li>
+               </ul>
+    
+               <p>For most ActionScript classes, the ActionScript <code>JSON.stringify()</code> method generates a default encoding. ActionScript classes can change this
+    encoding by defining a <code>toJSON()</code> method in the class or its prototype. For a few ActionScript classes, the default JSON
+    encoding is inappropriate. These classes provide a trivial, overridable implementation of <code>toJSON()</code> that returns the value described in the
+    following table. You can override or redefine the <code>toJSON()</code> methods on these classes if you require a specific behavior.
+    The following table describes these exceptions:</p>
+               <table class="innertable" ><tr><th>Class</th><th>Comments</th></tr><tr><td>ByteArray</td><td>Overridable <code>toJSON()</code> method returns the string "ByteArray".</td></tr><tr><td>Dictionary</td><td>Overridable <code>toJSON()</code> method returns the string "Dictionary".</td></tr><tr><td>Date</td><td>Overridable <code>toJSON()</code> method returns <code>Date.toString()</code>. This exception guarantees that the ActionScript Date constructor can
+    parse the JSON string.</td></tr><tr><td>XML</td><td>Overridable <code>toJSON()</code> method returns the string "XML".</td></tr></table>
+    
+            <p></p><p><a href="#includeExamplesSummary">View the examples</a></p><p id="moreExamples"><span class="classHeaderTableLabel">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WSf3d65dd2c930a82b-59702cdf13201c7fa84-7ffc.html" target="_blank">Defining custom JSON behavior</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WSf3d65dd2c930a82b11338b8013201e2db2b-8000.html" target="_blank">Defining toJSON() on the prototype
+of a built-in class</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WSab2db1cbc17f4fe03862fd0a132e04d0ed0-8000.html" target="_blank">Defining or overriding toJSON()
+at the class level</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WSf3d65dd2c930a82b33ca443913202ba5d0a-8000.html" target="_blank">Using the JSON.stringify() replacer
+parameter</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WSf3d65dd2c930a82b43322d12132a75d91da-8000.html" target="_blank">Using the JSON.parse() reviver
+parameter</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WSde2d341a0d78278f173272d5132ae87b002-8000.html" target="_blank">Parsing example</a></div><p id="learnMore"><span class="classHeaderTableLabel">Learn more</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WSf3d65dd2c930a82b-59702cdf13201c7fa84-8000.html" target="_blank">Overview of the JSON API</a><br/></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable hideInheritedProperty" id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="Object.html#constructor" class="signatureLink">constructor</a> : <a href="Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="Object.html">Object</a>):<a href="Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="" runtime="Flash::11##AIR::3.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#parse()" class="signatureLink">parse</a>(text:<a href="String.html">String</a>, reviver:<a href="Function.html">Function</a> = null):<a href="Object.html">Object</a></div><div class="summaryTableDescription">[static] 
+        Accepts a JSON-formatted String and returns an ActionScript Object that represents that value.</div></td><td class="summaryTableOwnerCol">JSON</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="String.html">String</a>, isEnum:<a href="Boolean.html">Boolean</a> = true):<a href="specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="" runtime="Flash::11##AIR::3.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#stringify()" class="signatureLink">stringify</a>(value:<a href="Object.html">Object</a>, replacer:<a href="specialTypes.html#*">*</a> = null, space:<a href="specialTypes.html#*">*</a> = null):<a href="String.html">String</a></div><div class="summaryTableDescription">[static] 
+        Returns a String, in JSON format, that represents an ActionScript value.</div></td><td class="summaryTableOwnerCol">JSON</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#toString()" class="signatureLink">toString</a>():<a href="String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="Object.html">Object</a></div><div class="summaryTableDescription">
+	 Returns the primitive value of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::11##AIR::3.0##"><a name="parse()" id="parse()"></a><a name="parse(String,Function)" id="parse(String,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>parse</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public static function parse(text:<a href="String.html">String</a>, reviver:<a href="Function.html">Function</a> = null):<a href="Object.html">Object</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11, AIR 3.0</td></tr></table><p></p><p></p><p>
+        Accepts a JSON-formatted String and returns an ActionScript Object that represents that value. JSON objects,
+        arrays, strings, numbers, Booleans, and null map to corresponding ActionScript values, as shown below:
+        <p>
+        <table class="innertable" ><tr><th>JSON type</th><th>ActionScript type</th></tr><tr><td>array</td><td>Array</td></tr><tr><td>string</td><td>String</td></tr><tr><td>number</td><td>Number</td></tr><tr><td>boolean</td><td>Boolean</td></tr><tr><td>null</td><td>null</td></tr></table>
+        </p>
+        
+        <p>The <code>reviver</code> parameter is a function that takes two parameters: a key and a value. You can use this
+        function to transform or filter each key/value pair as it is parsed. If you supply a <code>reviver</code> function, your transformed
+        or filtered value for each pair, rather than the default parsing, is returned in the <code>parse()</code> function output. If
+        the <code>reviver</code> function returns <code>undefined</code> for any pair, the property is deleted from the final result.
+        </p>
+        
+        <p>When the argument passed to the <code>reviver</code> parameter is not a function, ActionScript
+        throws a TypeError with error ID <code>kJSONInvalidReviver</code>. It also posts a localized error message.</p>
+        
+        <p>If the <code>parse()</code> function encounters duplicate keys within an object, the duplicate key
+        encountered last provides the value for all preceding occurrences of that key.
+        </p>
+        
+        </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">text</span>:<a href="String.html">String</a></code> &mdash; The JSON string to be parsed
+        </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">reviver</span>:<a href="Function.html">Function</a></code> (default = <code>null</code>)<code></code> &mdash; (Optional) A function that transforms each key/value pair that is parsed
+        
+        </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Object.html">Object</a></code></td></tr></table></div></span><span id="pageFilter" runtime="Flash::11##AIR::3.0##"><a name="stringify()" id="stringify()"></a><a name="stringify(Object,any,any)" id="stringify(Object,any,any)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>stringify</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function stringify(value:<a href="Object.html">Object</a>, replacer:<a href="specialTypes.html#*">*</a> = null, space:<a href="specialTypes.html#*">*</a> = null):<a href="String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11, AIR 3.0</td></tr></table><p></p><p></p><p>
+        Returns a String, in JSON format, that represents an ActionScript value. The <code>stringify</code> method can take three parameters.
+        
+        <p>The <code>value</code> parameter is required. This parameter is an ActionScript value. Typically, it is an Object or Array,
+        but it can also be a String, Boolean, Number, or null.
+        </p>
+        
+        <p>The optional <code>replacer</code> parameter can be either a function or an array of strings or numbers. If it is a function,
+        the function takes two parameters: a key and a value. You can use this
+        function to transform or filter each key/value pair as it is parsed. If you supply a <code>replacer</code> function, your transformed
+        or filtered value for each pair, rather than the default parsing, is returned in the <code>parse()</code> function output. If
+        the <code>replacer</code> function returns <code>undefined</code> for any pair, the property is deleted from the final result. If <code>replacer</code>
+        is an array, it is used as a filter for designating which properties are included in the output.
+        </p>
+        
+        <p>When the argument passed to the <code>replacer</code> parameter is neither an array or a function, ActionScript
+        throws a TypeError with error ID <code>kJSONInvalidReplacer</code>. It also posts a localized error message.</p>
+        
+        <p>The optional <code>space</code> parameter is a String or Number that allows white space to be injected into the returned string to improve human readability.
+        Entries in generated JSON objects and JSON arrays are separated by a gap derived from the <code>space</code> parameter. This gap is
+        always 0 to 10 characters wide. If space is a string, then the derived gap is the first ten characters of that string. If space
+        is a non-negative number <i>x</i>, then the gap is <i>x</i> space characters, to a maximum of ten spaces.
+        When the argument passed to the <code>space</code> parameter is not a String a Number, it is converted to a
+        String for use as the gap in the output. Execution then proceeds.</p>
+        <p>When the <code>stringify()</code> method encounters a cyclic structure, it throws a TypeError with error ID <code>kJSONCyclicStructure</code>. It also posts a localized error message.</p>
+
+        </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">value</span>:<a href="Object.html">Object</a></code> &mdash; The ActionScript value to be converted into a JSON string
+        </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">replacer</span>:<a href="specialTypes.html#*">*</a></code> (default = <code>null</code>)<code></code> &mdash; (Optional) A function or an array that transforms or filters key/value pairs in the <code>stringify</code> output
+        </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">space</span>:<a href="specialTypes.html#*">*</a></code> (default = <code>null</code>)<code></code> &mdash; (Optional) A string or number that controls added white space in the returned String
+        
+        </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="String.html">String</a></code></td></tr></table></div></span><a name="includeExamplesSummary" id="includeExamplesSummary"></a><div class="detailSectionHeader">Examples<span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span></div><span id="pageFilter"><div class="exampleHeader">JSONExample.as</div><br/><div class="detailBody"> The following example uses the <code>JSONExample</code> class
+ to show a JSON round-trip in ActionScript.  This is accomplished with the following steps:
+ <ol><li>The constructor for <code>JSONExample</code> assigns a string to the super-class's <code>text</code>
+        member and initializes an internal counter.</li><li>In addition, the class defines an array that can contain JSONExample objects that have been exported to JSON.</li><li>JSONExample also defines a <code>toJSON()</code> method and a <code>revive()</code> method. The 
+    <code>toJSON()</code> method is called by <code>JSON.stringify()</code> to serialize JSONExample objects to JSON. The 
+    <code>revive()</code> method can be called from <code>JSON.parse()</code> methods to restore the full JSONExample
+     object. This restoration is achieved by using a given ID to retrieve the original object from the revivable 
+    objects array.</li><li>The script that uses the class definition creates an object that contains two TextField objects and one JSONExample object.
+     It also creates a revivable objects array for storing TextField objects that have been exported to JSON.</li><li>The <code>replacer</code> function of <code>JSON.stringify()</code> filters TextField objects out of the JSON string. In
+     place of each removed object, <code>replacer</code> provides a marker with an ID that can be used later to retrieve the object. 
+    JSONExample objects, on the other hand, pass through according to their native JSON encoding.
+    </li><li>The <code>reviver</code> function of the <code>parse()</code> method recreates the original object by retrieving all 
+    referenced TextField and JSONExample objects.
+    </li></ol>
+<div class="listing"><pre>
+ 
+ package {
+    import flash.text.TextField;
+    public class JSONExample extends TextField
+    {
+        static var nextId = 10000;
+        static var revivable_objects:Array = [];
+            public var id;
+
+        public function JSONExample(s:String){
+            super.text = s;
+            id = ++nextId;
+        }
+        public function toJSON(k):*
+        {
+            // To be called internally by the JSON.stringify() method.
+            // Save the original object internally.
+            // Write out only a generated ID and the text value.
+            revivable_objects[id] = this;
+            return {"classJSONExample":{"reviveId":id,"contents":this.text}};
+        }
+        public static function revive(id:int):JSONExample
+        {
+            // For explicit use in the JSON.parse() method.
+            // Revives the object using the ID obtained from the JSON string.
+            return revivable_objects[id];
+        }
+    }
+}
+
+import flash.text.TextField;
+
+var lastId = 20000;
+var tf1:TextField = new TextField();
+tf1.text = "Lorem ipsum";
+var tf2:TextField = new TextField();
+tf2.text = "Laughing cows";
+var nt:JSONExample = new JSONExample("It was the best of times; it was the worst of times.");
+
+var obj:Object = {a:tf1, b:nt, c:tf2};
+var revivable_objects:Array = new Array();
+
+var json_out = JSON.stringify(obj, function(k,v){
+        if (v is JSONExample)
+        {
+            // Send JSONExample objects to the JSON output.
+            // Note that stringify() calls JSONExample.toJSON() to serialize this object.
+            return v;
+        }
+        if (v is TextField)
+        {
+            // Remove TextField objects from the JSON output.
+            // Save the original object for reviving later.
+            // Return a new object containing an identification marker
+            // and the original object's revival ID.
+            revivable_objects[++lastId] = v;
+            return {"classTextField":{"reviveId":lastId}};
+        }
+        return v;
+    }
+);
+               
+trace("json_out: " + json_out);
+
+var json_in = JSON.parse(json_out, function(k,v) {
+        if ("classTextField" in v) { // special marker tag from stringify() replacer code
+            // Retrieve the original object based on the ID stored in the stringify() replacer function.
+            var id = v["classTextField"].reviveId;
+            return revivable_objects[id];
+        } else if ("classJSONExample" in v){
+            // Retrieve the original object based on the ID generated in JSONExample.toJSON().
+            return JSONExample.revive(v["classJSONExample"].reviveId);
+        }
+        return v;
+    }
+);
+
+if (json_in.a)
+{
+    if (json_in.a.hasOwnProperty("text"))
+        {
+            trace("json_in.a: " + json_in.a.text);
+        }
+}
+if (json_in.b)
+{
+    if (json_in.b.hasOwnProperty("text"))
+        {
+            trace("json_in.b: " + json_in.b.text);
+        }
+}
+
+if (json_in.c)
+{
+    if (json_in.c.hasOwnProperty("text"))
+        {
+            trace("json_in.c: " + json_in.c.text);
+        }
+}
+               
+</pre></div></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,true,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

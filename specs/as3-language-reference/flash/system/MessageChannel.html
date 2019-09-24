@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:11.4"><meta name="runtime" content="air"><meta name="runtimever" content="air:3.4"><meta name="product" content="flash player"><meta name="productver" content="flash player:11.4"><meta name="product" content="air"><meta name="productver" content="air:3.4"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="MessageChannel,flash.system.MessageChannel,messageAvailable,state,addEventListener,close,receive,removeEventListener,send,toString"><title>MessageChannel - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">flash.system&nbsp;</a><br>
+								<h1 id="classProductName">MessageChannel&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">flash.system</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public final   class  MessageChannel</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">MessageChannel  <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../flash/events/EventDispatcher.html">EventDispatcher</a> <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../Object.html">Object</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p></p>
+ 	The MessageChannel class provides a mechanism for a worker to communicate 
+    with another worker. A message channel is a one-way 
+    communication channel. The message channel's sending worker uses the 
+    message channel to send objects to the receiving worker. A MessageChannel 
+    object is the only way to send a message between workers that dispatches 
+    an event indicating to the receiver that the message is available. Other 
+    mechanisms for sharing data allow a value to be set but do not provide an 
+    event to notify you of the changed data.
+    
+    <p>Each MessageChannel object contains a queue of message objects sent 
+    from the sending worker to the receiving worker. Each call to 
+    <code>send()</code> adds an object to the queue. Each call to 
+    <code>receive()</code> retrieves the oldest message object from the queue.</p>
+    
+               <p>You do not create MessageChannel instances directly by calling the 
+    <code>MessageChannel()</code> constructor. To create a MessageChannel 
+    instance, call the <code>createMessageChannel()</code> method of the 
+    Worker object that will send messages on the channel, passing the 
+    receiving Worker object as an argument.</p>
+    
+               <p>The typical workflow for sending messages with a MessageChannel object 
+    is as follows:</p>
+               <ol>
+                  <li>
+                     <p>Call the sending worker's <code>createMessageChannel()</code> 
+          method to create the message channel</p>
+                     <div class="listing"><pre>
+    // In the sending worker swf
+    var sendChannel:MessageChannel;
+    sendChannel = Worker.current.createMessageChannel(receivingWorker);</pre></div>
+                  </li>
+                  <li>
+                     <p>Pass the message channel to the other worker, either by calling 
+          <code>Worker.setSharedProperty()</code> or by sending it through an existing message channel</p>
+                     <div class="listing"><pre>
+    receivingWorker.setSharedProperty("incomingChannel", sendChannel);</pre></div>
+                  </li>
+                  <li>
+                     <p>Code in the receiving worker registers a listener with the 
+          MessageChannel object for the <code>channelMessage</code> event</p>
+                     <div class="listing"><pre>
+    // In the receiving worker swf
+    var incomingChannel:MessageChannel;
+    incomingChannel = Worker.current.getSharedProperty("incomingChannel");
+    incomingChannel.addEventListener(Event.CHANNEL_MESSAGE, handleIncomingMessage);</pre></div>
+                  </li>
+                  <li>
+                     <p>Code in the sending worker sends a message by calling the 
+          <code>send()</code> method</p>
+                     <div class="listing"><pre>
+    // In the sending worker swf
+    sendChannel.send("This is a message");</pre></div>
+                  </li>
+                  <li>
+                     <p>The runtime calls the event handler in the receiving worker code, 
+          indicating that a message has been sent</p>
+                     <div class="listing"><pre>
+    // In the receiving worker swf
+    // This method is called when the message channel gets a message
+    private function handleIncomingMessage(event:Event):void
+    {
+        // Do something with the message, as shown in the next code listing
+    }</pre></div>
+                  </li>
+                  <li>
+                     <p>Code in the receiving worker calls the <code>receive()</code> 
+          method to get the message. The object returned by the 
+          <code>receive()</code> method has the same data type as the object 
+          passed to the <code>send()</code> method.</p>
+                     <div class="listing"><pre>
+    var message:String = incomingChannel.receive() as String;</pre></div>
+                  </li>
+               </ol>
+    
+               <p>In addition to the asynchronous workflow outlined above, you can use 
+    an alternative workflow with the <code>receive()</code> method to pause 
+    the code in the receiving worker and wait until a message is sent. See 
+    the <code>receive()</code> method description for more information.</p>
+	
+               <p>The MessageChannel class is one of the special object types that are shared 
+    between workers rather than copied between them. When you pass a message channel 
+    from one worker to another worker either by calling the Worker object's 
+    <code>setSharedProperty()</code> method or by using a MessageChannel object, 
+    both workers have a reference to the same MessageChannel object in the runtime's memory.</p>
+    
+            <p></p><p><span class="classHeaderTableLabel">Related API Elements</span></p><div class="seeAlso"><a href="Worker.html" target="">Worker class</a><br/><a href="Worker.html#createMessageChannel()" target="">Worker.createMessageChannel() method</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../Object.html#constructor" class="signatureLink">constructor</a> : <a href="../../Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#messageAvailable" class="signatureLink">messageAvailable</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">[read-only] 
+        Indicates whether the MessageChannel has one or more messages from 
+        the sending worker in its internal message queue.</div></td><td class="summaryTableOwnerCol">MessageChannel</td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#state" class="signatureLink">state</a> : <a href="../../String.html">String</a><div class="summaryTableDescription">[read-only] 
+        Indicates the current state of the MessageChannel object (open, 
+		closing, or closed).</div></td><td class="summaryTableOwnerCol">MessageChannel</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addEventListener()" class="signatureLink">addEventListener</a>(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false, priority:<a href="../../int.html">int</a> = 0, useWeakReference:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[override] 
+        
+	Registers an event listener object with an EventDispatcher object so that the listener 
+	receives notification of an event.</div></td><td class="summaryTableOwnerCol">MessageChannel</td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#close()" class="signatureLink">close</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+        Instructs the current MessageChannel to close once all messages have 
+		been received.</div></td><td class="summaryTableOwnerCol">MessageChannel</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#dispatchEvent()" class="signatureLink">dispatchEvent</a>(event:<a href="../../flash/events/Event.html">Event</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Dispatches an event into the event flow.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#hasEventListener()" class="signatureLink">hasEventListener</a>(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Checks whether the EventDispatcher object has any listeners registered for a specific type 
+	of event.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#receive()" class="signatureLink">receive</a>(blockUntilReceived:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#*">*</a></div><div class="summaryTableDescription">
+        Retrieves a single message object from the queue of messages sent 
+        through this message channel.</div></td><td class="summaryTableOwnerCol">MessageChannel</td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeEventListener()" class="signatureLink">removeEventListener</a>(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[override] 
+        
+	Removes a listener from the EventDispatcher object.</div></td><td class="summaryTableOwnerCol">MessageChannel</td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#send()" class="signatureLink">send</a>(arg:<a href="../../specialTypes.html#*">*</a>, queueLimit:<a href="../../int.html">int</a> = -1):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+		Sends an object from the sending worker, adding it to the message 
+        queue for the receiving worker.</div></td><td class="summaryTableOwnerCol">MessageChannel</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="../../String.html">String</a>, isEnum:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#toString()" class="signatureLink">toString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">[override] 
+        
+	 Returns the string representation of the specified object.</div></td><td class="summaryTableOwnerCol">MessageChannel</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+	 Returns the primitive value of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#willTrigger()" class="signatureLink">willTrigger</a>(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Checks whether an event listener is registered with this EventDispatcher object or any of 
+	its ancestors for the specified event type.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="eventSummary" id="eventSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Events</div><div class="showHideLinks"><a href="http://help.adobe.com/en_US/Flex/4.6/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7ee9.html" target="_blank">Click for more information on events</a></div><div class="showHideLinks"><div id="hideInheritedEvent" class="hideInheritedEvent"><a class="showHideLink" href="#eventSummary" onclick="javascript:setInheritedVisible(false,'Event');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Events</a></div><div id="showInheritedEvent" class="showInheritedEvent"><a class="showHideLink" href="#eventSummary" onclick="javascript:setInheritedVisible(true,'Event');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Events</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableEvent"><tr><th>&nbsp;</th><th colspan="2">Event</th><th> Summary </th><th>Defined By</th></tr><tr class="hideInheritedEvent" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#event:activate" class="signatureLink">activate</a></div></td><td class="summaryTableDescription summaryTableCol">[broadcast event] Dispatched when the Flash Player or AIR application gains operating system focus and becomes active.</td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:channelMessage" class="signatureLink">channelMessage</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatched each time the sending worker calls this MessageChannel object's send() method, indicating that a new message object is available in the MessageChannel instance's queue.</td><td class="summaryTableOwnerCol">MessageChannel</td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:channelState" class="signatureLink">channelState</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatched when the value of the message channel's state property changes.</td><td class="summaryTableOwnerCol">MessageChannel</td></tr><tr class="hideInheritedEvent" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#event:deactivate" class="signatureLink">deactivate</a></div></td><td class="summaryTableDescription summaryTableCol">[broadcast event] Dispatched when the Flash Player or AIR application operating loses system focus and is becoming inactive.</td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="propertyDetail" id="propertyDetail"></a><a name="messageAvailable" id="messageAvailable"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>messageAvailable</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>messageAvailable:<a href="../../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+        Indicates whether the MessageChannel has one or more messages from 
+        the sending worker in its internal message queue.
+		
+		</p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get messageAvailable():<a href="../../Boolean.html">Boolean</a></code><br/></div></span><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="propertyDetail" id="propertyDetail"></a><a name="state" id="state"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>state</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>state:<a href="../../String.html">String</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+        Indicates the current state of the MessageChannel object (open, 
+		closing, or closed). The possible values for this property are 
+		defined as constants in the MessageChannelState class.
+        
+        </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get state():<a href="../../String.html">String</a></code><br/><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="MessageChannelState.html" target="">MessageChannelState class</a></div></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="addEventListener()" id="addEventListener()"></a><a name="addEventListener(String,Function,Boolean,int,Boolean)" id="addEventListener(String,Function,Boolean,int,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>addEventListener</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code>override public function addEventListener(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false, priority:<a href="../../int.html">int</a> = 0, useWeakReference:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+        
+	Registers an event listener object with an EventDispatcher object so that the listener 
+	receives notification of an event. <span>You can register event listeners on all nodes in the 
+	display list for a specific type of event, phase, and priority.</span>
+	
+	
+	
+	<p>After you successfully register an event listener, you cannot change its priority
+	through additional calls to <code>addEventListener()</code>. To change a listener's
+	priority, you must first call <code>removeListener()</code>. Then you can register the
+	listener again with the new priority level. </p>
+	
+	<p>Keep in mind that after the listener is registered, subsequent calls to
+	<code>addEventListener()</code> with a different <code>type</code> or
+	<code>useCapture</code> value result in the creation of a separate listener registration. 
+	<span>For example, if you first register a listener with <code>useCapture</code> set to 
+	<code>true</code>, it listens only during the capture phase. If you call 
+	<code>addEventListener()</code> again using the same listener object, but with
+	<code>useCapture</code> set to <code>false</code>, you have two separate listeners: one
+	that listens during the capture phase and another that listens during the target and
+	bubbling phases.</span>
+	</p>
+	
+	<p>You cannot register an event listener for only the target phase or the bubbling 
+	phase. Those phases are coupled during registration because bubbling 
+	applies only to the ancestors of the target node.</p>
+	
+	<p>If you no longer need an event listener, remove it by calling 
+	<code>removeEventListener()</code>, or memory problems could result. Event listeners are not automatically
+	removed from memory because the garbage
+	collector does not remove the listener as long as the dispatching object exists (unless the <code>useWeakReference</code>
+	parameter is set to <code>true</code>).</p>
+		
+	<p>Copying an EventDispatcher instance does not copy the event listeners attached to it. 
+	(If your newly created node needs an event listener, you must attach the listener after
+    creating the node.) However, if you move an EventDispatcher instance, the event listeners 
+    attached to it move along with it.</p>
+	
+	
+	<p>If the event listener is being registered on a node while an event is being processed
+	on this node, the event listener is not triggered during the current phase but can be 
+	triggered during a later phase in the event flow, such as the bubbling phase.</p>
+	
+	<p>If an event listener is removed from a node while an event is being processed on the node,
+	it is still triggered by the current actions. After it is removed, the event listener is
+	never invoked again (unless registered again for future processing). </p>
+	
+	</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">type</span>:<a href="../../String.html">String</a></code> &mdash; The type of event.
+	
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listener</span>:<a href="../../Function.html">Function</a></code> &mdash; The listener function that processes the event. This function must accept
+    an Event object as its only parameter and must return nothing<span>, as this example shows:</span>
+	
+	
+    <div class="listing"><pre>function(evt:Event):void</pre></div>
+	
+	<p>The function can have any name.</p>
+	
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">useCapture</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; 
+	
+	<span>Determines whether the listener works in the capture phase or the 
+	target and bubbling phases. If <code>useCapture</code> is set to <code>true</code>, 
+	the listener processes the event only during the capture phase and not in the 
+	target or bubbling phase. If <code>useCapture</code> is <code>false</code>, the
+	listener processes the event only during the target or bubbling phase. To listen for
+	the event in all three phases, call <code>addEventListener</code> twice, once with 
+	<code>useCapture</code> set to <code>true</code>, then again with
+	<code>useCapture</code> set to <code>false</code>.</span>
+	
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">priority</span>:<a href="../../int.html">int</a></code> (default = <code>0</code>)<code></code> &mdash; The priority level of the event listener. The priority is designated by
+	a signed 32-bit integer. The higher the number, the higher the priority. All listeners
+	with priority <i>n</i> are processed before listeners of priority <i>n</i>-1. If two
+	or more listeners share the same priority, they are processed in the order in which they
+	were added. The default priority is 0.
+	
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">useWeakReference</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; Determines whether the reference to the listener is strong or
+	weak. A strong reference (the default) prevents your listener from being garbage-collected.
+    A weak reference does not. <p>Class-level member functions are not subject to garbage 
+    collection, so you can set <code>useWeakReference</code> to <code>true</code> for 
+    class-level member functions without subjecting them to garbage collection. If you set
+    <code>useWeakReference</code> to <code>true</code> for a listener that is a nested inner 
+    function, the function will be garbage-collected and no longer persistent. If you create 
+    references to the inner function (save it in another variable) then it is not 
+    garbage-collected and stays persistent.</p>
+	
+	</td></tr></table></p></div></span><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="close()" id="close()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>close</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function close():<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+        Instructs the current MessageChannel to close once all messages have 
+		been received.
+        
+        <p>Once you call this method, you can no longer call the 
+		<code>send()</code> method to add messages to the queue. The 
+		<code>send()</code> call will fail and return <code>false</code>.</p>
+        
+        <p>You can also only call the <code>receive()</code> method to 
+		receive messages that are already waiting in the queue. If the queue 
+		is empty, the <code>receive()</code> call will return <code>null</code>.</p>
+        
+        </p><br/><span class="label">Events</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><b>channelState</b>:<a href="../../flash/events/Event.html"><code>Event</code></a></code> &mdash; dispatched when the 
+               <code>close()</code> method is called (which sets the 
+               <code>state</code> property is to <code>MessageChannelState.CLOSING</code>). 
+               Dispatched again when all the messages have been received and 
+               the <code>state</code> property is set to 
+               <code>MessageChannelState.CLOSED</code>.
+        
+		
+		</td></tr></table></div></span><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="receive()" id="receive()"></a><a name="receive(Boolean)" id="receive(Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>receive</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function receive(blockUntilReceived:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#*">*</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+        Retrieves a single message object from the queue of messages sent 
+        through this message channel.
+        
+        <p>Each time the sending worker's code calls the MessageChannel 
+		object's <code>send()</code> method, a single object is added to the 
+		message channel's internal message queue. These objects stack up in 
+		the queue until they are removed one at a time by the receiving 
+		worker calling the <code>receive()</code> method. The message objects 
+		are received in the order they are sent.</p>
+        
+        <p>To check if the queue contains a message object to receive, use 
+		the <code>messageAvailable</code> property.</p>
+        
+        <p>In the standard case, the object passed into <code>send()</code> 
+		is serialized in AMF3 format. When it is removed from the queue by 
+		the <code>receive()</code> call, it is deserialized into an 
+		ActionScript object (a copy of the original object) in the receiving 
+		worker and the worker receives a reference to that copy. Certain 
+		types of objects are shared between workers rather than copied. In 
+		that case the object that the receiving worker gets is a reference 
+		to the shared object itself rather than a new copy of the object. 
+		For more information about this case see the <code>send()</code> 
+		method description.</p>
+        
+        <p>The method's behavior changes if the message queue is empty and 
+		you pass <code>true</code> for the <code>blockUntilReceived</code> 
+		parameter. In that case the worker pauses its execution thread at 
+		the <code>receive()</code> call and does not execute more code. Once 
+		the sending worker calls <code>send()</code>, the 
+		<code>receive()</code> call completes by receiving the message. The 
+		worker then resumes code execution at the next line of code following 
+		the receive call.</p>
+        
+        </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">blockUntilReceived</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; indicates whether the worker's execution 
+               thread should receive a message object and then continue 
+               execution (<code>false</code>), or if it should pause at the 
+               <code>receive()</code> call and wait for a message to be sent 
+               if the queue is empty (<code>true</code>)
+        
+        </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../specialTypes.html#*">*</a></code> &mdash; a copy of the object passed into the <code>send()</code> 
+                method by the sending worker. If the object is one of the 
+                special types that are shared between workers, the return 
+                value is a reference to the shared object rather than to a 
+                copy of it. If no message is available on the queue, the 
+                method returns <code>null</code>.
+        
+        
+        </td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/errors/IOError.html">IOError</a> </code> &mdash; if the channel is closed at the time the 
+                method is called or if the <code>blockUntilReceived</code> argument 
+                results in the execution being paused and the channel is then 
+                closed by another worker.
+        
+        </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../ArgumentError.html">ArgumentError</a> </code> &mdash; if the calling code is not in the receiving worker
+        
+        </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../flash/errors/ScriptTimeoutError.html">ScriptTimeoutError</a> </code> &mdash; if the method is called from 
+                code in the primordial worker in Flash Player and the 
+                <code>blockUntilReceived</code> argument causes the worker to pause 
+                longer than the script timeout limit (15 seconds by default)
+        
+        </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="MessageChannel.html#send()" target="">send() method</a><br/><a href="MessageChannel.html#messageAvailable" target="">messageAvailable property</a></div></div></span><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="removeEventListener()" id="removeEventListener()"></a><a name="removeEventListener(String,Function,Boolean)" id="removeEventListener(String,Function,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>removeEventListener</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>override public function removeEventListener(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+        
+	Removes a listener from the EventDispatcher object. If there is no matching listener registered with the EventDispatcher object, a call to this method has no effect.
+	
+	</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">type</span>:<a href="../../String.html">String</a></code> &mdash; The type of event.
+	
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listener</span>:<a href="../../Function.html">Function</a></code> &mdash; The listener object to remove.
+	
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">useCapture</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; 
+	
+	<span>Specifies whether the listener was registered for the capture phase or the 
+	target and bubbling phases. If the listener was registered for both the capture phase and the
+	target and bubbling phases, two calls to <code>removeEventListener()</code> are required 
+	to remove both, one call with <code>useCapture()</code> set to <code>true</code>, and another 
+	call with <code>useCapture()</code> set to <code>false</code>.</span>
+	
+	</td></tr></table></p></div></span><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="send()" id="send()"></a><a name="send(any,int)" id="send(any,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>send</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function send(arg:<a href="../../specialTypes.html#*">*</a>, queueLimit:<a href="../../int.html">int</a> = -1):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+		Sends an object from the sending worker, adding it to the message 
+        queue for the receiving worker.
+        
+        <p>The object passed to the <code>arg</code> parameter can be almost any 
+        object. Other than the exceptions noted below, any object that is passed 
+        to the <code>arg</code> parameter is not passed by reference. Any changes made to the 
+        object in one worker after <code>send()</code> is called are 
+        not carried over to the other worker. The object is copied by 
+        serializing it to AMF3 format and deserializing it into a new object 
+        in the receiving worker when <code>receive()</code> is called. 
+        For this reason, any object that can't be serialized in AMF3 format, 
+        including display objects, can't be passed to the <code>arg</code> parameter. 
+        In order for a custom class to be passed properly, the class definition 
+        must be registered using the <code>flash.net.registerClassAlias()</code> 
+        function or <code>[RemoteClass]</code> metadata. With either technique 
+        the same alias must be used for both worker's versions of the class.</p>
+        
+        <p>There are five types of objects that are an exception to the rule 
+        that objects aren't shared between workers:</p>
+        
+        <ul><li>Worker</li><li>MessageChannel</li><li>shareable ByteArray (a ByteArray object with its 
+              <code>shareable</code> property set to <code>true</code></li><li>Mutex</li><li>Condition</li></ul>
+        
+        <p>If you pass an instance of these objects to the <code>arg</code> 
+        parameter, each worker has a reference to the same underlying object. 
+        Changes made to an instance in one worker are immediately available 
+        in other workers. In addition, if you pass the same instance of these 
+        objects more than once using <code>send()</code>, the runtime doesn't 
+        create a new copy of the object in the receiving worker. Instead, the 
+        same reference is re-used, reducing system memory use.</p>
+        
+        <p>By default, this method adds the object to the queue and immediately 
+        returns, continuing execution with the next line of code. If you want 
+        to prevent the queue from growing beyond a certain size, you can use 
+        the <code>queueLimit</code> parameter to specify the maximum number 
+        of items to allow in the queue. If at the time you call 
+        <code>send()</code> the number of items in the queue is greater than 
+        the limit you specify, the worker pauses the execution thread at the 
+        <code>send()</code> call. Once the receiving worker calls 
+        <code>receive()</code> enough times that the queue size is less than 
+        the specified queue limit, the send() call completes. The worker then 
+        continues execution at the next line of code.</p>
+        
+        </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">arg</span>:<a href="../../specialTypes.html#*">*</a></code> &mdash; the object to add to the message queue
+        
+        </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">queueLimit</span>:<a href="../../int.html">int</a></code> (default = <code>-1</code>)<code></code> &mdash; the maximum number of message objects that the 
+               message queue can contain. If the queue contains more objects 
+               than the limit, the sending worker pauses execution until 
+               messages are received and the queue size drops below the limit.
+        
+        </td></tr></table></p><br/><span class="label">Events</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><b>channelMessage</b>:<a href="../../flash/events/Event.html"><code>Event</code></a></code> &mdash; dispatched to notify the 
+               receiving worker that a message object is available in the queue
+        
+        </td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/errors/IOError.html">IOError</a> </code> &mdash; if the channel is closed at the time the 
+                method is called or if the <code>queueLimit</code> argument 
+                results in the execution being paused and the channel is then 
+                closed by another worker.
+        
+        </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../ArgumentError.html">ArgumentError</a> </code> &mdash; if the calling code is not in the sending worker
+        
+        </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../flash/errors/ScriptTimeoutError.html">ScriptTimeoutError</a> </code> &mdash; if the method is called from 
+                code in the primordial worker in Flash Player and the 
+                <code>queueLimit</code> argument causes the worker to pause 
+                longer than the script timeout limit (15 seconds by default)
+        
+        </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="MessageChannel.html#receive()" target="">receive() method</a><br/><a href="Worker.html" target="">Worker class</a><br/><a href="../../flash/utils/ByteArray.html#shareable" target="">ByteArray.shareable property</a><br/><a href="../../flash/concurrent/Mutex.html" target="">Mutex class</a><br/><a href="../../flash/concurrent/Condition.html" target="">Condition class</a></div></div></span><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="toString()" id="toString()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>toString</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>override public function toString():<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+        
+	 Returns the string representation of the specified object.
+	 
+     <p><b>Note:</b> Methods of the Object class are dynamically created on Object's prototype. To redefine this method in a subclass of Object, do not use the <code>override</code> keyword. For example, a subclass of Object implements <code>function toString():String</code> instead of using an override of the base class.</p>
+     
+  	 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; A string representation of the object.
+	 
+	 </td></tr></table></div></span><div class="detailSectionHeader"> Event Detail </div><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="event:channelMessage" id="event:channelMessage"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>channelMessage</h3></td><td class="detailHeaderType"> Event </td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../flash/events/Event.html"><code>flash.events.Event</code></a><br/><span class="label">property Event.type  =  </span><a href="../../flash/events/Event.html#CHANNEL_MESSAGE"><code>flash.events.Event.CHANNEL_MESSAGE</code></a><br/><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+    Dispatched each time the sending worker calls this MessageChannel 
+    object's <code>send()</code> method, indicating that a new message object 
+    is available in the MessageChannel instance's queue.
+    
+    </p>
+	The <code>Event.CHANNEL_MESSAGE</code> constant defines the value of the <code>type</code> property of a <code>channelMessage</code> event object.
+ 	
+ 	<p>This event has the following properties:</p>
+ 	
+ 	<table class="innertable" ><tr><th>Property</th><th>Value</th></tr><tr><td><code>bubbles</code></td><td><code>false</code></td></tr><tr><td><code>cancelable</code></td><td><code>false</code>; there is no default behavior to cancel.</td></tr><tr><td><code>currentTarget</code></td><td>The object that is actively processing the Event object with an event listener.</td></tr><tr><td><code>target</code></td><td>The object that dispatched this event.</td></tr></table>
+ 	
+	</div></span><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="event:channelState" id="event:channelState"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>channelState</h3></td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../flash/events/Event.html"><code>flash.events.Event</code></a><br/><span class="label">property Event.type  =  </span><a href="../../flash/events/Event.html#CHANNEL_STATE"><code>flash.events.Event.CHANNEL_STATE</code></a><br/><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+    Dispatched when the value of the message channel's <code>state</code> 
+    property changes.
+    
+    </p>
+	The <code>Event.CHANNEL_STATE</code> constant defines the value of the <code>type</code> property of a <code>channelState</code> event object.
+ 	
+ 	<p>This event has the following properties:</p>
+ 	
+ 	<table class="innertable" ><tr><th>Property</th><th>Value</th></tr><tr><td><code>bubbles</code></td><td><code>false</code></td></tr><tr><td><code>cancelable</code></td><td><code>false</code>; there is no default behavior to cancel.</td></tr><tr><td><code>currentTarget</code></td><td>The object that is actively processing the Event object with an event listener.</td></tr><tr><td><code>target</code></td><td>The object that dispatched this event.</td></tr></table>
+ 	
+	</div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,true,false,true,false,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

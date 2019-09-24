@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><title>flash.events - Adobe ActionScript&reg; 3 (AS3) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">&nbsp;</a><br>
+								<h1 id="classProductName">flash.events&nbsp;</h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript" xml:space="preserve">                
+        
+        				
+        <!--				
+          				    				
+          					
+          titleBar_setSubNav(false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,false)
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script><br xmlns:xd="http://www.pnp-software.com/XSLTdoc"><p xmlns:xd="http://www.pnp-software.com/XSLTdoc">The flash.events package supports the new DOM event model and includes the EventDispatcher base class.</p><br xmlns:xd="http://www.pnp-software.com/XSLTdoc"><hr xmlns:xd="http://www.pnp-software.com/XSLTdoc"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="interfaceSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summaryTableTitle">Interfaces</div><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" cellpadding="3" cellspacing="0" class="summaryTable" id="summaryTableIdInterface"><tr><th>&nbsp;</th><th width="30%">Interface</th><th width="70%">Description</th></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IEventDispatcher.html" onclick="clearAllClassesListCookie();">IEventDispatcher</a></i></td><td class="summaryTableLastCol">
+The IEventDispatcher interface defines methods for adding or removing event listeners, checks 
+whether specific types of event listeners are registered, and dispatches events.</td></tr></table><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="classSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summaryTableTitle">Classes</div><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" cellpadding="3" cellspacing="0" class="summaryTable" id="summaryTableIdClass"><tr><th>&nbsp;</th><th width="30%">Class</th><th width="70%">Description</th></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::2##Flash::10.1##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="AccelerometerEvent.html" onclick="clearAllClassesListCookie();">AccelerometerEvent</a></td><td class="summaryTableLastCol">
+The Accelerometer class dispatches AccelerometerEvent objects when acceleration updates are obtained from the Accelerometer sensor installed on the device.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ActivityEvent.html" onclick="clearAllClassesListCookie();">ActivityEvent</a></td><td class="summaryTableLastCol">
+A Camera or Microphone object dispatches an ActivityEvent object whenever a camera or microphone reports that it has 
+become active or inactive.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="AsyncErrorEvent.html" onclick="clearAllClassesListCookie();">AsyncErrorEvent</a></td><td class="summaryTableLastCol">
+	An object dispatches an AsyncErrorEvent when an exception is thrown from native
+	asynchronous code, which could be from, for example, LocalConnection, NetConnection,
+	SharedObject, or NetStream.</td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="AVDictionaryDataEvent.html" onclick="clearAllClassesListCookie();">AVDictionaryDataEvent</a></td><td class="summaryTableLastCol">
+ AVStream dispatch AVDictionaryDataEvent to signal ID3 tag information
+  </td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="AVHTTPStatusEvent.html" onclick="clearAllClassesListCookie();">AVHTTPStatusEvent</a></td><td class="summaryTableLastCol">
+The application dispatches AVHTTPStatusEvent objects when a network request returns an HTTP
+status code.</td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="AVPauseAtPeriodEndEvent.html" onclick="clearAllClassesListCookie();">AVPauseAtPeriodEndEvent</a></td><td class="summaryTableLastCol">
+ 
+ AVStream dispatches AVPauseAtPeriodEndEvent when the period end is reached for the period to which this event is requested.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="BrowserInvokeEvent.html" onclick="clearAllClassesListCookie();">BrowserInvokeEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+	 The NativeApplication object of an AIR application dispatches a browserInvoke event when the
+	 application is invoked as the result of a SWF file in the browser using the browser
+	 invocation feature.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ContextMenuEvent.html" onclick="clearAllClassesListCookie();">ContextMenuEvent</a></td><td class="summaryTableLastCol">
+ An InteractiveObject dispatches a ContextMenuEvent object when the user opens or interacts with 
+ the context menu.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DataEvent.html" onclick="clearAllClassesListCookie();">DataEvent</a></td><td class="summaryTableLastCol">
+An object dispatches a DataEvent object when raw data has completed loading.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DatagramSocketDataEvent.html" onclick="clearAllClassesListCookie();">DatagramSocketDataEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+ A DatagramSocketDataEvent object is dispatched when Datagram socket has received data.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DNSResolverEvent.html" onclick="clearAllClassesListCookie();">DNSResolverEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+ The DNSResolverEvent class represents the results of a Domain Name System (DNS) lookup operation.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DRMAuthenticateEvent.html" onclick="clearAllClassesListCookie();">DRMAuthenticateEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+    A NetStream object dispatchs a DRMAuthenticateEvent object when attempting to play digital rights management (DRM) encrypted
+    content that requires a user credential for authentication.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.5##Flash::10.1##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DRMAuthenticationCompleteEvent.html" onclick="clearAllClassesListCookie();">DRMAuthenticationCompleteEvent</a></td><td class="summaryTableLastCol">
+	 The DRMManager dispatches a DRMAuthenticationCompleteEvent object when a call to the authenticate()
+	 method of the DRMManager object succeeds.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::1.5##Flash::10.1##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DRMAuthenticationErrorEvent.html" onclick="clearAllClassesListCookie();">DRMAuthenticationErrorEvent</a></td><td class="summaryTableLastCol">
+	 The DRMManager dispatches a DRMAuthenticationErrorEvent object when a call to the authenticate()
+	 method of the DRMManager object fails.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::3.0##Flash::11.9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DRMDeviceGroupErrorEvent.html" onclick="clearAllClassesListCookie();">DRMDeviceGroupErrorEvent</a></td><td class="summaryTableLastCol">
+	Issued by the DRMManager when any error occurs during any device group related calls.
+	
+	It is the application's responsibility to explicitly handle the error events.These events include cases
+	where the user inputs valid credentials, but the voucher protecting the encrypted content restricts the access
+	to the content.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::3.0##Flash::11.9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DRMDeviceGroupEvent.html" onclick="clearAllClassesListCookie();">DRMDeviceGroupEvent</a></td><td class="summaryTableLastCol">
+	Issued by the DRMManager when a device group related call successfully completes.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.0##Flash::10.1##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DRMErrorEvent.html" onclick="clearAllClassesListCookie();">DRMErrorEvent</a></td><td class="summaryTableLastCol">
+	 The DRMErrorEvent class provides information about errors that occur when playing digital rights management (DRM)
+	 encrypted files.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::3.9##Flash::11.9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DRMLicenseRequestEvent.html" onclick="clearAllClassesListCookie();">DRMLicenseRequestEvent</a></td><td class="summaryTableLastCol">
+	 The DRMManager dispatches a DRMLicenseRequestEvent object before each call to the loadVoucher()
+	 or loadPreviewVoucher() methods of the DRMManager object succeeds.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::11.6##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DRMMetadataEvent.html" onclick="clearAllClassesListCookie();">DRMMetadataEvent</a></td><td class="summaryTableLastCol">
+ 
+ AVSegmentedSource dispatches DRMMetadataEvent when it loads and parses files.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::3.8##Flash::11.8##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DRMReturnVoucherCompleteEvent.html" onclick="clearAllClassesListCookie();">DRMReturnVoucherCompleteEvent</a></td><td class="summaryTableLastCol">
+	 The DRMManager dispatches a DRMVoucherReturnCompleteEvent object when a call to the returnVoucher()
+	 method of the DRMManager object succeeds.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::3.8##Flash::11.8##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DRMReturnVoucherErrorEvent.html" onclick="clearAllClassesListCookie();">DRMReturnVoucherErrorEvent</a></td><td class="summaryTableLastCol">
+	 The DRMManager dispatches a DRMReturnVoucherErrorEvent object when a call to the returnVoucher()
+	 method of the DRMManager object fails.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::1.0##Flash::10.1##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DRMStatusEvent.html" onclick="clearAllClassesListCookie();">DRMStatusEvent</a></td><td class="summaryTableLastCol">
+	
+	A NetStream object dispatches a DRMStatusEvent object when the content protected using 
+	digital rights management (DRM) begins playing successfully (when the voucher is
+	verified, and when the user is authenticated and authorized to view the content).</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ErrorEvent.html" onclick="clearAllClassesListCookie();">ErrorEvent</a></td><td class="summaryTableLastCol">
+An object dispatches an ErrorEvent object when an error causes an asynchronous operation 
+to fail.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Event.html" onclick="clearAllClassesListCookie();">Event</a></td><td class="summaryTableLastCol">
+ The Event class is used as the base class for the creation of Event objects,
+ which are passed as parameters to event listeners when an event occurs.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="EventDispatcher.html" onclick="clearAllClassesListCookie();">EventDispatcher</a></td><td class="summaryTableLastCol">
+The EventDispatcher class is the base class for all runtime classes that dispatch events.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="EventPhase.html" onclick="clearAllClassesListCookie();">EventPhase</a></td><td class="summaryTableLastCol">
+ The EventPhase class provides values for the eventPhase property of the Event class.</td></tr><tr class="prow1" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FileListEvent.html" onclick="clearAllClassesListCookie();">FileListEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+	 A File object dispatches a FileListEvent object when a call to the getDirectoryListingAsync() method 
+	 of a File object successfully enumerates a set of files and directories or when a user selects files after a 
+	 call to the browseForOpenMultiple() method.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FocusEvent.html" onclick="clearAllClassesListCookie();">FocusEvent</a></td><td class="summaryTableLastCol">
+ An object dispatches a FocusEvent object when the user changes the focus from one object 
+ in the display list to another.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9.0.28.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FullScreenEvent.html" onclick="clearAllClassesListCookie();">FullScreenEvent</a></td><td class="summaryTableLastCol">
+The Stage object dispatches a FullScreenEvent object whenever the Stage enters or leaves full-screen display mode.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::3.7##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="GameInputEvent.html" onclick="clearAllClassesListCookie();">GameInputEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+     The GameInputEvent class represents an event that is 
+     dispatched when a game input device has either been added or removed
+     from the application platform.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::2##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="GeolocationEvent.html" onclick="clearAllClassesListCookie();">GeolocationEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+A Geolocation object dispatches GeolocationEvent objects when it receives updates from the location sensor installed on the device.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10.1##AIR::2##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="GestureEvent.html" onclick="clearAllClassesListCookie();">GestureEvent</a></td><td class="summaryTableLastCol"> 
+ The GestureEvent class lets you handle multi-touch events on devices that detect complex user contact with
+ the device (such as pressing two fingers on a touch screen at the same time).</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10.1##AIR::2##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="GesturePhase.html" onclick="clearAllClassesListCookie();">GesturePhase</a></td><td class="summaryTableLastCol">
+	The GesturePhase class is an enumeration class of constant values for use with the GestureEvent, PressAndTapGestureEvent, and TransformGestureEvent 
+	classes.</td></tr><tr class="prow0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="HTMLUncaughtScriptExceptionEvent.html" onclick="clearAllClassesListCookie();">HTMLUncaughtScriptExceptionEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+	An HTMLLoader object dispatches an HTMLUncaughtScriptExceptionEvent object whenever a JavaScript exception
+	is thrown and not handled with a catch statement.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="HTTPStatusEvent.html" onclick="clearAllClassesListCookie();">HTTPStatusEvent</a></td><td class="summaryTableLastCol">
+The application dispatches HTTPStatusEvent objects when a network request returns an HTTP
+status code.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="IMEEvent.html" onclick="clearAllClassesListCookie();">IMEEvent</a></td><td class="summaryTableLastCol">
+ An IMEEvent object is dispatched when the user enters text using an input method editor 
+ (IME).</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="InvokeEvent.html" onclick="clearAllClassesListCookie();">InvokeEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+	 The NativeApplication object of an AIR application dispatches an invoke event when the
+	 application is invoked.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="IOErrorEvent.html" onclick="clearAllClassesListCookie();">IOErrorEvent</a></td><td class="summaryTableLastCol">
+An IOErrorEvent object is dispatched when an error causes input or output operations to fail.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="KeyboardEvent.html" onclick="clearAllClassesListCookie();">KeyboardEvent</a></td><td class="summaryTableLastCol">
+ A KeyboardEvent object id dispatched in response to user input through a keyboard.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::2.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LocationChangeEvent.html" onclick="clearAllClassesListCookie();">LocationChangeEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+     An HTMLLoader or StageWebView object dispatches a LocationChangeEvent object when a new page loads.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::2.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="MediaEvent.html" onclick="clearAllClassesListCookie();">MediaEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+ CameraRoll and CameraUI classes dispatch MediaEvent objects when a media stream 
+ is available.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="MouseEvent.html" onclick="clearAllClassesListCookie();">MouseEvent</a></td><td class="summaryTableLastCol">
+ A MouseEvent object is dispatched into the event flow whenever mouse events occur.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NativeDragEvent.html" onclick="clearAllClassesListCookie();">NativeDragEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+ Native drag events are dispatched by the interactive objects involved in a
+ drag-and-drop operation.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NativeProcessExitEvent.html" onclick="clearAllClassesListCookie();">NativeProcessExitEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+ This event is dispatched by the NativeProcess object when the process exits.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NativeWindowBoundsEvent.html" onclick="clearAllClassesListCookie();">NativeWindowBoundsEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+ A NativeWindow object dispatches a NativeWindowBoundsEvent object when the size or location 
+ of the window changes.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NativeWindowDisplayStateEvent.html" onclick="clearAllClassesListCookie();">NativeWindowDisplayStateEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+ A NativeWindow object dispatches events of the NativeWindowDisplayStateEvent class when the window 
+ display state changes.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10.3##AIR::2.7##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NetDataEvent.html" onclick="clearAllClassesListCookie();">NetDataEvent</a></td><td class="summaryTableLastCol">
+A NetStream object dispatches a NetDataEvent object when a data message is encountered in the media stream.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10.3##AIR::2.7##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NetMonitorEvent.html" onclick="clearAllClassesListCookie();">NetMonitorEvent</a></td><td class="summaryTableLastCol">
+ A NetMonitor object dispatches NetMonitorEvent objects when a NetStream object is created.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NetStatusEvent.html" onclick="clearAllClassesListCookie();">NetStatusEvent</a></td><td class="summaryTableLastCol">
+A NetConnection, NetStream, or SharedObject object dispatches NetStatusEvent objects when a it reports its status.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="OutputProgressEvent.html" onclick="clearAllClassesListCookie();">OutputProgressEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+ A FileStream object dispatches OutputProgressEvent objects as pending asynchronous file write operations are 
+ performed.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10.1##AIR::2##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="PressAndTapGestureEvent.html" onclick="clearAllClassesListCookie();">PressAndTapGestureEvent</a></td><td class="summaryTableLastCol"> 
+ The PressAndTapGestureEvent class lets you handle press-and-tap gesture on touch-enabled devices.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ProgressEvent.html" onclick="clearAllClassesListCookie();">ProgressEvent</a></td><td class="summaryTableLastCol">
+ A ProgressEvent object is dispatched when a load operation has begun or a socket has received data.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="RemoteNotificationEvent.html" onclick="clearAllClassesListCookie();">RemoteNotificationEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+	 Contains events that are dispatched by flash.notifications.RemoteNotifier in response to push notification events from APNs.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SampleDataEvent.html" onclick="clearAllClassesListCookie();">SampleDataEvent</a></td><td class="summaryTableLastCol"> 
+ Dispatched when a Sound object requests new audio data or when a Microphone object
+ has new audio data to provide.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ScreenMouseEvent.html" onclick="clearAllClassesListCookie();">ScreenMouseEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+The SystemTrayIcon object dispatches events of type ScreenMouseEvent in response to mouse interaction.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SecurityErrorEvent.html" onclick="clearAllClassesListCookie();">SecurityErrorEvent</a></td><td class="summaryTableLastCol">
+An object dispatches a SecurityErrorEvent object to report the occurrence of a 
+security error.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ServerSocketConnectEvent.html" onclick="clearAllClassesListCookie();">ServerSocketConnectEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+ A ServerSocket object dispatches a ServerSocketConnectEvent object when a client attempts
+ to connect to the server socket.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ShaderEvent.html" onclick="clearAllClassesListCookie();">ShaderEvent</a></td><td class="summaryTableLastCol">
+	 A ShaderEvent is dispatched when a shader operation launched from
+	 a ShaderJob finishes.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10.2##AIR::2.6##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SoftKeyboardEvent.html" onclick="clearAllClassesListCookie();">SoftKeyboardEvent</a></td><td class="summaryTableLastCol">
+A SoftKeyboardEvent object is dispatched when a software-driven keyboard is activated or de-activated on a device or operating system.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::2.6##Flash::10.2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SoftKeyboardTrigger.html" onclick="clearAllClassesListCookie();">SoftKeyboardTrigger</a></td><td class="summaryTableLastCol">
+	The SoftKeyboardTrigger class provides enumerator values for the triggerType property 
+	of the SoftKeyboardEvent class.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SQLErrorEvent.html" onclick="clearAllClassesListCookie();">SQLErrorEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+ A SQLErrorEvent instance is dispatched by a SQLConnection instance or SQLStatement instance
+ when an error occurs while performing a database operation in asynchronous execution mode.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SQLEvent.html" onclick="clearAllClassesListCookie();">SQLEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+ Adobe AIR dispatches SQLEvent objects when one of the operations performed by
+ a SQLConnection or SQLStatement instance completes successfully.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SQLUpdateEvent.html" onclick="clearAllClassesListCookie();">SQLUpdateEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+ A SQLUpdateEvent object is dispatched by a SQLConnection object when a data change occurs
+ on any table associated with the SQLConnection instance.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="StageOrientationEvent.html" onclick="clearAllClassesListCookie();">StageOrientationEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+ A Stage object dispatches a StageOrientationEvent object when the orientation 
+ of the stage changes.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10.2##AIR::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="StageVideoAvailabilityEvent.html" onclick="clearAllClassesListCookie();">StageVideoAvailabilityEvent</a></td><td class="summaryTableLastCol">
+	This event fires when the state of the Stage.stageVideos property changes.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::2.5##Flash::10.2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="StageVideoEvent.html" onclick="clearAllClassesListCookie();">StageVideoEvent</a></td><td class="summaryTableLastCol">
+ A StageVideo object dispatches a StageVideoEvent object after the attachNetStream() method
+ of the StageVideo object and the play() method of
+ the attached NetStream object have both been called.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="StatusEvent.html" onclick="clearAllClassesListCookie();">StatusEvent</a></td><td class="summaryTableLastCol">
+ An object dispatches a StatusEvent object when a device, such as a camera or microphone, or an object such as a LocalConnection object reports its status.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="StorageVolumeChangeEvent.html" onclick="clearAllClassesListCookie();">StorageVolumeChangeEvent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol"> 
+   The StorageVolumeInfo.storageVolumeInfo object dispatches a StorageVolumeChangeEvent event  
+   object when a storage volume is mounted or unmounted.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SyncEvent.html" onclick="clearAllClassesListCookie();">SyncEvent</a></td><td class="summaryTableLastCol">
+ An SharedObject object representing a remote shared object dispatches a SyncEvent object when the remote 
+ shared object has been updated by the server.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TextEvent.html" onclick="clearAllClassesListCookie();">TextEvent</a></td><td class="summaryTableLastCol">
+ An object dispatches a TextEvent object when a user enters text in a text field or clicks 
+ a hyperlink in an HTML-enabled text field.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::11##AIR::3.2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ThrottleEvent.html" onclick="clearAllClassesListCookie();">ThrottleEvent</a></td><td class="summaryTableLastCol">
+ A ThrottleEvent is dispatched when the Flash Player throttles, pauses, or resumes content.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::11##AIR::3.2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ThrottleType.html" onclick="clearAllClassesListCookie();">ThrottleType</a></td><td class="summaryTableLastCol">
+ The ThrottleType class provides values for the playback state property 
+ of the flash.event.ThrottleEvent class.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TimerEvent.html" onclick="clearAllClassesListCookie();">TimerEvent</a></td><td class="summaryTableLastCol">
+ A Timer object dispatches a TimerEvent objects whenever the Timer object reaches the interval 
+ specified by the Timer.delay property.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10.1##AIR::2##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TouchEvent.html" onclick="clearAllClassesListCookie();">TouchEvent</a></td><td class="summaryTableLastCol"> 
+ The TouchEvent class lets you handle events on devices that detect user contact with
+ the device (such as a finger on a touch screen).</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TouchEventIntent.html" onclick="clearAllClassesListCookie();">TouchEventIntent</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol"> 
+     The TouchEventIntent class defines constants for the touchIntent property of the TouchEvent class.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10.1##AIR::2##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TransformGestureEvent.html" onclick="clearAllClassesListCookie();">TransformGestureEvent</a></td><td class="summaryTableLastCol"> 
+ The TransformGestureEvent class lets you handle complex movement input events (such as moving fingers across a touch screen)
+ that the device or operating system interprets as a gesture.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10.1##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="UncaughtErrorEvent.html" onclick="clearAllClassesListCookie();">UncaughtErrorEvent</a></td><td class="summaryTableLastCol">
+	 An UncaughtErrorEvent object is dispatched by an instance of the UncaughtErrorEvents
+	 class when an uncaught error occurs.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10.1##AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="UncaughtErrorEvents.html" onclick="clearAllClassesListCookie();">UncaughtErrorEvents</a></td><td class="summaryTableLastCol">
+     The UncaughtErrorEvents class provides a way to receive uncaught
+	 error events.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10.2##AIR::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="VideoEvent.html" onclick="clearAllClassesListCookie();">VideoEvent</a></td><td class="summaryTableLastCol">
+	 This event class reports the current video rendering status.</td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="VideoTextureEvent.html" onclick="clearAllClassesListCookie();">VideoTextureEvent</a></td><td class="summaryTableLastCol">
+	 Almost exactly StageVideoEvent.</td></tr></table><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 06:58 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 06:58 PM -08:00  -->

@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:9"><meta name="runtime" content="lite"><meta name="runtimever" content="lite:4"><meta name="product" content="flash player"><meta name="productver" content="flash player:9"><meta name="product" content="lite"><meta name="productver" content="lite:4"><link rel="stylesheet" href="style.css" type="text/css" media="screen"><link rel="stylesheet" href="print.css" type="text/css" media="print"><link rel="stylesheet" href="override.css" type="text/css"><link rel="stylesheet" href="asfilter.css" type="text/css"><link rel="stylesheet" href="ion.css" type="text/css"><meta name="keywords" content="Namespace,globalClassifier.Namespace,prefix,uri,toString,valueOf"><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" src="AC_OETags.js" type="text/javascript"></script><title>Namespace - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="filter_new.css" type="text/css">
+			
+		<script src="jquery.js" type="text/javascript"></script>
+		<script src="s_chl_code.js" type="text/javascript"></script>
+		<script src="jquery.zclip.js" type="text/javascript"></script>
+		<script src="jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="cookies.js" type="text/javascript"></script>
+		<script src="asdoc.js" type="text/javascript"></script>
+		<script src="iscroll.js" type="text/javascript"></script>
+		<script src="AC_OETags.js" type="text/javascript"></script>
+		<script src="omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="search.html" onSubmit="searchfunctionsubmit('')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="help.js"></script>
+						<script language="javascript" type="text/javascript" src="asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">Top Level&nbsp;</a><br>
+								<h1 id="classProductName">Namespace&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">Top Level</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public final   class  Namespace</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Namespace  <img src="images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="Object.html">Object</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p></p>
+
+The Namespace class contains methods and properties for defining and working with namespaces. 
+There are three scenarios for using namespaces:
+
+<ul>
+                  <li> 
+                     <b>Namespaces of XML objects</b> Namespaces associate a namespace prefix with a Uniform Resource Identifier (URI) 
+that identifies the namespace. The prefix is a string used to reference the namespace within an 
+XML object. If the prefix is undefined, when the XML is converted to a string, a prefix is 
+automatically generated.
+</li>
+                  <li> 
+                     <b>Namespace to differentiate methods</b> Namespaces can differentiate methods with the same name to perform different tasks. 
+If two methods have the same name but separate namespaces, they can perform different tasks.
+</li>
+                  <li> 
+                     <b>Namespaces for access control</b> 
+Namespaces can be used to control access to a group of
+properties and methods in a class. If you place the
+properties and methods into a private
+namespace, they are
+inaccessible to any code that does not have access to
+that namespace. You can grant access to the group of
+properties and methods by passing the namespace to
+other classes, methods or functions.
+</li>
+               </ul>
+
+               <p>This class shows two forms of the constructor method because each form accepts 
+different parameters.</p>
+
+               <p>This class (along with the XML, XMLList, and QName classes) implements 
+powerful XML-handling standards defined in ECMAScript for XML 
+(E4X) specification (ECMA-357 edition 2).</p>
+
+            <p></p><p><a href="#includeExamplesSummary">View the examples</a></p><p id="moreExamples"><span class="classHeaderTableLabel">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7e6c.html" target="_blank">Using XML namespaces</a></div><p id="learnMore"><span class="classHeaderTableLabel">Learn more</span></p><div class="seeAlso"><a href="http://www.ecma-international.org/publications/standards/Ecma-357.htm" target="_blank">ECMAScript for XML (E4X) specification (ECMA-357 edition 2)</a></div><p><span class="classHeaderTableLabel">Related API Elements</span></p><div class="seeAlso"><a href="XML.html" target="">XML</a><br/><a href="XMLList.html" target="">XMLList</a><br/><a href="QName.html" target="">QName</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="Object.html#constructor" class="signatureLink">constructor</a> : <a href="Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#prefix" class="signatureLink">prefix</a> : <a href="String.html">String</a><div class="summaryTableDescription">
+	The prefix of the namespace.</div></td><td class="summaryTableOwnerCol">Namespace</td></tr><tr class="" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#uri" class="signatureLink">uri</a> : <a href="String.html">String</a><div class="summaryTableDescription">
+	The Uniform Resource Identifier (URI) of the namespace.</div></td><td class="summaryTableOwnerCol">Namespace</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#Namespace()" class="signatureLink">Namespace</a>(prefixValue:<a href="specialTypes.html#*">*</a>, uriValue:<a href="specialTypes.html#*">*</a>)</div><div class="summaryTableDescription"> 
+	Creates a Namespace object according to the values of the prefixValue and uriValue parameters.</div></td><td class="summaryTableOwnerCol">Namespace</td></tr><tr class="" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#Namespace2()" class="signatureLink">Namespace</a>(uriValue:<a href="specialTypes.html#*">*</a>)</div><div class="summaryTableDescription"> 
+	Creates a Namespace object.</div></td><td class="summaryTableOwnerCol">Namespace</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="Object.html">Object</a>):<a href="Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="String.html">String</a>, isEnum:<a href="Boolean.html">Boolean</a> = true):<a href="specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#toString()" class="signatureLink">toString</a>():<a href="String.html">String</a></div><div class="summaryTableDescription">
+	Equivalent to the Namespace.uri property.</div></td><td class="summaryTableOwnerCol">Namespace</td></tr><tr class="" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#valueOf()" class="signatureLink">valueOf</a>():<a href="String.html">String</a></div><div class="summaryTableDescription">
+    Returns the URI value of the specified object.</div></td><td class="summaryTableOwnerCol">Namespace</td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="Flash::9##"><a name="propertyDetail" id="propertyDetail"></a><a name="prefix" id="prefix"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>prefix</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>prefix:<a href="String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9</td></tr></table><p></p><p></p><p>
+	The prefix of the namespace.
+	
+	</p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get prefix():<a href="String.html">String</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set prefix(value:<a href="String.html">String</a>):<a href="specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::9##"><a name="propertyDetail" id="propertyDetail"></a><a name="uri" id="uri"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>uri</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>uri:<a href="String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9</td></tr></table><p></p><p></p><p>
+	The Uniform Resource Identifier (URI) of the namespace.
+	
+	</p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get uri():<a href="String.html">String</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set uri(value:<a href="String.html">String</a>):<a href="specialTypes.html#void">void</a></code><br/></div></span><a name="constructorDetail" id="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><span id="pageFilter" runtime="Flash::9##"><a name="Namespace()" id="Namespace()"></a><a name="Namespace(any,any)" id="Namespace(any,any)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>Namespace</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function Namespace(prefixValue:<a href="specialTypes.html#*">*</a>, uriValue:<a href="specialTypes.html#*">*</a>)</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9</td></tr></table><p></p><p> 
+	Creates a Namespace object according to the values of the <code>prefixValue</code> and <code>uriValue</code> parameters.
+	This constructor requires both parameters.
+	<p>The value of the <code>prefixValue</code> parameter is assigned to the <code>prefix</code>
+	property as follows:</p>
+	<ul><li>If <code>undefined</code> is passed, <code>prefix</code> is set to <code>undefined</code>.</li><li>If the value is a valid XML name, as determined by the <code>isXMLName()</code> function, it is converted to a string and assigned to the <code>prefix</code> property.</li><li>If the value is not a valid XML name, the <code>prefix</code> property is set to <code>undefined</code>.</li></ul>
+	
+	<p>The value of the <code>uriValue</code> parameter is assigned to the <code>uri</code>
+	property as follows:</p>
+	<ul><li>If a QName object is passed, the <code>uri</code> property is set to the value of the QName object's <code>uri</code> property.</li><li> Otherwise, the <code>uriValue</code> parameter is converted to a string and assigned to the <code>uri</code> property.</li></ul>
+    <p><b>Note:</b> This class shows two constructor method entries because each form accepts 
+    different parameters. The constructor behaves differently depending on the type and number of 
+    arguments passed, as detailed in each entry. ActionScript 3.0 does not support method or constructor overloading.</p>
+    
+	</p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">prefixValue</span>:<a href="specialTypes.html#*">*</a></code> &mdash; The prefix to use for the namespace.   
+	
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">uriValue</span>:<a href="specialTypes.html#*">*</a></code> &mdash; The Uniform Resource Identifier (URI) of the namespace.
+	
+	
+	</td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##"><a name="Namespace2()" id="Namespace2()"></a><a name="Namespace(any)" id="Namespace(any)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>Namespace</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public function Namespace(uriValue:<a href="specialTypes.html#*">*</a>)</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9</td></tr></table><p></p><p> 
+	Creates a Namespace object.
+	The values assigned to the <code>uri</code> and <code>prefix</code> properties 
+	of the new Namespace object depend on the type of value passed for the <code>uriValue</code> parameter:
+	<ul><li>If no value is passed, the <code>prefix</code> and <code>uri</code> properties are set to an empty string.</li><li>If the value is a Namespace object, a copy of the object is created.</li><li>If the value is a QName object, the <code>uri</code> property is set to the <code>uri</code> property of the QName object.</li></ul>
+    <p><b>Note:</b> This class shows two constructor entries because each form accepts 
+    different parameters. The constructor behaves differently depending on the type and number of 
+    parameters passed, as detailed in each entry. ActionScript 3.0 does not support method or constructor overloading.</p>
+    
+	</p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">uriValue</span>:<a href="specialTypes.html#*">*</a></code> &mdash; The Uniform Resource Identifier (URI) of the namespace.
+	
+	
+	</td></tr></table></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::9##"><a name="toString()" id="toString()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>toString</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> function toString():<a href="String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9</td></tr></table><p></p><p></p><p>
+	Equivalent to the <code>Namespace.uri</code> property.
+	
+	</p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; The Uniform Resource Identifier (URI) of the namespace, as a string.
+	
+	
+	</td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##"><a name="valueOf()" id="valueOf()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>valueOf</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> function valueOf():<a href="String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9</td></tr></table><p></p><p></p><p>
+    Returns the URI value of the specified object. 
+    
+    </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; The Uniform Resource Identifier (URI) of the namespace, as a string.
+    
+    
+    </td></tr></table></div></span><a name="includeExamplesSummary" id="includeExamplesSummary"></a><div class="detailSectionHeader">Examples<span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span></div><span id="pageFilter"><div class="exampleHeader">NamespaceExample.as</div><br/><div class="detailBody"> The following example shows how to work with namespaces defined in XML objects.
+ This is accomplished with the following steps:
+ <ol><li>The example defines three Namespace objects, each with a unique URI that defines a namespace.</li><li>The example defines an XML variable named <code>myXML</code> and assigns it to the return value of 
+     <code>getRSS()</code>.  The <code>getRSS()</code> method defines an XML object that contains several namespaces
+     and returns that XML object.</li><li>The example declares and evaluates an Array variable by calling the <code>parseRSS()</code> method with
+     <code>myXML</code> passed to it.  In <code>parseRSS()</code>, the default XML namespace is defined as
+     <code>rss</code> and the example defines an XMLList variable by assigning the list of <code>item</code>
+     objects in <code>myXML</code>.  An array is created and populated with various nodes within
+     <code>myXML.item</code>. The array is then returned.</li><li>The elements in the array are printed using a <code>for</code> loop and three calls to
+     <code>trace()</code>.</li></ol>
+<div class="listing"><pre>
+package {
+    import flash.display.Sprite;
+
+    public class NamespaceExample extends Sprite {
+        private var rss:Namespace = new Namespace("http://purl.org/rss/1.0/");
+        private var rdf:Namespace = new Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#");
+        private var dc:Namespace  = new Namespace("http://purl.org/dc/elements/1.1/");
+
+        public function NamespaceExample() {
+            var myXML:XML = getRSS();
+            var rssItems:Array = parseRSS(myXML);
+            
+            var len:uint = rssItems.length;
+            for (var i:uint; i &lt; len; i++) {
+                trace(rssItems[i].title);
+                trace(rssItems[i].creator);
+                trace(rssItems[i].date);
+                // Adobe Flash Developer Center
+                // Adobe
+                // 2005-08-08
+                // Flex Developer Center
+                // Adobe
+                // 2005-10-16                
+            }
+        }
+        
+        private function parseRSS(rssXML:XML):Array {
+            default xml namespace = rss;
+
+            var items:XMLList = rssXML.item;
+
+            var arr:Array = new Array();            
+            var len:uint = items.length();
+            for (var i:uint; i &lt; len; i++) {
+                arr.push({title:items[i].title, creator:items[i].dc::creator, date:items[i].dc::date});
+            }
+            
+            return arr;
+        }
+
+        private function getRSS():XML {
+            var myXML:XML =  &lt;rdf:RDF
+              xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              xmlns="http://purl.org/rss/1.0/"
+              xmlns:dc="http://purl.org/dc/elements/1.1/"
+            &gt;
+              &lt;channel rdf:about="http://www.xml.com/cs/xml/query/q/19"&gt;
+                &lt;title&gt;Test RSS&lt;/title&gt;
+                &lt;link&gt;http://www.adobe.com/&lt;/link&gt;
+                &lt;description&gt;This is a test RSS document.&lt;/description&gt;
+                &lt;language&gt;en-us&lt;/language&gt;
+                &lt;items&gt;
+                  &lt;rdf:Seq&gt;
+                &lt;rdf:li rdf:resource="http://www.adobe.com/devnet/flash/"/&gt;
+                &lt;rdf:li rdf:resource="http://www.adobe.com/devnet/flex/"/&gt;
+                  &lt;/rdf:Seq&gt;
+                &lt;/items&gt;
+              &lt;/channel&gt;
+              &lt;item rdf:about="http://www.adobe.com/devnet/flash/"&gt;
+                &lt;title&gt;Adobe Flash Developer Center&lt;/title&gt;
+                &lt;link&gt;http://www.adobe.com/devnet/flash/&lt;/link&gt;
+                &lt;description&gt;Welcome to the Flash Developer Center&lt;/description&gt;
+                &lt;dc:creator&gt;Adobe&lt;/dc:creator&gt;
+                &lt;dc:date&gt;2005-08-08&lt;/dc:date&gt;    
+              &lt;/item&gt;
+              &lt;item rdf:about="http://www.adobe.com/devnet/flex/"&gt;
+                &lt;title&gt;Flex Developer Center&lt;/title&gt;
+                &lt;link&gt;http://www.adobe.com/devnet/flex/&lt;/link&gt;
+                &lt;description&gt;Welcome to the Flex Developer Center&lt;/description&gt;
+                &lt;dc:creator&gt;Adobe&lt;/dc:creator&gt;
+                &lt;dc:date&gt;2005-10-16&lt;/dc:date&gt;    
+              &lt;/item&gt;
+            &lt;/rdf:RDF&gt;;
+            
+            return myXML;
+        }
+    }
+}
+</pre></div></div></span><span id="pageFilter"><div class="exampleHeader">Namespace_2_Example.as</div><br/><div class="detailBody"> The following example shows how namespaces can be used to differentiate methods that have
+ the same name but perform different tasks. In this example, three methods named <code>hello()</code>
+ reside in separate namespaces; each returns a different string when called.
+<div class="listing"><pre>
+package {
+
+    import flash.display.Sprite;
+
+    public class Namespace_2_Example extends Sprite {    
+        public function Namespace_2_Example() {
+            var vocab:MultilingualVocabulary = new MultilingualVocabulary();
+
+            trace(vocab.hello());    // hello
+            
+            var languages:Array = vocab.getLanguages();
+            
+            for (var i:uint; i &lt; languages.length; i++) {
+                var ns:Namespace = languages[i];
+                if (ns != null) {
+                    trace(ns.toString() + ": " + vocab.ns::hello());
+                    // hello
+                    // MultilingualVocabulary:Hawaiian: aloha
+                    // MultilingualVocabulary:French: bon jour
+                }
+            }
+        }
+    }    
+}
+
+class MultilingualVocabulary {
+    public namespace French;
+    public namespace Hawaiian;
+    private var languages:Array;
+
+    public function MultilingualVocabulary() {
+        languages = new Array(Hawaiian, French);
+    }
+        
+    public function hello():String { 
+        return "hello";
+    }
+
+    Hawaiian function hello():String {
+        return "aloha";
+    }
+
+    French function hello():String { 
+        return "bon jour";
+    }
+        
+    public function getLanguages():Array {
+        return languages;
+    }
+}
+</pre></div></div></span><span id="pageFilter"><div class="exampleHeader">Namespace_3_Example.as</div><br/><div class="detailBody"> The following example uses namespace names to select an appropriate
+ variable value. It shows how you can store a namespace value in a variable and use
+ that variable to refer to objects within that namespace.
+ <p>The example defines namespaces and colors that correspond to mouse 
+ states for a rectangular button. Each time the button is drawn, the example applies 
+ the appropriate color (out is red; over is yellow; down is white) by referencing the <code>bgcolor</code>
+ variable for the corresponding namespace (<code>out</code>, <code>over</code>, <code>down</code>). </p>
+<div class="listing"><pre>
+package {
+    import flash.display.Sprite;
+  
+    public class Namespace_3_Example extends Sprite {     
+        public function Namespace_3_Example() {
+            addChild(new StateButton("Press Me."));
+        }
+    }
+}
+
+import flash.display.Sprite;
+import flash.text.TextField;
+import flash.events.Event;
+import flash.events.MouseEvent;
+
+class StateButton extends Sprite{
+    private namespace out;
+    private namespace over;
+    private namespace down;
+    private var label:TextField;
+    private var labelTxt:String;
+    private var ns:Namespace;
+    out var bgColor:Number = 0xFF0000;
+    over var bgColor:Number = 0xFFFF00;
+    down var bgColor:Number = 0xFFFFFF;
+      
+    public function StateButton(str:String) {
+        buttonMode = true;
+        labelTxt = str;
+        ns = out;
+        draw();
+        addLabel();
+        addListeners();
+    }
+
+    private function addLabel():void {
+        label = new TextField();
+        label.text = labelTxt;
+        label.width = 50;
+        label.height = 20;
+        label.mouseEnabled = false;
+        addChild(label);
+    }
+      
+    private function addListeners():void {
+        addEventListener(MouseEvent.MOUSE_UP, mouseOverHandler);
+        addEventListener(MouseEvent.MOUSE_OUT, mouseOutHandler);
+        addEventListener(MouseEvent.MOUSE_OVER, mouseOverHandler);
+        addEventListener(MouseEvent.MOUSE_DOWN, mouseDownHandler);
+    }
+ 
+    private function mouseOutHandler(e:Event):void {
+        ns = out;
+        draw();
+    }
+ 
+    private function mouseOverHandler(e:Event):void {
+        ns = over;
+        draw();
+    }
+ 
+    private function mouseDownHandler(e:Event):void {
+        ns = down;
+        draw();
+    }
+ 
+    private function draw():void {
+        this.graphics.clear();
+        this.graphics.beginFill(ns::bgColor);
+        this.graphics.drawRect(0, 0, 60, 20);
+    }
+} 
+</pre></div></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,true,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

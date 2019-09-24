@@ -1,0 +1,559 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="air"><meta name="runtimever" content="air:1.0"><meta name="product" content="air"><meta name="productver" content="air:1.0"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="NativeMenu,flash.display.NativeMenu,isSupported,items,numItems,parent,addItem,addItemAt,addSubmenu,addSubmenuAt,clone,containsItem,display,getItemAt,getItemByName,getItemIndex,removeAllItems,removeItem,removeItemAt,setItemIndex"><title>NativeMenu - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">flash.display&nbsp;</a><br>
+								<h1 id="classProductName">NativeMenu&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">flash.display</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  NativeMenu</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">NativeMenu  <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../flash/events/EventDispatcher.html">EventDispatcher</a> <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../Object.html">Object</a></td></tr><tr><td class="classHeaderTableLabel">Subclasses</td><td> <a href="../../flash/ui/ContextMenu.html">ContextMenu</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p></p>
+     The NativeMenu class contains methods and properties for defining native menus.
+     
+	<p>
+                  <i>AIR profile support:</i> This feature is supported 
+	on all desktop operating systems, but is not supported on mobile devices or AIR for TV devices. You can test 
+	for support at run time using the <code>NativeMenu.isSupported</code> property. See 
+	<a href="http://help.adobe.com/en_US/air/build/WS144092a96ffef7cc16ddeea2126bb46b82f-8000.html" >
+	AIR Profile Support</a> for more information regarding API support across multiple profiles.</p>
+	
+               <p>A native menu is a menu that is controlled and drawn by the operating system rather than by your application. 
+     AIR supports the following types of native menus:</p>
+     
+               <ul>
+                  <li>
+                     <b>Application menus</b> are supported on OS X. Use the <code>NativeApplication.supportsMenu</code> property to test whether 
+	 application menus are supported on the host operating system. An application menu is displayed on the Menu bar at the top of the 
+	 Mac desktop. OS X provides a default menu for every application, but many of the menu commands are not functional. You can add
+	 event listeners to the default items, replace individual menus and items, or even replace the default menu entirely.
+	 Access the application menu object using the NativeApplication <code>menu</code> property.</li>
+                  <li>
+                     <b>Window menus</b> are supported on Windows and Linux. Use the <code>NativeWindow.supportsMenu</code> property to
+	 test whether window menus are supported on the host operating system. A window menu is displayed below the window title bar. The area
+	 occupied by the menu is not part of the window stage. Applications cannot draw into this area. Assign a menu to a window using the 
+	 NativeWindow <code>menu</code> property.</li>
+                  <li>
+                     <b>Dock icon menus</b> are supported on OS X. Use the <code>NativeApplication.supportsDockIcon</code> property to test whether
+	 dock icons are supported on the host operating system. Items in a dock icon menu are displayed above the default items provided by
+	 the operating system. The default items cannot be accessed by application code. Assign a menu to the <code>menu</code> property of
+	 the application's DockIcon object.</li>
+                  <li>
+                     <b>System tray icon menus</b> are supported on Windows and most Linux operating systems. Use the 
+	 <code>NativeApplication.supportsSystemTrayIcon</code> property to test whether system tray icons are supported on the host
+	 operating system. A system tray icon menu is displayed in response to a right-click on the icon, in much the same fashion as
+	 a context menu. Assign a menu to the <code>menu</code> property of the application's SystemTrayIcon object.</li>
+                  <li>
+                     <b>Context menus</b> are supported on all operating systems. Context menus are displayed in response to a user interface event, 
+	 such as a right-click or a command-click on an InteractiveObject displayed in the application. The UI mechanism for showing the menu
+	 varies by host operating system and hardware. Assign a menu to the <code>contextMenu</code> property of an
+	 InteractiveObject. In AIR, a context menu can be created with either the NativeMenu class or the ContextMenu class. In
+	 Flash Player, only the ContextMenu class can be used. ContextMenus in AIR do not have built-in items; a default context menu is
+	 not displayed.</li>
+                  <li>
+                     <b>Pop-up menus</b> are supported on all operating systems. Pop-up menus are functionally the same as context menus, but
+	 are displayed using the menu <code>display()</code> method rather than as a response to a user interface event. A pop-up
+	 menu is not attached to any other object. Simply create the native menu and call the <code>display()</code> method.</li>
+               </ul>
+	 
+               <p>A menu object contains menu items. A menu item can represent a command, a submenu, or a separator line.
+     Add menu items to a menu using the <code>addItem()</code> or <code>addItemAt()</code> method. The display order of the menu items 
+     matches the order of the items in the menu's <code>items</code> array.</p>
+      
+               <p>To create a submenu, add a menu item to the parent menu object. Assign the menu object representing 
+     the submenu to the <code>submenu</code> property of the matching menu item in the parent menu.</p> 
+     
+               <p>
+                  <b>Note:</b> The root menu of window and application menus must contain only submenu items; items
+     that do not represent submenus may not be displayed and are contrary to user expectation for
+     these types of menus.</p>
+     
+               <p>Menus dispatch <code>select</code> events when a command item in the menu or one of its
+     submenus is selected. (Submenu and separator items are not selectable.) The
+     <code>target</code> property of the event object references the 
+     selected item.</p>
+     
+               <p>Menus dispatch <code>preparing</code> events just before the menu is displayed and when a key equivalent attached
+	 to one of the items in the menu is pressed. You
+     can use this event to update the contents of the menu based on the current 
+     state of the application.</p> 
+     
+               <p>
+                  <b>Note:</b> If you are using the Flex Framework, consider using the FlexNativeMenu class. 
+     It is typically easier to define menus declaratively in MXML than it is to write ActionScript code to create the menu 
+     structure item-by-item.</p>
+     
+     
+     
+	           <p></p><p id="moreExamples"><span class="classHeaderTableLabel">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118676a48d0-8000.html" target="_blank">Working with menus</a></div><p><span class="classHeaderTableLabel">Related API Elements</span></p><div class="seeAlso"><a href="InteractiveObject.html#contextMenu" target="">flash.display.InteractiveObject.contextMenu</a><br/><a href="NativeMenuItem.html" target="">flash.display.NativeMenuItem</a><br/><a href="NativeWindow.html#menu" target="">flash.display.NativeWindow.menu</a><br/><a href="../../flash/desktop/DockIcon.html" target="">flash.desktop.DockIcon</a><br/><a href="../../flash/desktop/SystemTrayIcon.html" target="">flash.desktop.SystemTrayIcon</a><br/><a href="../../flash/desktop/NativeApplication.html#menu" target="">flash.desktop.NativeApplication.menu</a><br/><a href="../../flash/desktop/NativeApplication.html#icon" target="">flash.desktop.NativeApplication.icon</a><br/><a href="../../mx/controls/FlexNativeMenu.html" target="">mx.controls.FlexNativeMenu</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../Object.html#constructor" class="signatureLink">constructor</a> : <a href="../../Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="AIR::2.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#isSupported" class="signatureLink">isSupported</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">[static] [read-only] 
+            Indicates whether any form of native menu is supported on the client system.</div></td><td class="summaryTableOwnerCol">NativeMenu</td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#items" class="signatureLink">items</a> : <a href="../../Array.html">Array</a><div class="summaryTableDescription">
+			 The array of NativeMenuItem objects in this menu.</div></td><td class="summaryTableOwnerCol">NativeMenu</td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#numItems" class="signatureLink">numItems</a> : <a href="../../int.html">int</a><div class="summaryTableDescription">[read-only] 
+			 The number of NativeMenuItem objects in this menu.</div></td><td class="summaryTableOwnerCol">NativeMenu</td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#parent" class="signatureLink">parent</a> : <a href="../../flash/display/NativeMenu.html">NativeMenu</a><div class="summaryTableDescription">[read-only] 
+			 The parent menu.</div></td><td class="summaryTableOwnerCol">NativeMenu</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#NativeMenu()" class="signatureLink">NativeMenu</a>()</div><div class="summaryTableDescription">
+             Creates a new NativeMenu object.</div></td><td class="summaryTableOwnerCol">NativeMenu</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#addEventListener()" class="signatureLink">addEventListener</a>(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false, priority:<a href="../../int.html">int</a> = 0, useWeakReference:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	Registers an event listener object with an EventDispatcher object so that the listener 
+	receives notification of an event.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#addItem()" class="signatureLink">addItem</a>(item:<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a>):<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></div><div class="summaryTableDescription">
+			 Adds a menu item at the bottom of the menu.</div></td><td class="summaryTableOwnerCol">NativeMenu</td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#addItemAt()" class="signatureLink">addItemAt</a>(item:<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a>, index:<a href="../../int.html">int</a>):<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></div><div class="summaryTableDescription">
+			 Inserts a menu item at the specified position.</div></td><td class="summaryTableOwnerCol">NativeMenu</td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#addSubmenu()" class="signatureLink">addSubmenu</a>(submenu:<a href="../../flash/display/NativeMenu.html">NativeMenu</a>, label:<a href="../../String.html">String</a>):<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></div><div class="summaryTableDescription">
+			Adds a submenu to the menu by inserting a new menu item.</div></td><td class="summaryTableOwnerCol">NativeMenu</td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#addSubmenuAt()" class="signatureLink">addSubmenuAt</a>(submenu:<a href="../../flash/display/NativeMenu.html">NativeMenu</a>, index:<a href="../../int.html">int</a>, label:<a href="../../String.html">String</a>):<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></div><div class="summaryTableDescription">
+			Adds a submenu to the menu by inserting a new menu item at the 
+			specified position.</div></td><td class="summaryTableOwnerCol">NativeMenu</td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#clone()" class="signatureLink">clone</a>():<a href="../../flash/display/NativeMenu.html">NativeMenu</a></div><div class="summaryTableDescription">
+			
+			Creates a copy of the menu and all items.</div></td><td class="summaryTableOwnerCol">NativeMenu</td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#containsItem()" class="signatureLink">containsItem</a>(item:<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+			 Reports whether this menu contains the specified menu item.</div></td><td class="summaryTableOwnerCol">NativeMenu</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#dispatchEvent()" class="signatureLink">dispatchEvent</a>(event:<a href="../../flash/events/Event.html">Event</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Dispatches an event into the event flow.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#display()" class="signatureLink">display</a>(stage:<a href="../../flash/display/Stage.html">Stage</a>, stageX:<a href="../../Number.html">Number</a>, stageY:<a href="../../Number.html">Number</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+			Pops up this menu at the specified location.</div></td><td class="summaryTableOwnerCol">NativeMenu</td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#getItemAt()" class="signatureLink">getItemAt</a>(index:<a href="../../int.html">int</a>):<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></div><div class="summaryTableDescription">
+			 Gets the menu item at the specified index.</div></td><td class="summaryTableOwnerCol">NativeMenu</td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#getItemByName()" class="signatureLink">getItemByName</a>(name:<a href="../../String.html">String</a>):<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></div><div class="summaryTableDescription">
+			 Gets the menu item with the specified name.</div></td><td class="summaryTableOwnerCol">NativeMenu</td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#getItemIndex()" class="signatureLink">getItemIndex</a>(item:<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a>):<a href="../../int.html">int</a></div><div class="summaryTableDescription">
+			 Gets the position of the specified item.</div></td><td class="summaryTableOwnerCol">NativeMenu</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#hasEventListener()" class="signatureLink">hasEventListener</a>(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Checks whether the EventDispatcher object has any listeners registered for a specific type 
+	of event.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#removeAllItems()" class="signatureLink">removeAllItems</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+			 Removes all items from the menu.</div></td><td class="summaryTableOwnerCol">NativeMenu</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#removeEventListener()" class="signatureLink">removeEventListener</a>(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	Removes a listener from the EventDispatcher object.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#removeItem()" class="signatureLink">removeItem</a>(item:<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a>):<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></div><div class="summaryTableDescription">
+			 Removes the specified menu item.</div></td><td class="summaryTableOwnerCol">NativeMenu</td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#removeItemAt()" class="signatureLink">removeItemAt</a>(index:<a href="../../int.html">int</a>):<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></div><div class="summaryTableDescription">
+			 Removes and returns the menu item at the specified index.</div></td><td class="summaryTableOwnerCol">NativeMenu</td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#setItemIndex()" class="signatureLink">setItemIndex</a>(item:<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a>, index:<a href="../../int.html">int</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+         	 Moves a menu item to the specified position.</div></td><td class="summaryTableOwnerCol">NativeMenu</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="../../String.html">String</a>, isEnum:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toString()" class="signatureLink">toString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+	 Returns the primitive value of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#willTrigger()" class="signatureLink">willTrigger</a>(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Checks whether an event listener is registered with this EventDispatcher object or any of 
+	its ancestors for the specified event type.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="eventSummary" id="eventSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Events</div><div class="showHideLinks"><a href="http://help.adobe.com/en_US/Flex/4.6/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7ee9.html" target="_blank">Click for more information on events</a></div><div class="showHideLinks"><div id="hideInheritedEvent" class="hideInheritedEvent"><a class="showHideLink" href="#eventSummary" onclick="javascript:setInheritedVisible(false,'Event');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Events</a></div><div id="showInheritedEvent" class="showInheritedEvent"><a class="showHideLink" href="#eventSummary" onclick="javascript:setInheritedVisible(true,'Event');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Events</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableEvent"><tr><th>&nbsp;</th><th colspan="2">Event</th><th> Summary </th><th>Defined By</th></tr><tr class="hideInheritedEvent" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#event:activate" class="signatureLink">activate</a></div></td><td class="summaryTableDescription summaryTableCol">[broadcast event] Dispatched when the Flash Player or AIR application gains operating system focus and becomes active.</td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedEvent" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#event:deactivate" class="signatureLink">deactivate</a></div></td><td class="summaryTableDescription summaryTableCol">[broadcast event] Dispatched when the Flash Player or AIR application operating loses system focus and is becoming inactive.</td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#event:displaying" class="signatureLink">displaying</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatched by this NativeMenu object immediately before the menu is displayed.</td><td class="summaryTableOwnerCol">NativeMenu</td></tr><tr class="" runtime="AIR::2.6##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#event:preparing" class="signatureLink">preparing</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatched by the NativeMenu object when a key equivalent is pressed and immediately before the menu is displayed.</td><td class="summaryTableOwnerCol">NativeMenu</td></tr><tr class="" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="#event:select" class="signatureLink">select</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatched by this NativeMenu object when one of its menu items or an item in one of its descendant submenus is selected.</td><td class="summaryTableOwnerCol">NativeMenu</td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="AIR::2.0##"><a name="propertyDetail" id="propertyDetail"></a><a name="isSupported" id="isSupported"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<h3>isSupported</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>isSupported:<a href="../../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.0</td></tr></table><p></p><p></p><p>
+            Indicates whether any form of native menu is supported on the client system.
+            
+            </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get isSupported():<a href="../../Boolean.html">Boolean</a></code><br/><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="NativeWindow.html#supportsMenu" target="">flash.display.NativeWindow.supportsMenu</a><br/><a href="../../flash/desktop/NativeApplication.html" target="">flash.desktop.NativeApplication</a></div></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="propertyDetail" id="propertyDetail"></a><a name="items" id="items"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<h3>items</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>items:<a href="../../Array.html">Array</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+			 The array of NativeMenuItem objects in this menu.
+			 
+			 <p>The array is sorted in display order.</p>
+			 
+			 <p><i>Note:</i> This property is read-only in AIR 1.0. It became read/write in AIR 1.1.</p>
+			 
+			 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get items():<a href="../../Array.html">Array</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set items(value:<a href="../../Array.html">Array</a>):<a href="../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="propertyDetail" id="propertyDetail"></a><a name="numItems" id="numItems"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<h3>numItems</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>numItems:<a href="../../int.html">int</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+			 The number of NativeMenuItem objects in this menu.
+			 
+			 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get numItems():<a href="../../int.html">int</a></code><br/></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="propertyDetail" id="propertyDetail"></a><a name="parent" id="parent"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<h3>parent</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>parent:<a href="../../flash/display/NativeMenu.html">NativeMenu</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+			 The parent menu.  
+			 
+			 <p>The <code>parent</code> of the root (top-level) menu object is 
+			 <code>null</code>.</p>
+			 
+			 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get parent():<a href="../../flash/display/NativeMenu.html">NativeMenu</a></code><br/></div></span><a name="constructorDetail" id="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><span id="pageFilter" runtime="AIR::1.0##"><a name="NativeMenu()" id="NativeMenu()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<h3>NativeMenu</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function NativeMenu()</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p>
+             Creates a new NativeMenu object.
+             
+			 </p></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="AIR::1.0##"><a name="addItem()" id="addItem()"></a><a name="addItem(flash.display.NativeMenuItem)" id="addItem(flash.display.NativeMenuItem)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;addItem</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function addItem(item:<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a>):<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+			 Adds a menu item at the bottom of the menu.
+			 
+			 <p>When creating a context menu, you can add either NativeMenuItem or
+			 ContextMenuItem objects. However, it is advisable to use only one type of object in a context
+			 menu so that all items in the menu have the same properties.</p>
+			 
+			 <p><b>Note:</b> Adding an item to a menu can cause an application to hang if the item's
+			 submenu is set to the menu itself (causing a circular reference).</p>
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">item</span>:<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code> &mdash; The NativeMenuItem object to add at the bottom of the menu.
+			 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code></td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../ArgumentError.html">ArgumentError</a> </code> &mdash; If <code>item</code> is <code>null</code>.
+			 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../ArgumentError.html">ArgumentError</a> </code> &mdash; If <code>item</code> is a member of another menu.
+			 </td></tr></table></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="addItemAt()" id="addItemAt()"></a><a name="addItemAt(flash.display.NativeMenuItem,int)" id="addItemAt(flash.display.NativeMenuItem,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;addItemAt</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function addItemAt(item:<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a>, index:<a href="../../int.html">int</a>):<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+			 Inserts a menu item at the specified position. The position is indexed from the top.  
+			 Set the <code>index</code> parameter to zero to insert the item at the top of the menu.
+			 All types of menus: window, application, system tray icon, dock icon, context, and pop-up,
+			 index the menu position from the top. 
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">item</span>:<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code> &mdash; The NativeMenuItem object to insert.
+			 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">index</span>:<a href="../../int.html">int</a></code> &mdash; The (zero-based) position in menu 
+			 at which to insert the menu item.
+			 
+			 <p><b>Note:</b> Adding an item to a menu can cause an application to hang if the item's
+			 submenu is set to the menu itself (causing a circular reference).</p>
+			 
+			 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code></td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../ArgumentError.html">ArgumentError</a> </code> &mdash; If <code>item</code> is <code>null</code>.
+			 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../ArgumentError.html">ArgumentError</a> </code> &mdash; If <code>item</code> is a member of another menu.
+			 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../RangeError.html">RangeError</a> </code> &mdash; If the index is outside the bounds of the menu's 
+			 <code>items</code> array.
+			 
+			 </td></tr></table></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="addSubmenu()" id="addSubmenu()"></a><a name="addSubmenu(flash.display.NativeMenu,String)" id="addSubmenu(flash.display.NativeMenu,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;addSubmenu</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function addSubmenu(submenu:<a href="../../flash/display/NativeMenu.html">NativeMenu</a>, label:<a href="../../String.html">String</a>):<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+			Adds a submenu to the menu by inserting a new menu item.
+			
+			<p>Calling the <code>addSubMenu()</code> method is equivalent to creating a new menu 
+			item, adding it to the menu, and assigning a NativeMenu object to the 
+			item's <code>submenu</code> property.</p>
+			
+			<p><b>Note:</b> Adding a menu as a submenu of itself (in a circular reference) 
+			can cause an application to hang.</p>
+			
+			</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">submenu</span>:<a href="../../flash/display/NativeMenu.html">NativeMenu</a></code> &mdash; The NativeMenu object that defines the submenu to be added.
+			</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">label</span>:<a href="../../String.html">String</a></code> &mdash; The display label for the menu item to be added.
+			
+			</td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code> &mdash; The NativeMenuItem object created for the submenu. 
+			</td></tr></table></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="addSubmenuAt()" id="addSubmenuAt()"></a><a name="addSubmenuAt(flash.display.NativeMenu,int,String)" id="addSubmenuAt(flash.display.NativeMenu,int,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;addSubmenuAt</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function addSubmenuAt(submenu:<a href="../../flash/display/NativeMenu.html">NativeMenu</a>, index:<a href="../../int.html">int</a>, label:<a href="../../String.html">String</a>):<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+			Adds a submenu to the menu by inserting a new menu item at the 
+			specified position.
+			
+			<p>Calling the <code>addSubMenuAt()</code> method is equivalent to creating a new menu 
+			item, inserting it at the desired position in the menu, and assigning 
+			a NativeMenu object to the item's <code>submenu</code> property.</p>
+			
+			<p><b>Note:</b> Adding a menu as a submenu of itself (in a circular reference) 
+			can cause an application to hang.</p>
+			
+			</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">submenu</span>:<a href="../../flash/display/NativeMenu.html">NativeMenu</a></code> &mdash; The NativeMenu object that defines the submenu to be added.
+			</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">index</span>:<a href="../../int.html">int</a></code> &mdash; The position in the <code>items</code> array of this
+			menu at which to insert the menu item to be added.
+			</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">label</span>:<a href="../../String.html">String</a></code> &mdash; The display label for the menu item to be added.
+			
+			</td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code> &mdash; The NativeMenuItem object created for the submenu. 
+			</td></tr></table></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="clone()" id="clone()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;clone</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function clone():<a href="../../flash/display/NativeMenu.html">NativeMenu</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+			
+			Creates a copy of the menu and all items.
+			
+			</p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/display/NativeMenu.html">NativeMenu</a></code></td></tr></table></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="containsItem()" id="containsItem()"></a><a name="containsItem(flash.display.NativeMenuItem)" id="containsItem(flash.display.NativeMenuItem)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;containsItem</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function containsItem(item:<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a>):<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+			 Reports whether this menu contains the specified menu item.
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">item</span>:<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code> &mdash; The NativeMenuItem object to look up.
+			 
+			 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; <code>true</code> if <code>item</code> is in this menu.
+			 
+			 </td></tr></table></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="display()" id="display()"></a><a name="display(flash.display.Stage,Number,Number)" id="display(flash.display.Stage,Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;display</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function display(stage:<a href="../../flash/display/Stage.html">Stage</a>, stageX:<a href="../../Number.html">Number</a>, stageY:<a href="../../Number.html">Number</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+			Pops up this menu at the specified location.
+			
+			</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">stage</span>:<a href="../../flash/display/Stage.html">Stage</a></code> &mdash; The Stage object on which to display this menu.
+			
+			</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">stageX</span>:<a href="../../Number.html">Number</a></code> &mdash; The number of horizontal pixels, relative to the origin 
+			of stage, at which to display this menu.
+			
+			</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">stageY</span>:<a href="../../Number.html">Number</a></code> &mdash; The number of vertical pixels, relative to the origin 
+			of stage, at which to display this menu.
+			
+			</td></tr></table></p></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="getItemAt()" id="getItemAt()"></a><a name="getItemAt(int)" id="getItemAt(int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;getItemAt</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getItemAt(index:<a href="../../int.html">int</a>):<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+			 Gets the menu item at the specified index.  
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">index</span>:<a href="../../int.html">int</a></code> &mdash; The (zero-based) position of the item to return.
+			 
+			 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code> &mdash; The NativeMenuItem object at the specified position in the menu.
+			 
+			 </td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../RangeError.html">RangeError</a> </code> &mdash; If <code>index</code> is outside the bounds of the menu's 
+			 <code>items</code> array.
+			 
+			 </td></tr></table></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="getItemByName()" id="getItemByName()"></a><a name="getItemByName(String)" id="getItemByName(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;getItemByName</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getItemByName(name:<a href="../../String.html">String</a>):<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+			 Gets the menu item with the specified name.
+			 
+			 <p><b>Note:</b> The <code>name</code> property of menu items is not assigned by
+			 default.</p>
+			    
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">name</span>:<a href="../../String.html">String</a></code> &mdash; The string to look up.
+			 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code> &mdash; The NativeMenuItem object with the specified name or 
+			 <code>null</code>, if no such item exists in the menu.
+			 
+			 </td></tr></table></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="getItemIndex()" id="getItemIndex()"></a><a name="getItemIndex(flash.display.NativeMenuItem)" id="getItemIndex(flash.display.NativeMenuItem)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;getItemIndex</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getItemIndex(item:<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a>):<a href="../../int.html">int</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+			 Gets the position of the specified item. 
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">item</span>:<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code> &mdash; The NativeMenuItem object to look up.
+			 
+			 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../int.html">int</a></code> &mdash; The (zero-based) position of the specified item in this menu
+			 or <code>-1</code>, if the item is not in this menu.
+			 
+			 </td></tr></table></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="removeAllItems()" id="removeAllItems()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;removeAllItems</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeAllItems():<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+			 Removes all items from the menu.  
+			 
+			 
+			 
+			 </p></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="removeItem()" id="removeItem()"></a><a name="removeItem(flash.display.NativeMenuItem)" id="removeItem(flash.display.NativeMenuItem)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;removeItem</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeItem(item:<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a>):<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+			 Removes the specified menu item. 
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">item</span>:<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code> &mdash; The NativeMenuItem object to remove from this menu.
+			 
+			 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code></td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../RangeError.html">RangeError</a> </code> &mdash; If the <code>item</code> is not in this menu
+			 
+			 </td></tr></table></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="removeItemAt()" id="removeItemAt()"></a><a name="removeItemAt(int)" id="removeItemAt(int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;removeItemAt</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeItemAt(index:<a href="../../int.html">int</a>):<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+			 Removes and returns the menu item at the specified index.  
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">index</span>:<a href="../../int.html">int</a></code> &mdash; The (zero-based) position of the item to remove.
+			 
+			 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code> &mdash; The NativeMenuItem object removed.
+			 
+			 </td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../RangeError.html">RangeError</a> </code> &mdash; If <code>index</code> is outside the bounds of 
+			 this menu's <code>items</code> array.
+			 
+			 </td></tr></table></div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="setItemIndex()" id="setItemIndex()"></a><a name="setItemIndex(flash.display.NativeMenuItem,int)" id="setItemIndex(flash.display.NativeMenuItem,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;setItemIndex</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setItemIndex(item:<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a>, index:<a href="../../int.html">int</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+         	 Moves a menu item to the specified position. If the item is not already in the menu,
+         	 calling this method adds the item to the menu.
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">item</span>:<a href="../../flash/display/NativeMenuItem.html">NativeMenuItem</a></code> &mdash; The NativeMenuItem object to move.
+			 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">index</span>:<a href="../../int.html">int</a></code> &mdash; The (zero-based) position in the menu to which to move the
+			 <code>item</code>.
+			 
+			 </td></tr></table></p><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../RangeError.html">RangeError</a> </code> &mdash; If <code>index</code> is outside the bounds of the 
+			 menu's <code>items</code> array.
+			 
+			 </td></tr></table></div></span><div class="detailSectionHeader"> Event Detail </div><span id="pageFilter" runtime="AIR::1.0##"><a name="event:displaying" id="event:displaying"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<h3>displaying</h3></td><td class="detailHeaderType"> Event </td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../flash/events/Event.html"><code>flash.events.Event</code></a><br/><span class="label">property Event.type  =  </span><a href="../../flash/events/Event.html#DISPLAYING"><code>flash.events.Event.DISPLAYING</code></a><br/><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+		 Dispatched by this NativeMenu object immediately before the 
+		 menu is displayed. 
+		 
+		 <p>Listen to this event to update the menu before it is displayed. 
+		 A <code>displaying</code> event is also dispatched by the items in a menu.</p>
+		 
+		 <p>The <code>preparing</code> event supersedes the <code>displaying</code> event and provides additional functionality. Listen for the 
+		 <code>preparing</code> event or the <code>displaying</code> event, but not both. </p>
+		 
+		 <p><b>Note:</b> On Mac OS X, prior to AIR 2.6, menus and menu items dispatched a <code>displaying</code> event when the user pressed a key
+		 equivalent. (This event was not dispatched for key equivalent interaction on other operating systems.) As of AIR 2.6, <code>displaying</code>
+		 events are no longer dispatched when the user presses a key equivalent. Use the <code>preparing</code> event instead.</p>
+		 
+		 </p>
+	 The <code>Event.DISPLAYING</code> constant defines the value of the <code>type</code> property of a <code>displaying</code> event object. 
+	 <p><b>Note:</b> This event does not go through a "capture phase" 
+	 and is dispatched directly to the target, whether the target is on the display list or not.</p>
+	 <p>This event has the following properties:</p>
+	 <table class="innertable" ><tr><th>Property</th><th>Value</th></tr><tr><td><code>bubbles</code></td><td><code>false</code></td></tr><tr><td><code>cancelable</code></td><td><code>false</code></td></tr><tr><td><code>currentTarget</code></td><td>The object that is actively processing the Event 
+	 object with an event listener.</td></tr><tr><td><code>target</code></td><td>The object that is about to be displayed.</td></tr></table>
+	 
+	 </div></span><span id="pageFilter" runtime="AIR::2.6##"><a name="event:preparing" id="event:preparing"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<h3>preparing</h3></td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../flash/events/Event.html"><code>flash.events.Event</code></a><br/><span class="label">property Event.type  =  </span><a href="../../flash/events/Event.html#PREPARING"><code>flash.events.Event.PREPARING</code></a><br/><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.6</td></tr></table><p></p><p></p><p>
+		 Dispatched by the NativeMenu object when a key equivalent is pressed and immediately before the menu is displayed.  
+		 
+		 <p>Listen to this event to update the menu either before it is displayed, or when a key
+		 equivalent is pressed by the user. The <code>preparing</code> event is dispatched before the key equivalent
+		 is fully evaluated. You can enable, disable, add, or remove items from the menu in the <code>preparing</code> event handler
+		 and those changes will be in effect when the key equivalent is processed. For example, if you remove or disable the 
+		 menu item assigned to the triggering key equivalent, then the sequence of events is effectively canceled
+		 and no <code>select</code> event is dispatched. 
+		 A <code>preparing</code> event is also dispatched by the items in a menu. </p>
+		 
+		 <p>The <code>preparing</code> event supersedes the <code>displaying</code> event and provides additional functionality. Listen for the 
+		 <code>preparing</code> event or the <code>displaying</code> event, but not both. </p>
+		 
+		 </p>
+	 The <code>Event.PREPARING</code> constant defines the value of the <code>type</code> property of a <code>preparing</code> event object. 
+	 <p><b>Note:</b> This event does not go through a "capture phase" 
+	 and is dispatched directly to the target, whether the target is on the display list or not.</p>
+	 <p>This event has the following properties:</p>
+	 <table class="innertable" ><tr><th>Property</th><th>Value</th></tr><tr><td><code>bubbles</code></td><td><code>false</code></td></tr><tr><td><code>cancelable</code></td><td><code>false</code></td></tr><tr><td><code>currentTarget</code></td><td>The object that dispatched this event.</td></tr><tr><td><code>target</code></td><td>The object that dispatched this event.</td></tr></table>
+	 
+	 </div></span><span id="pageFilter" runtime="AIR::1.0##"><a name="event:select" id="event:select"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span>&nbsp;<h3>select</h3></td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../flash/events/Event.html"><code>flash.events.Event</code></a><br/><span class="label">property Event.type  =  </span><a href="../../flash/events/Event.html#SELECT"><code>flash.events.Event.SELECT</code></a><br/><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0</td></tr></table><p></p><p></p><p>
+		 Dispatched by this NativeMenu object when one of its menu items or an item 
+		 in one of its descendant submenus is selected. 
+		 
+		 <p>A <code>select</code> event <i>bubbles</i> from a menu item to its containing menu and on up 
+		 through the parent menu chain to the root menu object. The <code>target</code>
+		 property of the event object references the selected NativeMenuItem object;
+		 the <code>currentTarget</code> property references this NativeMenu object.</p>  
+		 
+		 </p>
+	The <code>Event.SELECT</code> constant defines the value of the <code>type</code> property of a <code>select</code> event object. 
+	
+	<p>This event has the following properties:</p>
+	<table class="innertable" ><tr><th>Property</th><th>Value</th></tr><tr><td><code>bubbles</code></td><td><code>false</code></td></tr><tr><td><code>cancelable</code></td><td><code>false</code>; there is no default behavior to cancel.</td></tr><tr><td><code>currentTarget</code></td><td>The object that is actively processing the Event 
+	object with an event listener.</td></tr><tr><td><code>target</code></td><td>The object on which an item has been selected.</td></tr></table>
+	
+	</div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,true,false,true,false,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

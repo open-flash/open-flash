@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><title>spark.components - Adobe ActionScript&reg; 3 (AS3) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">&nbsp;</a><br>
+								<h1 id="classProductName">spark.components&nbsp;</h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript" xml:space="preserve">                
+        
+        				
+        <!--				
+          				    				
+          					
+          titleBar_setSubNav(false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,false)
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script><br xmlns:xd="http://www.pnp-software.com/XSLTdoc"><p xmlns:xd="http://www.pnp-software.com/XSLTdoc">The spark.components package contains the Spark component classes.</p><br xmlns:xd="http://www.pnp-software.com/XSLTdoc"><hr xmlns:xd="http://www.pnp-software.com/XSLTdoc"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="interfaceSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summaryTableTitle">Interfaces</div><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" cellpadding="3" cellspacing="0" class="summaryTable" id="summaryTableIdInterface"><tr><th>&nbsp;</th><th width="30%">Interface</th><th width="70%">Description</th></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IItemRenderer.html" onclick="clearAllClassesListCookie();">IItemRenderer</a></i></td><td class="summaryTableLastCol">
+  The IItemRenderer interface defines the basic set of APIs
+  that a class must implement to create an item renderer that can 
+  communicate with a host component.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IItemRendererOwner.html" onclick="clearAllClassesListCookie();">IItemRendererOwner</a></i></td><td class="summaryTableLastCol">
+  The IItemRendererOwner interface defines the basic set of APIs
+  that a class must implement to  support items renderers.</td></tr></table><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="classSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summaryTableTitle">Classes</div><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" cellpadding="3" cellspacing="0" class="summaryTable" id="summaryTableIdClass"><tr><th>&nbsp;</th><th width="30%">Class</th><th width="70%">Description</th></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ActionBar.html" onclick="clearAllClassesListCookie();">ActionBar</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The ActionBar class defines a component that includes title, navigation, 
+  and action content groups.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ActionBarDefaultButtonAppearance.html" onclick="clearAllClassesListCookie();">ActionBarDefaultButtonAppearance</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The ActionBarDefaultButtonAppearance class defines the constants for the allowed values 
+  of the defaultButtonAppearance style of ActionBar.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Application.html" onclick="clearAllClassesListCookie();">Application</a></td><td class="summaryTableLastCol">
+  Flex defines a default, or Application, container that lets you start
+  adding content to your application without explicitly defining
+  another container.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::3##" product="Flex::4.6##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ArrowDirection.html" onclick="clearAllClassesListCookie();">ArrowDirection</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  Enumeration of arrow directions for use in visual components.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="BorderContainer.html" onclick="clearAllClassesListCookie();">BorderContainer</a></td><td class="summaryTableLastCol">
+  The BorderContainer class defines a set of CSS styles that control
+  the appearance of the border and background fill of the container.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="BusyIndicator.html" onclick="clearAllClassesListCookie();">BusyIndicator</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The BusyIndicator defines a component to display when a long-running 
+  operation is in progress.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Button.html" onclick="clearAllClassesListCookie();">Button</a></td><td class="summaryTableLastCol">
+  The Button component is a commonly used rectangular button.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ButtonBar.html" onclick="clearAllClassesListCookie();">ButtonBar</a></td><td class="summaryTableLastCol">
+  The ButtonBar control defines a horizontal group of 
+  logically related buttons with a common look and navigation.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ButtonBarButton.html" onclick="clearAllClassesListCookie();">ButtonBarButton</a></td><td class="summaryTableLastCol">
+  The ButtonBarButton class defines the custom item renderer
+  used by the ButtonBar control.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::3##" product="Flex::4.6##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Callout.html" onclick="clearAllClassesListCookie();">Callout</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The Callout container is a SkinnablePopUpContainer that functions as a pop-up
+  with additional owner-relative positioning options similar to PopUpAnchor.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::3##" product="Flex::4.6##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="CalloutButton.html" onclick="clearAllClassesListCookie();">CalloutButton</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The CalloutButton control is a drop down component that defines a button to
+  open and close a Callout container.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::3##" product="Flex::4.6##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="CalloutPosition.html" onclick="clearAllClassesListCookie();">CalloutPosition</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The CalloutPosition calss defines the enumeration of 
+  horizontal and vertical positions of the Callout component
+  relative to the owner.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="CheckBox.html" onclick="clearAllClassesListCookie();">CheckBox</a></td><td class="summaryTableLastCol">
+  The CheckBox component consists of an optional label and a small box
+  that can contain a check mark or not.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ComboBox.html" onclick="clearAllClassesListCookie();">ComboBox</a></td><td class="summaryTableLastCol">
+  The ComboBox control is a child class of the DropDownListBase control.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::3##" product="Flex::4.6##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ContentBackgroundAppearance.html" onclick="clearAllClassesListCookie();">ContentBackgroundAppearance</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The ContentBackgroundAppearance class defines the constants for the
+  allowed values of the contentBackgroundAppearance style of 
+  Callout.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DataGrid.html" onclick="clearAllClassesListCookie();">DataGrid</a></td><td class="summaryTableLastCol">
+  The DataGrid displays a row of column headings above a scrollable grid.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DataGroup.html" onclick="clearAllClassesListCookie();">DataGroup</a></td><td class="summaryTableLastCol">
+  The DataGroup class is the base container class for data items.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DataRenderer.html" onclick="clearAllClassesListCookie();">DataRenderer</a></td><td class="summaryTableLastCol">
+  The DataRenderer class is the base class for data components in Spark.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::3##" product="Flex::4.6##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DateSpinner.html" onclick="clearAllClassesListCookie();">DateSpinner</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The DateSpinner control presents an interface for picking a particular date or time.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DropDownList.html" onclick="clearAllClassesListCookie();">DropDownList</a></td><td class="summaryTableLastCol">
+  The DropDownList control contains a drop-down list
+  from which the user can select a single value.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Form.html" onclick="clearAllClassesListCookie();">Form</a></td><td class="summaryTableLastCol">
+  The Spark Form container lets you control the layout of a form,
+  mark form fields as required or optional, handle error messages,
+  and bind your form data to the Flex data model to perform
+  data checking and validation.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FormHeading.html" onclick="clearAllClassesListCookie();">FormHeading</a></td><td class="summaryTableLastCol">
+  The Spark FormHeading container displays a heading
+  for a group of controls inside a Spark Form container.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FormItem.html" onclick="clearAllClassesListCookie();">FormItem</a></td><td class="summaryTableLastCol">
+  The FormItem container defines the following in a Spark From:
+ 
+  
+    A single label.
+    A sequence label.
+    One or more child controls or containers.
+    Help content that provides a description of the form item 
+      or instructions for filling it in.
+    Required indicator to indicate if a form item has to be filled
+  
+ 
+  Children can be controls or other containers.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Grid.html" onclick="clearAllClassesListCookie();">Grid</a></td><td class="summaryTableLastCol">
+  The Grid control displays a list of data items called
+  its data provider in a scrollable table or "grid", one item per row.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::2.0##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="GridColumnHeaderGroup.html" onclick="clearAllClassesListCookie();">GridColumnHeaderGroup</a></td><td class="summaryTableLastCol">
+  The GridColumnHeaderGroup class displays a row of column headers 
+  and separators aligned with the grid's layout.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Group.html" onclick="clearAllClassesListCookie();">Group</a></td><td class="summaryTableLastCol">
+  The Group class is the base container class for visual elements.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="HGroup.html" onclick="clearAllClassesListCookie();">HGroup</a></td><td class="summaryTableLastCol">
+  The HGroup container is an instance of the Group container 
+  that uses the HorizontalLayout class.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="HScrollBar.html" onclick="clearAllClassesListCookie();">HScrollBar</a></td><td class="summaryTableLastCol">
+  The HScrollBar (horizontal scrollbar) control lets you control
+  the portion of data that is displayed when there is too much data
+  to fit horizontally in a display area.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="HSlider.html" onclick="clearAllClassesListCookie();">HSlider</a></td><td class="summaryTableLastCol">
+  The HSlider (horizontal slider) control lets users select a value
+  by moving a slider thumb between the end points of the slider track.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="IconItemRenderer.html" onclick="clearAllClassesListCookie();">IconItemRenderer</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The IconItemRenderer class is a performant item 
+  renderer optimized for mobile devices.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="IconPlacement.html" onclick="clearAllClassesListCookie();">IconPlacement</a></td><td class="summaryTableLastCol">
+      The IconPlacement class defines the constants for the allowed values 
+      of the iconPlacement
+      style of a Button, CheckBox, RadioButton or ToggleButton.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Image.html" onclick="clearAllClassesListCookie();">Image</a></td><td class="summaryTableLastCol">
+  The Spark Image control is a skinnable component that provides a customizable
+  loading state, chrome, and error state.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Label.html" onclick="clearAllClassesListCookie();">Label</a></td><td class="summaryTableLastCol">
+  Label is a low-level UIComponent that can render
+  one or more lines of uniformly-formatted text.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LabelItemRenderer.html" onclick="clearAllClassesListCookie();">LabelItemRenderer</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The LabelItemRenderer class defines the default item renderer
+  for a list-based control in the mobile theme.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="List.html" onclick="clearAllClassesListCookie();">List</a></td><td class="summaryTableLastCol">
+  The List control displays a vertical list of items.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NavigatorContent.html" onclick="clearAllClassesListCookie();">NavigatorContent</a></td><td class="summaryTableLastCol">
+  The NavigatorContent class defines a Spark container that can be used 
+  in an MX navigator container, such as the ViewStack, TabNavigator and Accordion containers.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NumericStepper.html" onclick="clearAllClassesListCookie();">NumericStepper</a></td><td class="summaryTableLastCol">
+  The NumericStepper control lets you select
+  a number from an ordered set.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Panel.html" onclick="clearAllClassesListCookie();">Panel</a></td><td class="summaryTableLastCol">
+  The Panel class defines a container that includes a title bar, 
+  a caption, a border, and a content area for its children.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="PopUpAnchor.html" onclick="clearAllClassesListCookie();">PopUpAnchor</a></td><td class="summaryTableLastCol">
+  The PopUpAnchor component is used to position a control that pops up
+  or drops down, such as a DropDownList component, in layout.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="PopUpPosition.html" onclick="clearAllClassesListCookie();">PopUpPosition</a></td><td class="summaryTableLastCol">
+  Enumerated type for the PopUpAnchor.popUpPosition property.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="RadioButton.html" onclick="clearAllClassesListCookie();">RadioButton</a></td><td class="summaryTableLastCol">
+  The RadioButton component allows the user make a single choice
+  within a set of mutually exclusive choices.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="RadioButtonGroup.html" onclick="clearAllClassesListCookie();">RadioButtonGroup</a></td><td class="summaryTableLastCol">
+  The RadioButtonGroup component defines a group of RadioButton components
+  that act as a single mutually exclusive component; therefore,
+  a user can select only one RadioButton component at a time.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ResizeMode.html" onclick="clearAllClassesListCookie();">ResizeMode</a></td><td class="summaryTableLastCol">
+  The ResizeMode class defines an enumeration of the modes 
+  a component uses to resize its children in the dimensions
+  specified by the layout system.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="RichEditableText.html" onclick="clearAllClassesListCookie();">RichEditableText</a></td><td class="summaryTableLastCol">
+      RichEditableText is a low-level UIComponent for displaying,
+      scrolling, selecting, and editing richly-formatted text.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="RichText.html" onclick="clearAllClassesListCookie();">RichText</a></td><td class="summaryTableLastCol">
+  RichText is a low-level UIComponent that can display one or more lines
+  of richly-formatted text and embedded images.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Scroller.html" onclick="clearAllClassesListCookie();">Scroller</a></td><td class="summaryTableLastCol">
+  The Scroller component displays a single scrollable component, 
+  called a viewport, and horizontal and vertical scroll bars.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::3##" product="Flex::4.6##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ScrollSnappingMode.html" onclick="clearAllClassesListCookie();">ScrollSnappingMode</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+      The ScrollSnappingMode class defines the enumeration values for 
+      the scrollSnappingMode property of the List and Scroller classes.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SkinnableContainer.html" onclick="clearAllClassesListCookie();">SkinnableContainer</a></td><td class="summaryTableLastCol">
+  The SkinnableContainer class is the base class for skinnable containers that have 
+  visual content.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SkinnableDataContainer.html" onclick="clearAllClassesListCookie();">SkinnableDataContainer</a></td><td class="summaryTableLastCol">
+  The SkinnableDataContainer class is the base container class for
+  data items.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SkinnablePopUpContainer.html" onclick="clearAllClassesListCookie();">SkinnablePopUpContainer</a></td><td class="summaryTableLastCol">
+  The SkinnablePopUpContainer class is a SkinnableContainer that functions as a pop-up.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Spinner.html" onclick="clearAllClassesListCookie();">Spinner</a></td><td class="summaryTableLastCol">
+  A Spinner component selects a value from an
+  ordered set.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::3##" product="Flex::4.6##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SpinnerList.html" onclick="clearAllClassesListCookie();">SpinnerList</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The SpinnerList component displays a list of items.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::3##" product="Flex::4.6##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SpinnerListContainer.html" onclick="clearAllClassesListCookie();">SpinnerListContainer</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  Container for one or more SpinnerList controls.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::3##" product="Flex::4.6##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SpinnerListItemRenderer.html" onclick="clearAllClassesListCookie();">SpinnerListItemRenderer</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The SpinnerListItemRenderer class defines the default item renderer
+  for a SpinnerList control in the mobile theme.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::3##" product="Flex::4.6##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SplitViewNavigator.html" onclick="clearAllClassesListCookie();">SplitViewNavigator</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The SplitViewNavigator container displays multiple
+  ViewNavigator or TabbedViewNavigator components at the same time in a single container.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TabBar.html" onclick="clearAllClassesListCookie();">TabBar</a></td><td class="summaryTableLastCol">
+  The TabBar class displays a set of identical tabs.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TabbedViewNavigator.html" onclick="clearAllClassesListCookie();">TabbedViewNavigator</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The TabbedViewNavigator class is a container that manages a collection
+  of view navigator containers.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TabbedViewNavigatorApplication.html" onclick="clearAllClassesListCookie();">TabbedViewNavigatorApplication</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The TabbedViewNavigatorApplication container defines an application 
+  with multiple sections.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TextArea.html" onclick="clearAllClassesListCookie();">TextArea</a></td><td class="summaryTableLastCol">
+  TextArea is a text-entry control that lets users enter and edit
+  multiple lines of formatted text.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TextInput.html" onclick="clearAllClassesListCookie();">TextInput</a></td><td class="summaryTableLastCol">
+  TextInput is a text-entry control that lets users enter and edit
+  a single line of uniformly-formatted text.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TextSelectionHighlighting.html" onclick="clearAllClassesListCookie();">TextSelectionHighlighting</a></td><td class="summaryTableLastCol">
+  This class specifies the allowed values for the
+  selectionHighlighting property
+  of the RichEditableText control, and controls that use
+  RichEditableText as a subcomponent (Spark TextInput and Spark TextArea).</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TileGroup.html" onclick="clearAllClassesListCookie();">TileGroup</a></td><td class="summaryTableLastCol">
+  The TileGroup container is an instance of the Group container 
+  that uses the TileLayout class.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TitleWindow.html" onclick="clearAllClassesListCookie();">TitleWindow</a></td><td class="summaryTableLastCol">
+  The TitleWindow class extends Panel to include
+  a close button and move area.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ToggleButton.html" onclick="clearAllClassesListCookie();">ToggleButton</a></td><td class="summaryTableLastCol">
+  The ToggleButton component defines a toggle button.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::3##" product="Flex::4.6##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ToggleSwitch.html" onclick="clearAllClassesListCookie();">ToggleSwitch</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The Spark ToggleSwitch control defines a binary switch that 
+  can be in the selected or unselected position.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="VGroup.html" onclick="clearAllClassesListCookie();">VGroup</a></td><td class="summaryTableLastCol">
+  The VGroup container is an instance of the Group container 
+  that uses the VerticalLayout class.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="VideoDisplay.html" onclick="clearAllClassesListCookie();">VideoDisplay</a></td><td class="summaryTableLastCol">
+  The VideoDisplay class is chromeless video player that supports
+  progressive download, multi-bitrate, and streaming video.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="VideoPlayer.html" onclick="clearAllClassesListCookie();">VideoPlayer</a></td><td class="summaryTableLastCol">
+  The VideoPlayer control is a skinnable video player that supports
+  progressive download, multi-bitrate streaming, and streaming video.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="View.html" onclick="clearAllClassesListCookie();">View</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The View class is the base container class for all views used by view
+  navigators.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ViewMenu.html" onclick="clearAllClassesListCookie();">ViewMenu</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The ViewMenu container defines a menu in a View container.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ViewMenuItem.html" onclick="clearAllClassesListCookie();">ViewMenuItem</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The ViewMenuItem control displays a label and icon 
+  for a menu item in the ViewMenu container.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ViewNavigator.html" onclick="clearAllClassesListCookie();">ViewNavigator</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The ViewNavigator component is a container that consists of a collection of
+  View objects, where only the top most view is visible and active.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ViewNavigatorApplication.html" onclick="clearAllClassesListCookie();">ViewNavigatorApplication</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The ViewNavigatorApplication class is an application class meant to provide a simple
+  framework for applications that employ a view-based navigation model.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="VScrollBar.html" onclick="clearAllClassesListCookie();">VScrollBar</a></td><td class="summaryTableLastCol">
+  The VScrollBar (vertical scrollbar) control lets you control
+  the portion of data that is displayed when there is too much data
+  to fit vertically in a display area.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="VSlider.html" onclick="clearAllClassesListCookie();">VSlider</a></td><td class="summaryTableLastCol">
+  The VSlider (vertical slider) control lets users select a value
+  by moving a slider thumb between the end points of the slider track.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Window.html" onclick="clearAllClassesListCookie();">Window</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The Window is a top-level container for additional windows
+  in an AIR desktop application.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="WindowedApplication.html" onclick="clearAllClassesListCookie();">WindowedApplication</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The WindowedApplication defines the application container
+  that you use to create Flex applications for AIR applications.</td></tr></table><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 06:58 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 06:58 PM -08:00  -->

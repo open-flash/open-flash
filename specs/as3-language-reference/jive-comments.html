@@ -1,0 +1,100 @@
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+var topURLStr = top.document.URL;
+if(!((topURLStr.indexOf("package-detail.html") >= 0) ||
+		(topURLStr.indexOf("/langref/operators.html") >= 0) ||
+		(topURLStr.indexOf("/langref/statements.html") >= 0) ||
+		(topURLStr.indexOf("/langref/specialTypes.html") >= 0) ||
+		(topURLStr.indexOf("/langref/mxml-tag-detail.html") >= 0) ||
+		(topURLStr.indexOf("/langref/compilerErrors.html") >= 0) ||
+		(topURLStr.indexOf("/langref/compilerWarnings.html") >= 0) ||
+		(topURLStr.indexOf("/langref/runtimeErrors.html") >= 0) ||
+		(topURLStr.indexOf("/langref/charset-codes.html") >= 0) ||
+		(topURLStr.indexOf("/langref/motionXSD.html") >= 0) ||
+		(topURLStr.indexOf("/langref/TimedTextTags.html") >= 0) ||
+		(topURLStr.indexOf("/langref/deprecated.html") >= 0) ||
+		(topURLStr.indexOf("/langref/accessibilityImplementationConstants.html") >= 0) ||
+		(topURLStr.indexOf("/langref/package-summary.html") >= 0) ||
+		(topURLStr.indexOf("/langref/index.html") >= 0) ||
+		(topURLStr.indexOf("/langref/class-summary.html") >= 0) ||
+		(topURLStr.indexOf("/langref/whatsnew.html") >= 0) ||
+		(topURLStr.indexOf("/langref/all-index-Symbols.html") >= 0) ||
+		(topURLStr.indexOf("/langref/appendixes.html") >= 0) ||
+		(topURLStr.indexOf("/langref/", topURLStr.length - 9) !== -1) ||
+		(topURLStr.indexOf("/3/operators.html") >= 0) ||
+		(topURLStr.indexOf("/3/statements.html") >= 0) ||
+		(topURLStr.indexOf("/3/specialTypes.html") >= 0) ||
+		(topURLStr.indexOf("/3/mxml-tag-detail.html") >= 0) ||
+		(topURLStr.indexOf("/3/compilerErrors.html") >= 0) ||
+		(topURLStr.indexOf("/3/compilerWarnings.html") >= 0) ||
+		(topURLStr.indexOf("/3/runtimeErrors.html") >= 0) ||
+		(topURLStr.indexOf("/3/charset-codes.html") >= 0) ||
+		(topURLStr.indexOf("/3/motionXSD.html") >= 0) ||
+		(topURLStr.indexOf("/3/TimedTextTags.html") >= 0) ||
+		(topURLStr.indexOf("/3/deprecated.html") >= 0) ||
+		(topURLStr.indexOf("/3/accessibilityImplementationConstants.html") >= 0) ||
+		(topURLStr.indexOf("/3/package-summary.html") >= 0) ||
+		(topURLStr.indexOf("/3/index.html") >= 0) ||
+		(topURLStr.indexOf("/3/class-summary.html") >= 0) ||
+		(topURLStr.indexOf("/3/whatsnew.html") >= 0) ||
+		(topURLStr.indexOf("/3/all-index-Symbols.html") >= 0) ||
+		(topURLStr.indexOf("/3/appendixes.html") >= 0) ||
+		(topURLStr.indexOf("/3/", topURLStr.length - 3) !== -1) 
+		)){ 
+	jiveId = "2066";
+	jiveHref = "";
+	if(top.location.href.match(/#!/)) {
+		var tmp1 = top.location.href.split("#!")[0];
+		tmp1 = tmp1.substring(0,tmp1.lastIndexOf("/")+1);
+		var tmp2 = top.location.href.split("#!")[1];
+		jiveHref = (tmp1+tmp2).replace(/\?(.*)/, "");
+	} else {
+		jiveHref = top.location.href.replace(/\?(.*)/, "");
+	}
+	document.write("<script type='text/javascript' src='http://forums.adobe.com/everywhere/1804?community="+jiveId+"&key=" + jiveHref +"'> <\/script>");
+	
+	$(window).load(function(){
+		var childFrame = top.document.getElementById("jiveFrame");
+		var childHeight = 0;
+		if(childFrame.contentWindow.document.getElementById("jive-body-main")){
+			childHeight = childFrame.contentWindow.document.getElementById("jive-body-main").scrollHeight;
+			childHeight = childHeight + 470;
+			childFrame.style.height = childHeight + "px";
+		}
+	});
+	function actualURL() {
+			var url = top.location.href;
+			if (url.indexOf('#') > 0) {
+				url = url.substring(0, url.indexOf('#'));
+			}
+			if (url.charAt(url.length-1) == '/') {
+				url = url.substring(0, url.length-1);
+			}
+			return url;
+	}
+	window.onload = function(){
+	var anchors = document.getElementsByTagName('a');
+	for (var i=0; i<anchors.length; i++){
+		if(anchors[i].href.indexOf("http://forums.adobe.com/logout.jspa")>=0){
+			anchors[i].setAttribute('target', '_parent');
+		}
+		else if(anchors[i].href.indexOf("http://forums.adobe.com")>=0){
+			anchors[i].setAttribute('target', '_blank');
+		}
+		else if(anchors[i].href.indexOf("https://www.adobe.com/cfusion/membership")>=0){
+			anchors[i].setAttribute('target', '_blank');
+		}
+	}
+	}
+	var jiveTitle = top.document.title;
+	var jiveDescription = parent.strJiveReply + actualURL();
+}
+else{
+	top.document.getElementById("jiveFrame").style.display = 'none';
+}
+</script>
+<style type="text/css">
+#jive-body-main{
+	font-size: 11px;
+}
+</style>

@@ -1,0 +1,567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:10"><meta name="runtime" content="air"><meta name="runtimever" content="air:1.5"><meta name="product" content="flash player"><meta name="productver" content="flash player:10"><meta name="product" content="air"><meta name="productver" content="air:1.5"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="Vector3D,flash.geom.Vector3D,X_AXIS,Y_AXIS,Z_AXIS,length,lengthSquared,w,x,y,z,add,angleBetween,clone,copyFrom,crossProduct,decrementBy,distance,dotProduct,equals,incrementBy,nearEquals,negate,normalize,project,scaleBy,setTo,subtract,toString"><title>Vector3D - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">flash.geom&nbsp;</a><br>
+								<h1 id="classProductName">Vector3D&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">flash.geom</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  Vector3D</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Vector3D  <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../Object.html">Object</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p></p> 
+ The Vector3D class represents a point or a location in the three-dimensional space using the 
+ Cartesian coordinates x, y, and z. As in a two-dimensional space, the <code>x</code> property represents the 
+ horizontal axis and the <code>y</code> property represents the vertical axis. In three-dimensional space, the
+ <code>z</code> property represents depth. The value of the <code>x</code> property increases as the object moves to the right.
+ The value of the <code>y</code> property increases as the object moves down. The <code>z</code> property increases as the object
+ moves farther from the point of view. Using perspective projection and scaling, the object is seen 
+ to be bigger when near and smaller when farther away from the screen. As in a right-handed three-dimensional
+ coordinate system, the positive z-axis points away from the viewer and the value of the <code>z</code> property 
+ increases as the object moves away from the viewer's eye. The origin point (0,0,0) of the global space
+ is the upper-left corner of the stage. 
+   
+ <p>
+                  <img src="../../images/xyzAxes.jpg" alt="X, Y, Z Axes"></img>
+               </p>
+ 
+               <p>The Vector3D class can also represent a direction, an arrow pointing from the origin of the coordinates, such as 
+ (0,0,0), to an endpoint; or a floating-point component of an RGB (Red, Green, Blue) color model.</p> 
+ 
+               <p>Quaternion notation introduces a fourth element, the <code>w</code> property, which provides additional orientation
+ information. For example, the <code>w</code> property can define an angle of rotation of a Vector3D object. The 
+ combination of the angle of rotation and the coordinates x, y, and z can determine the display object's
+ orientation. Here is a representation of Vector3D elements in matrix notation:</p>
+ 
+               <p>
+                  <img src="../../images/Vector3Delements.jpg" alt="Vector3D elements"></img>
+               </p>
+ 
+ 
+            <p></p><p><span class="classHeaderTableLabel">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/display/DisplayObject.html" target="">flash.display.DisplayObject</a><br/><a href="Point.html" target="">flash.geom.Point</a><br/><a href="Matrix3D.html" target="">flash.geom.Matrix3D</a><br/><a href="Utils3D.html" target="">flash.geom.Utils3D</a><br/><a href="../../Vector.html" target="">Vector</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../Object.html#constructor" class="signatureLink">constructor</a> : <a href="../../Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#length" class="signatureLink">length</a> : <a href="../../Number.html">Number</a><div class="summaryTableDescription">[read-only] 
+    The length, magnitude, of the current Vector3D object from the origin (0,0,0) to 
+    the object's x, y, and z coordinates.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#lengthSquared" class="signatureLink">lengthSquared</a> : <a href="../../Number.html">Number</a><div class="summaryTableDescription">[read-only] 
+    The square of the length of the current Vector3D object, calculated using the x, 
+    y, and z properties.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#w" class="signatureLink">w</a> : <a href="../../Number.html">Number</a><div class="summaryTableDescription">
+     The fourth element of a Vector3D object (in addition to the x, y, 
+     and z properties) can hold 
+     data such as the angle of rotation.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#x" class="signatureLink">x</a> : <a href="../../Number.html">Number</a><div class="summaryTableDescription">
+     The first element of a Vector3D object, such as
+     the x coordinate of a point in the three-dimensional space.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#y" class="signatureLink">y</a> : <a href="../../Number.html">Number</a><div class="summaryTableDescription">
+     The second element of a Vector3D object, such as
+     the y coordinate of a point in the three-dimensional space.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#z" class="signatureLink">z</a> : <a href="../../Number.html">Number</a><div class="summaryTableDescription">
+     The third element of a Vector3D object, such as
+     the z coordinate of a point in three-dimensional space.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#Vector3D()" class="signatureLink">Vector3D</a>(x:<a href="../../Number.html">Number</a> = 0., y:<a href="../../Number.html">Number</a> = 0., z:<a href="../../Number.html">Number</a> = 0., w:<a href="../../Number.html">Number</a> = 0.)</div><div class="summaryTableDescription">
+     Creates an instance of a Vector3D object.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#add()" class="signatureLink">add</a>(a:<a href="../../flash/geom/Vector3D.html">Vector3D</a>):<a href="../../flash/geom/Vector3D.html">Vector3D</a></div><div class="summaryTableDescription">
+    Adds the value of the x, y, and z elements of the current Vector3D object 
+    to the values of the x, y, and z elements of another Vector3D object.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#angleBetween()" class="signatureLink">angleBetween</a>(a:<a href="../../flash/geom/Vector3D.html">Vector3D</a>, b:<a href="../../flash/geom/Vector3D.html">Vector3D</a>):<a href="../../Number.html">Number</a></div><div class="summaryTableDescription">[static] 
+    Returns the angle in radians between two vectors.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#clone()" class="signatureLink">clone</a>():<a href="../../flash/geom/Vector3D.html">Vector3D</a></div><div class="summaryTableDescription">
+    Returns a new Vector3D object that is an exact copy of the current Vector3D object.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="" runtime="Flash::11##AIR::3.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#copyFrom()" class="signatureLink">copyFrom</a>(sourceVector3D:<a href="../../flash/geom/Vector3D.html">Vector3D</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	 Copies all of vector data from the source Vector3D object into the 
+	 calling Vector3D object.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#crossProduct()" class="signatureLink">crossProduct</a>(a:<a href="../../flash/geom/Vector3D.html">Vector3D</a>):<a href="../../flash/geom/Vector3D.html">Vector3D</a></div><div class="summaryTableDescription">
+    Returns a new Vector3D object that is perpendicular (at a right angle) to the current 
+    Vector3D and another Vector3D object.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#decrementBy()" class="signatureLink">decrementBy</a>(a:<a href="../../flash/geom/Vector3D.html">Vector3D</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+    Decrements the value of the x, y, and z elements of the current Vector3D object 
+    by the values of the x, y, and z elements of specified Vector3D object.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#distance()" class="signatureLink">distance</a>(pt1:<a href="../../flash/geom/Vector3D.html">Vector3D</a>, pt2:<a href="../../flash/geom/Vector3D.html">Vector3D</a>):<a href="../../Number.html">Number</a></div><div class="summaryTableDescription">[static] 
+    Returns the distance between two Vector3D objects.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#dotProduct()" class="signatureLink">dotProduct</a>(a:<a href="../../flash/geom/Vector3D.html">Vector3D</a>):<a href="../../Number.html">Number</a></div><div class="summaryTableDescription">
+    If the current Vector3D object and the one specified as the parameter are unit vertices, this
+    method returns the cosine of the angle between the two vertices.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#equals()" class="signatureLink">equals</a>(toCompare:<a href="../../flash/geom/Vector3D.html">Vector3D</a>, allFour:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+    Determines whether two Vector3D objects are equal by comparing the x, y, and z 
+    elements of the current Vector3D object with a specified Vector3D object.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#incrementBy()" class="signatureLink">incrementBy</a>(a:<a href="../../flash/geom/Vector3D.html">Vector3D</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+    Increments the value of the x, y, and z elements of the current Vector3D object 
+    by the values of the x, y, and z elements of a specified Vector3D object.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#nearEquals()" class="signatureLink">nearEquals</a>(toCompare:<a href="../../flash/geom/Vector3D.html">Vector3D</a>, tolerance:<a href="../../Number.html">Number</a>, allFour:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+    Compares the elements of the current Vector3D object with the elements of a specified
+    Vector3D object to determine whether they are nearly equal.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#negate()" class="signatureLink">negate</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+    Sets the current Vector3D object to its inverse.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#normalize()" class="signatureLink">normalize</a>():<a href="../../Number.html">Number</a></div><div class="summaryTableDescription">
+    Converts a Vector3D object to a unit vector by dividing the first three elements 
+    (x, y, z) by the length of the vector.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#project()" class="signatureLink">project</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Divides the value of the x, y, and z properties of the 
+     current Vector3D object by the value of its w property.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#scaleBy()" class="signatureLink">scaleBy</a>(s:<a href="../../Number.html">Number</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+    Scales the current Vector3D object by a scalar, a magnitude.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="../../String.html">String</a>, isEnum:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::11##AIR::3.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setTo()" class="signatureLink">setTo</a>(xa:<a href="../../Number.html">Number</a>, ya:<a href="../../Number.html">Number</a>, za:<a href="../../Number.html">Number</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	 Sets the members of Vector3D to the specified values
+	 
+     </div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#subtract()" class="signatureLink">subtract</a>(a:<a href="../../flash/geom/Vector3D.html">Vector3D</a>):<a href="../../flash/geom/Vector3D.html">Vector3D</a></div><div class="summaryTableDescription">
+    Subtracts the value of the x, y, and z elements of the current Vector3D object 
+    from the values of the x, y, and z elements of another Vector3D object.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#toString()" class="signatureLink">toString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+     Returns a string representation of the current Vector3D object.</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+	 Returns the primitive value of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="constantSummary" id="constantSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Constants</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th>Defined By</th></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#X_AXIS" class="signatureLink">X_AXIS</a> : <a href="../../flash/geom/Vector3D.html">Vector3D</a><div class="summaryTableDescription">[static] 
+    The x axis defined as a Vector3D object with coordinates (1,0,0).</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#Y_AXIS" class="signatureLink">Y_AXIS</a> : <a href="../../flash/geom/Vector3D.html">Vector3D</a><div class="summaryTableDescription">[static] 
+    The y axis defined as a Vector3D object with coordinates (0,1,0).</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#Z_AXIS" class="signatureLink">Z_AXIS</a> : <a href="../../flash/geom/Vector3D.html">Vector3D</a><div class="summaryTableDescription">[static] 
+    The z axis defined as a Vector3D object with coordinates (0,0,1).</div></td><td class="summaryTableOwnerCol">Vector3D</td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="length" id="length"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>length</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>length:<a href="../../Number.html">Number</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+    The length, magnitude, of the current Vector3D object from the origin (0,0,0) to 
+    the object's x, y, and z coordinates. The <code>w</code>
+    property is ignored. A unit vector has a length or magnitude of one.
+    
+    </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get length():<a href="../../Number.html">Number</a></code><br/><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Vector3D.html#lengthSquared" target="">lengthSquared</a></div></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="lengthSquared" id="lengthSquared"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>lengthSquared</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>lengthSquared:<a href="../../Number.html">Number</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+    The square of the length of the current Vector3D object, calculated using the <code>x</code>, 
+    <code>y</code>, and <code>z</code> properties. The <code>w</code> property is ignored. 
+    Use the <code>lengthSquared()</code> method whenever possible instead of the slower 
+    <code>Math.sqrt()</code> method call of the <code>Vector3D.length()</code> method.
+    
+    </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get lengthSquared():<a href="../../Number.html">Number</a></code><br/><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Vector3D.html#length" target="">length</a></div></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="w" id="w"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>w</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var w:<a href="../../Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+     The fourth element of a Vector3D object (in addition to the <code>x</code>, <code>y</code>, 
+     and <code>z</code> properties) can hold 
+     data such as the angle of rotation. The default value is 0.
+     
+     <p>Quaternion notation employs an angle as the fourth element in its calculation of
+     three-dimensional rotation. The <code>w</code> property can be used to define the angle of rotation 
+     about the Vector3D object. The combination of the rotation angle and the coordinates (x,y,z) 
+     determines the display object's orientation. </p>
+     <p>In addition, the <code>w</code> property can be used as a perspective 
+     warp factor for a projected three-dimensional position or as a projection transform value in 
+     representing a three-dimensional coordinate projected into the two-dimensional space. For example, 
+     you can create a projection matrix using the <code>Matrix3D.rawData</code> property, that, when 
+     applied to a Vector3D object, produces a transform value in the Vector3D object's fourth element (the 
+     <code>w</code> property). Dividing the Vector3D object's other elements by the transform value 
+     then produces a projected Vector3D object. You can use the <code>Vector3D.project()</code> method 
+     to divide the first three elements of a Vector3D object by its fourth element.</p>
+     
+     </p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Vector3D.html#project()" target="">project()</a></div></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="x" id="x"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>x</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var x:<a href="../../Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+     The first element of a Vector3D object, such as
+     the x coordinate of a point in the three-dimensional space. The default value is 0.
+     
+     </p></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="y" id="y"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>y</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var y:<a href="../../Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+     The second element of a Vector3D object, such as
+     the y coordinate of a point in the three-dimensional space. The default value is 0.
+     
+     </p></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="z" id="z"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>z</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var z:<a href="../../Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+     The third element of a Vector3D object, such as
+     the z coordinate of a point in three-dimensional space. The default value is 0.
+     
+     </p></div></span><a name="constructorDetail" id="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="Vector3D()" id="Vector3D()"></a><a name="Vector3D(Number,Number,Number,Number)" id="Vector3D(Number,Number,Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>Vector3D</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function Vector3D(x:<a href="../../Number.html">Number</a> = 0., y:<a href="../../Number.html">Number</a> = 0., z:<a href="../../Number.html">Number</a> = 0., w:<a href="../../Number.html">Number</a> = 0.)</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p>
+     Creates an instance of a Vector3D object. If you do not specify a parameter for the constructor, 
+     a Vector3D object is created with the elements (0,0,0,0).
+     
+     </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">x</span>:<a href="../../Number.html">Number</a></code> (default = <code>0.</code>)<code></code> &mdash; The first element, such as the x coordinate. 
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">y</span>:<a href="../../Number.html">Number</a></code> (default = <code>0.</code>)<code></code> &mdash; The second element, such as the y coordinate. 
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">z</span>:<a href="../../Number.html">Number</a></code> (default = <code>0.</code>)<code></code> &mdash; The third element, such as the z coordinate. 
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">w</span>:<a href="../../Number.html">Number</a></code> (default = <code>0.</code>)<code></code> &mdash; An optional element for additional data such as the angle of rotation. 
+     
+     </td></tr></table></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="add()" id="add()"></a><a name="add(flash.geom.Vector3D)" id="add(flash.geom.Vector3D)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>add</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function add(a:<a href="../../flash/geom/Vector3D.html">Vector3D</a>):<a href="../../flash/geom/Vector3D.html">Vector3D</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+    Adds the value of the x, y, and z elements of the current Vector3D object 
+    to the values of the x, y, and z elements of another Vector3D object. 
+    The <code>add()</code> method does not change the current Vector3D object. Instead, it returns
+    a new Vector3D object with the new values.
+    
+    <p>The result of adding two vectors together is a resultant vector. One way to visualize
+    the result is by drawing a vector from the origin or tail of the first vector
+    to the end or head of the second vector. The resultant vector is the distance 
+    between the origin point of the first vector and the end point of the second vector.</p>   
+    
+    <p><img src="../../images/resultantVector3D.jpg" alt="Resultant Vector3D"></img></p>
+    
+    </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">a</span>:<a href="../../flash/geom/Vector3D.html">Vector3D</a></code> &mdash; A Vector3D object to be added to the current Vector3D object.
+    
+    </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/geom/Vector3D.html">Vector3D</a></code> &mdash; A Vector3D object that is the result of adding the current Vector3D object 
+    to another Vector3D object.
+    
+    </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Vector3D.html#incrementBy()" target="">incrementBy()</a></div></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="angleBetween()" id="angleBetween()"></a><a name="angleBetween(flash.geom.Vector3D,flash.geom.Vector3D)" id="angleBetween(flash.geom.Vector3D,flash.geom.Vector3D)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>angleBetween</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function angleBetween(a:<a href="../../flash/geom/Vector3D.html">Vector3D</a>, b:<a href="../../flash/geom/Vector3D.html">Vector3D</a>):<a href="../../Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+    Returns the angle in radians between two vectors. The returned angle is the smallest radian 
+    the first Vector3D object rotates until it aligns with the second Vector3D object. 
+    
+    <p>The <code>angleBetween()</code> method is a static method. You can use it directly as 
+    a method of the Vector3D class.</p>
+    
+    <p>To convert a degree to a radian, you can use the following formula:</p> 
+    
+    <p><code>radian = Math.PI/180 * degree</code></p>
+    
+    </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">a</span>:<a href="../../flash/geom/Vector3D.html">Vector3D</a></code> &mdash; The first Vector3D object.
+    </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">b</span>:<a href="../../flash/geom/Vector3D.html">Vector3D</a></code> &mdash; The second Vector3D object.
+    
+    </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Number.html">Number</a></code> &mdash; The angle between two Vector3D objects.
+    
+    </td></tr></table></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="clone()" id="clone()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>clone</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function clone():<a href="../../flash/geom/Vector3D.html">Vector3D</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+    Returns a new Vector3D object that is an exact copy of the current Vector3D object.
+    
+    
+    </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/geom/Vector3D.html">Vector3D</a></code> &mdash; A new Vector3D object that is a copy of the current Vector3D object.
+    
+    </td></tr></table></div></span><span id="pageFilter" runtime="Flash::11##AIR::3.0##Lite::4##"><a name="copyFrom()" id="copyFrom()"></a><a name="copyFrom(flash.geom.Vector3D)" id="copyFrom(flash.geom.Vector3D)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>copyFrom</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function copyFrom(sourceVector3D:<a href="../../flash/geom/Vector3D.html">Vector3D</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11, AIR 3.0, Flash Lite 4</td></tr></table><p></p><p></p><p>
+	 Copies all of vector data from the source Vector3D object into the 
+	 calling Vector3D object.
+	 
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">sourceVector3D</span>:<a href="../../flash/geom/Vector3D.html">Vector3D</a></code> &mdash; The Vector3D object from which to copy the data.
+	  
+	  </td></tr></table></p></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="crossProduct()" id="crossProduct()"></a><a name="crossProduct(flash.geom.Vector3D)" id="crossProduct(flash.geom.Vector3D)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>crossProduct</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function crossProduct(a:<a href="../../flash/geom/Vector3D.html">Vector3D</a>):<a href="../../flash/geom/Vector3D.html">Vector3D</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+    Returns a new Vector3D object that is perpendicular (at a right angle) to the current 
+    Vector3D and another Vector3D object. If the returned Vector3D object's coordinates are 
+    (0,0,0), then the two Vector3D objects are parallel to each other.
+    
+    <p><img src="../../images/crossproduct.jpg" alt="Cross Product"></img></p>
+    
+    <p>You can use the normalized cross product of two vertices of a polygon surface with the 
+    normalized vector of the camera or eye viewpoint to get a dot product. The value of
+    the dot product can identify whether a surface of a three-dimensional object is hidden 
+    from the viewpoint.</p>
+    
+    </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">a</span>:<a href="../../flash/geom/Vector3D.html">Vector3D</a></code> &mdash; A second Vector3D object. 
+    
+    </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/geom/Vector3D.html">Vector3D</a></code> &mdash; A new Vector3D object that is perpendicular to the current Vector3D object and the Vector3D 
+    object specified as the parameter.
+    
+    </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Vector3D.html#dotProduct()" target="">dotProduct()</a><br/><a href="Vector3D.html#normalize()" target="">normalize()</a></div></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="decrementBy()" id="decrementBy()"></a><a name="decrementBy(flash.geom.Vector3D)" id="decrementBy(flash.geom.Vector3D)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>decrementBy</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function decrementBy(a:<a href="../../flash/geom/Vector3D.html">Vector3D</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+    Decrements the value of the x, y, and z elements of the current Vector3D object 
+    by the values of the x, y, and z elements of specified Vector3D object. Unlike the
+    <code>Vector3D.subtract()</code> method, the <code>decrementBy()</code> method changes the current 
+    Vector3D object and does not return a new Vector3D object.
+    
+    
+    </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">a</span>:<a href="../../flash/geom/Vector3D.html">Vector3D</a></code> &mdash; The Vector3D object containing the values to subtract from the current Vector3D object.
+    
+    </td></tr></table></p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Vector3D.html#subtract()" target="">subtract()</a></div></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="distance()" id="distance()"></a><a name="distance(flash.geom.Vector3D,flash.geom.Vector3D)" id="distance(flash.geom.Vector3D,flash.geom.Vector3D)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>distance</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function distance(pt1:<a href="../../flash/geom/Vector3D.html">Vector3D</a>, pt2:<a href="../../flash/geom/Vector3D.html">Vector3D</a>):<a href="../../Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+    Returns the distance between two Vector3D objects. The <code>distance()</code> method 
+    is a static method. You can use it directly as a method of the Vector3D class to get 
+    the Euclidean distance between two three-dimensional points.
+    
+    </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">pt1</span>:<a href="../../flash/geom/Vector3D.html">Vector3D</a></code> &mdash; A Vector3D object as the first three-dimensional point. 
+    </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">pt2</span>:<a href="../../flash/geom/Vector3D.html">Vector3D</a></code> &mdash; A Vector3D object as the second three-dimensional point.
+    
+    </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Number.html">Number</a></code> &mdash; The distance between two Vector3D objects.
+    
+    </td></tr></table></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="dotProduct()" id="dotProduct()"></a><a name="dotProduct(flash.geom.Vector3D)" id="dotProduct(flash.geom.Vector3D)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>dotProduct</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function dotProduct(a:<a href="../../flash/geom/Vector3D.html">Vector3D</a>):<a href="../../Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+    If the current Vector3D object and the one specified as the parameter are unit vertices, this
+    method returns the cosine of the angle between the two vertices. Unit vertices are vertices that 
+    point to the same direction but their length is one. They remove the length of the vector 
+    as a factor in the result. You can use the <code>normalize()</code> method to convert a vector to a unit vector. 
+    
+    <p>The <code>dotProduct()</code> method finds the angle between two vertices. It is also 
+    used in backface culling or lighting calculations. Backface culling is a procedure for determining 
+    which surfaces are hidden from the viewpoint. You can use the normalized vertices from the camera, 
+    or eye, viewpoint and the cross product of the vertices of a polygon surface to get the dot product. 
+    If the dot product is less than zero, then the surface is facing the camera or the viewer. If the 
+    two unit vertices are perpendicular to each other, they are orthogonal and the dot product is zero.
+    If the two vertices are parallel to each other, the dot product is one.</p>
+    
+    
+    </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">a</span>:<a href="../../flash/geom/Vector3D.html">Vector3D</a></code> &mdash; The second Vector3D object. 
+    
+    </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Number.html">Number</a></code> &mdash; A scalar which is the dot product of the current Vector3D object and the specified Vector3D object.
+    
+    </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Vector3D.html#crossProduct()" target="">crossProduct()</a><br/><a href="Vector3D.html#normalize()" target="">normalize()</a></div></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="equals()" id="equals()"></a><a name="equals(flash.geom.Vector3D,Boolean)" id="equals(flash.geom.Vector3D,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>equals</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function equals(toCompare:<a href="../../flash/geom/Vector3D.html">Vector3D</a>, allFour:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+    Determines whether two Vector3D objects are equal by comparing the x, y, and z 
+    elements of the current Vector3D object with a specified Vector3D object. If the values of
+    these elements are the same, the two Vector3D objects are equal. If the second
+    optional parameter is set to <code>true</code>, all four elements of the Vector3D objects, 
+    including the <code>w</code> property, are compared. 
+    
+    </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">toCompare</span>:<a href="../../flash/geom/Vector3D.html">Vector3D</a></code> &mdash; The Vector3D object to be compared with the current Vector3D object.
+    </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">allFour</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; An optional parameter that specifies whether the <code>w</code> property of
+    the Vector3D objects is used in the comparison.  
+    
+    </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; A value of <code>true</code> if the specified Vector3D object is equal to the current 
+    Vector3D object; <code>false</code> if it is not equal.
+    
+    </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Vector3D.html#nearEquals()" target="">nearEquals()</a></div></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="incrementBy()" id="incrementBy()"></a><a name="incrementBy(flash.geom.Vector3D)" id="incrementBy(flash.geom.Vector3D)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>incrementBy</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function incrementBy(a:<a href="../../flash/geom/Vector3D.html">Vector3D</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+    Increments the value of the x, y, and z elements of the current Vector3D object 
+    by the values of the x, y, and z elements of a specified Vector3D object. Unlike the
+    <code>Vector3D.add()</code> method, the <code>incrementBy()</code> method changes the current 
+    Vector3D object and does not return a new Vector3D object.
+    
+    
+    </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">a</span>:<a href="../../flash/geom/Vector3D.html">Vector3D</a></code> &mdash; The Vector3D object to be added to the current Vector3D object.
+    
+    </td></tr></table></p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Vector3D.html#add()" target="">add()</a></div></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="nearEquals()" id="nearEquals()"></a><a name="nearEquals(flash.geom.Vector3D,Number,Boolean)" id="nearEquals(flash.geom.Vector3D,Number,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>nearEquals</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function nearEquals(toCompare:<a href="../../flash/geom/Vector3D.html">Vector3D</a>, tolerance:<a href="../../Number.html">Number</a>, allFour:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+    Compares the elements of the current Vector3D object with the elements of a specified
+    Vector3D object to determine whether they are nearly equal. The two Vector3D objects are nearly equal 
+    if the value of all the elements of the two vertices are equal, or the result of the comparison
+    is within the tolerance range. The difference between two elements must be less than the number 
+    specified as the <code>tolerance</code> parameter. If the third optional parameter is set to 
+    <code>true</code>, all four elements of the Vector3D objects, including the <code>w</code> property, 
+    are compared. Otherwise, only the x, y, and z elements are included in the comparison.
+    
+    
+    </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">toCompare</span>:<a href="../../flash/geom/Vector3D.html">Vector3D</a></code> &mdash; The Vector3D object to be compared with the current Vector3D object. 
+    </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">tolerance</span>:<a href="../../Number.html">Number</a></code> &mdash; A number determining the tolerance factor. If the difference between the values
+    of the Vector3D element specified in the <code>toCompare</code> parameter and the current Vector3D element
+    is less than the tolerance number, the two values are considered nearly equal.  
+    </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">allFour</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; An optional parameter that specifies whether the <code>w</code> property of
+    the Vector3D objects is used in the comparison.  
+    
+    </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; A value of <code>true</code> if the specified Vector3D object is nearly equal to the current
+    Vector3D object; <code>false</code> if it is not equal.
+    
+    </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Vector3D.html#equals()" target="">equals()</a></div></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="negate()" id="negate()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>negate</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function negate():<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+    Sets the current Vector3D object to its inverse. The inverse object is also considered the
+    opposite of the original object. The value of 
+    the <code>x</code>, <code>y</code>, and <code>z</code> properties of the current Vector3D object 
+    is changed to <code>-x</code>, <code>-y</code>, and <code>-z</code>. 
+    
+    
+    </p></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="normalize()" id="normalize()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>normalize</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function normalize():<a href="../../Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+    Converts a Vector3D object to a unit vector by dividing the first three elements 
+    (x, y, z) by the length of the vector. Unit vertices are 
+    vertices that have a direction but their length is one. They simplify
+    vector calculations by removing length as a factor.
+    
+    
+    </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Number.html">Number</a></code> &mdash; The length of the current Vector3D object.
+    
+    </td></tr></table></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="project()" id="project()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>project</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function project():<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+     Divides the value of the <code>x</code>, <code>y</code>, and <code>z</code> properties of the 
+     current Vector3D object by the value of its <code>w</code> property. 
+     
+     <p>If the current Vector3D object is the result of multiplying a Vector3D object by a projection Matrix3D object,
+     the <code>w</code> property can hold the transform value. The <code>project()</code> method then can 
+     complete the projection by dividing the elements by the <code>w</code> property. Use the
+     <code>Matrix3D.rawData</code> property to create a projection Matrix3D object.</p>
+     
+     
+     </p></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="scaleBy()" id="scaleBy()"></a><a name="scaleBy(Number)" id="scaleBy(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>scaleBy</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function scaleBy(s:<a href="../../Number.html">Number</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+    Scales the current Vector3D object by a scalar, a magnitude. The Vector3D object's
+    x, y, and z elements are multiplied by the scalar number  
+    specified in the parameter. For example, if the vector is scaled by ten, 
+    the result is a vector that is ten times longer. The scalar can also
+    change the direction of the vector. Multiplying the vector by a negative
+    number reverses its direction.
+    
+    </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">s</span>:<a href="../../Number.html">Number</a></code> &mdash; A multiplier (scalar) used to scale a Vector3D object.
+    
+    </td></tr></table></p></div></span><span id="pageFilter" runtime="Flash::11##AIR::3.0##Lite::4##"><a name="setTo()" id="setTo()"></a><a name="setTo(Number,Number,Number)" id="setTo(Number,Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>setTo</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setTo(xa:<a href="../../Number.html">Number</a>, ya:<a href="../../Number.html">Number</a>, za:<a href="../../Number.html">Number</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11, AIR 3.0, Flash Lite 4</td></tr></table><p></p><p></p><p>
+	 Sets the members of Vector3D to the specified values
+	 
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">xa</span>:<a href="../../Number.html">Number</a></code> &mdash; the values to set the vector to.
+	  
+	  </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">ya</span>:<a href="../../Number.html">Number</a></code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">za</span>:<a href="../../Number.html">Number</a></code></td></tr></table></p></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="subtract()" id="subtract()"></a><a name="subtract(flash.geom.Vector3D)" id="subtract(flash.geom.Vector3D)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>subtract</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function subtract(a:<a href="../../flash/geom/Vector3D.html">Vector3D</a>):<a href="../../flash/geom/Vector3D.html">Vector3D</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+    Subtracts the value of the x, y, and z elements of the current Vector3D object 
+    from the values of the x, y, and z elements of another Vector3D object. 
+    The <code>subtract()</code> method does not change the current Vector3D object. Instead, 
+    this method returns a new Vector3D object with the new values.
+    
+    
+    </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">a</span>:<a href="../../flash/geom/Vector3D.html">Vector3D</a></code> &mdash; The Vector3D object to be subtracted from the current Vector3D object.
+    
+    </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/geom/Vector3D.html">Vector3D</a></code> &mdash; A new Vector3D object that is the difference between the current Vector3D 
+    and the specified Vector3D object.
+    
+    </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Vector3D.html#decrementBy()" target="">decrementBy()</a></div></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="toString()" id="toString()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>toString</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function toString():<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+     Returns a string representation of the current Vector3D object. The string  
+     contains the values of the <code>x</code>, <code>y</code>, and <code>z</code> properties.
+     
+     
+     </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; A string containing the values of the <code>x</code>, <code>y</code>, and 
+     <code>z</code> properties.
+     
+     </td></tr></table></div></span><div class="detailSectionHeader">Constant Detail</div><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="constantDetail" id="constantDetail"></a><a name="X_AXIS" id="X_AXIS"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>X_AXIS</h3></td><td class="detailHeaderType">Constant</td></tr></table><div class="detailBody"><code>public static const X_AXIS:<a href="../../flash/geom/Vector3D.html">Vector3D</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+    The x axis defined as a Vector3D object with coordinates (1,0,0).
+    
+    </p></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="constantDetail" id="constantDetail"></a><a name="Y_AXIS" id="Y_AXIS"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>Y_AXIS</h3></td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const Y_AXIS:<a href="../../flash/geom/Vector3D.html">Vector3D</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+    The y axis defined as a Vector3D object with coordinates (0,1,0).
+    
+    </p></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="constantDetail" id="constantDetail"></a><a name="Z_AXIS" id="Z_AXIS"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>Z_AXIS</h3></td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const Z_AXIS:<a href="../../flash/geom/Vector3D.html">Vector3D</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+    The z axis defined as a Vector3D object with coordinates (0,0,1).
+    
+    </p></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(true,true,false,false,false,false,false,false,true,false,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><title>flash.display - Adobe ActionScript&reg; 3 (AS3) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">&nbsp;</a><br>
+								<h1 id="classProductName">flash.display&nbsp;</h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript" xml:space="preserve">                
+        
+        				
+        <!--				
+          				    				
+          					
+          titleBar_setSubNav(false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,false)
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script><br xmlns:xd="http://www.pnp-software.com/XSLTdoc"><p xmlns:xd="http://www.pnp-software.com/XSLTdoc">The flash.display package contains the core classes that the Flash Player uses to build visual displays.</p><br xmlns:xd="http://www.pnp-software.com/XSLTdoc"><hr xmlns:xd="http://www.pnp-software.com/XSLTdoc"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="interfaceSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summaryTableTitle">Interfaces</div><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" cellpadding="3" cellspacing="0" class="summaryTable" id="summaryTableIdInterface"><tr><th>&nbsp;</th><th width="30%">Interface</th><th width="70%">Description</th></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IBitmapDrawable.html" onclick="clearAllClassesListCookie();">IBitmapDrawable</a></i></td><td class="summaryTableLastCol">
+	The IBitmapDrawable interface is implemented by objects that can be passed as the source
+	parameter of the draw() method of the BitmapData class.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IGraphicsData.html" onclick="clearAllClassesListCookie();">IGraphicsData</a></i></td><td class="summaryTableLastCol">
+	This interface is used to define objects that can be used as parameters in the flash.display.Graphics
+	methods, including fills, strokes, and paths.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IGraphicsFill.html" onclick="clearAllClassesListCookie();">IGraphicsFill</a></i></td><td class="summaryTableLastCol">
+	This interface is used to define objects that can be used as fill parameters in the flash.display.Graphics
+	methods and drawing classes.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IGraphicsPath.html" onclick="clearAllClassesListCookie();">IGraphicsPath</a></i></td><td class="summaryTableLastCol">
+	This interface is used to define objects that can be used as path parameters in the flash.display.Graphics
+	methods and drawing classes.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IGraphicsStroke.html" onclick="clearAllClassesListCookie();">IGraphicsStroke</a></i></td><td class="summaryTableLastCol">
+	This interface is used to define objects that can be used as stroke parameters in the flash.display.Graphics
+	methods and drawing classes.</td></tr></table><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="classSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summaryTableTitle">Classes</div><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" cellpadding="3" cellspacing="0" class="summaryTable" id="summaryTableIdClass"><tr><th>&nbsp;</th><th width="30%">Class</th><th width="70%">Description</th></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ActionScriptVersion.html" onclick="clearAllClassesListCookie();">ActionScriptVersion</a></td><td class="summaryTableLastCol">
+	The ActionScriptVersion class is an enumeration of constant values that
+	indicate the language version of a loaded SWF file.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="AVM1Movie.html" onclick="clearAllClassesListCookie();">AVM1Movie</a></td><td class="summaryTableLastCol">
+	AVM1Movie is a simple class that represents AVM1 movie clips, which use ActionScript 1.0 or 2.0.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Bitmap.html" onclick="clearAllClassesListCookie();">Bitmap</a></td><td class="summaryTableLastCol">
+ The Bitmap class represents display objects that represent bitmap images.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="BitmapData.html" onclick="clearAllClassesListCookie();">BitmapData</a></td><td class="summaryTableLastCol">
+ The BitmapData class lets you work with the data (pixels) of a Bitmap object
+ bitmap image.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="BitmapDataChannel.html" onclick="clearAllClassesListCookie();">BitmapDataChannel</a></td><td class="summaryTableLastCol">
+The BitmapDataChannel class is an enumeration of constant values that indicate which channel to 
+use: red, blue, green, or alpha transparency.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::11.3##AIR::3.3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="BitmapEncodingColorSpace.html" onclick="clearAllClassesListCookie();">BitmapEncodingColorSpace</a></td><td class="summaryTableLastCol">
+     The BitmapEncodingColorSpace class defines the constants that specify how color channels are sampled
+     by the flash.display.BitmapData.encode() method when specifying the compressor as
+     flash.display.JPEGXREncoderOptions.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="BlendMode.html" onclick="clearAllClassesListCookie();">BlendMode</a></td><td class="summaryTableLastCol">
+A class that provides constant values for visual blend mode effects.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="CapsStyle.html" onclick="clearAllClassesListCookie();">CapsStyle</a></td><td class="summaryTableLastCol">
+ The CapsStyle class is an enumeration of constant values that specify the caps style to use in drawing lines.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ColorCorrection.html" onclick="clearAllClassesListCookie();">ColorCorrection</a></td><td class="summaryTableLastCol">
+The ColorCorrection class provides values for the flash.display.Stage.colorCorrection property.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ColorCorrectionSupport.html" onclick="clearAllClassesListCookie();">ColorCorrectionSupport</a></td><td class="summaryTableLastCol">
+The ColorCorrectionSupport class provides values for the flash.display.Stage.colorCorrectionSupport property.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DisplayObject.html" onclick="clearAllClassesListCookie();">DisplayObject</a></td><td class="summaryTableLastCol">
+ The DisplayObject class is the base class for all objects that can be placed on 
+ the display list.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DisplayObjectContainer.html" onclick="clearAllClassesListCookie();">DisplayObjectContainer</a></td><td class="summaryTableLastCol">
+The DisplayObjectContainer class is the base class for all objects that can serve as display object containers on 
+the display list.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FocusDirection.html" onclick="clearAllClassesListCookie();">FocusDirection</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+ The FocusDirection class enumerates values to be used for the 
+ direction parameter of the assignFocus() method
+ of a Stage object and for the direction property of a FocusEvent object.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FrameLabel.html" onclick="clearAllClassesListCookie();">FrameLabel</a></td><td class="summaryTableLastCol">
+	
+	The FrameLabel object contains properties that specify a frame number and the 
+	corresponding label name.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="GradientType.html" onclick="clearAllClassesListCookie();">GradientType</a></td><td class="summaryTableLastCol">
+The GradientType class provides values for the type parameter in the 
+beginGradientFill() and lineGradientStyle() methods of the flash.display.Graphics class.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Graphics.html" onclick="clearAllClassesListCookie();">Graphics</a></td><td class="summaryTableLastCol">
+ The Graphics class contains a set of methods that you can use to create a vector shape.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="GraphicsBitmapFill.html" onclick="clearAllClassesListCookie();">GraphicsBitmapFill</a></td><td class="summaryTableLastCol">
+ Defines a bitmap fill.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="GraphicsEndFill.html" onclick="clearAllClassesListCookie();">GraphicsEndFill</a></td><td class="summaryTableLastCol">
+ Indicates the end of a graphics fill.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="GraphicsGradientFill.html" onclick="clearAllClassesListCookie();">GraphicsGradientFill</a></td><td class="summaryTableLastCol">
+ Defines a gradient fill.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="GraphicsPath.html" onclick="clearAllClassesListCookie();">GraphicsPath</a></td><td class="summaryTableLastCol">
+ A collection of drawing commands and the coordinate parameters for those commands.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="GraphicsPathCommand.html" onclick="clearAllClassesListCookie();">GraphicsPathCommand</a></td><td class="summaryTableLastCol">
+ Defines the values to use for specifying path-drawing commands.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="GraphicsPathWinding.html" onclick="clearAllClassesListCookie();">GraphicsPathWinding</a></td><td class="summaryTableLastCol">
+The GraphicsPathWinding class provides values for the flash.display.GraphicsPath.winding property 
+and the flash.display.Graphics.drawPath() method
+to determine the direction to draw a path.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="GraphicsShaderFill.html" onclick="clearAllClassesListCookie();">GraphicsShaderFill</a></td><td class="summaryTableLastCol">
+ Defines a shader fill.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="GraphicsSolidFill.html" onclick="clearAllClassesListCookie();">GraphicsSolidFill</a></td><td class="summaryTableLastCol">
+ Defines a solid fill.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="GraphicsStroke.html" onclick="clearAllClassesListCookie();">GraphicsStroke</a></td><td class="summaryTableLastCol">
+ Defines a line style or stroke.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="GraphicsTrianglePath.html" onclick="clearAllClassesListCookie();">GraphicsTrianglePath</a></td><td class="summaryTableLastCol">
+ Defines an ordered set of triangles that can be rendered using 
+ either (u,v) fill coordinates or a normal fill.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="InteractiveObject.html" onclick="clearAllClassesListCookie();">InteractiveObject</a></td><td class="summaryTableLastCol">
+ The InteractiveObject class is the abstract base class for all display objects with which the user can 
+ interact, using the mouse, keyboard, or other user input device.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="InterpolationMethod.html" onclick="clearAllClassesListCookie();">InterpolationMethod</a></td><td class="summaryTableLastCol">
+The InterpolationMethod class provides values for the interpolationMethod 
+parameter in the Graphics.beginGradientFill() and 
+Graphics.lineGradientStyle() methods.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="JointStyle.html" onclick="clearAllClassesListCookie();">JointStyle</a></td><td class="summaryTableLastCol">
+The JointStyle class is an enumeration of constant values that specify the joint style to use in drawing lines.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::11.3##AIR::3.3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="JPEGEncoderOptions.html" onclick="clearAllClassesListCookie();">JPEGEncoderOptions</a></td><td class="summaryTableLastCol">
+     The JPEGEncoderOptions class defines a compression algorithm 
+     for the flash.display.BitmapData.encode() method.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::11.3##AIR::3.3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="JPEGXREncoderOptions.html" onclick="clearAllClassesListCookie();">JPEGXREncoderOptions</a></td><td class="summaryTableLastCol">
+     The JPEGXREncoderOptions class defines a compression algorithm 
+     for the flash.display.BitmapData.encode() method.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LineScaleMode.html" onclick="clearAllClassesListCookie();">LineScaleMode</a></td><td class="summaryTableLastCol">
+The LineScaleMode class provides values for the scaleMode 
+parameter in the Graphics.lineStyle() method.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Loader.html" onclick="clearAllClassesListCookie();">Loader</a></td><td class="summaryTableLastCol">
+ The Loader class is used to load SWF files or image (JPG, PNG, or GIF) files.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LoaderInfo.html" onclick="clearAllClassesListCookie();">LoaderInfo</a></td><td class="summaryTableLastCol">
+ The LoaderInfo class provides information about a loaded SWF file or a loaded image file
+ (JPEG, GIF, or PNG).</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="MorphShape.html" onclick="clearAllClassesListCookie();">MorphShape</a></td><td class="summaryTableLastCol">
+ The MorphShape class represents MorphShape objects on the display list.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="MovieClip.html" onclick="clearAllClassesListCookie();">MovieClip</a></td><td class="summaryTableLastCol">
+ The MovieClip class inherits from the following classes: Sprite, DisplayObjectContainer, 
+ InteractiveObject, DisplayObject, and EventDispatcher.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NativeMenu.html" onclick="clearAllClassesListCookie();">NativeMenu</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+     The NativeMenu class contains methods and properties for defining native menus.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NativeMenuItem.html" onclick="clearAllClassesListCookie();">NativeMenuItem</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+     The NativeMenuItem class represents a single item in a menu.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NativeWindow.html" onclick="clearAllClassesListCookie();">NativeWindow</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+ The NativeWindow class provides an interface for creating and controlling native desktop windows.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NativeWindowDisplayState.html" onclick="clearAllClassesListCookie();">NativeWindowDisplayState</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+     The NativeWindowDisplayState class defines constants for the names of the window display states.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NativeWindowInitOptions.html" onclick="clearAllClassesListCookie();">NativeWindowInitOptions</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+	 The NativeWindowInitOptions class defines the initialization options
+	 used to construct a new NativeWindow instance.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::3.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NativeWindowRenderMode.html" onclick="clearAllClassesListCookie();">NativeWindowRenderMode</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+	 The NativeWindowRenderMode class defines constants for the renderMode property of the 
+	 NativeWindowInitOptions object used to create a native window.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NativeWindowResize.html" onclick="clearAllClassesListCookie();">NativeWindowResize</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+The NativeWindowResize class defines constants for the possible values 
+ of the edgeOrCorner parameter of the NativeWindow 
+ startResize() method.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NativeWindowSystemChrome.html" onclick="clearAllClassesListCookie();">NativeWindowSystemChrome</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+	 The NativeWindowSystemChrome class defines constants for the systemChrome 
+	 property of the NativeWindowInitOptions object used to create a native window.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NativeWindowType.html" onclick="clearAllClassesListCookie();">NativeWindowType</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+	 The NativeWindowType class defines constants for the type property of the 
+	 NativeWindowInitOptions object used to create a native window.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="PixelSnapping.html" onclick="clearAllClassesListCookie();">PixelSnapping</a></td><td class="summaryTableLastCol">
+
+The PixelSnapping class is an enumeration of constant values for setting the pixel snapping options 
+by using the pixelSnapping property of a Bitmap object.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::11.3##AIR::3.3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="PNGEncoderOptions.html" onclick="clearAllClassesListCookie();">PNGEncoderOptions</a></td><td class="summaryTableLastCol">
+     The PNGEncoderOptions class defines a compression algorithm 
+     for the flash.display.BitmapData.encode() method.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Scene.html" onclick="clearAllClassesListCookie();">Scene</a></td><td class="summaryTableLastCol">
+	The Scene class includes properties for identifying the name, labels, and number of frames 
+	in a scene.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Screen.html" onclick="clearAllClassesListCookie();">Screen</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+	 The Screen class provides information about the display screens available to this application.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Shader.html" onclick="clearAllClassesListCookie();">Shader</a></td><td class="summaryTableLastCol">
+	 A Shader instance represents a Pixel Bender shader kernel in ActionScript.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ShaderData.html" onclick="clearAllClassesListCookie();">ShaderData</a></td><td class="summaryTableLastCol">
+	 A ShaderData object contains properties representing any parameters and 
+	 inputs for a shader kernel, as well as properties containing any metadata 
+	 specified for the shader.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ShaderInput.html" onclick="clearAllClassesListCookie();">ShaderInput</a></td><td class="summaryTableLastCol">
+	 A ShaderInput instance represents a single input image for
+	 a shader kernel.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ShaderJob.html" onclick="clearAllClassesListCookie();">ShaderJob</a></td><td class="summaryTableLastCol">
+	 A ShaderJob instance is used to execute a shader operation in stand-alone mode.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ShaderParameter.html" onclick="clearAllClassesListCookie();">ShaderParameter</a></td><td class="summaryTableLastCol">
+	 A ShaderParameter instance represents a single input parameter of
+	 a shader kernel.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ShaderParameterType.html" onclick="clearAllClassesListCookie();">ShaderParameterType</a></td><td class="summaryTableLastCol">
+	 This class defines the constants that represent the possible values for 
+	 the ShaderParameter class's type property.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ShaderPrecision.html" onclick="clearAllClassesListCookie();">ShaderPrecision</a></td><td class="summaryTableLastCol">
+	 This class defines the constants that represent the possible values for 
+	 the Shader class's precisionHint property.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Shape.html" onclick="clearAllClassesListCookie();">Shape</a></td><td class="summaryTableLastCol">
+ This class is used to create lightweight shapes using the ActionScript drawing application program interface (API).</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SimpleButton.html" onclick="clearAllClassesListCookie();">SimpleButton</a></td><td class="summaryTableLastCol">
+ The SimpleButton class lets you control all instances of button symbols in a SWF
+ file.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SpreadMethod.html" onclick="clearAllClassesListCookie();">SpreadMethod</a></td><td class="summaryTableLastCol">
+The SpreadMethod class provides values for the spreadMethod parameter 
+in the beginGradientFill() and lineGradientStyle() methods of the Graphics class.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Sprite.html" onclick="clearAllClassesListCookie();">Sprite</a></td><td class="summaryTableLastCol">
+ The Sprite class is a basic display list building block: a display list node that can display
+ graphics and can also contain children.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Stage.html" onclick="clearAllClassesListCookie();">Stage</a></td><td class="summaryTableLastCol">
+ The Stage class represents the main drawing area.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::11##AIR::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Stage3D.html" onclick="clearAllClassesListCookie();">Stage3D</a></td><td class="summaryTableLastCol">
+	 The Stage3D class provides a display area and a programmable rendering context for drawing 2D and 3D graphics.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="StageAlign.html" onclick="clearAllClassesListCookie();">StageAlign</a></td><td class="summaryTableLastCol">
+The StageAlign class provides constant values to use for the Stage.align property.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="StageAspectRatio.html" onclick="clearAllClassesListCookie();">StageAspectRatio</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+     The StageAspectRatio class provides values for the Stage.setAspectRatio() method.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9.0.28.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="StageDisplayState.html" onclick="clearAllClassesListCookie();">StageDisplayState</a></td><td class="summaryTableLastCol">
+The StageDisplayState class provides values for the Stage.displayState property.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="StageOrientation.html" onclick="clearAllClassesListCookie();">StageOrientation</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+     The StageOrientation class defines constants enumerating the possible orientations of the stage and the device.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="StageQuality.html" onclick="clearAllClassesListCookie();">StageQuality</a></td><td class="summaryTableLastCol">
+The StageQuality class provides values for the Stage.quality property
+and for the value of the quality parameter to 
+the BitmapData.drawWithQuality() method.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="StageScaleMode.html" onclick="clearAllClassesListCookie();">StageScaleMode</a></td><td class="summaryTableLastCol">
+The StageScaleMode class provides values for the Stage.scaleMode property.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SWFVersion.html" onclick="clearAllClassesListCookie();">SWFVersion</a></td><td class="summaryTableLastCol">
+	The SWFVersion class is an enumeration of constant values that indicate the 
+	file format version of a loaded SWF file.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TriangleCulling.html" onclick="clearAllClassesListCookie();">TriangleCulling</a></td><td class="summaryTableLastCol">
+ Defines codes for culling algorithms that determine which triangles not to render when drawing triangle paths.</td></tr></table><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 06:58 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 06:58 PM -08:00  -->

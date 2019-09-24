@@ -1,0 +1,201 @@
+<!--googleoff: all-->
+
+<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript" language="JavaScript"></script>
+<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript" language="JavaScript"></script>
+<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript" language="JavaScript"></script>
+<script type="text/javascript">
+<!--
+// <![CDATA[
+
+var helpcfgPath;
+var request;
+var info;
+var ionLoadReady = false;
+var ionLoaded = false;
+var ionSupportLoaded = false;
+var ionSupportLoadReady = false;
+
+var agt=navigator.userAgent.toLowerCase();
+var use_robohelp_behavior = false;
+
+if (typeof(terms_HELPCFG) != 'undefined' && terms_HELPCFG.length > 0){
+    var loc = getLangName();     //alert(loc);
+    helpcfgPath = "http://" + window.location.host + "/HelpCfg/" + loc + "/" + terms_HELPCFG;
+    setTimeout ( createXMLHttpRequest, 500 );
+}
+
+
+// -----------------------------------------
+// ----------- START AJAX CODE  ------------
+//
+function createXMLHttpRequest(){
+    if (window.XMLHttpRequest){       // code for Firefox, Opera, IE7, etc.
+        request=new XMLHttpRequest();        
+    }else if (window.ActiveXObject){  // code for IE6, IE5
+        request=new ActiveXObject("Microsoft.XMLHTTP");
+    }    
+    if (request != null){
+        request.onreadystatechange = handleStateChange;
+        request.open("GET", helpcfgPath, true);
+        request.send(null);
+    }else{
+        alert("Your browser does NOT support XMLHTTP.");
+    }
+}
+
+function handleStateChange(){    
+    if(request.readyState == 4){    // "loaded" 
+        if (request.status == 200){ // "OK"
+            var requestMsg = getXMLDoc(request.responseText);
+            try
+            {
+                info  = requestMsg.getElementsByTagName('product');
+                label = getIonLabel();               
+                site  = getIonSite();    
+                if (use_robohelp_behavior || !(label) || !(loc) || !(label.length > 0) || !(loc.length > 0)) {
+           //         document.getElementById("ionCount").style.display = "none";
+                    document.getElementById("ionComHere").style.display = "none";
+					document.getElementById("badgeContainerSupport").style.display = "none";
+                }
+                else {
+          //          document.getElementById("ionCount").style.display = "block";
+                    document.getElementById("ionComHere").style.display = "block";
+					document.getElementById("badgeContainerSupport").style.display = "block";
+                }
+				
+                if ( (info[0].getAttribute('ionCommentingAllowed') == 'yes') && (label) && (label.length > 0) && (loc)  && (loc.length > 0)) {
+					//only do this if the DOM is ready, else wait and call the function
+					ionLoadReady = true;
+				}
+				if((info[0].getAttribute('ionSupportBadgeAllowed') == 'yes') && (label) && (label.length > 0) && (loc)  && (loc.length > 0)) {
+					ionSupportLoadReady = true;
+				}
+				ionReadyLoad();
+            }catch(exception){}
+        }
+    }
+}
+
+function ionReadyLoad()
+{
+	//only do if DOM ready and ionLoadReady, and not loaded yet
+	if(alreadyrunflag && ionLoadReady && !ionLoaded)
+	{
+		ionLoaded = true;
+		var badge = new ionBadge();
+		badge.url = window.location.toString().replace(/\?(.*)/, "");
+		badge.locale = loc;
+		//badge.anchor = document.getElementById("ionCount");
+		badge.container = document.getElementById("ionComHere");
+		badge.productLabel = label;
+		if ( info[0].getAttribute('ionRatingAllowed') == 'yes' ){
+		    badge.ratingType = info[0].getAttribute('ionRatingType');
+		    badge.siteArea = site;
+		}
+		badge.load();
+	}
+	if(alreadyrunflag && ionSupportLoadReady && !ionSupportLoaded){
+		ionSupportLoaded = true;
+		var badgeSupport = new ionSupportBadge();
+		badgeSupport.container = document.getElementById("badgeContainerSupport");
+		badgeSupport.commenting = true;
+		badgeSupport.locale = loc;
+		badgeSupport.productLabel = label;
+		badgeSupport.rating = true;
+		badgeSupport.ratingType = "thumbs";
+		badgeSupport.siteArea = site;
+		badgeSupport.timeOutDelay = 30000;
+		badgeSupport.url = window.location.toString().replace(/\?(.*)/, "");
+		badgeSupport.load();
+		
+	}
+}
+
+function getXMLDoc(xmlText){
+    if(window.ActiveXObject){
+        xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+        xmlDoc.async=false;
+        xmlDoc.loadXML(xmlText);
+    }else if(document.implementation && document.implementation.createDocument){
+        xmlDoc=document.implementation.createDocument('','',null);
+        var oParser=new DOMParser();
+        xmlDoc=oParser.parseFromString(xmlText,"text/xml");
+    }else{
+        return null;
+    }
+    return xmlDoc;
+}
+
+// 
+// -----------  END AJAX CODE   ------------
+// -----------------------------------------
+
+
+
+
+function getLangName() {
+    var lang = "en-us";
+    var metaElements = document.all ?
+    document.all.tags('meta') :
+    document.getElementsByTagName ?
+    document.getElementsByTagName ('meta') : new Array();
+    for (var m = 0; m < metaElements.length; m++) {
+        if (metaElements[m].name == "lang") {
+            lang = metaElements[m].content;
+            break;
+        }
+    }
+    var ptn = /(..)-(..)/;
+    if (ptn.test(lang)) {
+        var countryCode = lang.replace(ptn, "$1");
+        var languageCode = lang.replace(ptn, "$2");
+        lang = countryCode + "_" + languageCode.toUpperCase();
+    }
+    return lang;
+}
+
+function isHomepage() {
+    var metaElements = document.all ?
+    document.all.tags('meta') :
+    document.getElementsByTagName ?
+    document.getElementsByTagName ('meta') : new Array();
+    for (var m = 0; m < metaElements.length; m++) {
+        if ((metaElements[m].name == "topictype") && (metaElements[m].content == "homepage")) {
+            return true;
+        }
+    }
+    return false;
+}
+
+function getIonLabel() {
+    var href = "" + document.location.href;
+    var label = "";
+    // No commenting for the home page
+    if (isHomepage()) {
+        return label;
+    }
+    // 3D Reviewer doesn't get commenting, but the rest of Acrobat does.
+    if (href.indexOf("Acrobat/9.0/Reviewer") != -1) {
+        return label;
+    }
+
+    label = info[0].getAttribute('ionId');
+    return label;
+}
+
+function getIonSite(){
+    if ( info[0].getAttribute('ionSiteArea') != "" ){
+        return info[0].getAttribute('ionSiteArea');
+    }else{
+        return "help";
+    }
+}
+
+
+//-->
+</script>
+<!--googleoff: all-->
+
+

@@ -1,0 +1,605 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><title>flash.sampler - Details Adobe ActionScript&reg; 3 (AS3) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">&nbsp;</a><br>
+								<h1 id="classProductName">Package flash.sampler&nbsp;</h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><br><a name="methodSummary"></a>This package is used by the profiling agent distributed with Adobe Flash Builder, and is provided for your use for customizing the profiling agent or building your own memory tests. Use the <code>startSampling()</code> method and the Flash Player debugger version 9.0.115.0 or later, to collect memory usage samples. Then use the <code>getSamples()</code> method to retrieve memory usage samples. The samples reveal the memory usage of distinct intervals of a running application. Then use the other methods in the <code>flash.sampler</code> package to analyze the memory usage information.<p><strong>Note:</strong> If you create your own custom profiling agent, preload the agent SWF file by setting the <code>PreloadSwf</code> property in the mm.cfg file:</p><pre>PreloadSwf=C:/Documents and Settings/username/testingagent.swf?aparam=asetting</pre><p>Each preloaded agent SWF file has its own security domain and runs in a distinct security sandbox from the main SWF file being profiled. To run the methods of the <code>flash.sampler</code> package, the agent SWF file must be in a localTrusted file path (see the <a target="mm_external" href="http://www.adobe.com/go/fp_security">Security Center</a>).</p><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Function</th><th>Defined By</th></tr><tr class="" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#clearSamples()" class="signatureLink">clearSamples</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Clears the current set of Sample objects.</div></td><td class="summaryTableOwnerCol">flash.sampler</td></tr><tr class="" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getGetterInvocationCount()" class="signatureLink">getGetterInvocationCount</a>(obj:<a href="../../Object.html">Object</a>, qname:<a href="../../QName.html">QName</a>):<a href="../../Number.html">Number</a></div><div class="summaryTableDescription">
+     Returns the number of times a get function was executed.</div></td><td class="summaryTableOwnerCol">flash.sampler</td></tr><tr class="" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getInvocationCount()" class="signatureLink">getInvocationCount</a>(obj:<a href="../../Object.html">Object</a>, qname:<a href="../../QName.html">QName</a>):<a href="../../Number.html">Number</a></div><div class="summaryTableDescription">
+     Returns the number of times a method was executed.</div></td><td class="summaryTableOwnerCol">flash.sampler</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getLexicalScopes()" class="signatureLink">getLexicalScopes</a>(obj:<a href="../../Function.html">Function</a>):<a href="../../Array.html">Array</a></div><div class="summaryTableDescription">
+     Exposes the lexical scope of a Function so that captured scope objects (including activation
+     objects and with scopes) are seen by the profiler as being retained by the Function instance.</div></td><td class="summaryTableOwnerCol">flash.sampler</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getMasterString()" class="signatureLink">getMasterString</a>(str:<a href="../../String.html">String</a>):<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+     Returns the master string upon which this string depends, or null if this
+     string does not depend on another string.</div></td><td class="summaryTableOwnerCol">flash.sampler</td></tr><tr class="" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getMemberNames()" class="signatureLink">getMemberNames</a>(o:<a href="../../Object.html">Object</a>, instanceNames:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+     Returns an object containing all members of a specified object, including private members.</div></td><td class="summaryTableOwnerCol">flash.sampler</td></tr><tr class="" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getSampleCount()" class="signatureLink">getSampleCount</a>():<a href="../../Number.html">Number</a></div><div class="summaryTableDescription">
+     Returns the number of samples collected.</div></td><td class="summaryTableOwnerCol">flash.sampler</td></tr><tr class="" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getSamples()" class="signatureLink">getSamples</a>():<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+     Returns an object of memory usage Sample instances from the last sampling session.</div></td><td class="summaryTableOwnerCol">flash.sampler</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getSavedThis()" class="signatureLink">getSavedThis</a>(obj:<a href="../../Function.html">Function</a>):<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+     Returns the saved "this" from a Method closure that you normal can't see from AS.</div></td><td class="summaryTableOwnerCol">flash.sampler</td></tr><tr class="" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getSetterInvocationCount()" class="signatureLink">getSetterInvocationCount</a>(obj:<a href="../../Object.html">Object</a>, qname:<a href="../../QName.html">QName</a>):<a href="../../Number.html">Number</a></div><div class="summaryTableDescription">
+     Returns the number of times a set function was executed.</div></td><td class="summaryTableOwnerCol">flash.sampler</td></tr><tr class="" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getSize()" class="signatureLink">getSize</a>(o:<a href="../../specialTypes.html#*">*</a>):<a href="../../Number.html">Number</a></div><div class="summaryTableDescription">
+    Returns the size in memory of a specified object when used with the Flash Player 9.0.115.0 or later debugger version.</div></td><td class="summaryTableOwnerCol">flash.sampler</td></tr><tr class="" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#isGetterSetter()" class="signatureLink">isGetterSetter</a>(obj:<a href="../../Object.html">Object</a>, qname:<a href="../../QName.html">QName</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+     Checks to see if a property is defined by a get/set function.</div></td><td class="summaryTableOwnerCol">flash.sampler</td></tr><tr class="" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#pauseSampling()" class="signatureLink">pauseSampling</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Stops the sampling process momentarily.</div></td><td class="summaryTableOwnerCol">flash.sampler</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#sampleInternalAllocs()" class="signatureLink">sampleInternalAllocs</a>(b:<a href="../../Boolean.html">Boolean</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Tells the sampler if it should create NewObjectSamples for internal allocations from the flash player.</div></td><td class="summaryTableOwnerCol">flash.sampler</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setSamplerCallback()" class="signatureLink">setSamplerCallback</a>(f:<a href="../../Function.html">Function</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets a callback function for the sampler - this function will be called when the sample stream is almost
+     exhausted.</div></td><td class="summaryTableOwnerCol">flash.sampler</td></tr><tr class="" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#startSampling()" class="signatureLink">startSampling</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Begins the process of collecting memory usage Sample objects.</div></td><td class="summaryTableOwnerCol">flash.sampler</td></tr><tr class="" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#stopSampling()" class="signatureLink">stopSampling</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Ends the process of collecting memory usage Sample objects and frees resources dedicated to the sampling process.</div></td><td class="summaryTableOwnerCol">flash.sampler</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodDetail" id="methodDetail"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailSectionHeader"> Function detail </div><span id="pageFilter" runtime="Flash::9.0.115.0##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="clearSamples()" id="clearSamples()"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>clearSamples</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function clearSamples():<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9.0.115.0</td></tr></table><p></p><p></p><p>
+     Clears the current set of Sample objects. This method is usually called after calling <code>getSamples()</code>
+     and iterating over the Sample objects.
+     For Flash Player debugger version only.
+     </p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="package.html#getSamples()" target="">getSamples()</a></div></div></span><span id="pageFilter" runtime="Flash::9.0.115.0##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getGetterInvocationCount()" id="getGetterInvocationCount()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getGetterInvocationCount(Object,QName)" id="getGetterInvocationCount(Object,QName)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getGetterInvocationCount</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function getGetterInvocationCount(obj:<a href="../../Object.html">Object</a>, qname:<a href="../../QName.html">QName</a>):<a href="../../Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9.0.115.0</td></tr></table><p></p><p></p><p>
+     Returns the number of times a get function was executed. Use
+     <code>isGetterSetter()</code> to verify that you have a get/set function before you use
+     <code>getGetterInvocationCount()</code>. For Flash Player debugger version only.
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">obj</span>:<a href="../../Object.html">Object</a></code> &mdash; A method instance or a class.
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">qname</span>:<a href="../../QName.html">QName</a></code> &mdash; If qname is <code>undefined</code> return the number of iterations of the constructor function.
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Number.html">Number</a></code> &mdash; The number of times a get method was executed.
+     </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="package.html#isGetterSetter()" target="">isGetterSetter()</a><br/><a href="package.html#getInvocationCount()" target="">getInvocationCount()</a></div></div></span><span id="pageFilter" runtime="Flash::9.0.115.0##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getInvocationCount()" id="getInvocationCount()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getInvocationCount(Object,QName)" id="getInvocationCount(Object,QName)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getInvocationCount</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function getInvocationCount(obj:<a href="../../Object.html">Object</a>, qname:<a href="../../QName.html">QName</a>):<a href="../../Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9.0.115.0</td></tr></table><p></p><p></p><p>
+     Returns the number of times a method was executed. If the parameter <code>obj</code>
+     is a Class and the parameter <code>qname</code> is <code>undefined</code> then this method
+     returns the number of iterations of the constructor function. For Flash Player debugger version only.
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">obj</span>:<a href="../../Object.html">Object</a></code> &mdash; A method instance or a class. A class can be used to get the invocation count of
+     instance functions when a method instance isn't available. If <code>obj</code> is <code>undefined</code>,
+     this method returns the count of the package-scoped function named by <code>qname</code>.
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">qname</span>:<a href="../../QName.html">QName</a></code> &mdash; If qname is <code>undefined</code> return the number of iterations of the constructor function.
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Number.html">Number</a></code> &mdash; The number of times a method was executed.
+     </td></tr></table><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> 
+<div class="listing"><pre>
+ package 
+{
+  public function exec3() {}
+
+  import flash.sampler.*;
+  import flash.system.*;
+  import flash.display.Sprite;
+  import flash.utils.*;
+  public class getInvocationCountTest extends Sprite
+    {
+      public function getInvocationCountTest()
+    {
+      for(var i:int=0;i&lt;10;i++)
+        exec();
+      for(var i:int=0;i&lt;10;i++)
+        exec2();
+      for(var i:int=0;i&lt;10;i++)
+        exec3();
+
+      // get exec QName
+      var execName:QName;
+          var name:QName;
+      var fooName:QName;
+      for each(name in getMemberNames(this)) {
+          if(name.localName == "exec")
+          execName = name;
+          if(name.localName == "foo")
+          fooName = name;
+      }
+
+      var exec2Name:QName;
+      for each(name in getMemberNames(getInvocationCountTest)) {
+          if(name.localName == "exec2")
+          exec2Name = name;
+      }
+
+      // execute get/set
+      foo = "bar";
+
+      trace(isGetterSetter(this, fooName));
+      trace(getSetterInvocationCount(this, fooName) == 1);
+      trace(getGetterInvocationCount(this, fooName) == 0);
+
+      foo;
+      
+      trace(getSetterInvocationCount(getInvocationCountTest, fooName) == 1);
+      trace(getGetterInvocationCount(getInvocationCountTest, fooName) == 1);
+
+      trace(getInvocationCount(this, execName) == 10);
+      trace(getInvocationCount(getInvocationCountTest, execName) == 10);
+      trace(getInvocationCount(getInvocationCountTest, exec2Name) == 10);
+      trace(getInvocationCount(getInvocationCountTest, undefined) == 1);
+    
+      getTimer();
+      getTimer();
+
+      trace(getInvocationCount(undefined, new QName("", "trace")) == 9);
+      trace(getInvocationCount(undefined, new QName("flash.utils", "getTimer")) == 2);
+      trace(getInvocationCount(undefined, new QName("", "exec3")) == 10);
+
+    }
+
+      private function exec():void {}
+      private static function exec2():void {}
+
+      private function get foo():String { return "fo"; }
+      private function set foo(s:String) { }
+      
+    }
+}
+</pre></div></div></span></div></span><span id="pageFilter"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getLexicalScopes()" id="getLexicalScopes()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getLexicalScopes(Function)" id="getLexicalScopes(Function)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getLexicalScopes</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function getLexicalScopes(obj:<a href="../../Function.html">Function</a>):<a href="../../Array.html">Array</a></code><p></p><p></p><p>
+     Exposes the lexical scope of a Function so that captured scope objects (including activation
+     objects and with scopes) are seen by the profiler as being retained by the Function instance.
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">obj</span>:<a href="../../Function.html">Function</a></code> &mdash; A function
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Array.html">Array</a></code> &mdash; An array containings all the lexical scope elements
+     </td></tr></table></div></span><span id="pageFilter"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getMasterString()" id="getMasterString()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getMasterString(String)" id="getMasterString(String)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getMasterString</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function getMasterString(str:<a href="../../String.html">String</a>):<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><p></p><p></p><p>
+     Returns the master string upon which this string depends, or null if this
+     string does not depend on another string.  For example, if you call
+     <code>String.substr()</code>, the returned string will often actually be
+     implemented as just a pointer into the original string, for the sake of efficiency.
+     In normal usage, this is an implementation detail which is not visible to the user;
+     however, it can be confusing when using a profiler to analyze your program's
+     memory consumption, because the string may be shown as taking less memory
+     than would be needed for the string's value.  In addition, a string might
+     be retained in memory solely because it is the master for other strings.
+     <code>getMasterString()</code> allows profilers to show the user an accurate
+     graph of string dependencies.
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">str</span>:<a href="../../String.html">String</a></code> &mdash; A string
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; The string upon which the passed-in string depends, or null if the
+     passed-in string does not depend on another string
+     </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9.0.115.0##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getMemberNames()" id="getMemberNames()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getMemberNames(Object,Boolean)" id="getMemberNames(Object,Boolean)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getMemberNames</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function getMemberNames(o:<a href="../../Object.html">Object</a>, instanceNames:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../Object.html">Object</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9.0.115.0</td></tr></table><p></p><p></p><p>
+     Returns an object containing all members of a specified object, including private members. You can then
+     iterate over the returned object to see all values. This method is similar to the flash.utils.describeType()
+     method but also allows you to see private members and skips the intermediate step of creating an XML object.
+     For Flash Player debugger version only.
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">o</span>:<a href="../../Object.html">Object</a></code> &mdash; The object to analyze.
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">instanceNames</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; If object is a Class and instanceNames is true report the instance names as if o was an instance of class instead of the class's member names.
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Object.html">Object</a></code> &mdash; An Object that you must iterate over with a <code>for each..in</code> loop to retrieve the QNames for
+     each property.
+     </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/utils/package.html#describeType()" target="">flash.utils.describeType()</a><br/><a href="../../statements.html#for_each..in" target="">for each..in</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example uses the <code>getMemberNames()</code> method to analyze an  
+ object and display the <code>buttonMode</code>, <code>filters</code> and <code>dispatchEvent</code> 
+ properties of its members, To use
+ the memory profiler, you need to have Flash Player debugger version 9.0.115.0 or later installed.
+<div class="listing"><pre>
+ package 
+{
+  import flash.sampler.*;
+  import flash.system.*;
+  import flash.display.Sprite;
+  public class getMemberNamesTest extends Sprite
+    {
+      public function getMemberNamesTest()
+    {
+      var name_iter = getMemberNames(this);
+      var o={};
+      for each(var name:QName in name_iter) {
+        o[name.localName] = "got it";
+      }
+
+      name_iter = getMemberNames(this);
+      var count=0;
+      for(var dum in name_iter) {
+        count++;
+      }
+      trace(count == 1);
+
+      // my member
+      trace("buttonMode" in o);
+      // inherited member
+      trace("filters" in o);
+      // inherited function
+      trace("dispatchEvent" in o);
+
+      var name_iter = getMemberNames(getMemberNamesTest, true);
+      var o={};
+      for each(var name:QName in name_iter) {
+        o[name.localName] = "got it";
+      }
+
+      // my member
+      trace("buttonMode" in o);
+      // inherited member
+      trace("filters" in o);
+      // inherited function
+      trace("dispatchEvent" in o);
+
+    }
+    }
+}
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::9.0.115.0##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getSampleCount()" id="getSampleCount()"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getSampleCount</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function getSampleCount():<a href="../../Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9.0.115.0</td></tr></table><p></p><p></p><p>
+     Returns the number of samples collected. For Flash Player debugger version only.
+     
+     </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Number.html">Number</a></code> &mdash; An iterator of Sample instances.
+     </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Sample.html" target="">flash.sampler.Sample</a></div></div></span><span id="pageFilter" runtime="Flash::9.0.115.0##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getSamples()" id="getSamples()"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getSamples</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function getSamples():<a href="../../Object.html">Object</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9.0.115.0</td></tr></table><p></p><p></p><p>
+     Returns an object of memory usage Sample instances from the last sampling session. For Flash Player debugger version only.
+     
+     </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Object.html">Object</a></code> &mdash; An iterator of Sample instances.
+     </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Sample.html" target="">flash.sampler.Sample</a></div></div></span><span id="pageFilter"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getSavedThis()" id="getSavedThis()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getSavedThis(Function)" id="getSavedThis(Function)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getSavedThis</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function getSavedThis(obj:<a href="../../Function.html">Function</a>):<a href="../../Object.html">Object</a></code><p></p><p></p><p>
+     Returns the saved "this" from a Method closure that you normal can't see from AS.
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">obj</span>:<a href="../../Function.html">Function</a></code> &mdash; A MethodClosure instance
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Object.html">Object</a></code> &mdash; An object that is the "this" of the MethodClosure
+     </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9.0.115.0##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getSetterInvocationCount()" id="getSetterInvocationCount()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getSetterInvocationCount(Object,QName)" id="getSetterInvocationCount(Object,QName)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getSetterInvocationCount</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function getSetterInvocationCount(obj:<a href="../../Object.html">Object</a>, qname:<a href="../../QName.html">QName</a>):<a href="../../Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9.0.115.0</td></tr></table><p></p><p></p><p>
+     Returns the number of times a set function was executed. Use
+     <code>isGetterSetter()</code> to verify that you have a get/set function before you use
+     <code>getSetterInvocationCount()</code>. For Flash Player debugger version only.
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">obj</span>:<a href="../../Object.html">Object</a></code> &mdash; A method instance or a class.
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">qname</span>:<a href="../../QName.html">QName</a></code> &mdash; If qname is <code>undefined</code> return the number of iterations of the constructor function.
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Number.html">Number</a></code> &mdash; The number of times a set method was executed.
+     </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="package.html#isGetterSetter()" target="">isGetterSetter()</a><br/><a href="package.html#getInvocationCount()" target="">getInvocationCount()</a></div></div></span><span id="pageFilter" runtime="Flash::9.0.115.0##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getSize()" id="getSize()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getSize(any)" id="getSize(any)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getSize</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function getSize(o:<a href="../../specialTypes.html#*">*</a>):<a href="../../Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9.0.115.0</td></tr></table><p></p><p></p><p>
+    Returns the size in memory of a specified object when used with the Flash Player 9.0.115.0 or later debugger version. If
+    used with a Flash Player that is not the debugger version, this method returns <code>0</code>.
+    </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">o</span>:<a href="../../specialTypes.html#*">*</a></code> &mdash; The object to analyze for memory usage.
+    </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Number.html">Number</a></code> &mdash; The byte count of memory used by the specified object.
+    </td></tr></table><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example uses <code>startSampling()</code> and <code>pauseSampling</code> to collect
+ Sample objects. The example then iterates over the Sample objects for <code>id</code> values and
+ sizes. After calling <code>System.gc()</code> to stop the current process, the example compares the deletedObjectSample
+ objects to the original  <code>id</code> values and displays their size. To use
+ the memory profiler, you need to have Flash Player debugger version 9.0.115.0 or later installed.
+<div class="listing"><pre>
+ package {
+  import flash.sampler.*;
+  import flash.system.*;
+  import flash.display.Sprite;
+  import flash.utils.Dictionary;
+  public class deletedObjectSize extends Sprite {
+    public function deletedObjectSize() {
+
+      startSampling();
+      var obj = {};
+      pauseSampling();
+
+      var id:Number;
+      var sampleIter = getSamples();
+      for each(var s:Sample in sampleIter) {
+    id = s.id;
+      }
+      
+      sampleIter = getSamples();
+      var count=0;
+      for(var dum in sampleIter) {
+    count++;
+      }
+      trace(count == 1);
+
+      var size:Number = getSize(obj);
+      obj = undefined;
+
+      startSampling();
+
+      // force DRC
+      for(var i:int=0;i&lt;1000;i++)
+    new Object();
+      
+      System.gc();
+
+      pauseSampling();
+      
+      var sampleIter = getSamples();
+      for each(var s:Sample in sampleIter) {
+    //    trace(s);
+    if(s is DeleteObjectSample && s.id == id) {
+      trace(s.size == size);
+    }      
+      }       
+
+    }
+  }
+}
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::9.0.115.0##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="isGetterSetter()" id="isGetterSetter()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="isGetterSetter(Object,QName)" id="isGetterSetter(Object,QName)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>isGetterSetter</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function isGetterSetter(obj:<a href="../../Object.html">Object</a>, qname:<a href="../../QName.html">QName</a>):<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9.0.115.0</td></tr></table><p></p><p></p><p>
+     Checks to see if a property is defined by a get/set function. If you want to use
+     <code>getInvocationCount()</code> on a get/set function for a property,
+     first call <code>isGetterSetter()</code> to check to see if it is a get/set function,
+     and then use either <code>getSetterInvocationCount</code>
+     or <code>getGetterInvocationCount</code> to get the respective counts. For Flash Player debugger version only.
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">obj</span>:<a href="../../Object.html">Object</a></code> &mdash; A method instance or a class.
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">qname</span>:<a href="../../QName.html">QName</a></code> &mdash; If qname is <code>undefined</code> return the number of iterations of the constructor function.
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; A Boolean value indicating if the property is defined by a get/set function (<code>true</code>)
+     or not (<code>false</code>).
+     </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="package.html#getInvocationCount()" target="">getInvocationCount()</a><br/><a href="package.html#getSetterInvocationCount()" target="">getSetterInvocationCount()</a><br/><a href="package.html#getGetterInvocationCount()" target="">getGetterInvocationCount()</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> 
+<div class="listing"><pre>
+ package 
+{
+  public function exec3() {}
+
+  import flash.sampler.*;
+  import flash.system.*;
+  import flash.display.Sprite;
+  import flash.utils.*;
+  public class getInvocationCountTest extends Sprite
+    {
+      public function getInvocationCountTest()
+    {
+      for(var i:int=0;i&lt;10;i++)
+        exec();
+      for(var i:int=0;i&lt;10;i++)
+        exec2();
+      for(var i:int=0;i&lt;10;i++)
+        exec3();
+
+      // get exec QName
+      var execName:QName;
+          var name:QName;
+      var fooName:QName;
+      for each(name in getMemberNames(this)) {
+          if(name.localName == "exec")
+          execName = name;
+          if(name.localName == "foo")
+          fooName = name;
+      }
+
+      var exec2Name:QName;
+      for each(name in getMemberNames(getInvocationCountTest)) {
+          if(name.localName == "exec2")
+          exec2Name = name;
+      }
+
+      // execute get/set
+      foo = "bar";
+
+      trace(isGetterSetter(this, fooName));
+      trace(getSetterInvocationCount(this, fooName) == 1);
+      trace(getGetterInvocationCount(this, fooName) == 0);
+
+      foo;
+      
+      trace(getSetterInvocationCount(getInvocationCountTest, fooName) == 1);
+      trace(getGetterInvocationCount(getInvocationCountTest, fooName) == 1);
+
+      trace(getInvocationCount(this, execName) == 10);
+      trace(getInvocationCount(getInvocationCountTest, execName) == 10);
+      trace(getInvocationCount(getInvocationCountTest, exec2Name) == 10);
+      trace(getInvocationCount(getInvocationCountTest, undefined) == 1);
+    
+      getTimer();
+      getTimer();
+
+      trace(getInvocationCount(undefined, new QName("", "trace")) == 9);
+      trace(getInvocationCount(undefined, new QName("flash.utils", "getTimer")) == 2);
+      trace(getInvocationCount(undefined, new QName("", "exec3")) == 10);
+
+    }
+
+      private function exec():void {}
+      private static function exec2():void {}
+
+      private function get foo():String { return "fo"; }
+      private function set foo(s:String) { }
+      
+    }
+}
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::9.0.115.0##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="pauseSampling()" id="pauseSampling()"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>pauseSampling</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function pauseSampling():<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9.0.115.0</td></tr></table><p></p><p></p><p>
+     Stops the sampling process momentarily. Restart the sampling process using <code>startSampling()</code>.
+     For Flash Player debugger version only.
+     </p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="package.html#startSampling()" target="">startSampling()</a></div></div></span><span id="pageFilter"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="sampleInternalAllocs()" id="sampleInternalAllocs()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="sampleInternalAllocs(Boolean)" id="sampleInternalAllocs(Boolean)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>sampleInternalAllocs</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function sampleInternalAllocs(b:<a href="../../Boolean.html">Boolean</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><p></p><p></p><p>
+     Tells the sampler if it should create NewObjectSamples for internal allocations from the flash player.
+     If this is set to true, then every allocation will generate a NewObjectSample.  These internal allocs will
+     not have a type, or a reference to the Object.  They will have the ActionScript stack trace that triggered the
+     allocation.  Defaults to false, which only collects allocations for ActionScript objects.
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">b</span>:<a href="../../Boolean.html">Boolean</a></code></td></tr></table></p></div></span><span id="pageFilter"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="setSamplerCallback()" id="setSamplerCallback()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="setSamplerCallback(Function)" id="setSamplerCallback(Function)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>setSamplerCallback</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function setSamplerCallback(f:<a href="../../Function.html">Function</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><p></p><p></p><p>
+     Sets a callback function for the sampler - this function will be called when the sample stream is almost
+     exhausted.  This should be used to process samples before the sample buffer is filled.  pauseSampling will be called
+     before the callback is called, and startSampling will be called after the callback has been executed.
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">f</span>:<a href="../../Function.html">Function</a></code></td></tr></table></p></div></span><span id="pageFilter" runtime="Flash::9.0.115.0##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="startSampling()" id="startSampling()"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>startSampling</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function startSampling():<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9.0.115.0</td></tr></table><p></p><p></p><p>
+     Begins the process of collecting memory usage Sample objects.
+     For Flash Player debugger version only.
+     </p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Sample.html" target="">Sample class</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example initiates the sampling process and iterates over the collected objects. To use
+ the memory profiler, you need to have Flash Player debugger version 9.0.115.0 or later.
+<div class="listing"><pre>
+package 
+{
+    import flash.sampler.*
+    import flash.system.*
+    import flash.display.Sprite
+    public class startSampling extends Sprite
+    {
+        public function startSampling()
+        {
+            flash.sampler.startSampling();
+            for(var i:int=0;i&lt;1000;i++)
+                new Object()
+            trace(getSampleCount() &gt; 0)
+        }
+    }
+}
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::9.0.115.0##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="stopSampling()" id="stopSampling()"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>stopSampling</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function stopSampling():<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9.0.115.0</td></tr></table><p></p><p></p><p>
+     Ends the process of collecting memory usage Sample objects and frees resources dedicated to the sampling process.
+     You start the sampling process with <code>startSampling()</code>.
+     For Flash Player debugger version only.
+     </p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Sample.html" target="">Sample class</a></div></div></span><p></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 07:03 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 07:03 PM -08:00  -->

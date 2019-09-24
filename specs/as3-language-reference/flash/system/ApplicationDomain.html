@@ -1,0 +1,590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:9"><meta name="runtime" content="lite"><meta name="runtimever" content="lite:4"><meta name="product" content="flash player"><meta name="productver" content="flash player:9"><meta name="product" content="lite"><meta name="productver" content="lite:4"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="ApplicationDomain,flash.system.ApplicationDomain,MIN_DOMAIN_MEMORY_LENGTH,currentDomain,domainMemory,parentDomain,getDefinition,getQualifiedDefinitionNames,hasDefinition"><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" src="../../AC_OETags.js" type="text/javascript"></script><title>ApplicationDomain - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">flash.system&nbsp;</a><br>
+								<h1 id="classProductName">ApplicationDomain&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">flash.system</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public final   class  ApplicationDomain</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">ApplicationDomain  <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../Object.html">Object</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p></p>
+ The ApplicationDomain class is a container for discrete groups of class definitions.
+ Application domains are used to partition classes that are in the same security domain. 
+ They allow multiple definitions of the same class to exist and allow children to reuse parent
+ definitions.
+ 
+ <p>Application domains are used when an external SWF file is loaded through the Loader class.
+ All ActionScript 3.0 definitions in the loaded SWF file are stored in the application
+ domain, which is specified by the <code>applicationDomain</code> property of the LoaderContext 
+ object that you pass as a <code>context</code> parameter of the Loader object's <code>load()</code> or 
+ <code>loadBytes()</code> method. The LoaderInfo object also contains an
+ <code>applicationDomain</code> property, which is read-only.</p>
+ 
+               <p>All code in a SWF file is defined to exist in an application domain. The current application 
+ domain is where your main application runs. The system domain contains all application domains,
+ including the current domain, which means that it contains all Flash Player classes.</p>
+ 
+               <p>Every application domain, except the system domain, has an associated parent domain. 
+ The parent domain of your main application's application domain is the system domain. 
+ Loaded classes are defined only when their parent doesn't already define them. 
+ You cannot override a loaded class definition with a newer definition.</p>
+ 
+               <p>For usage examples of application domains, see the <i>ActionScript 3.0 Developer's Guide</i>.</p>
+ 
+               <p>The <code>ApplicationDomain()</code> constructor function allows you to create an ApplicationDomain object.</p>
+ 
+            <p></p><p><a href="#includeExamplesSummary">View the examples</a></p><p id="moreExamples"><span class="classHeaderTableLabel">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WSd75bf4610ec9e22f43855da312214da1d8f-8000.html" target="_blank">Working with application domains</a></div><p id="learnMore"><span class="classHeaderTableLabel">Learn more</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/Flex/4.6/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf619ab-7ffc.html" target="_blank">About application domains</a><br/></div><p><span class="classHeaderTableLabel">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/display/Loader.html#load()" target="">flash.display.Loader.load()</a><br/><a href="../../flash/display/Loader.html#loadBytes()" target="">flash.display.Loader.loadBytes()</a><br/><a href="../../flash/display/LoaderInfo.html" target="">flash.display.LoaderInfo</a><br/><a href="../../flash/net/URLRequest.html" target="">flash.net.URLRequest</a><br/><a href="LoaderContext.html" target="">flash.system.LoaderContext</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../Object.html#constructor" class="signatureLink">constructor</a> : <a href="../../Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#currentDomain" class="signatureLink">currentDomain</a> : <a href="../../flash/system/ApplicationDomain.html">ApplicationDomain</a><div class="summaryTableDescription">[static] [read-only] 
+     Gets the current application domain in which your code is executing.</div></td><td class="summaryTableOwnerCol">ApplicationDomain</td></tr><tr class="" runtime="Flash::10##AIR::1.5##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#domainMemory" class="signatureLink">domainMemory</a> : <a href="../../flash/utils/ByteArray.html">ByteArray</a><div class="summaryTableDescription">
+     Gets and sets the object on which domain-global memory operations will operate within this ApplicationDomain.</div></td><td class="summaryTableOwnerCol">ApplicationDomain</td></tr><tr class="" runtime="Flash::10##AIR::1.5##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#MIN_DOMAIN_MEMORY_LENGTH" class="signatureLink">MIN_DOMAIN_MEMORY_LENGTH</a> : <a href="../../uint.html">uint</a><div class="summaryTableDescription">[static] [read-only] 
+     Gets the minimum memory object length required to be used as
+     ApplicationDomain.domainMemory.</div></td><td class="summaryTableOwnerCol">ApplicationDomain</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#parentDomain" class="signatureLink">parentDomain</a> : <a href="../../flash/system/ApplicationDomain.html">ApplicationDomain</a><div class="summaryTableDescription">[read-only] 
+     Gets the parent domain of this application domain.</div></td><td class="summaryTableOwnerCol">ApplicationDomain</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#ApplicationDomain()" class="signatureLink">ApplicationDomain</a>(parentDomain:<a href="../../flash/system/ApplicationDomain.html">ApplicationDomain</a> = null)</div><div class="summaryTableDescription">
+     Creates a new application domain.</div></td><td class="summaryTableOwnerCol">ApplicationDomain</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getDefinition()" class="signatureLink">getDefinition</a>(name:<a href="../../String.html">String</a>):<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+     Gets a public definition from the specified application domain.</div></td><td class="summaryTableOwnerCol">ApplicationDomain</td></tr><tr class="" runtime="Flash::11.3##AIR::3.3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getQualifiedDefinitionNames()" class="signatureLink">getQualifiedDefinitionNames</a>():<a href="../../Vector.html">Vector</a>.&lt;<a href="../../String.html">String</a>&gt;</div><div class="summaryTableDescription">
+     Gets all fully-qualified names of public definitions from the specified application domain.</div></td><td class="summaryTableOwnerCol">ApplicationDomain</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#hasDefinition()" class="signatureLink">hasDefinition</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+     Checks to see if a public definition exists within the specified application domain.</div></td><td class="summaryTableOwnerCol">ApplicationDomain</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="../../String.html">String</a>, isEnum:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toString()" class="signatureLink">toString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+	 Returns the primitive value of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="propertyDetail" id="propertyDetail"></a><a name="currentDomain" id="currentDomain"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>currentDomain</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>currentDomain:<a href="../../flash/system/ApplicationDomain.html">ApplicationDomain</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Gets the current application domain in which your code is executing.
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get currentDomain():<a href="../../flash/system/ApplicationDomain.html">ApplicationDomain</a></code><br/><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WSd75bf4610ec9e22f43855da312214da1d8f-8000.html" target="_blank">Working with application domains</a></div></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##Lite::4##"><a name="propertyDetail" id="propertyDetail"></a><a name="domainMemory" id="domainMemory"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>domainMemory</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>domainMemory:<a href="../../flash/utils/ByteArray.html">ByteArray</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Gets and sets the object on which domain-global memory operations will operate within this ApplicationDomain.
+     
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get domainMemory():<a href="../../flash/utils/ByteArray.html">ByteArray</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set domainMemory(value:<a href="../../flash/utils/ByteArray.html">ByteArray</a>):<a href="../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##Lite::4##"><a name="propertyDetail" id="propertyDetail"></a><a name="MIN_DOMAIN_MEMORY_LENGTH" id="MIN_DOMAIN_MEMORY_LENGTH"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>MIN_DOMAIN_MEMORY_LENGTH</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>MIN_DOMAIN_MEMORY_LENGTH:<a href="../../uint.html">uint</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Gets the minimum memory object length required to be used as
+     ApplicationDomain.domainMemory.
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get MIN_DOMAIN_MEMORY_LENGTH():<a href="../../uint.html">uint</a></code><br/></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="propertyDetail" id="propertyDetail"></a><a name="parentDomain" id="parentDomain"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>parentDomain</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>parentDomain:<a href="../../flash/system/ApplicationDomain.html">ApplicationDomain</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Gets the parent domain of this application domain.
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get parentDomain():<a href="../../flash/system/ApplicationDomain.html">ApplicationDomain</a></code><br/><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WSd75bf4610ec9e22f43855da312214da1d8f-8000.html" target="_blank">Working with application domains</a></div></div></span><a name="constructorDetail" id="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="ApplicationDomain()" id="ApplicationDomain()"></a><a name="ApplicationDomain(flash.system.ApplicationDomain)" id="ApplicationDomain(flash.system.ApplicationDomain)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>ApplicationDomain</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function ApplicationDomain(parentDomain:<a href="../../flash/system/ApplicationDomain.html">ApplicationDomain</a> = null)</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p>
+     Creates a new application domain.
+     
+     </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">parentDomain</span>:<a href="../../flash/system/ApplicationDomain.html">ApplicationDomain</a></code> (default = <code>null</code>)<code></code> &mdash; If no parent domain is passed in, this application domain takes the system domain as its parent.
+     
+     </td></tr></table></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="getDefinition()" id="getDefinition()"></a><a name="getDefinition(String)" id="getDefinition(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getDefinition</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function getDefinition(name:<a href="../../String.html">String</a>):<a href="../../Object.html">Object</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Gets a public definition from the specified application domain.
+     The definition can be that of a class, a namespace, or a function.
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">name</span>:<a href="../../String.html">String</a></code> &mdash; The name of the definition.
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Object.html">Object</a></code> &mdash; The object associated with the definition.
+     
+     </td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../ReferenceError.html">ReferenceError</a> </code> &mdash; No public definition exists with the
+     specified name.
+     
+     </td></tr></table></div></span><span id="pageFilter" runtime="Flash::11.3##AIR::3.3##"><a name="getQualifiedDefinitionNames()" id="getQualifiedDefinitionNames()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getQualifiedDefinitionNames</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getQualifiedDefinitionNames():<a href="../../Vector.html">Vector</a>.&lt;<a href="../../String.html">String</a>&gt;</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.3, AIR 3.3</td></tr></table><p></p><p></p><p>
+     Gets all fully-qualified names of public definitions from the specified application domain.
+     The definition can be that of a class, a namespace, or a function.
+     The names returned from this method can be passed to the <code>getDefinition()</code> method 
+     to get the object of the actual definition.
+     
+     <p>The returned Vector is of type String, where each String is in the form: 
+     <code><i>package</i>.<i>path</i>::<i>definitionName</i></code></p>
+     
+     <p>If <code><i>definitionName</i></code> is in the top-level package, then 
+     <code><i>package</i>.<i>path</i>::</code> is omitted.</p> 
+     
+     <p>For example, for the following class definition:</p>
+     
+     <pre>
+     package my.Example
+     {
+       public class SampleClass extends Sprite
+       { }
+     }</pre>
+     
+     <p>This method returns "my.Example::SampleClass".</p>
+     
+     </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Vector.html">Vector</a>.&lt;<a href="../../String.html">String</a>&gt;</code> &mdash; An unsorted Vector of Strings which are the names of the definitions. If there is
+     no definition, an empty Vector.&lt;String> is returned.
+     
+     </td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; The definition belongs to a domain to which
+     the calling code does not have access.
+     
+     </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="hasDefinition()" id="hasDefinition()"></a><a name="hasDefinition(String)" id="hasDefinition(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>hasDefinition</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function hasDefinition(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Checks to see if a public definition exists within the specified application domain.
+     The definition can be that of a class, a namespace, or a function.
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">name</span>:<a href="../../String.html">String</a></code> &mdash; The name of the definition.
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; A value of <code>true</code> if the specified definition exists; otherwise, <code>false</code>.
+     
+     </td></tr></table></div></span><a name="includeExamplesSummary" id="includeExamplesSummary"></a><div class="detailSectionHeader">Examples<span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span></div><span id="pageFilter"><div class="exampleHeader">ApplicationDomainExample.as</div><br/><div class="detailBody"> The following example demonstrates runtime class loading as well as how to call public methods of a class that reside in another SWF.
+ <p><b>Notes:</b></p>
+ <ul><li>Since the ClassLoader class loads a SWF file, local security needs to be at the file system level.</li><li>To run this example, you must have a swf file called RuntimeClasses.swf existing in the same folder 
+        as the ApplicationDomainExample.swf file.</li></ul>
+ 
+ <p>Begin by creating the RuntimeClasses.swf file from the following code:</p>
+ <div class="listing"><pre>
+ package {
+   import flash.display.Sprite;
+   public class RuntimeClasses extends Sprite
+   {
+     public function RuntimeClasses()
+     {}
+      
+     public function greet():String {
+       return("Hello World");
+     }
+   }
+ }
+ </pre></div>
+ 
+ <p>Then implement the following code:</p>
+<div class="listing"><pre>
+
+package {
+    import flash.display.DisplayObject;
+    import flash.display.Sprite;
+    import flash.errors.IllegalOperationError;
+    import flash.events.Event;
+    import flash.text.TextField;
+
+    public class ApplicationDomainExample extends Sprite {
+        private var loader:ClassLoader;
+        private var tf:TextField = new TextField();
+
+        public function ApplicationDomainExample() {
+            addChild(tf);
+
+            loader = new ClassLoader();
+            loader.addEventListener(ClassLoader.LOAD_ERROR,loadErrorHandler);
+            loader.addEventListener(ClassLoader.CLASS_LOADED,classLoadedHandler);
+            loader.load("RuntimeClasses.swf");
+        }
+
+        private function loadErrorHandler(e:Event):void {
+            tf.text = "Load failed";
+            throw new IllegalOperationError("Cannot load the specified file.");
+        }
+
+        private function classLoadedHandler(e:Event):void {
+            var runtimeClassRef:Class = loader.getClass("RuntimeClasses");
+            var greeter:Object = new runtimeClassRef();
+
+            tf.text = greeter.greet();
+        }
+    }
+}
+
+import flash.display.Loader;
+import flash.errors.IllegalOperationError;
+import flash.events.Event;
+import flash.events.EventDispatcher;
+import flash.events.IOErrorEvent;
+import flash.events.SecurityErrorEvent;
+import flash.net.URLRequest;
+import flash.system.ApplicationDomain;
+import flash.system.LoaderContext;
+
+class ClassLoader extends EventDispatcher {
+    public static var CLASS_LOADED:String = "classLoaded";
+    public static var LOAD_ERROR:String = "loadError";
+    private var loader:Loader;
+    private var swfLib:String;
+    private var request:URLRequest;
+    private var loadedClass:Class;
+
+    public function ClassLoader() {
+
+        loader = new Loader();
+        loader.contentLoaderInfo.addEventListener(Event.COMPLETE,completeHandler);
+        loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR,ioErrorHandler);
+        loader.contentLoaderInfo.addEventListener(SecurityErrorEvent.SECURITY_ERROR,securityErrorHandler);
+    }
+
+    public function load(lib:String):void {
+        swfLib = lib;
+        request = new URLRequest(swfLib);
+        var context:LoaderContext = new LoaderContext();
+        context.applicationDomain=ApplicationDomain.currentDomain;
+        loader.load(request,context);
+    }
+
+    public function getClass(className:String):Class {
+        try {
+            return loader.contentLoaderInfo.applicationDomain.getDefinition(className)  as  Class;
+        } catch (e:Error) {
+            throw new IllegalOperationError(className + " definition not found in " + swfLib);
+        }
+        return null;
+    }
+
+    private function completeHandler(e:Event):void {
+        dispatchEvent(new Event(ClassLoader.CLASS_LOADED));
+    }
+
+    private function ioErrorHandler(e:Event):void {
+        dispatchEvent(new Event(ClassLoader.LOAD_ERROR));
+    }
+
+    private function securityErrorHandler(e:Event):void {
+        dispatchEvent(new Event(ClassLoader.LOAD_ERROR));
+    }
+}
+</pre></div></div></span><span id="pageFilter"><div class="exampleHeader">ApplicationDomainExample.2.as</div><br/><div class="detailBody"> If multiple SWF files contain compiled classes with the same name but provide different implementation, you can partition the classes of externally loaded SWF files separate from the classes of each other following this example.
+ Previously, the child SWF was instructed to use <code>ApplicationDomain.currentDomain</code>. In this case, a new <code>ApplicationDomain</code> is created,
+ so that then the properties and methods of the <code>Greeter</code> class of whichever SWF loads second will not replace the properties and methods of the first <code>Greeter</code> class.
+ You can test this by modifying the <code>context.applicationDomain</code> property in the <code>load</code> method of <code>ClassLoader</code>.
+ <p><b>Notes:</b></p>
+ <ul><li>Since the ClassLoader class loads a SWF file, local security needs to be at the file system level.</li><li>To run this example, you must have two SWF files called Greeter.swf existing in an "en" and "es" folder respectively.</li></ul>
+ 
+ <p>Create a Greeter.as file in the "en" directory with the following code:</p>
+ <div class="listing"><pre>
+ package {
+    import flash.display.Sprite;
+    public class Greeter extends Sprite
+    {
+        public function Greeter()
+        {
+        }
+        
+        public function greet():String {
+            return("Good Morning");
+        }
+    }
+ }
+ </pre></div>
+ <p>Then create a very similar Greeter.as file in the "es" directory:</p>
+ 
+ <div class="listing"><pre>
+ package {
+    import flash.display.Sprite;
+    public class Greeter extends Sprite
+    {
+        public function Greeter()
+        {
+        }
+        
+        public function greet():String {
+            return("Buenos Dias");
+        }
+    }
+}
+ </pre></div>
+ 
+ <p>Compile SWF files for both and then implement the following code:</p>
+<div class="listing"><pre>
+package {
+    import flash.display.DisplayObject;
+    import flash.display.Sprite;
+    import flash.errors.IllegalOperationError;
+    import flash.events.Event;
+    import flash.text.TextField;
+    import flash.text.TextFieldAutoSize;
+
+    public class ApplicationDomainExample2 extends Sprite {
+        private var spanishGreeterLoader:ClassLoader;
+        private var englishGreeterLoader:ClassLoader;
+        private var tf:TextField = new TextField();
+        private var greetersLoaded:uint = 0;
+
+        public function ApplicationDomainExample2() {
+            tf.autoSize = TextFieldAutoSize.LEFT;
+            addChild(tf);
+
+            spanishGreeterLoader = new ClassLoader();
+            spanishGreeterLoader.addEventListener(ClassLoader.LOAD_ERROR,loadErrorHandler);
+            spanishGreeterLoader.addEventListener(ClassLoader.CLASS_LOADED,classLoadedHandler);
+            spanishGreeterLoader.load("es/Greeter.swf");
+            
+            englishGreeterLoader = new ClassLoader();
+            englishGreeterLoader.addEventListener(ClassLoader.LOAD_ERROR,loadErrorHandler);
+            englishGreeterLoader.addEventListener(ClassLoader.CLASS_LOADED,classLoadedHandler);
+            englishGreeterLoader.load("en/Greeter.swf");
+        }
+
+        private function loadErrorHandler(e:Event):void {
+            tf.text = "Load failed";
+            throw new IllegalOperationError("Cannot load the specified file.");
+        }
+
+        private function classLoadedHandler(e:Event):void {
+            greetersLoaded++;
+            if(greetersLoaded == 2) {
+                greet();    
+            }
+        }
+        
+        private function greet():void {
+            var spanishGreeter:Class = spanishGreeterLoader.getClass("Greeter");
+            var englishGreeter:Class = englishGreeterLoader.getClass("Greeter");
+            var greeter1 = new spanishGreeter();
+            var greeter2 = new englishGreeter();
+            
+            tf.text = greeter1.greet() + "\n" + greeter2.greet();
+        }
+    }
+}
+
+import flash.display.Loader;
+import flash.errors.IllegalOperationError;
+import flash.events.Event;
+import flash.events.EventDispatcher;
+import flash.events.IOErrorEvent;
+import flash.events.SecurityErrorEvent;
+import flash.net.URLRequest;
+import flash.system.ApplicationDomain;
+import flash.system.LoaderContext;
+
+class ClassLoader extends EventDispatcher {
+    public static var CLASS_LOADED:String = "classLoaded";
+    public static var LOAD_ERROR:String = "loadError";
+    private var loader:Loader;
+    private var swfLib:String;
+    private var request:URLRequest;
+    private var loadedClass:Class;
+
+    public function ClassLoader() {
+
+        loader = new Loader();
+        loader.contentLoaderInfo.addEventListener(Event.COMPLETE,completeHandler);
+        loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR,ioErrorHandler);
+        loader.contentLoaderInfo.addEventListener(SecurityErrorEvent.SECURITY_ERROR,securityErrorHandler);
+    }
+
+    public function load(lib:String):void {
+        swfLib = lib;
+        request = new URLRequest(swfLib);
+        var context:LoaderContext = new LoaderContext();
+//        context.applicationDomain = ApplicationDomain.currentDomain;
+        context.applicationDomain = new ApplicationDomain();
+        loader.load(request,context);
+    }
+
+    public function getClass(className:String):Class {
+        try {
+            return loader.contentLoaderInfo.applicationDomain.getDefinition(className)  as  Class;
+        } catch (e:Error) {
+            throw new IllegalOperationError(className + " definition not found in " + swfLib);
+        }
+        return null;
+    }
+
+    private function completeHandler(e:Event):void {
+        dispatchEvent(new Event(ClassLoader.CLASS_LOADED));
+    }
+
+    private function ioErrorHandler(e:Event):void {
+        dispatchEvent(new Event(ClassLoader.LOAD_ERROR));
+    }
+
+    private function securityErrorHandler(e:Event):void {
+        dispatchEvent(new Event(ClassLoader.LOAD_ERROR));
+    }
+}
+</pre></div></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,true,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

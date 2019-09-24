@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:9"><meta name="runtime" content="lite"><meta name="runtimever" content="lite:4"><meta name="product" content="flash player"><meta name="productver" content="flash player:9"><meta name="product" content="lite"><meta name="productver" content="lite:4"><link rel="stylesheet" href="style.css" type="text/css" media="screen"><link rel="stylesheet" href="print.css" type="text/css" media="print"><link rel="stylesheet" href="override.css" type="text/css"><link rel="stylesheet" href="asfilter.css" type="text/css"><link rel="stylesheet" href="ion.css" type="text/css"><meta name="keywords" content="Math,globalClassifier.Math,E,LN10,LN2,LOG10E,LOG2E,PI,SQRT1_2,SQRT2,abs,acos,asin,atan,atan2,ceil,cos,exp,floor,log,max,min,pow,random,round,sin,sqrt,tan"><title>Math - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="filter_new.css" type="text/css">
+			
+		<script src="jquery.js" type="text/javascript"></script>
+		<script src="s_chl_code.js" type="text/javascript"></script>
+		<script src="jquery.zclip.js" type="text/javascript"></script>
+		<script src="jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="cookies.js" type="text/javascript"></script>
+		<script src="asdoc.js" type="text/javascript"></script>
+		<script src="iscroll.js" type="text/javascript"></script>
+		<script src="AC_OETags.js" type="text/javascript"></script>
+		<script src="omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="search.html" onSubmit="searchfunctionsubmit('')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="help.js"></script>
+						<script language="javascript" type="text/javascript" src="asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">Top Level&nbsp;</a><br>
+								<h1 id="classProductName">Math&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">Top Level</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public final   class  Math</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Math  <img src="images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="Object.html">Object</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p></p>
+ The Math class contains methods and constants that represent common mathematical
+ functions and values. 
+ <p>Use the methods and properties of this class to access and manipulate mathematical constants and functions.
+ All the properties and methods of the Math class are static and must be called using the syntax 
+ <code>Math.method(</code>
+                  <code>
+                     <i>parameter</i>
+                  </code>
+                  <code>)</code> or <code>Math.constant</code>. 
+ In ActionScript, constants are defined with the maximum precision of double-precision IEEE-754 floating-point numbers.</p>
+               <p>Several Math class methods use the measure of an angle in radians as a parameter. You can use the following equation 
+ to calculate radian values before calling the method and then provide the calculated value as the parameter, or you can 
+ provide the entire right side of the equation (with the angle's measure in degrees in place of <code>degrees</code>) as 
+ the radian parameter.</p>
+               <p>To calculate a radian value, use the following formula:</p>
+               <pre>
+ radians = degrees * Math.PI/180
+ </pre>
+               <p>To calculate degrees from radians, use the following formula:</p>
+               <pre>
+ degrees = radians * 180/Math.PI
+ </pre>
+               <p>The following is an example of passing the equation as a parameter to calculate the sine of a 45&deg; angle:</p>
+               <p>
+                  <code>Math.sin(45 * Math.PI/180)</code> is the same as <code>Math.sin(.7854)</code>
+               </p>
+               <p>
+                  <b>Note:</b> The Math functions acos, asin, atan, atan2, cos, exp, log, pow, sin, and sqrt may 
+ result in slightly different values depending on the algorithms 
+ used by the CPU or operating system. Flash runtimes call on the CPU (or operating system if the CPU doesn't support 
+ floating point calculations) when performing the calculations for the listed functions, and results have shown
+ slight variations depending upon the CPU or operating system in use.
+ </p>
+ 
+ 
+            <p></p><p id="moreExamples"><span class="classHeaderTableLabel">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7dd6.html" target="_blank">Using the Math class with drawing methods</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable hideInheritedProperty" id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="Object.html#constructor" class="signatureLink">constructor</a> : <a href="Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#abs()" class="signatureLink">abs</a>(val:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></div><div class="summaryTableDescription">[static] 
+  Computes and returns an absolute value for the number specified by the 
+  parameter val.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#acos()" class="signatureLink">acos</a>(val:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></div><div class="summaryTableDescription">[static] 
+  Computes and returns the arc cosine of the number specified in the 
+  parameter val, in radians.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#asin()" class="signatureLink">asin</a>(val:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></div><div class="summaryTableDescription">[static] 
+  Computes and returns the arc sine for the number specified in the 
+  parameter val, in radians.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#atan()" class="signatureLink">atan</a>(val:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></div><div class="summaryTableDescription">[static] 
+  Computes and returns the value, in radians, of the angle whose tangent is 
+  specified in the parameter val.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#atan2()" class="signatureLink">atan2</a>(y:<a href="Number.html">Number</a>, x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></div><div class="summaryTableDescription">[static] 
+  Computes and returns the angle of the point y/x in 
+  radians, when measured counterclockwise from a circle's x axis 
+  (where 0,0 represents the center of the circle).</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#ceil()" class="signatureLink">ceil</a>(val:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></div><div class="summaryTableDescription">[static] 
+  Returns the ceiling of the specified number or expression.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#cos()" class="signatureLink">cos</a>(angleRadians:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></div><div class="summaryTableDescription">[static] 
+  Computes and returns the cosine of the specified angle in radians.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#exp()" class="signatureLink">exp</a>(val:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></div><div class="summaryTableDescription">[static] 
+  Returns the value of the base of the natural logarithm (e), to the 
+  power of the exponent specified in the parameter x.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#floor()" class="signatureLink">floor</a>(val:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></div><div class="summaryTableDescription">[static] 
+  Returns the floor of the number or expression specified in the parameter 
+  val.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="Object.html">Object</a>):<a href="Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#log()" class="signatureLink">log</a>(val:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></div><div class="summaryTableDescription">[static] 
+  Returns the natural logarithm of the parameter val.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#max()" class="signatureLink">max</a>(val1:<a href="Number.html">Number</a>, val2:<a href="Number.html">Number</a>, <a href="statements.html#..._(rest)_parameter">...</a> rest):<a href="Number.html">Number</a></div><div class="summaryTableDescription">[static] 
+  Evaluates val1 and val2 (or more values) and returns the largest value.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#min()" class="signatureLink">min</a>(val1:<a href="Number.html">Number</a>, val2:<a href="Number.html">Number</a>, <a href="statements.html#..._(rest)_parameter">...</a> rest):<a href="Number.html">Number</a></div><div class="summaryTableDescription">[static] 
+  Evaluates val1 and val2 (or more values) and returns the smallest value.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#pow()" class="signatureLink">pow</a>(base:<a href="Number.html">Number</a>, pow:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></div><div class="summaryTableDescription">[static] 
+  Computes and returns base to the power of pow.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#random()" class="signatureLink">random</a>():<a href="Number.html">Number</a></div><div class="summaryTableDescription">[static] 
+  Returns a pseudo-random number n, where 0 &lt;= n &lt; 1.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#round()" class="signatureLink">round</a>(val:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></div><div class="summaryTableDescription">[static] 
+  Rounds the value of the parameter val up or down to the nearest
+  integer and returns the value.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="String.html">String</a>, isEnum:<a href="Boolean.html">Boolean</a> = true):<a href="specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#sin()" class="signatureLink">sin</a>(angleRadians:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></div><div class="summaryTableDescription">[static] 
+  Computes and returns the sine of the specified angle in radians.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#sqrt()" class="signatureLink">sqrt</a>(val:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></div><div class="summaryTableDescription">[static] 
+  Computes and returns the square root of the specified number.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#tan()" class="signatureLink">tan</a>(angleRadians:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></div><div class="summaryTableDescription">[static] 
+  Computes and returns the tangent of the specified angle.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#toString()" class="signatureLink">toString</a>():<a href="String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="Object.html">Object</a></div><div class="summaryTableDescription">
+	 Returns the primitive value of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="constantSummary" id="constantSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Constants</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#E" class="signatureLink">E</a> : <a href="Number.html">Number</a> = 2.71828182845905<div class="summaryTableDescription">[static] 
+  A mathematical constant for the base of natural logarithms, expressed as e.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#LN10" class="signatureLink">LN10</a> : <a href="Number.html">Number</a> = 2.302585092994046<div class="summaryTableDescription">[static] 
+  A mathematical constant for the natural logarithm of 10, expressed as loge10,
+  with an approximate value of 2.302585092994046.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#LN2" class="signatureLink">LN2</a> : <a href="Number.html">Number</a> = 0.6931471805599453<div class="summaryTableDescription">[static] 
+  A mathematical constant for the natural logarithm of 2, expressed as loge2,
+  with an approximate value of 0.6931471805599453.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#LOG10E" class="signatureLink">LOG10E</a> : <a href="Number.html">Number</a> = 0.4342944819032518<div class="summaryTableDescription">[static] 
+  A mathematical constant for the base-10 logarithm of the constant e (Math.E),
+  expressed as log10e, with an approximate value of 0.4342944819032518.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#LOG2E" class="signatureLink">LOG2E</a> : <a href="Number.html">Number</a> = 1.442695040888963387<div class="summaryTableDescription">[static] 
+  A mathematical constant for the base-2 logarithm of the constant e, expressed 
+  as log2e, with an approximate value of 1.442695040888963387.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#PI" class="signatureLink">PI</a> : <a href="Number.html">Number</a> = 3.141592653589793<div class="summaryTableDescription">[static] 
+  A mathematical constant for the ratio of the circumference of a circle to its diameter,
+  expressed as pi, with a value of 3.141592653589793.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#SQRT1_2" class="signatureLink">SQRT1_2</a> : <a href="Number.html">Number</a> = 0.7071067811865476<div class="summaryTableDescription">[static]  
+  A mathematical constant for the square root of one-half, with an approximate  
+  value of 0.7071067811865476.</div></td><td class="summaryTableOwnerCol">Math</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#SQRT2" class="signatureLink">SQRT2</a> : <a href="Number.html">Number</a> = 1.4142135623730951<div class="summaryTableDescription">[static] 
+  A mathematical constant for the square root of 2, with an approximate 
+  value of 1.4142135623730951.</div></td><td class="summaryTableOwnerCol">Math</td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="abs()" id="abs()"></a><a name="abs(Number)" id="abs(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>abs</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public static function abs(val:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  Computes and returns an absolute value for the number specified by the 
+  parameter <code>val</code>.
+  
+  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">val</span>:<a href="Number.html">Number</a></code> &mdash; The number whose absolute value is returned.
+  </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; The absolute value of the specified parameter.
+  
+  </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="acos()" id="acos()"></a><a name="acos(Number)" id="acos(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>acos</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function acos(val:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  Computes and returns the arc cosine of the number specified in the 
+  parameter <code>val</code>, in radians.
+  
+  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">val</span>:<a href="Number.html">Number</a></code> &mdash; A number from -1.0 to 1.0.  
+  
+  </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; The arc cosine of the parameter <code>val</code>.
+  
+  </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="asin()" id="asin()"></a><a name="asin(Number)" id="asin(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>asin</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function asin(val:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  Computes and returns the arc sine for the number specified in the 
+  parameter <code>val</code>, in radians.
+  
+  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">val</span>:<a href="Number.html">Number</a></code> &mdash; A number from -1.0 to 1.0.  
+  
+  </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; A number between negative pi divided by 2 and positive pi 
+  divided by 2.
+  
+  </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="atan()" id="atan()"></a><a name="atan(Number)" id="atan(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>atan</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function atan(val:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  Computes and returns the value, in radians, of the angle whose tangent is 
+  specified in the parameter <code>val</code>. The return value is between
+  negative pi divided by 2 and positive pi divided by 2.
+  
+  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">val</span>:<a href="Number.html">Number</a></code> &mdash; A number that represents the tangent of an angle.  
+  
+  </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; A number between negative pi divided by 2 and positive 
+  pi divided by 2.
+  
+  </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="atan2()" id="atan2()"></a><a name="atan2(Number,Number)" id="atan2(Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>atan2</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function atan2(y:<a href="Number.html">Number</a>, x:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  Computes and returns the angle of the point <code>y</code>/<code>x</code> in 
+  radians, when measured counterclockwise from a circle's <i>x</i> axis 
+  (where 0,0 represents the center of the circle). The return value is between 
+  positive pi and negative pi. Note that the first parameter to atan2 is always the <i>y</i> coordinate.
+  
+  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">y</span>:<a href="Number.html">Number</a></code> &mdash; The <i>y</i> coordinate of the point.
+  </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">x</span>:<a href="Number.html">Number</a></code> &mdash; The <i>x</i> coordinate of the point.  
+  
+  </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; A number.
+  
+  </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Math.html#acos()" target="">Math.acos()</a><br/><a href="Math.html#asin()" target="">Math.asin()</a><br/><a href="Math.html#atan()" target="">Math.atan()</a><br/><a href="Math.html#cos()" target="">Math.cos()</a><br/><a href="Math.html#sin()" target="">Math.sin()</a><br/><a href="Math.html#tan()" target="">Math.tan()</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="ceil()" id="ceil()"></a><a name="ceil(Number)" id="ceil(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>ceil</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function ceil(val:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  Returns the ceiling of the specified number or expression. The ceiling of a 
+  number is the closest integer that is greater than or equal to the number.
+  
+  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">val</span>:<a href="Number.html">Number</a></code> &mdash; A number or expression.
+  </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; An integer that is both closest to, and greater than or equal to, the parameter 
+  <code>val</code>.
+  
+  </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Math.html#floor()" target="">Math.floor()</a><br/><a href="Math.html#round()" target="">Math.round()</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="cos()" id="cos()"></a><a name="cos(Number)" id="cos(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>cos</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function cos(angleRadians:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  Computes and returns the cosine of the specified angle in radians. To 
+  calculate a radian, see the overview of the Math class.
+  
+  
+  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">angleRadians</span>:<a href="Number.html">Number</a></code> &mdash; A number that represents an angle measured in radians. 
+  </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; A number from -1.0 to 1.0.
+  
+  </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Math.html#acos()" target="">Math.acos()</a><br/><a href="Math.html#asin()" target="">Math.asin()</a><br/><a href="Math.html#atan()" target="">Math.atan()</a><br/><a href="Math.html#atan2()" target="">Math.atan2()</a><br/><a href="Math.html#sin()" target="">Math.sin()</a><br/><a href="Math.html#tan()" target="">Math.tan()</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="exp()" id="exp()"></a><a name="exp(Number)" id="exp(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>exp</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function exp(val:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  Returns the value of the base of the natural logarithm (<i>e</i>), to the 
+  power of the exponent specified in the parameter <code>x</code>. The 
+  constant <code>Math.E</code> can provide the value of <i>e</i>.
+  
+  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">val</span>:<a href="Number.html">Number</a></code> &mdash; The exponent; a number or expression.
+  </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; <i>e</i> to the power of the parameter <code>val</code>.
+  
+  </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Math.html#E" target="">Math.E</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="floor()" id="floor()"></a><a name="floor(Number)" id="floor(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>floor</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function floor(val:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  Returns the floor of the number or expression specified in the parameter 
+  <code>val</code>. The floor is the closest integer that is less than or equal
+  to the specified number or expression.
+  
+  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">val</span>:<a href="Number.html">Number</a></code> &mdash; A number or expression.
+  </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; The integer that is both closest to, and less than or equal to, the parameter 
+  <code>val</code>.
+  
+  </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="log()" id="log()"></a><a name="log(Number)" id="log(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>log</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function log(val:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  Returns the natural logarithm of the parameter <code>val</code>.
+  
+  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">val</span>:<a href="Number.html">Number</a></code> &mdash; A number or expression with a value greater than 0.
+  </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; The natural logarithm of parameter <code>val</code>.
+  
+  </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="max()" id="max()"></a><a name="max(Number,Number,restParam)" id="max(Number,Number,restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>max</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function max(val1:<a href="Number.html">Number</a>, val2:<a href="Number.html">Number</a>, <a href="statements.html#..._(rest)_parameter">...</a> rest):<a href="Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  Evaluates <code>val1</code> and <code>val2</code> (or more values) and returns the largest value.
+  
+  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">val1</span>:<a href="Number.html">Number</a></code> &mdash; A number or expression.
+  </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">val2</span>:<a href="Number.html">Number</a></code> &mdash; A number or expression.
+  </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><a href="statements.html#..._(rest)_parameter">...</a> <span class="label">rest</span></code> &mdash; A number or expression. <code>Math.max()</code> can accept multiple arguments.
+  </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; The largest of the parameters <code>val1</code> and <code>val2</code> (or more values).
+  
+  </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Math.html#min()" target="">Math.min()</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="min()" id="min()"></a><a name="min(Number,Number,restParam)" id="min(Number,Number,restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>min</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function min(val1:<a href="Number.html">Number</a>, val2:<a href="Number.html">Number</a>, <a href="statements.html#..._(rest)_parameter">...</a> rest):<a href="Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  Evaluates <code>val1</code> and <code>val2</code> (or more values) and returns the smallest value.
+  
+  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">val1</span>:<a href="Number.html">Number</a></code> &mdash; A number or expression.
+  </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">val2</span>:<a href="Number.html">Number</a></code> &mdash; A number or expression.
+  </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><a href="statements.html#..._(rest)_parameter">...</a> <span class="label">rest</span></code> &mdash; A number or expression. <code>Math.min()</code> can accept multiple arguments.
+  </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; The smallest of the parameters <code>val1</code> and <code>val2</code> (or more values).
+  
+  </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Math.html#max()" target="">Math.max()</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="pow()" id="pow()"></a><a name="pow(Number,Number)" id="pow(Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>pow</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function pow(base:<a href="Number.html">Number</a>, pow:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  Computes and returns <code>base</code> to the power of <code>pow</code>.
+  
+  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">base</span>:<a href="Number.html">Number</a></code> &mdash; A number to be raised by the power of the parameter <code>pow</code>.
+  </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">pow</span>:<a href="Number.html">Number</a></code> &mdash; A number specifying the power that the parameter <code>base</code> is raised by.
+  </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; The value of <code>base</code> raised to the power of <code>pow</code>.
+  
+  </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="random()" id="random()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>random</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function random():<a href="Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  Returns a pseudo-random number n, where 0 &lt;= n &lt; 1. The number returned is calculated in an undisclosed manner, and is "pseudo-random" because the calculation inevitably contains some element of non-randomness.
+  
+  </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; A pseudo-random number.
+  
+  </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso">flash.crypto.generateRandomBytes()</div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="round()" id="round()"></a><a name="round(Number)" id="round(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>round</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function round(val:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  Rounds the value of the parameter <code>val</code> up or down to the nearest
+  integer and returns the value. If <code>val</code> is equidistant 
+  from its two nearest integers (that is, if the number ends in .5), the value 
+  is rounded up to the next higher integer.
+  
+  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">val</span>:<a href="Number.html">Number</a></code> &mdash; The number to round.
+  </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; The parameter <code>val</code> rounded to the nearest whole number.
+  
+  </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Math.html#ceil()" target="">Math.ceil()</a><br/><a href="Math.html#floor()" target="">Math.floor()</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="sin()" id="sin()"></a><a name="sin(Number)" id="sin(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>sin</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function sin(angleRadians:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  Computes and returns the sine of the specified angle in radians. To 
+  calculate a radian, see the overview of the Math class.
+  
+  
+  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">angleRadians</span>:<a href="Number.html">Number</a></code> &mdash; A number that represents an angle measured in radians.
+  </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; A number; the sine of the specified angle (between -1.0 and 1.0).
+  
+  </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Math.html#acos()" target="">Math.acos()</a><br/><a href="Math.html#asin()" target="">Math.asin()</a><br/><a href="Math.html#atan()" target="">Math.atan()</a><br/><a href="Math.html#atan2()" target="">Math.atan2()</a><br/><a href="Math.html#cos()" target="">Math.cos()</a><br/><a href="Math.html#tan()" target="">Math.tan()</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="sqrt()" id="sqrt()"></a><a name="sqrt(Number)" id="sqrt(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>sqrt</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function sqrt(val:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  Computes and returns the square root of the specified number.
+  
+  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">val</span>:<a href="Number.html">Number</a></code> &mdash; A number or expression greater than or equal to 0. 
+  </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; If the parameter <code>val</code> is greater than or equal to zero, a number; otherwise <code>NaN</code> (not a number).
+  
+  </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="tan()" id="tan()"></a><a name="tan(Number)" id="tan(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>tan</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function tan(angleRadians:<a href="Number.html">Number</a>):<a href="Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  Computes and returns the tangent of the specified angle. To calculate a 
+  radian, see the overview of the Math class.
+  
+  
+  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">angleRadians</span>:<a href="Number.html">Number</a></code> &mdash; A number that represents an angle measured in radians.
+  </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; The tangent of the parameter <code>angleRadians</code>.
+  
+  </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Math.html#acos()" target="">Math.acos()</a><br/><a href="Math.html#asin()" target="">Math.asin()</a><br/><a href="Math.html#atan()" target="">Math.atan()</a><br/><a href="Math.html#atan2()" target="">Math.atan2()</a><br/><a href="Math.html#cos()" target="">Math.cos()</a><br/><a href="Math.html#sin()" target="">Math.sin()</a></div></div></span><div class="detailSectionHeader">Constant Detail</div><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="constantDetail" id="constantDetail"></a><a name="E" id="E"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>E</h3></td><td class="detailHeaderType">Constant</td></tr></table><div class="detailBody"><code>public static const E:<a href="Number.html">Number</a> = 2.71828182845905</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  A mathematical constant for the base of natural logarithms, expressed as <i>e</i>.
+  The approximate value of <i>e</i><code> </code>is 2.71828182845905.
+  
+  </p></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="constantDetail" id="constantDetail"></a><a name="LN10" id="LN10"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>LN10</h3></td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const LN10:<a href="Number.html">Number</a> = 2.302585092994046</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  A mathematical constant for the natural logarithm of 10, expressed as log<sub>e</sub>10,
+  with an approximate value of 2.302585092994046.
+  
+  </p></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="constantDetail" id="constantDetail"></a><a name="LN2" id="LN2"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>LN2</h3></td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const LN2:<a href="Number.html">Number</a> = 0.6931471805599453</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  A mathematical constant for the natural logarithm of 2, expressed as log<sub>e</sub>2,
+  with an approximate value of 0.6931471805599453.
+  
+  </p></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="constantDetail" id="constantDetail"></a><a name="LOG10E" id="LOG10E"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>LOG10E</h3></td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const LOG10E:<a href="Number.html">Number</a> = 0.4342944819032518</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  A mathematical constant for the base-10 logarithm of the constant <i>e</i> (<code>Math.E</code>),
+  expressed as log<sub>10</sub>e, with an approximate value of 0.4342944819032518. 
+  <p>The <code>Math.log()</code> method computes the natural logarithm of a number. Multiply the 
+  result of <code>Math.log()</code> by <code>Math.LOG10E</code> to obtain the base-10 logarithm.</p>
+  
+  </p></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="constantDetail" id="constantDetail"></a><a name="LOG2E" id="LOG2E"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>LOG2E</h3></td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const LOG2E:<a href="Number.html">Number</a> = 1.442695040888963387</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  A mathematical constant for the base-2 logarithm of the constant <i>e</i>, expressed 
+  as log2e, with an approximate value of 1.442695040888963387.
+  
+  <p>The <code>Math.log</code> method computes the natural logarithm of a number. Multiply the 
+  result of <code>Math.log()</code> by <code>Math.LOG2E</code> to obtain the base-2 logarithm.</p>
+  
+  </p></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="constantDetail" id="constantDetail"></a><a name="PI" id="PI"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>PI</h3></td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const PI:<a href="Number.html">Number</a> = 3.141592653589793</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  A mathematical constant for the ratio of the circumference of a circle to its diameter,
+  expressed as pi, with a value of 3.141592653589793.
+  
+  </p></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="constantDetail" id="constantDetail"></a><a name="SQRT1_2" id="SQRT1_2"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>SQRT1_2</h3></td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const SQRT1_2:<a href="Number.html">Number</a> = 0.7071067811865476</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p> 
+  A mathematical constant for the square root of one-half, with an approximate  
+  value of 0.7071067811865476.
+  
+  </p></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="constantDetail" id="constantDetail"></a><a name="SQRT2" id="SQRT2"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>SQRT2</h3></td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const SQRT2:<a href="Number.html">Number</a> = 1.4142135623730951</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+  A mathematical constant for the square root of 2, with an approximate 
+  value of 1.4142135623730951.
+  
+  </p></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(true,true,false,false,false,false,false,false,true,false,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

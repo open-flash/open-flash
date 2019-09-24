@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:10"><meta name="runtime" content="air"><meta name="runtimever" content="air:1.5"><meta name="product" content="flash player"><meta name="productver" content="flash player:10"><meta name="product" content="air"><meta name="productver" content="air:1.5"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><link rel="stylesheet" href="../../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../../ion.css" type="text/css"><meta name="keywords" content="ISelectionManager,flashx.textLayout.edit.ISelectionManager,absoluteEnd,absoluteStart,activePosition,anchorPosition,currentSelectionFormat,editingMode,focused,focusedSelectionFormat,inactiveSelectionFormat,textFlow,unfocusedSelectionFormat,windowActive,flushPendingOperations,getCommonCharacterFormat,getCommonContainerFormat,getCommonParagraphFormat,getSelectionState,hasSelection,isRangeSelection,notifyInsertOrDelete,refreshSelection,selectAll,selectRange,setFocus,setSelectionState"><title>ISelectionManager - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="../../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../../filter_new.css" type="text/css">
+			
+		<script src="../../../jquery.js" type="text/javascript"></script>
+		<script src="../../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../../cookies.js" type="text/javascript"></script>
+		<script src="../../../asdoc.js" type="text/javascript"></script>
+		<script src="../../../iscroll.js" type="text/javascript"></script>
+		<script src="../../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../../search.html" onSubmit="searchfunctionsubmit('../../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">flashx.textLayout.edit&nbsp;</a><br>
+								<h1 id="classProductName">ISelectionManager&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">flashx.textLayout.edit</a></td></tr><tr><td class="classHeaderTableLabel">Interface</td><td class="classSignature">public  interface  ISelectionManager extends  <a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a> </td></tr><tr><td class="classHeaderTableLabel">Implementors</td><td> <a href="../../../flashx/textLayout/edit/SelectionManager.html">SelectionManager</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p></p> 
+	 The ISelectionManager interface defines the interface for handling text selection.
+	 
+	 <p>A SelectionManager keeps track of the selected text range and handles events for a TextFlow.</p>
+	 
+	              <p>A selection can be either a point selection or a range selection. A point selection is the insertion point
+	 and is indicated visually by drawing a cursor. A range
+	 selection includes the text between an anchor point and an active point.</p>
+	 
+	           <p></p><p><span class="classHeaderTableLabel">Related API Elements</span></p><div class="seeAlso"><a href="SelectionManager.html" target="">flashx.textLayout.edit.SelectionManager</a><br/><a href="TextScrap.html" target="">flashx.textLayout.edit.TextScrap</a><br/><a href="../../../flashx/textLayout/elements/TextFlow.html" target="">flashx.textLayout.elements.TextFlow</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#absoluteEnd" class="signatureLink">absoluteEnd</a> : <a href="../../../int.html">int</a><div class="summaryTableDescription">[read-only]  
+		 The text position of the end of the selection, as an offset from the start of the text flow.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#absoluteStart" class="signatureLink">absoluteStart</a> : <a href="../../../int.html">int</a><div class="summaryTableDescription">[read-only]  
+		 The text position of the start of the selection, as an offset from the start of the text flow.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#activePosition" class="signatureLink">activePosition</a> : <a href="../../../int.html">int</a><div class="summaryTableDescription">[read-only]  
+		 The active point of the selection.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#anchorPosition" class="signatureLink">anchorPosition</a> : <a href="../../../int.html">int</a><div class="summaryTableDescription">[read-only]  
+		 The anchor point of the selection.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#currentSelectionFormat" class="signatureLink">currentSelectionFormat</a> : <a href="../../../flashx/textLayout/edit/SelectionFormat.html">SelectionFormat</a><div class="summaryTableDescription">[read-only]  
+		 The current SelectionFormat object.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#editingMode" class="signatureLink">editingMode</a> : <a href="../../../String.html">String</a><div class="summaryTableDescription">[read-only] 
+		 The editing mode.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#focused" class="signatureLink">focused</a> : <a href="../../../Boolean.html">Boolean</a><div class="summaryTableDescription">[read-only]  
+		 Indicates whether a container in the text flow has the focus.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#focusedSelectionFormat" class="signatureLink">focusedSelectionFormat</a> : <a href="../../../flashx/textLayout/edit/SelectionFormat.html">SelectionFormat</a><div class="summaryTableDescription">
+		 The SelectionFormat object used to draw the selection in a focused container.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#inactiveSelectionFormat" class="signatureLink">inactiveSelectionFormat</a> : <a href="../../../flashx/textLayout/edit/SelectionFormat.html">SelectionFormat</a><div class="summaryTableDescription">
+		 The SelectionFormat object used to draw the selection when it is not in the active window.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#textFlow" class="signatureLink">textFlow</a> : <a href="../../../flashx/textLayout/elements/TextFlow.html">flashx.textLayout.elements:TextFlow</a><div class="summaryTableDescription"> 
+		 The TextFlow object managed by this selection manager.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#unfocusedSelectionFormat" class="signatureLink">unfocusedSelectionFormat</a> : <a href="../../../flashx/textLayout/edit/SelectionFormat.html">SelectionFormat</a><div class="summaryTableDescription">
+		 The SelectionFormat object used to draw the selection when it is not in a focused container, but is in
+		 the active window.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#windowActive" class="signatureLink">windowActive</a> : <a href="../../../Boolean.html">Boolean</a><div class="summaryTableDescription">[read-only]  
+		 Indicates whether the window associated with the text flow is active.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../../images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../../images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="hideInheritedMethod" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html#activateHandler()" class="signatureLink">activateHandler</a>(event:<a href="../../../flash/events/Event.html">Event</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		 Processes an activate event.</div></td><td class="summaryTableOwnerCol"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html#deactivateHandler()" class="signatureLink">deactivateHandler</a>(event:<a href="../../../flash/events/Event.html">Event</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		 Processes a deactivate event.</div></td><td class="summaryTableOwnerCol"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html#editHandler()" class="signatureLink">editHandler</a>(event:<a href="../../../flash/events/Event.html">Event</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		 Processes an edit event.</div></td><td class="summaryTableOwnerCol"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a></td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#flushPendingOperations()" class="signatureLink">flushPendingOperations</a>():<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+		 Executes any pending FlowOperations.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="hideInheritedMethod" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html#focusChangeHandler()" class="signatureLink">focusChangeHandler</a>(event:<a href="../../../flash/events/FocusEvent.html">FocusEvent</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		 Processes a focusChange event.</div></td><td class="summaryTableOwnerCol"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html#focusInHandler()" class="signatureLink">focusInHandler</a>(event:<a href="../../../flash/events/FocusEvent.html">FocusEvent</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		 Processes a focusIn event.</div></td><td class="summaryTableOwnerCol"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html#focusOutHandler()" class="signatureLink">focusOutHandler</a>(event:<a href="../../../flash/events/FocusEvent.html">FocusEvent</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		 Processes a focusOut event.</div></td><td class="summaryTableOwnerCol"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a></td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getCommonCharacterFormat()" class="signatureLink">getCommonCharacterFormat</a>(range:<a href="../../../flashx/textLayout/elements/TextRange.html">flashx.textLayout.elements:TextRange</a> = null):<a href="../../../flashx/textLayout/formats/TextLayoutFormat.html">flashx.textLayout.formats:TextLayoutFormat</a></div><div class="summaryTableDescription">
+		 Gets the character format attributes that are common to all characters in the specified text range or current selection.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getCommonContainerFormat()" class="signatureLink">getCommonContainerFormat</a>(range:<a href="../../../flashx/textLayout/elements/TextRange.html">flashx.textLayout.elements:TextRange</a> = null):<a href="../../../flashx/textLayout/formats/TextLayoutFormat.html">flashx.textLayout.formats:TextLayoutFormat</a></div><div class="summaryTableDescription">
+		 Gets the container format attributes that are common to all containers in the specified text range or current selection.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getCommonParagraphFormat()" class="signatureLink">getCommonParagraphFormat</a>(range:<a href="../../../flashx/textLayout/elements/TextRange.html">flashx.textLayout.elements:TextRange</a> = null):<a href="../../../flashx/textLayout/formats/TextLayoutFormat.html">flashx.textLayout.formats:TextLayoutFormat</a></div><div class="summaryTableDescription">
+		 Gets the paragraph format attributes that are common to all paragraphs in the specified text range or current selection.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getSelectionState()" class="signatureLink">getSelectionState</a>():<a href="../../../flashx/textLayout/edit/SelectionState.html">SelectionState</a></div><div class="summaryTableDescription">
+		 Gets the SelectionState object of the current selection.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#hasSelection()" class="signatureLink">hasSelection</a>():<a href="../../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+		 Indicates whether there is a selection.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="hideInheritedMethod" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html#imeStartCompositionHandler()" class="signatureLink">imeStartCompositionHandler</a>(event:<a href="../../../flash/events/IMEEvent.html">IMEEvent</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		 Processes an imeStartComposition event
+		 
+		 </div></td><td class="summaryTableOwnerCol"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a></td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#isRangeSelection()" class="signatureLink">isRangeSelection</a>():<a href="../../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+		 Indicates whether the selection covers a range of text.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="hideInheritedMethod" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html#keyDownHandler()" class="signatureLink">keyDownHandler</a>(event:<a href="../../../flash/events/KeyboardEvent.html">KeyboardEvent</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		Processes a keyDown event.</div></td><td class="summaryTableOwnerCol"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html#keyFocusChangeHandler()" class="signatureLink">keyFocusChangeHandler</a>(event:<a href="../../../flash/events/FocusEvent.html">FocusEvent</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		Processes a keyFocusChange event.</div></td><td class="summaryTableOwnerCol"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html#keyUpHandler()" class="signatureLink">keyUpHandler</a>(event:<a href="../../../flash/events/KeyboardEvent.html">KeyboardEvent</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		Processes a keyUp event.</div></td><td class="summaryTableOwnerCol"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html#menuSelectHandler()" class="signatureLink">menuSelectHandler</a>(event:<a href="../../../flash/events/ContextMenuEvent.html">ContextMenuEvent</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		 Processes a menuSelect event.</div></td><td class="summaryTableOwnerCol"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html#mouseDoubleClickHandler()" class="signatureLink">mouseDoubleClickHandler</a>(event:<a href="../../../flash/events/MouseEvent.html">MouseEvent</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		 Processes a mouseDoubleClick event.</div></td><td class="summaryTableOwnerCol"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html#mouseDownHandler()" class="signatureLink">mouseDownHandler</a>(event:<a href="../../../flash/events/MouseEvent.html">MouseEvent</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		 Processes a mouseDown event.</div></td><td class="summaryTableOwnerCol"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html#mouseMoveHandler()" class="signatureLink">mouseMoveHandler</a>(event:<a href="../../../flash/events/MouseEvent.html">MouseEvent</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		 Processes a mouseMove event.</div></td><td class="summaryTableOwnerCol"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html#mouseOutHandler()" class="signatureLink">mouseOutHandler</a>(event:<a href="../../../flash/events/MouseEvent.html">MouseEvent</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		 Processes a mouseOut event.</div></td><td class="summaryTableOwnerCol"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html#mouseOverHandler()" class="signatureLink">mouseOverHandler</a>(event:<a href="../../../flash/events/MouseEvent.html">MouseEvent</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		 Processes a mouseOver event.</div></td><td class="summaryTableOwnerCol"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html#mouseUpHandler()" class="signatureLink">mouseUpHandler</a>(event:<a href="../../../flash/events/MouseEvent.html">MouseEvent</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		 Processes a mouseUp event.</div></td><td class="summaryTableOwnerCol"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html#mouseWheelHandler()" class="signatureLink">mouseWheelHandler</a>(event:<a href="../../../flash/events/MouseEvent.html">MouseEvent</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		 Processes a mouseWheel event.</div></td><td class="summaryTableOwnerCol"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a></td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#notifyInsertOrDelete()" class="signatureLink">notifyInsertOrDelete</a>(absolutePosition:<a href="../../../int.html">int</a>, length:<a href="../../../int.html">int</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		 Updates the selection manager when text is inserted or deleted.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#refreshSelection()" class="signatureLink">refreshSelection</a>():<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		 Redisplays the selection shapes.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#selectAll()" class="signatureLink">selectAll</a>():<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+		 Selects the entire flow.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#selectRange()" class="signatureLink">selectRange</a>(anchorPosition:<a href="../../../int.html">int</a>, activePosition:<a href="../../../int.html">int</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+		 Selects a range of text.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setFocus()" class="signatureLink">setFocus</a>():<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		 Gives the focus to the first container in the selection.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setSelectionState()" class="signatureLink">setSelectionState</a>(state:<a href="../../../flashx/textLayout/edit/SelectionState.html">SelectionState</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+		 Sets the SelectionState object of the current selection.</div></td><td class="summaryTableOwnerCol">ISelectionManager</td></tr><tr class="hideInheritedMethod" runtime="Flash::10.2##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html#softKeyboardActivatingHandler()" class="signatureLink">softKeyboardActivatingHandler</a>(event:<a href="../../../flash/events/Event.html">Event</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		 Processes an softKeyboardActivating event
+		 
+		 </div></td><td class="summaryTableOwnerCol"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::10##AIR::1.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html#textInputHandler()" class="signatureLink">textInputHandler</a>(event:<a href="../../../flash/events/TextEvent.html">flash.events:TextEvent</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription"> 
+		 Processes a TextEvent.</div></td><td class="summaryTableOwnerCol"><a href="../../../flashx/textLayout/edit/IInteractionEventHandler.html">IInteractionEventHandler</a></td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="absoluteEnd" id="absoluteEnd"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>absoluteEnd</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>absoluteEnd:<a href="../../../int.html">int</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p> 
+		 The text position of the end of the selection, as an offset from the start of the text flow.
+		  
+		 <p>The absolute end is the same as either the active or the anchor point of the selection, whichever comes
+		 last in the text flow.</p>
+		 
+		 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get absoluteEnd():<a href="../../../int.html">int</a></code><br/></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="absoluteStart" id="absoluteStart"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>absoluteStart</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>absoluteStart:<a href="../../../int.html">int</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p> 
+		 The text position of the start of the selection, as an offset from the start of the text flow.
+		  
+		 <p>The absolute start is the same as either the active or the anchor point of the selection, whichever comes
+		 first in the text flow.</p>
+		 
+		 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get absoluteStart():<a href="../../../int.html">int</a></code><br/></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="activePosition" id="activePosition"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>activePosition</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>activePosition:<a href="../../../int.html">int</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p> 
+		 The active point of the selection.
+		 
+		 <p>The <i>active</i> point is the volatile end of the selection. The active point is changed 
+		 when the selection is modified. The active point can be at either the beginning 
+		 or the end of the selection.</p>
+		 
+		 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get activePosition():<a href="../../../int.html">int</a></code><br/></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="anchorPosition" id="anchorPosition"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>anchorPosition</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>anchorPosition:<a href="../../../int.html">int</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p> 
+		 The anchor point of the selection. 
+		 
+		 <p>An <i>anchor</i> point is the stable end of the selection. When the selection
+		 is extended, the anchor point does not change. The anchor point can be at either the beginning 
+		 or the end of the selection.</p>
+		 
+		 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get anchorPosition():<a href="../../../int.html">int</a></code><br/></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="currentSelectionFormat" id="currentSelectionFormat"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>currentSelectionFormat</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>currentSelectionFormat:<a href="../../../flashx/textLayout/edit/SelectionFormat.html">SelectionFormat</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p> 
+		 The current SelectionFormat object.
+		 
+		 <p>The current SelectionFormat object is chosen from the SelectionFormat objects assigned to the 
+		 <code>unfocusedSelectionFormat</code>, <code>inactiveSelectionFormat</code> and <code>focusedSelectionFormat</code> 
+		 properties based on the current state of the <code>windowActive</code> and <code>focused</code> properties.</p> 
+		 
+		 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get currentSelectionFormat():<a href="../../../flashx/textLayout/edit/SelectionFormat.html">SelectionFormat</a></code><br/></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="editingMode" id="editingMode"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>editingMode</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>editingMode:<a href="../../../String.html">String</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 The editing mode. 
+		 
+		 <p>The editing mode indicates whether the text flow supports selection, editing, or only reading.
+		 A text flow is made selectable by assigning a selection manager and editable by assigning an edit manager.
+		 Constants representing the editing modes are defined in the EditingMode class.</p>
+		 
+		 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get editingMode():<a href="../../../String.html">String</a></code><br/><p><span class="label">Related API Elements</span></p><div class="seeAlso">flashx.textLayout.EditingMode</div></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="focused" id="focused"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>focused</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>focused:<a href="../../../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p> 
+		 Indicates whether a container in the text flow has the focus.
+		 
+		 <p>The <code>focused</code> property is <code>true</code> 
+		 if any of the containers in the text flow has key focus.</p> 
+		 
+		 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get focused():<a href="../../../Boolean.html">Boolean</a></code><br/></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="focusedSelectionFormat" id="focusedSelectionFormat"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>focusedSelectionFormat</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>focusedSelectionFormat:<a href="../../../flashx/textLayout/edit/SelectionFormat.html">SelectionFormat</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 The SelectionFormat object used to draw the selection in a focused container. 
+		 
+		 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get focusedSelectionFormat():<a href="../../../flashx/textLayout/edit/SelectionFormat.html">SelectionFormat</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set focusedSelectionFormat(value:<a href="../../../flashx/textLayout/edit/SelectionFormat.html">SelectionFormat</a>):<a href="../../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="inactiveSelectionFormat" id="inactiveSelectionFormat"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>inactiveSelectionFormat</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>inactiveSelectionFormat:<a href="../../../flashx/textLayout/edit/SelectionFormat.html">SelectionFormat</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 The SelectionFormat object used to draw the selection when it is not in the active window.
+		 
+		 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get inactiveSelectionFormat():<a href="../../../flashx/textLayout/edit/SelectionFormat.html">SelectionFormat</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set inactiveSelectionFormat(value:<a href="../../../flashx/textLayout/edit/SelectionFormat.html">SelectionFormat</a>):<a href="../../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="textFlow" id="textFlow"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>textFlow</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>textFlow:<a href="../../../flashx/textLayout/elements/TextFlow.html">flashx.textLayout.elements:TextFlow</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p> 
+		 The TextFlow object managed by this selection manager. 
+		 
+		 <p>A selection manager manages a single text flow. A selection manager can also be
+		 assigned to a text flow by setting the <code>interactionManager</code> property of the
+		 TextFlow object.</p>
+		 
+		 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get textFlow():<a href="../../../flashx/textLayout/elements/TextFlow.html">flashx.textLayout.elements:TextFlow</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set textFlow(value:<a href="../../../flashx/textLayout/elements/TextFlow.html">flashx.textLayout.elements:TextFlow</a>):<a href="../../../specialTypes.html#void">void</a></code><br/><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../../flashx/textLayout/elements/TextFlow.html#interactionManager" target="">flashx.textLayout.elements.TextFlow.interactionManager</a></div></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="unfocusedSelectionFormat" id="unfocusedSelectionFormat"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>unfocusedSelectionFormat</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>unfocusedSelectionFormat:<a href="../../../flashx/textLayout/edit/SelectionFormat.html">SelectionFormat</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 The SelectionFormat object used to draw the selection when it is not in a focused container, but is in
+		 the active window.
+		 
+		 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get unfocusedSelectionFormat():<a href="../../../flashx/textLayout/edit/SelectionFormat.html">SelectionFormat</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set unfocusedSelectionFormat(value:<a href="../../../flashx/textLayout/edit/SelectionFormat.html">SelectionFormat</a>):<a href="../../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="propertyDetail" id="propertyDetail"></a><a name="windowActive" id="windowActive"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>windowActive</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>windowActive:<a href="../../../Boolean.html">Boolean</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p> 
+		 Indicates whether the window associated with the text flow is active.
+		 
+		 <p>The <code>windowActive</code> property is <code>true</code> if the window 
+		 displaying with the text flow is the active window.</p>
+		 
+		 </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get windowActive():<a href="../../../Boolean.html">Boolean</a></code><br/></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="flushPendingOperations()" id="flushPendingOperations()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>flushPendingOperations</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function flushPendingOperations():<a href="../../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 Executes any pending FlowOperations. 
+		 
+		 <p>The execution of some editing operations, such as text insertion, is delayed 
+		 until the next enterFrame event. Calling <code>flushPendingOperations()</code> causes any deferred operations to be executed 
+		 immediately.</p>
+		 
+		 </p></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="getCommonCharacterFormat()" id="getCommonCharacterFormat()"></a><a name="getCommonCharacterFormat(flashx.textLayout.elements.TextRange)" id="getCommonCharacterFormat(flashx.textLayout.elements.TextRange)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getCommonCharacterFormat</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getCommonCharacterFormat(range:<a href="../../../flashx/textLayout/elements/TextRange.html">flashx.textLayout.elements:TextRange</a> = null):<a href="../../../flashx/textLayout/formats/TextLayoutFormat.html">flashx.textLayout.formats:TextLayoutFormat</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 Gets the character format attributes that are common to all characters in the specified text range or current selection.
+		 
+		 <p>Format attributes that do not have the same value for all characters in the specified element range or selection are set to 
+		 <code>null</code> in the returned TextLayoutFormat instance.</p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">range</span>:<a href="../../../flashx/textLayout/elements/TextRange.html">flashx.textLayout.elements:TextRange</a></code> (default = <code>null</code>)<code></code> &mdash; The optional range of text for which common attributes are requested. If null, the current selection is used. 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../flashx/textLayout/formats/TextLayoutFormat.html">flashx.textLayout.formats:TextLayoutFormat</a></code> &mdash; The common character style settings
+		 
+		 </td></tr></table><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example illustrates how to get an ITextLayoutFormat object containing the character style 
+ settings common to all elements in the selection. (The textFlow variable in the example is a TextFlow object.)
+<div class="listing"><pre>
+ var common:ITextLayoutFormat = textFlow.interactionManager.getCommonCharacterFormat();
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="getCommonContainerFormat()" id="getCommonContainerFormat()"></a><a name="getCommonContainerFormat(flashx.textLayout.elements.TextRange)" id="getCommonContainerFormat(flashx.textLayout.elements.TextRange)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getCommonContainerFormat</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getCommonContainerFormat(range:<a href="../../../flashx/textLayout/elements/TextRange.html">flashx.textLayout.elements:TextRange</a> = null):<a href="../../../flashx/textLayout/formats/TextLayoutFormat.html">flashx.textLayout.formats:TextLayoutFormat</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 Gets the container format attributes that are common to all containers in the specified text range or current selection.
+		 
+		 <p>Format attributes that do not have the same value for all containers in the specified element range or selection are set to 
+		 <code>null</code> in the returned TextLayoutFormat instance.</p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">range</span>:<a href="../../../flashx/textLayout/elements/TextRange.html">flashx.textLayout.elements:TextRange</a></code> (default = <code>null</code>)<code></code> &mdash; The optional range of text for which common attributes are requested. If null, the current selection is used. 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../flashx/textLayout/formats/TextLayoutFormat.html">flashx.textLayout.formats:TextLayoutFormat</a></code> &mdash; The common container style settings
+		 
+		 </td></tr></table><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example illustrates how to get an ITextLayoutFormat object containing the container style 
+ settings common to all elements in the selection. (The textFlow variable in the example is a TextFlow object.)
+<div class="listing"><pre>
+ var common:ITextLayoutFormat = textFlow.interactionManager.getCommonContainerFormat();
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="getCommonParagraphFormat()" id="getCommonParagraphFormat()"></a><a name="getCommonParagraphFormat(flashx.textLayout.elements.TextRange)" id="getCommonParagraphFormat(flashx.textLayout.elements.TextRange)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getCommonParagraphFormat</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getCommonParagraphFormat(range:<a href="../../../flashx/textLayout/elements/TextRange.html">flashx.textLayout.elements:TextRange</a> = null):<a href="../../../flashx/textLayout/formats/TextLayoutFormat.html">flashx.textLayout.formats:TextLayoutFormat</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 Gets the paragraph format attributes that are common to all paragraphs in the specified text range or current selection.
+		 
+		 <p>Format attributes that do not have the same value for all paragraphs in the specified element range or selection are set to 
+		 <code>null</code> in the returned TextLayoutFormat instance.</p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">range</span>:<a href="../../../flashx/textLayout/elements/TextRange.html">flashx.textLayout.elements:TextRange</a></code> (default = <code>null</code>)<code></code> &mdash; The optional range of text for which common attributes are requested. If null, the current selection is used. 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../flashx/textLayout/formats/TextLayoutFormat.html">flashx.textLayout.formats:TextLayoutFormat</a></code> &mdash; The common paragraph style settings
+		 
+		 </td></tr></table><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example illustrates how to get an ITextLayoutFormat object containing the paragraph style 
+ settings common to all elements in the selection. (The textFlow variable in the example is a TextFlow object.)
+<div class="listing"><pre>
+ var common:ITextLayoutFormat = textFlow.interactionManager.getCommonParagraphFormat();
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="getSelectionState()" id="getSelectionState()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getSelectionState</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getSelectionState():<a href="../../../flashx/textLayout/edit/SelectionState.html">SelectionState</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 Gets the SelectionState object of the current selection.
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../flashx/textLayout/edit/SelectionState.html">SelectionState</a></code></td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="SelectionState.html" target="">flashx.textLayout.edit.SelectionState</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example gets a SelectionState object for the current selection in a text flow.
+ (The textFlow variable in the example is a TextFlow object.)
+<div class="listing"><pre>
+ var selection:SelectionState = textFlow.interactionManager.getSelectionState();
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="hasSelection()" id="hasSelection()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>hasSelection</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function hasSelection():<a href="../../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 Indicates whether there is a selection. 
+		 
+		 <p>Returns <code>true</code> if there is either a range selection or a point selection. 
+		 By default, when a selection manager is first set up, there is no selection (the start and end are -1).</p>
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../Boolean.html">Boolean</a></code></td></tr></table><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example illustrates how to determine whether there a text flow has a selection.
+ (The textFlow variable in the example is a TextFlow object.)
+<div class="listing"><pre>
+ var selection:SelectionState = textFlow.interactionManager.hasSelection();
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="isRangeSelection()" id="isRangeSelection()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>isRangeSelection</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function isRangeSelection():<a href="../../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 Indicates whether the selection covers a range of text.
+		 
+		 <p>Returns <code>true</code> if there is a selection that extends past a single position.</p> 
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../Boolean.html">Boolean</a></code></td></tr></table><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example illustrates how to determine whether the current selection in a text flow 
+ extends over a range of text. (The textFlow variable in the example is a TextFlow object.)
+<div class="listing"><pre>
+ var selection:SelectionState = textFlow.interactionManager.isRangeSelection();
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="notifyInsertOrDelete()" id="notifyInsertOrDelete()"></a><a name="notifyInsertOrDelete(int,int)" id="notifyInsertOrDelete(int,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>notifyInsertOrDelete</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function notifyInsertOrDelete(absolutePosition:<a href="../../../int.html">int</a>, length:<a href="../../../int.html">int</a>):<a href="../../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p> 
+		 Updates the selection manager when text is inserted or deleted.
+		 
+		 <p>Operations must call <code>notifyInsertOrDelete</code> when changing the text in the text flow. 
+		 The selection manager adjusts index-based position indicators accordingly. If you create a new Operation
+		 class that changes text in a text flow directly (not using another operation) your operation must call this function 
+		 to keep the selection up to date.</p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">absolutePosition</span>:<a href="../../../int.html">int</a></code> &mdash; The point in the text where the change was made.
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">length</span>:<a href="../../../int.html">int</a></code> &mdash; A positive or negative number indicating how many characters were inserted or deleted.
+		 
+		 </td></tr></table></p><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example illustrates how a function in a custom Operation class would 
+ call the <code>notifyInsertOrDelete()</code> method.
+ 
+ <p>This function replaces a range of text in a SpanElement as part of some hypothetical operation.</p> 
+<div class="listing"><pre>
+ import flashx.textLayout.elements.SpanElement;
+ 
+
+function doReplace( span:SpanElement, newText:String, relativeStart:int, relativeEnd:int ):void
+{
+    span.replaceText(  relativeStart, relativeEnd, newText );
+    var parentFlow:TextFlow = span.getTextFlow();
+    var lengthDifference:int = newText.length - (relativeEnd - relativeStart);
+
+    parentFlow.interactionManager.notifyInsertOrDelete(    span.getAbsoluteStart() + relativeStart, lengthDifference );
+}
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="refreshSelection()" id="refreshSelection()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>refreshSelection</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function refreshSelection():<a href="../../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p> 
+		 Redisplays the selection shapes. 
+		 
+		 <p><b>Note:</b> You do not need to call this method directly. It is called automatically.</p>	
+		 
+		 </p></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="selectAll()" id="selectAll()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>selectAll</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function selectAll():<a href="../../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 Selects the entire flow.
+		 
+		 </p></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="selectRange()" id="selectRange()"></a><a name="selectRange(int,int)" id="selectRange(int,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>selectRange</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function selectRange(anchorPosition:<a href="../../../int.html">int</a>, activePosition:<a href="../../../int.html">int</a>):<a href="../../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 Selects a range of text.
+		 
+		 <p>If a negative number is passed as either of the parameters, then any existing selection is
+		 removed.</p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">anchorPosition</span>:<a href="../../../int.html">int</a></code> &mdash; The anchor point for the new selection, as an absolute position in the TextFlow 
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">activePosition</span>:<a href="../../../int.html">int</a></code> &mdash; The active end of the new selection, as an absolute position in the TextFlow
+		 
+		 </td></tr></table></p><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example creates a text flow and makes a selection:
+<div class="listing"><pre>
+ var textFlow:TextFlow = TextConverter.importToFlow( "Let me not to the marriage of true minds", TextConverter.PLAIN_TEXT_FORMAT );
+ textFlow.interactionManager = new SelectionManager();
+ 
+ textFlow.interactionManager.selectRange( 18, 26 ); // Selects the word 'marriage'
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="setFocus()" id="setFocus()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>setFocus</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setFocus():<a href="../../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p> 
+		 Gives the focus to the first container in the selection.
+		  
+		 </p><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example sets the focus to the first container in the current selection 
+ of a text flow. (The textFlow variable in the example is a TextFlow object.)
+<div class="listing"><pre>
+ textFlow.interactionManager.setFocus();
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::10##AIR::1.5##"><a name="setSelectionState()" id="setSelectionState()"></a><a name="setSelectionState(flashx.textLayout.edit.SelectionState)" id="setSelectionState(flashx.textLayout.edit.SelectionState)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>setSelectionState</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setSelectionState(state:<a href="../../../flashx/textLayout/edit/SelectionState.html">SelectionState</a>):<a href="../../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10, AIR 1.5</td></tr></table><p></p><p></p><p>
+		 Sets the SelectionState object of the current selection.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">state</span>:<a href="../../../flashx/textLayout/edit/SelectionState.html">SelectionState</a></code></td></tr></table></p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="SelectionState.html" target="">flashx.textLayout.edit.SelectionState</a></div></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

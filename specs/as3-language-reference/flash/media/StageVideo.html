@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="air"><meta name="runtimever" content="air:2.5"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:10.2"><meta name="product" content="air"><meta name="productver" content="air:2.5"><meta name="product" content="flash player"><meta name="productver" content="flash player:10.2"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="StageVideo,flash.media.StageVideo,colorSpaces,depth,pan,videoHeight,videoWidth,viewPort,zoom,attachCamera,attachNetStream"><title>StageVideo - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">flash.media&nbsp;</a><br>
+								<h1 id="classProductName">StageVideo&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">flash.media</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  StageVideo</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">StageVideo  <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../flash/events/EventDispatcher.html">EventDispatcher</a> <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../Object.html">Object</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.5, Flash Player 10.2</td></tr></table><p></p><p></p><p></p>
+    The StageVideo object uses the device's hardware acceleration capabilities, if available, to display 
+	live or recorded video in an application. Hardware acceleration capabilities are available on most devices.
+	See the flash.net.NetStream class for more information about supported formats.
+	
+    <p>
+                  <i>AIR profile support:</i> In AIR 3, all AIR for TV devices and some mobile devices support this 
+    feature. AIR 3 for iOS uses the StageVideo object for H.264 video with hardware decoding, with limited supported for NetStream functionality. 
+    AIR 3 for iOS also supports On2 and Sorenson codecs through the StageVideo object. This support does not use hardware decoding, and it does not 
+    limit NetStream functionality. In AIR 2.5, only AIR for TV devices support this feature. Furthermore, ActionScript for this feature
+    in AIR 2.5 for TV is different than the ActionScript for AIR 3 or Flash Player 10.2.
+    The differences are noted in the ActionScript descriptions. 
+    See 
+    <a href="http://help.adobe.com/en_US/air/build/WS144092a96ffef7cc16ddeea2126bb46b82f-8000.html" >
+    AIR Profile Support</a> for more information regarding API support across multiple profiles.  
+	The StageVideo class is not supported in the AIR desktop or extendedDesktop profiles. 
+    </p>
+       
+	              <p>The video displayed by the StageVideo object always appears in a rectangular area on the stage 
+	behind all Flash display list objects. Therefore, the StageVideo object takes advantage of hardware acceleration
+	while supporting the most common case for displaying video: a rectangular display area overlaid with
+    video controls.</p>	
+	
+	
+	              <p>The benefits to using a StageVideo object instead of the Video object are:</p>
+	
+ 	             <p>
+                  <ul>
+                     <li>Improved video display performance because of using hardware acceleration.</li>
+                     <li>Decreased CPU usage.</li>
+                     <li>Flexibility and creativity for development of content, such as video controls, 
+	that appears in front of the StageVideo object.</li>
+                  </ul>
+               </p>
+ 		
+	              <p>Because the device's hardware displays the video, a StageVideo object is subject to the following constraints 
+	compared to a Video object:</p>
+	
+ 	             <p>
+                  <ul>
+                     <li>For each SWF file, Flash Player limits the number of StageVideo objects that can concurrently display 
+ 	videos to four. However, the actual limit can be lower, depending on device hardware resources. 
+    On AIR for TV devices, only one StageVideo object at a time can display a video.</li>
+                     <li>The video timing is not synchronized with the timing of Flash content that the runtime displays.</li>
+                     <li>The video display area can only be a rectangle. You cannot use more advanced display areas, such as
+    elliptical or irregular shapes.</li>
+                     <li>You cannot rotate the video.</li>
+                     <li>You cannot bitmap cache the video or use BitmapData to access it.</li>
+                     <li>You cannot apply filters to the video.</li>
+                     <li>You cannot apply color transforms to the video.</li>
+                     <li>You cannot apply an alpha value to the video.</li>
+                     <li>Blend modes that you apply to display objects that are in front of the video do not apply to the video.</li>
+                     <li>You can place the video only on full pixel boundaries.</li>
+                     <li>Though the rendering is the best available for the given device hardware, it is not 100% "pixel identical" across devices. 
+	Slight variations occur due to driver and platform differences.</li>
+                     <li>A few devices do not support all required color spaces. For example, some devices do not support BT.709, the H.264 standard. In such
+	cases you can use BT.601 for fast display.</li>
+                     <li>You cannot use stage video with WMODE settings such as <code>normal</code>, <code>opaque</code>, or <code>transparent</code>. 
+	Stage video supports only <code>WMODE=direct</code> when not in full screen mode. WMODE has no effect in Safari 4 or higher, IE 9 or higher,
+	or in AIR for TV.</li>
+                     <li>When using StageVideo in an AIR for Android application, set the <code>colorDepth</code> to <i>32bit</i> in the application descriptor.
+	Using StageVideo with a 16-bit color depth is not supported. </li>
+                     <li>On Android, StageVideo is only supported on devices running Android 3 (Honeycomb) and higher. To enable your app
+	to run on the widest possible selection of Android devices, always provide logic to display video
+	using the Video object when StageVideo is not available.</li>
+                  </ul>
+               </p>
+ 	
+               <p>The following steps summarize how to use a StageVideo object to play a video:</p>
+	
+	              <p>
+                  <ol>
+                     <li>Listen for the StageVideoAvailabilityEvent.STAGE_VIDEO_AVAILABILITY event to find out when the 
+	Stage.stageVideos vector has changed. (Not supported for AIR 2.5 for TV.) </li>
+                     <li>If the StageVideoAvailabilityEvent.STAGE_VIDEO_AVAILABILITY event reports that stage video is available,
+	use the <code>Stage.stageVideos</code> Vector object within the event handler to access a StageVideo object. 
+	In AIR 2.5 for TV, access <code>Stage.stageVideos</code> after the first SWF frame has rendered.
+	 <b>Note</b> You cannot create a StageVideo object.</li>
+                     <li>Attach a NetStream object using <code>StageVideo.attachNetStream()</code>.</li>
+                     <li>Play the video using <code>NetStream.play()</code>.</li>
+                     <li>Listen for the <code>StageVideoEvent.RENDER_STATE</code> event on the StageVideo object to determine the status of playing the video. 
+	Receipt of this event also indicates that the width and height properties of the video have been initialized or changed. </li>
+                     <li>Listen for the <code>VideoEvent.RENDER_STATE</code> event on the Video object. This event provides the same statuses as 
+	StageVideoEvent.RENDER_STATE, so you can also use it to determine whether GPU acceleration is available. Receipt of this event 
+	also indicates that the width and height properties of the video have been initialized or changed. (Not supported for AIR 2.5 for TV.)</li>
+                  </ol>
+               </p>
+	
+    
+               <p>If a <code>StageVideoEvent.RENDER_STATE</code> event indicates that the video cannot be played, 
+    you can revert to using a Video object instead of a StageVideo object. This event is
+	dispatched after the video has been attached to a NetStream object and is playing. Also, depending on the platform, 
+	any change in the playing status can result in dispatching the event.
+    Handle the <code>StageVideoEvent.RENDER_STATE</code> event to ensure that the application plays the video
+	or gracefully does not play the video.
+	</p>
+    
+               <p>If a running video goes into full screen mode from a WMODE that does not support stage video, stage video can become available. 
+    Likewise, if the user exits full screen mode, stage video can become unavailable. In these cases, the Stage.stageVideos vector changes. 
+    To receive notification of this change, listen to the StageVideoAvailabilityEvent.STAGE_VIDEO_AVAILABITY event. <b>NOTE:</b> This notification 
+    is not available in AIR 2.5 for TV.</p>
+            <p></p><p id="learnMore"><span class="classHeaderTableLabel">Learn more</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7d50.html" target="_blank">Basics of video</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7d46.html" target="_blank">Understanding video formats</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WSF5341774-D3CE-4749-93AE-3BA62B73733C.html" target="_blank">Flash Player and AIR compatibility
+with encoded video files</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS513F633F-460F-43aa-9A10-839853A1ECA4.html" target="_blank">Understanding the Adobe F4V and
+FLV video file formats</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7d48.html" target="_blank">Advanced topics for video files</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7d47.html" target="_blank">Video example: Video Jukebox</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WSe9ecd9e6b89aefd2-68d5ef8f12cc8511f6c-8000.html" target="_blank">Using the StageVideo class for
+hardware accelerated presentation</a><br/><a href="http://www.adobe.com/go/learn_as3_stageVideo_en" target="_blank">Using the StageVideo class for hardware-accelerated rendering</a></div><p><span class="classHeaderTableLabel">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/events/StageVideoEvent.html" target="">flash.events.StageVideoEvent</a><br/><a href="../../flash/events/StageVideoAvailabilityEvent.html" target="">flash.events.StageVideoAvailabilityEvent</a><br/><a href="../../flash/events/VideoEvent.html" target="">flash.events.VideoEvent</a><br/><a href="../../flash/display/Stage.html#stageVideos" target="">flash.display.Stage.stageVideos</a><br/><a href="Video.html" target="">flash.media.Video</a><br/><a href="../../flash/net/NetStream.html" target="">flash.net.NetStream</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="" runtime="AIR::2.5##Flash::10.2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#colorSpaces" class="signatureLink">colorSpaces</a> : <a href="../../Vector.html">Vector</a>.&lt;<a href="../../String.html">String</a>&gt;<div class="summaryTableDescription">[read-only] 
+        Returns the names of available color spaces for this video surface.</div></td><td class="summaryTableOwnerCol">StageVideo</td></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../Object.html#constructor" class="signatureLink">constructor</a> : <a href="../../Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="AIR::2.5##Flash::10.2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#depth" class="signatureLink">depth</a> : <a href="../../int.html">int</a><div class="summaryTableDescription">
+        The depth level of a StageVideo object relative to other StageVideo objects.</div></td><td class="summaryTableOwnerCol">StageVideo</td></tr><tr class="" runtime="AIR::2.5##Flash::10.2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#pan" class="signatureLink">pan</a> : <a href="../../flash/geom/Point.html">Point</a><div class="summaryTableDescription">
+        The pan setting for displaying the video, specified as a Point object.</div></td><td class="summaryTableOwnerCol">StageVideo</td></tr><tr class="" runtime="AIR::2.5##Flash::10.2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#videoHeight" class="signatureLink">videoHeight</a> : <a href="../../int.html">int</a><div class="summaryTableDescription">[read-only] 
+		An integer specifying the height of the video stream, in pixels.</div></td><td class="summaryTableOwnerCol">StageVideo</td></tr><tr class="" runtime="AIR::2.5##Flash::10.2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#videoWidth" class="signatureLink">videoWidth</a> : <a href="../../int.html">int</a><div class="summaryTableDescription">[read-only] 
+		An integer specifying the width of the video stream, in pixels.</div></td><td class="summaryTableOwnerCol">StageVideo</td></tr><tr class="" runtime="AIR::2.5##Flash::10.2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#viewPort" class="signatureLink">viewPort</a> : <a href="../../flash/geom/Rectangle.html">Rectangle</a><div class="summaryTableDescription">
+        The absolute position and size of the video surface in pixels.</div></td><td class="summaryTableOwnerCol">StageVideo</td></tr><tr class="" runtime="AIR::2.5##Flash::10.2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#zoom" class="signatureLink">zoom</a> : <a href="../../flash/geom/Point.html">Point</a><div class="summaryTableDescription">
+        The zoom setting of the video, specified as a Point object.</div></td><td class="summaryTableOwnerCol">StageVideo</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#addEventListener()" class="signatureLink">addEventListener</a>(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false, priority:<a href="../../int.html">int</a> = 0, useWeakReference:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	Registers an event listener object with an EventDispatcher object so that the listener 
+	receives notification of an event.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="" runtime="Flash::11.4##AIR::3.4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#attachCamera()" class="signatureLink">attachCamera</a>(theCamera:<a href="../../flash/media/Camera.html">Camera</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	Specifies a video stream from a camera to be displayed
+	within the boundaries of the StageVideo object in the application, leveraging the GPU for rendering.</div></td><td class="summaryTableOwnerCol">StageVideo</td></tr><tr class="" runtime="AIR::2.5##Flash::10.2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#attachNetStream()" class="signatureLink">attachNetStream</a>(netStream:<a href="../../flash/net/NetStream.html">NetStream</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+        Specifies a video stream to be displayed within the boundaries of the StageVideo object in the application.</div></td><td class="summaryTableOwnerCol">StageVideo</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#dispatchEvent()" class="signatureLink">dispatchEvent</a>(event:<a href="../../flash/events/Event.html">Event</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Dispatches an event into the event flow.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#hasEventListener()" class="signatureLink">hasEventListener</a>(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Checks whether the EventDispatcher object has any listeners registered for a specific type 
+	of event.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#removeEventListener()" class="signatureLink">removeEventListener</a>(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	Removes a listener from the EventDispatcher object.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="../../String.html">String</a>, isEnum:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toString()" class="signatureLink">toString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+	 Returns the primitive value of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#willTrigger()" class="signatureLink">willTrigger</a>(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Checks whether an event listener is registered with this EventDispatcher object or any of 
+	its ancestors for the specified event type.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="eventSummary" id="eventSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Events</div><div class="showHideLinks"><a href="http://help.adobe.com/en_US/Flex/4.6/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7ee9.html" target="_blank">Click for more information on events</a></div><div class="showHideLinks"><div id="hideInheritedEvent" class="hideInheritedEvent"><a class="showHideLink" href="#eventSummary" onclick="javascript:setInheritedVisible(false,'Event');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Events</a></div><div id="showInheritedEvent" class="showInheritedEvent"><a class="showHideLink" href="#eventSummary" onclick="javascript:setInheritedVisible(true,'Event');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Events</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableEvent"><tr><th>&nbsp;</th><th colspan="2">Event</th><th> Summary </th><th>Defined By</th></tr><tr class="hideInheritedEvent" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#event:activate" class="signatureLink">activate</a></div></td><td class="summaryTableDescription summaryTableCol">[broadcast event] Dispatched when the Flash Player or AIR application gains operating system focus and becomes active.</td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedEvent" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#event:deactivate" class="signatureLink">deactivate</a></div></td><td class="summaryTableDescription summaryTableCol">[broadcast event] Dispatched when the Flash Player or AIR application operating loses system focus and is becoming inactive.</td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="" runtime="AIR::2.5##Flash::10.2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:renderState" class="signatureLink">renderState</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatched by the StageVideo object when the render state of the StageVideo object changes.</td><td class="summaryTableOwnerCol">StageVideo</td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="AIR::2.5##Flash::10.2##"><a name="propertyDetail" id="propertyDetail"></a><a name="colorSpaces" id="colorSpaces"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>colorSpaces</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>colorSpaces:<a href="../../Vector.html">Vector</a>.&lt;<a href="../../String.html">String</a>&gt;</code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.5, Flash Player 10.2</td></tr></table><p></p><p></p><p>
+        Returns the names of available color spaces for this video surface.
+        Usually this list includes "BT.601" and "BT.709". On some configurations, only
+        "BT.601" is supported which means a video is possibly not rendered in the
+        correct color space.
+		
+		<p><b>Note:</b> On AIR for TV devices, a value of "BT.601" indicates software playback, 
+		and a value of "BT.709" indicates hardware playback. </p>
+		
+        </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get colorSpaces():<a href="../../Vector.html">Vector</a>.&lt;<a href="../../String.html">String</a>&gt;</code><br/></div></span><span id="pageFilter" runtime="AIR::2.5##Flash::10.2##"><a name="propertyDetail" id="propertyDetail"></a><a name="depth" id="depth"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>depth</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>depth:<a href="../../int.html">int</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.5, Flash Player 10.2</td></tr></table><p></p><p></p><p>
+        The depth level of a StageVideo object relative to other StageVideo objects.
+		
+		<p>StageVideo objects always display behind other objects on the stage. If a platform supports more than one 
+		StageVideo object, the <code>depth</code> property indicates a StageVideo object's depth level.
+		The bottom StageVideo object's <code>depth</code> property has the smallest value. 
+		If multiple StageVideo objects have the same depth setting, the order they appear in the
+		<code>stage,stageVideos</code> Vector determines their relative depth.</p>	
+		
+        <p><b>Note:</b> AIR for TV devices support only one StageVideo object. Therefore, this property is not
+        applicable for those devices.</p> 
+		
+        </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get depth():<a href="../../int.html">int</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set depth(value:<a href="../../int.html">int</a>):<a href="../../specialTypes.html#void">void</a></code><br/><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/display/Stage.html#stageVideos" target="">flash.display.Stage.stageVideos</a></div></div></span><span id="pageFilter" runtime="AIR::2.5##Flash::10.2##"><a name="propertyDetail" id="propertyDetail"></a><a name="pan" id="pan"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>pan</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>pan:<a href="../../flash/geom/Point.html">Point</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.5, Flash Player 10.2</td></tr></table><p></p><p></p><p>
+        The pan setting for displaying the video, specified as a Point object. 
+        
+        <p>By default, the value of <code>pan</code> is <code>(0,0)</code>.
+		This default value centers the video in the rectangle specified by <code>StageVideo.viewPort</code>.</p>
+		
+		<p>The <code>pan</code> value is significant only when the <code>zoom</code> property value is not the 
+		default value <code>(1.0, 1.0)</code>. When a video displays in the <code>StageVideo.viewPort</code> rectangle
+		with the default <code>zoom</code> value, the platform sizes the video to fit exactly into the rectangle. Therefore, the entire
+		video is visible. However, if a zoom factor is specified, the entire video is not visible. In this case, you can
+		set the <code>pan</code> value to specify which subrectangle of the video to show 
+		in the <code>StageVideo.viewPort</code> rectangle.</p>
+		
+		<p>The valid values of the <code>pan</code> property range from <code>(-1.0, -1.0)</code> to <code>(1.0, 1.0)</code>.
+		Specifically:</p>
+		
+		<p><ul><li>
+		A <code>pan</code> value of <code>(-1.0, -1.0)</code> places the upper-left pixel of the video at the upper-left 
+		position of the <code>StageVideo.viewPort</code> rectangle.
+		</li><li>
+		A <code>pan</code> value of <code>(1.0, 1.0)</code> places the lower-right pixel of the video at the lower-right 
+		position of the <code>StageVideo.viewPort</code> rectangle.
+		</li><li>
+		A <code>pan</code> value of <code>(1.0, -1.0)</code> places the upper-right pixel of the video at the upper-right 
+		position of the <code>StageVideo.viewPort</code> rectangle.
+		</li><li>
+		A <code>pan</code> value of <code>(-1.0, 1.0)</code> places the lower-left pixel of the video at the lower-left
+		position of the <code>StageVideo.viewPort</code> rectangle.
+		</li></ul>
+		</p>
+		
+		<p>Values between -1.0 and 1.0 pan according to scale.</p>
+        
+        <p>If you set the <code>pan</code> property to a value outside the valid range, 
+        a <code>RangeError</code> exception is thrown. 
+        The runtime resets the value to the last valid value.</p>
+        
+        <p>Also, consider that to use a StageVideo object, you assign an element
+        of the <code>Stage.stageVideos</code> Vector object to a StageVideo variable. When you set
+        the <code>pan</code> property of the StageVideo variable, the underlying <code>Stage.stageVideos</code> Vector 
+        element also changes. If you later assign that element to another StageVideo variable to play 
+        another video, reset the <code>pan</code> property.</p>
+        
+        </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get pan():<a href="../../flash/geom/Point.html">Point</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set pan(value:<a href="../../flash/geom/Point.html">Point</a>):<a href="../../specialTypes.html#void">void</a></code><br/><br/><span class="label"> Throws </span><br/><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../RangeError.html">RangeError</a> </code> &mdash; The Point value is not valid.
+		
+		</td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="StageVideo.html#zoom" target="">zoom</a></div></div></span><span id="pageFilter" runtime="AIR::2.5##Flash::10.2##"><a name="propertyDetail" id="propertyDetail"></a><a name="videoHeight" id="videoHeight"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>videoHeight</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>videoHeight:<a href="../../int.html">int</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.5, Flash Player 10.2</td></tr></table><p></p><p></p><p>
+		An integer specifying the height of the video stream, in pixels.
+		
+		<p>You may want to use this property, for example, to ensure that the user is seeing the
+		video at the same height at which it was captured,
+		regardless of the size of the <code>StageVideo.viewPort</code> rectangle.</p>		
+		The NetStream.Video.DimensionChange event is dispatched in the case of recorded videos 
+		when this value changes.
+		
+        </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get videoHeight():<a href="../../int.html">int</a></code><br/></div></span><span id="pageFilter" runtime="AIR::2.5##Flash::10.2##"><a name="propertyDetail" id="propertyDetail"></a><a name="videoWidth" id="videoWidth"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>videoWidth</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>videoWidth:<a href="../../int.html">int</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.5, Flash Player 10.2</td></tr></table><p></p><p></p><p>
+		An integer specifying the width of the video stream, in pixels.
+		
+		<p>You may want to use this property, for example, to ensure that the user is seeing the
+		video at the same width at which it was captured,
+		regardless of the size of the <code>StageVideo.viewPort</code> rectangle.</p>		
+		The NetStream.Video.DimensionChange event is dispatched in the case of recorded videos 
+		when this value changes.
+		
+        </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get videoWidth():<a href="../../int.html">int</a></code><br/></div></span><span id="pageFilter" runtime="AIR::2.5##Flash::10.2##"><a name="propertyDetail" id="propertyDetail"></a><a name="viewPort" id="viewPort"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>viewPort</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>viewPort:<a href="../../flash/geom/Rectangle.html">Rectangle</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.5, Flash Player 10.2</td></tr></table><p></p><p></p><p>
+        The absolute position and size of the video surface in pixels.
+        
+        <p>The position of the video is relative to the upper left corner of the stage.</p>
+        
+        <p>
+        The valid range of the <code>x</code> and <code>y</code> properties of the <code>viewPort</code> 
+        Rectangle object are -8192 to 8191. Therefore, you can position the video 
+        completely or partially off the stage. You can also make the video larger than the stage if you 
+        make the <code>width</code> and <code>height</code> properties of the <code>viewPort</code>
+        property larger than the stage.</p>
+        
+        </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get viewPort():<a href="../../flash/geom/Rectangle.html">Rectangle</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set viewPort(value:<a href="../../flash/geom/Rectangle.html">Rectangle</a>):<a href="../../specialTypes.html#void">void</a></code><br/><br/><span class="label"> Throws </span><br/><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../RangeError.html">RangeError</a> </code> &mdash; The Rectangle value is not valid.
+        </td></tr></table></div></span><span id="pageFilter" runtime="AIR::2.5##Flash::10.2##"><a name="propertyDetail" id="propertyDetail"></a><a name="zoom" id="zoom"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>zoom</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>zoom:<a href="../../flash/geom/Point.html">Point</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.5, Flash Player 10.2</td></tr></table><p></p><p></p><p>
+        The zoom setting of the video, specified as a Point object. 
+        
+        <p>The zoom point is a scale factor. By default, the value of <code>zoom</code> is <code>(1.0, 1.0)</code>.
+		This default value displays the entire video in the <code>StageVideo.viewPort</code> rectangle.</p>
+        
+	    <p>The valid values of the <code>zoom</code> property range from <code>(1.0, 1.0)</code> to <code>(8.0, 8.0)</code>.
+		The <code>x</code> property of the zoom Point object specifies the zoom value for the horizontal pixels, and 
+		the y property specifies the zoom value for the vertical pixels.</p>
+		
+		<p>For example, a <code>zoom</code> value of <code>(2.0, 2.0)</code> displays only half the horizontal pixels 
+		and half the vertical pixels in the <code>StageVideo.viewPort</code> rectangle. That is, the video still fills the
+		<code>StageVideo.viewPort</code> rectangle, but only half the video is visible, creating a 2x zoom effect.
+		Similarly, a <code>zoom</code> value of <code>(8.0, 8.0)</code> displays only 1/8 of the horizontal pixels 
+		and 1/8 of the vertical pixels in the <code>StageVideo.viewPort</code> rectangle, 
+		zooming in the maximum amount of 8x.</p>
+		
+		<p>When you set the <code>zoom</code> property, set the <code>pan</code> property so that the <code>StageVideo.viewPort</code> rectangle
+		shows the appropriate subrectangle of the video.</p>
+		
+		<p>Consider the following situation where it is useful to set a different value for the 
+		<code>x</code> and <code>y</code> properties of the <code>zoom</code> Point object. 
+		First, note that when a video displays in the <code>StageVideo.viewPort</code> rectangle
+		with the default <code>zoom</code> value, the platform sizes the video to fit exactly into the rectangle. 
+		If the video's rectangle does not scale evenly to the <code>StageVideo.viewPort</code> rectangle, 
+		the video display can be distorted.
+        That is, the aspect ratios of the video and the <code>StageVideo.viewPort</code> are not equal.      
+		This case can occur, for example, if the video has a different width than height, but the <code>StageVideo.viewPort</code> 
+		property specifies a square. 
+		To resolve the distortion, set different values for the 
+		<code>x</code> and <code>y</code> properties of the <code>zoom</code> Point object. 
+		Then set the <code>pan</code> property to make sure the <code>StageVideo.viewPort</code> rectangle
+		shows the appropriate subrectangle of the video.</p> 
+        
+        <p>If you set the <code>zoom</code> property to a value outside the valid range, 
+        a <code>RangeError</code> exception is thrown. 
+        The runtime resets the value to the last valid value.</p>
+        
+        <p>Also, consider that to use a StageVideo object, you assign an element
+        of the <code>Stage.stageVideos</code> Vector object to a StageVideo variable. When you set 
+        the <code>zoom</code> property of the StageVideo variable, the underlying <code>Stage.stageVideos</code> Vector 
+        element also changes. If you later assign that element to another StageVideo variable to play 
+        another video, reset the <code>zoom</code> property.</p>       
+		
+		
+        </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get zoom():<a href="../../flash/geom/Point.html">Point</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set zoom(value:<a href="../../flash/geom/Point.html">Point</a>):<a href="../../specialTypes.html#void">void</a></code><br/><br/><span class="label"> Throws </span><br/><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../RangeError.html">RangeError</a> </code> &mdash; The Point value is not valid.
+		
+		</td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="StageVideo.html#pan" target="">pan</a></div></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::11.4##AIR::3.4##"><a name="attachCamera()" id="attachCamera()"></a><a name="attachCamera(flash.media.Camera)" id="attachCamera(flash.media.Camera)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>attachCamera</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function attachCamera(theCamera:<a href="../../flash/media/Camera.html">Camera</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 11.4, AIR 3.4</td></tr></table><p></p><p></p><p>
+	Specifies a video stream from a camera to be displayed
+	within the boundaries of the StageVideo object in the application, leveraging the GPU for rendering.
+	
+        <p><b>Note:</b> StageVideo for camera is not supported on Android.</p>
+        
+	<p>Use this method to attach live video captured by the user
+	to the StageVideo object. To drop the connection to the StageVideo object, pass <code>null</code>.</p>
+	
+	</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">theCamera</span>:<a href="../../flash/media/Camera.html">Camera</a></code> &mdash; A Camera object that is capturing video data. 
+	
+	</td></tr></table></p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Video.html#attachCamera()" target="">flash.media.Video.attachCamera()</a><br/><a href="Camera.html" target="">flash.media.Camera</a></div></div></span><span id="pageFilter" runtime="AIR::2.5##Flash::10.2##"><a name="attachNetStream()" id="attachNetStream()"></a><a name="attachNetStream(flash.net.NetStream)" id="attachNetStream(flash.net.NetStream)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>attachNetStream</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function attachNetStream(netStream:<a href="../../flash/net/NetStream.html">NetStream</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.5, Flash Player 10.2</td></tr></table><p></p><p></p><p>
+        Specifies a video stream to be displayed within the boundaries of the StageVideo object in the application. 
+        The video stream is either a video file played with NetStream.play(), or <code>null</code>.
+        A video file can be stored on the local file 
+        system or on Flash Media Server. If the value of the <code>netStream</code> argument is <code>null</code>, 
+        the video is no longer played in the StageVideo object.
+        
+        
+        <p>Before calling <code>attachNetStream()</code> a second time,
+        call the currently attached NetStream object's <code>close()</code> method. 
+        Calling <code>close()</code>  
+        releases all the resources, including hardware decoders, involved with playing the video. 
+        Then you can call <code>attachNetStream()</code>
+        with either another NetStream object or <code>null</code>.</p>
+        
+        <p>
+        You do not need to use this method if a video file contains only audio; the audio
+        portion of a video file is played automatically
+        when you call <code>NetStream.play()</code>. To control the audio 
+        associated with a video file, use the <code>soundTransform</code> property         
+        of the NetStream object that plays the video file.
+        </p>        
+        
+        </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">netStream</span>:<a href="../../flash/net/NetStream.html">NetStream</a></code> &mdash; A NetStream object. To drop the connection to the StageVideo object, pass
+        <code>null</code>.
+        </td></tr></table></p></div></span><div class="detailSectionHeader"> Event Detail </div><span id="pageFilter" runtime="AIR::2.5##Flash::10.2##"><a name="event:renderState" id="event:renderState"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>renderState</h3></td><td class="detailHeaderType"> Event </td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../flash/events/StageVideoEvent.html"><code>flash.events.StageVideoEvent</code></a><br/><span class="label">property StageVideoEvent.type  =  </span><a href="../../flash/events/StageVideoEvent.html#RENDER_STATE"><code>flash.events.StageVideoEvent.RENDER_STATE</code></a><br/><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.5, Flash Player 10.2</td></tr></table><p></p><p></p><p>
+	 Dispatched by the StageVideo object when the render state of the StageVideo object changes.
+	 
+	 </p>
+		The <code>StageVideoEvent.RENDER_STATE</code> constant defines the value of the <code>type</code> property of a <code>renderState</code> event object. 
+		<p>This event has the following properties:</p>
+		 <table class="innertable" ><tr><th>Property</th><th>Value</th></tr><tr><td><code>bubbles</code></td><td><code>false</code></td></tr><tr><td><code>cancelable</code></td><td><code>false</code>; there is no default behavior to cancel.</td></tr><tr><td><code>colorSpace</code></td><td>The available color spaces for displaying the video.</td></tr><tr><td><code>currentTarget</code></td><td>The object that is actively processing the StageVideoEvent 
+		object with an event listener.</td></tr><tr><td><code>status</code></td><td>Indicates whether the video is being rendered (decoded and displayed) by hardware or software, or not at all.</td></tr><tr><td><code>target</code></td><td>The StageVideo object that changed state.</td></tr></table>
+		
+		</div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,true,false,true,false,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

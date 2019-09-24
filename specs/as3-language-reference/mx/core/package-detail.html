@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><title>mx.core - Adobe ActionScript&reg; 3 (AS3) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">&nbsp;</a><br>
+								<h1 id="classProductName">mx.core&nbsp;</h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript" xml:space="preserve">                
+        
+        				
+        <!--				
+          				    				
+          					
+          titleBar_setSubNav(false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,false)
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script><br xmlns:xd="http://www.pnp-software.com/XSLTdoc"><p xmlns:xd="http://www.pnp-software.com/XSLTdoc">The mx.core package contains the base classes and interfaces, such as UIComponent, used by Flex.</p><br xmlns:xd="http://www.pnp-software.com/XSLTdoc"><hr xmlns:xd="http://www.pnp-software.com/XSLTdoc"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="interfaceSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summaryTableTitle">Interfaces</div><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" cellpadding="3" cellspacing="0" class="summaryTable" id="summaryTableIdInterface"><tr><th>&nbsp;</th><th width="30%">Interface</th><th width="70%">Description</th></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4.1##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IAssetLayoutFeatures.html" onclick="clearAllClassesListCookie();">IAssetLayoutFeatures</a></i></td><td class="summaryTableLastCol">
+  The IAssetLayoutFeatures interface defines the minimum properties and methods 
+  required for an Object to support advanced transforms in embedded assets.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IBorder.html" onclick="clearAllClassesListCookie();">IBorder</a></i></td><td class="summaryTableLastCol">
+  The IBorder interface defines the interface that all classes 
+  used for border skins should implement.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IButton.html" onclick="clearAllClassesListCookie();">IButton</a></i></td><td class="summaryTableLastCol">
+  The IButton interface is a marker interface that indicates that a component
+  acts as a button.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IChildList.html" onclick="clearAllClassesListCookie();">IChildList</a></i></td><td class="summaryTableLastCol">
+  The IChildList interface defines the properties and methods
+  for accessing and manipulating child lists, which are subsets
+  of a DisplayObjectContainer's children.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IConstraintClient.html" onclick="clearAllClassesListCookie();">IConstraintClient</a></i></td><td class="summaryTableLastCol">
+  The IConstraintClient interface defines the interface for components that
+  support layout constraints.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IContainer.html" onclick="clearAllClassesListCookie();">IContainer</a></i></td><td class="summaryTableLastCol">
+  IContainer is a interface that indicates a component
+  extends or mimics mx.core.Container
+ 
+  </td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IDataRenderer.html" onclick="clearAllClassesListCookie();">IDataRenderer</a></i></td><td class="summaryTableLastCol">
+  The IDataRenderer interface defines the interface for components that have a data property.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IDeferredContentOwner.html" onclick="clearAllClassesListCookie();">IDeferredContentOwner</a></i></td><td class="summaryTableLastCol">
+  The IDeferredContentOwner interface defines the properties and methods
+  for deferred instantiation.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IDeferredInstance.html" onclick="clearAllClassesListCookie();">IDeferredInstance</a></i></td><td class="summaryTableLastCol">
+  The IDeferredInstance interface defines the Flex deferred instance factory interface.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IDeferredInstantiationUIComponent.html" onclick="clearAllClassesListCookie();">IDeferredInstantiationUIComponent</a></i></td><td class="summaryTableLastCol">
+  The IDeferredInstantiationUIComponent interface defines the interface for a component 
+  or object that defers instantiation.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IFactory.html" onclick="clearAllClassesListCookie();">IFactory</a></i></td><td class="summaryTableLastCol">
+  The IFactory interface defines the interface that factory classes
+  such as ClassFactory must implement.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IFlexAsset.html" onclick="clearAllClassesListCookie();">IFlexAsset</a></i></td><td class="summaryTableLastCol">
+  IFlexAsset is a marker interface with the following meaning:
+  if a class declares that it implements IFlexAsset,
+  then that class represents an asset -- such as a bitmap, a font,
+  or a sound -- that has been embedded in a Flex application.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IFlexDisplayObject.html" onclick="clearAllClassesListCookie();">IFlexDisplayObject</a></i></td><td class="summaryTableLastCol">
+  The IFlexDisplayObject interface defines the interface for skin elements.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IFlexModule.html" onclick="clearAllClassesListCookie();">IFlexModule</a></i></td><td class="summaryTableLastCol">
+  The IFlexModule interface is used as an optional contract with IFlexModuleFactory.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IFlexModuleFactory.html" onclick="clearAllClassesListCookie();">IFlexModuleFactory</a></i></td><td class="summaryTableLastCol">
+  The IFlexModuleFactory interface represents the contract expected
+  for bootstrapping Flex applications and dynamically loaded
+  modules.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IFontContextComponent.html" onclick="clearAllClassesListCookie();">IFontContextComponent</a></i></td><td class="summaryTableLastCol">
+  Allows a component to support a font context property.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IIMESupport.html" onclick="clearAllClassesListCookie();">IIMESupport</a></i></td><td class="summaryTableLastCol">
+  The IIMESupport interface defines the interface for any component that supports IME 
+  (input method editor).</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IInvalidating.html" onclick="clearAllClassesListCookie();">IInvalidating</a></i></td><td class="summaryTableLastCol">
+  The IInvalidating interface defines the interface for components
+  that use invalidation to do delayed -- rather than immediate --
+  property commitment, measurement, drawing, and layout.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4.1##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="ILayoutDirectionElement.html" onclick="clearAllClassesListCookie();">ILayoutDirectionElement</a></i></td><td class="summaryTableLastCol">
+      The ILayoutDirectionElement interface defines the minimum properties and methods 
+      required for an Object to support the layoutDirection property.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="ILayoutElement.html" onclick="clearAllClassesListCookie();">ILayoutElement</a></i></td><td class="summaryTableLastCol">
+  The ILayoutElement interface is used primarily by the layout classes to query,
+  size and position the elements of GroupBase containers.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IMXMLObject.html" onclick="clearAllClassesListCookie();">IMXMLObject</a></i></td><td class="summaryTableLastCol">
+  The IMXMLObject interface defines the APIs that a non-visual component
+  must implement in order to work properly with the MXML compiler.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="INavigatorContent.html" onclick="clearAllClassesListCookie();">INavigatorContent</a></i></td><td class="summaryTableLastCol">
+  The INavigatorContent interface defines the interface that a container must 
+  implement to be used as the child of a navigator container, 
+  such as the ViewStack, TabNavigator, and Accordion navigator containers.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IProgrammaticSkin.html" onclick="clearAllClassesListCookie();">IProgrammaticSkin</a></i></td><td class="summaryTableLastCol">
+  The IProgrammaticSkin interface defines the interface that skin classes must implement 
+  if they use the name property skin interface.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IPropertyChangeNotifier.html" onclick="clearAllClassesListCookie();">IPropertyChangeNotifier</a></i></td><td class="summaryTableLastCol">
+  The IPropertyChangeNotifier interface defines a marker 
+  interface.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IRawChildrenContainer.html" onclick="clearAllClassesListCookie();">IRawChildrenContainer</a></i></td><td class="summaryTableLastCol">
+  The IRawChildrenContainer interface defines the APIs for containers that 
+  can return an IChildList that represents all their children.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IRectangularBorder.html" onclick="clearAllClassesListCookie();">IRectangularBorder</a></i></td><td class="summaryTableLastCol">
+  The IRectangularBorder interface defines the interface that all classes 
+  used for rectangular border skins should implement.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IRepeater.html" onclick="clearAllClassesListCookie();">IRepeater</a></i></td><td class="summaryTableLastCol">
+  The IRepeater interface defines the 
+  public APIs of the Repeater object.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IRepeaterClient.html" onclick="clearAllClassesListCookie();">IRepeaterClient</a></i></td><td class="summaryTableLastCol">
+  The IRepeaterClient interface defines the APIs for components
+  that can have multiple instances created by a Repeater.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="ISelectableList.html" onclick="clearAllClassesListCookie();">ISelectableList</a></i></td><td class="summaryTableLastCol">
+  The ISelectableList interface indicates that the
+  implementor is an IList element that supports a selectedIndex
+  property.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IStateClient.html" onclick="clearAllClassesListCookie();">IStateClient</a></i></td><td class="summaryTableLastCol">
+  The IStateClient interface defines the interface that 
+  components must implement to support view states.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IStateClient2.html" onclick="clearAllClassesListCookie();">IStateClient2</a></i></td><td class="summaryTableLastCol">
+  The IStateClient2 interface defines the interface that 
+  components must implement to support Flex 4 view state
+  semantics.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="ISWFBridgeGroup.html" onclick="clearAllClassesListCookie();">ISWFBridgeGroup</a></i></td><td class="summaryTableLastCol">
+  A sandbox bridge group is a group of bridges that represent
+  applications that this application can communicate with.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="ISWFBridgeProvider.html" onclick="clearAllClassesListCookie();">ISWFBridgeProvider</a></i></td><td class="summaryTableLastCol">
+  An implementor of ISWFBridgeProvider provides a bridge
+  to an application in a different security sandbox
+  or to an application that was compiled with a different version
+  of the Flex compiler and is running in a separate ApplicationDomain.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="ISWFLoader.html" onclick="clearAllClassesListCookie();">ISWFLoader</a></i></td><td class="summaryTableLastCol">
+  The ISWFLoader interface defines an API with special properties
+  and method required when loading compatible applications and untrusted applications.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="ITextInput.html" onclick="clearAllClassesListCookie();">ITextInput</a></i></td><td class="summaryTableLastCol">
+  Defines an interface for a single-line text field that is optionally editable.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IToggleButton.html" onclick="clearAllClassesListCookie();">IToggleButton</a></i></td><td class="summaryTableLastCol">
+  The IToggleButton interface is a marker interface that indicates that a 
+  component acts as a toggleable button.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IToolTip.html" onclick="clearAllClassesListCookie();">IToolTip</a></i></td><td class="summaryTableLastCol">
+  The IToolTip interface defines the API that tooltip-like components
+  must implement in order to work with the ToolTipManager.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="ITransientDeferredInstance.html" onclick="clearAllClassesListCookie();">ITransientDeferredInstance</a></i></td><td class="summaryTableLastCol">
+  The ITransientDeferredInstance interface extends IDeferredInstance and adds 
+  the ability for the user to reset the deferred instance factory to its
+  initial state (usually this implies releasing any known references to the
+  component, such as the setting the owning document property that refers to
+  the instance to null).</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IUIComponent.html" onclick="clearAllClassesListCookie();">IUIComponent</a></i></td><td class="summaryTableLastCol">
+  The IUIComponent interface defines the basic set of APIs
+  that you must implement to create a child of a Flex container or list.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IUID.html" onclick="clearAllClassesListCookie();">IUID</a></i></td><td class="summaryTableLastCol">
+  The IUID interface defines the interface for objects that must have 
+  Unique Identifiers (UIDs) to uniquely identify the object.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IUITextField.html" onclick="clearAllClassesListCookie();">IUITextField</a></i></td><td class="summaryTableLastCol">
+  The IUITextField interface defines the basic set of APIs
+  for UITextField instances.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IVisualElement.html" onclick="clearAllClassesListCookie();">IVisualElement</a></i></td><td class="summaryTableLastCol">
+  The IVisualElement interface defines the minimum properties and methods 
+  required for a visual element to be laid out and displayed in a Spark container.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IVisualElementContainer.html" onclick="clearAllClassesListCookie();">IVisualElementContainer</a></i></td><td class="summaryTableLastCol">
+  The IVisualElementContainer interface defines the minimum properties and methods 
+  required for a container to manage Spark components for display.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IWindow.html" onclick="clearAllClassesListCookie();">IWindow</a></i>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The IWindow interface defines the API for components that serve as top-level
+  containers in Flex-based AIR applications (containers that represent operating
+  system windows).</td></tr></table><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="classSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summaryTableTitle">Classes</div><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" cellpadding="3" cellspacing="0" class="summaryTable" id="summaryTableIdClass"><tr><th>&nbsp;</th><th width="30%">Class</th><th width="70%">Description</th></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Application.html" onclick="clearAllClassesListCookie();">Application</a></td><td class="summaryTableLastCol">
+  Flex defines a default, or Application, container that lets you start
+  adding content to your application without explicitly defining
+  another container.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10.2##AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ApplicationDomainTarget.html" onclick="clearAllClassesListCookie();">ApplicationDomainTarget</a></td><td class="summaryTableLastCol">
+  The ApplicationDomainTarget class defines the possible values for the 
+  applicationDomainTarget property of the RSLData
+  class.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="BitmapAsset.html" onclick="clearAllClassesListCookie();">BitmapAsset</a></td><td class="summaryTableLastCol">
+  BitmapAsset is a subclass of the flash.display.Bitmap class
+  which represents bitmap images that you embed in a Flex application.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ButtonAsset.html" onclick="clearAllClassesListCookie();">ButtonAsset</a></td><td class="summaryTableLastCol">
+  ButtonAsset is a subclass of the flash.display.SimpleButton class
+  which represents button symbols that you embed in a Flex
+  application from a SWF file produced by Flash.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ByteArrayAsset.html" onclick="clearAllClassesListCookie();">ByteArrayAsset</a></td><td class="summaryTableLastCol">
+  ByteArrayAsset is a subclass of the flash.utils.ByteArray class
+  which represents an arbitrary sequence of byte data that you embed
+  in a Flex application.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ClassFactory.html" onclick="clearAllClassesListCookie();">ClassFactory</a></td><td class="summaryTableLastCol">
+  A ClassFactory instance is a "factory object" which Flex uses
+  to generate instances of another class, each with identical properties.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ComponentDescriptor.html" onclick="clearAllClassesListCookie();">ComponentDescriptor</a></td><td class="summaryTableLastCol">
+  ComponentDescriptor is the base class for the UIComponentDescriptor class,
+  which encapsulates the information that you specified in an MXML tag
+  for an instance of a visual component.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Container.html" onclick="clearAllClassesListCookie();">Container</a></td><td class="summaryTableLastCol">
+  The Container class is an abstract base class for components that
+  controls the layout characteristics of child components.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ContainerCreationPolicy.html" onclick="clearAllClassesListCookie();">ContainerCreationPolicy</a></td><td class="summaryTableLastCol">
+  The ContainerCreationPolicy class defines the constant values
+  for the creationPolicy property of the Container class.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ContainerLayout.html" onclick="clearAllClassesListCookie();">ContainerLayout</a></td><td class="summaryTableLastCol">
+  The ContainerLayout class defines the constant values
+  for the layout property of container classes.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ContextualClassFactory.html" onclick="clearAllClassesListCookie();">ContextualClassFactory</a></td><td class="summaryTableLastCol">
+  A class factory that provides a system manager
+  as a context of where the class should be created.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DeferredInstanceFromClass.html" onclick="clearAllClassesListCookie();">DeferredInstanceFromClass</a></td><td class="summaryTableLastCol">
+  A deferred instance factory that creates and returns an instance
+  of a specified class.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DeferredInstanceFromFunction.html" onclick="clearAllClassesListCookie();">DeferredInstanceFromFunction</a></td><td class="summaryTableLastCol">
+  A deferred instance factory that uses a generator function
+  to create an instance of the required object.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DesignLayer.html" onclick="clearAllClassesListCookie();">DesignLayer</a></td><td class="summaryTableLastCol">
+      The DesignLayer class represents a visibility group that can be associated
+      with one or more IVisualElement instances at runtime.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DPIClassification.html" onclick="clearAllClassesListCookie();">DPIClassification</a></td><td class="summaryTableLastCol">
+  An enum of the device screen density classess.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DragSource.html" onclick="clearAllClassesListCookie();">DragSource</a></td><td class="summaryTableLastCol">
+  The DragSource class contains the data being dragged.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="EdgeMetrics.html" onclick="clearAllClassesListCookie();">EdgeMetrics</a></td><td class="summaryTableLastCol">
+  The EdgeMetrics class specifies the thickness, in pixels,
+  of the four edge regions around a visual component.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="EventPriority.html" onclick="clearAllClassesListCookie();">EventPriority</a></td><td class="summaryTableLastCol">
+  The EventPriority class defines constant values
+  for the priority argument of the
+  addEventListener() method of EventDispatcher.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FlexBitmap.html" onclick="clearAllClassesListCookie();">FlexBitmap</a></td><td class="summaryTableLastCol">
+  FlexBitmap is a subclass of the Player's Bitmap class.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FlexGlobals.html" onclick="clearAllClassesListCookie();">FlexGlobals</a></td><td class="summaryTableLastCol">
+  A class that contains variables that are global to all applications within
+  the same ApplicationDomain.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FlexHTMLLoader.html" onclick="clearAllClassesListCookie();">FlexHTMLLoader</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  FlexHTMLLoader is a subclass of the Player's HTMLLoader class used by the
+  Flex HTML control.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FlexLoader.html" onclick="clearAllClassesListCookie();">FlexLoader</a></td><td class="summaryTableLastCol">
+  FlexLoader is a subclass of the Player's Loader class.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FlexMovieClip.html" onclick="clearAllClassesListCookie();">FlexMovieClip</a></td><td class="summaryTableLastCol">
+  FlexMovieClip is a subclass of the Player's MovieClip class.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FlexShape.html" onclick="clearAllClassesListCookie();">FlexShape</a></td><td class="summaryTableLastCol">
+  FlexShape is a subclass of the Player's Shape class.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FlexSimpleButton.html" onclick="clearAllClassesListCookie();">FlexSimpleButton</a></td><td class="summaryTableLastCol">
+  FlexSimpleButton is a subclass of the Player's SimpleButton class.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FlexSprite.html" onclick="clearAllClassesListCookie();">FlexSprite</a></td><td class="summaryTableLastCol">
+  FlexSprite is a subclass of the Player's Sprite class
+  and the superclass of UIComponent.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FlexTextField.html" onclick="clearAllClassesListCookie();">FlexTextField</a></td><td class="summaryTableLastCol">
+  FlexTextField is a subclass of the Player's TextField class
+  and the superclass of UITextField.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FlexVersion.html" onclick="clearAllClassesListCookie();">FlexVersion</a></td><td class="summaryTableLastCol"> 
+  This class controls the backward-compatibility of the framework.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FontAsset.html" onclick="clearAllClassesListCookie();">FontAsset</a></td><td class="summaryTableLastCol">
+  FontAsset is a subclass of the flash.text.Font class 
+  which represents fonts that you embed in a Flex application.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FTETextField.html" onclick="clearAllClassesListCookie();">FTETextField</a></td><td class="summaryTableLastCol">
+      FTETextField is a Sprite which displays text by using the new
+      Flash Text Engine to implement the old TextField API.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="InteractionMode.html" onclick="clearAllClassesListCookie();">InteractionMode</a></td><td class="summaryTableLastCol">
+      The InteractionMode class defines the alues for the 
+      interactionMode property of the UIComponent class.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LayoutContainer.html" onclick="clearAllClassesListCookie();">LayoutContainer</a></td><td class="summaryTableLastCol">
+  Flex defines a default, or Application, container that lets you start
+  adding content to your module or Application without explicitly defining
+  another container.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::2.0##" product="Flex::4.1##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LayoutDirection.html" onclick="clearAllClassesListCookie();">LayoutDirection</a></td><td class="summaryTableLastCol">
+      The LayoutDirection class defines the constant values
+      for the layoutDirection style of an IStyleClient and the 
+      layoutDirection property of an ILayoutDirectionElement.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="MovieClipAsset.html" onclick="clearAllClassesListCookie();">MovieClipAsset</a></td><td class="summaryTableLastCol">
+  MovieClipAsset is a subclass of the flash.display.MovieClip class
+  which represents movieclip symbols that you embed in a Flex application
+  from a SWF file produced by Flash.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="MovieClipLoaderAsset.html" onclick="clearAllClassesListCookie();">MovieClipLoaderAsset</a></td><td class="summaryTableLastCol">
+  MovieClipLoaderAsset is a subclass of the MovieClipAsset class
+  which represents SWF files that you embed in a Flex application.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="MXMLObjectAdapter.html" onclick="clearAllClassesListCookie();">MXMLObjectAdapter</a></td><td class="summaryTableLastCol">
+  The MXMLObjectAdapter class is a stub implementation
+  of the IMXMLObject interface, so that you can implement
+  the interface without defining all of the methods.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Repeater.html" onclick="clearAllClassesListCookie();">Repeater</a></td><td class="summaryTableLastCol">
+  The Repeater class is the runtime object that corresponds
+  to the &lt;mx:Repeater&gt; tag.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10.2##AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="RSLData.html" onclick="clearAllClassesListCookie();">RSLData</a></td><td class="summaryTableLastCol">
+  A Class that describes configuration data for an RSL.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="RuntimeDPIProvider.html" onclick="clearAllClassesListCookie();">RuntimeDPIProvider</a></td><td class="summaryTableLastCol">
+  The RuntimeDPIProvider class provides the default mapping of
+  similar device DPI values into predefined DPI classes.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ScrollControlBase.html" onclick="clearAllClassesListCookie();">ScrollControlBase</a></td><td class="summaryTableLastCol">
+  The ScrollControlBase class is the base class for controls
+  with scroll bars.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ScrollPolicy.html" onclick="clearAllClassesListCookie();">ScrollPolicy</a></td><td class="summaryTableLastCol">
+  Values for the horizontalScrollPolicy and
+  verticalScrollPolicy properties
+  of the Container and ScrollControlBase classes.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SoundAsset.html" onclick="clearAllClassesListCookie();">SoundAsset</a></td><td class="summaryTableLastCol">
+  SoundAsset is a subclass of the flash.media.Sound class
+  which represents sounds that you embed in a Flex application.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SpriteAsset.html" onclick="clearAllClassesListCookie();">SpriteAsset</a></td><td class="summaryTableLastCol">
+  SpriteAsset is a subclass of the flash.display.Sprite class which
+  represents vector graphic images that you embed in an application.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SWFBridgeGroup.html" onclick="clearAllClassesListCookie();">SWFBridgeGroup</a></td><td class="summaryTableLastCol">
+  A SWFBridgeGroup represents all of the sandbox bridges that an 
+  application needs to communicate with its parent and children.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TextFieldAsset.html" onclick="clearAllClassesListCookie();">TextFieldAsset</a></td><td class="summaryTableLastCol">
+  TextFieldAsset is a subclass of the flash.text.TextField class
+  which represents TextField symbols that you embed in a Flex
+  application from a SWF file produced by Flash.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="UIComponent.html" onclick="clearAllClassesListCookie();">UIComponent</a></td><td class="summaryTableLastCol">
+  The UIComponent class is the base class for all visual components,
+  both interactive and noninteractive.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="UIComponentCachePolicy.html" onclick="clearAllClassesListCookie();">UIComponentCachePolicy</a></td><td class="summaryTableLastCol">
+  The ContainerCreationPolicy class defines the constant values
+  for the cachePolicy property of the UIComponent class.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="UIComponentDescriptor.html" onclick="clearAllClassesListCookie();">UIComponentDescriptor</a></td><td class="summaryTableLastCol">
+  A UIComponentDescriptor instance encapsulates the information that you
+  specified in an MXML tag for an instance of a visual component.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="UIFTETextField.html" onclick="clearAllClassesListCookie();">UIFTETextField</a></td><td class="summaryTableLastCol">
+  The UIFTETextField class is an alternative to the UITextField class
+  for displaying text in MX components.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="UITextField.html" onclick="clearAllClassesListCookie();">UITextField</a></td><td class="summaryTableLastCol">
+  The UITextField class defines the component used by many Flex
+  components to display text.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="UITextFormat.html" onclick="clearAllClassesListCookie();">UITextFormat</a></td><td class="summaryTableLastCol">
+  The UITextFormat class represents character formatting information
+  for the UITextField class.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Window.html" onclick="clearAllClassesListCookie();">Window</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The Window is a top-level container for additional windows
+  in an AIR desktop application.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="WindowedApplication.html" onclick="clearAllClassesListCookie();">WindowedApplication</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The WindowedApplication defines the application container
+  that you use to create Flex applications for AIR applications.</td></tr></table><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 06:58 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 06:58 PM -08:00  -->

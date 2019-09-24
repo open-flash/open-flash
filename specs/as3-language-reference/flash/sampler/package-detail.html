@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><title>flash.sampler - Adobe ActionScript&reg; 3 (AS3) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">&nbsp;</a><br>
+								<h1 id="classProductName">flash.sampler&nbsp;</h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript" xml:space="preserve">                
+        
+        				
+        <!--				
+          				    				
+          					
+          titleBar_setSubNav(false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true)
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script><br xmlns:xd="http://www.pnp-software.com/XSLTdoc"><p xmlns:xd="http://www.pnp-software.com/XSLTdoc">The flash.sampler package contains methods and classes for tracking procedure calls so that you can profile memory usage and optimize applications. This package is used by the profiling agent distributed with Adobe Flash Builder, and is provided for your use for customizing the profiling agent or building your own memory tests. After you know where an application uses the most memory, you can focus your optimization effort and speed up the application's performance. The classes and methods in this package require the Flash Player debugger version 9.0.115.0 or later. For more information, see the <a href="package.html"> flash.sampler methods overview</a>.</p><br xmlns:xd="http://www.pnp-software.com/XSLTdoc"><hr xmlns:xd="http://www.pnp-software.com/XSLTdoc"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summaryTableTitle">Functions</div><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" cellpadding="3" cellspacing="0" class="summaryTable" id="summaryTableIdFunction"><tr><th>&nbsp;</th><th width="30%">Function</th><th width="70%">Description</th></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="package.html#clearSamples()">clearSamples</a></td><td class="summaryTableLastCol">
+     Clears the current set of Sample objects.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="package.html#getGetterInvocationCount()">getGetterInvocationCount</a></td><td class="summaryTableLastCol">
+     Returns the number of times a get function was executed.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="package.html#getInvocationCount()">getInvocationCount</a></td><td class="summaryTableLastCol">
+     Returns the number of times a method was executed.</td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="package.html#getLexicalScopes()">getLexicalScopes</a></td><td class="summaryTableLastCol">
+     Exposes the lexical scope of a Function so that captured scope objects (including activation
+     objects and with scopes) are seen by the profiler as being retained by the Function instance.</td></tr><tr class="prow1" languageVersion="3.0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="package.html#getMasterString()">getMasterString</a></td><td class="summaryTableLastCol">
+     Returns the master string upon which this string depends, or null if this
+     string does not depend on another string.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="package.html#getMemberNames()">getMemberNames</a></td><td class="summaryTableLastCol">
+     Returns an object containing all members of a specified object, including private members.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="package.html#getSampleCount()">getSampleCount</a></td><td class="summaryTableLastCol">
+     Returns the number of samples collected.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="package.html#getSamples()">getSamples</a></td><td class="summaryTableLastCol">
+     Returns an object of memory usage Sample instances from the last sampling session.</td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="package.html#getSavedThis()">getSavedThis</a></td><td class="summaryTableLastCol">
+     Returns the saved "this" from a Method closure that you normal can't see from AS.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="package.html#getSetterInvocationCount()">getSetterInvocationCount</a></td><td class="summaryTableLastCol">
+     Returns the number of times a set function was executed.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="package.html#getSize()">getSize</a></td><td class="summaryTableLastCol">
+    Returns the size in memory of a specified object when used with the Flash Player 9.0.115.0 or later debugger version.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="package.html#isGetterSetter()">isGetterSetter</a></td><td class="summaryTableLastCol">
+     Checks to see if a property is defined by a get/set function.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="package.html#pauseSampling()">pauseSampling</a></td><td class="summaryTableLastCol">
+     Stops the sampling process momentarily.</td></tr><tr class="prow0" languageVersion="3.0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="package.html#sampleInternalAllocs()">sampleInternalAllocs</a></td><td class="summaryTableLastCol">
+     Tells the sampler if it should create NewObjectSamples for internal allocations from the flash player.</td></tr><tr class="prow1" languageVersion="3.0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="package.html#setSamplerCallback()">setSamplerCallback</a></td><td class="summaryTableLastCol">
+     Sets a callback function for the sampler - this function will be called when the sample stream is almost
+     exhausted.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="package.html#startSampling()">startSampling</a></td><td class="summaryTableLastCol">
+     Begins the process of collecting memory usage Sample objects.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="package.html#stopSampling()">stopSampling</a></td><td class="summaryTableLastCol">
+     Ends the process of collecting memory usage Sample objects and frees resources dedicated to the sampling process.</td></tr></table><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="classSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summaryTableTitle">Classes</div><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" cellpadding="3" cellspacing="0" class="summaryTable" id="summaryTableIdClass"><tr><th>&nbsp;</th><th width="30%">Class</th><th width="70%">Description</th></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DeleteObjectSample.html" onclick="clearAllClassesListCookie();">DeleteObjectSample</a></td><td class="summaryTableLastCol">
+    The DeleteObjectSample class represents objects that are created within a getSamples() stream; each
+    DeleteObjectSample object corresponds to a NewObjectSample object.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NewObjectSample.html" onclick="clearAllClassesListCookie();">NewObjectSample</a></td><td class="summaryTableLastCol">
+    The NewObjectSample class represents objects that are created within a getSamples() stream.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Sample.html" onclick="clearAllClassesListCookie();">Sample</a></td><td class="summaryTableLastCol">
+     The Sample class creates objects that hold memory analysis information over distinct durations.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9.0.115.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="StackFrame.html" onclick="clearAllClassesListCookie();">StackFrame</a></td><td class="summaryTableLastCol">
+     The StackFrame class provides access to the properties of a data block
+     containing a function.</td></tr></table><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 06:58 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 06:58 PM -08:00  -->

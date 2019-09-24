@@ -1,0 +1,555 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:9"><meta name="runtime" content="lite"><meta name="runtimever" content="lite:4"><meta name="product" content="flash player"><meta name="productver" content="flash player:9"><meta name="product" content="lite"><meta name="productver" content="lite:4"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="LoaderContext,flash.system.LoaderContext,allowCodeImport,allowLoadBytesCodeExecution,applicationDomain,checkPolicyFile,imageDecodingPolicy,parameters,requestedContentParent,securityDomain"><title>LoaderContext - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">flash.system&nbsp;</a><br>
+								<h1 id="classProductName">LoaderContext&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">flash.system</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  LoaderContext</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">LoaderContext  <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../Object.html">Object</a></td></tr><tr><td class="classHeaderTableLabel">Subclasses</td><td> <a href="../../flash/system/JPEGLoaderContext.html">JPEGLoaderContext</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p></p>
+ The LoaderContext class provides options for loading SWF files and other media by using the Loader class.
+ The LoaderContext class is used as the <code>context</code> parameter in the <code>load()</code> and 
+ <code>loadBytes()</code> methods of the Loader class.
+ 
+ <p>When loading SWF files with the <code>Loader.load()</code> method, you have two decisions to make:
+ into which security domain the loaded SWF file should be placed, and into which application domain
+ within that security domain? For more details on these choices, see the
+ <code>applicationDomain</code> and <code>securityDomain</code> properties.</p>
+ 
+               <p>When loading a SWF file with the <code>Loader.loadBytes()</code> method, you have the same
+ application domain choice to make as for <code>Loader.load()</code>, but it's not
+ necessary to specify a security domain, because <code>Loader.loadBytes()</code> always
+ places its loaded SWF file into the security domain of the loading SWF file.</p>
+ 
+               <p>When loading images (JPEG, GIF, or PNG) instead of SWF files, there is no need to
+ specify a SecurityDomain or an application domain, because those concepts are 
+ meaningful only for SWF files.  Instead, you have only one decision to make: do you need
+ programmatic access to the pixels of the loaded image?  If so, see the
+ <code>checkPolicyFile</code> property. If you want to apply deblocking when loading
+ an image, use the JPEGLoaderContext class instead of the LoaderContext class.</p>
+ 
+            <p></p><p id="moreExamples"><span class="classHeaderTableLabel">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/Flex/4.6/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7f03.html" target="_blank">Specifying a LoaderContext</a><br/><a href="http://help.adobe.com/en_US/Flex/4.6/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf619ab-7fe3.html" target="_blank">Creating class instances from loaded
+applications</a></div><p id="learnMore"><span class="classHeaderTableLabel">Learn more</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7e13.html" target="_blank">Loading display content dynamically</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7de0.html" target="_blank">Specifying loading context</a><br/></div><p><span class="classHeaderTableLabel">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/display/Loader.html#load()" target="">flash.display.Loader.load()</a><br/><a href="../../flash/display/Loader.html#loadBytes()" target="">flash.display.Loader.loadBytes()</a><br/><a href="ApplicationDomain.html" target="">flash.system.ApplicationDomain</a><br/><a href="JPEGLoaderContext.html" target="">flash.system.JPEGLoaderContext</a><br/><a href="LoaderContext.html#applicationDomain" target="">flash.system.LoaderContext.applicationDomain</a><br/><a href="LoaderContext.html#checkPolicyFile" target="">flash.system.LoaderContext.checkPolicyFile</a><br/><a href="LoaderContext.html#securityDomain" target="">flash.system.LoaderContext.securityDomain</a><br/><a href="SecurityDomain.html" target="">flash.system.SecurityDomain</a><br/><a href="ImageDecodingPolicy.html" target="">flash.system.ImageDecodingPolicy</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="" runtime="Flash::10.1##AIR::2.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#allowCodeImport" class="signatureLink">allowCodeImport</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">
+     Specifies whether you can use a Loader object to import content with executable code,
+     such as a SWF file, into the caller's security sandbox.</div></td><td class="summaryTableOwnerCol">LoaderContext</td></tr><tr class="" runtime="AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#allowLoadBytesCodeExecution" class="signatureLink">allowLoadBytesCodeExecution</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">
+     Legacy property, replaced by allowCodeImport, but still supported for compatibility.</div></td><td class="summaryTableOwnerCol">LoaderContext</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#applicationDomain" class="signatureLink">applicationDomain</a> : <a href="../../flash/system/ApplicationDomain.html">ApplicationDomain</a> = null<div class="summaryTableDescription">
+     Specifies the application domain to use for the Loader.load() or
+     Loader.loadBytes() method.</div></td><td class="summaryTableOwnerCol">LoaderContext</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#checkPolicyFile" class="signatureLink">checkPolicyFile</a> : <a href="../../Boolean.html">Boolean</a> = false<div class="summaryTableDescription">
+     Specifies whether the application should attempt to download a URL policy file from the
+     loaded object's server before beginning to load the object itself.</div></td><td class="summaryTableOwnerCol">LoaderContext</td></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../Object.html#constructor" class="signatureLink">constructor</a> : <a href="../../Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="AIR::2.6##Flash::11##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#imageDecodingPolicy" class="signatureLink">imageDecodingPolicy</a> : <a href="../../String.html">String</a><div class="summaryTableDescription">
+     Specifies whether to decode bitmap image data when it is used or when it is loaded.</div></td><td class="summaryTableOwnerCol">LoaderContext</td></tr><tr class="" runtime="Flash::10.2##AIR::2.6##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#parameters" class="signatureLink">parameters</a> : <a href="../../Object.html">Object</a><div class="summaryTableDescription">
+     An Object containing the parameters to pass to the LoaderInfo object of the content.</div></td><td class="summaryTableOwnerCol">LoaderContext</td></tr><tr class="" runtime="Flash::10.2##AIR::2.6##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#requestedContentParent" class="signatureLink">requestedContentParent</a> : <a href="../../flash/display/DisplayObjectContainer.html">DisplayObjectContainer</a><div class="summaryTableDescription">
+     The parent to which the Loader will attempt to add the loaded content.</div></td><td class="summaryTableOwnerCol">LoaderContext</td></tr><tr class="" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#securityDomain" class="signatureLink">securityDomain</a> : <a href="../../flash/system/SecurityDomain.html">SecurityDomain</a> = null<div class="summaryTableDescription">
+     Specifies the security domain to use for a Loader.load() operation.</div></td><td class="summaryTableOwnerCol">LoaderContext</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#LoaderContext()" class="signatureLink">LoaderContext</a>(checkPolicyFile:<a href="../../Boolean.html">Boolean</a> = false, applicationDomain:<a href="../../flash/system/ApplicationDomain.html">ApplicationDomain</a> = null, securityDomain:<a href="../../flash/system/SecurityDomain.html">SecurityDomain</a> = null)</div><div class="summaryTableDescription">
+     Creates a new LoaderContext object, with the specified settings.</div></td><td class="summaryTableOwnerCol">LoaderContext</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="../../String.html">String</a>, isEnum:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toString()" class="signatureLink">toString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+	 Returns the primitive value of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="Flash::10.1##AIR::2.0##"><a name="propertyDetail" id="propertyDetail"></a><a name="allowCodeImport" id="allowCodeImport"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>allowCodeImport</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>public var allowCodeImport:<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10.1, AIR 2.0</td></tr></table><p></p><p></p><p>
+     Specifies whether you can use a <code>Loader</code> object to import content with executable code,
+     such as a SWF file, into the caller's security sandbox.  There are two affected importing operations: 
+     the <code>Loader.loadBytes()</code> method, and the <code>Loader.load()</code> method with
+     <code>LoaderContext.securityDomain = SecurityDomain.currentDomain</code>.  (The latter operation is not
+     supported in the AIR application sandbox.)  With the <code>allowCodeImport</code> property set to
+     <code>false</code>, these importing operations are restricted to safe operations, such as loading
+     images.  Normal, non-importing SWF file loading with the <code>Loader.load()</code> method is not
+     affected by the value of this property.
+     
+     <p>This property is useful when you want to import image content into your sandbox - for example, when you
+     want to replicate or process an image from a different domain - but you don't want to take the security risk
+     of receiving a SWF file when you expected only an image file.  Since SWF files may contain ActionScript code,
+     importing a SWF file is a much riskier operation than importing an image file.</p>
+     
+     <p>In AIR content in the application sandbox, the default value is <code>false</code>.  In non-application
+     content (which includes all content in Flash Player), the default value is <code>true</code>.</p>
+     
+     <p>The <code>allowCodeImport</code> property was added in Flash Player 10.1 and AIR 2.0.
+     However, this property is made available to SWF files and AIR applications of all versions when the
+     Flash Runtime supports it.</p>
+     
+     </p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/display/Loader.html#loadBytes()" target="">flash.display.Loader.loadBytes()</a><br/><a href="../../flash/display/Loader.html#load()" target="">flash.display.Loader.load()</a><br/><a href="LoaderContext.html#securityDomain" target="">securityDomain</a></div></div></span><span id="pageFilter" runtime="AIR::1.0##Lite::4##"><a name="propertyDetail" id="propertyDetail"></a><a name="allowLoadBytesCodeExecution" id="allowLoadBytesCodeExecution"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>allowLoadBytesCodeExecution</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>allowLoadBytesCodeExecution:<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Legacy property, replaced by <code>allowCodeImport</code>, but still supported for compatibility.
+     Previously, the only operation affected by <code>allowLoadBytesCodeExecution</code> was the
+     <code>Loader.loadBytes()</code> method, but as of Flash Player 10.1 and AIR 2.0, the import-loading
+     operation of <code>Loader.load()</code> with <code>LoaderContext.securityDomain = SecurityDomain.currentDomain</code>
+     is affected as well.  (The latter operation is not supported in the AIR application sandbox.)
+     This dual effect made the property name <code>allowLoadBytesCodeExecution</code> overly specific,
+     so now <code>allowCodeImport</code> is the preferred property name.  Setting either of
+     <code>allowCodeImport</code> or <code>allowLoadBytesCodeExecution</code> will affect the value of both.
+     
+     <p>Specifies whether you can use a <code>Loader</code> object to import content with executable code,
+     such as a SWF file, into the caller's security sandbox.  With this property set to <code>false</code>,
+     these importing operations are restricted to safe operations, such as loading images.</p>
+     
+     <p>In AIR content in the application sandbox, the default value is <code>false</code>. In non-application content, the
+     default value is <code>true</code>.</p>
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get allowLoadBytesCodeExecution():<a href="../../Boolean.html">Boolean</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set allowLoadBytesCodeExecution(value:<a href="../../Boolean.html">Boolean</a>):<a href="../../specialTypes.html#void">void</a></code><br/><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/display/Loader.html#loadBytes()" target="">flash.display.Loader.loadBytes()</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="propertyDetail" id="propertyDetail"></a><a name="applicationDomain" id="applicationDomain"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>applicationDomain</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var applicationDomain:<a href="../../flash/system/ApplicationDomain.html">ApplicationDomain</a> = null</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Specifies the application domain to use for the <code>Loader.load()</code> or
+     <code>Loader.loadBytes()</code> method.  Use this property only when loading a SWF file
+     written in ActionScript 3.0 (not an image or a SWF file written in ActionScript 1.0 or ActionScript 2.0).
+     
+     <p>Every security domain is divided into one or more application domains, represented
+     by ApplicationDomain objects.  Application domains are not for security
+     purposes; they are for managing cooperating units of ActionScript code.  If you are
+     loading a SWF file from another domain, and allowing it to be placed in a separate
+     security domain, then you cannot control the choice of application domain into which the
+     loaded SWF file is placed; and if you have specified a choice of application domain, it
+     will be ignored.  However, if you are loading a SWF file into your own security domain &mdash;
+     either because the SWF file comes from your own domain, or because you are importing it into
+     your security domain &mdash; then you can control the choice of application domain for the
+     loaded SWF file.</p>
+     
+     <p>You can pass an application domain only from your own security domain in
+     <code>LoaderContext.applicationDomain</code>.  Attempting to pass an application domain
+     from any other security domain results in a <code>SecurityError</code> exception.</p>
+     
+     <p>You have four choices for what kind of <code>ApplicationDomain</code> property to use:</p>
+     
+     <ul><li><b>Child of loader's ApplicationDomain.</b> The default. You can
+     explicitly represent this choice with the syntax
+     <code>new ApplicationDomain(ApplicationDomain.currentDomain)</code>. This allows the
+     loaded SWF file to use the parent's classes directly, for example by writing
+     <code>new MyClassDefinedInParent()</code>.  The parent, however, cannot use this syntax;
+     if the parent wishes to use the child's classes, it must call
+     <code>ApplicationDomain.getDefinition()</code> to retrieve them.  The advantage of
+     this choice is that, if the child defines a class with the same name as a class already
+     defined by the parent, no error results; the child simply inherits the parent's
+     definition of that class, and the child's conflicting definition goes unused unless
+     either child or parent calls the <code>ApplicationDomain.getDefinition()</code> method to retrieve
+     it.</li><li><b>Loader's own ApplicationDomain.</b> You use this application domain when using
+     <code>ApplicationDomain.currentDomain</code>. When the load is complete, parent and
+     child can use each other's classes directly. If the child attempts to define a class with the same name
+     as a class already defined by the parent, the parent class is used and the child class is ignored.</li><li><b>Child of the system ApplicationDomain.</b>  You use this application domain when using
+     <code>new ApplicationDomain(null)</code>.  This separates loader and loadee entirely,
+     allowing them to define separate versions of classes with the same name without conflict
+     or overshadowing.  The only way either side sees the other's classes is by calling the 
+     <code>ApplicationDomain.getDefinition()</code> method.</li><li><b>Child of some other ApplicationDomain.</b>  Occasionally you may have
+     a more complex ApplicationDomain hierarchy.  You can load a SWF file into any
+     ApplicationDomain from your own SecurityDomain.  For example,
+     <code>new ApplicationDomain(ApplicationDomain.currentDomain.parentDomain.parentDomain)</code>
+     loads a SWF file into a new child of the current domain's parent's parent.</li></ul>
+     
+     <p>When a load is complete, either side (loading or loaded) may need to find its own
+     ApplicationDomain, or the other side's ApplicationDomain, for the purpose of calling
+     <code>ApplicationDomain.getDefinition()</code>.  Either side can retrieve a reference to
+     its own application domain by using <code>ApplicationDomain.currentDomain</code>.  The loading
+     SWF file can retrieve a reference to the loaded SWF file's ApplicationDomain via
+     <code>Loader.contentLoaderInfo.applicationDomain</code>.  If the loaded SWF file knows how it
+     was loaded, it can find its way to the loading SWF file's ApplicationDomain object.  For example, if
+     the child was loaded in the default way, it can find the loading SWF file's application domain
+     by using <code>ApplicationDomain.currentDomain.parentDomain</code>.</p>
+     
+     <p>For more information, see the "ApplicationDomain class" section of the "Client System
+     Environment" chapter of the <i>ActionScript 3.0 Developer's Guide</i>.</p>
+     
+     </p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/display/Loader.html#load()" target="">flash.display.Loader.load()</a><br/><a href="../../flash/display/Loader.html#loadBytes()" target="">flash.display.Loader.loadBytes()</a><br/><a href="ApplicationDomain.html" target="">flash.system.ApplicationDomain</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="propertyDetail" id="propertyDetail"></a><a name="checkPolicyFile" id="checkPolicyFile"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>checkPolicyFile</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var checkPolicyFile:<a href="../../Boolean.html">Boolean</a> = false</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Specifies whether the application should attempt to download a URL policy file from the
+     loaded object's server before beginning to load the object itself.  This flag is applicable to
+     the <code>Loader.load()</code> method, but not to the <code>Loader.loadBytes()</code> method.
+     
+     <p>Set this flag to <code>true</code> when you are loading an image (JPEG, GIF, or PNG) from outside the calling
+     SWF file's own domain, and you expect to need access to the content of that image from ActionScript.
+     Examples of accessing image content include referencing the <code>Loader.content</code> property
+     to obtain a Bitmap object, and calling the <code>BitmapData.draw()</code> method to obtain a
+     copy of the loaded image's pixels.  If you attempt one of these operations without having
+     specified <code>checkPolicyFile</code> at loading time, you may get a <code>SecurityError</code>
+     exception because the needed policy file has not been downloaded yet.</p>
+     
+     <p>When you call the <code>Loader.load()</code> method with <code>LoaderContext.checkPolicyFile</code> set to
+     <code>true</code>, the application does not begin downloading the specified object in <code>URLRequest.url</code>
+     until it has either successfully downloaded a relevant URL policy file or discovered
+     that no such policy file exists. Flash Player or AIR first considers policy files that have already
+     been downloaded, then attempts to download any pending policy files specified in calls to
+     the <code>Security.loadPolicyFile()</code> method, then attempts to download a policy file from the default
+     location that corresponds to <code>URLRequest.url</code>, which is <code>/crossdomain.xml</code>
+     on the same server as <code>URLRequest.url</code>. In all cases, the given policy file is required to exist 
+     at <code>URLRequest.url</code> by virtue of the policy file's location, and the file must permit access
+     by virtue of one or more <code>&lt;allow-access-from&gt;</code>
+     tags.</p>
+     
+     <p>If you set <code>checkPolicyFile</code> to <code>true</code>, the main download that specified in the 
+     <code>Loader.load()</code> method does not load until the policy file has been completely processed.
+     Therefore, as long as the
+     policy file that you need exists, as soon as you have received any <code>ProgressEvent.PROGRESS</code> or
+     <code>Event.COMPLETE</code> events from the <code>contentLoaderInfo</code> property of your Loader object,
+     the policy file download is complete, and you can safely begin performing operations that require
+     the policy file.</p>
+     
+     <p>If you set <code>checkPolicyFile</code> to <code>true</code>, and no relevant policy file is found, 
+     you will not receive any error indication until you attempt an operation that throws a
+     <code>SecurityError</code> exception.  However, once the LoaderInfo object dispatches a 
+     <code>ProgressEvent.PROGRESS</code> or <code>Event.COMPLETE</code> event, you can test whether a relevant 
+     policy file was found by checking the value of the <code>LoaderInfo.childAllowsParent</code> property.</p>
+     
+     <p>If you will not need pixel-level access to the image that you are loading, you should not set the 
+     <code>checkPolicyFile</code> property to <code>true</code>.  Checking for a policy file in this case is 
+     wasteful, because it may delay the start of your download, and it may consume network bandwidth unnecessarily.</p>
+     
+     <p>Also try to avoid setting <code>checkPolicyFile</code> to <code>true</code> if you are using the 
+     <code>Loader.load()</code> method to download a SWF file.  This is because SWF-to-SWF permissions are not
+     controlled by policy files, but rather by the <code>Security.allowDomain()</code> method, and thus
+     <code>checkPolicyFile</code> has no effect when you load a SWF file.  Checking for a policy file in
+     this case is wasteful, because it may delay the download of the SWF file, and it may consume
+     network bandwidth unnecessarily. (Flash Player or AIR cannot tell whether your main download will be a
+     SWF file or an image, because the policy file download occurs before the main download.)</p>
+     
+     <p>Be careful with <code>checkPolicyFile</code> if you are downloading an object from a URL that
+     may use server-side HTTP redirects. Policy files are always retrieved from the corresponding initial 
+     URL that you specify in <code>URLRequest.url</code>. If the final
+     object comes from a different URL because of HTTP redirects, then the initially downloaded policy
+     files might not be applicable to the object's final URL, which is the URL that matters in
+     security decisions.  If you find yourself in this situation, you can examine the value of 
+     <code>LoaderInfo.url</code> after you have received a <code>ProgressEvent.PROGRESS</code>
+     or <code>Event.COMPLETE</code> event, which tells you the object's final URL. Then call the
+     <code>Security.loadPolicyFile()</code> method with a policy file URL based on the object's final 
+     URL. Then poll the value of <code>LoaderInfo.childAllowsParent</code> until it becomes <code>true</code>.</p>
+     
+         <p>You do not need to set this property for AIR content running in the application sandbox. Content
+         in the AIR application sandbox can call the <code>BitmapData.draw()</code> method using any loaded image 
+         content as the source. </p>
+     
+     </p><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7de0.html" target="_blank">Specifying loading context</a></div><p id="learnMore"><span class="label">Learn more</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7e13.html" target="_blank">Loading display content dynamically</a><br/></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/display/BitmapData.html#draw()" target="">flash.display.BitmapData.draw()</a><br/><a href="../../flash/display/Loader.html#content" target="">flash.display.Loader.content</a><br/><a href="../../flash/display/Loader.html#load()" target="">flash.display.Loader.load()</a><br/><a href="../../flash/display/LoaderInfo.html#childAllowsParent" target="">flash.display.LoaderInfo.childAllowsParent</a><br/><a href="../../flash/display/LoaderInfo.html#url" target="">flash.display.LoaderInfo.url</a><br/><a href="Security.html#allowDomain()" target="">flash.system.Security.allowDomain()</a><br/><a href="Security.html#loadPolicyFile()" target="">flash.system.Security.loadPolicyFile()</a></div></div></span><span id="pageFilter" runtime="AIR::2.6##Flash::11##"><a name="propertyDetail" id="propertyDetail"></a><a name="imageDecodingPolicy" id="imageDecodingPolicy"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>imageDecodingPolicy</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var imageDecodingPolicy:<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.6, Flash Player 11</td></tr></table><p></p><p></p><p>
+     Specifies whether to decode bitmap image data when it is used or when it is loaded.
+     
+     <p>Under the default policy, <code>ImageDecodingPolicy.ON_DEMAND</code>, the runtime decodes the image data 
+     when the data is needed (for display or some other purpose). This policy maintains the decoding behavior used
+     by previous versions of the runtime.</p>
+	 
+	 <p>Under the <code>ImageDecodingPolicy.ON_LOAD</code> policy, the runtime decodes the image immediately after 
+	 it is loaded and before dispatching the <code>complete</code> event. Decoding images on load rather than on demand can 
+	 improve animation and user interface performance. You can see improvements when several loaded images are displayed in quick succession. 
+     Some examples of a rapid display of images are scrolling lists, or cover flow control. 
+     On the other hand, using the <code>onLoad</code> policy indiscriminately can increase
+	 the peak memory usage of your application. More decoded image data could be in memory at one time than would
+	 be the case under the <code>onDemand</code> policy.</p>
+	 
+     <p>Under both policies, the runtime uses the same cache and flush behavior after the image is decoded. 
+     The runtime can flush the decoded data at any time and decode the image again the next time
+     it is required.</p>
+     
+     <p>To set the image decoding policy (for example, to <code>ON_LOAD</code>):
+     <pre>
+     var loaderContext:LoaderContext = new LoaderContext(); 
+     loaderContext.imageDecodingPolicy = ImageDecodingPolicy.ON_LOAD 
+     var loader:Loader = new Loader(); 
+     loader.load(new URLRequest("http://www.adobe.com/myimage.png"), loaderContext);
+     </pre>
+     </p>
+     
+     </p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="ImageDecodingPolicy.html" target="">flash.system.ImageDecodingPolicy</a></div></div></span><span id="pageFilter" runtime="Flash::10.2##AIR::2.6##"><a name="propertyDetail" id="propertyDetail"></a><a name="parameters" id="parameters"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>parameters</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var parameters:<a href="../../Object.html">Object</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10.2, AIR 2.6</td></tr></table><p></p><p></p><p>
+     An Object containing the parameters to pass to the LoaderInfo object of the content.
+     
+     <p>Normally, the value of the <code>contentLoaderInfo.parameters</code> property is obtained by parsing the requesting URL. 
+     If the <code>parameters</code> var is set, the <code>contentLoaderInfo.parameters</code> gets its value from the LoaderContext object, instead of from 
+     the requesting URL. The <code>parameters</code> var accepts only objects containing name-value string pairs, similar to URL parameters. If the object does
+     not contain name-value string pairs, an <code>IllegalOperationError</code> is thrown.</p>
+     <p>The intent of this API is to enable the loading SWF file to forward its parameters to a loaded SWF file. 
+     This functionality is especially helpful when you use the <code>loadBytes()</code> method, since <code>LoadBytes</code> does not provide a 
+     means of passing parameters through the URL. Parameters can be forwarded successfully only to another AS3 SWF file; an AS1 or AS2 SWF file cannot receive the parameters in an 
+     accessible form, although the AVM1Movie's AS3 loaderInfo.parameters object will be the forwarded object. </p>
+     
+     
+     <p>For example, consider the following URL: </p>
+     <p><code>http://yourdomain/users/jdoe/test01/child.swf?foo=bar;</code></p>
+     <p>The following code uses the LoaderContext.parameters property to replicate a parameter passed to this URL: </p>
+     
+     <pre>
+      import flash.system.LoaderContext; 
+      import flash.display.Loader; 
+      var l:Loader = new Loader(); 
+      var lc:LoaderContext = new LoaderContext; 
+      lc.parameters = { "foo": "bar" }; 
+      l.load(new URLRequest("child.swf"), lc);
+     </pre>
+     
+     <p>To verify that the parameter passed properly, use the following trace statement after you run this code:</p>
+     <p><code>trace(loaderInfo.parameters.foo);</code></p>
+     <p>If the content loaded successfully, this trace prints "bar".</p>
+     </p></div></span><span id="pageFilter" runtime="Flash::10.2##AIR::2.6##"><a name="propertyDetail" id="propertyDetail"></a><a name="requestedContentParent" id="requestedContentParent"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>requestedContentParent</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var requestedContentParent:<a href="../../flash/display/DisplayObjectContainer.html">DisplayObjectContainer</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10.2, AIR 2.6</td></tr></table><p></p><p></p><p>
+     The parent to which the Loader will attempt to add the loaded content. 
+     
+     <p>When content is completely loaded, the Loader object normally becomes the parent of the content. 
+     If <code>requestedContentParent</code> is set, the object that it specifies becomes the parent, unless a runtime error prevents the assignment.
+     This reparenting can also be done after the <code>complete</code> event without use of this property. However, specifying the
+     parent with <code>LoaderContext.requestedContentParent</code> eliminates extra events. </p>
+     <p><code>LoaderContext.requestedContentParent</code> sets the desired parent before frame one scripts in 
+     the loaded content execute, but after the constructor has run. If <code>requestedContentParent</code> is null (the default),
+     the Loader object becomes the content's parent.</p>
+     <p>If the loaded content is an AVM1Movie object, or if an
+     error is thrown when <code>addChild()</code> is called on the <code>requestedContentParent</code> object, then the following actions occur:
+     <ul><li>The Loader object becomes the parent of the loaded content.</li><li>The runtime dispatches an <code>AsyncErrorEvent</code>.</li></ul></p>
+     <p>If the requested parent and the loaded content are in different security sandboxes, and if the requested parent does not have access 
+     to the loaded content, then the following actions occur:
+     <ul><li>The Loader becomes the parent of the loaded content.</li><li>The runtime dispatches a <code>SecurityErrorEvent</code>.</li></ul></p>
+     
+     <p>The following code uses <code>requestedContentParent</code> to place the loaded content into a Sprite object:</p>
+     <pre>
+      import flash.system.LoaderContext; 
+      import flash.display.Loader; 
+      import flash.display.Sprite; 
+     
+      var lc:LoaderContext = new LoaderContext(); 
+      var l:Loader = new Loader(); 
+      var s:Sprite = new Sprite(); 
+      lc.requestedContentParent = s; 
+      addChild(s); 
+      l.load(new URLRequest("child.swf"), lc);
+     </pre>
+     
+     <p>When this code runs, the child SWF file appears on stage. This fact confirms that the Sprite object you added to the stage is the
+     parent of the loaded child.swf file.</p>
+     </p></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.0##Lite::4##"><a name="propertyDetail" id="propertyDetail"></a><a name="securityDomain" id="securityDomain"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>securityDomain</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var securityDomain:<a href="../../flash/system/SecurityDomain.html">SecurityDomain</a> = null</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Specifies the security domain to use for a <code>Loader.load()</code> operation. Use this property
+     only when loading a SWF file (not an image).
+     
+     <p>The choice of security domain is meaningful only if you are loading a SWF file that might
+     come from a different domain (a different server) than the loading SWF file.  When you load a
+     SWF file from your own domain, it is always placed into your security domain.  But when you
+     load a SWF file from a different domain, you have two options.  You can allow the loaded SWF file to
+     be placed in its "natural" security domain, which is different from that of the
+     loading SWF file; this is the default.  The other option is to specify that you want to place the
+     loaded SWF file placed into the same security domain as the loading SWF file, by setting
+     <code>myLoaderContext.securityDomain</code> to be equal to <code>SecurityDomain.currentDomain</code>.  This is
+     called <i>import loading</i>, and it is equivalent, for security purposes, to copying the
+     loaded SWF file to your own server and loading it from there.  In order for import loading to
+     succeed, the loaded SWF file's server must have a policy file trusting the domain of the
+     loading SWF file.</p>
+     
+     <p>You can pass your own security domain only in <code>LoaderContext.securityDomain</code>.
+     Attempting to pass any other security domain results in a <code>SecurityError</code> exception.</p>
+     
+     <p>Content in the AIR application security sandbox cannot load content from
+     other sandboxes into its SecurityDomain.</p>
+     
+     <p>For more information, see the "Security" chapter in the <i>ActionScript 3.0 Developer's Guide</i>.</p>
+     
+     </p><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7de0.html" target="_blank">Specifying loading context</a></div><p id="learnMore"><span class="label">Learn more</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7e13.html" target="_blank">Loading display content dynamically</a><br/></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/display/Loader.html#load()" target="">flash.display.Loader.load()</a><br/><a href="SecurityDomain.html" target="">flash.system.SecurityDomain</a></div></div></span><a name="constructorDetail" id="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="LoaderContext()" id="LoaderContext()"></a><a name="LoaderContext(Boolean,flash.system.ApplicationDomain,flash.system.SecurityDomain)" id="LoaderContext(Boolean,flash.system.ApplicationDomain,flash.system.SecurityDomain)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>LoaderContext</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function LoaderContext(checkPolicyFile:<a href="../../Boolean.html">Boolean</a> = false, applicationDomain:<a href="../../flash/system/ApplicationDomain.html">ApplicationDomain</a> = null, securityDomain:<a href="../../flash/system/SecurityDomain.html">SecurityDomain</a> = null)</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p>
+     Creates a new LoaderContext object, with the specified settings. For complete
+     details on these settings, see the descriptions of the properties of this class.
+     
+     </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">checkPolicyFile</span>:<a href="../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; Specifies whether a check should be made for the existence 
+     of a URL policy file before loading the object.
+     
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">applicationDomain</span>:<a href="../../flash/system/ApplicationDomain.html">ApplicationDomain</a></code> (default = <code>null</code>)<code></code> &mdash; Specifies the ApplicationDomain object to use for a Loader object.
+     
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">securityDomain</span>:<a href="../../flash/system/SecurityDomain.html">SecurityDomain</a></code> (default = <code>null</code>)<code></code> &mdash; Specifies the SecurityDomain object to use for a Loader object.
+     
+     <p><i>Note:</i> Content in the air application security sandbox cannot load content from
+     other sandboxes into its SecurityDomain.</p>
+     
+     </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/display/Loader.html#load()" target="">flash.display.Loader.load()</a><br/><a href="../../flash/display/Loader.html#loadBytes()" target="">flash.display.Loader.loadBytes()</a><br/><a href="ApplicationDomain.html" target="">flash.system.ApplicationDomain</a><br/><a href="SecurityDomain.html" target="">flash.system.SecurityDomain</a></div></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

@@ -1,0 +1,854 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:9"><meta name="runtime" content="air"><meta name="runtimever" content="air:1.0$Lite:4"><meta name="product" content="flash player"><meta name="productver" content="flash player:9"><meta name="product" content="air"><meta name="productver" content="air:1.0$Lite:4"><link rel="stylesheet" href="style.css" type="text/css" media="screen"><link rel="stylesheet" href="print.css" type="text/css" media="print"><link rel="stylesheet" href="override.css" type="text/css"><link rel="stylesheet" href="asfilter.css" type="text/css"><link rel="stylesheet" href="ion.css" type="text/css"><meta name="keywords" content="String,globalClassifier.String,length,charAt,charCodeAt,concat,fromCharCode,indexOf,lastIndexOf,localeCompare,match,replace,search,slice,split,substr,substring,toLocaleLowerCase,toLocaleUpperCase,toLowerCase,toUpperCase,valueOf"><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" src="AC_OETags.js" type="text/javascript"></script><title>String - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="filter_new.css" type="text/css">
+			
+		<script src="jquery.js" type="text/javascript"></script>
+		<script src="s_chl_code.js" type="text/javascript"></script>
+		<script src="jquery.zclip.js" type="text/javascript"></script>
+		<script src="jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="cookies.js" type="text/javascript"></script>
+		<script src="asdoc.js" type="text/javascript"></script>
+		<script src="iscroll.js" type="text/javascript"></script>
+		<script src="AC_OETags.js" type="text/javascript"></script>
+		<script src="omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="search.html" onSubmit="searchfunctionsubmit('')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="help.js"></script>
+						<script language="javascript" type="text/javascript" src="asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">Top Level&nbsp;</a><br>
+								<h1 id="classProductName">String&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">Top Level</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public final   class  String</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">String  <img src="images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="Object.html">Object</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0, Flash Lite 4</td></tr></table><p></p><p></p><p></p>
+ The String class is a data type that represents a string of characters. The String class 
+ provides methods and properties that let you manipulate primitive string value types. 
+ You can convert the value of any object into a String data type object using the <code>String()</code>
+ function. 
+ <p>
+ Because all string indexes are zero-based, the index of the last character 
+ for any string <code>x</code> is <code>x.length - 1</code>.
+ </p>
+               <p>
+ You can call any of the methods of the String class whether you use the constructor method
+ <code>new String()</code> to create a new string variable or simply assign a string literal value. 
+ Unlike previous versions of ActionScript, it makes no difference whether you use the constructor,
+ the global function, or simply assign a string literal value. The following lines of code are equivalent:
+ </p>
+               <div class="listing" version="3.0"><pre>
+ var str:String = new String("foo");
+ var str:String = "foo";
+ var str:String = String("foo");</pre></div>
+               <p>When setting a string variable to <code>undefined</code>, the Flash runtimes coerce <code>undefined</code> 
+ to <code>null</code>. So, the statement:</p>
+               <pre>
+ var s:String = undefined;</pre>
+ sets the value to <code>null</code> instead of <code>undefined</code>. Use the <code>String()</code>
+ function if you need to use <code>undefined</code>.
+ <p></p><p><a href="#includeExamplesSummary">View the examples</a></p><p id="moreExamples"><span class="classHeaderTableLabel">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ef8.html" target="_blank">Creating strings</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7efe.html" target="_blank">Working with characters in strings</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7eef.html" target="_blank">Comparing strings</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ef9.html" target="_blank">Concatenating strings</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7f00.html" target="_blank">Finding substrings and patterns
+in strings</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7eff.html" target="_blank">Converting strings between uppercase and
+lowercase</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7eee.html" target="_blank">Strings example: ASCII art</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ea9.html" target="_blank">Regular expression syntax</a></div><p id="learnMore"><span class="classHeaderTableLabel">Learn more</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b8d6e8-7ff2.html" target="_blank">Working with strings </a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7fa1.html" target="_blank">Basics of strings</a><br/></div><p><span class="classHeaderTableLabel">Related API Elements</span></p><div class="seeAlso"><a href="package.html#String()" target="">String() global function</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="Object.html#constructor" class="signatureLink">constructor</a> : <a href="Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#length" class="signatureLink">length</a> : <a href="int.html">int</a><div class="summaryTableDescription">[read-only] 
+     An integer specifying the number of characters in the specified String object.</div></td><td class="summaryTableOwnerCol">String</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#String()" class="signatureLink">String</a>(val:<a href="String.html">String</a>)</div><div class="summaryTableDescription">
+  Creates a new String object initialized to the specified string.</div></td><td class="summaryTableOwnerCol">String</td></tr><tr class="" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#charAt()" class="signatureLink">charAt</a>(index:<a href="Number.html">Number</a> = 0):<a href="String.html">String</a></div><div class="summaryTableDescription">
+     Returns the character in the position specified by the index parameter.</div></td><td class="summaryTableOwnerCol">String</td></tr><tr class="" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#charCodeAt()" class="signatureLink">charCodeAt</a>(index:<a href="Number.html">Number</a> = 0):<a href="Number.html">Number</a></div><div class="summaryTableDescription">
+     Returns the numeric Unicode character code of the character at the specified  
+     index.</div></td><td class="summaryTableOwnerCol">String</td></tr><tr class="" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#concat()" class="signatureLink">concat</a>(<a href="statements.html#..._(rest)_parameter">...</a> args):<a href="String.html">String</a></div><div class="summaryTableDescription">
+     Appends the supplied arguments to the end of the String object, converting them to strings if
+     necessary, and returns the resulting string.</div></td><td class="summaryTableOwnerCol">String</td></tr><tr class="" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#fromCharCode()" class="signatureLink">fromCharCode</a>(<a href="statements.html#..._(rest)_parameter">...</a> charCodes):<a href="String.html">String</a></div><div class="summaryTableDescription">[static] 
+    Returns a string comprising the characters represented by the Unicode character codes
+    in the parameters.</div></td><td class="summaryTableOwnerCol">String</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#indexOf()" class="signatureLink">indexOf</a>(val:<a href="String.html">String</a>, startIndex:<a href="Number.html">Number</a> = 0):<a href="int.html">int</a></div><div class="summaryTableDescription">
+     Searches the string and returns the position of the first occurrence of val 
+     found at or after startIndex within the calling string.</div></td><td class="summaryTableOwnerCol">String</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="Object.html">Object</a>):<a href="Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#lastIndexOf()" class="signatureLink">lastIndexOf</a>(val:<a href="String.html">String</a>, startIndex:<a href="Number.html">Number</a> = 0x7FFFFFFF):<a href="int.html">int</a></div><div class="summaryTableDescription">
+     Searches the string from right to left and returns the index of the last occurrence 
+     of val found before startIndex.</div></td><td class="summaryTableOwnerCol">String</td></tr><tr class="" runtime="Lite::4##Flash::9##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#localeCompare()" class="signatureLink">localeCompare</a>(other:<a href="String.html">String</a>, <a href="statements.html#..._(rest)_parameter">...</a> values):<a href="int.html">int</a></div><div class="summaryTableDescription">
+     Compares the sort order of two or more strings and returns the result of the comparison as an integer.</div></td><td class="summaryTableOwnerCol">String</td></tr><tr class="" runtime="Lite::4##Flash::9##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#match()" class="signatureLink">match</a>(pattern:<a href="specialTypes.html#*">*</a>):<a href="Array.html">Array</a></div><div class="summaryTableDescription">
+    Matches the specifed pattern against the 
+    string.</div></td><td class="summaryTableOwnerCol">String</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="String.html">String</a>):<a href="Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="" runtime="Lite::4##Flash::9##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#replace()" class="signatureLink">replace</a>(pattern:<a href="specialTypes.html#*">*</a>, repl:<a href="Object.html">Object</a>):<a href="String.html">String</a></div><div class="summaryTableDescription">
+    Matches the specifed pattern against the string and returns a new string
+    in which the first match of pattern is replaced with the content specified by repl.</div></td><td class="summaryTableOwnerCol">String</td></tr><tr class="" runtime="Lite::4##Flash::9##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#search()" class="signatureLink">search</a>(pattern:<a href="specialTypes.html#*">*</a>):<a href="int.html">int</a></div><div class="summaryTableDescription">
+    Searches for the specifed pattern and returns the index of 
+    the first matching substring.</div></td><td class="summaryTableOwnerCol">String</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="String.html">String</a>, isEnum:<a href="Boolean.html">Boolean</a> = true):<a href="specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="" runtime="Lite::4##Flash::9##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#slice()" class="signatureLink">slice</a>(startIndex:<a href="Number.html">Number</a> = 0, endIndex:<a href="Number.html">Number</a> = 0x7fffffff):<a href="String.html">String</a></div><div class="summaryTableDescription">
+     Returns a string that includes the startIndex character 
+     and all characters up to, but not including, the endIndex character.</div></td><td class="summaryTableOwnerCol">String</td></tr><tr class="" runtime="Lite::4##Flash::9##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#split()" class="signatureLink">split</a>(delimiter:<a href="specialTypes.html#*">*</a>, limit:<a href="Number.html">Number</a> = 0x7fffffff):<a href="Array.html">Array</a></div><div class="summaryTableDescription">
+     Splits a String object into an array of substrings 
+     by dividing it wherever the specified delimiter parameter 
+     occurs.</div></td><td class="summaryTableOwnerCol">String</td></tr><tr class="" runtime="Lite::4##Flash::9##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#substr()" class="signatureLink">substr</a>(startIndex:<a href="Number.html">Number</a> = 0, len:<a href="Number.html">Number</a> = 0x7fffffff):<a href="String.html">String</a></div><div class="summaryTableDescription">
+     Returns a substring consisting of the characters that start at the specified 
+     startIndex and with a length specified by len.</div></td><td class="summaryTableOwnerCol">String</td></tr><tr class="" runtime="Lite::4##Flash::9##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#substring()" class="signatureLink">substring</a>(startIndex:<a href="Number.html">Number</a> = 0, endIndex:<a href="Number.html">Number</a> = 0x7fffffff):<a href="String.html">String</a></div><div class="summaryTableDescription">
+     Returns a string consisting of the character specified by startIndex 
+     and all characters up to endIndex - 1.</div></td><td class="summaryTableOwnerCol">String</td></tr><tr class="" runtime="Lite::4##Flash::9##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#toLocaleLowerCase()" class="signatureLink">toLocaleLowerCase</a>():<a href="String.html">String</a></div><div class="summaryTableDescription">
+     Returns a copy of this string, with all uppercase characters converted
+     to lowercase.</div></td><td class="summaryTableOwnerCol">String</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="" runtime="Lite::4##Flash::9##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#toLocaleUpperCase()" class="signatureLink">toLocaleUpperCase</a>():<a href="String.html">String</a></div><div class="summaryTableDescription">
+     Returns a copy of this string, with all lowercase characters converted 
+     to uppercase.</div></td><td class="summaryTableOwnerCol">String</td></tr><tr class="" runtime="Lite::4##Flash::9##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#toLowerCase()" class="signatureLink">toLowerCase</a>():<a href="String.html">String</a></div><div class="summaryTableDescription">
+     Returns a copy of this string, with all uppercase characters converted
+     to lowercase.</div></td><td class="summaryTableOwnerCol">String</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="Object.html#toString()" class="signatureLink">toString</a>():<a href="String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="Object.html">Object</a></td></tr><tr class="" runtime="Lite::4##Flash::9##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#toUpperCase()" class="signatureLink">toUpperCase</a>():<a href="String.html">String</a></div><div class="summaryTableDescription">
+     Returns a copy of this string, with all lowercase characters converted 
+     to uppercase.</div></td><td class="summaryTableOwnerCol">String</td></tr><tr class="" runtime="Lite::4##Flash::9##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#valueOf()" class="signatureLink">valueOf</a>():<a href="String.html">String</a></div><div class="summaryTableDescription">
+     Returns the primitive value of a String instance.</div></td><td class="summaryTableOwnerCol">String</td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="Flash::9##AIR::1.0##Lite::4##"><a name="propertyDetail" id="propertyDetail"></a><a name="length" id="length"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>length</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>length:<a href="int.html">int</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     An integer specifying the number of characters in the specified String object.
+     <p>
+     Because all string indexes are zero-based, the index of the last character for any 
+     string <code>x</code> is <code>x.length - 1</code>.
+     </p>
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get length():<a href="int.html">int</a></code><br/><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ef0.html" target="_blank">The length property</a></div></div></span><a name="constructorDetail" id="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><span id="pageFilter" runtime="Flash::9##AIR::1.0##Lite::4##"><a name="String()" id="String()"></a><a name="String(String)" id="String(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>String</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function String(val:<a href="String.html">String</a>)</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0, Flash Lite 4</td></tr></table><p></p><p>
+  Creates a new String object initialized to the specified string.
+  
+  <p>
+  <b>Note: </b>Because string literals use less overhead than String 
+  objects and are generally easier to use, you should use string literals instead of the 
+  String class unless you have a good reason to use a String object rather than a string literal.
+  </p>
+  
+  </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">val</span>:<a href="String.html">String</a></code> &mdash; The initial value of the new String object.
+  
+  </td></tr></table><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ea9.html" target="_blank">Regular expression syntax</a></div></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::9##AIR::1.0##Lite::4##"><a name="charAt()" id="charAt()"></a><a name="charAt(Number)" id="charAt(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>charAt</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> function charAt(index:<a href="Number.html">Number</a> = 0):<a href="String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Returns the character in the position specified by the <code>index</code> parameter. 
+     If <code>index</code> is not a number from 0 to <code>string.length - 1</code>, an 
+     empty string is returned.
+     <p>
+     This method is similar to <code>String.charCodeAt()</code> except that the returned 
+     value is a character, not a 16-bit integer character code.
+     </p>
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">index</span>:<a href="Number.html">Number</a></code> (default = <code>0</code>)<code></code> &mdash; An integer specifying the position of a character in the string. The first 
+     character is indicated by <code>0</code>, and the last character is indicated by 
+     <code>my_str.length - 1</code>.
+     
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; The character at the specified index. Or an empty string if the
+     specified index is outside the range of this string's indices.
+     
+     </td></tr></table><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7efe.html" target="_blank">Working with characters in strings</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="String.html#charCodeAt()" target="">charCodeAt()</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.0##Lite::4##"><a name="charCodeAt()" id="charCodeAt()"></a><a name="charCodeAt(Number)" id="charCodeAt(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>charCodeAt</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> function charCodeAt(index:<a href="Number.html">Number</a> = 0):<a href="Number.html">Number</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Returns the numeric Unicode character code of the character at the specified  
+     <code>index</code>. If <code>index</code> is not a number from 0 to <code>
+     string.length - 1</code>, <code>NaN</code> is returned.
+     <p>
+     This method is similar to <code>String.charAt()</code> except that the returned 
+     value is a 16-bit integer character code, not the actual character.
+     </p>
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">index</span>:<a href="Number.html">Number</a></code> (default = <code>0</code>)<code></code> &mdash; An integer that specifies the position of a character in the string. The 
+     first character is indicated by <code>0,</code> and the last character is indicated by 
+     <code>my_str.length - 1</code>.
+     
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Number.html">Number</a></code> &mdash; The Unicode character code of the character at the specified index. Or <code>
+     NaN</code> if the index is outside the range of this string's indices.
+     <p>Unicode values are defined in the <a href="http://www.unicode.org/ucd/" target="external">Unicode Character Database</a>
+     specification. </p>       
+     
+     </td></tr></table><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7efe.html" target="_blank">Working with characters in strings</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="String.html#charAt()" target="">charAt()</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.0##Lite::4##"><a name="concat()" id="concat()"></a><a name="concat(restParam)" id="concat(restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>concat</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> function concat(<a href="statements.html#..._(rest)_parameter">...</a> args):<a href="String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Appends the supplied arguments to the end of the String object, converting them to strings if
+     necessary, and returns the resulting string. The original value of the source String object 
+     remains unchanged.
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><a href="statements.html#..._(rest)_parameter">...</a> <span class="label">args</span></code> &mdash; Zero or more values to be concatenated.
+     
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; A new string consisting of this string concatenated
+     with the specified parameters.
+     
+     </td></tr></table><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ef9.html" target="_blank">Concatenating strings</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.0##Lite::4##"><a name="fromCharCode()" id="fromCharCode()"></a><a name="fromCharCode(restParam)" id="fromCharCode(restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>fromCharCode</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> static function fromCharCode(<a href="statements.html#..._(rest)_parameter">...</a> charCodes):<a href="String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0, Flash Lite 4</td></tr></table><p></p><p></p><p>
+    Returns a string comprising the characters represented by the Unicode character codes
+    in the parameters.
+    
+    </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><a href="statements.html#..._(rest)_parameter">...</a> <span class="label">charCodes</span></code> &mdash; A series of decimal integers that represent Unicode values.
+    <p>Unicode values are defined in the <a href="http://www.unicode.org/ucd/" target="external">Unicode Character Database</a>
+    specification. </p>       
+    
+    </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; The string value of the specified Unicode character codes.
+    
+    </td></tr></table><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7efe.html" target="_blank">Working with characters in strings</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.0##Lite::4##"><a name="indexOf()" id="indexOf()"></a><a name="indexOf(String,Number)" id="indexOf(String,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>indexOf</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> function indexOf(val:<a href="String.html">String</a>, startIndex:<a href="Number.html">Number</a> = 0):<a href="int.html">int</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Searches the string and returns the position of the first occurrence of <code>val</code> 
+     found at or after <code>startIndex</code> within the calling string. This index is zero-based, 
+     meaning that the first character in a string is considered to be at index 0--not index 1. If 
+     <code>val</code> is not found, the method returns -1.
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">val</span>:<a href="String.html">String</a></code> &mdash; The substring for which to search.
+     
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">startIndex</span>:<a href="Number.html">Number</a></code> (default = <code>0</code>)<code></code> &mdash; An optional integer specifying the starting index of the search.
+     
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="int.html">int</a></code> &mdash; The index of the first occurrence of the specified substring or <code>-1</code>.
+     
+     </td></tr></table><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ef3.html" target="_blank">Finding the character position
+of a matching substring</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="String.html#lastIndexOf()" target="">lastIndexOf()</a></div></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.0##Lite::4##"><a name="lastIndexOf()" id="lastIndexOf()"></a><a name="lastIndexOf(String,Number)" id="lastIndexOf(String,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>lastIndexOf</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> function lastIndexOf(val:<a href="String.html">String</a>, startIndex:<a href="Number.html">Number</a> = 0x7FFFFFFF):<a href="int.html">int</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Searches the string from right to left and returns the index of the last occurrence 
+     of <code>val</code> found before <code>startIndex</code>. The index is zero-based, 
+     meaning that the first character is at index 0, and the last is at <code>string.length
+     - 1</code>. If <code>val</code> is not found, the method returns <code>-1</code>.
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">val</span>:<a href="String.html">String</a></code> &mdash; The string for which to search.
+     
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">startIndex</span>:<a href="Number.html">Number</a></code> (default = <code>0x7FFFFFFF</code>)<code></code> &mdash; An optional integer specifying the starting index from which to 
+     search for <code>val</code>. The default is the maximum value allowed for an index. 
+     If <code>startIndex</code> is not specified, the search starts at the last item in the string.
+     
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="int.html">int</a></code> &mdash; The position of the last occurrence of the specified substring or -1 if not found.
+     
+     </td></tr></table><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ef3.html" target="_blank">Finding the character position
+of a matching substring</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="String.html#indexOf()" target="">indexOf()</a></div></div></span><span id="pageFilter" runtime="Lite::4##Flash::9##AIR::1.0##"><a name="localeCompare()" id="localeCompare()"></a><a name="localeCompare(String,restParam)" id="localeCompare(String,restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>localeCompare</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> function localeCompare(other:<a href="String.html">String</a>, <a href="statements.html#..._(rest)_parameter">...</a> values):<a href="int.html">int</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Lite 4, Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p>
+     Compares the sort order of two or more strings and returns the result of the comparison as an integer. While this
+     method is intended to handle the comparison in a locale-specific way, the ActionScript 3.0 implementation
+     does not produce a different result from other string comparisons such as the equality (<code>==</code>) or 
+     inequality (<code>!=</code>) operators.
+     If the strings are equivalent, the return value is 0.
+     If the original string value precedes the string value specified by <code>other</code>, 
+     the return value is a negative integer, the absolute value of which represents
+     the number of characters that separates the two string values.
+     If the original string value comes after <code>other</code>,
+     the return value is a positive integer, the absolute value of which represents
+     the number of characters that separates the two string values.
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">other</span>:<a href="String.html">String</a></code> &mdash; A string value to compare.
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><a href="statements.html#..._(rest)_parameter">...</a> <span class="label">values</span></code> &mdash; Optional set of more strings to compare.
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="int.html">int</a></code> &mdash; The value 0 if the strings are equal. Otherwise, a negative integer if the original
+     string precedes the string argument and a positive integer if the string argument precedes
+     the original string. In both cases the absolute value of the number represents the difference
+     between the two strings.
+      
+      </td></tr></table></div></span><span id="pageFilter" runtime="Lite::4##Flash::9##AIR::1.0##"><a name="match()" id="match()"></a><a name="match(any)" id="match(any)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>match</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> function match(pattern:<a href="specialTypes.html#*">*</a>):<a href="Array.html">Array</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Lite 4, Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p>
+    Matches the specifed <code>pattern</code> against the 
+    string.
+    
+    </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">pattern</span>:<a href="specialTypes.html#*">*</a></code> &mdash; The pattern to match, which can be any type of object, but is typically 
+    either a string or a regular expression. If the <code>pattern</code> is not a regular expression
+    or a string, then the method converts it to a string before executing. 
+    
+    </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Array.html">Array</a></code> &mdash; An array of strings consisting of all substrings in 
+    the string that match the specified <code>pattern</code>.
+    
+    <p>If <code>pattern</code> is a regular expression, in order to return an array with 
+    more than one matching substring, the <code>g</code> (global) flag must be set
+    in the regular expression: </p>
+    
+    <ul><li>If the <code>g</code> (global) flag is <i>not</i> set,
+    the return array will contain no more than one match, and the <code>lastIndex</code>
+    property of the regular expression remains unchanged.</li><li>If the <code>g</code> (global) flag <i>is</i> set, the method starts the search at
+    the beginning of the string (index position 0). If a matching substring is an empty string (which
+    can occur with a regular expression such as <code>/x*/</code>), the method adds that
+    empty string to the array of matches, and then continues searching at the next index position. 
+    The <code>lastIndex</code> property of the regular expression is set to 0 after the 
+    method completes. </li></ul>
+    
+    <p>When the <code>pattern</code> parameter is a regular expression with the 
+    <code>g</code> (global) flag set, if no match is found the method returns 
+    an empty Array. If the <code>pattern</code> parameter is a String or a 
+    non-global regular expression and no match is found, the method returns 
+    <code>null</code>. If you pass no value (or an undefined value) as the 
+    <code>pattern</code> parameter, the method returns <code>null</code>.</p>
+    
+    
+    </td></tr></table><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ef1.html" target="_blank">Finding patterns in strings and
+replacing substrings</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ea9.html" target="_blank">Regular expression syntax</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="RegExp.html" target="">RegExp</a></div></div></span><span id="pageFilter" runtime="Lite::4##Flash::9##AIR::1.0##"><a name="replace()" id="replace()"></a><a name="replace(any,Object)" id="replace(any,Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>replace</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> function replace(pattern:<a href="specialTypes.html#*">*</a>, repl:<a href="Object.html">Object</a>):<a href="String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Lite 4, Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p>
+    Matches the specifed <code>pattern</code> against the string and returns a new string
+    in which the first match of <code>pattern</code> is replaced with the content specified by <code>repl</code>. 
+    The <code>pattern</code> parameter can be a string or a regular expression. The <code>repl</code> parameter
+    can be a string or a function; if it is a function, the string returned  
+    by the function is inserted in place of the match. The original string is not modified.
+    
+    <p>In the following example, only the first instance of "sh" (case-sensitive)
+    is replaced: </p>
+    
+    <div class="listing"><pre>
+    var myPattern:RegExp = /sh/;  
+    var str:String = "She sells seashells by the seashore.";
+    trace(str.replace(myPattern, "sch"));  
+       // She sells seaschells by the seashore.</pre></div>
+    
+    <p>In the following example, all instances of "sh" (case-sensitive)
+    are replaced because the <code>g</code> (global) flag is set in the regular expression: </p>
+    
+    <div class="listing"><pre>
+    var myPattern:RegExp = /sh/g;  
+    var str:String = "She sells seashells by the seashore.";
+    trace(str.replace(myPattern, "sch"));  
+       // She sells seaschells by the seaschore.</pre></div>
+    
+    <p>In the following example, all instance of "sh" 
+    are replaced because the <code>g</code> (global) flag is set in the regular expression 
+    and the matches are <i>not</i> case-sensitive because the <code>i</code> (ignoreCase) flag is set:</p>
+    
+    <div class="listing"><pre>
+    var myPattern:RegExp = /sh/gi;  
+    var str:String = "She sells seashells by the seashore.";
+    trace(str.replace(myPattern, "sch"));  
+       // sche sells seaschells by the seaschore.</pre></div>
+    
+    </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">pattern</span>:<a href="specialTypes.html#*">*</a></code> &mdash; The pattern to match, which can be any type of object, but it is typically 
+    either a string or a regular expression. If you specify a <code>pattern</code> parameter
+    that is any object other than a string or a regular expression, the <code>toString()</code> method is 
+    applied to the parameter and the <code>replace()</code> method executes using the resulting string 
+    as the <code>pattern</code>. 
+    
+    </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">repl</span>:<a href="Object.html">Object</a></code> &mdash; Typically, the string that is inserted in place of the matching content. However, you can 
+    also specify a function as this parameter. If you specify a function, the string returned  
+    by the function is inserted in place of the matching content.
+    
+    <p>When you specify a string as the <code>repl</code> parameter and specify a regular expression 
+    as the <code>pattern</code> parameter, you can use the following special <i>$ replacement codes</i>  
+    in the <code>repl</code> string:</p>
+    
+    <table class="innertable" ><tr><th>$ Code
+      </th><th>Replacement Text
+      </th></tr><tr><td><code>$$</code>
+      </td><td><code>$</code>
+      </td></tr><tr><td><code>$&</code>
+      </td><td>The matched substring.
+      </td></tr><tr><td><code>$`</code> 
+      </td><td>The portion of the string that precedes the matched substring. 
+      Note that this code uses the straight left single quote character (`), 
+      not the straight single quote character (') or the left curly single quote 
+      character (&lsquo;).
+      </td></tr><tr><td><code>$'</code>
+      </td><td>The portion of string that follows the matched substring. 
+      Note that this code uses the straight single quote character (').
+      </td></tr><tr><td><code>$</code><i>n</i>
+      </td><td>The <i>n</i>th captured parenthetical group match, where <i>n</i> is a single 
+      digit 1-9 and <code>$</code><i>n</i> is not followed by a decimal digit. 
+      </td></tr><tr><td><code>$</code><i>nn</i>
+      </td><td>The <i>nn</i>th captured parenthetical group match, where <i>nn</i> is a two-digit 
+      decimal number (01-99). If the <i>nn</i>th capture is undefined, the replacement text 
+      is an empty string. 
+      </td></tr></table>
+    
+    <p>For example, the following shows the use of the <code>$2</code> and <code>$1</code> 
+    replacement codes, which represent the first and second capturing group matched:</p>
+    
+    <div class="listing"><pre>var str:String = "flip-flop";
+    var pattern:RegExp = /(\w+)-(\w+)/g;
+    trace(str.replace(pattern, "$2-$1")); // flop-flip</pre></div>
+    
+    <p>When you specify a function as the <code>repl</code>, the <code>replace()</code> method
+    passes the following parameters to the function:
+    </p>
+    
+    <ul><li>
+      The matching portion of the string.
+      </li><li>
+      Any captured parenthetical group matches are provided as the next arguments. The number of arguments passed
+      this way will vary depending on the number of parenthetical matches. You can determine the
+      number of parenthetical matches by checking <code>arguments.length - 3</code> within the function
+      code.
+      </li><li>
+      The index position in the string where the match begins.
+      </li><li>
+      The complete string.
+      </li></ul>
+    
+    <p>For example, consider the following:</p>
+    
+    <div class="listing"><pre>
+    var str1:String = "abc12 def34";
+    var pattern:RegExp = /([a-z]+)([0-9]+)/;
+    var str2:String = str1.replace(pattern, replFN);
+    trace (str2);   // 12abc 34def
+    
+    function replFN():String {
+      return arguments[2] + arguments[1];
+    }</pre></div>
+    
+    
+    <p>The call to the <code>replace()</code> method uses a function as the <code>repl</code>
+    parameter. The regular expression (<code>/([a-z]([0-9]/g</code>) is matched twice. The 
+    first time, the pattern matches the substring <code>"abc12"</code>, and the following list 
+    of arguments is passed to the function:
+    </p>
+    
+    <div class="listing"><pre>
+    {"abc12", "abc", "12", 0, "abc12 def34"}</pre></div>
+    
+    
+    <p>The second time, the pattern matches the substring <code>"def23"</code>, and the 
+    following list of arguments is passed to the function:
+    </p>
+    
+    <div class="listing"><pre>
+    {"def34", "def", "34", 6, "abc123 def34"}</pre></div>
+    
+    
+    </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; The resulting string. Note that the source string remains unchanged.
+    
+    </td></tr></table><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ef1.html" target="_blank">Finding patterns in strings and
+replacing substrings</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ea9.html" target="_blank">Regular expression syntax</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="RegExp.html" target="">RegExp</a></div></div></span><span id="pageFilter" runtime="Lite::4##Flash::9##AIR::1.0##"><a name="search()" id="search()"></a><a name="search(any)" id="search(any)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>search</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> function search(pattern:<a href="specialTypes.html#*">*</a>):<a href="int.html">int</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Lite 4, Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p>
+    Searches for the specifed <code>pattern</code> and returns the index of 
+    the first matching substring. If there is no matching substring, the method returns 
+    <code>-1</code>.
+    
+    </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">pattern</span>:<a href="specialTypes.html#*">*</a></code> &mdash; The pattern to match, which can be any type of object but is typically 
+    either a string or a regular expression.. If the <code>pattern</code> is not a regular expression
+    or a string, then the method converts it to a string before executing. 
+    Note that if you specify a regular expression, the method ignores the global flag ("g") of the 
+    regular expression, and it ignores the <code>lastIndex</code> property of the regular
+    expression (and leaves it unmodified). If you pass an undefined value (or no value), 
+    the method returns <code>-1</code>.
+    
+    </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="int.html">int</a></code> &mdash; The index of the first matching substring, or <code>-1</code> if 
+    there is no match. Note that the string is zero-indexed; the first character of 
+    the string is at index 0, the last is at <code>string.length - 1</code>. 
+    
+    </td></tr></table><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ef1.html" target="_blank">Finding patterns in strings and
+replacing substrings</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ea9.html" target="_blank">Regular expression syntax</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="RegExp.html" target="">RegExp</a></div></div></span><span id="pageFilter" runtime="Lite::4##Flash::9##AIR::1.0##"><a name="slice()" id="slice()"></a><a name="slice(Number,Number)" id="slice(Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>slice</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> function slice(startIndex:<a href="Number.html">Number</a> = 0, endIndex:<a href="Number.html">Number</a> = 0x7fffffff):<a href="String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Lite 4, Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p>
+     Returns a string that includes the <code>startIndex</code> character 
+     and all characters up to, but not including, the <code>endIndex</code> character. The original String object is not modified. 
+     If the <code>endIndex</code> parameter is not specified, then the end of the 
+     substring is the end of the string. If the character indexed by <code>startIndex</code> is the same as or to the right of the 
+     character indexed by <code>endIndex</code>, the method returns an empty string.
+     
+     
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">startIndex</span>:<a href="Number.html">Number</a></code> (default = <code>0</code>)<code></code> &mdash; The zero-based index of the starting point for the slice. If 
+     <code>startIndex</code> is a negative number, the slice is created from right-to-left, where 
+     -1 is the last character.
+     
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">endIndex</span>:<a href="Number.html">Number</a></code> (default = <code>0x7fffffff</code>)<code></code> &mdash; An integer that is one greater than the index of the ending point for 
+     the slice. The character indexed by the <code>endIndex</code> parameter is not included in the extracted 
+     string.  
+     If <code>endIndex</code> is a negative number, the ending point is determined by 
+     counting back from the end of the string, where -1 is the last character.
+     The default is the maximum value allowed for an index. If this parameter is omitted, <code>String.length</code> is used.
+     
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; A substring based on the specified indices.
+     
+     </td></tr></table><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ef4.html" target="_blank">Finding a substring by character
+position</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="String.html#substr()" target="">substr()</a><br/><a href="String.html#substring()" target="">substring()</a></div></div></span><span id="pageFilter" runtime="Lite::4##Flash::9##AIR::1.0##"><a name="split()" id="split()"></a><a name="split(any,Number)" id="split(any,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>split</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> function split(delimiter:<a href="specialTypes.html#*">*</a>, limit:<a href="Number.html">Number</a> = 0x7fffffff):<a href="Array.html">Array</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Lite 4, Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p>
+     Splits a String object into an array of substrings 
+     by dividing it wherever the specified <code>delimiter</code> parameter 
+     occurs. 
+     
+     <p>If the <code>delimiter</code> parameter is a regular expression, only 
+     the first match at a given position of the string is considered, 
+     even if backtracking could find a nonempty substring match at that
+     position. For example:</p>
+     
+     <div class="listing" version="3.0"><pre>
+     var str:String = "ab";
+     var results:Array = str.split(/a*?/); // results == ["","b"]
+     
+     results = str.split(/a*/); // results == ["","b"].)</pre></div>
+     
+     
+     <p>If the <code>delimiter</code> parameter is a regular expression 
+     containing grouping parentheses, then each time the 
+     <code>delimiter</code> is matched, the results (including any 
+     undefined results) of the grouping parentheses are spliced into the
+     output array. For example</p>
+     
+     <div class="listing" version="3.0"><pre>
+     var str:String = "Thi5 is a tricky-66 example.";
+     var re:RegExp = /(\d+)/;
+     var results:Array = str.split(re);
+         // results == ["Thi","5"," is a tricky-","66"," example."]</pre></div>
+     
+     
+     <p>If the <code>limit</code> parameter is specified, then 
+     the returned array will have no more than the specified 
+     number of elements.</p>
+     <p>If the <code>delimiter</code> is an empty string, an empty 
+     regular expression, or a regular expression that can match an empty 
+     string, each single character in the string 
+     is output as an element in the array.</p>
+     
+     <p>If the <code>delimiter</code> parameter is undefined, the entire 
+     string is placed into the first element of the returned 
+     array. </p>     
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">delimiter</span>:<a href="specialTypes.html#*">*</a></code> &mdash; The pattern that specifies where to split this string. This can be any type of 
+     object but is typically either a string or a regular expression. If the <code>delimiter</code> 
+     is not a regular expression or string, then the method converts it to a string before executing. 
+     
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">limit</span>:<a href="Number.html">Number</a></code> (default = <code>0x7fffffff</code>)<code></code> &mdash; The maximum number of items to place into the array. 
+     The default is the maximum value allowed. 
+     
+     
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="Array.html">Array</a></code> &mdash; An array of substrings.
+     
+     
+     
+     </td></tr></table><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ef2.html" target="_blank">Creating an array of substrings
+segmented by a delimiter</a><br/><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ea9.html" target="_blank">Regular expression syntax</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Array.html#join()" target="">Array.join()</a><br/><a href="RegExp.html" target="">RegExp</a></div></div></span><span id="pageFilter" runtime="Lite::4##Flash::9##AIR::1.0##"><a name="substr()" id="substr()"></a><a name="substr(Number,Number)" id="substr(Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>substr</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> function substr(startIndex:<a href="Number.html">Number</a> = 0, len:<a href="Number.html">Number</a> = 0x7fffffff):<a href="String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Lite 4, Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p>
+     Returns a substring consisting of the characters that start at the specified <code>
+     startIndex</code> and with a length specified by <code>len</code>. The original
+     string is unmodified.
+     
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">startIndex</span>:<a href="Number.html">Number</a></code> (default = <code>0</code>)<code></code> &mdash; An integer that specified the index of the first character to be 
+     used to create the substring. If <code>startIndex</code> is a negative number, the 
+     starting index is determined from the end of the string, where <code>-1</code> is the 
+     last character.
+     
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">len</span>:<a href="Number.html">Number</a></code> (default = <code>0x7fffffff</code>)<code></code> &mdash; The number of characters in the substring being created. 
+     The default value is the maximum value allowed. If <code>len</code> 
+     is not specified, the substring includes all the characters from <code>startIndex</code>
+     to the end of the string.
+     
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; A substring based on the specified parameters.
+     
+     </td></tr></table><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ef4.html" target="_blank">Finding a substring by character
+position</a></div></div></span><span id="pageFilter" runtime="Lite::4##Flash::9##AIR::1.0##"><a name="substring()" id="substring()"></a><a name="substring(Number,Number)" id="substring(Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>substring</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> function substring(startIndex:<a href="Number.html">Number</a> = 0, endIndex:<a href="Number.html">Number</a> = 0x7fffffff):<a href="String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Lite 4, Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p>
+     Returns a string consisting of the character specified by <code>startIndex</code> 
+     and all characters up to <code>endIndex - 1</code>. If <code>endIndex</code> is not 
+     specified, <code>String.length</code> is used. If the value of <code>startIndex</code> 
+     equals the value of <code>endIndex</code>, the method returns an empty string.
+     If the value of <code>startIndex</code> is greater than the value of <code>
+     endIndex</code>, the parameters are automatically swapped before the function 
+     executes. The original string is unmodified.
+     
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">startIndex</span>:<a href="Number.html">Number</a></code> (default = <code>0</code>)<code></code> &mdash; An integer specifying the index of the first character used to create 
+     the substring. Valid values for <code>startIndex</code> are <code>0</code> through 
+     <code>String.length</code>. If <code>startIndex</code> is a negative value, <code>0
+     </code> is used.
+     
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">endIndex</span>:<a href="Number.html">Number</a></code> (default = <code>0x7fffffff</code>)<code></code> &mdash; An integer that is one greater than the index of the last character in the
+     extracted substring. Valid values for <code>endIndex</code> are <code>0</code> through 
+     <code>String.length</code>. The character at <code>endIndex</code> is not included in 
+     the substring. The default is the maximum value allowed for an index. 
+     If this parameter is omitted, <code>String.length</code> is used. If 
+     this parameter is a negative value, <code>0</code> is used.
+     
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; A substring based on the specified parameters.
+     
+     </td></tr></table><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ef4.html" target="_blank">Finding a substring by character
+position</a></div></div></span><span id="pageFilter" runtime="Lite::4##Flash::9##AIR::1.0##"><a name="toLocaleLowerCase()" id="toLocaleLowerCase()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>toLocaleLowerCase</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> function toLocaleLowerCase():<a href="String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Lite 4, Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p>
+     Returns a copy of this string, with all uppercase characters converted
+     to lowercase. The original string is unmodified. While this
+     method is intended to handle the conversion in a locale-specific way, the ActionScript 3.0 implementation
+     does not produce a different result from the <code>toLowerCase()</code> method.
+     
+     </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; A copy of this string with all uppercase characters converted
+     to lowercase.
+     
+     </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="String.html#toLowerCase()" target="">toLowerCase()</a></div></div></span><span id="pageFilter" runtime="Lite::4##Flash::9##AIR::1.0##"><a name="toLocaleUpperCase()" id="toLocaleUpperCase()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>toLocaleUpperCase</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> function toLocaleUpperCase():<a href="String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Lite 4, Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p>
+     Returns a copy of this string, with all lowercase characters converted 
+     to uppercase. The original string is unmodified. While this
+     method is intended to handle the conversion in a locale-specific way, the ActionScript 3.0 implementation
+     does not produce a different result from the <code>toUpperCase()</code> method.
+     
+     
+     </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; A copy of this string with all lowercase characters converted
+     to uppercase.
+     
+     </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="String.html#toUpperCase()" target="">toUpperCase()</a></div></div></span><span id="pageFilter" runtime="Lite::4##Flash::9##AIR::1.0##"><a name="toLowerCase()" id="toLowerCase()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>toLowerCase</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> function toLowerCase():<a href="String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Lite 4, Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p>
+     Returns a copy of this string, with all uppercase characters converted
+     to lowercase. The original string is unmodified.
+     
+     <p>This method converts all characters (not simply A-Z) for which Unicode lowercase
+     equivalents exist:</p>
+     
+     <div class="listing"><pre>
+     var str:String = " JOSÉ BARÇA";
+     trace(str.toLowerCase()); // josé barça</pre></div>
+     
+     <p>These case mappings are defined in the <a href="http://www.unicode.org/ucd/" target="external">Unicode Character Database</a>
+     specification. </p>
+     
+     
+     </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; A copy of this string with all uppercase characters converted
+     to lowercase.
+     
+     </td></tr></table><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7eff.html" target="_blank">Converting strings between uppercase and
+lowercase</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="String.html#toUpperCase()" target="">toUpperCase()</a></div></div></span><span id="pageFilter" runtime="Lite::4##Flash::9##AIR::1.0##"><a name="toUpperCase()" id="toUpperCase()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>toUpperCase</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> function toUpperCase():<a href="String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Lite 4, Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p>
+     Returns a copy of this string, with all lowercase characters converted 
+     to uppercase. The original string is unmodified.
+     
+     <p>This method converts all characters (not simply a-z) for which Unicode uppercase
+     equivalents exist:</p>
+     
+     <div class="listing"><pre>
+     var str:String = "José Barça";
+     trace(str.toUpperCase()); // JOSÉ BARÇA</pre></div>
+     
+     <p>These case mappings are defined in the <a href="http://www.unicode.org/ucd/" target="external">Unicode Character Database</a>
+     specification. </p>
+     
+     
+     </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; A copy of this string with all lowercase characters converted
+     to uppercase.
+     
+     
+     </td></tr></table><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7eff.html" target="_blank">Converting strings between uppercase and
+lowercase</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="String.html#toLowerCase()" target="">toLowerCase()</a></div></div></span><span id="pageFilter" runtime="Lite::4##Flash::9##AIR::1.0##"><a name="valueOf()" id="valueOf()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>valueOf</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> <a href="statements.html#AS3">AS3</a> function valueOf():<a href="String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Lite 4, Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p>
+     Returns the primitive value of a String instance. This method is designed to
+     convert a String object into a primitive string value. Because Flash runtimes 
+     automatically call <code>valueOf()</code> when necessary, 
+     you rarely need to call this method explicitly.
+     
+     
+     </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="String.html">String</a></code> &mdash; The value of the string.
+     
+     </td></tr></table></div></span><a name="includeExamplesSummary" id="includeExamplesSummary"></a><div class="detailSectionHeader">Examples<span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span></div><span id="pageFilter"><div class="exampleHeader">StringExample.as</div><br/><div class="detailBody"> The following example uses the StringExample and 
+ StringHelper classes to show how various methods of the String class are used.  
+ This is accomplished using the following steps:
+ <ol><li>The constructor for StringExample declares several local String instances,
+     which are initialized with various strings and a new StringHelper object.</li><li>The StringHelper class has the following methods:
+    <ul><li><code>replace()</code>: calls the <code>split()</code> and <code>join()</code> methods of 
+         String to remove a substring of the string passed in with a new one.</li><li><code>trim()</code>: calls both <code>trimBack()</code> and <code>trimFront()</code> using the
+         strings passed in and returns the updated string.</li><li><code>trimFront()</code>:recursively removes all characters that match the <code>char</code>
+         parameter, starting from the front of the string and working toward the end, until the first character in 
+         the string does not match <code>char</code> and returns the updated string.</li><li><code>trimBack()</code>: recursively removes all characters that match the <code>char</code>
+         parameter, starting from the end of the string and working backward, until the last character in 
+         the string does not match <code>char</code> and returns the updated string.</li><li><code>stringToCharacter()</code>: returns the first character of the string passed to it.</li></ul>
+  </li><li>Three strings are then produced using the declared string variables with a call to the
+     <code>replace()</code> method used to produce the second string and <code>trim()</code> to produce the
+     third string.</li></ol>
+<div class="listing"><pre>
+package {
+    import flash.display.Sprite;
+
+    public class StringExample extends Sprite {
+        public function StringExample() {
+            var companyStr:String = new String("     Company X");
+            var productStr:String = "Product Z Basic     ";
+            var emptyStr:String = " ";
+            var strHelper:StringHelper = new StringHelper();
+
+            var companyProductStr:String = companyStr + emptyStr + productStr;
+            trace("'" + companyProductStr + "'");    // '     Company X Product Z Basic     '
+
+            companyProductStr = strHelper.replace(companyProductStr, "Basic", "Professional");
+            trace("'" + companyProductStr + "'");    // '     Company X Product Z Professional     '
+
+            companyProductStr = strHelper.trim(companyProductStr, emptyStr);
+            trace("'" + companyProductStr + "'");    // 'Company X Product Z Professional'
+        }
+    }
+}
+
+class StringHelper {
+    public function StringHelper() {
+    }
+
+    public function replace(str:String, oldSubStr:String, newSubStr:String):String {
+        return str.split(oldSubStr).join(newSubStr);
+    }
+
+    public function trim(str:String, char:String):String {
+        return trimBack(trimFront(str, char), char);
+    }
+
+    public function trimFront(str:String, char:String):String {
+        char = stringToCharacter(char);
+        if (str.charAt(0) == char) {
+            str = trimFront(str.substring(1), char);
+        }
+        return str;
+    }
+
+    public function trimBack(str:String, char:String):String {
+        char = stringToCharacter(char);
+        if (str.charAt(str.length - 1) == char) {
+            str = trimBack(str.substring(0, str.length - 1), char);
+        }
+        return str;
+    }
+
+    public function stringToCharacter(str:String):String {
+        if (str.length == 1) {
+            return str;
+        }
+        return str.slice(0, 1);
+    }
+}
+</pre></div></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,true,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><title>mx.controls - Adobe ActionScript&reg; 3 (AS3) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">&nbsp;</a><br>
+								<h1 id="classProductName">mx.controls&nbsp;</h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript" xml:space="preserve">                
+        
+        				
+        <!--				
+          				    				
+          					
+          titleBar_setSubNav(false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,false)
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script><br xmlns:xd="http://www.pnp-software.com/XSLTdoc"><p xmlns:xd="http://www.pnp-software.com/XSLTdoc">The mx.controls package contains the Flex user-interface controls.</p><br xmlns:xd="http://www.pnp-software.com/XSLTdoc"><hr xmlns:xd="http://www.pnp-software.com/XSLTdoc"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="interfaceSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summaryTableTitle">Interfaces</div><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" cellpadding="3" cellspacing="0" class="summaryTable" id="summaryTableIdInterface"><tr><th>&nbsp;</th><th width="30%">Interface</th><th width="70%">Description</th></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IFlexContextMenu.html" onclick="clearAllClassesListCookie();">IFlexContextMenu</a></i></td><td class="summaryTableLastCol">
+  The IFlexContextMenu interface defines the interface for a 
+  Flex context menus.</td></tr></table><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="classSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summaryTableTitle">Classes</div><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" cellpadding="3" cellspacing="0" class="summaryTable" id="summaryTableIdClass"><tr><th>&nbsp;</th><th width="30%">Class</th><th width="70%">Description</th></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="AdvancedDataGrid.html" onclick="clearAllClassesListCookie();">AdvancedDataGrid</a></td><td class="summaryTableLastCol">
+ The AdvancedDataGrid control expands on the functionality of the standard DataGrid control 
+ to add data visualization features to your Adobe Flex application.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="AdvancedDataGridBaseEx.html" onclick="clearAllClassesListCookie();">AdvancedDataGridBaseEx</a></td><td class="summaryTableLastCol">
+ The AdvancedDataGridBaseEx class is a base class of the AdvancedDataGrid control.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Alert.html" onclick="clearAllClassesListCookie();">Alert</a></td><td class="summaryTableLastCol">
+  The Alert control is a pop-up dialog box that can contain a message,
+  a title, buttons (any combination of OK, Cancel, Yes, and No) and an icon.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Button.html" onclick="clearAllClassesListCookie();">Button</a></td><td class="summaryTableLastCol">
+  The Button control is a commonly used rectangular button.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ButtonBar.html" onclick="clearAllClassesListCookie();">ButtonBar</a></td><td class="summaryTableLastCol">
+  The ButtonBar control defines a horizontal or vertical group of 
+  logically related push buttons with a common look and navigation.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ButtonLabelPlacement.html" onclick="clearAllClassesListCookie();">ButtonLabelPlacement</a></td><td class="summaryTableLastCol">
+  The ButtonLabelPlacement class defines the constants for the allowed values 
+  of the labelPlacement
+  property of a Button, CheckBox, LinkButton, or RadioButton control.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="CheckBox.html" onclick="clearAllClassesListCookie();">CheckBox</a></td><td class="summaryTableLastCol">
+  The CheckBox control consists of an optional label and a small box
+  that can contain a check mark or not.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ColorPicker.html" onclick="clearAllClassesListCookie();">ColorPicker</a></td><td class="summaryTableLastCol">
+  The ColorPicker control provides a way for a user to choose a color from a swatch list.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ComboBase.html" onclick="clearAllClassesListCookie();">ComboBase</a></td><td class="summaryTableLastCol">
+  The ComboBase class is the base class for controls that display text in a 
+  text field and have a button that causes a drop-down list to appear where 
+  the user can choose which text to display.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ComboBox.html" onclick="clearAllClassesListCookie();">ComboBox</a></td><td class="summaryTableLastCol">
+  The ComboBox control contains a drop-down list
+  from which the user can select a single value.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DataGrid.html" onclick="clearAllClassesListCookie();">DataGrid</a></td><td class="summaryTableLastCol">
+  The DataGrid control is like a List except that it can 
+  show more than one column of data making it suited for showing 
+  objects with multiple properties.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DateChooser.html" onclick="clearAllClassesListCookie();">DateChooser</a></td><td class="summaryTableLastCol">
+  The DateChooser control displays the name of a month, the year,
+  and a grid of the days of the month, with columns labeled
+  for the day of the week.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DateField.html" onclick="clearAllClassesListCookie();">DateField</a></td><td class="summaryTableLastCol">
+  The DateField control is a text field that shows the date
+  with a calendar icon on its right side.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FileSystemComboBox.html" onclick="clearAllClassesListCookie();">FileSystemComboBox</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The FileSystemComboBox control defines a combo box control for
+  navigating up the chain of ancestor directories from a specified
+  directory in a file system.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FileSystemDataGrid.html" onclick="clearAllClassesListCookie();">FileSystemDataGrid</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The FileSystemDataGrid control lets you display the contents of a
+  single file system directory in a data grid format.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FileSystemEnumerationMode.html" onclick="clearAllClassesListCookie();">FileSystemEnumerationMode</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The FileSystemEnumerationMode class defines the constant values
+  for the enumerationMode property
+  of the FileSystemList, FileSystemDataGrid,
+  and FileSystemTree classes.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FileSystemHistoryButton.html" onclick="clearAllClassesListCookie();">FileSystemHistoryButton</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The FileSystemHistoryButton control defines a single control
+  with two buttons: a main button on the left
+  and a secondary button on the right.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FileSystemList.html" onclick="clearAllClassesListCookie();">FileSystemList</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The FileSystemList control lets you display the contents of a
+  single file system directory, in a list format.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FileSystemSizeDisplayMode.html" onclick="clearAllClassesListCookie();">FileSystemSizeDisplayMode</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The FileSystemSizeDisplayMode class defines the constant values
+  for the sizeDisplayMode property
+  of the FileSystemDataGrid class.</td></tr><tr class="prow0" languageVersion="3.0" runtime="AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FileSystemTree.html" onclick="clearAllClassesListCookie();">FileSystemTree</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The FileSystemTree control displays the contents of a
+  file system directory as a tree.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FlexNativeMenu.html" onclick="clearAllClassesListCookie();">FlexNativeMenu</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The FlexNativeMenu component provides a wrapper for AIR's NativeMenu class.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FormItemLabel.html" onclick="clearAllClassesListCookie();">FormItemLabel</a></td><td class="summaryTableLastCol">
+  The FormItem container uses a FormItemLabel object to display the 
+  label portion of the FormItem container.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="HorizontalList.html" onclick="clearAllClassesListCookie();">HorizontalList</a></td><td class="summaryTableLastCol">
+  The HorizontalList control displays a horizontal list of items.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="HRule.html" onclick="clearAllClassesListCookie();">HRule</a></td><td class="summaryTableLastCol">
+  The HRule control creates a single horizontal line.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="HScrollBar.html" onclick="clearAllClassesListCookie();">HScrollBar</a></td><td class="summaryTableLastCol">
+  The HScrollBar (horizontal ScrollBar) control lets you control
+  the portion of data that is displayed when there is too much data
+  to fit in a display area.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="HSlider.html" onclick="clearAllClassesListCookie();">HSlider</a></td><td class="summaryTableLastCol">	
+  The HSlider control lets users select a value by moving
+  a slider thumb between the end points of the slider track.</td></tr><tr class="prow1" languageVersion="3.0" runtime="AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="HTML.html" onclick="clearAllClassesListCookie();">HTML</a>&nbsp;<span class="sprite AirIcon12x12" alt="AIR-only" title="Only available in the AIR runtime">&nbsp;&nbsp;&nbsp;</span></td><td class="summaryTableLastCol">
+  The HTML control lets you display HTML content in your application.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Image.html" onclick="clearAllClassesListCookie();">Image</a></td><td class="summaryTableLastCol">
+  The Image control lets you import JPEG, PNG, GIF, and SWF files 
+  at runtime.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Label.html" onclick="clearAllClassesListCookie();">Label</a></td><td class="summaryTableLastCol">
+  The Label control displays a single line of noneditable text.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LinkBar.html" onclick="clearAllClassesListCookie();">LinkBar</a></td><td class="summaryTableLastCol">
+  A LinkBar control defines a horizontal or vertical row of LinkButton controls
+  that designate a series of link destinations.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LinkButton.html" onclick="clearAllClassesListCookie();">LinkButton</a></td><td class="summaryTableLastCol">
+  The LinkButton control is a borderless Button control
+  whose contents are highlighted when a user moves the mouse over it.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="List.html" onclick="clearAllClassesListCookie();">List</a></td><td class="summaryTableLastCol">
+  The List control displays a vertical list of items.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Menu.html" onclick="clearAllClassesListCookie();">Menu</a></td><td class="summaryTableLastCol">
+  The Menu control creates a pop-up menu of individually selectable choices,
+  similar to the File or Edit menu found in most software applications.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="MenuBar.html" onclick="clearAllClassesListCookie();">MenuBar</a></td><td class="summaryTableLastCol">
+  A MenuBar control defines a horizontal, top-level menu bar that contains
+  one or more menus.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::10##AIR::2.5##" product="Flex::4.5##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="MovieClipSWFLoader.html" onclick="clearAllClassesListCookie();">MovieClipSWFLoader</a></td><td class="summaryTableLastCol">
+  The MovieClipSWFLoader control extends SWFLoader to provide convenience
+  methods for manipulating a SWF which has a MovieClip as its root content,
+  provided that the MovieClip is not a Flex application.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::10##AIR::1.5##" product="Flex::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="MXFTETextInput.html" onclick="clearAllClassesListCookie();">MXFTETextInput</a></td><td class="summaryTableLastCol">
+  MXFTETextInput is a UIComponent which is used to support TLF text
+  in MX controls and data grid renderers.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NavBar.html" onclick="clearAllClassesListCookie();">NavBar</a></td><td class="summaryTableLastCol">
+  The NavBar control is the superclass for navigator controls, such as the
+  LinkBar and TabBar controls, and cannot be instantiated directly.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="NumericStepper.html" onclick="clearAllClassesListCookie();">NumericStepper</a></td><td class="summaryTableLastCol">
+  The NumericStepper control lets the user select
+  a number from an ordered set.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="OLAPDataGrid.html" onclick="clearAllClassesListCookie();">OLAPDataGrid</a></td><td class="summaryTableLastCol">
+  The OLAPDataGrid control expands on the functionality of the AdvancedDataGrid control 
+  to add support for the display of the results of OLAP queries.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="PopUpButton.html" onclick="clearAllClassesListCookie();">PopUpButton</a></td><td class="summaryTableLastCol"> 
+  The PopUpButton control adds a flexible pop-up control
+  interface  to a Button control.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="PopUpMenuButton.html" onclick="clearAllClassesListCookie();">PopUpMenuButton</a></td><td class="summaryTableLastCol">
+  The PopUpMenuButton control creates a PopUpButton control with a main
+  sub-button and a secondary sub-button.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ProgressBar.html" onclick="clearAllClassesListCookie();">ProgressBar</a></td><td class="summaryTableLastCol">
+  The ProgressBar control provides a visual representation of the progress of a task over
+  time.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ProgressBarDirection.html" onclick="clearAllClassesListCookie();">ProgressBarDirection</a></td><td class="summaryTableLastCol">
+  The ProgressBarDirection class defines the values
+  for the direction property of the ProgressBar class.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ProgressBarLabelPlacement.html" onclick="clearAllClassesListCookie();">ProgressBarLabelPlacement</a></td><td class="summaryTableLastCol">
+  The ProgressBarLabelPlacement class defines the values for 
+  the labelPlacement property of the ProgressBar class.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ProgressBarMode.html" onclick="clearAllClassesListCookie();">ProgressBarMode</a></td><td class="summaryTableLastCol">
+  The ProgressBarMode class defines the values for the mode property
+  of the ProgressBar class.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="RadioButton.html" onclick="clearAllClassesListCookie();">RadioButton</a></td><td class="summaryTableLastCol">
+  The RadioButton control lets the user make a single choice
+  within a set of mutually exclusive choices.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="RadioButtonGroup.html" onclick="clearAllClassesListCookie();">RadioButtonGroup</a></td><td class="summaryTableLastCol">
+  The RadioButtonGroup control defines a group of RadioButton controls
+  that act as a single mutually exclusive control; therefore,
+  a user can select only one RadioButton control at a time.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="RichTextEditor.html" onclick="clearAllClassesListCookie();">RichTextEditor</a></td><td class="summaryTableLastCol">The RichTextEditor control lets users enter and format text.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Spacer.html" onclick="clearAllClassesListCookie();">Spacer</a></td><td class="summaryTableLastCol">
+  The Spacer control helps you lay out children within a parent container.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SWFLoader.html" onclick="clearAllClassesListCookie();">SWFLoader</a></td><td class="summaryTableLastCol">
+  The SWFLoader control loads and displays a specified SWF file.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TabBar.html" onclick="clearAllClassesListCookie();">TabBar</a></td><td class="summaryTableLastCol">
+  The TabBar control lets you create a horizontal or vertical group of tab navigation 
+  items by defining the labels and data associated with each tab.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Text.html" onclick="clearAllClassesListCookie();">Text</a></td><td class="summaryTableLastCol">
+  The Text control displays multiline, noneditable text.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TextArea.html" onclick="clearAllClassesListCookie();">TextArea</a></td><td class="summaryTableLastCol">
+  The TextArea control is a multiline text field
+  with a border and optional scroll bars.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TextInput.html" onclick="clearAllClassesListCookie();">TextInput</a></td><td class="summaryTableLastCol">
+  The TextInput control is a single-line text field
+  that is optionally editable.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TileList.html" onclick="clearAllClassesListCookie();">TileList</a></td><td class="summaryTableLastCol">
+  The TileList control displays a number of items laid out in tiles.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ToggleButtonBar.html" onclick="clearAllClassesListCookie();">ToggleButtonBar</a></td><td class="summaryTableLastCol">
+  The ToggleButtonBar control defines a horizontal or vertical 
+  group of buttons that maintain their selected or deselected state.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ToolTip.html" onclick="clearAllClassesListCookie();">ToolTip</a></td><td class="summaryTableLastCol">
+  The ToolTip control lets you provide helpful information to your users.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Tree.html" onclick="clearAllClassesListCookie();">Tree</a></td><td class="summaryTableLastCol">
+  The Tree control lets a user view hierarchical data arranged as an expandable tree.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="VideoDisplay.html" onclick="clearAllClassesListCookie();">VideoDisplay</a></td><td class="summaryTableLastCol">
+  The VideoDisplay control lets you play an FLV file in a Flex application.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="VRule.html" onclick="clearAllClassesListCookie();">VRule</a></td><td class="summaryTableLastCol">
+  The VRule control creates a single vertical line.</td></tr><tr class="prow1" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="VScrollBar.html" onclick="clearAllClassesListCookie();">VScrollBar</a></td><td class="summaryTableLastCol">
+  The VScrollBar (vertical ScrollBar) control  lets you control
+  the portion of data that is displayed when there is too much data
+  to fit in a display area.</td></tr><tr class="prow0" languageVersion="3.0" runtime="Flash::9##AIR::1.1##" product="Flex::3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="VSlider.html" onclick="clearAllClassesListCookie();">VSlider</a></td><td class="summaryTableLastCol">	
+  The VSlider control lets users select a value by moving
+  a slider thumb between the end points of the slider track.</td></tr></table><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 06:58 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 06:58 PM -08:00  -->

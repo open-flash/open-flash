@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:9"><meta name="runtime" content="air"><meta name="runtimever" content="air:1.0"><meta name="product" content="flash player"><meta name="productver" content="flash player:9"><meta name="product" content="air"><meta name="productver" content="air:1.0"><meta name="product" content="flash"><meta name="prodver" content="flash:CS3"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="Locale,fl.lang.Locale,autoReplace,languageCodeArray,stringIDArray,addDelayedInstance,addXMLPath,checkXMLStatus,getDefaultLang,initialize,loadLanguageXML,loadString,loadStringEx,setDefaultLang,setLoadCallback,setString"><title>Locale - Adobe ActionScript&reg; 3 (AS3 Flash) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">fl.lang&nbsp;</a><br>
+								<h1 id="classProductName">Locale&nbsp; - AS3 Flash</h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">fl.lang</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  Locale</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Locale  <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../flash/events/EventDispatcher.html">EventDispatcher</a> <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../Object.html">Object</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flash CS3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p></p>
+ The fl.lang.Locale class allows you to control how multilanguage text is displayed in a SWF file. 
+ The Flash Strings panel allows you to use string IDs instead of string literals in dynamic text fields. This allows you to create a SWF file that displays text loaded from a language-specific XML file. The XML file must use the XML Localization Interchange File Format (XLIFF). There are three ways to display the language-specific strings contained in the XLIFF files:
+ <ul>
+                  <li>
+                     <code>"automatically at runtime"</code>&mdash;Flash Player replaces string IDs with strings from the XML file matching the default system language code returned by flash.system.capabilities.language.</li>
+                  <li>
+                     <code>"manually using stage language"</code>&mdash;String IDs are replaced by strings at compile time and cannot be changed by Flash Player.</li>
+                  <li>
+                     <code>"via ActionScript at runtime"</code>&mdash;String ID replacement is controlled using ActionScript at runtime. This option gives you control over both the timing and language of string ID replacement.</li>
+               </ul>
+               <p>You can use the properties and methods of this class when you want to replace the string IDs "via ActionScript at runtime."</p>
+               <p>All of the properties and methods available are static, which means that they are accessed through the fl.lang.Locale class itself rather than through an instance of the class.</p>
+ 
+               <p>
+                  <b>Note:</b> The Locale class is installed in the Flash Authoring classpath and is automatically compiled into your SWF files. Using the Locale class increases the SWF file size slightly since the class is compiled into the SWF.</p>
+
+
+            <p></p><p><span class="classHeaderTableLabel">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/system/Capabilities.html#language" target="">flash.system.Capabilities.language</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#autoReplace" class="signatureLink">autoReplace</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">[static]  
+     Determines whether strings are replaced automatically after loading the XML file.</div></td><td class="summaryTableOwnerCol">Locale</td></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../Object.html#constructor" class="signatureLink">constructor</a> : <a href="../../Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#languageCodeArray" class="signatureLink">languageCodeArray</a> : <a href="../../Array.html">Array</a><div class="summaryTableDescription">[static] [read-only] 
+     An array containing language codes for the languages that have been specified or loaded into the FLA file.</div></td><td class="summaryTableOwnerCol">Locale</td></tr><tr class="" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#stringIDArray" class="signatureLink">stringIDArray</a> : <a href="../../Array.html">Array</a><div class="summaryTableDescription">[static] [read-only]  
+     An array containing all the string IDs in the FLA file.</div></td><td class="summaryTableOwnerCol">Locale</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addDelayedInstance()" class="signatureLink">addDelayedInstance</a>(instance:<a href="../../Object.html">Object</a>, stringID:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#*">*</a></div><div class="summaryTableDescription">[static]  
+     Adds the {instance, string ID} pair into the internal array for later use.</div></td><td class="summaryTableOwnerCol">Locale</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#addEventListener()" class="signatureLink">addEventListener</a>(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false, priority:<a href="../../int.html">int</a> = 0, useWeakReference:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	Registers an event listener object with an EventDispatcher object so that the listener 
+	receives notification of an event.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addXMLPath()" class="signatureLink">addXMLPath</a>(langCode:<a href="../../String.html">String</a>, path:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[static]  
+     Adds the {languageCode and languagePath} pair into the internal array for later use.</div></td><td class="summaryTableOwnerCol">Locale</td></tr><tr class="" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#checkXMLStatus()" class="signatureLink">checkXMLStatus</a>():<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">[static] 
+     Returns true if the XML file is loaded; false otherwise.</div></td><td class="summaryTableOwnerCol">Locale</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#dispatchEvent()" class="signatureLink">dispatchEvent</a>(event:<a href="../../flash/events/Event.html">Event</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Dispatches an event into the event flow.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getDefaultLang()" class="signatureLink">getDefaultLang</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">[static]  
+     The default language code as set in the Strings panel dialog box or by calling the setDefaultLang() method.</div></td><td class="summaryTableOwnerCol">Locale</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#hasEventListener()" class="signatureLink">hasEventListener</a>(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Checks whether the EventDispatcher object has any listeners registered for a specific type 
+	of event.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#initialize()" class="signatureLink">initialize</a>():<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[static]  
+     Automatically determines the language to use and loads the XML language file.</div></td><td class="summaryTableOwnerCol">Locale</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#loadLanguageXML()" class="signatureLink">loadLanguageXML</a>(xmlLanguageCode:<a href="../../String.html">String</a>, customXmlCompleteCallback:<a href="../../Function.html">Function</a> = null):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[static]  
+     Loads the specified XML language file.</div></td><td class="summaryTableOwnerCol">Locale</td></tr><tr class="" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#loadString()" class="signatureLink">loadString</a>(id:<a href="../../String.html">String</a>):<a href="../../String.html">String</a></div><div class="summaryTableDescription">[static]  
+     Returns the string value associated with the given string ID in the current language.</div></td><td class="summaryTableOwnerCol">Locale</td></tr><tr class="" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#loadStringEx()" class="signatureLink">loadStringEx</a>(stringID:<a href="../../String.html">String</a>, languageCode:<a href="../../String.html">String</a>):<a href="../../String.html">String</a></div><div class="summaryTableDescription">[static] 
+     Returns the string value associated with the given string ID and language code.</div></td><td class="summaryTableOwnerCol">Locale</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#removeEventListener()" class="signatureLink">removeEventListener</a>(type:<a href="../../String.html">String</a>, listener:<a href="../../Function.html">Function</a>, useCapture:<a href="../../Boolean.html">Boolean</a> = false):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	Removes a listener from the EventDispatcher object.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setDefaultLang()" class="signatureLink">setDefaultLang</a>(langCode:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[static]  
+     Sets the default language code.</div></td><td class="summaryTableOwnerCol">Locale</td></tr><tr class="" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setLoadCallback()" class="signatureLink">setLoadCallback</a>(loadCallback:<a href="../../Function.html">Function</a>):<a href="../../specialTypes.html#*">*</a></div><div class="summaryTableDescription">[static] 
+     Sets the callback function that is called after the XML file is loaded.</div></td><td class="summaryTableOwnerCol">Locale</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="../../String.html">String</a>, isEnum:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setString()" class="signatureLink">setString</a>(stringID:<a href="../../String.html">String</a>, languageCode:<a href="../../String.html">String</a>, stringValue:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[static]  
+     Sets the new string value of a given string ID and language code.</div></td><td class="summaryTableOwnerCol">Locale</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toString()" class="signatureLink">toString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+	 Returns the primitive value of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#willTrigger()" class="signatureLink">willTrigger</a>(type:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	Checks whether an event listener is registered with this EventDispatcher object or any of 
+	its ancestors for the specified event type.</div></td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="eventSummary" id="eventSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Events</div><div class="showHideLinks"><a href="http://help.adobe.com/en_US/Flex/4.6/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7ee9.html" target="_blank">Click for more information on events</a></div><div class="showHideLinks"><div id="hideInheritedEvent" class="hideInheritedEvent"><a class="showHideLink" href="#eventSummary" onclick="javascript:setInheritedVisible(false,'Event');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Events</a></div><div id="showInheritedEvent" class="showInheritedEvent"><a class="showHideLink" href="#eventSummary" onclick="javascript:setInheritedVisible(true,'Event');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Events</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable hideInheritedEvent" id="summaryTableEvent"><tr><th>&nbsp;</th><th colspan="2">Event</th><th> Summary </th><th>Defined By</th></tr><tr class="hideInheritedEvent" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#event:activate" class="signatureLink">activate</a></div></td><td class="summaryTableDescription summaryTableCol">[broadcast event] Dispatched when the Flash Player or AIR application gains operating system focus and becomes active.</td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedEvent" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../flash/events/EventDispatcher.html#event:deactivate" class="signatureLink">deactivate</a></div></td><td class="summaryTableDescription summaryTableCol">[broadcast event] Dispatched when the Flash Player or AIR application operating loses system focus and is becoming inactive.</td><td class="summaryTableOwnerCol"><a href="../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><a name="propertyDetail" id="propertyDetail"></a><a name="autoReplace" id="autoReplace"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>autoReplace</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>autoReplace:<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flash CS3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p> 
+     Determines whether strings are replaced automatically after loading the XML file. If set to <code>true</code>, the text 
+     replacement method is equivalent to the Strings panel setting <code>"automatically at runtime"</code>. This means that Flash Player 
+     will determine the default language of the host environment and automatically display the text in that language. If set to <code>
+     false</code>, the text replacement method is equivalent to the Strings panel setting <code>"via ActionScript at runtime"</code>. 
+     This means that you are responsible for loading the appropriate XML file to display the text.
+     
+     <p>The default value of this property reflects the setting that you select for Replace strings in the Strings panel dialog box: 
+     <code>true</code> for <code>"automatically at runtime"</code> (the default setting) and <code>false</code> for "via ActionScript at 
+     runtime". </p>
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get autoReplace():<a href="../../Boolean.html">Boolean</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function set autoReplace(value:<a href="../../Boolean.html">Boolean</a>):<a href="../../specialTypes.html#void">void</a></code><br/><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example uses the <code>Locale.autoReplace</code> property to populate the dynamically created <code>
+     greeting_txt</code> text field on the Stage with the contents of the <code>IDS_GREETING</code> string in the English XML file. In 
+     the Strings panel, click the Settings button to open the Settings dialog box. You can add two active languages using the Settings 
+     dialog box: English (en) and French (fr), set the replacement strings radio option to <code>"via ActionScript at runtime"</code>, 
+     and click OK. Finally, enter a string ID of <b>IDS_GREETING</b> in the Strings panel, and add text for each active language.
+     <div class="listing"><pre>
+     var greeting_txt:TextField = new TextField();
+     greeting_txt.x = 40;
+     greeting_txt.y = 40;
+     greeting_txt.width = 200;
+     greeting_txt.height = 20;
+     greeting_txt.autoSize = TextFieldAutoSize.LEFT;
+     Locale.autoReplace = true;
+     Locale.addDelayedInstance(greeting_txt, "IDS_GREETING");
+     Locale.loadLanguageXML("en");
+     </pre></div>
+     </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><a name="propertyDetail" id="propertyDetail"></a><a name="languageCodeArray" id="languageCodeArray"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>languageCodeArray</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>languageCodeArray:<a href="../../Array.html">Array</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flash CS3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p>
+     An array containing language codes for the languages that have been specified or loaded into the FLA file. The language codes are not sorted alphabetically.
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get languageCodeArray():<a href="../../Array.html">Array</a></code><br/><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example loads a language XML file based on the current value of a ComboBox component. You drag a ComboBox component onto the Stage and give it an instance name of <code>lang_cb</code>. Using the Text tool, you create a dynamic text field and give it an instance name of <code>greeting_txt</code>. In the Strings panel, you add at least two active languages, set the replace strings radio option to <code>"via ActionScript at runtime"</code>, and click OK. Next, you add a string ID of <b>IDS_GREETING</b> and enter text for each active language. Finally, you add the following ActionScript code to Frame 1 of the main Timeline:
+     <div class="listing"><pre>
+     Locale.setLoadCallback(localeListener);
+     lang_cb.dataProvider = Locale.languageCodeArray.sort();
+     lang_cb.addEventListener("change", langListener);
+     
+     function langListener(eventObj:Object):void {
+      Locale.loadLanguageXML(eventObj.target.value);
+     }
+     function localeListener(success:Boolean):void {
+      if (success) {
+          greeting_txt.text = Locale.loadString("IDS_GREETING");
+      } else {
+          greeting_txt.text = "unable to load language XML file.";
+      }
+     }
+     </pre></div>
+     </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><a name="propertyDetail" id="propertyDetail"></a><a name="stringIDArray" id="stringIDArray"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>stringIDArray</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>stringIDArray:<a href="../../Array.html">Array</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flash CS3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p> 
+     An array containing all the string IDs in the FLA file. The string IDs are not sorted alphabetically.
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get stringIDArray():<a href="../../Array.html">Array</a></code><br/><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example traces the <code>Locale.stringIDArray</code> property for the currently loaded language XML file. 
+     Click the Settings button in the Strings panel to open the Settings dialog box. Next, you add two active languages: English (en) and
+     French (fr), set the replace strings radio control to <code>"via ActionScript at runtime"</code>, and click OK. In the Strings 
+     panel, you add a string ID of <b>IDS_GREETING</b>, and then add text for each active language.
+     <div class="listing"><pre>
+     Locale.setLoadCallback(localeCallback);
+     Locale.loadLanguageXML("fr");
+     function localeCallback(success:Boolean) {
+      trace(success);
+      trace(Locale.stringIDArray); // IDS_GREETING
+      trace(Locale.loadStringEx("IDS_GREETING", "fr")); // bonjour
+     }
+     </pre></div>
+     </div></span></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><a name="addDelayedInstance()" id="addDelayedInstance()"></a><a name="addDelayedInstance(Object,String)" id="addDelayedInstance(Object,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>addDelayedInstance</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public static function addDelayedInstance(instance:<a href="../../Object.html">Object</a>, stringID:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#*">*</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flash CS3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p> 
+     Adds the {instance, string ID} pair into the internal array for later use.
+     This is primarily used by Flash when the strings replacement method is <code>"automatically at runtime"</code>. 
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">instance</span>:<a href="../../Object.html">Object</a></code> &mdash; Instance name of the text field to populate.
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">stringID</span>:<a href="../../String.html">String</a></code> &mdash; Language string ID.
+     
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../specialTypes.html#*">*</a></code></td></tr></table><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example uses the <code>autoReplace</code> property and <code>addDelayedInstance()</code> method to populate
+     a text field on the Stage with the <code>IDS_GREETING</code> string from the English XML language file.
+     <div class="listing"><pre>
+     greeting_txt.autoSize = TextFieldAutoSize.LEFT;
+     Locale.autoReplace = true;
+     Locale.addDelayedInstance(greeting_txt, "IDS_GREETING");
+     Locale.loadLanguageXML("en");
+     </pre></div>
+     </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><a name="addXMLPath()" id="addXMLPath()"></a><a name="addXMLPath(String,String)" id="addXMLPath(String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>addXMLPath</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function addXMLPath(langCode:<a href="../../String.html">String</a>, path:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flash CS3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p> 
+     Adds the {languageCode and languagePath} pair into the internal array for later use.
+     This is primarily used by Flash Player when the string's replacement method is <code>"automatically at runtime"</code>
+     or <code>"via ActionScript at runtime"</code>. This method allows you to load XML language files from a custom location
+     instead of the default location set up by Flash Professional. By default, Flash Professional creates an XML file for each
+     language in your working directory, under a subdirectory named using your FLA file's name. 
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">langCode</span>:<a href="../../String.html">String</a></code> &mdash; The language code.
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">path</span>:<a href="../../String.html">String</a></code> &mdash; The XML path to add.
+     
+     </td></tr></table></p><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example tells Flash Player that the English ("en") translations are found in the file 
+     "locale/locale_en.xml" file and French ("fr") translations are in the "locale/locale_fr.xml" file relative to your working
+     directory (example and description provided by Chris Inch, from 
+     <a href="http://www.chrisinch.com" target="external">http://www.chrisinch.com</a>):
+     <div class="listing"><pre>
+     Locale.addXMLPath("en", "locale/locale_en.xml");
+     Locale.addXMLPath("fr", "locale/locale_fr.xml");
+     Locale.setLoadCallback(Delegate.create(this, languageLoaded));
+     Locale.loadLanguageXML("en");
+     
+     private function languageLoaded(success:Boolean):Void {
+        trace(Locale.loadString("IDS_HELLO");
+     
+     </pre></div>
+     </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><a name="checkXMLStatus()" id="checkXMLStatus()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>checkXMLStatus</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function checkXMLStatus():<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flash CS3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p>
+     Returns <code>true</code> if the XML file is loaded; <code>false</code> otherwise. 
+     </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Boolean.html">Boolean</a></code> &mdash; Returns <code>true</code> if the XML file is loaded; <code>false</code> otherwise.
+     
+     </td></tr></table><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example uses an interval to check every 10 milliseconds to see if the language file has successfully 
+     loaded. Once the XML file has loaded, the <code>greeting_txt</code> text field instance on the Stage is populated with the 
+     <code>IDS_GREETING</code> string from the language XML file.
+     <div class="listing"><pre>
+     Locale.setLoadCallback(localeCallback);
+     Locale.loadLanguageXML("en");
+     // create interval to check if language XML file is loaded
+     var locale_int:Number = setInterval(checkLocaleStatus, 10);
+     function checkLocaleStatus():void {
+      if (Locale.checkXMLStatus()) {
+          clearInterval(locale_int);
+          trace("clearing interval @ " + getTimer() + " ms");
+      }
+     }
+     // callback function for Locale.setLoadCallback()
+     function localeCallback(success:Boolean):void {
+      greeting_txt.text = Locale.loadString("IDS_GREETING");
+     }
+     </pre></div>
+     </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><a name="getDefaultLang()" id="getDefaultLang()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getDefaultLang</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getDefaultLang():<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flash CS3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p> 
+     The default language code as set in the Strings panel dialog box or by calling the <code>setDefaultLang()</code> method.
+     
+     </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; Returns the default language code.
+     
+     </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Locale.html#setDefaultLang()" target="">Locale.setDefaultLang()</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example creates a variable called <code>defLang</code>, which is used to hold the initial default language 
+     for the Flash document. You click the Settings button in the Strings panel to launch the Settings dialog box. Then you add two active 
+     languages: English (en) and French (fr), set the replace strings radio control to <code>"via ActionScript at runtime"</code>, and 
+     click OK. In the Strings panel, you add a string ID of <b>IDS_GREETING</b>, and then add text for each active language.
+     <div class="listing"><pre>
+     var defLang:String = "fr";
+     Locale.setDefaultLang(defLang);
+     Locale.setLoadCallback(localeCallback);
+     Locale.loadLanguageXML(Locale.getDefaultLang());
+     function localeCallback(success:Boolean) {
+      if (success) {
+          trace(Locale.stringIDArray); // IDS_GREETING
+          trace(Locale.loadString("IDS_GREETING"));
+      } else {
+          trace("unable to load XML");
+      }
+     }
+     </pre></div>
+     </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><a name="initialize()" id="initialize()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>initialize</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function initialize():<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flash CS3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p> 
+     Automatically determines the language to use and loads the XML language file.
+     This is primarily used by Flash when the strings replacement method is <code>"automatically at runtime"</code>.
+     
+     </p><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">This example shows how to use the <code>initialize()</code> method to automatically populate the <code>greeting_txt
+     </code> text field on the Stage with the user's current OS language. Instead of using the <code>initialize()</code> method directly,
+     use the string replacement method of <code>"automatically at runtime"</code>.
+     <div class="listing"><pre>
+     trace(System.capabilities.language);
+     Locale.autoReplace = true;
+     Locale.addDelayedInstance(greeting_txt, "IDS_GREETING");
+     Locale.initialize();
+     </pre></div>
+     </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><a name="loadLanguageXML()" id="loadLanguageXML()"></a><a name="loadLanguageXML(String,Function)" id="loadLanguageXML(String,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>loadLanguageXML</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function loadLanguageXML(xmlLanguageCode:<a href="../../String.html">String</a>, customXmlCompleteCallback:<a href="../../Function.html">Function</a> = null):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flash CS3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p> 
+     Loads the specified XML language file.
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">xmlLanguageCode</span>:<a href="../../String.html">String</a></code> &mdash; The language code for the XML language file that you want to load.
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">customXmlCompleteCallback</span>:<a href="../../Function.html">Function</a></code> (default = <code>null</code>)<code></code> &mdash; Custom callback function to call when XML language file loads.
+     
+     </td></tr></table></p><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example uses the <code>loadLanguageXML()</code> method to load the English (en) XML language file. Once the
+     language file loads, the <code>localeCallback()</code> method is called and populates the <code>greeting_txt</code> text field on 
+     the Stage with the contents of the <code>IDS_GREETING</code> string in the XML file.
+     <div class="listing"><pre>
+     Locale.setLoadCallback(localeCallback);
+     Locale.loadLanguageXML("en");
+     // create interval to check if language XML file is loaded
+     var locale_int:Number = setInterval(checkLocaleStatus, 10);
+     function checkLocaleStatus():void {
+      if (Locale.checkXMLStatus()) {
+          clearInterval(locale_int);
+          trace("clearing interval @ " + getTimer() + " ms");
+      }
+     }
+     // callback function for Locale.setLoadCallback()
+     function localeCallback(success:Boolean):void {
+      greeting_txt.text = Locale.loadString("IDS_GREETING");
+     }
+     </pre></div>
+     </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><a name="loadString()" id="loadString()"></a><a name="loadString(String)" id="loadString(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>loadString</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function loadString(id:<a href="../../String.html">String</a>):<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flash CS3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p> 
+     Returns the string value associated with the given string ID in the current language.
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">id</span>:<a href="../../String.html">String</a></code> &mdash; The identification (ID) number of the string to load.
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; The string value associated with the given string ID in the current language.
+     
+     </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Locale.html#loadStringEx()" target="">Locale.loadStringEx()</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example uses an interval to check every 10 milliseconds to see if the language file has successfully 
+     loaded. Once the XML file has loaded, the <code>greeting_txt</code> text field instance on the Stage is populated with the 
+     <code>IDS_GREETING</code> string from the XML language file.
+     <div class="listing"><pre>
+     Locale.setLoadCallback(localeCallback);
+     Locale.loadLanguageXML("en");
+     // create interval to check if language XML file is loaded
+     var locale_int:Number = setInterval(checkLocaleStatus, 10);
+     function checkLocaleStatus():void {
+      if (Locale.checkXMLStatus()) {
+          clearInterval(locale_int);
+          trace("clearing interval @ " + getTimer() + " ms");
+      }
+     }
+     // callback function for Locale.setLoadCallback()
+     function localeCallback(success:Boolean):void {
+      greeting_txt.text = Locale.loadString("IDS_GREETING");
+     }
+     </pre></div>
+     </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><a name="loadStringEx()" id="loadStringEx()"></a><a name="loadStringEx(String,String)" id="loadStringEx(String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>loadStringEx</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function loadStringEx(stringID:<a href="../../String.html">String</a>, languageCode:<a href="../../String.html">String</a>):<a href="../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flash CS3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p>
+     Returns the string value associated with the given string ID and language code.
+     To avoid unexpected XML file loading, <code>loadStringEx()</code> does not load the XML language file if the XML file is not 
+     already loaded. You should decide on the right time to call the <code>loadLanguageXML()</code> method if you want to load a XML 
+     language file.
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">stringID</span>:<a href="../../String.html">String</a></code> &mdash; The identification (ID) number of the string to load.
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">languageCode</span>:<a href="../../String.html">String</a></code> &mdash; The language code.
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../String.html">String</a></code> &mdash; The string value associated with the given string ID in the language specified by the <code>languageCode</code> parameter.
+     
+     </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Locale.html#loadString()" target="">Locale.loadString()</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example uses the <code>loadStringEx()</code> method to trace the value of the <code>IDS_GREETING</code> 
+     string for the currently loaded French language XML file.
+     <div class="listing"><pre>
+     Locale.setLoadCallback(localeCallback);
+     Locale.loadLanguageXML("fr");
+     function localeCallback(success:Boolean) {
+      trace(success);
+      trace(Locale.stringIDArray); // IDS_GREETING
+      trace(Locale.loadStringEx("IDS_GREETING", "fr")); // bonjour
+     }
+     </pre></div>
+     </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><a name="setDefaultLang()" id="setDefaultLang()"></a><a name="setDefaultLang(String)" id="setDefaultLang(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>setDefaultLang</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function setDefaultLang(langCode:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flash CS3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p> 
+     Sets the default language code.
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">langCode</span>:<a href="../../String.html">String</a></code> &mdash; A string representing a language code.
+     
+     </td></tr></table></p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Locale.html#getDefaultLang()" target="">Locale.getDefaultLang()</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example creates a variable called <code>defLang</code>, which is used to hold the initial default language for the Flash document. You click the Settings button in the Strings panel to open the Settings dialog box. Then you add two active languages: English (en) and French (fr), set the replace strings radio control to <code>"via ActionScript at runtime"</code>, and click OK. In the Strings panel, you add a string ID of <b>IDS_GREETING</b>, and then add text for each active language.
+     <div class="listing"><pre>
+     var defLang:String = "fr";
+     Locale.setDefaultLang(defLang);
+     Locale.setLoadCallback(localeCallback);
+     Locale.loadLanguageXML(Locale.getDefaultLang());
+     function localeCallback(success:Boolean) {
+      if (success) {
+          trace(Locale.stringIDArray); // IDS_GREETING
+          trace(Locale.loadString("IDS_GREETING"));
+      } else {
+          trace("unable to load XML");
+      }
+     }
+     </pre></div>
+     </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><a name="setLoadCallback()" id="setLoadCallback()"></a><a name="setLoadCallback(Function)" id="setLoadCallback(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>setLoadCallback</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function setLoadCallback(loadCallback:<a href="../../Function.html">Function</a>):<a href="../../specialTypes.html#*">*</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flash CS3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p>
+     Sets the callback function that is called after the XML file is loaded.
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">loadCallback</span>:<a href="../../Function.html">Function</a></code> &mdash; The function to call when the XML language file loads.
+     
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../specialTypes.html#*">*</a></code></td></tr></table><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example uses an interval to check every 10 milliseconds to see if the language file has successfully 
+     loaded. Once the XML file has loaded, the <code>greeting_txt</code> text field instance on the Stage is populated with the 
+     <code>IDS_GREETING</code> string from the XML language file.
+     <div class="listing"><pre>
+     Locale.setLoadCallback(localeCallback);
+     Locale.loadLanguageXML("en");
+     // create interval to check if language XML file is loaded
+     var locale_int:Number = setInterval(checkLocaleStatus, 10);
+     function checkLocaleStatus():void {
+      if (Locale.checkXMLStatus()) {
+          clearInterval(locale_int);
+          trace("clearing interval @ " + getTimer() + " ms");
+      }
+     }
+     // callback function for Locale.setLoadCallback()
+     function localeCallback(success:Boolean):void {
+      greeting_txt.text = Locale.loadString("IDS_GREETING");
+     }
+     </pre></div>
+     </div></span></div></span><span id="pageFilter" runtime="Flash::9##AIR::1.0##" product="Flash::CS3##"><a name="setString()" id="setString()"></a><a name="setString(String,String,String)" id="setString(String,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>setString</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function setString(stringID:<a href="../../String.html">String</a>, languageCode:<a href="../../String.html">String</a>, stringValue:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Flash CS3</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 9, AIR 1.0</td></tr></table><p></p><p></p><p> 
+     Sets the new string value of a given string ID and language code.
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">stringID</span>:<a href="../../String.html">String</a></code> &mdash; The identification (ID) number of the string to set.
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">languageCode</span>:<a href="../../String.html">String</a></code> &mdash; The language code.
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">stringValue</span>:<a href="../../String.html">String</a></code> &mdash; A string value.
+     
+     </td></tr></table></p><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">The following example uses the <code>setString()</code> method to set the <code>IDS_WELCOME</code> string for both English
+     (en) and French (fr).
+     <div class="listing"><pre>
+     Locale.setString("IDS_WELCOME", "en", "hello");
+     Locale.setString("IDS_WELCOME", "fr", "bonjour");
+     trace(Locale.loadStringEx("IDS_WELCOME", "en")); // hello
+     </pre></div>
+     
+     </div></span></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,true,false,true,false,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

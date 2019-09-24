@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="air"><meta name="runtimever" content="air:2.6"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:10.2"><meta name="product" content="air"><meta name="productver" content="air:2.6"><meta name="product" content="flash player"><meta name="productver" content="flash player:10.2"><meta name="product" content="adobe digital enterprise platform experience services - task management"><meta name="prodver" content="adobe digital enterprise platform experience services - task management:10"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><link rel="stylesheet" href="../../../../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../../../../ion.css" type="text/css"><meta name="keywords" content="ITaskManager,com.adobe.ep.taskmanagement.services.ITaskManager,activeTask,completeTask,createTask,deleteTask,getTaskInfo,getTasks,newTaskFilter,newTaskInstance,save,start"><title>ITaskManager - Adobe ActionScript&reg; 3 (AS3 ADEP Task Management) API Reference</title>
+		<link rel="stylesheet" href="../../../../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../../../../filter_new.css" type="text/css">
+			
+		<script src="../../../../../jquery.js" type="text/javascript"></script>
+		<script src="../../../../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../../../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../../../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../../../../cookies.js" type="text/javascript"></script>
+		<script src="../../../../../asdoc.js" type="text/javascript"></script>
+		<script src="../../../../../iscroll.js" type="text/javascript"></script>
+		<script src="../../../../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../../../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../../../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../../../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../../../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../../../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../../../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../../../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../../../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../../../../search.html" onSubmit="searchfunctionsubmit('../../../../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../../../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../../../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../../../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../../../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">com.adobe.ep.taskmanagement.services&nbsp;</a><br>
+								<h1 id="classProductName">ITaskManager&nbsp; - AS3 ADEP Task Management</h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.adobe.ep.taskmanagement.services</a></td></tr><tr><td class="classHeaderTableLabel">Interface</td><td class="classSignature">public  interface  ITaskManager</td></tr><tr><td class="classHeaderTableLabel">Implementors</td><td> <a href="../../../../../com/adobe/ep/taskmanagement/services/TaskManager.html">TaskManager</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Adobe Digital Enterprise Platform Experience Services - Task Management 10</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.6, Flash Player 10.2</td></tr></table><p></p><p></p><p></p>
+	 The <code>ITaskManager</code> interface for the API to manage tasks such as create tasks, delete tasks, modify tasks, complete tasks.
+	 <p> 
+	 This interface also supports the capability to specify task types on the server with custom task properties.
+	 Task Types allow to add additional metadata to your tasks which is useful to create application specifc tasks.
+	 For example a Health Claim application may use a tasktype HealthClaim to add Health Claim related metadata
+	 like Insurance Provider, or X-Ray costs, etc. 
+	 </p>
+	 
+	 
+	 
+	           <p></p><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="" runtime="AIR::2.6##Flash::10.2##" product="AESPM::10##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#activeTask" class="signatureLink">activeTask</a> : <a href="../../../../../com/adobe/ep/taskmanagement/domain/ITask.html">com.adobe.ep.taskmanagement.domain:ITask</a><div class="summaryTableDescription">
+		 Retrieves the active task from the task list.</div></td><td class="summaryTableOwnerCol">ITaskManager</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="AIR::2.6##Flash::10.2##" product="AESPM::10##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#completeTask()" class="signatureLink">completeTask</a>(taskId:<a href="../../../../../String.html">String</a>):<a href="../../../../../com/adobe/ep/taskmanagement/util/IToken.html">com.adobe.ep.taskmanagement.util:IToken</a></div><div class="summaryTableDescription">
+		 Completes the specifed task.</div></td><td class="summaryTableOwnerCol">ITaskManager</td></tr><tr class="" runtime="AIR::2.6##Flash::10.2##" product="AESPM::10##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#createTask()" class="signatureLink">createTask</a>(taskDetails:<a href="../../../../../com/adobe/ep/taskmanagement/domain/ITask.html">com.adobe.ep.taskmanagement.domain:ITask</a>):<a href="../../../../../com/adobe/ep/taskmanagement/util/IObjectToken.html">com.adobe.ep.taskmanagement.util:IObjectToken</a></div><div class="summaryTableDescription">
+		 Creates and persists a new task on the server.</div></td><td class="summaryTableOwnerCol">ITaskManager</td></tr><tr class="" runtime="AIR::2.6##Flash::10.2##" product="AESPM::10##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#deleteTask()" class="signatureLink">deleteTask</a>(taskId:<a href="../../../../../String.html">String</a>):<a href="../../../../../com/adobe/ep/taskmanagement/util/IToken.html">com.adobe.ep.taskmanagement.util:IToken</a></div><div class="summaryTableDescription">
+		 Deletes the specified task.</div></td><td class="summaryTableOwnerCol">ITaskManager</td></tr><tr class="" runtime="AIR::2.6##Flash::10.2##" product="AESPM::10##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getTaskInfo()" class="signatureLink">getTaskInfo</a>(taskId:<a href="../../../../../String.html">String</a>):<a href="../../../../../com/adobe/ep/taskmanagement/util/IObjectToken.html">com.adobe.ep.taskmanagement.util:IObjectToken</a></div><div class="summaryTableDescription">
+		 Returns detailed information for a given task.</div></td><td class="summaryTableOwnerCol">ITaskManager</td></tr><tr class="" runtime="AIR::2.6##Flash::10.2##" product="AESPM::10##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getTasks()" class="signatureLink">getTasks</a>(taskFilter:<a href="../../../../../com/adobe/ep/taskmanagement/filter/IFilter.html">IFilter</a> = null, startIndex:<a href="../../../../../int.html">int</a> = 0, length:<a href="../../../../../int.html">int</a> = -1):<a href="../../../../../com/adobe/ep/taskmanagement/util/ICollectionToken.html">com.adobe.ep.taskmanagement.util:ICollectionToken</a></div><div class="summaryTableDescription">
+		 Returns the current list of task filtered by the provided taskFilter.</div></td><td class="summaryTableOwnerCol">ITaskManager</td></tr><tr class="" runtime="AIR::2.6##Flash::10.2##" product="AESPM::10##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#newTaskFilter()" class="signatureLink">newTaskFilter</a>(aTaskTypeName:<a href="../../../../../String.html">String</a> = null):<a href="../../../../../com/adobe/ep/taskmanagement/filter/IFilter.html">IFilter</a></div><div class="summaryTableDescription">
+		 Factory method to create a new taskfilter object to use with getTasks(taskFilter).</div></td><td class="summaryTableOwnerCol">ITaskManager</td></tr><tr class="" runtime="AIR::2.6##Flash::10.2##" product="AESPM::10##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#newTaskInstance()" class="signatureLink">newTaskInstance</a>(taskType:<a href="../../../../../String.html">String</a>):<a href="../../../../../com/adobe/ep/taskmanagement/util/IObjectToken.html">com.adobe.ep.taskmanagement.util:IObjectToken</a></div><div class="summaryTableDescription">
+		 Factory method to instantiate the an ITask implementation class instance associated with the ITaskManager implementation.</div></td><td class="summaryTableOwnerCol">ITaskManager</td></tr><tr class="" runtime="AIR::2.6##Flash::10.2##" product="AESPM::10##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#save()" class="signatureLink">save</a>(task:<a href="../../../../../com/adobe/ep/taskmanagement/domain/ITask.html">com.adobe.ep.taskmanagement.domain:ITask</a>):<a href="../../../../../com/adobe/ep/taskmanagement/util/IObjectToken.html">com.adobe.ep.taskmanagement.util:IObjectToken</a></div><div class="summaryTableDescription">
+		 Persists the given task to the server.</div></td><td class="summaryTableOwnerCol">ITaskManager</td></tr><tr class="" runtime="AIR::2.6##Flash::10.2##" product="AESPM::10##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#start()" class="signatureLink">start</a>(taskId:<a href="../../../../../String.html">String</a>):<a href="../../../../../com/adobe/ep/taskmanagement/util/IToken.html">com.adobe.ep.taskmanagement.util:IToken</a></div><div class="summaryTableDescription">
+		 Starts a task.</div></td><td class="summaryTableOwnerCol">ITaskManager</td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="AIR::2.6##Flash::10.2##" product="AESPM::10##"><a name="propertyDetail" id="propertyDetail"></a><a name="activeTask" id="activeTask"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>activeTask</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>activeTask:<a href="../../../../../com/adobe/ep/taskmanagement/domain/ITask.html">com.adobe.ep.taskmanagement.domain:ITask</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Adobe Digital Enterprise Platform Experience Services - Task Management 10</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.6, Flash Player 10.2</td></tr></table><p></p><p></p><p>
+		 Retrieves the active task from the task list.
+		 
+		 </p><p>This property can be used as the source for data binding. When this property is modified, it dispatches the  <code>propertyChange</code>                 event.</p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get activeTask():<a href="../../../../../com/adobe/ep/taskmanagement/domain/ITask.html">com.adobe.ep.taskmanagement.domain:ITask</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set activeTask(value:<a href="../../../../../com/adobe/ep/taskmanagement/domain/ITask.html">com.adobe.ep.taskmanagement.domain:ITask</a>):<a href="../../../../../specialTypes.html#void">void</a></code><br/></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="AIR::2.6##Flash::10.2##" product="AESPM::10##"><a name="completeTask()" id="completeTask()"></a><a name="completeTask(String)" id="completeTask(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>completeTask</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function completeTask(taskId:<a href="../../../../../String.html">String</a>):<a href="../../../../../com/adobe/ep/taskmanagement/util/IToken.html">com.adobe.ep.taskmanagement.util:IToken</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Adobe Digital Enterprise Platform Experience Services - Task Management 10</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.6, Flash Player 10.2</td></tr></table><p></p><p></p><p>
+		 Completes the specifed task.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">taskId</span>:<a href="../../../../../String.html">String</a></code> &mdash; Specifies the task id of the task to complete.
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/adobe/ep/taskmanagement/util/IToken.html">com.adobe.ep.taskmanagement.util:IToken</a></code> &mdash; An object that is used to specify the handlers for this asynchronous call.
+		 
+         </td></tr></table></div></span><span id="pageFilter" runtime="AIR::2.6##Flash::10.2##" product="AESPM::10##"><a name="createTask()" id="createTask()"></a><a name="createTask(com.adobe.ep.taskmanagement.domain.ITask)" id="createTask(com.adobe.ep.taskmanagement.domain.ITask)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>createTask</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function createTask(taskDetails:<a href="../../../../../com/adobe/ep/taskmanagement/domain/ITask.html">com.adobe.ep.taskmanagement.domain:ITask</a>):<a href="../../../../../com/adobe/ep/taskmanagement/util/IObjectToken.html">com.adobe.ep.taskmanagement.util:IObjectToken</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Adobe Digital Enterprise Platform Experience Services - Task Management 10</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.6, Flash Player 10.2</td></tr></table><p></p><p></p><p>
+		 Creates and persists a new task on the server.
+		 Note that instances of ILCTaskManager do not support the creation of tasks. 
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">taskDetails</span>:<a href="../../../../../com/adobe/ep/taskmanagement/domain/ITask.html">com.adobe.ep.taskmanagement.domain:ITask</a></code> &mdash; Specifies the details of the task to create.
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/adobe/ep/taskmanagement/util/IObjectToken.html">com.adobe.ep.taskmanagement.util:IObjectToken</a></code> &mdash; An object that is used the specify handlers for this asynchronous call.
+		 
+		 </td></tr></table><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">To create a task on the server.
+		 <div class="listing" version="3.0"><pre>
+            var taskManager;ITaskManager = ...
+         
+            var newInstanceToken:IObjectToken = taskManager.newTaskInstance();
+            newInstanceToken.addResponder(new mx.rpc.Responder(
+                function (event:ObjectResultEvent) : void
+                {
+                    // get the newly instantate task from the result
+                    var newInstance:ITask = newInstanceToken.result as ITask;
+                    // set some data on the task
+                    newInstance.setPropertyValue("somePropertyName", "somePropertyValue");
+                    
+                    // now create the task on the server
+                    var createTaskToken:IObjectToken = taskManager.createTask(newInstance);
+                    createTaskToken.addResponder(new mx.rpc.Responder(
+                        function (event:TaskManagerEvent) : void
+                        {                
+                            // the task return from the server.
+                            // this task will now also include an ID to uniquely identify it
+                            var createdTask:ITask = createTaskToken.result as ITask;
+                            // do something with the newly created task
+                        },
+                        function (event:TaskManagerFaultEvent) : void
+                        {
+                            // createTask failed, handle fault
+                        }));
+                },
+                function (event:TaskManagerFaultEvent) : void
+                {
+                    // newTaskInstance failed, handle fault
+                });
+         </pre></div>
+		 
+         </div></span></div></span><span id="pageFilter" runtime="AIR::2.6##Flash::10.2##" product="AESPM::10##"><a name="deleteTask()" id="deleteTask()"></a><a name="deleteTask(String)" id="deleteTask(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>deleteTask</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function deleteTask(taskId:<a href="../../../../../String.html">String</a>):<a href="../../../../../com/adobe/ep/taskmanagement/util/IToken.html">com.adobe.ep.taskmanagement.util:IToken</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Adobe Digital Enterprise Platform Experience Services - Task Management 10</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.6, Flash Player 10.2</td></tr></table><p></p><p></p><p>
+		 Deletes the specified task.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">taskId</span>:<a href="../../../../../String.html">String</a></code> &mdash; the task id for the task to delete.
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/adobe/ep/taskmanagement/util/IToken.html">com.adobe.ep.taskmanagement.util:IToken</a></code> &mdash; An object that is used the specify handlers for this asynchronous call.
+		 
+         </td></tr></table></div></span><span id="pageFilter" runtime="AIR::2.6##Flash::10.2##" product="AESPM::10##"><a name="getTaskInfo()" id="getTaskInfo()"></a><a name="getTaskInfo(String)" id="getTaskInfo(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getTaskInfo</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getTaskInfo(taskId:<a href="../../../../../String.html">String</a>):<a href="../../../../../com/adobe/ep/taskmanagement/util/IObjectToken.html">com.adobe.ep.taskmanagement.util:IObjectToken</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Adobe Digital Enterprise Platform Experience Services - Task Management 10</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.6, Flash Player 10.2</td></tr></table><p></p><p></p><p>
+		 Returns detailed information for a given task.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">taskId</span>:<a href="../../../../../String.html">String</a></code> &mdash; Specifies the task id for the task to retrieve.
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/adobe/ep/taskmanagement/util/IObjectToken.html">com.adobe.ep.taskmanagement.util:IObjectToken</a></code> &mdash; An object that is used the specify handlers for this asynchronous call.
+		 
+		 
+		 </td></tr></table><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">Retrieving task info by task id
+		 <div class="listing" version="3.0"><pre>
+         var taskManager:ITaskManager = ...
+         var taskId:String = ...
+         
+         var taskInfoToken:IObjectToken = taskManager.getTaskInfo(taskId);
+         taskInfoToken.addResponder(new mx.rpc.Responder(
+             function (event:ObjectResultEvent) : void
+             {
+             // get the newly instantate task from the result
+             var task:ITask = taskInfoToken.result as ITask;
+             },
+             function (event:TaskManagerFaultEvent) : void
+             {
+             // getTaskInfo failed, handle fault
+             }));
+         </pre></div>
+		 
+		 
+         </div></span></div></span><span id="pageFilter" runtime="AIR::2.6##Flash::10.2##" product="AESPM::10##"><a name="getTasks()" id="getTasks()"></a><a name="getTasks(com.adobe.ep.taskmanagement.filter.IFilter,int,int)" id="getTasks(com.adobe.ep.taskmanagement.filter.IFilter,int,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getTasks</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getTasks(taskFilter:<a href="../../../../../com/adobe/ep/taskmanagement/filter/IFilter.html">IFilter</a> = null, startIndex:<a href="../../../../../int.html">int</a> = 0, length:<a href="../../../../../int.html">int</a> = -1):<a href="../../../../../com/adobe/ep/taskmanagement/util/ICollectionToken.html">com.adobe.ep.taskmanagement.util:ICollectionToken</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Adobe Digital Enterprise Platform Experience Services - Task Management 10</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.6, Flash Player 10.2</td></tr></table><p></p><p></p><p>
+		 Returns the current list of task filtered by the provided taskFilter.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">taskFilter</span>:<a href="../../../../../com/adobe/ep/taskmanagement/filter/IFilter.html">IFilter</a></code> (default = <code>null</code>)<code></code> &mdash; Specifies how to filter the returned list of tasks. Default value is <code>null</code>.
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">startIndex</span>:<a href="../../../../../int.html">int</a></code> (default = <code>0</code>)<code></code> &mdash; Specifies the index of the first task returned. Default value is <code>0</code>.
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">length</span>:<a href="../../../../../int.html">int</a></code> (default = <code>-1</code>)<code></code> &mdash; Specifies the number of tasks returned. Default is <code>-1</code> to return all tasks.
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/adobe/ep/taskmanagement/util/ICollectionToken.html">com.adobe.ep.taskmanagement.util:ICollectionToken</a></code> &mdash; An object that is used the specify handlers for this asynchronous call.
+		 
+		 </td></tr></table><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">Using a filter to retrieve a list of tasks from the server
+		 <div class="listing" version="3.0"><pre>
+         var taskManager:ITaskManager;
+         var taskId:String;
+         
+         var taskFilter:IFilter = taskManager.newTaskFilter();
+         // this example assumes that a tasktype with name "SomeTaskType" is defined on the server
+         taskFilter.taskTypeName = "SomeTaskType";
+         // and that the SomeTaskType task type defines a property of type 'Date' and name 'aTaskDateProperty'
+         var dateProperty:IProperty = new Property("aTaskDateProperty");
+         // add one condition to only return tasks with a date property value &gt; 15/2/2011  
+         taskFilter.addCondition(dateProperty, ComparisonOperator.GREATER_THAN, new Date(2011, 2, 15));
+         
+         // call the server to retrieve the list of tasks matching the provided filter
+         var tokenTask:ICollectionToken = taskManager.getTasks(taskFilter);            
+         tokenTask.addResponder(new mx.rpc.Responder(
+             function (event:CollectionResultEvent) : void
+             {
+             // the result is an ArrayCollection of ITask objects
+             var returnValue:ArrayCollection = event.result as ArrayCollection;
+             for(var index:int=0; index&lt;returnValue.length; index++)  
+             {
+                 var task:ITask = returnValue.getItemAt(index) as ITask;
+                 // ... 
+             }
+             },
+             function (event:TaskManagerFaultEvent) : void
+             {
+             // handle getTasks() fault
+             }
+         ));
+         </pre></div>
+		 
+         </div></span></div></span><span id="pageFilter" runtime="AIR::2.6##Flash::10.2##" product="AESPM::10##"><a name="newTaskFilter()" id="newTaskFilter()"></a><a name="newTaskFilter(String)" id="newTaskFilter(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>newTaskFilter</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function newTaskFilter(aTaskTypeName:<a href="../../../../../String.html">String</a> = null):<a href="../../../../../com/adobe/ep/taskmanagement/filter/IFilter.html">IFilter</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Adobe Digital Enterprise Platform Experience Services - Task Management 10</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.6, Flash Player 10.2</td></tr></table><p></p><p></p><p>
+		 Factory method to create a new taskfilter object to use with getTasks(taskFilter).
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">aTaskTypeName</span>:<a href="../../../../../String.html">String</a></code> (default = <code>null</code>)<code></code> &mdash; Specifies the tasktype to filter on. Default value is <code>null</code>.
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/adobe/ep/taskmanagement/filter/IFilter.html">IFilter</a></code> &mdash; A new task filter.
+		 
+		 </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="ITaskManager.html#getTasks()" target="">getTasks()</a></div></div></span><span id="pageFilter" runtime="AIR::2.6##Flash::10.2##" product="AESPM::10##"><a name="newTaskInstance()" id="newTaskInstance()"></a><a name="newTaskInstance(String)" id="newTaskInstance(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>newTaskInstance</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function newTaskInstance(taskType:<a href="../../../../../String.html">String</a>):<a href="../../../../../com/adobe/ep/taskmanagement/util/IObjectToken.html">com.adobe.ep.taskmanagement.util:IObjectToken</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Adobe Digital Enterprise Platform Experience Services - Task Management 10</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.6, Flash Player 10.2</td></tr></table><p></p><p></p><p>
+		 Factory method to instantiate the an ITask implementation class instance associated with the ITaskManager implementation.
+		 Note that the returned task is not yet created nor persisted. In order for the task to be persisted you need to call
+		 <code>createTask</code> or <code>save</code>.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">taskType</span>:<a href="../../../../../String.html">String</a></code> &mdash; Specifies the name of the tasktype for which to instantiate a task object.
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/adobe/ep/taskmanagement/util/IObjectToken.html">com.adobe.ep.taskmanagement.util:IObjectToken</a></code> &mdash; A task object that is used the specify handlers for this asynchronous call.
+		 
+		 </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="ITaskManager.html#createTask()" target="">createTask()</a></div></div></span><span id="pageFilter" runtime="AIR::2.6##Flash::10.2##" product="AESPM::10##"><a name="save()" id="save()"></a><a name="save(com.adobe.ep.taskmanagement.domain.ITask)" id="save(com.adobe.ep.taskmanagement.domain.ITask)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>save</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function save(task:<a href="../../../../../com/adobe/ep/taskmanagement/domain/ITask.html">com.adobe.ep.taskmanagement.domain:ITask</a>):<a href="../../../../../com/adobe/ep/taskmanagement/util/IObjectToken.html">com.adobe.ep.taskmanagement.util:IObjectToken</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Adobe Digital Enterprise Platform Experience Services - Task Management 10</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.6, Flash Player 10.2</td></tr></table><p></p><p></p><p>
+		 Persists the given task to the server.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">task</span>:<a href="../../../../../com/adobe/ep/taskmanagement/domain/ITask.html">com.adobe.ep.taskmanagement.domain:ITask</a></code> &mdash; Specifies the task information to persist.
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/adobe/ep/taskmanagement/util/IObjectToken.html">com.adobe.ep.taskmanagement.util:IObjectToken</a></code> &mdash; An object that is used the specify handlers for this asynchronous call.
+		 
+		 </td></tr></table><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><div class="detailBody">How to save a task to the server
+		 <div class="listing" version="3.0"><pre>
+         var taskManager:ITaskManager = null; // ...
+         var task:ITask = null; // ...
+         
+         // save the 'task' object to the server
+         var taskSaveToken:IObjectToken = taskManager.save(task);
+         // add a responder for the result of the save operation
+         taskSaveToken.addResponder(new mx.rpc.Responder(
+             function (event:ObjectResultEvent) : void
+             {
+             // save succesful..
+             },
+             function (event:TaskManagerFaultEvent) : void
+             {
+             // save failed, handle fault
+             }));
+         
+         </pre></div>
+		 
+         </div></span></div></span><span id="pageFilter" runtime="AIR::2.6##Flash::10.2##" product="AESPM::10##"><a name="start()" id="start()"></a><a name="start(String)" id="start(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>start</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function start(taskId:<a href="../../../../../String.html">String</a>):<a href="../../../../../com/adobe/ep/taskmanagement/util/IToken.html">com.adobe.ep.taskmanagement.util:IToken</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Product Version:&nbsp;</b></td><td>Adobe Digital Enterprise Platform Experience Services - Task Management 10</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 2.6, Flash Player 10.2</td></tr></table><p></p><p></p><p>
+		 Starts a task.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">taskId</span>:<a href="../../../../../String.html">String</a></code> &mdash; Specifies the task Id of the task to start.
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/adobe/ep/taskmanagement/util/IToken.html">com.adobe.ep.taskmanagement.util:IToken</a></code> &mdash; An object that is used the specify handlers for this asynchronous call.
+		 
+         </td></tr></table></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

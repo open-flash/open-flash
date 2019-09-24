@@ -1,0 +1,768 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:9"><meta name="runtime" content="lite"><meta name="runtimever" content="lite:4"><meta name="product" content="flash player"><meta name="productver" content="flash player:9"><meta name="product" content="lite"><meta name="productver" content="lite:4"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="Security,flash.system.Security,APPLICATION,LOCAL_TRUSTED,LOCAL_WITH_FILE,LOCAL_WITH_NETWORK,REMOTE,exactSettings,pageDomain,sandboxType,allowDomain,allowInsecureDomain,loadPolicyFile,showSettings"><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" src="../../AC_OETags.js" type="text/javascript"></script><title>Security - Adobe ActionScript&reg; 3 (AS3 ) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">flash.system&nbsp;</a><br>
+								<h1 id="classProductName">Security&nbsp; - AS3 </h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">flash.system</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public final   class  Security</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Security  <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../Object.html">Object</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p></p>
+ The Security class lets you specify how content in different domains can communicate with 
+ each other.
+ 
+ <p></p><p><a href="#includeExamplesSummary">View the examples</a></p><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary" id="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Properties</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Properties</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Properties</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th>Defined By</th></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../Object.html#constructor" class="signatureLink">constructor</a> : <a href="../../Object.html">Object</a><div class="summaryTableDescription">
+	 A reference to the class object or constructor function for a given object instance.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#exactSettings" class="signatureLink">exactSettings</a> : <a href="../../Boolean.html">Boolean</a><div class="summaryTableDescription">[static] 
+     Determines how Flash Player or AIR chooses the domain to use for certain 
+     content settings, including settings for camera and microphone 
+     permissions, storage quotas, and storage of persistent shared objects.</div></td><td class="summaryTableOwnerCol">Security</td></tr><tr class="" runtime="Flash::10.3##AIR::2.7##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#pageDomain" class="signatureLink">pageDomain</a> : <a href="../../String.html">String</a><div class="summaryTableDescription">[static] [read-only] 
+     The domain portion of the HTML page containing the swf.</div></td><td class="summaryTableOwnerCol">Security</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#sandboxType" class="signatureLink">sandboxType</a> : <a href="../../String.html">String</a><div class="summaryTableDescription">[static] [read-only] 
+     Indicates the type of security sandbox in which the calling file is operating.</div></td><td class="summaryTableOwnerCol">Security</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary" id="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#allowDomain()" class="signatureLink">allowDomain</a>(<a href="../../statements.html#..._(rest)_parameter">...</a> domains):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[static] 
+     Lets SWF files in the identified domains access objects and variables 
+     in the SWF file that contains the allowDomain() call.</div></td><td class="summaryTableOwnerCol">Security</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#allowInsecureDomain()" class="signatureLink">allowInsecureDomain</a>(<a href="../../statements.html#..._(rest)_parameter">...</a> domains):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[static] 
+     Lets SWF files and HTML files in the identified domains access objects 
+     and variables in the calling SWF file, which is hosted by means of the HTTPS protocol.</div></td><td class="summaryTableOwnerCol">Security</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an object has a specified property defined.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="../../Object.html">Object</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether an instance of the Object class is in the prototype chain of the object specified 
+	 as the parameter.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#loadPolicyFile()" class="signatureLink">loadPolicyFile</a>(url:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[static]   
+     Looks for a policy file at the location specified by the url 
+     parameter.</div></td><td class="summaryTableOwnerCol">Security</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="../../String.html">String</a>):<a href="../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Indicates whether the specified property exists and is enumerable.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="../../String.html">String</a>, isEnum:<a href="../../Boolean.html">Boolean</a> = true):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sets the availability of a dynamic property for loop operations.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#showSettings()" class="signatureLink">showSettings</a>(panel:<a href="../../String.html">String</a> = "default"):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[static] 
+     Displays the Security Settings panel in Flash Player.</div></td><td class="summaryTableOwnerCol">Security</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of this object, formatted according to locale-specific conventions.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#toString()" class="signatureLink">toString</a>():<a href="../../String.html">String</a></div><div class="summaryTableDescription">
+	 Returns the string representation of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="../../Object.html">Object</a></div><div class="summaryTableDescription">
+	 Returns the primitive value of the specified object.</div></td><td class="summaryTableOwnerCol"><a href="../../Object.html">Object</a></td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="constantSummary" id="constantSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Constants</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th>Defined By</th></tr><tr class="" runtime="AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#APPLICATION" class="signatureLink">APPLICATION</a> : <a href="../../String.html">String</a> = "application"<div class="summaryTableDescription">[static] 
+	 The file is running in an AIR application, and it was installed with the package (the AIR file) for that 
+	 application.</div></td><td class="summaryTableOwnerCol">Security</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#LOCAL_TRUSTED" class="signatureLink">LOCAL_TRUSTED</a> : <a href="../../String.html">String</a> = "localTrusted"<div class="summaryTableDescription">[static] 
+     The file is a local file and has been trusted by the user, 
+     using either the Flash Player Settings Manager or a FlashPlayerTrust configuration
+     file.</div></td><td class="summaryTableOwnerCol">Security</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#LOCAL_WITH_FILE" class="signatureLink">LOCAL_WITH_FILE</a> : <a href="../../String.html">String</a> = "localWithFile"<div class="summaryTableDescription">[static] 
+     The file is a local file, has not been trusted by the user, 
+	 and it is not a SWF file that was published with a networking designation.</div></td><td class="summaryTableOwnerCol">Security</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#LOCAL_WITH_NETWORK" class="signatureLink">LOCAL_WITH_NETWORK</a> : <a href="../../String.html">String</a> = "localWithNetwork"<div class="summaryTableDescription">[static] 
+	 The file is a local file, has not been trusted by the user, and it is a SWF
+	 file that was published with a networking designation.</div></td><td class="summaryTableOwnerCol">Security</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#REMOTE" class="signatureLink">REMOTE</a> : <a href="../../String.html">String</a> = "remote"<div class="summaryTableDescription">[static] 
+     The file is from an Internet URL and operates under domain-based sandbox rules.</div></td><td class="summaryTableOwnerCol">Security</td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">Property Detail</div><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="propertyDetail" id="propertyDetail"></a><a name="exactSettings" id="exactSettings"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>exactSettings</h3></td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>exactSettings:<a href="../../Boolean.html">Boolean</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Determines how Flash Player or AIR chooses the domain to use for certain 
+     content settings, including settings for camera and microphone 
+     permissions, storage quotas, and storage of persistent shared objects.
+	 To have the SWF file use the same settings that were used in Flash Player 6,
+     set <code>exactSettings</code> to <code>false</code>.
+     
+     
+     
+     <p>In Flash Player 6, the domain used for these player settings was based on
+     the trailing portion of the domain of the SWF file. If the domain of a SWF file
+     includes more than two segments, such as www.example.com, the first segment
+     of the domain ("www") is removed, and the remaining portion of the domain is used: 
+     example.com. So, in Flash Player 6, www.example.com and store.example.com both 
+     use example.com as the domain for these settings. Similarly, www.example.co.uk and 
+     store.example.co.uk both use example.co.uk as the domain for these settings.
+     In Flash Player 7 and later, player settings are chosen by default
+     according to a SWF file's exact domain; for example, a SWF file from www.example.com
+     would use the player settings for www.example.com, and a SWF file from
+     store.example.com would use the separate player settings for
+     store.example.com.</p>
+     
+     <p>When <code>Security.exactSettings</code> is set to <code>true</code>, Flash Player 
+     or AIR uses exact domains for player settings.  The default value for <code>exactSettings</code> is <code>true</code>. 
+     If you change <code>exactSettings</code> from its default value, do so before any events
+     occur that require Flash Player or AIR to choose player settings &mdash; for example, 
+     using a camera or microphone, or retrieving a persistent shared object.</p>
+     
+     <p>If you previously published a version 6 SWF file and
+     created persistent shared objects from it, and you now need to
+     retrieve those persistent shared objects from that SWF file
+     after porting it to version 7 or later, or from a different SWF file of
+     version 7 or later, set <code>Security.exactSettings</code> to <code>false</code>
+     before calling <code>SharedObject.getLocal()</code>.</p>
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get exactSettings():<a href="../../Boolean.html">Boolean</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function set exactSettings(value:<a href="../../Boolean.html">Boolean</a>):<a href="../../specialTypes.html#void">void</a></code><br/><br/><span class="label"> Throws </span><br/><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; A Flash Player or AIR application already used the value of <code>exactSettings</code> 
+     at least once in a decision about player settings.
+     
+     </td></tr></table></div></span><span id="pageFilter" runtime="Flash::10.3##AIR::2.7##"><a name="propertyDetail" id="propertyDetail"></a><a name="pageDomain" id="pageDomain"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>pageDomain</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>pageDomain:<a href="../../String.html">String</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>Flash Player 10.3, AIR 2.7</td></tr></table><p></p><p></p><p>
+     The domain portion of the HTML page containing the swf. 
+	 
+	 <p>For security reasons, the method does not return the full URL, only the page 
+     domain, such as http://www.example.com. If this SWF is not contained in an HTML page,
+	 or cannot access the page domain for security reasons, this property returns the string, 
+	 <code>undefined</code>.</p>
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get pageDomain():<a href="../../String.html">String</a></code><br/></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="propertyDetail" id="propertyDetail"></a><a name="sandboxType" id="sandboxType"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>sandboxType</h3></td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>sandboxType:<a href="../../String.html">String</a></code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Indicates the type of security sandbox in which the calling file is operating.
+     
+     <p><code>Security.sandboxType</code> has one of the following values:</p>
+     
+     <ul><li><code>remote</code> (<code>Security.REMOTE</code>)&mdash;This file is from an Internet URL and operates under domain-based sandbox
+       rules.</li><li><code>localWithFile</code> (<code>Security.LOCAL_WITH_FILE</code>)&mdash;This file is a local file, has not been trusted by the user, and
+       it is not a SWF file that was published with a networking designation. The file may read from local data sources but may
+       not communicate with the Internet.</li><li><code>localWithNetwork</code> (<code>Security.LOCAL_WITH_NETWORK</code>)&mdash;This SWF file is a local file, has not been trusted by the user, and
+       was published with a networking designation. The SWF file can communicate with the Internet but cannot
+       read from local data sources.</li><li><code>localTrusted</code> (<code>Security.LOCAL_TRUSTED</code>)&mdash;This file is a local file and has been trusted by 
+       the user, using either the Flash Player Settings Manager or a FlashPlayerTrust configuration file. The file can read from local data
+       sources and communicate with the Internet.</li><li><code>application</code> (<code>Security.APPLICATION</code>)&mdash;This file is 
+     running in an AIR application, and it was installed with the package (AIR file) for that 
+     application. By default, files in the AIR application sandbox can cross-script any file from any domain
+     (although files outside the AIR application sandbox may not be permitted to cross-script the AIR file).
+     By default, files in the AIR application sandbox can load content and data from any domain. </li></ul>
+     
+     <p>For more information related to security, see the Flash Player Developer Center Topic: 
+     <a href="http://www.adobe.com/go/devnet_security_en" target="external">Security</a>.</p>
+     
+     </p><br/><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get sandboxType():<a href="../../String.html">String</a></code><br/><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7e3f.html" target="_blank">Security sandboxes</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Security.html#REMOTE" target="">REMOTE</a><br/><a href="Security.html#LOCAL_WITH_FILE" target="">LOCAL_WITH_FILE</a><br/><a href="Security.html#LOCAL_WITH_NETWORK" target="">LOCAL_WITH_NETWORK</a><br/><a href="Security.html#LOCAL_TRUSTED" target="">LOCAL_TRUSTED</a><br/><a href="Security.html#APPLICATION" target="">APPLICATION</a></div></div></span><a name="methodDetail" id="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="allowDomain()" id="allowDomain()"></a><a name="allowDomain(restParam)" id="allowDomain(restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>allowDomain</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public static function allowDomain(<a href="../../statements.html#..._(rest)_parameter">...</a> domains):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     <span>Lets SWF files in the identified domains access objects and variables 
+     in the SWF file that contains the <code>allowDomain()</code> call. </span>
+     
+     
+     
+     <p><i>Note:</i> Calling this method from code in the AIR application sandbox 
+     throws a SecurityError exception. Content outside of the application security domain cannot directly
+     cross-script content in the application sandbox. However, content outside of the application sandbox can 
+     communicate with content in the application security sandbox using a sandbox bridge.</p>
+     
+     <p>If two SWF files are served from the same domain &mdash; for example, http://mysite.com/swfA.swf and
+     http://mysite.com/swfB.swf &mdash; then swfA.swf can examine and modify variables, objects, properties,
+     methods, and so on in swfB.swf, and swfB.swf can do the same for swfA.swf. This is called <i>cross-movie
+     scripting</i> or <i>cross-scripting</i>.</p>
+     
+     <p>If two SWF files are served from different domains &mdash; for example, http://siteA.com/swfA.swf and
+     http://siteB.com/siteB.swf &mdash; then, by default, Flash Player does not allow swfA.swf to script
+     swfB.swf, nor swfB.swf to script swfA.swf. A SWF file gives permission to SWF files from other domains
+     by calling <code>Security.allowDomain()</code>. This is 
+     called <i>cross-domain scripting</i>. By calling <code>Security.allowDomain("siteA.com")</code>, siteB.swf 
+     gives siteA.swf permission to script it.</p>
+     
+     <p>In any cross-domain situation, it is important to be clear about the two parties involved.
+     For the purposes of this discussion, the side performing the cross-scripting
+     is called the <i>accessing party</i> (usually the accessing SWF), and the other side is called <i>the party being accessed</i>  
+     (usually the SWF file being accessed). When siteA.swf scripts siteB.swf, 
+     siteA.swf is the accessing party, and siteB.swf is the party being accessed.</p>
+     
+     <p><img src="../../images/crossScript_load.jpg" alt="Cross-domain diagram"></img></p>
+     
+     <p>Cross-domain permissions that are established with <code>allowDomain()</code> are asymmetrical.
+     In the previous example, siteA.swf can script siteB.swf, but siteB.swf cannot script siteA.swf, 
+     because siteA.swf has not called <code>allowDomain()</code> to give SWF files at siteB.com permission 
+     to script it. You can set up symmetrical permissions by having both SWF files call 
+     <code>allowDomain()</code>.</p>
+     
+     <p>In addition to protecting SWF files from cross-domain scripting originated by other SWF files, Flash Player
+     protects SWF files from cross-domain scripting originated by HTML files. HTML-to-SWF scripting can
+     occur with older browser functions such as <code>SetVariable</code> or callbacks
+     established through <code>ExternalInterface.addCallback()</code>. When HTML-to-SWF scripting crosses
+     domains, the SWF file being accessed must call <code>allowDomain()</code>, 
+     just as when the accessing party is a SWF file, or the operation will fail.</p>
+     
+     <p>Specifying an IP address as a parameter to <code>allowDomain()</code>
+     does not permit access by all parties that originate at the specified IP address. 
+     Instead, it permits access only by a party that contains the specified IP address it its URL, 
+     rather than a domain name that maps to that IP address.</p> 
+     
+     <p><b>Version-specific differences</b></p>
+     <p>Flash Player's cross-domain security rules have evolved from version to version. 
+     The following table summarizes the differences.</p>
+     
+     <table class="innertable" ><tr><th>Latest SWF version involved in cross-scripting</th><th><code>allowDomain()</code> needed?</th><th><code>allowInsecureDomain()</code> needed?</th><th>Which SWF file must call <code>allowDomain()</code> or <code>allowInsecureDomain()</code>?</th><th>What can be specified in <code>allowDomain()</code> or <code>allowInsecureDomain()</code>?</th></tr><tr><td align="center">5 or earlier</td><td>No</td><td align="center">No</td><td align="center">N/A</td><td align="center">N/A</td></tr><tr><td align="center">6</td><td>Yes, if superdomains don't match</td><td align="center">No</td><td>The SWF file being accessed, or any SWF file with the same superdomain as the SWF file being accessed</td><td><ul><li>Text-based domain (mysite.com)</li><li>IP address (192.168.1.1)</li></ul></td></tr><tr><td align="center">7</td><td>Yes, if domains don't match exactly</td><td>Yes, if performing HTTP-to-HTTPS access (even if domains match exactly)</td><td>The SWF file being accessed, or any SWF file with exactly the same domain as the SWF file being accessed</td><td><ul><li>Text-based domain (mysite.com)</li><li>IP address (192.168.1.1)</li></ul></td></tr><tr><td align="center">8 or later</td><td>Yes, if domains don't match exactly</td><td>Yes, if performing HTTP-to-HTTPS access (even if domains match exactly)</td><td>SWF file being accessed</td><td><ul><li>Text-based domain (mysite.com)</li><li>IP address (192.168.1.1)</li><li>Wildcard (*)</li></ul></td></tr></table>
+      
+     <p>The versions that control the behavior of Flash Player are <i>SWF versions</i> 
+     (the published version of a SWF file), not the version of Flash Player itself. 
+     For example, when Flash Player 8 is playing a SWF file published for version 7, it  
+     applies behavior that is consistent with version 7. This practice ensures that player upgrades do not
+     change the behavior of <code>Security.allowDomain()</code> in deployed SWF files.</p>
+     
+     <p>The version column in the previous table shows the latest SWF version involved in a cross-scripting
+     operation. Flash Player determines its behavior according to either the accessing SWF file's
+     version or the version of the SWF file that is being accessed, whichever is later.</p>
+     
+     <p>The following paragraphs provide more detail about Flash Player security changes involving
+     <code>Security.allowDomain()</code>.</p>
+     
+     <p><b>Version 5</b>. There are no cross-domain scripting restrictions.</p>
+     
+     <p><b>Version 6</b>. Cross-domain scripting security is introduced. By default, Flash Player forbids
+     cross-domain scripting; <code>Security.allowDomain()</code> can permit it. To determine whether two files are
+     in the same domain, Flash Player uses each file's superdomain, which is the exact host name from the
+     file's URL, minus the first segment, down to a minimum of two segments. For example, the superdomain of
+     www.mysite.com is mysite.com. SWF files from www.mysite.com and
+     store.mysite.com to script each other without a call to <code>Security.allowDomain()</code>.</p>
+     
+     <p><b>Version 7</b>. Superdomain matching is changed to exact domain matching. Two files are 
+     permitted to script each other only if the host names in their URLs are identical; otherwise, a call to
+     <code>Security.allowDomain()</code> is required. By default, files loaded from non-HTTPS URLs are no longer
+     permitted to script files loaded from HTTPS URLs, even if the files are loaded from exactly the same 
+     domain. This restriction helps protect HTTPS files, because a non-HTTPS file is vulnerable to
+     modification during download, and a maliciously modified non-HTTPS file could corrupt an HTTPS file,
+     which is otherwise immune to such tampering. <code>Security.allowInsecureDomain()</code> is introduced to
+     allow HTTPS SWF files that are being accessed to voluntarily disable this restriction, but the use of
+     <code>Security.allowInsecureDomain()</code> is discouraged.</p>
+     
+     <p><b>Version 8</b>. There are two major areas of change:</p>
+     
+     <ul><li>Calling <code>Security.allowDomain()</code> now permits cross-scripting operations
+     only if the SWF file being accessed is the SWF file that called <code>Security.allowDomain()</code>. 
+     In other words, a SWF file that calls <code>Security.allowDomain()</code> now permits access only to itself. 
+     In previous versions, calling <code>Security.allowDomain()</code> permitted cross-scripting operations 
+     where the SWF file being accessed could be any SWF file in the same domain as the SWF file that called
+     <code>Security.allowDomain()</code>. Calling <code>Security.allowDomain()</code> previously opened up
+     the entire domain of the calling SWF file.</li><li>Support has been added for wildcard values with <code>Security.allowDomain("*")</code> and 
+     <code>Security.allowInsecureDomain("*")</code>. 
+     The wildcard (*) value permits cross-scripting operations where the accessing file is any file at all,
+     loaded from anywhere. Think of the wildcard as a global permission. Wildcard permissions 
+     are required to enable certain kinds of operations
+     under the local file security rules. Specifically, 
+     for a local SWF file with network-access permissions to script a SWF file on the
+     Internet, the Internet SWF file being accessed must call <code>Security.allowDomain("*")</code>, 
+     reflecting that the origin of a local SWF file is unknown. (If the Internet SWF file is loaded from an 
+     HTTPS URL, the Internet SWF file must instead call <code>Security.allowInsecureDomain("*")</code>.)</li></ul>
+       
+     <p>Occasionally, you may encounter the following situation: You load a child SWF file
+     from a different domain and want to allow the child SWF file to script the parent SWF file,
+     but you don't know the final domain of the child SWF file. This can happen, for
+     example, when you use load-balancing redirects or third-party servers.</p>
+     
+     <p>In this situation, you can use the <code>url</code> property of the URLRequest object
+     that you pass to <code>Loader.load()</code>. For example, if you load a child SWF file 
+     into a parent SWF, you can access the <code>contentLoaderInfo</code> property of the Loader
+     object for the parent SWF: </p>
+     <div class="listing"><pre>Security.allowDomain(loader.contentLoaderInfo.url)</pre></div>
+     
+     <p>Make sure that you wait until the child SWF file begins loading to get the correct
+     value of the <code>url</code> property. To determine when the child SWF has begun loading,
+     use the <code>progress</code> event.</p>
+     
+     <p>The opposite situation can also occur; that is, you might create a child SWF file
+     that wants to allow its parent to script it, but doesn't know what the domain of its parent
+     will be. In this situation, you can access the <code>loaderInfo</code> property 
+     of the display object that is the SWF's root object. In the child SWF, call <code>
+     Security.allowDomain( this.root.loaderInfo.loaderURL)</code>.
+     You don't have to wait for the parent SWF file to load; the parent will already be 
+     loaded by the time the child loads.</p>
+     
+     <p>If you are publishing for Flash Player 8 or later, you can also handle these situations by calling
+     <code>Security.allowDomain("*")</code>. However, this can sometimes be a dangerous shortcut, 
+     because it allows the calling SWF file to be accessed by any other SWF file from any domain. 
+     It is usually safer to use the <code>_url</code> property.</p> 
+     
+     <p> For more information related to security, see the Flash Player Developer Center Topic: 
+     <a href="http://www.adobe.com/go/devnet_security_en" target="external">Security</a>.</p>
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><a href="../../statements.html#..._(rest)_parameter">...</a> <span class="label">domains</span></code> &mdash; One or more strings or URLRequest objects that name the domains from which
+     you want to allow access.  You can specify the special domain "*" to
+     allow access from all domains.  
+     
+     <p>In Flash Professional, specifying "*" is the only
+     way to allow access to nonlocal SWF files from local SWF files that have been
+     published using Access Network Only for the Local Playback
+     Security option in the Flash authoring tool.</p>
+     <p><b>Note:</b> 
+     The wildcard value does not work for subdomains. For example, you cannot use <code>*.foo.com</code> for
+     the <code>domains</code> parameter. While you can specify a subdomain with a wild card value for a cross domain policy file
+     (as in <code>*.foo.com</code>), you can't use a wildcard value that way for the <code>allowDomain()</code> method.</p>
+     
+     </td></tr></table></p><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; Calling this method from code in the AIR application security sandbox
+     throws a SecurityError exception. Content outside of the application security sandbox cannot cross-script
+     content in the application security sandbox. 
+     
+     </td></tr></table><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7c98.html" target="_blank">Cross-scripting</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/external/ExternalInterface.html#addCallback()" target="">ExternalInterface.addCallback()</a><br/><a href="../../flash/events/Event.html#COMPLETE" target="">flash.events.Event.COMPLETE</a><br/><a href="../../flash/display/DisplayObject.html#parent" target="">flash.display.DisplayObject.parent</a><br/><a href="../../flash/net/URLRequest.html#url" target="">flash.net.URLRequest.url</a><br/><a href="Security.html#allowInsecureDomain()" target="">allowInsecureDomain()</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="allowInsecureDomain()" id="allowInsecureDomain()"></a><a name="allowInsecureDomain(restParam)" id="allowInsecureDomain(restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>allowInsecureDomain</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function allowInsecureDomain(<a href="../../statements.html#..._(rest)_parameter">...</a> domains):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     <span>Lets SWF files and HTML files in the identified domains access objects 
+     and variables in the calling SWF file, which is hosted by means of the HTTPS protocol. </span>
+     
+     
+     
+     
+     <p>Flash Player provides <code>allowInsecureDomain()</code> to maximize flexibility, 
+     but calling this method is not recommended. Serving a file over HTTPS provides several protections
+     for you and your users, and calling <code>allowInsecureDomain</code> weakens one of those
+     protections.</p>
+     
+     <p><i>Note:</i> Calling this method from code in the AIR application sandbox 
+     throws a SecurityError exception. Content outside of the application security domain cannot directly
+     cross-script content in the application sandbox. However, content outside of the application sandbox can 
+     communicate with content in the application security sandbox using a sandbox bridge.</p>
+     
+     <p>This method works in the same way as <code>Security.allowDomain()</code>, but it also 
+     permits operations in which the accessing party is loaded with a non-HTTPS protocol, and the
+     party being accessed is loaded with HTTPS. In Flash Player 7 and later, 
+     non-HTTPS files are not allowed to script HTTPS files. The <code>allowInsecureDomain()</code> method lifts this
+     restriction when the HTTPS SWF file being accessed uses it.</p>
+     
+     <p>Use <code>allowInsecureDomain()</code> only to enable scripting from non-HTTPS files
+     to HTTPS files. Use it to enable scripting when the accessing non-HTTPS file and 
+     the HTTPS file being accessed are served from the same domain, for example, if a SWF file at
+     http://mysite.com wants to script a SWF file at https://mysite.com. Do not use this method to enable
+     scripting between non-HTTPS files, between HTTPS files, or from HTTPS files to non-HTTPS
+     files. For those situations, use <code>allowDomain()</code> instead.</p>
+     
+     The following scenario illustrates how <code>allowInsecureDomain()</code> can compromise security, if it is not used 
+     with careful consideration.
+     
+     <p>Note that the following information is only one possible scenario, designed to
+     help you understand <code>allowInsecureDomain()</code> through a real-world example 
+     of cross-scripting.
+     It does not cover all issues with security architecture and should be used for background
+     information only. The Flash Player Developer Center contains extensive information on Flash Player
+     and security. For more information, see 
+     the Flash Player Developer Center Topic <a href="http://www.adobe.com/go/devnet_security_en" target="external">Security</a>.</p>
+     
+     <p>Suppose you are building an e-commerce site that consists of two components:
+     a catalog, which does not need to be secure, because it contains only public information;
+     and a shopping cart/checkout component, which must be secure to protect users' financial and
+     personal information. Suppose you are considering serving the catalog from 
+     http://mysite.com/catalog.swf and the cart from https://mysite.com/cart.swf. One 
+     requirement for your site is that a third party should not be able to steal your
+     users' credit card numbers by taking advantage of a weakness in your security architecture.</p>
+     
+     <p>Suppose that a middle-party attacker intervenes between your server and your users, attempting
+     to steal the credit card numbers that your users enter into your shopping cart application. 
+     A middle party might, for example, be an unscrupulous ISP used by some of your users, or a 
+     malicious administrator at a user's workplace &mdash; anyone who has the ability to view or alter 
+     network packets transmitted over the public Internet between your users and your servers. 
+     This situation is not uncommon.</p> 
+     
+     <p>If cart.swf uses HTTPS to transmit credit card information to your servers, then the 
+     middle-party attacker can't directly steal this information from network packets, because the
+     HTTPS transmission is encrypted. However, the attacker can use a different technique: altering the
+     contents of one of your SWF files as it is delivered to the user, replacing your SWF file with an 
+     altered version that transmits the user's information to a different server, owned by the attacker.</p>
+     
+     <p>The HTTPS protocol, among other things, prevents this "modification" attack from working, 
+     because, in addition to being encrypted, HTTPS transmissions are tamper-resistant. 
+     If a middle-party attacker alters a packet, the receiving side detects the alteration 
+     and discards the packet. So the attacker in this situation can't alter cart.swf, because it 
+     is delivered over HTTPS.</p>
+     
+     <p>However, suppose that you want to allow buttons in catalog.swf, served over HTTP, 
+     to add items to the shopping cart in cart.swf, served over HTTPS. To accomplish this,
+     cart.swf calls <code>allowInsecureDomain()</code>, which allows catalog.swf to script cart.swf. 
+     This action has an unintended consequence: Now the attacker can alter  
+     catalog.swf as it is initially being downloaded by
+     the user, because catalog.swf is delivered with HTTP and is not tamper-resistant. 
+     The attacker's altered catalog.swf can now script cart.swf, because cart.swf contains
+     a call to <code>allowInsecureDomain()</code>. The altered catalog.swf file can use ActionScript to access 
+     the variables in cart.swf, thus reading the user's credit card information and other
+     sensitive data. The altered catalog.swf can then send this data to an attacker's server.</p>
+     
+     <p>Obviously, this implementation is not desired, but you still want to allow
+     cross-scripting between the two SWF files on your site. Here are two possible ways to redesign
+     this hypothetical e-commerce site to avoid <code>allowInsecureDomain()</code>:</p>
+     
+     <ul><li>Serve all SWF files in the application over HTTPS. This is by far the simplest and most
+     reliable solution. In the scenario described, you would serve both catalog.swf and cart.swf  
+     over HTTPS. You might experience slightly higher bandwidth consumption and server CPU load
+     when switching a file such as catalog.swf from HTTP to HTTPS, and your users might experience
+     slightly longer application load times. You need to experiment with real servers to
+     determine the severity of these effects; usually they are no worse than 10-20% each, and
+     sometimes they are not present at all. You can usually improve results by using HTTPS-accelerating
+     hardware or software on your servers. A major benefit of serving all 
+     cooperating SWF files over HTTPS is that you can use an HTTPS URL as the main URL
+     in the user's browser without generating any mixed-content warnings from the browser. 
+     Also, the browser's padlock icon becomes visible, providing your users with
+     a common and trusted indicator of security.</li><li>Use HTTPS-to-HTTP scripting, rather than HTTP-to-HTTPS scripting. In the scenario described, you
+     could store the contents of the user's shopping cart in catalog.swf, and have cart.swf manage
+     only the checkout process. At checkout time, cart.swf could retrieve the cart contents from 
+     ActionScript variables in catalog.swf. The restriction on HTTP-to-HTTPS scripting is asymmetrical;
+     although an HTTP-delivered catalog.swf file cannot safely be allowed to script an HTTPS-delivered cart.swf file,
+     an HTTPS cart.swf file can script the HTTP catalog.swf file. 
+     This approach is more delicate than the all-HTTPS approach; you must be careful not to trust any
+     SWF file delivered over HTTP, because of its vulnerability to tampering. For example, when cart.swf 
+     retrieves the ActionScript variable that describes the cart contents, the ActionScript code 
+     in cart.swf cannot trust that the value of this variable is in the format that you expect. 
+     You must verify that the cart contents do not contain invalid data that might 
+     lead cart.swf to take an undesired action. You must also accept the risk that a middle party,
+     by altering catalog.swf, could supply valid but inaccurate data to cart.swf; for example, by placing
+     items in the user's cart. The usual checkout process mitigates
+     this risk somewhat by displaying the cart contents and total cost for final approval by the user,
+     but the risk remains present.</li></ul>
+     
+     <p>Web browsers have enforced separation between HTTPS and non-HTTPS files for years, 
+     and the scenario described illustrates one good reason for this restriction. 
+     Flash Player gives you the ability to work around this security restriction when you 
+     absolutely must, but be sure to consider the consequences carefully before doing so.</p>
+     
+     <p>For more information related to security, see the Flash Player Developer Center Topic: 
+     <a href="http://www.adobe.com/go/devnet_security_en" target="external">Security</a>.</p>
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><a href="../../statements.html#..._(rest)_parameter">...</a> <span class="label">domains</span></code> &mdash; One or more strings or URLRequest objects that name the domains from which
+     you want to allow access.  You can specify the special domain "*" to
+     allow access from all domains.  
+     
+     <p>Specifying "*" is the only
+     way to allow access to nonlocal SWF files from local SWF files that have been
+     published using the Access Network Only option for the Local Playback
+     Security setting (File > Publish Settings > Flash tab) in the Flash authoring tool.</p>
+     
+     <p><b>Note:</b> 
+     The wildcard value does not work for subdomains. For example, you cannot use <code>*.foo.com</code> for
+     the <code>domains</code> parameter. While you can specify a subdomain with a wild card value for a cross domain policy file
+     (as in <code>*.foo.com</code>), you can't use a wildcard value that way for the <code>allowInsecureDomain()</code> method.</p>
+     </td></tr></table></p><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; Calling this method from code in the AIR application security sandbox causes a 
+     SecurityError exception to be thrown. Content outside of the application security sandbox cannot cross-script
+     content in the application security sandbox. 
+     
+     </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Security.html#allowDomain()" target="">allowDomain()</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="loadPolicyFile()" id="loadPolicyFile()"></a><a name="loadPolicyFile(String)" id="loadPolicyFile(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>loadPolicyFile</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function loadPolicyFile(url:<a href="../../String.html">String</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>  
+     Looks for a policy file at the location specified by the <code>url</code> 
+     parameter. Adobe AIR and Flash Player use policy files to determine
+      whether to permit applications to load data from servers other than their own.
+     Note that even though the method name is <code> loadPolicyFile()</code>,
+     the file isn't actually loaded until a network request that requires a policy file is made.
+     
+	 <p>With <code>Security.loadPolicyFile()</code>, Flash Player or AIR can 
+     load policy files from arbitrary locations, as shown in the following example:</p>
+     
+     <div class="listing"><pre>
+     Security.loadPolicyFile("http://www.example.com/sub/dir/pf.xml");
+     </pre></div>
+     
+     
+     
+     <p>This causes Flash Player or AIR to attempt to retrieve a policy file from the specified URL. Any permissions 
+     granted by the policy file at that location will apply to all content at the same level or lower in 
+     the virtual directory hierarchy of the server. </p>
+     
+     <p>For example, following the previous code, these lines do not throw an exception:</p>
+     
+     <div class="listing"><pre> import flash.net.*;
+     var request:URLRequest = new URLRequest("http://www.example.com/sub/dir/vars.txt");
+     var loader:URLLoader = new URLLoader();
+     loader.load(request);
+     
+     var loader2:URLLoader = new URLLoader();
+     var request2:URLRequest = new URLRequest("http://www.example.com/sub/dir/deep/vars2.txt");
+     loader2.load(request2);
+     </pre></div>
+     
+     <p>However, the following code does throw a security exception:</p>
+     
+     <div class="listing"><pre> import flash.net.*;
+     var request3:URLRequest = new URLRequest("http://www.example.com/elsewhere/vars3.txt");
+     var loader3:URLLoader = new URLLoader();
+     loader3.load(request3);
+     </pre></div>
+     
+     <p>You can use <code>loadPolicyFile()</code> to load any number of policy files. When considering a 
+     request that requires a policy file, Flash Player or AIR always waits for the completion of any policy 
+     file downloads before denying a request. As a final fallback, if no policy file specified with 
+     <code>loadPolicyFile()</code> authorizes a request, Flash Player or AIR consults the original default 
+     locations.</p>
+     
+     <p>When checking for a master policy file, Flash Player waits three seconds for a server response.
+     If a response isn't received, Flash Player assumes that no master policy file exists.
+     However, there is no default timeout value for calls to <code>loadPolicyFile()</code>;
+     Flash Player assumes that the file being called exists, and waits as long as necessary to load it.
+     Therefore, if you want to make sure that a master policy file is loaded, use <code>loadPolicyFile()</code>
+     to call it explicitly.</p>
+     
+     <p>You cannot connect to commonly reserved ports. 
+     For a complete list of blocked ports, see "Restricting Networking APIs" in the 
+     <i>ActionScript 3.0 Developer's Guide</i>.</p>
+     
+     <p>Using the <code>xmlsocket</code> protocol along with a specific port number lets you retrieve 
+      policy files directly from an XMLSocket server, as shown in the following example. Socket 
+      connections are not subject to the reserved port restriction described above.</p>
+     
+     <div class="listing"><pre>
+     Security.loadPolicyFile("xmlsocket://foo.com:414");
+     </pre></div>
+     
+     
+     
+     <p>This causes Flash Player or AIR to attempt to retrieve a policy file from the specified host and port. 
+     Upon establishing a connection with the 
+     specified port, Flash Player or AIR transmits <code>&lt;policy-file-request /&gt;</code>, terminated by a 
+     <code>null</code> byte.  The server must send a null byte to terminate a policy file, and may thereafter close the connection; 
+     if the server does not close the connection, Flash Player or AIR does so upon receiving the terminating 
+     <code>null</code> byte.</p>
+     
+     <p>You can prevent a SWF file from using this method by setting the 
+     <code>allowNetworking</code> parameter of the <code>object</code> and <code>embed</code> 
+     tags in the HTML page that contains the SWF content.</p>
+     
+     <p>For more information related to security, see the Flash Player Developer Center Topic: 
+     <a href="http://www.adobe.com/go/devnet_security_en" target="external">Security</a>.</p>
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">url</span>:<a href="../../String.html">String</a></code> &mdash; The URL location of the policy file to be loaded.
+     </td></tr></table></p><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7e08.html" target="_blank">Website controls (policy files)</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="showSettings()" id="showSettings()"></a><a name="showSettings(String)" id="showSettings(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>showSettings</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function showSettings(panel:<a href="../../String.html">String</a> = "default"):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Displays the Security Settings panel in Flash Player. This method does not apply to content in
+     Adobe AIR; calling it in an AIR application has no effect.
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">panel</span>:<a href="../../String.html">String</a></code> (default = "<code>default</code>")<code></code> &mdash; A value from the SecurityPanel class that specifies which Security Settings
+     panel you want to display. If you omit this parameter, <code>SecurityPanel.DEFAULT</code> is used. 
+     
+     </td></tr></table></p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="SecurityPanel.html" target="">SecurityPanel</a></div></div></span><div class="detailSectionHeader">Constant Detail</div><span id="pageFilter" runtime="AIR::1.0##Lite::4##"><a name="constantDetail" id="constantDetail"></a><a name="APPLICATION" id="APPLICATION"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>APPLICATION</h3></td><td class="detailHeaderType">Constant</td></tr></table><div class="detailBody"><code>public static const APPLICATION:<a href="../../String.html">String</a> = "application"</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Lite 4</td></tr></table><p></p><p></p><p>
+	 The file is running in an AIR application, and it was installed with the package (the AIR file) for that 
+	 application. This content is included in the AIR application resource directory (where the application
+	 content is installed).
+	 
+	 </p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Security.html#sandboxType" target="">sandboxType</a><br/><a href="Security.html#REMOTE" target="">REMOTE</a><br/><a href="Security.html#LOCAL_WITH_FILE" target="">LOCAL_WITH_FILE</a><br/><a href="Security.html#LOCAL_WITH_NETWORK" target="">LOCAL_WITH_NETWORK</a><br/><a href="Security.html#LOCAL_TRUSTED" target="">LOCAL_TRUSTED</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="constantDetail" id="constantDetail"></a><a name="LOCAL_TRUSTED" id="LOCAL_TRUSTED"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>LOCAL_TRUSTED</h3></td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const LOCAL_TRUSTED:<a href="../../String.html">String</a> = "localTrusted"</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     The file is a local file and has been trusted by the user, 
+     using either the Flash Player Settings Manager or a FlashPlayerTrust configuration
+     file. The file can read from local data sources and communicate 
+     with the Internet.
+     
+     </p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Security.html#sandboxType" target="">sandboxType</a><br/><a href="Security.html#REMOTE" target="">REMOTE</a><br/><a href="Security.html#LOCAL_WITH_FILE" target="">LOCAL_WITH_FILE</a><br/><a href="Security.html#LOCAL_WITH_NETWORK" target="">LOCAL_WITH_NETWORK</a><br/><a href="Security.html#APPLICATION" target="">APPLICATION</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="constantDetail" id="constantDetail"></a><a name="LOCAL_WITH_FILE" id="LOCAL_WITH_FILE"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>LOCAL_WITH_FILE</h3></td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const LOCAL_WITH_FILE:<a href="../../String.html">String</a> = "localWithFile"</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     The file is a local file, has not been trusted by the user, 
+	 and it is not a SWF file that was published with a networking designation. In Adobe AIR,
+	 the local file is <i>not</i> in the application resource directory; such files are 
+	 put in the application security sandbox. The file may 
+     read from local data sources but may not communicate with the Internet.
+     
+     </p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Security.html#sandboxType" target="">sandboxType</a><br/><a href="Security.html#REMOTE" target="">REMOTE</a><br/><a href="Security.html#LOCAL_WITH_NETWORK" target="">LOCAL_WITH_NETWORK</a><br/><a href="Security.html#LOCAL_TRUSTED" target="">LOCAL_TRUSTED</a><br/><a href="Security.html#APPLICATION" target="">APPLICATION</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="constantDetail" id="constantDetail"></a><a name="LOCAL_WITH_NETWORK" id="LOCAL_WITH_NETWORK"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>LOCAL_WITH_NETWORK</h3></td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const LOCAL_WITH_NETWORK:<a href="../../String.html">String</a> = "localWithNetwork"</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+	 The file is a local file, has not been trusted by the user, and it is a SWF
+	 file that was published with a networking designation. The file can 
+     communicate with the Internet but cannot read from local data sources.
+     
+     </p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Security.html#sandboxType" target="">sandboxType</a><br/><a href="Security.html#REMOTE" target="">REMOTE</a><br/><a href="Security.html#LOCAL_WITH_FILE" target="">LOCAL_WITH_FILE</a><br/><a href="Security.html#LOCAL_TRUSTED" target="">LOCAL_TRUSTED</a><br/><a href="Security.html#APPLICATION" target="">APPLICATION</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="constantDetail" id="constantDetail"></a><a name="REMOTE" id="REMOTE"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>REMOTE</h3></td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const REMOTE:<a href="../../String.html">String</a> = "remote"</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     The file is from an Internet URL and operates under domain-based sandbox rules.
+     
+     </p><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="Security.html#sandboxType" target="">sandboxType</a><br/><a href="Security.html#LOCAL_WITH_FILE" target="">LOCAL_WITH_FILE</a><br/><a href="Security.html#LOCAL_WITH_NETWORK" target="">LOCAL_WITH_NETWORK</a><br/><a href="Security.html#LOCAL_TRUSTED" target="">LOCAL_TRUSTED</a><br/><a href="Security.html#APPLICATION" target="">APPLICATION</a></div></div></span><a name="includeExamplesSummary" id="includeExamplesSummary"></a><div class="detailSectionHeader">Examples<span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span></div><span id="pageFilter"><div class="exampleHeader">SecurityExample.as</div><br/><div class="detailBody"> The following example shows how a <code>click</code> event on a Sprite object can be
+ used to show the Local Storage Settings panel of the Flash Player Settings.  An orange box is added to the 
+ stage using <code>draw()</code>.  In <code>draw()</code>, a <code>click</code> event listener is 
+ added named <code>clickHandler()</code>, which responds to <code>click</code> events by directing
+ Flash Player to open its Local Storage Settings panel.
+<div class="listing"><pre>
+package {
+    import flash.display.Sprite;
+    import flash.text.TextField;
+    import flash.events.*;
+    import flash.system.Security;
+    import flash.system.SecurityPanel;
+
+    public class SecurityExample extends Sprite {
+        private var bgColor:uint = 0xFFCC00;
+        private var size:uint = 100;
+
+        public function SecurityExample() {
+            draw();
+        }
+
+        private function draw():void {
+            var child:Sprite = new Sprite();
+            child.graphics.beginFill(bgColor);
+            child.graphics.drawRect(0, 0, size, size);
+            child.graphics.endFill();
+            child.buttonMode = true;
+
+            var label:TextField = new TextField();
+            label.text = "settings";
+            label.selectable = false;
+            label.mouseEnabled = false;
+            child.addChild(label);
+
+            child.addEventListener(MouseEvent.CLICK, clickHandler);
+            addChild(child);
+        }
+
+        private function clickHandler(event:MouseEvent):void {
+            Security.showSettings(SecurityPanel.LOCAL_STORAGE);
+        }
+    }
+}
+</pre></div></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(true,true,false,false,false,false,false,false,true,true,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 05:50 PM -08:00  -->

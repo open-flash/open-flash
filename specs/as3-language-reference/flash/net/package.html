@@ -1,0 +1,531 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+			<!-- saved from url=(0014)about:internet -->
+			<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="ActionScript&reg; 3.0 Reference for the Adobe&reg; Flash&reg; Platform"><meta name="lang" content="en-us"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><title>flash.net - Details Adobe ActionScript&reg; 3 (AS3) API Reference</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="../../filter_new.css" type="text/css">
+			
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../s_chl_code.js" type="text/javascript"></script>
+		<script src="../../jquery.zclip.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../iscroll.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script src="../../omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "Runtimes";
+			var productsLabel = "Products";
+			var noneLabel = "None";
+			var qsearchBoxLabel = "Quick Search";
+			var qsearchText = "Term Not Found";
+			var ajaxErrorMsg="Error Loading Page";
+			var ajaxErrorTryMsg="Try Again";
+			var ajaxLoadingMsg="Still Loading";
+			var cancelMsg = "Cancel";
+			var classesText = "Classes";
+			var strJiveReply = "This question was posted in response to the following article: "
+			var showFilters = "Show Filters";
+			var hideFilters = "Hide Filters";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		<!--#include virtual="/ssi/globalheader.ssi" -->
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											ActionScript<sup>&reg;</sup> 3.0 Reference for the Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="../../index.html"> Home </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">Show Packages and Classes List</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">Hide Packages and Classes List</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="../../package-summary.html"> Packages </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../class-summary.html"> Classes </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../whatsnew.html"> What's New </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../all-index-Symbols.html"> Index </a>&nbsp;|&nbsp;
+												<a target="_self" href="../../appendixes.html"> Appendixes </a>
+												<br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchForm" method="get" action="../../search.html" onSubmit="searchfunctionsubmit('../../')"><input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text"><input type="button" name="action" value="" class="searchbutton" onClick="searchfunctionsubmit('../../')"></form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="../../filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>Filters:</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">Retrieving Data from Server...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">&nbsp;</a><br>
+								<h1 id="classProductName">Package flash.net&nbsp;</h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> Properties </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> Properties </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> Constructor </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> Methods </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> Global Constants </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> Events </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> Styles </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> Skin Parts </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> Skin States </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> Effects </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> Constants </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> Global Functions </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">Functions</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> Interfaces </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> Classes </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> Examples </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								Classes
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><br><a name="methodSummary"></a>The flash.net package contains package-level functions for opening a new browser window, sending a URL request to a server, and dealing with class aliases.<div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Function</th><th>Defined By</th></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getClassByAlias()" class="signatureLink">getClassByAlias</a>(aliasName:<a href="../../String.html">String</a>):<a href="../../Class.html">Class</a></div><div class="summaryTableDescription">
+     Looks up a class that previously had an alias registered through a call to the registerClassAlias()
+     method.</div></td><td class="summaryTableOwnerCol">flash.net</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#navigateToURL()" class="signatureLink">navigateToURL</a>(request:<a href="../../flash/net/URLRequest.html">URLRequest</a>, window:<a href="../../String.html">String</a> = null):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Opens or replaces a window in the application that contains the Flash Player container
+     (usually a browser).</div></td><td class="summaryTableOwnerCol">flash.net</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#registerClassAlias()" class="signatureLink">registerClassAlias</a>(aliasName:<a href="../../String.html">String</a>, classObject:<a href="../../Class.html">Class</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Preserves the class (type) of an object when the object is encoded in Action Message Format (AMF).</div></td><td class="summaryTableOwnerCol">flash.net</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#sendToURL()" class="signatureLink">sendToURL</a>(request:<a href="../../flash/net/URLRequest.html">URLRequest</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     Sends a URL request to a server, but ignores any response.</div></td><td class="summaryTableOwnerCol">flash.net</td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodDetail" id="methodDetail"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailSectionHeader"> Function detail </div><span id="pageFilter" runtime="Flash::9##Lite::4##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getClassByAlias()" id="getClassByAlias()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="getClassByAlias(String)" id="getClassByAlias(String)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>getClassByAlias</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function getClassByAlias(aliasName:<a href="../../String.html">String</a>):<a href="../../Class.html">Class</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Looks up a class that previously had an alias registered through a call to the <code>registerClassAlias()</code>
+     method.
+     <p>This method does not interact with the <code>flash.utils.getDefinitionByName()</code>
+     method.</p>
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">aliasName</span>:<a href="../../String.html">String</a></code> &mdash; The alias to find.
+     
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../Class.html">Class</a></code> &mdash; The class associated with the given alias. If not found, an exception will be thrown.
+     
+     </td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../ReferenceError.html">ReferenceError</a> </code> &mdash; The alias was not registered.
+     
+     </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="#registerClassAlias()" target="">registerClassAlias()</a></div></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="navigateToURL()" id="navigateToURL()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="navigateToURL(flash.net.URLRequest,String)" id="navigateToURL(flash.net.URLRequest,String)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>navigateToURL</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function navigateToURL(request:<a href="../../flash/net/URLRequest.html">URLRequest</a>, window:<a href="../../String.html">String</a> = null):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     <span>Opens or replaces a window in the application that contains the Flash Player container
+     (usually a browser). In Adobe AIR, the function opens a URL in the default system web browser</span>
+     
+     
+      <p>  <b><i>Important Security Note  </i></b> </p>
+      <p>Developers often pass URL values to the <code>navigateToURL()</code> function that were obtained from external sources 
+     such as FlashVars.  Attackers may try to manipulate these external sources to perform attacks such as cross-site scripting. 
+     Therefore, developers should validate all URLs before passing them to this function. </p>
+      
+     <p>Good data validation for URLs can mean different things depending on the usage of the URL within the overall application.  
+     The most common data validation techniques include validating that the URL is of the appropriate scheme.  
+     For instance, unintentionally allowing javascript: URLs may result in cross-site scripting.  
+     Validating that the URL is a within your domain can ensure that the SWF file can't be used as an open-redirector 
+     by people who conduct phishing attacks.  For additional security, you may also choose to validate the path of the URL 
+     and to validate that the URL conforms to the RFC guidelines</p>
+     
+     <p>For example, the following code shows a simple example of performing data validation by denying any URL 
+     that does not begin with http:// or https:// and validating that the URL is within your domain name.  
+     This example may not be appropriate for all web applications and you should consider whether additional checks 
+     against the URL are necessary. </p>
+     
+      <div class="listing"><pre>
+     // AS3 Regular expression pattern match for URLs that start with http:// and https:// plus your domain name.
+     function checkProtocol (flashVarURL:String):Boolean {
+        // Get the domain name for the SWF if it is not known at compile time.
+        // If the domain is known at compile time, then the following two lines can be replaced with a hard coded string.
+        var my_lc:LocalConnection = new LocalConnection();
+        var domainName:String = my_lc.domain;
+        // Build the RegEx to test the URL.
+        // This RegEx assumes that there is at least one "/" after the
+        // domain. http://www.mysite.com will not match.
+        var pattern:RegExp = new RegExp("^http[s]?\:\\/\\/([^\\/]+)\\/");
+        var result:Object = pattern.exec(flashVarURL);
+        if (result == null || result[1] != domainName || flashVarURL.length &gt;= 4096) {
+          return (false);
+        }
+        return (true);
+     }  
+     
+      </pre></div>
+     <p>For <i>local</i> content running in a browser, calls to the 
+     <code>navigateToURL()</code> method that specify a <code>"javascript:"</code> pseudo-protocol 
+     (via a <code>URLRequest</code> object passed as the first parameter) are only permitted if the SWF 
+     file and the containing web page (if there is one) are in the local-trusted security sandbox.
+     Some browsers do not support using the javascript protocol with the <code>navigateToURL()</code>
+     method. Instead, consider using the <code>call()</code> method of the <code>ExternalInterface</code>
+     API to invoke JavaScript methods within the enclosing HTML page.</p>
+     
+      <p>In Flash Player, and in non-application sandboxes in Adobe AIR, 
+     you cannot connect to commonly reserved ports. 
+     For a complete list of blocked ports, see "Restricting Networking APIs" in the 
+     <i>ActionScript 3.0 Developer's Guide</i>.</p>
+     
+     <p>In Flash Player 10 and later running in a browser, using this method programmatically to
+     open a pop-up window may not be successful.  Various browsers (and browser configurations) may block pop-up windows 
+     at any time; it is not possible to guarantee any pop-up window will appear.  
+     However, for the best chance of success, use this method to open a pop-up window only in code that executes 
+     as a direct result of a user action (for example, in an event handler for a mouse click or key-press event.)</p>
+     
+     <p> In Flash Player 10 and later, if you use a multipart Content-Type (for example "multipart/form-data") 
+     that contains an upload (indicated by a "filename" parameter in a "content-disposition" header within the POST body),
+     the POST operation is subject to the security rules applied to uploads:</p>
+     <ul><li>The POST operation must be performed in response to a user-initiated action, such as a mouse click or key press.</li><li>If the POST operation is cross-domain (the POST target is not on the same server as the SWF file 
+     that is sending the POST request),
+     the target server must provide a URL policy file that permits cross-domain access.</li></ul>
+     <p>Also, for any multipart Content-Type, the syntax must be valid (according to the RFC2046 standards).
+     If the syntax appears to be invalid, the POST operation is subject to the security rules applied to uploads.</p>
+     
+     
+     
+     <p>In AIR, on mobile platforms, the sms: and tel: URI schemes are supported. On Android, vipaccess:, connectpro:, and market: URI schemes are supported.
+     The URL syntax is subject to the platform conventions. For example, on Android, the URI scheme must be lower case.
+     When you navigate to a URL using one of these schemes, the runtime opens the URL in the default application for 
+     handling the scheme. Thus, navigating to <code>tel:+5555555555</code> opens the phone dialer with the specified
+     number already entered. A separate application or utility, such as a phone dialer must be available to process the URL.</p>
+     
+     <p>The following code shows how you can invoke the VIP Access and Connect Pro applications on Android:</p>
+     
+      <div class="listing"><pre>
+       //Invoke the VIP Access Application.
+       navigateToURL(new URLRequest("vipaccess://com.verisign.mvip.main?action=securitycode"));
+     
+       //Invoke the Connect Pro Application.
+       navigateToURL(new URLRequest("connectpro://"));
+     
+      </pre></div>
+      
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">request</span>:<a href="../../flash/net/URLRequest.html">URLRequest</a></code> &mdash; A URLRequest object that specifies the URL to navigate to.
+     
+     <p><span>For content running in Adobe AIR, when </span>
+     using the <code>navigateToURL()</code> function, the runtime treats a URLRequest that uses the POST
+     method (one that has its <code>method</code> property set to <code>URLRequestMethod.POST</code>)
+     as using the GET method.</p>
+     
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">window</span>:<a href="../../String.html">String</a></code> (default = <code>null</code>)<code></code> &mdash; The browser window or HTML frame in which to display
+                   the document indicated by the <code>request</code> parameter.
+     You can enter the name of a specific window or use one of the following values:
+     <ul><li><code>"_self"</code> specifies the current frame in the current window.</li><li><code>"_blank"</code> specifies a new window.</li><li><code>"_parent"</code> specifies the parent of the current frame.</li><li><code>"_top"</code> specifies the top-level frame in the current window.</li></ul>
+     <p>If you do not specify a value for this parameter, a new empty window is created.
+     In the stand-alone player, you can either specify a new (<code>"_blank"</code>) window
+     or a named window. The other values don't apply.</p>
+     
+     <p><b>Note:</b> When code in a SWF file that is running in the 
+     local-with-filesystem sandbox calls the <code>navigateToURL()</code> 
+     function and specifies a custom window name for the <code>window</code> 
+     parameter, the window name is transfered into a random name. The name is in 
+     the form <code>"_flashXXXXXXXX"</code>, where each X represents a random 
+     hexadecimal digit. Within the same session (until you close the containing 
+     browser window), if you call the function again and specify the same name for 
+     the <code>window</code> parameter, the same random string is used.</p>
+     
+     </td></tr></table></p><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../flash/errors/IOError.html">IOError</a> </code> &mdash; The <code>digest</code> property of the <code>request</code> object is not 
+     <code>null</code>. You should only set the <code>digest</code> property of a URLRequest object
+     for use calling the <code>URLLoader.load()</code> method when loading a SWZ file (an Adobe 
+     platform component).
+     
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; In Flash Player (and in non-application sandbox content in Adobe AIR), 
+     this error is thrown in the following situations:
+     <ul><li>Local untrusted SWF files may not communicate with
+     the Internet. You can avoid this situation by reclassifying this SWF file
+     as local-with-networking or trusted.</li><li>A navigate operation attempted to evaluate a scripting
+     pseudo-URL, but the containing document (usually an HTML document in a
+     browser) is from a sandbox to which you do not have access.  You can avoid this situation 
+     by specifying <code>allowScriptAccess="always"</code> in the containing
+     document.</li><li>You cannot navigate the special windows 
+     <code>"_self"</code>, <code>"_top"</code>, or <code>"_parent"</code>
+     if your SWF file is contained by an HTML page
+     that has set the <code>allowScriptAccess</code> to 
+     <code>"none"</code>, or to <code>"sameDomain"</code> 
+     when the domains of the HTML file and the SWF file do not match.</li><li>You cannot navigate a window with a nondefault name
+     from within a SWF file that is in the local-with-filesystem sandbox.</li><li>You cannot connect to commonly reserved ports. 
+     For a complete list of blocked ports, see "Restricting Networking APIs" in the 
+     <i>ActionScript 3.0 Developer's Guide</i>.</li></ul>
+     
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../Error.html">Error</a> </code> &mdash; If the method is not called in response to a user action, such as a mouse
+     event or keypress event. This requirement only applies to content in Flash Player and 
+     to non-application sandbox content in Adobe AIR.
+     
+     </td></tr></table><p id="moreExamples"><span class="label">More examples</span></p><div class="seeAlso"><a href="http://help.adobe.com/en_US/Flex/4.6/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7ea7.html" target="_blank">Using the navigateToURL() method
+in Flex</a></div><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="../../flash/external/ExternalInterface.html#call()" target="">flash.external.ExternalInterface.call()</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example opens the URL http://www.adobe.com in a new browser window and passes data about a
+ user session, captured in a URLVariables object, to the web server.
+<div class="listing"><pre>
+package {
+    import flash.display.Sprite;
+    import flash.net.navigateToURL;
+    import flash.net.URLRequest;
+    import flash.net.URLVariables;
+
+    public class NavigateToURLExample extends Sprite {
+
+        public function NavigateToURLExample() {
+            var url:String = "http://www.adobe.com";
+            var variables:URLVariables = new URLVariables();
+            variables.exampleSessionId = new Date().getTime();
+            variables.exampleUserLabel = "Your Name";
+            var request:URLRequest = new URLRequest(url);
+            request.data = variables;
+            try {            
+                navigateToURL(request);
+            }
+            catch (e:Error) {
+                // handle error here
+            }
+        }
+    }
+}
+</pre></div></div></span><span id="pageFilter"><br/><div class="detailBody"> The following example shows how you can open new browser windows from Flash Player using the navigateToURL() method. 
+ Example provided by 
+ <a href="http://actionscriptexamples.com/2008/12/08/opening-urls-in-new-browser-windows-using-actionscript-30-and-actionscript-20/" target="_mmexternal">ActionScriptExamples.com</a>. 
+<div class="listing"><pre>
+// Requires
+// - Button symbol on Stage (or a display object, such as a MovieClip) with instance name "buttonSymbol"
+//
+buttonSymbol.addEventListener(MouseEvent.CLICK, buttonSymbol_click);
+ 
+function buttonSymbol_click(evt:MouseEvent):void {
+    var req:URLRequest = new URLRequest("http://www.adobe.com/");
+    navigateToURL(req, "_blank");
+}
+</pre></div></div></span><span id="pageFilter"><br/><div class="detailBody"> The following example illustrates the syntax for launching the 
+ device telephone dialer with a specified number.
+<div class="listing"><pre>
+var request:URLRequest = new URLRequest( "tel:+5555555555" );
+navigateToURL( request );
+</pre></div></div></span><span id="pageFilter"><br/><div class="detailBody"> The following example illustrates the syntax for launching the 
+ device text message application with a specified receipient.
+<div class="listing"><pre>
+var request:URLRequest = new URLRequest( "sms:+5555555555" );
+navigateToURL( request );
+</pre></div></div></span><span id="pageFilter"><br/><div class="detailBody"> The following example illustrates the syntax for launching the 
+ Android Market app. The search parameter is set to find the Flash Player app.
+<div class="listing"><pre>
+var request:URLRequest = new URLRequest( "market://search?q=pname:com.adobe.flashplayer" );
+navigateToURL( request );
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="registerClassAlias()" id="registerClassAlias()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="registerClassAlias(String,Class)" id="registerClassAlias(String,Class)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>registerClassAlias</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function registerClassAlias(aliasName:<a href="../../String.html">String</a>, classObject:<a href="../../Class.html">Class</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Preserves the class (type) of an object when the object is encoded in Action Message Format (AMF).
+     When you encode an object into AMF, this function saves the alias for its class, so that you can
+     recover the class when decoding the object.
+     If the encoding context did not register an alias for an object's class, the object
+     is encoded as an anonymous object. Similarly, if the decoding context does not have the same
+     alias registered, an anonymous object is created for the decoded data.
+     
+     <p>LocalConnection, ByteArray, SharedObject, NetConnection and NetStream are all examples
+     of classes that encode objects in AMF.</p>
+     
+     <p>The encoding and decoding contexts do not need to use the same class for an alias;
+     they can intentionally change classes, provided that the destination class contains all of the members
+     that the source class serializes.</p>
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">aliasName</span>:<a href="../../String.html">String</a></code> &mdash; The alias to use.
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">classObject</span>:<a href="../../Class.html">Class</a></code> &mdash; The class associated with the given alias.
+     
+     </td></tr></table></p><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../TypeError.html">TypeError</a> </code> &mdash; If either parameter is <code>null</code>.
+     
+     </td></tr></table><p><span class="label">Related API Elements</span></p><div class="seeAlso"><a href="ObjectEncoding.html" target="">ObjectEncoding class</a></div><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> This example uses the <code>registerClassAlias()</code> function to register
+ an alias (<code>com.example.eg</code>) for the class ExampleClass. Because
+ an alias is registered for the class, the object is able to be deserialized as an instance
+ of ExampleClass, and the code outputs <code>true</code>. If the <code>registerClassAlias()</code>
+ call were removed, the code would output <code>false</code>. 
+<div class="listing"><pre>
+package {
+    import flash.display.Sprite;
+    import flash.net.registerClassAlias;
+    import flash.utils.ByteArray;
+
+    public class RegisterClassAliasExample extends Sprite {
+        public function RegisterClassAliasExample() {
+            registerClassAlias("com.example.eg", ExampleClass);
+            var eg1:ExampleClass = new ExampleClass();
+            var ba:ByteArray = new ByteArray();
+            ba.writeObject(eg1);
+            ba.position = 0;
+            var eg2:* = ba.readObject();
+            trace(eg2 is ExampleClass); // true
+        }
+    }
+}
+
+class ExampleClass {}
+</pre></div></div></span></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="sendToURL()" id="sendToURL()"></a><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="sendToURL(flash.net.URLRequest)" id="sendToURL(flash.net.URLRequest)"></a><table xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h3>sendToURL</h3></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="detailBody"><code> public function sendToURL(request:<a href="../../flash/net/URLRequest.html">URLRequest</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Language Version:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>Runtime Versions:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+     Sends a URL request to a server, but ignores any response.
+     <p>To examine the server response, use the <code>URLLoader.load()</code> method instead.</p>
+     
+     <p>You cannot connect to commonly reserved ports. 
+     For a complete list of blocked ports, see "Restricting Networking APIs" in the 
+     <i>ActionScript 3.0 Developer's Guide</i>.</p>
+     
+     <p>You can prevent a SWF file from using this method by setting the 
+     <code>allowNetworking</code> parameter of the the <code>object</code> and <code>embed</code> 
+     tags in the HTML page that contains the SWF content.</p>
+     
+     <p> In Flash Player 10 and later, if you use a multipart Content-Type (for example "multipart/form-data") 
+     that contains an upload (indicated by a "filename" parameter in a "content-disposition" header within the POST body),
+     the POST operation is subject to the security rules applied to uploads:</p>
+     <ul><li>The POST operation must be performed in response to a user-initiated action, such as a mouse click or key press.</li><li>If the POST operation is cross-domain (the POST target is not on the same server as the SWF file 
+     that is sending the POST request),
+     the target server must provide a URL policy file that permits cross-domain access.</li></ul>
+     <p>Also, for any multipart Content-Type, the syntax must be valid (according to the RFC2046 standards).
+     If the syntax appears to be invalid, the POST operation is subject to the security rules applied to uploads.</p>
+     
+     <p>For more information related to security, see the Flash Player Developer Center Topic: 
+     <a href="http://www.adobe.com/go/devnet_security_en" target="external">Security</a>.</p>
+     
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">request</span>:<a href="../../flash/net/URLRequest.html">URLRequest</a></code> &mdash; A URLRequest object specifying the URL to send data to.
+     </td></tr></table></p><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; Local untrusted SWF files cannot communicate with
+     the Internet. You can avoid this situation by reclassifying this SWF file
+     as local-with-networking or trusted.
+     
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code><a href="../../SecurityError.html">SecurityError</a> </code> &mdash; You cannot connect to commonly reserved ports. 
+     For a complete list of blocked ports, see "Restricting Networking APIs" in the 
+     <i>ActionScript 3.0 Developer's Guide</i>.
+      
+     
+     </td></tr></table><span id="pageFilter"><br/><span class="label"> Example &nbsp;(
+                <span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_en"> How to use this example </a></span>)
+            </span><br/><br/><div class="detailBody"> The following example passes data about a
+ user session, captured in a URLVariables object, to the application at http://www.yourDomain.com/application.jsp.
+<div class="listing"><pre>
+ package {
+    import flash.display.Sprite;
+    import flash.net.URLRequest;
+    import flash.net.URLVariables;
+    import flash.net.sendToURL;
+
+    public class SendToURLExample extends Sprite {
+
+        public function SendToURLExample() {
+            var url:String = "http://www.yourDomain.com/application.jsp";
+            var variables:URLVariables = new URLVariables();
+            variables.sessionId = new Date().getTime();
+            variables.userLabel = "Your Name";
+
+            var request:URLRequest = new URLRequest(url);
+            request.data = variables;
+            trace("sendToURL: " + request.url + "?" + request.data);
+            try {
+                sendToURL(request);
+            }
+            catch (e:Error) {
+                // handle error here
+            }
+        }
+    }
+}
+</pre></div></div></span></div></span><p></p><center class="copyright"> &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 07:03 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/en_US/legalnotices/index.html">Legal Notices</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">Online Privacy Policy</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2014 Adobe Systems Incorporated. All rights reserved. <br/>Thu Dec 4 2014, 07:03 PM -08:00  -->
