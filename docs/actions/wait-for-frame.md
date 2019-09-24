@@ -8,6 +8,16 @@
 - Stack: `0 → 0`
 - SWF version: `3`
 
+## Notes
+
+The original documentation is wrong. It should read "If the frame is _not_
+loaded [...]". If the frame is loaded, the following actions are executed.
+If the frame is not loaded, the following actions are skipped.
+
+The `SkipCount` uses actions, not bytes. The actions are skipped using syntax
+only: it skips the linear sequence of actions following immediately the current
+action. The current action is not part of the count.
+
 ## Original documentation
 
 ### ActionWaitForFrame

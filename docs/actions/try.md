@@ -8,6 +8,21 @@
 - Stack: `0 → 0`
 - SWF version: `7`
 
+## Notes
+
+This action defines "soft" regions. You can freely jump or fall-through at the
+end of each block and continue execution. The `finally` block or actions beyond
+the `Try` actions are not executed automatically: you have to jump or
+fall-through there manually. (TODO: I don't remember exactly how it behaves
+around `return`).
+When you first enter the `try` region, the throw checks are enabled. They are
+disabled once you leave the `try` region. They are not re-enabled if you jump
+out and then back in the `try` region. If an exception is thrown and the checks
+are enabled, then the recovery is triggered, moving the instruction pointer
+to the `catch` region (or `finally` region if there is no `catch`).
+If there is no `catch` or `finally`, the recovery does not happen: the error
+bubbles up, the instruction pointer is not moved after the `Try` action.
+
 ## Original documentation
 
 ### ActionTry
