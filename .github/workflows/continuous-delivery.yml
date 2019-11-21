@@ -1,0 +1,32 @@
+name: "Build and Deploy"
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the branch that triggered the workflow.
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+
+      - name: Install Zola
+        run: curl -LSfs https://japaric.github.io/trust/install.sh | sh -s -- --git getzola/zola --crate zola
+
+      - name: Build
+        run: ./build.sh
+
+      - name: Deploy
+        uses: demurgos/ga-deploy-git@v1
+        with:
+          accessToken: ${{ secrets.ACCESS_TOKEN }}
+          srcDir: build
+          destRepo: open-flash/open-flash.github.io
+          destBranch: master

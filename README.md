@@ -154,3 +154,19 @@ Adobe's Actionscript Virtual Machine.
 - Repository mirror: <https://github.com/open-flash/gnash>
 
 **TODO** (the list of software for Flash is staggering, but they all died out around 2011-2012)
+
+## Website
+
+This repository contains the source of the project's website (<https://open-flash.github.io/>).
+
+You can build the website using [Zola](https://www.getzola.org/). You can use the `build.sh` or
+`serve.sh` or run the commands yourself:
+```
+# Build
+zola build --output-dir build
+# Serve (and watch changes)
+zola serve --output-dir build
+```
+
+The code of the website is licensed as either Apache 2 or MIT (at your choice). Text and images are
+licensed as CC BY 4.0.
