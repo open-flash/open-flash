@@ -1,9 +1,8 @@
 +++
-title = "SWF Reference"
-description = "SWF File format reference"
+title = "File structure"
+description = "SWF File structure"
+template = "page-documentation.html"
 +++
-
-# File Structure
 
 The _[Swf]_ container is at the root of an SWF file. This container has an 8-byte _[SwfSignature]_
 followed by a compressed _[SwfPayload]_. After decompression, the payload yields a _[Movie]_ with

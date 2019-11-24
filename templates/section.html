@@ -1,4 +1,9 @@
 {% extends "_layout.html" %}
-{% block pageContent %}
+
+{% block pageContentHeading %}
+<header>{{ section.title }}</header>
+{% endblock pageContentHeading %}
+
+{% block pageContentBody %}
 {{ section.content | safe }}
-{% endblock pageContent %}
+{% endblock pageContentBody %}

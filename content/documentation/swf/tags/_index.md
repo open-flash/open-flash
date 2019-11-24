@@ -1,6 +1,7 @@
 +++
 title = "SWF Tags"
 description = "Index of the existing SWF tags"
+template = "section-documentation.html"
 +++
 
 <table class="sortable">

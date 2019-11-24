@@ -1,4 +1,8 @@
 {% extends "_layout.html" %}
-{% block pageContent %}
+
+{% block pageContentHeading %}
+<header>{{ page.title }}</header>
+{% endblock pageContentHeading %}
+{% block pageContentBody %}
 {{ page.content | safe }}
-{% endblock pageContent %}
+{% endblock pageContentBody %}

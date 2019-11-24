@@ -19,9 +19,12 @@
     </nav>
   </div>
 </header>
-<div id="page-content">
-  {% block pageContent %}
-  {% endblock pageContent %}
+<div id="site-content">
+  {% block sideBar %}{% endblock sideBar %}
+  <div id="page-content">
+    {% block pageContentHeading %}{% endblock pageContentHeading %}
+    {% block pageContentBody %}{% endblock pageContentBody %}
+  </div>
 </div>
 <div class="flex-space"></div>
 <footer>

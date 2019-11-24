@@ -3,8 +3,6 @@ title = "Database"
 description = "Open Flash Database"
 +++
 
-# Database
-
 Open Flash maintains a database with a wide range of test samples available at
 the [open-flash-db GitHub organization][gh-ofldb]: standalone movies, AVM1
 bytecode, shapes, etc.

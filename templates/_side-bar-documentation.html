@@ -1,0 +1,42 @@
+{% set doc_section = get_section(path="documentation/_index.md") %}
+<aside>
+  <ul>
+    {% for subsection_path in doc_section.subsections %}
+    {% set subsection = get_section(path=subsection_path) %}
+    <li>
+      <a href="{{ subsection.permalink }}">{{ subsection.title }}</a>
+      <ul>
+        {% for subsection_path2 in subsection.subsections %}
+        {% set subsection2 = get_section(path=subsection_path2) %}
+        <li>
+          <a href="{{ subsection2.permalink }}">{{ subsection2.title }}</a>
+          <ul>
+            {% for subsection_path3 in subsection2.subsections %}
+            {% set subsection3 = get_section(path=subsection_path3) %}
+            <li>
+              <a href="{{ subsection3.permalink }}">{{ subsection3.title }}</a>
+            </li>
+            {% endfor %}
+            {% for page3 in subsection2.pages %}
+            <li>
+              <a href="{{ page3.permalink }}">{{ page3.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+        {% endfor %}
+        {% for page2 in subsection.pages %}
+        <li>
+          <a href="{{ page2.permalink }}">{{ page2.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </li>
+    {% endfor %}
+    {% for page in doc_section.pages %}
+    <li>
+      <a href="{{ page.permalink }}">{{ page.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</aside>

@@ -1,6 +1,7 @@
 +++
-title = "Primitive"
+title = "Primitives"
 description = "Primitive definition"
+template = "page-documentation.html"
 +++
 
 # UINT8

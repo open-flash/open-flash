@@ -1,16 +1,9 @@
 +++
-title = "Primitive"
-description = "Primitive definition"
+title = "Base types"
+description = "Base SWF types"
+template = "page-documentation.html"
 +++
 
-# Rect {#rect}
+# Rect
 
-Unsigned 8-bit integer.
-
-# LE_UINT16 {#le-uint16}
-
-Unsigned 16-bit integer in little-endian representation.
-
-# LE_UINT32 {#le-uint32}
-
-Unsigned 32-bit integer in little-endian representation.
+TODO

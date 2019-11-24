@@ -1,15 +1,14 @@
 +++
 title = "Documentation"
 description = "Open Flash Documentation"
+template = "section-documentation.html"
 +++
 
-# Documentation
-
-## File Format Reference
+# File Format Reference
 
 - [SWF](@/documentation/swf/_index.md)
 
-## Mirrors
+# Mirrors
 
 We maintain mirrors of documents related to the SWF file format.
 
