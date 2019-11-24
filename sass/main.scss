@@ -56,12 +56,14 @@ body {
 $unit: 10px;
 $contentWidth: 960px;
 $bgColor: #101010;
+$contentBgColor: hsl(0, 0%, 85%);
 $accentColor: #6a100e;
 $accentColorLight: #a81e22;
 $accentColorDark: #470d0b;
 
 body {
   font-family: sans-serif;
+  font-size: 14px;
   @include carbon-background($bgColor, $unit);
 }
 
@@ -123,6 +125,81 @@ footer {
   }
 }
 
+blockquote {
+  border-left: $unit solid lighten($accentColorLight, 25%);
+  background-color: lighten($contentBgColor, 5%);
+  box-shadow: 0 0 $unit transparentize($bgColor, 0.5);
+  padding: 1em;
+  & > p {
+    margin: 0;
+  }
+}
+
 h1, h2, h3, h4 {
   color: $accentColor;
+}
+
+$table-border-color: lighten($bgColor, 40%);
+table {
+  position: relative;
+  border-spacing: 0;
+  th {
+    background-color: lighten($bgColor, 60%);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  th {
+    border-top: 1px solid $table-border-color;
+  }
+  th:first-child, td:first-child {
+    border-left: 1px solid $table-border-color;
+  }
+  th, td {
+    border-right: 1px solid $table-border-color;
+    border-bottom: 1px solid $table-border-color;
+    padding: 0.2em;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+table.sortable {
+  th.sort {
+    padding: 0;
+  }
+
+  th.sort > button {
+    color: inherit;
+    font-weight: inherit;
+    background: none;
+    border: none;
+    padding: 0.2em;
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+      background-color: lighten($bgColor, 55%);
+      cursor: pointer;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      min-width: 12px;
+      min-height: 12px;
+      background-image: url("/img/sort-both.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin-left: 0.2em;
+    }
+  }
+  th.sort-asc > button::after {
+    background-image: url("/img/sort-ascending.svg");
+  }
+  th.sort-desc > button::after {
+    background-image: url("/img/sort-descending.svg");
+  }
 }

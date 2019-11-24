@@ -7,7 +7,7 @@ description = "Open Flash Documentation"
 
 ## File Format Reference
 
-- [SWF](/documentation/swf)
+- [SWF](@/documentation/swf/_index.md)
 
 ## Mirrors
 
