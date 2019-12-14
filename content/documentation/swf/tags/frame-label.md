@@ -1,6 +1,6 @@
 +++
-title = "PlaceObject"
-description = "PlaceObject"
+title = "FrameLabel"
+description = "FrameLabel"
 template = "page-documentation.html"
 +++
 

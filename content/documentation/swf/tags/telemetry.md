@@ -1,6 +1,6 @@
 +++
-title = "PlaceObject"
-description = "PlaceObject"
+title = "Telemetry"
+description = "Telemetry"
 template = "page-documentation.html"
 +++
 

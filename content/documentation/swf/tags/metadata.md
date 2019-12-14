@@ -1,6 +1,6 @@
 +++
-title = "PlaceObject"
-description = "PlaceObject"
+title = "Metadata"
+description = "Metadata"
 template = "page-documentation.html"
 +++
 
