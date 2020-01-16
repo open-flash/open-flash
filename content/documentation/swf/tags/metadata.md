@@ -34,7 +34,7 @@ Implementations
 
 > **<sup>Syntax</sup>**\
 > _Metadata_ :\
-> &nbsp;&nbsp; _metadata_ [PADDING][PADDING]
+> &nbsp;&nbsp; _metadata_ [PADDING]
 >
 > _metadata_ :\
 > &nbsp;&nbsp; [NUL_UTF8]

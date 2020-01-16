@@ -38,7 +38,7 @@ Implementations
 
 > **<sup>Syntax</sup>**\
 > _SetBackgroundColor_ :\
-> &nbsp;&nbsp; _color_ [PADDING][PADDING]
+> &nbsp;&nbsp; _color_ [PADDING]
 >
 > _color_ :\
 > &nbsp;&nbsp; [SRgb8]
