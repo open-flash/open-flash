@@ -17,11 +17,10 @@ are no tests yet for this behavior.
 
 # Type
 
-```
-SetBackgroundColor {
-  color: SRgb8;
-}
-```
+> **<sup>Type</sup>**\
+> _SetBackgroundColor_ {\
+> &nbsp;&nbsp; color: _SRgb8_\
+> }
 
 <details>
 <summary>

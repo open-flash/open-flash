@@ -25,3 +25,11 @@ Unsigned 16-bit integer in little-endian representation.
 # LE_UINT32
 
 Unsigned 32-bit integer in little-endian representation.
+
+# NUL_UTF8
+
+An unbounded nul-terminated UTF-8 buffer.
+
+Buffers containing encoding errors are invalid.
+
+This encodes a string as a sequence of unicode codepoints, except for the codepoint `0`.
