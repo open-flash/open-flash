@@ -21,6 +21,12 @@ Unsigned 8-bit integer.
 # LE_UINT16
 
 Unsigned 16-bit integer in little-endian representation.
+This is the main type used for 16-bit values.
+
+# BE_UINT16
+
+Unsigned 16-bit integer in big-endian representation.
+This type is only rarely used for 16-bit values.
 
 # LE_UINT32
 
