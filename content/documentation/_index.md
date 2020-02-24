@@ -25,4 +25,15 @@ We maintain mirrors of documents related to the SWF file format.
   - [Source](https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%203rd%20edition,%20December%201999.pdf)
   - [Web Archive](https://web.archive.org/web/20190817043236/https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%203rd%20edition,%20December%201999.pdf)
 
+# Overview
+
+The diagram below provides a quick overview about how all the Open Flash libraries fit together.
+Most of the libraries are designed to act as transformations between two serializable types.
+
+[![Open Flash Overview][overview]][overview]
+
+TODO: Description for each library
+
 <!-- - [Avmore](/documentation/avmore) -->
+
+[overview]: /overview.svg
