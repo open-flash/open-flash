@@ -5,7 +5,7 @@ template = "page-documentation.html"
 +++
 
 ```
-[...(value, name), itemCount] → [object]
+[...(name, value), itemCount] → [object]
 ```
 
 - Action Code: `0x43`

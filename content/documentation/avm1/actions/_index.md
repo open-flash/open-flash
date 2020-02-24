@@ -18,7 +18,7 @@ template = "section-documentation.html"
   <td>00</td>
   <td>
 
-  EndOfActions
+  End
 
   </td>
 </tr>

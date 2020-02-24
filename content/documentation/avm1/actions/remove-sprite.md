@@ -1,6 +1,6 @@
 +++
-title = "CloneSprite"
-description = "CloneSprite"
+title = "RemoveSprite"
+description = "RemoveSprite"
 template = "page-documentation.html"
 +++
 

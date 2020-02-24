@@ -101,7 +101,7 @@ you can open an issue on this repo.
 
 - Tasks:
   - Write a proper scheduler
-  - Dissociate characters table, objects tree and display list 
+  - Dissociate characters table, objects tree and display list
   - Prototype an Actionscript VM
   - Support bitmaps
   - Better support for frame navigation
