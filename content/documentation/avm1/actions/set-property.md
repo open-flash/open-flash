@@ -5,7 +5,7 @@ template = "page-documentation.html"
 +++
 
 ```
-[target, index, target] → []
+[target, index, value] → []
 ```
 
 - Action Code: `0x23`

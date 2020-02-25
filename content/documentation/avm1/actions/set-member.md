@@ -12,7 +12,8 @@ template = "page-documentation.html"
 - Stack: `3 → 0`
 - SWF version: `5`
 
-**Note**: The is a typo in the step 2 of the official documentation ("property name").
+**Note**: There is a typo in the step 2 of Adobe's documentation: "object name" should be
+"property name".
 
 ## Adobe documentation
 
