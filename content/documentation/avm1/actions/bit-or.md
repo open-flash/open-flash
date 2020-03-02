@@ -4,15 +4,18 @@ description = "BitOr"
 template = "page-documentation.html"
 +++
 
-```
-[arg2, arg1] → [arg2 | arg1]
-```
-
 - Action Code: `0x61`
 - Stack: `1 → 1`
 - SWF version: `5`
 
-## Adobe documentation
+# Operational AS2
+
+```
+@t0 = @pop();
+@push(@pop() | @t0);
+```
+
+# Adobe documentation
 
 ### ActionBitOr
 

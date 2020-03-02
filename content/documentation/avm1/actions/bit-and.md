@@ -4,17 +4,20 @@ description = "BitAnd"
 template = "page-documentation.html"
 +++
 
-```
-[arg2, arg1] → [arg2 & arg1]
-```
-
 - Action Code: `0x60`
 - Stack: `1 → 1`
 - SWF version: `5`
 
 **Note**: There is an issue with the formatting of the table in the official documentation.
 
-## Adobe documentation
+# Operational AS2
+
+```
+@t0 = @pop();
+@push(@pop() & @t0);
+```
+
+# Adobe documentation
 
 ### ActionBitAnd
 

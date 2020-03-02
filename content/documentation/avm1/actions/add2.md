@@ -4,13 +4,16 @@ description = "Add2"
 template = "page-documentation.html"
 +++
 
-```
-[..., left, right] → [..., left + right]
-```
-
 - Action Code: `0x47`
 - Stack: `2 → 1`
 - SWF version: `5`
+
+# Operational AS2
+
+```
+@t0 = @pop();
+@push(@pop() + @t0);
+```
 
 ## Adobe documentation
 

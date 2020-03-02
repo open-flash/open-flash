@@ -4,15 +4,18 @@ description = "And"
 template = "page-documentation.html"
 +++
 
-```
-[b, a] → [b && a]
-```
-
 - Action Code: `0x10`
 - Stack: `2 → 1`
 - SWF version: `4`
 
-## Notes
+# Operational AS2
+
+```
+@t0 = @pop();
+@push(@pop() && @t0);
+```
+
+# Notes
 
 - There is a typo in the official documentation. "ActionAdd" (after the table) should be "ActionAnd".
 

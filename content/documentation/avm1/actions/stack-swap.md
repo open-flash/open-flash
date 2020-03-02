@@ -4,13 +4,18 @@ description = "StackSwap"
 template = "page-documentation.html"
 +++
 
-```
-[item2, item1] → [item1, item2]
-```
-
 - Action Code: `0x4d`
 - Stack: `2 → 2`
 - SWF version: `5`
+
+# Operational AS2
+
+```
+@t0 = @pop();
+@t1 = @pop();
+@push(@t0);
+@push(@t1);
+```
 
 ## Adobe documentation
 

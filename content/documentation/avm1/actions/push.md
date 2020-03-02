@@ -4,13 +4,41 @@ description = "Push"
 template = "page-documentation.html"
 +++
 
-```
-[] → [value*]
-```
-
 - Action Code: `0x96`
 - Stack: `0 → n`
 - SWF version: `4`
+
+# Operational AS2
+
+This corresponds to a sequence of `@push(...);` statements. One statement per
+value, in the same order.
+
+Here are some examples:
+
+```
+// {
+//   action: "push",
+//   values: []
+// }
+
+// (Empty statement)
+;
+```
+
+```
+// {
+//   action: "push",
+//   values: [
+//     {type: "null"},
+//     {type: "string", value: "foo"},
+//     {type: "boolean", value: true}
+//   ]
+// }
+
+@push(null);
+@push("foo");
+@push(true);
+```
 
 ## Adobe documentation
 

@@ -4,13 +4,15 @@ description = "Decrement"
 template = "page-documentation.html"
 +++
 
-```
-[value] → [Number(value) - 1]
-```
-
 - Action Code: `0x51`
 - Stack: `1 → 1`
 - SWF version: `5`
+
+# Operational AS2
+
+```
+@push(@pop() - 1);
+```
 
 ## Adobe documentation
 
