@@ -1,6 +1,6 @@
 +++
-title = "Application Expression"
-description = "Update Expression"
+title = "Primary Expression"
+description = "Primary Expression"
 template = "page-documentation.html"
 +++
 

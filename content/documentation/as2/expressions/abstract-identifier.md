@@ -1,6 +1,6 @@
 +++
-title = "Abstract Call Expression"
-description = "@stackArrat"
+title = "Abstract Identifier"
+description = "Abstract Identifier"
 template = "page-documentation.html"
 +++
 
