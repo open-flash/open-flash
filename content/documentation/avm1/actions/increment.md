@@ -16,9 +16,9 @@ template = "page-documentation.html"
 
 Note: The unary `+` operator is used to convert the argument to a number.
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionIncrement
+## ActionIncrement
 
 ActionIncrement pops a value from the stack, converts it to number type, increments it by 1, and pushes it back
 to the stack.

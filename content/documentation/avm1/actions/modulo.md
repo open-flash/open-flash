@@ -17,9 +17,9 @@ template = "page-documentation.html"
 @push(@pop() % @t0);
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionModulo
+## ActionModulo
 
 ActionModulo calculates x modulo y. If y is 0, then NaN (0x7FC00000) is pushed to the stack.
 

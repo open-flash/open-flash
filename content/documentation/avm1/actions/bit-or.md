@@ -17,7 +17,7 @@ template = "page-documentation.html"
 
 # Adobe documentation
 
-### ActionBitOr
+## ActionBitOr
 
 ActionBitOr pops two numbers off of the stack, performs a bitwise OR, and pushes an S32 number to the stack.
 The arguments are converted to 32-bit unsigned integers before performing the bitwise operation. The result is

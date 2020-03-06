@@ -18,9 +18,9 @@ template = "page-documentation.html"
 @trace(@pop());
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionWaitForFrame2
+## ActionWaitForFrame2
 
 ActionTrace sends a debugging output string.
 

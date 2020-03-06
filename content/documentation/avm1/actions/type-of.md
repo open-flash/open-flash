@@ -15,9 +15,9 @@ template = "page-documentation.html"
 @push(typeof @t0);
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionToString
+## ActionToString
 
 ActionTypeOf pushes the object type to the stack, which is equivalent to the ActionScript TypeOf() method. The
 possible types are:

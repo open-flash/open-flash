@@ -19,9 +19,9 @@ Legacy numeric less-than operator.
 
 Note: The unary `+` operators are used to convert the arguments to numbers.
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionLess
+## ActionLess
 
 ActionLess tests if a number is less than another number
 

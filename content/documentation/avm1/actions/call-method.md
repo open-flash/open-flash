@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `3+ → 1`
 - SWF version: `5`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionCallMethod
+## ActionCallMethod
 
 ActionCallMethod pushes a method (function) call onto the stack, similar to ActionNewMethod.
 

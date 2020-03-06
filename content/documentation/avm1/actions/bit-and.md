@@ -19,7 +19,7 @@ template = "page-documentation.html"
 
 # Adobe documentation
 
-### ActionBitAnd
+## ActionBitAnd
 
 ActionBitAnd pops two numbers off of the stack, performs a bitwise AND, and pushes an S32 number to the
 stack. The arguments are converted to 32-bit unsigned integers before performing the bitwise operation. The

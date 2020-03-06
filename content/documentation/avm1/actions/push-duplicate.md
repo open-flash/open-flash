@@ -16,9 +16,9 @@ template = "page-documentation.html"
 @push(@t0);
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionPushDuplicate
+## ActionPushDuplicate
 
 ActionPushDuplicate pushes a duplicate of top of stack (the current return value) to the stack.
 

@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `0 → 0`
 - SWF version: `3`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionGoToLabel
+## ActionGoToLabel
 
 ActionGoToLabel instructs Flash Player to go to the frame associated with the specified label. You can attach a
 label to a frame with the FrameLabel tag.

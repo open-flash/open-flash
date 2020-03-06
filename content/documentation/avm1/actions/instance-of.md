@@ -17,9 +17,9 @@ ActionScript `instanceof` operator. Different from ECMA-262 (it supports interfa
 @push(@pop() instanceof @t0);
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionInstanceOf
+## ActionInstanceOf
 
 ActionInstanceOf implements the ActionScript instanceof() operator. This is a Boolean operator that indicates
 whether the left operand (typically an object) is an instance of the class represented by a constructor function

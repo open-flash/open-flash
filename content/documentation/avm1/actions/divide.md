@@ -15,9 +15,9 @@ template = "page-documentation.html"
 @push(@pop() / @t0);
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionDivide
+## ActionDivide
 
 ActionDivide divides two numbers and pushes the result back to the stack.
 

@@ -18,9 +18,9 @@ template = "page-documentation.html"
 @push(@stackObject(@pop()));
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionInitObject
+## ActionInitObject
 
 ActionInitObject initializes an object and is similar to ActionInitArray. The newly created object is pushed to the
 stack. The stack is the only existing reference to the newly created object. A subsequent SetVariable or

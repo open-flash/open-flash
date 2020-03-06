@@ -15,9 +15,9 @@ template = "page-documentation.html"
 @push(@pop() == @t0);
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionEquals2
+## ActionEquals2
 
 ActionEquals2 is similar to ActionEquals, but ActionEquals2 knows about types. The equality comparison
 algorithm from ECMA-262 Section 11.9.3 is applied.

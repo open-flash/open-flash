@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `0 → 0`
 - SWF version: `4`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionJump
+## ActionJump
 
 ActionJump creates an unconditional branch.
 

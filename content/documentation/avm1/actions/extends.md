@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `2 → 0`
 - SWF version: `7`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionExtends
+## ActionExtends
 
 ActionExtends implements the ActionScript extends keyword. ActionExtends creates an inheritance relationship
 between two classes, called the subclass and the superclass.

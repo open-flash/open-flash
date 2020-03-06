@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `1 → 0`
 - SWF version: `5`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionWith
+## ActionWith
 
 Defines a With block of script.
 

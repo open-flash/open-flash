@@ -18,9 +18,9 @@ template = "page-documentation.html"
 @push(@resolve(@pop()));
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionGetVariable
+## ActionGetVariable
 
 ActionGetVariable gets a variable’s value.
 

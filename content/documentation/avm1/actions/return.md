@@ -18,9 +18,9 @@ template = "page-documentation.html"
 return @pop();
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionReturn
+## ActionReturn
 
 ActionReturn forces the return item to be pushed off the stack and returned. If a return is not appropriate, the
 return item is discarded.

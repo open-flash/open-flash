@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `1 → 0`
 - SWF version: `5`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionDelete2
+## ActionDelete2
 
 ActionDelete2 deletes a named property. Flash Player first looks for the property in the current scope, and if the
 property cannot be found, continues to search in the encompassing scopes.

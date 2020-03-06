@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `1 → 1`
 - SWF version: `4`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionAnd
+## ActionAnd
 
 ActionNot performs a logical NOT of a number.
 

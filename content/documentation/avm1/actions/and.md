@@ -23,9 +23,9 @@ The short-circuiting semantics of the ActionScript operator `&&` mus be handled 
 
 - There is a typo in the official documentation. "ActionAdd" (after the table) should be "ActionAnd".
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionAnd
+## ActionAnd
 
 ActionAnd performs a logical AND of two numbers.
 

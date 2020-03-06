@@ -15,9 +15,9 @@ template = "page-documentation.html"
 @push(@pop()[@propertyName(@t0)]);
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionGetProperty
+## ActionGetProperty
 
 ActionGetProperty gets a file property.
 

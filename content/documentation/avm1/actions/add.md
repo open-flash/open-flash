@@ -23,9 +23,9 @@ In SWF 5, this operator is no longer available, since the semantics of `+` were 
 
 Note: The unary `+` operators are used to convert the arguments to numbers.
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionAdd
+## ActionAdd
 
 ActionAdd adds two numbers and pushes the result back to the stack.
 

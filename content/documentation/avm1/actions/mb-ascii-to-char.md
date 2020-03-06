@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `1 → 1`
 - SWF version: `4`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionMbAsciiToChar
+## ActionMbAsciiToChar
 
 ActionMBAsciiToChar converts ASCII to character code and is multi-byte aware.
 

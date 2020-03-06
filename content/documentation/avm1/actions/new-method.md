@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `3+ → 1`
 - SWF version: `5`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionNewMethod
+## ActionNewMethod
 
 ActionNewMethod invokes a constructor function to create a new object. A new object is constructed and
 passed to the constructor function as the value of the this keyword. Arguments can be specified to the

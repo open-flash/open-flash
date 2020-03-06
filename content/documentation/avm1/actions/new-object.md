@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `2+ → 1`
 - SWF version: `5`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionNewObject
+## ActionNewObject
 
 ActionNewObject invokes a constructor function. A new object is created and passed to the constructor function
 as the this keyword. In addition, arguments can optionally be specified to the constructor function on the stack.

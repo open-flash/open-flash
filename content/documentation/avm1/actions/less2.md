@@ -17,9 +17,9 @@ ECMA-262 less-than operator.
 @push(@pop() < @t0);
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionAdd2
+## ActionAdd2
 
 ActionLess2 calculates whether arg1 is less than arg2 and pushes a Boolean return value to the stack. This action
 is similar to ActionLess, but performs the comparison differently according to the data types of the arguments.

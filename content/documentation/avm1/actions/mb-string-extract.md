@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `3 → 1`
 - SWF version: `4`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionMBStringExtract
+## ActionMBStringExtract
 
 ActionMBStringExtract extracts a substring from a string and is multi-byte aware.
 

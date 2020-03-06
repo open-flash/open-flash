@@ -18,9 +18,9 @@ template = "page-documentation.html"
 @stop();
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionStop
+## ActionStop
 
 ActionStop instructs Flash Player to stop playing the file at the current frame.
 

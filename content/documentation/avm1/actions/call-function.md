@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `2+ → 1`
 - SWF version: `5`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionCallFunction
+## ActionCallFunction
 
 ActionCallFunction executes a function. The function can be an ActionScript built-in function (such as parseInt), a
 user-defined ActionScript function, or a native function. For more information, see ActionNewObject.

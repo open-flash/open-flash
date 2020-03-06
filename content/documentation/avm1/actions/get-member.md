@@ -15,9 +15,9 @@ template = "page-documentation.html"
 @push(@pop()[@t0]);
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionGetMember
+## ActionGetMember
 
 ActionGetMember retrieves a named property from an object, and pushes the value of the property onto the
 stack.

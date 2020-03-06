@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `2 → 1`
 - SWF version: `4`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionEquals
+## ActionEquals
 
 ActionEquals tests two numbers for equality.
 

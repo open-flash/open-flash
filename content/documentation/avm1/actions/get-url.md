@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `0 → 0`
 - SWF version: `3`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionGetURL
+## ActionGetURL
 
 ActionGetURL instructs Flash Player to get the URL that UrlString specifies. The URL can be of any type, including
 an HTML file, an image or another SWF file. If the file is playing in a browser, the URL is displayed in the frame

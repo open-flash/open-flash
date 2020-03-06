@@ -23,9 +23,9 @@ The arguments are converted to strings using the same function as the `Trace` ac
 @push(@pop() add @t0);
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionStringAdd
+## ActionStringAdd
 
 ActionStringAdd concatenates two strings.
 

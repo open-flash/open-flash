@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `2 → 1`
 - SWF version: `6`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionStringGreater
+## ActionStringGreater
 
 ActionStringGreater is the exact opposite of ActionStringLess. This action code was added for the same reasons
 as ActionGreater.

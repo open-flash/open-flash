@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `2 → 1`
 - SWF version: `4`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionAdd
+## ActionAdd
 
 ActionSubtract subtracts two numbers and pushes the result back to the stack.
 

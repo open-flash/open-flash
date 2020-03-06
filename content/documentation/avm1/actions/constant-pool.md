@@ -37,9 +37,9 @@ template = "page-documentation.html"
 @setConstantPool("foo", "bar");
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionConstantPool
+## ActionConstantPool
 
 ActionConstantPool creates a new constant pool, and replaces the old constant pool if one already exists.
 

@@ -18,9 +18,9 @@ template = "page-documentation.html"
 @enumerate(@resolve(@pop()));
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionEnumerate
+## ActionEnumerate
 
 ActionEnumerate obtains the names of all “slots” in use in an ActionScript object—that is, for an object obj, all
 names X that could be retrieved with the syntax obj.X. ActionEnumerate is used to implement the for..in

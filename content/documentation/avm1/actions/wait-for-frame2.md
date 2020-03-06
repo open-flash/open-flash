@@ -22,9 +22,9 @@ The `SkipCount` uses actions, not bytes. The actions are skipped using syntax
 only: it skips the linear sequence of actions following immediately the current
 action. The current action is not part of the count.
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionWaitForFrame2
+## ActionWaitForFrame2
 
 ActionWaitForFrame2 waits for a frame to be loaded and is stack based.
 

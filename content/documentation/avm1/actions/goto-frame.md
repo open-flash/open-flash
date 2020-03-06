@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `0 → 0`
 - SWF version: `3`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionGotoFrame
+## ActionGotoFrame
 
 ActionGotoFrame instructs Flash Player to go to the specified frame in the current file.
 

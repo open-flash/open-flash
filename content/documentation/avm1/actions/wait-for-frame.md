@@ -21,9 +21,9 @@ The `SkipCount` uses actions, not bytes. The actions are skipped using syntax
 only: it skips the linear sequence of actions following immediately the current
 action. The current action is not part of the count.
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionWaitForFrame
+## ActionWaitForFrame
 
 ActionWaitForFrame instructs Flash Player to wait until the specified frame; otherwise skips the specified
 number of actions.

@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `2 → 0`
 - SWF version: `5`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionDelete
+## ActionDelete
 
 ActionDelete deletes a named property from a ScriptObject.
 

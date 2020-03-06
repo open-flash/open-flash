@@ -17,9 +17,9 @@ template = "page-documentation.html"
 @push(@t1);
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionStackSwap
+## ActionStackSwap
 
 ActionStackSwap swaps the top two ScriptAtoms on the stack.
 

@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `1 → 0`
 - SWF version: `4`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionIf
+## ActionIf
 
 ActionIf creates a conditional test and branch.
 

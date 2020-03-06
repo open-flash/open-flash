@@ -14,9 +14,9 @@ template = "page-documentation.html"
 @push(~~@pop());
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionToInteger
+## ActionToInteger
 
 ActionToInteger converts a value to an integer.
 

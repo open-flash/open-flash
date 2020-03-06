@@ -14,9 +14,9 @@ template = "page-documentation.html"
 @push(@pop() - 1);
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionDecrement
+## ActionDecrement
 
 ActionDecrement pops a value from the stack, converts it to number type, decrements it by 1, and pushes it
 back to the stack.

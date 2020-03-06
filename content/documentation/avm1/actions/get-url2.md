@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `2 → 0`
 - SWF version: `4`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionGetURL2
+## ActionGetURL2
 
 ActionGetURL2 gets a URL and is stack based.
 

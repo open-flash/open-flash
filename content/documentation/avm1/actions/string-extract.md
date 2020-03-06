@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `3 → 1`
 - SWF version: `4`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionStringExtract
+## ActionStringExtract
 
 ActionStringEquals tests two strings for equality.
 

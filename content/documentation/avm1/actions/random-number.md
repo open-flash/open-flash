@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `1 → 1`
 - SWF version: `4`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionRandomNumber
+## ActionRandomNumber
 
 ActionRandomNumber calculates a random number.
 

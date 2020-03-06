@@ -16,9 +16,9 @@ template = "page-documentation.html"
 @toggleHighQuality();
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionToggleQuality
+## ActionToggleQuality
 
 ActionToggleQuality toggles the display between high and low quality.
 

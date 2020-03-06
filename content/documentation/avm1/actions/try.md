@@ -27,9 +27,9 @@ to the `catch` region (or `finally` region if there is no `catch`).
 If there is no `catch` or `finally`, the recovery does not happen: the error
 bubbles up, the instruction pointer is not moved after the `Try` action.
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionTry
+## ActionTry
 
 ActionTry defines handlers for exceptional conditions, implementing the ActionScript try, catch, and finally
 keywords.

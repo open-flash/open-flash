@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `0 → 1`
 - SWF version: `4`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionGetTime
+## ActionGetTime
 
 ActionGetTime reports the milliseconds since Adobe Flash Player started.
 

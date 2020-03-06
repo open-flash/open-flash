@@ -30,9 +30,9 @@ template = "page-documentation.html"
 @push(@r1 = @pop());
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionStoreRegister
+## ActionStoreRegister
 
 ActionStoreRegister reads the next object from the stack (without popping it) and stores it in one of four
 registers. If ActionDefineFunction2 is used, up to 256 registers are available.

@@ -14,9 +14,9 @@ template = "page-documentation.html"
 void @pop();
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionPop
+## ActionPop
 
 ActionPop pops a value from the stack and discards it.
 

@@ -16,9 +16,9 @@ template = "page-documentation.html"
 @pop()[@propertyName(@t1)] = @t0;
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionSetProperty
+## ActionSetProperty
 
 ActionSetProperty sets a file property.
 

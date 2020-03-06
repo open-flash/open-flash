@@ -18,9 +18,9 @@ template = "page-documentation.html"
 @enumerate(@pop());
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionEnumerate2
+## ActionEnumerate2
 
 ActionEnumerate2 is similar to ActionEnumerate, but uses a stack argument of object type rather than using a
 string to specify its name.

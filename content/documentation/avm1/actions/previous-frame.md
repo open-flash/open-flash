@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `0 → 0`
 - SWF version: `3`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionPreviousFrame
+## ActionPreviousFrame
 
 ActionPreviousFrame instructs Flash Player to go to the previous frame of the
 current file.

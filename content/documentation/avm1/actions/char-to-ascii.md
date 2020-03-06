@@ -16,9 +16,9 @@ template = "page-documentation.html"
 @push(@ord(@pop()));
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionCharToAscii
+## ActionCharToAscii
 
 ActionCharToAscii converts character code to ASCII.
 

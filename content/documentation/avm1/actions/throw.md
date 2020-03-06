@@ -18,9 +18,9 @@ template = "page-documentation.html"
 throw @pop();
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionThrow
+## ActionThrow
 
 ActionThrow implements the ActionScript throw keyword. ActionThrow is used to signal, or throw, an
 exceptional condition, which is handled by the exception handlers declared with ActionTry.

@@ -18,9 +18,9 @@ template = "page-documentation.html"
 @push(@stackArray(@pop()));
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionInitArray
+## ActionInitArray
 
 ActionInitArray initializes an array in a ScriptObject and is similar to ActionInitObject. The newly created object is
 pushed to the stack. The stack is the only existing reference to the newly created object. A subsequent

@@ -19,9 +19,9 @@ The short-circuiting semantics of the ActionScript operator `||` mus be handled 
 @push(!!(@pop() || @t0));
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionOr
+## ActionOr
 
 ActionOr performs a logical OR of two numbers.
 

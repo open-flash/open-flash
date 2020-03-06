@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `3 → 0`
 - SWF version: `4`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionCloneSprite
+## ActionCloneSprite
 
 ActionCloneSprite clones a sprite.
 

@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `0 → 0`
 - SWF version: `3`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionStopSounds
+## ActionStopSounds
 
 ActionStopSounds instructs Flash Player to stop playing all sounds.
 

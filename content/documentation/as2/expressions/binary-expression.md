@@ -112,4 +112,4 @@ template = "page-documentation.html"
 [ShiftExpression]: @/documentation/as2/expressions/binary-expression.md#shift-expression
 [AdditiveExpression]: @/documentation/as2/expressions/binary-expression.md#additive-expression
 [MultiplicativeExpression]: @/documentation/as2/expressions/binary-expression.md#multiplicative-expression
-[UnaryExpression]: @/documentation/as2/expressions/unary-expression.md#unary-expression
+[PrefixExpression]: @/documentation/as2/expressions/prefix-expression.md#prefix-expression

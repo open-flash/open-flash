@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `2 → 1`
 - SWF version: `7`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionCastOp
+## ActionCastOp
 
 ActionCastOp implements the ActionScript cast operator, which allows the casting from one data type to
 another. ActionCastOp pops an object off the stack and attempts to convert the object to an instance of the

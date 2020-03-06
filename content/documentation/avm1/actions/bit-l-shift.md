@@ -17,7 +17,7 @@ template = "page-documentation.html"
 
 # Adobe documentation
 
-### ActionBitLShift
+## ActionBitLShift
 
 ActionBitLShift pops the shift count arg and then value off of the stack. The value argument is converted to 32-
 bit signed integer and only the least significant 5 bits are used as the shift count. The bits in the value arg are

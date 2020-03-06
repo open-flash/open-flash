@@ -15,9 +15,9 @@ template = "page-documentation.html"
 @push(@pop() === @t0);
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionStrictEquals
+## ActionStrictEquals
 
 ActionStrictEquals is similar to ActionEquals2, but the two arguments must be of the same type in order to be
 considered equal. Implements the ‘===’ operator from the ActionScript language.

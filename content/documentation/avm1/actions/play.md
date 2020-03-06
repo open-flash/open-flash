@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `0 → 0`
 - SWF version: `3`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionPlay
+## ActionPlay
 
 ActionPlay instructs Flash Player to start playing at the current frame.
 

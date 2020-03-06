@@ -17,7 +17,7 @@ template = "page-documentation.html"
 
 # Adobe documentation
 
-### ActionBitXor
+## ActionBitXor
 
 ActionBitXor pops two numbers off of the stack, performs a bitwise XOR, and pushes an S32 number to the
 stack.

@@ -14,9 +14,9 @@ template = "page-documentation.html"
 @push("" + @pop());
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionToString
+## ActionToString
 
 ActionToString converts the object on the top of the stack into a String, and pushes the string back to the stack.
 For the Object type, the ActionScript toString() method is invoked to convert the object to the String type for

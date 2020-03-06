@@ -17,9 +17,9 @@ ECMA-262 addition operator.
 @push(@pop() + @t0);
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionAdd2
+## ActionAdd2
 
 ActionAdd2 is similar to ActionAdd, but performs the addition differently, according to the data types of the
 arguments. The addition operator algorithm in ECMA-262 Section 11.6.1 is used. If string concatenation is

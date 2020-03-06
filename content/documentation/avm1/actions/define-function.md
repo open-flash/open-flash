@@ -16,9 +16,9 @@ template = "page-documentation.html"
 
 The length in the action header ignores the function body.
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionDefineFunction
+## ActionDefineFunction
 
 **Note**: ActionDefineFunction is rarely used as of SWF 7 and later; it was superseded by ActionDefineFunction2.
 

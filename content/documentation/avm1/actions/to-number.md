@@ -14,9 +14,9 @@ template = "page-documentation.html"
 @push(+@pop());
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionToNumber
+## ActionToNumber
 
 Converts the object on the top of the stack into a number, and pushes the number back to the stack.
 For the Object type, the ActionScript valueOf() method is invoked to convert the object to a Number type for

@@ -14,9 +14,9 @@ template = "page-documentation.html"
 
 Does something like `class.__implementedInterfaces = interfaces`.
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionImplementsOp
+## ActionImplementsOp
 
 ActionImplementsOp implements the ActionScript implements keyword. The ActionImplementsOp action
 specifies the interfaces that a class implements, for use by ActionCastOp. ActionImplementsOp can also specify

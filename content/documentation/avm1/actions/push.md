@@ -40,9 +40,9 @@ Here are some examples:
 @push(true);
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionPush
+## ActionPush
 
 ActionPush pushes one or more values to the stack.
 

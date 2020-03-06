@@ -16,9 +16,9 @@ template = "page-documentation.html"
 
 The length in the action header ignores the function body.
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionDefineFunction2
+## ActionDefineFunction2
 
 ActionDefineFunction2 is similar to ActionDefineFunction, with additional features that can help speed up the
 execution of function calls by preventing the creation of unused variables in the function’s activation object and

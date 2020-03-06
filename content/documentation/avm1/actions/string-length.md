@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `1 → 1`
 - SWF version: `4`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionStringLength
+## ActionStringLength
 
 ActionStringLength computes the length of a string.
 

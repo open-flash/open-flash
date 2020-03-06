@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `1 → 0`
 - SWF version: `4`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionSetTarget2
+## ActionSetTarget2
 
 ActionSetTarget2 sets the current context and is stack based.
 

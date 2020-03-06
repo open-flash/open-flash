@@ -18,9 +18,9 @@ template = "page-documentation.html"
 @endDrag();
 ```
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionEndDrag
+## ActionEndDrag
 
 ActionEndDrag ends the drag operation in progress, if any.
 

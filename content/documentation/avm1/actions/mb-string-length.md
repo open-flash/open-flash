@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `1 → 1`
 - SWF version: `4`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionMBStringLength
+## ActionMBStringLength
 
 ActionMBStringLength computes the length of a string and is multi-byte aware.
 

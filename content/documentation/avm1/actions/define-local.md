@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `2 → 0`
 - SWF version: `5`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionDefineLocal
+## ActionDefineLocal
 
 ActionDefineLocal defines a local variable and sets its value. If the variable already exists, the value is set to the
 newly specified value.

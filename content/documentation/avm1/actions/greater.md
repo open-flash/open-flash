@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `2 → 1`
 - SWF version: `6`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionGreater
+## ActionGreater
 
 ActionGreater is the exact opposite of ActionLess2. Originally there was no ActionGreater, because it can be
 emulated by reversing the order of argument pushing, then performing an ActionLess followed by an ActionNot.

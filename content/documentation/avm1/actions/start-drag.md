@@ -13,9 +13,9 @@ template = "page-documentation.html"
 - Stack: `3 → 0` or `7 → 0`
 - SWF version: `4`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionStartDrag
+## ActionStartDrag
 
 ActionStartDrag starts dragging a movie clip.
 

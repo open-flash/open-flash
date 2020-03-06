@@ -12,9 +12,9 @@ template = "page-documentation.html"
 - Stack: `0 → 0`
 - SWF version: `3`
 
-## Adobe documentation
+# Adobe documentation
 
-### ActionSetTarget
+## ActionSetTarget
 
 ActionSetTarget instructs Flash Player to change the context of subsequent actions, so they apply to a named
 object (TargetName) rather than the current file.
