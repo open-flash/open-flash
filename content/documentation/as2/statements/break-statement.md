@@ -1,6 +1,6 @@
 +++
-title = "BreakStatement"
-description = "BreakStatement"
+title = "Break Statement"
+description = "Break Statement"
 template = "page-documentation.html"
 +++
 

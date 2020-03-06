@@ -1,6 +1,6 @@
 +++
-title = "@trace"
-description = "@trace"
+title = "Abstract Trace"
+description = "Abstract Trace"
 template = "page-documentation.html"
 +++
 

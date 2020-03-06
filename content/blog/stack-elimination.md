@@ -64,11 +64,11 @@ By tracking the stack this way, we can see that when we reach the `Trace` action
 
 Bytecode can exploit the full range of features provided by the AVM1: it can jump to arbitrary locations, directly manipulate the stack, access to various types of memory, etc. It would be extremely hard to decompile assembly into valid ActionScript 2 in a single step because of these differences.
 
-To solve this issue, Open Flash defines a superset of ActionScript 2 called "Operational ActionScript 2" (abbreviated OPAS2). This language is a generalized version of ActionScript with extra statements and expressions to easily represent the corresponding AVM1 actions. The decompiler first converts assembly to OPAS, and then progressively replaces the extra features by regular ActionScript 2.
+To solve this issue, Open Flash defines a superset of ActionScript 2 called "Abstract ActionScript 2" (abbreviated AAS2). This language is a generalized version of ActionScript with extra statements and expressions to easily represent the corresponding AVM1 actions. The decompiler first converts assembly to AAS, and then progressively replaces the extra features by regular ActionScript 2.
 
-The OPAS2 extension is designed such that assembly can be translated to it action by action by generating statements corresponding to the action specification. The Open Flash documentation for AVM1 actions describes this conversion for each action.
+The AAS2 extension is designed such that assembly can be translated to it action by action by generating statements corresponding to the action specification. The Open Flash documentation for AVM1 actions describes this conversion for each action.
 
-Extra keywords start with the `@` symbol. The `@pop()` OPAS2 expression corresponds to the `Pop` AVM1 action. The `@push(value);` OPAS statement pushes a single value on the stack. Temporary variable are written as an numeric id prefixed with `@t` (e.g. `@t3` means "temporary variable 3"). Finally, the `@trace(value);` statement correspond to the `trace` operation.
+Extra keywords start with the `@` symbol. The `@pop()` AAS2 expression corresponds to the `Pop` AVM1 action. The `@push(value);` AAS statement pushes a single value on the stack. Temporary variable are written as an numeric id prefixed with `@t` (e.g. `@t3` means "temporary variable 3"). Finally, the `@trace(value);` statement correspond to the `trace` operation.
 
 With the feature from the previous paragraph, we can disassemble our assembly:
 
@@ -113,7 +113,7 @@ As a reminder, this is the original AS2 code we are trying to retrieve with the 
 trace(1 + 3 + 5);
 ```
 
-The disassembly step left us with a mess of `@push` and `@pop`. It's time to convert it to regular AS2. OPAS2 has the advantage that only a very small number of instructions can manipulate the stack, as opposed to assembly where almost any action can use it.
+The disassembly step left us with a mess of `@push` and `@pop`. It's time to convert it to regular AS2. AAS2 has the advantage that only a very small number of instructions can manipulate the stack, as opposed to assembly where almost any action can use it.
 
 The simplest solution to produce regular AS2 is to implement `@push` and `@pop` as AS2 functions operating on the stack. This method will work with any kind of assembly, even when stack usage cannot be statically analyzed. The downside is that the code will be harder to read and introduce some overhead.
 
@@ -273,7 +273,7 @@ Similarly to the "explicit stack" or "push-pop elimination" steps, we want our t
 
 To keep semantics unchanged, we must be very careful when handling constructors, function calls, member accesses or any other action that my potentially trigger visible side-effects.
 
-Fortunately, the temporaries in our example only store integers. An OPAS2 temporary cannot be mutated. When a temporary is initialized with a number literal, we can replace reads to this temporary by copies of the number.
+Fortunately, the temporaries in our example only store integers. An AAS2 temporary cannot be mutated. When a temporary is initialized with a number literal, we can replace reads to this temporary by copies of the number.
 
 By applying this rule recursively, we get the following code:
 

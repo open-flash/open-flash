@@ -1,6 +1,6 @@
 +++
-title = "@push"
-description = "@push"
+title = "Abstract Push"
+description = "Abstract Push"
 template = "page-documentation.html"
 +++
 

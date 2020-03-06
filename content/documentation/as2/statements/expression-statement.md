@@ -1,6 +1,6 @@
 +++
-title = "BreakStatement"
-description = "BreakStatement"
+title = "Expression Statement"
+description = "Expression Statement"
 template = "page-documentation.html"
 +++
 
@@ -8,11 +8,7 @@ Evaluates an expression and discards its value.
 
 # Syntax
 
-// TODO: Fix support for Automatic Semicolon Insertion
-
-> **<sup>Syntax</sup>**\
-> _ExpressionStatement_ :\
-> &nbsp;&nbsp; _[Expression]_
+TODO
 
 # Abstract type
 
