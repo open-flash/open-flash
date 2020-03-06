@@ -8,7 +8,7 @@ template = "page-documentation.html"
 - Stack: `1 → 1`
 - SWF version: `5`
 
-# Operational AS2
+# Abstract AS2
 
 ```
 @t0 = @pop();

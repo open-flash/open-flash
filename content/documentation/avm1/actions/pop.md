@@ -4,13 +4,15 @@ description = "Pop"
 template = "page-documentation.html"
 +++
 
-```
-[a] → []
-```
-
 - Action Code: `0x17`
 - Stack: `1 → 0`
 - SWF version: `4`
+
+# Abstract AS2
+
+```
+void @pop();
+```
 
 ## Adobe documentation
 

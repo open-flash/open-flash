@@ -12,6 +12,24 @@ template = "page-documentation.html"
 - Stack: `1 → 1`
 - SWF version: `5`
 
+# Abstract AS2
+
+```
+// {
+//   action: "store-register",
+//   register: 0
+// }
+@push(@r0 = @pop());
+```
+
+```
+// {
+//   action: "store-register",
+//   register: 1
+// }
+@push(@r1 = @pop());
+```
+
 ## Adobe documentation
 
 ### ActionStoreRegister

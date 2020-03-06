@@ -4,13 +4,16 @@ description = "GetProperty"
 template = "page-documentation.html"
 +++
 
-```
-[target, index] → [target[getPropertyname(index)]]
-```
-
 - Action Code: `0x22`
 - Stack: `2 → 1`
 - SWF version: `4`
+
+# Abstract AS2
+
+```
+@t0 = @pop();
+@push(@pop()[@propertyName(@t0)]);
+```
 
 ## Adobe documentation
 

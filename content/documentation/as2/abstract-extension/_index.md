@@ -1,10 +1,10 @@
 +++
-title = "Operational Extension"
+title = "Abstract Extension"
 description = "Open Flash Documentation"
 template = "section-documentation.html"
 +++
 
-**Operational ActionScript 2** (OPAS2) is a language that is a _superset_ of regular **ActionScript 2**. It adds extra features to be able to represent all bytecode operation of the ActionScript Virtual Machine.
+**Abstract ActionScript 2** (AAS2) is a language that is a _superset_ of regular **ActionScript 2**. It adds extra features to be able to represent all bytecode operation of the ActionScript Virtual Machine.
 
 Because any AVM1 bytecode has a corresponding OPAS2 source text, it serves as a high-level representation of the underlying bytecode and can be used for decompilation.
 

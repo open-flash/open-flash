@@ -1,6 +1,6 @@
 +++
-title = "OpStackCall"
-description = "OpStackCall"
+title = "Abstract Stack Call"
+description = "Abstract Stack Call"
 template = "page-documentation.html"
 +++
 
@@ -42,12 +42,12 @@ var strings = @stackCall(makeArray, argCount);
 # Syntax
 
 > **<sup>Syntax</sup>**\
-> _OpStackCall_ :\
+> _AbstractStackCall_ :\
 > &nbsp;&nbsp; `@stackCall` _[TRIVIA]_?\
 > &nbsp;&nbsp; `(` _[TRIVIA]_?\
-> &nbsp;&nbsp; _[Expression]_ _[TRIVIA]_?\
+> &nbsp;&nbsp; _[AssignmentExpression]_ _[TRIVIA]_?\
 > &nbsp;&nbsp; `,` _[TRIVIA]_?\
-> &nbsp;&nbsp; _[Expression]_ _[TRIVIA]_?\
+> &nbsp;&nbsp; _[AssignmentExpression]_ _[TRIVIA]_?\
 > &nbsp;&nbsp; `)`
 
 # Abstract type
@@ -57,11 +57,10 @@ TODO
 ```
 {
   type: "OpStackCall";
-  call: Expression;
-  argCount: Expression;
+  callee: Expression;
+  argumentCount: Expression;
 }
 ```
 
-[Expression]: @/documentation/as2/expression.md
-[TRIVIA]: @/documentation/as2/trivia.md
-[avm1-pop]: @/documentation/avm1/actions/pop.md
+[AssignmentExpression]: @/documentation/as2/expressions/assignment-expression.md
+[Trivia]: @/documentation/as2/trivia.md#trivia

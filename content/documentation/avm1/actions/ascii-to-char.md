@@ -4,13 +4,18 @@ description = "AsciiToChar"
 template = "page-documentation.html"
 +++
 
-```
-[a] → [asciiToChar(a)]
-```
 
 - Action Code: `0x33`
 - Stack: `1 → 1`
 - SWF version: `4`
+
+`chr` builtin function.
+
+# Abstract AS2
+
+```
+@push(@chr(@pop()));
+```
 
 ## Adobe documentation
 

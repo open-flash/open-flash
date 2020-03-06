@@ -4,13 +4,16 @@ description = "Multiply"
 template = "page-documentation.html"
 +++
 
-```
-[arg2, arg1] → [arg2 * arg1]
-```
-
 - Action Code: `0x0c`
 - Stack: `2 → 1`
 - SWF version: `4`
+
+# Abstract AS2
+
+```
+@t0 = @pop();
+@push(@pop() * @t0);
+```
 
 ## Adobe documentation
 

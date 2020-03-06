@@ -39,3 +39,7 @@ An unbounded nul-terminated UTF-8 buffer.
 Buffers containing encoding errors are invalid.
 
 This encodes a string as a sequence of unicode codepoints, except for the codepoint `0`.
+
+# LE_FLOAT32
+
+Based on the documentation of the modulo action, Adobe uses `0x7FC00000` as the canonical NaN representation.

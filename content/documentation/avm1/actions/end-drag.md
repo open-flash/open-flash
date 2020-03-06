@@ -12,6 +12,12 @@ template = "page-documentation.html"
 - Stack: `0 → 0`
 - SWF version: `4`
 
+# Abstract AS2
+
+```
+@endDrag();
+```
+
 ## Adobe documentation
 
 ### ActionEndDrag

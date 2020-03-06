@@ -4,13 +4,20 @@ description = "Or"
 template = "page-documentation.html"
 +++
 
-```
-[b, a] → [b || a]
-```
-
 - Action Code: `0x11`
 - Stack: `2 → 1`
 - SWF version: `4`
+
+Low-level logical or operator.
+
+The short-circuiting semantics of the ActionScript operator `||` mus be handled during compilation.
+
+# Abstract AS2
+
+```
+@t0 = @pop();
+@push(!!(@pop() || @t0));
+```
 
 ## Adobe documentation
 

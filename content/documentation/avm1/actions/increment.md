@@ -4,13 +4,17 @@ description = "Increment"
 template = "page-documentation.html"
 +++
 
-```
-[value] → [Number(value) + 1]
-```
-
 - Action Code: `0x50`
 - Stack: `1 → 1`
 - SWF version: `5`
+
+# Abstract AS2
+
+```
+@push(+@pop() + 1);
+```
+
+Note: The unary `+` operator is used to convert the argument to a number.
 
 ## Adobe documentation
 

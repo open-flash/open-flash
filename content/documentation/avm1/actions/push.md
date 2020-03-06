@@ -8,7 +8,7 @@ template = "page-documentation.html"
 - Stack: `0 → n`
 - SWF version: `4`
 
-# Operational AS2
+# Abstract AS2
 
 This corresponds to a sequence of `@push(...);` statements. One statement per
 value, in the same order.

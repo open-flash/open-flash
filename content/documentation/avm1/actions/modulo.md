@@ -4,15 +4,18 @@ description = "Modulo"
 template = "page-documentation.html"
 +++
 
-```
-[arg2, arg1] → [arg2 % arg1]
-```
-
 - Action Code: `0x3f`
 - Stack: `1 → 1`
 - SWF version: `5`
 
-**Note**: This is not a modulo but remainder.
+**Note**: A better name would be `remainder` instead of `modulo`, due to sign-sensibility.
+
+# Abstract AS2
+
+```
+@t0 = @pop();
+@push(@pop() % @t0);
+```
 
 ## Adobe documentation
 

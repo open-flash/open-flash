@@ -8,11 +8,15 @@ template = "page-documentation.html"
 - Stack: `2 → 1`
 - SWF version: `4`
 
-# Operational AS2
+Low-level logical and operator.
+
+The short-circuiting semantics of the ActionScript operator `&&` mus be handled during compilation.
+
+# Abstract AS2
 
 ```
 @t0 = @pop();
-@push(@pop() && @t0);
+@push(!!(@pop() && @t0));
 ```
 
 # Notes

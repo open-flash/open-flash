@@ -4,13 +4,17 @@ description = "SetProperty"
 template = "page-documentation.html"
 +++
 
-```
-[target, index, value] → []
-```
-
 - Action Code: `0x23`
 - Stack: `3 → 0`
 - SWF version: `4`
+
+# Abstract AS2
+
+```
+@t0 = @pop();
+@t1 = @pop();
+@pop()[@propertyName(@t1)] = @t0;
+```
 
 ## Adobe documentation
 

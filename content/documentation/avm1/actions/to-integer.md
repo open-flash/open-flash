@@ -4,13 +4,15 @@ description = "ToInteger"
 template = "page-documentation.html"
 +++
 
-```
-[a] → [~~Number(a)]
-```
-
 - Action Code: `0x18`
 - Stack: `1 → 1`
 - SWF version: `4`
+
+# Abstract AS2
+
+```
+@push(~~@pop());
+```
 
 ## Adobe documentation
 

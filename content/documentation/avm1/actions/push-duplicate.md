@@ -4,13 +4,17 @@ description = "PushDuplicate"
 template = "page-documentation.html"
 +++
 
-```
-[value] → [value, value]
-```
-
 - Action Code: `0x4c`
 - Stack: `1 → 2`
 - SWF version: `5`
+
+# Abstract AS2
+
+```
+@t0 = @pop();
+@push(@t0);
+@push(@t0);
+```
 
 ## Adobe documentation
 

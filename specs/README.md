@@ -11,6 +11,7 @@ Here are the official links:
 - [https://wwwimages2.adobe.com/content/dam/Adobe/en/devnet/actionscript/articles/avm2overview.pdf]
 - [http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5176.CFF.pdf]
 - [http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5177.Type2.pdf]
+- <https://help.adobe.com/archive/en_US/flash/cs5/flash_cs5_extending.pdf>
 
 Found from [https://www.adobe.com/devnet/swf.html] and then searching the transitive dependencies.
 

@@ -12,6 +12,12 @@ template = "page-documentation.html"
 - Stack: `1 → 1+`
 - SWF version: `6`
 
+# Abstract AS2
+
+```
+@enumerate(@pop());
+```
+
 ## Adobe documentation
 
 ### ActionEnumerate2

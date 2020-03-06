@@ -10,7 +10,7 @@ template = "page-documentation.html"
 
 **Note**: There is an issue with the formatting of the table in the official documentation.
 
-# Operational AS2
+# Abstract AS2
 
 ```
 @t0 = @pop();

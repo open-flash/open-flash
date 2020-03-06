@@ -1,6 +1,6 @@
 +++
-title = "OpPop"
-description = "OpPop"
+title = "Abstract Pop"
+description = "Abstract Pop"
 template = "page-documentation.html"
 +++
 
@@ -23,8 +23,8 @@ main();
 # Syntax
 
 > **<sup>Syntax</sup>**\
-> _OpPop_ :\
-> &nbsp;&nbsp; `@opPop` _[TRIVIA]_? `(` _[TRIVIA]_? `)`
+> _AbstractPop_ :\
+> &nbsp;&nbsp; `@pop` _[Trivia]_? `(` _[Trivia]_? `)`
 
 # Abstract type
 
@@ -36,5 +36,5 @@ TODO
 }
 ```
 
-[TRIVIA]: @/documentation/as2/trivia.md
+[Trivia]: @/documentation/as2/trivia.md#trivia
 [avm1-pop]: @/documentation/avm1/actions/pop.md

@@ -8,7 +8,9 @@ template = "page-documentation.html"
 - Stack: `2 → 1`
 - SWF version: `5`
 
-# Operational AS2
+ECMA-262 addition operator.
+
+# Abstract AS2
 
 ```
 @t0 = @pop();

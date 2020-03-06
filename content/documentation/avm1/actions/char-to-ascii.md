@@ -4,13 +4,17 @@ description = "CharToAscii"
 template = "page-documentation.html"
 +++
 
-```
-[a] → [charToAscii(a)]
-```
-
 - Action Code: `0x32`
 - Stack: `1 → 1`
 - SWF version: `4`
+
+`ord` builtin function.
+
+# Abstract AS2
+
+```
+@push(@ord(@pop()));
+```
 
 ## Adobe documentation
 

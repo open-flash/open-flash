@@ -4,13 +4,16 @@ description = "TypeOf"
 template = "page-documentation.html"
 +++
 
-```
-[object] → [typeof object]
-```
-
 - Action Code: `0x44`
 - Stack: `1 → 1`
 - SWF version: `5`
+
+# Abstract AS2
+
+```
+@t0 = @pop();
+@push(typeof @t0);
+```
 
 ## Adobe documentation
 

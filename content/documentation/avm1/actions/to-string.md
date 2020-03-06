@@ -4,13 +4,15 @@ description = "ToString"
 template = "page-documentation.html"
 +++
 
-```
-[object] → ["" + object]
-```
-
 - Action Code: `0x4b`
 - Stack: `1 → 1`
 - SWF version: `5`
+
+# Abstract AS2
+
+```
+@push("" + @pop());
+```
 
 ## Adobe documentation
 

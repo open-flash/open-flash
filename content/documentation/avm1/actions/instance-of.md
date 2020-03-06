@@ -4,13 +4,18 @@ description = "InstanceOf"
 template = "page-documentation.html"
 +++
 
-```
-[object, class] → [object instanceof class]
-```
-
 - Action Code: `0x54`
 - Stack: `2 → 1`
 - SWF version: `6`
+
+ActionScript `instanceof` operator. Different from ECMA-262 (it supports interfaces).
+
+# Abstract AS2
+
+```
+@t0 = @pop();
+@push(@pop() instanceof @t0);
+```
 
 ## Adobe documentation
 

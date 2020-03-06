@@ -12,6 +12,12 @@ template = "page-documentation.html"
 - Stack: `0 → 0`
 - SWF version: `3`
 
+# Abstract AS2
+
+```
+@stop();
+```
+
 ## Adobe documentation
 
 ### ActionStop

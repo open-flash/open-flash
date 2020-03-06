@@ -4,16 +4,20 @@ description = "SetMember"
 template = "page-documentation.html"
 +++
 
-```
-[object, propertyName, newValue] → []
-```
-
 - Action Code: `0x1d`
 - Stack: `3 → 0`
 - SWF version: `5`
 
 **Note**: There is a typo in the step 2 of Adobe's documentation: "object name" should be
 "property name".
+
+# Abstract AS2
+
+```
+@t0 = @pop();
+@t1 = @pop();
+@pop()[@t1] = @t0;
+```
 
 ## Adobe documentation
 

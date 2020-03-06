@@ -1,12 +1,12 @@
 +++
-title = "OpTemporary"
-description = "OpTemporary"
+title = "Abstract Temporary"
+description = "Abstract Temporary"
 template = "page-documentation.html"
 +++
 
 Reads a temporary value.
 
-TODO: Link descrption of temporary values
+TODO: Link description of temporary values
 
 # Example
 
@@ -20,7 +20,7 @@ trace(@t25);
 # Syntax
 
 > **<sup>Syntax</sup>**\
-> _OpTemporary_ :\
+> _AbstractTemporary_ :\
 > &nbsp;&nbsp; `@t` _DECIMAL_+
 
 # Abstract type
@@ -29,7 +29,7 @@ TODO
 
 ```
 {
-  type: "OpTemporary";
+  type: "AbstractTemporary";
   id: u32;
 }
 ```

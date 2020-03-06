@@ -1,6 +1,6 @@
 +++
-title = "OpTrace"
-description = "OpTrace"
+title = "@trace"
+description = "@trace"
 template = "page-documentation.html"
 +++
 
@@ -12,10 +12,10 @@ depend on the current binding of the `trace` variable.
 # Example
 
 ```
-@opTrace("Hello, World!");
-@opTrace(42);
+@trace("Hello, World!");
+@trace(42);
 var obj = {foo: "bar"};
-@opTrace(obj);
+@trace(obj);
 ```
 
 # Syntax
@@ -24,7 +24,7 @@ Compared to a CallExpression on the `trace` variable, the OpTrace syntax has mor
 constraints: it requires exactly one argument and must be its own statement.
 
 > **<sup>Syntax</sup>**\
-> _OpTrace_ :\
+> _AbstractTrace_ :\
 > &nbsp;&nbsp; `@trace` _[TRIVIA]_?\
 > &nbsp;&nbsp; `(` _[TRIVIA]_?\
 > &nbsp;&nbsp; _[Expression]_ _[TRIVIA]_?\

@@ -4,13 +4,16 @@ description = "GetMember"
 template = "page-documentation.html"
 +++
 
-```
-[object, name] → [object[name]]
-```
-
 - Action Code: `0x4e`
 - Stack: `2 → 1`
 - SWF version: `5`
+
+# Abstract AS2
+
+```
+@t0 = @pop();
+@push(@pop()[@t0]);
+```
 
 ## Adobe documentation
 

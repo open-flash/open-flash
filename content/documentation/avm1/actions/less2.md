@@ -4,13 +4,18 @@ description = "Less2"
 template = "page-documentation.html"
 +++
 
-```
-[arg2, arg1] → [arg2 < arg1]
-```
-
 - Action Code: `0x48`
 - Stack: `1 → 1`
 - SWF version: `5`
+
+ECMA-262 less-than operator.
+
+# Abstract AS2
+
+```
+@t0 = @pop();
+@push(@pop() < @t0);
+```
 
 ## Adobe documentation
 

@@ -12,6 +12,12 @@ template = "page-documentation.html"
 - Stack: `1 → 1`
 - SWF version: `4`
 
+# Abstract AS2
+
+```
+@push(@resolve(@pop()));
+```
+
 ## Adobe documentation
 
 ### ActionGetVariable
