@@ -91,11 +91,11 @@ template = "page-documentation.html"
 
 > **<sup>Syntax</sup>**\
 > _MultiplicativeExpression_ :\
-> &nbsp;&nbsp; &nbsp;&nbsp; _[UnaryExpression]_\
+> &nbsp;&nbsp; &nbsp;&nbsp; _[PrefixExpression]_\
 > &nbsp;&nbsp; | {\
 > &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; _[MultiplicativeExpression]_\
 > &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; _[Trivia]_? _multiplicativeOperator_\
-> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; _[Trivia]_? _[UnaryExpression]_\
+> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; _[Trivia]_? _[PrefixExpression]_\
 > &nbsp;&nbsp; &nbsp;&nbsp; }
 >
 > _multiplicativeOperator_ :\
