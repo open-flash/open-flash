@@ -8,6 +8,16 @@ Reads a constant value.
 
 TODO: Link description of constant values
 
+# Examples
+
+```
+@constantPool("foo", "bar", "baz");
+trace(@c0); // foo
+trace(@c1); // bar
+trace(@c2); // baz
+trace(@c3); // undefined
+```
+
 # Syntax
 
 > **<sup>Syntax</sup>**\

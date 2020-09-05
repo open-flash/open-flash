@@ -14,7 +14,7 @@ function hello(name) {
 }
 
 @push("OpenFlash");
-@stackCall(trace, 1);
+@stackCall(hello, 1);
 ```
 
 ```
