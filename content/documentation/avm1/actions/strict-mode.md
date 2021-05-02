@@ -22,6 +22,8 @@ template = "page-documentation.html"
 
 The field `isStrict` corresponds to the boolean `isStrict != 0`.
 
+**TODO**: Confirm if padding is allowed.
+
 # Description
 
 This AVM1 action only serves as a hint that the byte code was compiled using

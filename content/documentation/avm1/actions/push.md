@@ -8,6 +8,11 @@ template = "page-documentation.html"
 - Stack: `0 → n`
 - SWF version: `4`
 
+**TODO**: Document behavior with padding (most likely not allowed). Eg: `01 00000000 00 00 00 00` seems to cause a corrupted data error.
+
+The Adobe documentation has an error. It indicates that Float64 (double) values are encoded
+using a Little-Endian representation when in fact it uses [LE32_FLOAT64].
+
 # Abstract AS2
 
 This corresponds to a sequence of `@push(...);` statements. One statement per
@@ -128,3 +133,5 @@ In the first field of ActionPush, the length in ACTIONRECORD defines the total n
 that follow the ACTIONRECORD itself. More than one set of Type and value fields may follow the first field,
 depending on the number of bytes that the length in ACTIONRECORD specifies.
 ActionPop
+
+[LE32_FLOAT64]: @/documentation/swf/primitives.md#uint8
