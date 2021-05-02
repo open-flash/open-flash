@@ -116,7 +116,7 @@ running ActionScript bytecode.
 > &nbsp;&nbsp; LE_UFIXED8_P8
 >
 > _frameCount_ :\
-> &nbsp;&nbsp; LE_UINT16
+> &nbsp;&nbsp; [LE_UINT16]
 
 # Tag
 
@@ -126,9 +126,9 @@ See the [Tag index](@/documentation/swf/tags/_index.md).
 > _Tag_<sub>(SwfVersion)</sub> :\
 > &nbsp;&nbsp; _ShortTag_ | _LongTag_\
 > _ShortTag_<sub>(SwfVersion)</sub> :\
-> &nbsp;&nbsp; _TagHeader_(code, tagSize)<sub>(code, tagSize)</sub> _TagBody(code)<sub>[size: `tagSize`]</sub>_\
+> &nbsp;&nbsp; _ShortTagHeader_(code, tagSize)<sub>(code, tagSize)</sub> _TagBody(code)_<sub>[size: `tagSize`]</sub>\
 > _LongTag_<sub>(SwfVersion)</sub> :\
-> &nbsp;&nbsp; _TagHeader_(code, tagSize)<sub>(code, tagSize)</sub> _TagBody(code)<sub>[size: `tagSize`]</sub>_
+> &nbsp;&nbsp; _LongTagHeader_(code, tagSize)<sub>(code, tagSize)</sub> _TagBody(code)_<sub>[size: `tagSize`]</sub>
 
 # Tag&#8288;Header
 
@@ -155,10 +155,10 @@ tags require a long form header even if the body size is 62 bytes long or shorte
 > &nbsp;&nbsp; _codeAndSize_(code, 63) _size_<sub>[value: `bodySize`]</sub>
 >
 > _codeAndSize_(code, size)<sub>[where: `size < 64`]</sub> :\
-> &nbsp;&nbsp; LE_UINT16<sub>[value: `code * 64 + size`]</sub>
+> &nbsp;&nbsp; [LE_UINT16]<sub>[value: `code * 64 + size`]</sub>
 >
 > _size_ :\
-> &nbsp;&nbsp; LE_UINT32
+> &nbsp;&nbsp; [LE_UINT32]
 
 [Adobe Reference: Tag format](/mirrors/swf-spec-19.pdf#page=29)
 
@@ -172,6 +172,7 @@ and only the syntax changes.
 
 
 [UINT8]: @/documentation/swf/primitives.md#uint8
+[LE_UINT16]: @/documentation/swf/primitives.md#le-uint16
 [LE_UINT32]: @/documentation/swf/primitives.md#le-uint32
 [SwfSignature]: #swf-signature
 [SwfPayload]: #swf-payload
